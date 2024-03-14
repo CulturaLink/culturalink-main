@@ -1,5 +1,6 @@
 #include "pch.h"
 #include <iostream>
+#include "Ciutada.h"
 using namespace std;
 using namespace MySql::Data::MySqlClient;
 using namespace System;
@@ -25,10 +26,11 @@ int main()
   String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
   MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
 
-  String^ sql = "SELECT * FROM ciutada WHERE nom_complet = 'Lidia'";
+  String^ sql = "SELECT * FROM ciutada WHERE nickname = 'eric14'";
   MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
   MySqlDataReader^ dataReader;
-  //Ciutada ciut; // suposem que tenim la classe Ciutada
+  Ciutada^ ciut; // suposem que tenim la classe Ciutada
+
   try {
 	  // obrim la connexió
 	  conn->Open();
@@ -40,7 +42,7 @@ int main()
 		  String^ nickname = dataReader->GetString(0);
 		  String^ nom_complet = dataReader->GetString(1);
 		  String^ correu = dataReader->GetString(3);
-		  //ciut = gcnew Ciutada(nickname, nom_complet, correu);
+		  ciut = gcnew Ciutada(nickname, nom_complet, correu);
 	  }
   }
   catch (Exception^ ex) {
@@ -49,7 +51,7 @@ int main()
   }
   finally {
 	  // si tot va bé es tanca la connexió
-	  MessageBox::Show("Connexio exitosa!");
+	  MessageBox::Show("Connexio DB exitosa!");
 	  conn->Close();
   }
 
