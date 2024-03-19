@@ -6,9 +6,8 @@ TxRegistraEsdeveniment::TxRegistraEsdeveniment() {
     inicialitza();
 }
 
-void TxRegistraEsdeveniment::ejecutar() {
+void TxRegistraEsdeveniment::executar() {
     //PassarelaUsuari u(nomU, sobrenomU, contrasenyaU, correuElectronicU, dataNaixementU);
     PassarelaEsdeveniment e;
     e.insereix();
-    
 }

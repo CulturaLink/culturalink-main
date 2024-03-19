@@ -13,7 +13,8 @@ void PassarelaEsdeveniment::insereix() {
         String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
         MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
 
-        String^ sql = "INSERT INTO amep14.esdeveniment (id_esdeveniment, id_entitat, preu_esdeveniment, ajuntament_esdeveniment, descripcio_esdeveniment, nom_esdeveniment) VALUES ('2', '2', '21', 'vilanovaSSSS', 'rfsesfSSSSSs', 'adeu');";
+        String^ sql = "INSERT INTO amep14.esdeveniment (id_esdeveniment, id_entitat, preu_esdeveniment, ajuntament_esdeveniment, descripcio_esdeveniment, nom_esdeveniment)"
+                      "VALUES('2', '2', '21', 'vilanovaSSSS', 'rfsesfSSSSSs', 'adeu');";
         MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
         MySqlDataReader^ dataReader;
         try {

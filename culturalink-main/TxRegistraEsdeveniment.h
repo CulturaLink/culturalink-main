@@ -18,5 +18,5 @@ private:
 public:
     TxRegistraEsdeveniment();
     //TxRegistraEsdeveniment(string nU, string sU, string cU, string ceU, string dnU);
-    void ejecutar();
+    void executar() override;
 };

@@ -10,12 +10,12 @@ namespace culturalink_main {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Resumen de MainForm
+	/// Resumen de RegistraEsdevenimentUI
 	/// </summary>
-	public ref class MainForm : public System::Windows::Forms::Form
+	public ref class RegistraEsdevenimentUI : public System::Windows::Forms::Form
 	{
 	public:
-		MainForm(void)
+		RegistraEsdevenimentUI(void)
 		{
 			InitializeComponent();
 			//
@@ -27,26 +27,24 @@ namespace culturalink_main {
 		/// <summary>
 		/// Limpiar los recursos que se estén usando.
 		/// </summary>
-		~MainForm()
+		~RegistraEsdevenimentUI()
 		{
 			if (components)
 			{
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::Panel^ panelDesktop;
+	protected:
 	private: System::Windows::Forms::Panel^ panelMenu;
+	private: System::Windows::Forms::Panel^ panel2;
+	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Panel^ panel1;
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	private: System::Windows::Forms::Panel^ panelTitleBar;
-	private: System::Windows::Forms::Panel^ panelDesktop;
-	private: System::Windows::Forms::NotifyIcon^ notifyIcon1;
-	private: System::Windows::Forms::Panel^ panel2;
-	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::NotifyIcon^ notifyIcon1;
 	private: System::ComponentModel::IContainer^ components;
-	protected:
-
-	protected:
 
 	private:
 		/// <summary>
@@ -62,13 +60,13 @@ namespace culturalink_main {
 		void InitializeComponent(void)
 		{
 			this->components = (gcnew System::ComponentModel::Container());
+			this->panelDesktop = (gcnew System::Windows::Forms::Panel());
 			this->panelMenu = (gcnew System::Windows::Forms::Panel());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->panelTitleBar = (gcnew System::Windows::Forms::Panel());
-			this->panelDesktop = (gcnew System::Windows::Forms::Panel());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->notifyIcon1 = (gcnew System::Windows::Forms::NotifyIcon(this->components));
 			this->panelMenu->SuspendLayout();
@@ -78,16 +76,25 @@ namespace culturalink_main {
 			this->panelTitleBar->SuspendLayout();
 			this->SuspendLayout();
 			// 
+			// panelDesktop
+			// 
+			this->panelDesktop->BackColor = System::Drawing::SystemColors::Menu;
+			this->panelDesktop->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->panelDesktop->Location = System::Drawing::Point(230, 60);
+			this->panelDesktop->Name = L"panelDesktop";
+			this->panelDesktop->Size = System::Drawing::Size(600, 368);
+			this->panelDesktop->TabIndex = 5;
+			// 
 			// panelMenu
 			// 
 			this->panelMenu->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->panelMenu->Controls->Add(this->panel2);
 			this->panelMenu->Controls->Add(this->panel1);
 			this->panelMenu->Dock = System::Windows::Forms::DockStyle::Left;
-			this->panelMenu->Location = System::Drawing::Point(0, 0);
+			this->panelMenu->Location = System::Drawing::Point(0, 60);
 			this->panelMenu->Name = L"panelMenu";
-			this->panelMenu->Size = System::Drawing::Size(230, 428);
-			this->panelMenu->TabIndex = 0;
+			this->panelMenu->Size = System::Drawing::Size(230, 368);
+			this->panelMenu->TabIndex = 3;
 			// 
 			// panel2
 			// 
@@ -130,19 +137,10 @@ namespace culturalink_main {
 			this->panelTitleBar->BackColor = System::Drawing::Color::White;
 			this->panelTitleBar->Controls->Add(this->label1);
 			this->panelTitleBar->Dock = System::Windows::Forms::DockStyle::Top;
-			this->panelTitleBar->Location = System::Drawing::Point(230, 0);
+			this->panelTitleBar->Location = System::Drawing::Point(0, 0);
 			this->panelTitleBar->Name = L"panelTitleBar";
-			this->panelTitleBar->Size = System::Drawing::Size(601, 60);
-			this->panelTitleBar->TabIndex = 1;
-			// 
-			// panelDesktop
-			// 
-			this->panelDesktop->BackColor = System::Drawing::SystemColors::Menu;
-			this->panelDesktop->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->panelDesktop->Location = System::Drawing::Point(230, 60);
-			this->panelDesktop->Name = L"panelDesktop";
-			this->panelDesktop->Size = System::Drawing::Size(601, 368);
-			this->panelDesktop->TabIndex = 2;
+			this->panelTitleBar->Size = System::Drawing::Size(830, 60);
+			this->panelTitleBar->TabIndex = 4;
 			// 
 			// label1
 			// 
@@ -152,26 +150,22 @@ namespace culturalink_main {
 			this->label1->Size = System::Drawing::Size(44, 16);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"label1";
-			this->label1->Click += gcnew System::EventHandler(this, &MainForm::label1_Click);
 			// 
 			// notifyIcon1
 			// 
 			this->notifyIcon1->Text = L"notifyIcon1";
 			this->notifyIcon1->Visible = true;
 			// 
-			// MainForm
+			// RegistraEsdevenimentUI
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(831, 428);
+			this->ClientSize = System::Drawing::Size(830, 428);
 			this->Controls->Add(this->panelDesktop);
-			this->Controls->Add(this->panelTitleBar);
 			this->Controls->Add(this->panelMenu);
-			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
-			this->Name = L"MainForm";
-			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
-			this->Text = L"MainForm";
-			this->Load += gcnew System::EventHandler(this, &MainForm::MainForm_Load);
+			this->Controls->Add(this->panelTitleBar);
+			this->Name = L"RegistraEsdevenimentUI";
+			this->Text = L"RegistraEsdevenimentUI";
 			this->panelMenu->ResumeLayout(false);
 			this->panel2->ResumeLayout(false);
 			this->panel1->ResumeLayout(false);
@@ -182,10 +176,5 @@ namespace culturalink_main {
 
 		}
 #pragma endregion
-	private: System::Void MainForm_Load(System::Object^ sender, System::EventArgs^ e) {
-	}
-	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
-		
-	}
-};
+	};
 }
