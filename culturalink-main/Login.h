@@ -34,6 +34,10 @@ namespace culturalink_main {
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::TextBox^ textBox1;
+	private: System::Windows::Forms::TextBox^ textBox2;
+	protected:
 
 	private:
 		/// <summary>
@@ -48,12 +52,51 @@ namespace culturalink_main {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->components = gcnew System::ComponentModel::Container();
-			this->Size = System::Drawing::Size(300,300);
-			this->Text = L"Login";
-			this->Padding = System::Windows::Forms::Padding(0);
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->SuspendLayout();
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(172, 180);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->TabIndex = 0;
+			this->button1->Text = L"button1";
+			this->button1->UseVisualStyleBackColor = true;
+			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(85, 128);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(100, 22);
+			this->textBox1->TabIndex = 1;
+			// 
+			// textBox2
+			// 
+			this->textBox2->Location = System::Drawing::Point(85, 68);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(100, 22);
+			this->textBox2->TabIndex = 2;
+			// 
+			// Login
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(282, 253);
+			this->Controls->Add(this->textBox2);
+			this->Controls->Add(this->textBox1);
+			this->Controls->Add(this->button1);
+			this->Name = L"Login";
+			this->Text = L"Login";
+			this->Load += gcnew System::EventHandler(this, &Login::Login_Load);
+			this->ResumeLayout(false);
+			this->PerformLayout();
+
 		}
 #pragma endregion
+	private: System::Void Login_Load(System::Object^ sender, System::EventArgs^ e) {
+	}
 	};
 }

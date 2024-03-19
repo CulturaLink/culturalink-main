@@ -1,4 +1,5 @@
 #include "pch.h"
+//#include "TxRegistraEsdeveniment.h"
 
 using namespace System;
 
@@ -17,5 +18,8 @@ int main()
   Application::EnableVisualStyles();
   Application::SetCompatibleTextRenderingDefault(false);
   Application::Run(gcnew culturalink_main::MainForm());
+
+  //TxRegistraEsdeveniment TxRegEsdv();
+
   return 0;
 }
