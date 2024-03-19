@@ -1,9 +1,13 @@
 #pragma once
-
 #include <iostream>
 #include <string>
-// Afegir include totes les cercadores.
-#include "Sistema.cpp"
+//#include "CercadoraUsuari.cpp"
+//#include "CercadoraCompres.cpp"
+//#include "CercadoraElemCompra.cpp"
+//#include "CercadoraConte.cpp"
+//#include "CercadoraVideojocs.cpp"
+//#include "CercadoraPaquetVideojoc.cpp"
+//#include "Videoconsola.cpp"
 
 using namespace std;
 
@@ -14,10 +18,13 @@ public:
     Transaccio();
     virtual void executar() = 0;
     ~Transaccio();
-
 protected:
-
-    // Afegir declaracio Cercadores.
+   /* CercadoraUsuari cercUsu;
+    CercadoraCompres cercComp;
+    CercadoraElemCompra cercElemComp;
+    CercadoraVideojocs cercVid;
+    CercadoraConte cercConte;
+    CercadoraPaquetVideojoc cercPaquet;*/
     void inicialitza();
 
 };

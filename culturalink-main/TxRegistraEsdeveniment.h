@@ -1,9 +1,12 @@
 #pragma once
 #include "Transaccio.h"
 #include "PassarelaEsdeveniment.h"
-#include <string>
+//#include <string>
 
 using namespace std;
+using namespace MySql::Data::MySqlClient;
+using namespace System;
+using namespace System::Windows::Forms;
 
 ref class TxRegistraEsdeveniment : public Transaccio {
 private:

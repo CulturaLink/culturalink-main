@@ -22,7 +22,10 @@ public:
 	void iniciaSessioCiutada(PassarelaCiutada u);
 	void iniciaSessioEntitat(PassarelaEntitat u);
 	void tancaSessio();*/
-	void refresca();
+	void refresca()
+	{
+
+	}
 	static Sistema& getInstance() {
 		static Sistema instance;
 		instance.refresca();

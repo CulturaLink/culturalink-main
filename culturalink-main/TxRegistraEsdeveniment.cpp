@@ -1,6 +1,6 @@
 #pragma once
-#include "TxRegistraEsdeveniment.h"
 #include "pch.h"
+#include "TxRegistraEsdeveniment.h"
 
 TxRegistraEsdeveniment::TxRegistraEsdeveniment() {
     inicialitza();

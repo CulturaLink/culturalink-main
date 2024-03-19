@@ -1,7 +1,6 @@
 #pragma once
-#include "Transaccio.h"
 #include "pch.h"
-
+#include "Transaccio.h"
 
 Transaccio::Transaccio() {
     inicialitza();
