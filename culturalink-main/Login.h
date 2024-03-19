@@ -34,6 +34,7 @@ namespace culturalink_main {
 				delete components;
 			}
 		}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 =======
@@ -65,6 +66,8 @@ namespace culturalink_main {
 
 
 	protected:
+=======
+>>>>>>> parent of 1ef6ba7 (RegAjuntament1)
 
 	private:
 		/// <summary>
@@ -79,6 +82,7 @@ namespace culturalink_main {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 =======
@@ -322,4 +326,14 @@ private: System::Void textBox2_TextChanged(System::Object^ sender, System::Event
 	}
 >>>>>>> Stashed changes
 };
+=======
+			this->components = gcnew System::ComponentModel::Container();
+			this->Size = System::Drawing::Size(300,300);
+			this->Text = L"Login";
+			this->Padding = System::Windows::Forms::Padding(0);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+		}
+#pragma endregion
+	};
+>>>>>>> parent of 1ef6ba7 (RegAjuntament1)
 }

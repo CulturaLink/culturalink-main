@@ -136,6 +136,7 @@
     <ClInclude Include="MainForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="PassarelaAjuntament.h" />
 <<<<<<< Updated upstream
 =======
@@ -143,18 +144,17 @@
     <ClInclude Include="PassarelaEntitat.h" />
     <ClInclude Include="PassarelaEsdeveniment.h" />
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 1ef6ba7 (RegAjuntament1)
     <ClInclude Include="pch.h" />
-    <ClInclude Include="RegistrarAjuntament.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
     <ClInclude Include="Resource.h" />
-    <ClInclude Include="TxRegistraAjuntament.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="culturalinkmain.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="MainForm.cpp" />
+<<<<<<< HEAD
     <ClCompile Include="PassarelaAjuntament.cpp" />
 <<<<<<< Updated upstream
 =======
@@ -162,15 +162,14 @@
     <ClCompile Include="PassarelaEntitat.cpp" />
     <ClCompile Include="PassarelaEsdeveniment.cpp" />
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 1ef6ba7 (RegAjuntament1)
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="RegistrarAjuntament.cpp" />
-    <ClCompile Include="Transaccio.cpp" />
-    <ClCompile Include="TxRegistraAjuntament.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico" />
@@ -183,12 +182,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.h</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.h</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     <EmbeddedResource Include="RegistrarAjuntament.resx">
       <DependentUpon>RegistrarAjuntament.h</DependentUpon>
@@ -201,6 +198,8 @@
   <ItemGroup>
     <Text Include="config.txt" />
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 1ef6ba7 (RegAjuntament1)
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
