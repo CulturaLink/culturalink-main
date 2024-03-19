@@ -189,9 +189,18 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.h</DependentUpon>
     </EmbeddedResource>
+<<<<<<< Updated upstream
     <EmbeddedResource Include="RegistrarAjuntament.resx">
       <DependentUpon>RegistrarAjuntament.h</DependentUpon>
     </EmbeddedResource>
+=======
+    <EmbeddedResource Include="RegistraEsdevenimentUI1.resx">
+      <DependentUpon>RegistraEsdevenimentUI1.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="config.txt" />
+>>>>>>> Stashed changes
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
