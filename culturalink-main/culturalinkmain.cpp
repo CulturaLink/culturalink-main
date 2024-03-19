@@ -9,6 +9,7 @@ using namespace System;
 //    return 0;
 // }
 
+#include "Login.h"
 #include "MainForm.h"
 
 using namespace System::Windows::Forms;
@@ -20,8 +21,8 @@ int main()
   Application::SetCompatibleTextRenderingDefault(false);
   
 
-  TxRegistraEsdeveniment TxRegEsdv;
-  TxRegEsdv.executar();
+  /*TxRegistraEsdeveniment TxRegEsdv;
+  TxRegEsdv.executar();*/
 
   Application::Run(gcnew culturalink_main::MainForm());
 
