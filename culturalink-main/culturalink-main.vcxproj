@@ -137,6 +137,12 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="PassarelaAjuntament.h" />
+<<<<<<< Updated upstream
+=======
+    <ClInclude Include="PassarelaCiutada.h" />
+    <ClInclude Include="PassarelaEntitat.h" />
+    <ClInclude Include="PassarelaEsdeveniment.h" />
+>>>>>>> Stashed changes
     <ClInclude Include="pch.h" />
     <ClInclude Include="RegistrarAjuntament.h">
       <FileType>CppForm</FileType>
@@ -150,6 +156,12 @@
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="MainForm.cpp" />
     <ClCompile Include="PassarelaAjuntament.cpp" />
+<<<<<<< Updated upstream
+=======
+    <ClCompile Include="PassarelaCiutada.cpp" />
+    <ClCompile Include="PassarelaEntitat.cpp" />
+    <ClCompile Include="PassarelaEsdeveniment.cpp" />
+>>>>>>> Stashed changes
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

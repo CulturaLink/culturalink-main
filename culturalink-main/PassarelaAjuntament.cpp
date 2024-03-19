@@ -1,4 +1,5 @@
 #pragma once
+<<<<<<< Updated upstream
 #include <iostream>
 #include <string>
 #include <pqxx/pqxx>
@@ -187,3 +188,7 @@ void PassarelaAjuntament::posaDataNaixement(string neixU) {
     dataNaixement = neixU;
 
 }
+=======
+#include "pch.h"
+#include "PassarelaAjuntament.h"
+>>>>>>> Stashed changes
