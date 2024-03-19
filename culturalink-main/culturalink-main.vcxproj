@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -130,51 +130,51 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="config.h" />
     <ClInclude Include="Login.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="MainForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="PassarelaAjuntament.h" />
-<<<<<<< Updated upstream
-=======
     <ClInclude Include="PassarelaCiutada.h" />
     <ClInclude Include="PassarelaEntitat.h" />
     <ClInclude Include="PassarelaEsdeveniment.h" />
->>>>>>> Stashed changes
-=======
->>>>>>> parent of 1ef6ba7 (RegAjuntament1)
     <ClInclude Include="pch.h" />
+    <ClInclude Include="RegistraEsdevenimentUI1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="Sistema.h" />
+    <ClInclude Include="Transaccio.h" />
+    <ClInclude Include="TxRegistraEsdeveniment.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="culturalinkmain.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="MainForm.cpp" />
-<<<<<<< HEAD
-    <ClCompile Include="PassarelaAjuntament.cpp" />
-<<<<<<< Updated upstream
-=======
     <ClCompile Include="PassarelaCiutada.cpp" />
     <ClCompile Include="PassarelaEntitat.cpp" />
     <ClCompile Include="PassarelaEsdeveniment.cpp" />
->>>>>>> Stashed changes
-=======
->>>>>>> parent of 1ef6ba7 (RegAjuntament1)
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="RegistraEsdevenimentUI1.cpp" />
+    <ClCompile Include="Sistema.cpp" />
+    <ClCompile Include="Transaccio.cpp" />
+    <ClCompile Include="TxRegistraEsdeveniment.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector NET 8.3.0\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -182,24 +182,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.h</DependentUpon>
-    </EmbeddedResource>
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    <EmbeddedResource Include="RegistrarAjuntament.resx">
-      <DependentUpon>RegistrarAjuntament.h</DependentUpon>
-    </EmbeddedResource>
-=======
-    <EmbeddedResource Include="RegistraEsdevenimentUI1.resx">
-      <DependentUpon>RegistraEsdevenimentUI1.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Text Include="config.txt" />
->>>>>>> Stashed changes
-=======
->>>>>>> parent of 1ef6ba7 (RegAjuntament1)
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

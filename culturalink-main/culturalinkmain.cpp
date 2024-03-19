@@ -1,4 +1,6 @@
 #include "pch.h"
+#include "Transaccio.h"
+#include "TxRegistraEsdeveniment.h"
 
 using namespace System;
 
@@ -7,7 +9,6 @@ using namespace System;
 //    return 0;
 // }
 
-#include "Login.h"
 #include "MainForm.h"
 
 using namespace System::Windows::Forms;
@@ -17,6 +18,12 @@ int main()
 {
   Application::EnableVisualStyles();
   Application::SetCompatibleTextRenderingDefault(false);
+  
+
+  TxRegistraEsdeveniment TxRegEsdv;
+  TxRegEsdv.executar();
+
   Application::Run(gcnew culturalink_main::MainForm());
+
   return 0;
 }

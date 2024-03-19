@@ -32,21 +32,27 @@
     <ClInclude Include="Login.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="RegistrarAjuntament.h">
+    <ClInclude Include="PassarelaEsdeveniment.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TxRegistraAjuntament.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PassarelaAjuntament.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PassarelaAjuntament.h">
+    <ClInclude Include="config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-=======
->>>>>>> parent of 1ef6ba7 (RegAjuntament1)
+    <ClInclude Include="TxRegistraEsdeveniment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Transaccio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sistema.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PassarelaCiutada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PassarelaEntitat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -64,28 +70,33 @@
     <ClCompile Include="Login.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-<<<<<<< HEAD
-    <ClCompile Include="RegistrarAjuntament.cpp">
+    <ClCompile Include="PassarelaEsdeveniment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxRegistraEsdeveniment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Transaccio.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TxRegistraAjuntament.cpp">
+    <ClCompile Include="Sistema.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PassarelaAjuntament.cpp">
+    <ClCompile Include="PassarelaEntitat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PassarelaAjuntament.cpp">
+    <ClCompile Include="PassarelaCiutada.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-=======
->>>>>>> parent of 1ef6ba7 (RegAjuntament1)
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico">
       <Filter>Resource Files</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="config.txt">
+      <Filter>Header Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
