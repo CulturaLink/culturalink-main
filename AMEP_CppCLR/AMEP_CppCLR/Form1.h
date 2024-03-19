@@ -1,4 +1,6 @@
 #pragma once
+#include "Ciutada.h";
+#include "Form2.h"
 
 namespace CppCLRWinFormsProject {
 
@@ -8,6 +10,8 @@ namespace CppCLRWinFormsProject {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace std;
+	using namespace AMEP_CppCLR;
 
 	/// <summary>
 	/// Summary for Form1
@@ -40,11 +44,16 @@ namespace CppCLRWinFormsProject {
 
 	private: System::Windows::Forms::ToolStripMenuItem^ holaToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ opcio2ToolStripMenuItem;
-	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ btnEnter;
+
+
+
 	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::TextBox^ textBox1;
+	private: System::Windows::Forms::TextBox^ tbNick;
+
 	private: System::Windows::Forms::Label^ label2;
-	private: System::Windows::Forms::TextBox^ textBox2;
+	private: System::Windows::Forms::TextBox^ tbContrasenya;
+
 	private: System::Windows::Forms::ToolStripMenuItem^ ajuntamentToolStripMenuItem;
 
 	private:
@@ -64,12 +73,12 @@ namespace CppCLRWinFormsProject {
 			this->menu1ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->holaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->opcio2ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->ajuntamentToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->btnEnter = (gcnew System::Windows::Forms::Button());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->tbNick = (gcnew System::Windows::Forms::TextBox());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->tbContrasenya = (gcnew System::Windows::Forms::TextBox());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -95,24 +104,31 @@ namespace CppCLRWinFormsProject {
 			// holaToolStripMenuItem
 			// 
 			this->holaToolStripMenuItem->Name = L"holaToolStripMenuItem";
-			this->holaToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->holaToolStripMenuItem->Size = System::Drawing::Size(137, 22);
 			this->holaToolStripMenuItem->Text = L"Ciutada";
 			this->holaToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::holaToolStripMenuItem_Click);
 			// 
 			// opcio2ToolStripMenuItem
 			// 
 			this->opcio2ToolStripMenuItem->Name = L"opcio2ToolStripMenuItem";
-			this->opcio2ToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->opcio2ToolStripMenuItem->Size = System::Drawing::Size(137, 22);
 			this->opcio2ToolStripMenuItem->Text = L"Entitat";
 			// 
-			// button1
+			// ajuntamentToolStripMenuItem
 			// 
-			this->button1->Location = System::Drawing::Point(197, 226);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(75, 23);
-			this->button1->TabIndex = 1;
-			this->button1->Text = L"Enter";
-			this->button1->UseVisualStyleBackColor = true;
+			this->ajuntamentToolStripMenuItem->Name = L"ajuntamentToolStripMenuItem";
+			this->ajuntamentToolStripMenuItem->Size = System::Drawing::Size(137, 22);
+			this->ajuntamentToolStripMenuItem->Text = L"Ajuntament";
+			// 
+			// btnEnter
+			// 
+			this->btnEnter->Location = System::Drawing::Point(197, 226);
+			this->btnEnter->Name = L"btnEnter";
+			this->btnEnter->Size = System::Drawing::Size(75, 23);
+			this->btnEnter->TabIndex = 1;
+			this->btnEnter->Text = L"Enter";
+			this->btnEnter->UseVisualStyleBackColor = true;
+			this->btnEnter->Click += gcnew System::EventHandler(this, &Form1::button1_Click);
 			// 
 			// label1
 			// 
@@ -124,13 +140,13 @@ namespace CppCLRWinFormsProject {
 			this->label1->Text = L"Nickname";
 			this->label1->Click += gcnew System::EventHandler(this, &Form1::label1_Click);
 			// 
-			// textBox1
+			// tbNick
 			// 
-			this->textBox1->Location = System::Drawing::Point(12, 43);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(100, 20);
-			this->textBox1->TabIndex = 3;
-			this->textBox1->TextChanged += gcnew System::EventHandler(this, &Form1::textBox1_TextChanged);
+			this->tbNick->Location = System::Drawing::Point(12, 43);
+			this->tbNick->Name = L"tbNick";
+			this->tbNick->Size = System::Drawing::Size(100, 20);
+			this->tbNick->TabIndex = 3;
+			this->tbNick->TextChanged += gcnew System::EventHandler(this, &Form1::textBox1_TextChanged);
 			// 
 			// label2
 			// 
@@ -141,29 +157,24 @@ namespace CppCLRWinFormsProject {
 			this->label2->TabIndex = 4;
 			this->label2->Text = L"Contrasenya";
 			// 
-			// textBox2
+			// tbContrasenya
 			// 
-			this->textBox2->Location = System::Drawing::Point(12, 97);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(100, 20);
-			this->textBox2->TabIndex = 5;
-			// 
-			// ajuntamentToolStripMenuItem
-			// 
-			this->ajuntamentToolStripMenuItem->Name = L"ajuntamentToolStripMenuItem";
-			this->ajuntamentToolStripMenuItem->Size = System::Drawing::Size(180, 22);
-			this->ajuntamentToolStripMenuItem->Text = L"Ajuntament";
+			this->tbContrasenya->Location = System::Drawing::Point(12, 97);
+			this->tbContrasenya->Name = L"tbContrasenya";
+			this->tbContrasenya->Size = System::Drawing::Size(100, 20);
+			this->tbContrasenya->TabIndex = 5;
 			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::Color::Silver;
 			this->ClientSize = System::Drawing::Size(284, 261);
-			this->Controls->Add(this->textBox2);
+			this->Controls->Add(this->tbContrasenya);
 			this->Controls->Add(this->label2);
-			this->Controls->Add(this->textBox1);
+			this->Controls->Add(this->tbNick);
 			this->Controls->Add(this->label1);
-			this->Controls->Add(this->button1);
+			this->Controls->Add(this->btnEnter);
 			this->Controls->Add(this->menuStrip1);
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"Form1";
@@ -182,6 +193,30 @@ namespace CppCLRWinFormsProject {
 private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void holaToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	String^ nick = this->tbNick->Text;
+	String^ contra = this->tbContrasenya->Text;
+	if (nick->Length == 0) {
+		MessageBox::Show("Nickname buit. Introdueixi el seu nickname siusplau.", "Nickname buit");
+		return;
+	}
+	Ciutada logged(nick);
+	if (logged.getContrasenya() != contra) {
+		//MessageBox::Show("DB: "+ logged.getContrasenya()+", ENTRAT: "+contra, "Debuh");
+		MessageBox::Show("Nickname o contrasenya incorrectes, siusplau torna-ho a intentar.", "Nickname o contrasenya incorrectes");
+	}
+	else {
+		MessageBox::Show("Nickname i contrasenya correctes!", "Login");
+		// Ocultar el formulario actual
+		this->Hide();
+
+		// Crear una instancia del nuevo formulario
+		Form2^ form2 = gcnew Form2();
+
+		// Mostrar el nuevo formulario
+		form2->Show();
+	}
 }
 };
 }

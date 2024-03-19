@@ -1,3 +1,12 @@
-﻿  CppCLR_WinFormsProject.cpp
+﻿  Ciutada.cpp
+C:\Users\Ferran\Documents\GitHub\culturalink-main\AMEP_CppCLR\AMEP_CppCLR\Form1.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file '/Ciutada.cpp')
+  
+  CppCLR_WinFormsProject.cpp
+C:\Users\Ferran\Documents\GitHub\culturalink-main\AMEP_CppCLR\AMEP_CppCLR\Form1.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file '/CppCLR_WinFormsProject.cpp')
+  
+  Form2.cpp
+  Generating Code...
   AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  AMEP_CppCLR.vcxproj -> C:\Users\Ferran\Documents\GitHub\culturalink-backend\AMEP_CppCLR\x64\Debug\AMEP_CppCLR.exe
+  AMEP_CppCLR.vcxproj -> C:\Users\Ferran\Documents\GitHub\culturalink-main\AMEP_CppCLR\x64\Debug\AMEP_CppCLR.exe
