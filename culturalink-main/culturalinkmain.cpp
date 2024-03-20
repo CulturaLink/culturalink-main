@@ -19,10 +19,6 @@ int main()
 {
   Application::EnableVisualStyles();
   Application::SetCompatibleTextRenderingDefault(false);
-  
-
-  /*TxRegistraEsdeveniment TxRegEsdv;
-  TxRegEsdv.executar();*/
 
   Application::Run(gcnew culturalink_main::MainForm());
 

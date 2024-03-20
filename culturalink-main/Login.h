@@ -247,8 +247,10 @@ namespace culturalink_main {
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->TBpwd);
 			this->Controls->Add(this->TBUsr);
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
 			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"Login";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Login";
 			this->Load += gcnew System::EventHandler(this, &Login::Login_Load);
 			this->groupBox1->ResumeLayout(false);

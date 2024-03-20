@@ -1,26 +1,25 @@
 #pragma once
-#include "pch.h"
+#include <iostream>
+#include <string>
+#include "config.h"
+#include <Windows.h>
+
+using namespace std;
+using namespace MySql::Data::MySqlClient;
+using namespace System;
+using namespace System::Windows::Forms;
 
 ref class PassarelaAjuntament
 {
-    /*PassarelaAjuntament();
-    PassarelaAjuntament(string nomA, string clauA, string telefonA, string poblacioA, string correuA);
-    void insereix();
-    void modifica();
-    void esborra();
-
-    string obteNom();
-    string obteClau();
-    string obteTelefon();
-    string obtePoblacio();
-    string obteCorreu();
-    void posaNom(string nomA);
-    void posaClau(string clauA);
-    void posaTelefon(string telefonA);
-    void posaPoblacio(string pobA);
-    void posaCorreu(string correuA)
+public:
+    //PassarelaAjuntament();
+    //void insereix();
 
 private:
-    string nom, sobrenom, contrasenya, correuElectronic, dataNaixement;*/
+    String^ nom;
+    String^ clau;
+    int cp;
+    int telefon;
+    String^ correu;
 };
 
