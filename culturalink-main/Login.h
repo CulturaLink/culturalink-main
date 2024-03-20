@@ -1,4 +1,5 @@
 #pragma once
+#include "Ciutada.h"
 
 namespace culturalink_main {
 
@@ -34,19 +35,29 @@ namespace culturalink_main {
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::TextBox^ TBUsr;
+	private: System::Windows::Forms::TextBox^ TBpwd;
 
-	private: System::Windows::Forms::TextBox^ textBox1;
-	private: System::Windows::Forms::TextBox^ textBox2;
+	protected:
+
+
+
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label3;
-	private: System::Windows::Forms::Button^ button2;
-	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ buttonOK;
+
+	private: System::Windows::Forms::Button^ cancel;
+
 	private: System::Windows::Forms::GroupBox^ groupBox1;
-	private: System::Windows::Forms::RadioButton^ radioButton3;
-	private: System::Windows::Forms::RadioButton^ radioButton2;
-	private: System::Windows::Forms::RadioButton^ radioButton1;
-	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::RadioButton^ RBajt;
+
+	private: System::Windows::Forms::RadioButton^ RBent;
+
+	private: System::Windows::Forms::RadioButton^ RBcit;
+
+	private: System::Windows::Forms::Button^ registre;
+
 	protected:
 
 	private:
@@ -62,36 +73,36 @@ namespace culturalink_main {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->TBUsr = (gcnew System::Windows::Forms::TextBox());
+			this->TBpwd = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->buttonOK = (gcnew System::Windows::Forms::Button());
+			this->cancel = (gcnew System::Windows::Forms::Button());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->radioButton3 = (gcnew System::Windows::Forms::RadioButton());
-			this->radioButton2 = (gcnew System::Windows::Forms::RadioButton());
-			this->radioButton1 = (gcnew System::Windows::Forms::RadioButton());
-			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->RBajt = (gcnew System::Windows::Forms::RadioButton());
+			this->RBent = (gcnew System::Windows::Forms::RadioButton());
+			this->RBcit = (gcnew System::Windows::Forms::RadioButton());
+			this->registre = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
 			// 
-			// textBox1
+			// TBUsr
 			// 
-			this->textBox1->Location = System::Drawing::Point(84, 85);
-			this->textBox1->Margin = System::Windows::Forms::Padding(2);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(355, 20);
-			this->textBox1->TabIndex = 1;
+			this->TBUsr->Location = System::Drawing::Point(84, 85);
+			this->TBUsr->Margin = System::Windows::Forms::Padding(2);
+			this->TBUsr->Name = L"TBUsr";
+			this->TBUsr->Size = System::Drawing::Size(355, 20);
+			this->TBUsr->TabIndex = 1;
 			// 
-			// textBox2
+			// TBpwd
 			// 
-			this->textBox2->Location = System::Drawing::Point(136, 129);
-			this->textBox2->Margin = System::Windows::Forms::Padding(2);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(303, 20);
-			this->textBox2->TabIndex = 2;
+			this->TBpwd->Location = System::Drawing::Point(136, 129);
+			this->TBpwd->Margin = System::Windows::Forms::Padding(2);
+			this->TBpwd->Name = L"TBpwd";
+			this->TBpwd->Size = System::Drawing::Size(303, 20);
+			this->TBpwd->TabIndex = 2;
 			// 
 			// label1
 			// 
@@ -128,35 +139,37 @@ namespace culturalink_main {
 			this->label3->TabIndex = 5;
 			this->label3->Text = L"Contrasenya";
 			// 
-			// button2
+			// buttonOK
 			// 
-			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->buttonOK->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button2->Location = System::Drawing::Point(214, 170);
-			this->button2->Margin = System::Windows::Forms::Padding(2);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(225, 41);
-			this->button2->TabIndex = 6;
-			this->button2->Text = L"Inicia Sesió";
-			this->button2->UseVisualStyleBackColor = true;
+			this->buttonOK->Location = System::Drawing::Point(214, 170);
+			this->buttonOK->Margin = System::Windows::Forms::Padding(2);
+			this->buttonOK->Name = L"buttonOK";
+			this->buttonOK->Size = System::Drawing::Size(225, 41);
+			this->buttonOK->TabIndex = 6;
+			this->buttonOK->Text = L"Inicia Sesió";
+			this->buttonOK->UseVisualStyleBackColor = true;
+			this->buttonOK->Click += gcnew System::EventHandler(this, &Login::buttonOK_Click);
 			// 
-			// button1
+			// cancel
 			// 
-			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->cancel->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button1->Location = System::Drawing::Point(334, 216);
-			this->button1->Margin = System::Windows::Forms::Padding(2);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(105, 41);
-			this->button1->TabIndex = 7;
-			this->button1->Text = L"Cancela";
-			this->button1->UseVisualStyleBackColor = true;
+			this->cancel->Location = System::Drawing::Point(334, 216);
+			this->cancel->Margin = System::Windows::Forms::Padding(2);
+			this->cancel->Name = L"cancel";
+			this->cancel->Size = System::Drawing::Size(105, 41);
+			this->cancel->TabIndex = 7;
+			this->cancel->Text = L"Cancela";
+			this->cancel->UseVisualStyleBackColor = true;
+			this->cancel->Click += gcnew System::EventHandler(this, &Login::button1_Click);
 			// 
 			// groupBox1
 			// 
-			this->groupBox1->Controls->Add(this->radioButton3);
-			this->groupBox1->Controls->Add(this->radioButton2);
-			this->groupBox1->Controls->Add(this->radioButton1);
+			this->groupBox1->Controls->Add(this->RBajt);
+			this->groupBox1->Controls->Add(this->RBent);
+			this->groupBox1->Controls->Add(this->RBcit);
 			this->groupBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->groupBox1->Location = System::Drawing::Point(20, 162);
@@ -166,74 +179,74 @@ namespace culturalink_main {
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Seleccionar tipus d\'usuari";
 			// 
-			// radioButton3
+			// RBajt
 			// 
-			this->radioButton3->AutoSize = true;
-			this->radioButton3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->RBajt->AutoSize = true;
+			this->RBajt->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->radioButton3->Location = System::Drawing::Point(6, 65);
-			this->radioButton3->Name = L"radioButton3";
-			this->radioButton3->Size = System::Drawing::Size(99, 22);
-			this->radioButton3->TabIndex = 2;
-			this->radioButton3->TabStop = true;
-			this->radioButton3->Text = L"Ajuntament";
-			this->radioButton3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->radioButton3->UseVisualStyleBackColor = true;
+			this->RBajt->Location = System::Drawing::Point(6, 65);
+			this->RBajt->Name = L"RBajt";
+			this->RBajt->Size = System::Drawing::Size(99, 22);
+			this->RBajt->TabIndex = 2;
+			this->RBajt->TabStop = true;
+			this->RBajt->Text = L"Ajuntament";
+			this->RBajt->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->RBajt->UseVisualStyleBackColor = true;
 			// 
-			// radioButton2
+			// RBent
 			// 
-			this->radioButton2->AutoSize = true;
-			this->radioButton2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->RBent->AutoSize = true;
+			this->RBent->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->radioButton2->Location = System::Drawing::Point(6, 42);
-			this->radioButton2->Name = L"radioButton2";
-			this->radioButton2->Size = System::Drawing::Size(67, 22);
-			this->radioButton2->TabIndex = 1;
-			this->radioButton2->TabStop = true;
-			this->radioButton2->Text = L"Entitat";
-			this->radioButton2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->radioButton2->UseVisualStyleBackColor = true;
+			this->RBent->Location = System::Drawing::Point(6, 42);
+			this->RBent->Name = L"RBent";
+			this->RBent->Size = System::Drawing::Size(67, 22);
+			this->RBent->TabIndex = 1;
+			this->RBent->TabStop = true;
+			this->RBent->Text = L"Entitat";
+			this->RBent->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->RBent->UseVisualStyleBackColor = true;
 			// 
-			// radioButton1
+			// RBcit
 			// 
-			this->radioButton1->AutoSize = true;
-			this->radioButton1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->RBcit->AutoSize = true;
+			this->RBcit->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->radioButton1->Location = System::Drawing::Point(6, 19);
-			this->radioButton1->Name = L"radioButton1";
-			this->radioButton1->Size = System::Drawing::Size(76, 22);
-			this->radioButton1->TabIndex = 0;
-			this->radioButton1->TabStop = true;
-			this->radioButton1->Text = L"Ciutada";
-			this->radioButton1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->radioButton1->UseVisualStyleBackColor = true;
+			this->RBcit->Location = System::Drawing::Point(6, 19);
+			this->RBcit->Name = L"RBcit";
+			this->RBcit->Size = System::Drawing::Size(76, 22);
+			this->RBcit->TabIndex = 0;
+			this->RBcit->TabStop = true;
+			this->RBcit->Text = L"Ciutada";
+			this->RBcit->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->RBcit->UseVisualStyleBackColor = true;
 			// 
-			// button3
+			// registre
 			// 
-			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->registre->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button3->Location = System::Drawing::Point(214, 216);
-			this->button3->Margin = System::Windows::Forms::Padding(2);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(116, 41);
-			this->button3->TabIndex = 9;
-			this->button3->Text = L"Registra\'t";
-			this->button3->UseVisualStyleBackColor = true;
+			this->registre->Location = System::Drawing::Point(214, 216);
+			this->registre->Margin = System::Windows::Forms::Padding(2);
+			this->registre->Name = L"registre";
+			this->registre->Size = System::Drawing::Size(116, 41);
+			this->registre->TabIndex = 9;
+			this->registre->Text = L"Registra\'t";
+			this->registre->UseVisualStyleBackColor = true;
 			// 
 			// Login
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(481, 294);
-			this->Controls->Add(this->button3);
+			this->Controls->Add(this->registre);
 			this->Controls->Add(this->groupBox1);
-			this->Controls->Add(this->button1);
-			this->Controls->Add(this->button2);
+			this->Controls->Add(this->cancel);
+			this->Controls->Add(this->buttonOK);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
-			this->Controls->Add(this->textBox2);
-			this->Controls->Add(this->textBox1);
+			this->Controls->Add(this->TBpwd);
+			this->Controls->Add(this->TBUsr);
 			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"Login";
 			this->Text = L"Login";
@@ -247,5 +260,28 @@ namespace culturalink_main {
 #pragma endregion
 	private: System::Void Login_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
-	};
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->Close();
+	}
+private: System::Void buttonOK_Click(System::Object^ sender, System::EventArgs^ e) {
+	String^ nick = this->TBUsr->Text;
+	String^ contra = this->TBpwd->Text;
+	if (nick->Length == 0) {
+		MessageBox::Show("Nickname buit. Introdueixi el seu nickname siusplau.", "Nickname buit");
+		return;
+	}
+	if (RBcit->Checked) {
+		Ciutada logged(nick);
+		if (logged.getContrasenya() != contra) {
+			//MessageBox::Show("DB: "+ logged.getContrasenya()+", ENTRAT: "+contra, "Debuh");
+			MessageBox::Show("Nickname o contrasenya incorrectes, siusplau torna-ho a intentar.", "Nickname o contrasenya incorrectes");
+		}
+		else {
+			MessageBox::Show("Nickname i contrasenya correctes!", "Login");
+		}
+	}
+	else if (RBajt->Checked){}
+	else if (RBent->Checked){}
+}
+};
 }
