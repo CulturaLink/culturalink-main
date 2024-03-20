@@ -9,6 +9,18 @@ using namespace System::Windows::Forms;
 //	_correu = "";
 //}
 
+PassarelaCiutada::PassarelaCiutada(const PassarelaCiutada% p1) {
+	_nickname = p1._nickname;
+	_nom_complet = p1._nom_complet;
+	_contrasenya = p1._contrasenya;
+	_correu = p1._correu;
+	_data_naix = p1._data_naix;
+	_diners = p1._diners;
+	_punts = p1._punts;
+}
+
+
+
 //Login
 PassarelaCiutada::PassarelaCiutada(String^ nickname) {
 	//DATABASE
