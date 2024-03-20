@@ -16,11 +16,18 @@ private:
 	int^ _punts;
 
 public:
+	PassarelaCiutada();
 	PassarelaCiutada(const PassarelaCiutada% p1);
+	PassarelaCiutada% operator=(const PassarelaCiutada% other);
 	//Ciutada();
 	PassarelaCiutada(String^ nickname);//Omple ciutada segons nick
 	PassarelaCiutada(String^ nickname, String^ nom_complet, String^ correu);
 	String^ getContrasenya();
-
+	String^ getNickname();
+	String^ getNomComplet() { return _nom_complet; }
+	String^ getCorreu() { return _correu; } 
+	String^ getDataNaix() { return _data_naix; } 
+	int^ getDiners() { return _diners; }
+	int^ getPunts() { return _punts; } 
 };
 

@@ -1,5 +1,7 @@
 #pragma once
 #include "Login.h"
+#include "PerfilCiutada.h"
+
 
 namespace culturalink_main {
 
@@ -50,6 +52,7 @@ namespace culturalink_main {
 
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ btnPerfil;
 
 
 
@@ -76,10 +79,11 @@ namespace culturalink_main {
 			this->notifyIcon1 = (gcnew System::Windows::Forms::NotifyIcon(this->components));
 			this->panelDesktop = (gcnew System::Windows::Forms::Panel());
 			this->panelMenu = (gcnew System::Windows::Forms::Panel());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->panelTitleBar = (gcnew System::Windows::Forms::Panel());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
-			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->btnPerfil = (gcnew System::Windows::Forms::Button());
 			this->panelMenu->SuspendLayout();
 			this->panelTitleBar->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
@@ -106,6 +110,7 @@ namespace culturalink_main {
 			// panelMenu
 			// 
 			this->panelMenu->BackColor = System::Drawing::SystemColors::ActiveCaption;
+			this->panelMenu->Controls->Add(this->btnPerfil);
 			this->panelMenu->Controls->Add(this->button1);
 			this->panelMenu->Dock = System::Windows::Forms::DockStyle::Left;
 			this->panelMenu->Location = System::Drawing::Point(0, 49);
@@ -113,6 +118,24 @@ namespace culturalink_main {
 			this->panelMenu->Name = L"panelMenu";
 			this->panelMenu->Size = System::Drawing::Size(127, 299);
 			this->panelMenu->TabIndex = 0;
+			// 
+			// button1
+			// 
+			this->button1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->button1->BackColor = System::Drawing::Color::PaleTurquoise;
+			this->button1->FlatAppearance->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(255)));
+			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button1.Image")));
+			this->button1->Location = System::Drawing::Point(12, 255);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(98, 32);
+			this->button1->TabIndex = 0;
+			this->button1->Text = L"Settings";
+			this->button1->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
+			this->button1->TextImageRelation = System::Windows::Forms::TextImageRelation::ImageBeforeText;
+			this->button1->UseVisualStyleBackColor = false;
 			// 
 			// panelTitleBar
 			// 
@@ -149,23 +172,15 @@ namespace culturalink_main {
 			this->pictureBox2->TabStop = false;
 			this->pictureBox2->Click += gcnew System::EventHandler(this, &MainForm::pictureBox2_Click_1);
 			// 
-			// button1
+			// btnPerfil
 			// 
-			this->button1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
-			this->button1->BackColor = System::Drawing::Color::PaleTurquoise;
-			this->button1->FlatAppearance->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)),
-				static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(255)));
-			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->button1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button1.Image")));
-			this->button1->Location = System::Drawing::Point(12, 255);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(98, 32);
-			this->button1->TabIndex = 0;
-			this->button1->Text = L"Settings";
-			this->button1->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
-			this->button1->TextImageRelation = System::Windows::Forms::TextImageRelation::ImageBeforeText;
-			this->button1->UseVisualStyleBackColor = false;
+			this->btnPerfil->Location = System::Drawing::Point(23, 18);
+			this->btnPerfil->Name = L"btnPerfil";
+			this->btnPerfil->Size = System::Drawing::Size(75, 23);
+			this->btnPerfil->TabIndex = 1;
+			this->btnPerfil->Text = L"Perfil";
+			this->btnPerfil->UseVisualStyleBackColor = true;
+			this->btnPerfil->Click += gcnew System::EventHandler(this, &MainForm::btnPerfil_Click);
 			// 
 			// MainForm
 			// 
@@ -194,6 +209,13 @@ private: System::Void pictureBox2_Click_1(System::Object^ sender, System::EventA
 }
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 	panelMenu->Visible = !panelMenu->Visible;
+}
+private: System::Void btnPerfil_Click(System::Object^ sender, System::EventArgs^ e) {
+	PerfilCiutada^ perfilciutada = gcnew PerfilCiutada();
+	this->Hide();
+	perfilciutada->ShowDialog();
+	this->Show();
+	
 }
 };
 }

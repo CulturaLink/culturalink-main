@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "TxLoginCiutada.h"
 #include "MainForm.h"
+#include "UsuariIniciat.h"
 using namespace System::Windows::Forms;
 
 TxLoginCiutada::TxLoginCiutada(String^ nick, String^ contra) {
@@ -16,6 +17,8 @@ void TxLoginCiutada::executar() {
 		throw runtime_error("Nickname o contrasenya incorrectes, siusplau torna-ho a intentar.");
 	}
 	else {
-		// B-)
+		//uso de la clase Singleton
+		UsuariIniciat^ usuari = UsuariIniciat::ObtenerInstancia();
+		usuari->setUsuari(pC);
 	}
 }

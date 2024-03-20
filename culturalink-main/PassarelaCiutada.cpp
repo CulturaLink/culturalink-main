@@ -3,11 +3,17 @@
 #include "MainForm.h"
 using namespace System::Windows::Forms;
 
-//Ciutada::Ciutada() {
-//	_nickname = "";
-//	_nom_complet = "";
-//	_correu = "";
-//}
+
+PassarelaCiutada::PassarelaCiutada()
+{
+	_nickname = nullptr;
+	_nom_complet = nullptr;
+	_contrasenya = nullptr;
+	_correu = nullptr;
+	_data_naix = nullptr;
+	_diners = 0;
+	_punts = 0;
+}
 
 PassarelaCiutada::PassarelaCiutada(const PassarelaCiutada% p1) {
 	_nickname = p1._nickname;
@@ -19,6 +25,20 @@ PassarelaCiutada::PassarelaCiutada(const PassarelaCiutada% p1) {
 	_punts = p1._punts;
 }
 
+PassarelaCiutada% PassarelaCiutada::operator=(const PassarelaCiutada% other)
+{
+	if (this != % other)
+	{
+		_nickname = other._nickname;
+		_nom_complet = other._nom_complet;
+		_contrasenya = other._contrasenya;
+		_correu = other._correu;
+		_data_naix = other._data_naix;
+		_diners = other._diners;
+		_punts = other._punts;
+	}
+	return *this;
+}
 
 
 //Login
@@ -41,10 +61,11 @@ PassarelaCiutada::PassarelaCiutada(String^ nickname) {
 		if (dataReader->Read()) {
 			// Es llegeix la informació per crear un objecte de tipus Ciutada
 			// Agafarem les columnes per índex, la primera és la 0 (nickname ja el tenim)
+			_nickname = nickname;
 			_nom_complet = dataReader->GetString(1);
 			_contrasenya = dataReader->GetString(2);
 			_correu = dataReader->GetString(3);
-			//_data_naix = dataReader->GetDateTime(4);
+			_data_naix = dataReader->GetMySqlDateTime(4).ToString();
 			_diners = dataReader->GetInt32(5);
 			_punts = dataReader->GetInt32(6);
 		}
@@ -72,4 +93,8 @@ PassarelaCiutada::PassarelaCiutada(String^ nickname, String^ nom_complet, String
 String^ PassarelaCiutada::getContrasenya()
 {
 	return _contrasenya;
+}
+String^ PassarelaCiutada::getNickname()
+{
+	return _nickname;
 }
