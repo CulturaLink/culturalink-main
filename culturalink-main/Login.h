@@ -1,5 +1,5 @@
 #pragma once
-#include "PassarelaCiutada.h"
+#include "TxLoginCiutada.h"
 
 namespace culturalink_main {
 
@@ -272,17 +272,25 @@ private: System::Void buttonOK_Click(System::Object^ sender, System::EventArgs^ 
 		return;
 	}
 	if (RBcit->Checked) {
-		PassarelaCiutada logged(nick);
-		if (logged.getContrasenya() != contra) {
-			//MessageBox::Show("DB: "+ logged.getContrasenya()+", ENTRAT: "+contra, "Debuh");
-			MessageBox::Show("Nickname o contrasenya incorrectes, siusplau torna-ho a intentar.", "Nickname o contrasenya incorrectes");
-		}
-		else {
+		try
+		{
+			TxLoginCiutada tx(nick, contra);
+			tx.executar();
 			MessageBox::Show("Nickname i contrasenya correctes!", "Login");
 		}
+		catch (const std::exception& e)
+		{
+			// Convertir la excepción de C++ a System::String^
+			String^ mensajeError = gcnew String(e.what());
+			MessageBox::Show(mensajeError, "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		}
 	}
-	else if (RBajt->Checked){}
-	else if (RBent->Checked){}
+	else if (RBajt->Checked){
+		//TODO
+	}
+	else if (RBent->Checked){
+		//TODO
+	}
 }
 };
 }

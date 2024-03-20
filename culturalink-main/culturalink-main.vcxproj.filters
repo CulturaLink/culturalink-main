@@ -60,6 +60,10 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RegisterFormCiutada.h">
+    <ClInclude Include="TxLoginCiutada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CercadoraCiutada.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -104,6 +108,10 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="RegisterFormCiutada.cpp">
+    <ClCompile Include="TxLoginCiutada.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CercadoraCiutada.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -16,6 +16,7 @@ private:
 	int^ _punts;
 
 public:
+	PassarelaCiutada(const PassarelaCiutada% p1);
 	//Ciutada();
 	PassarelaCiutada(String^ nickname);//Omple ciutada segons nick
 	PassarelaCiutada(String^ nickname, String^ nom_complet, String^ correu);
