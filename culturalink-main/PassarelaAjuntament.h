@@ -12,8 +12,8 @@ using namespace System::Windows::Forms;
 ref class PassarelaAjuntament
 {
 public:
-    //PassarelaAjuntament();
-    //void insereix();
+    PassarelaAjuntament();
+    PassarelaAjuntament(String^ nom, String^ clau, int cp, int telefon, String^ correu);
 
 private:
     String^ nom;

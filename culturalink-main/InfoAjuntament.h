@@ -50,6 +50,13 @@ namespace culturalink_main {
 
 
 
+
+
+
+
+
+
+
 	private: System::ComponentModel::IContainer^ components;
 	protected:
 
@@ -149,6 +156,7 @@ namespace culturalink_main {
 			// pictureBox2
 			// 
 			this->pictureBox2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
+			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
 			this->pictureBox2->Location = System::Drawing::Point(571, 0);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(49, 49);
@@ -169,6 +177,7 @@ namespace culturalink_main {
 			this->Name = L"InfoAjuntament";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Info Ajuntament";
+			this->Load += gcnew System::EventHandler(this, &InfoAjuntament::InfoAjuntament_Load);
 			this->panelMenu->ResumeLayout(false);
 			this->panelTitleBar->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
@@ -187,5 +196,7 @@ namespace culturalink_main {
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->Close();
 	}
+private: System::Void InfoAjuntament_Load(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }
