@@ -188,10 +188,10 @@ namespace culturalink_main {
 			this->RBajt->Name = L"RBajt";
 			this->RBajt->Size = System::Drawing::Size(99, 22);
 			this->RBajt->TabIndex = 2;
-			this->RBajt->TabStop = true;
 			this->RBajt->Text = L"Ajuntament";
 			this->RBajt->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->RBajt->UseVisualStyleBackColor = true;
+			this->RBajt->CheckedChanged += gcnew System::EventHandler(this, &Login::RBajt_CheckedChanged);
 			// 
 			// RBent
 			// 
@@ -202,7 +202,6 @@ namespace culturalink_main {
 			this->RBent->Name = L"RBent";
 			this->RBent->Size = System::Drawing::Size(67, 22);
 			this->RBent->TabIndex = 1;
-			this->RBent->TabStop = true;
 			this->RBent->Text = L"Entitat";
 			this->RBent->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->RBent->UseVisualStyleBackColor = true;
@@ -210,6 +209,7 @@ namespace culturalink_main {
 			// RBcit
 			// 
 			this->RBcit->AutoSize = true;
+			this->RBcit->Checked = true;
 			this->RBcit->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->RBcit->Location = System::Drawing::Point(6, 19);
@@ -282,8 +282,14 @@ private: System::Void buttonOK_Click(System::Object^ sender, System::EventArgs^ 
 			MessageBox::Show("Nickname i contrasenya correctes!", "Login");
 		}
 	}
-	else if (RBajt->Checked){}
-	else if (RBent->Checked){}
+	else if (RBajt->Checked){
+	}
+	else if (RBent->Checked){
+	}
+}
+private: System::Void RBajt_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
+	if (RBajt->Checked) registre->Visible = false;
+	else registre->Visible = true;
 }
 };
 }

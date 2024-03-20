@@ -9,6 +9,7 @@ using namespace System;
 //    return 0;
 // }
 
+#include "InfoAjuntament.h"
 #include "Login.h"
 #include "MainForm.h"
 

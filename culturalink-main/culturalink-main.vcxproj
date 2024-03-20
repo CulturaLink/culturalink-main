@@ -130,8 +130,12 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CercadoraAjuntament.h" />
     <ClInclude Include="Ciutada.h" />
     <ClInclude Include="config.h" />
+    <ClInclude Include="InfoAjuntament.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Login.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -153,8 +157,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="CercadoraAjuntament.cpp" />
     <ClCompile Include="Ciutada.cpp" />
     <ClCompile Include="culturalinkmain.cpp" />
+    <ClCompile Include="InfoAjuntament.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="MainForm.cpp" />
     <ClCompile Include="PassarelaAjuntament.cpp" />
@@ -186,6 +192,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="InfoAjuntament.resx">
+      <DependentUpon>InfoAjuntament.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.h</DependentUpon>
     </EmbeddedResource>
