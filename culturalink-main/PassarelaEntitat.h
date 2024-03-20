@@ -11,7 +11,7 @@ using namespace System::Windows::Forms;
 
 ref class PassarelaEntitat {
 public:
-
+    PassarelaEntitat(const PassarelaEntitat% p1);
     PassarelaEntitat();
     PassarelaEntitat(String^ nomA, String^ contrasenyaA, String^ correuA, int telefonA, String^ id_entitatA);
     void insereix();

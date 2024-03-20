@@ -166,6 +166,7 @@ namespace culturalink_main {
 		String^ correu = textBox1->Text;
 		String^ contrasenya = textBox2->Text;
 		TxIniciaSessio txlogin(correu, contrasenya);
+		this->Close();
 		
 
 	}

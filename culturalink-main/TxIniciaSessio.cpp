@@ -8,7 +8,7 @@ TxIniciaSessio::TxIniciaSessio(String^ cE, String^ contraE)
 }
 void TxIniciaSessio::executar()
 {
-	//CercadoraEntitat c1;
-	//PassarelaEntitat p1 = c1.cercaEntitat(correuE);
-	//if (p1.obteContrasenya() != contrasenyaE) throw(ErrorContranseya);
+	CercadoraEntitat c1;
+	PassarelaEntitat p1 = c1.cercaEntitat(correuE);
+	if (p1.obteContrasenya() != contrasenyaE) throw(ErrorContranseya);
 }

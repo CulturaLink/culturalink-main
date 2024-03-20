@@ -202,7 +202,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	String^ contrasenya = this->textBox2->Text;
 	String^ correu = this->textBox3->Text;
 	String^ telefon = this->textBox4->Text;
-	String^ id = "3";
+	String^ id = "4";
 	TxRegistraEntitat tx1(nom, contrasenya, correu, Convert::ToInt32(telefon), id);
 	tx1.executar();
 	this->Close();

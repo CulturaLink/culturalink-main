@@ -22,8 +22,9 @@ PassarelaEntitat CercadoraEntitat::cercaEntitat(String^ correuE)
 			String^ contrasenya = dataReader->GetString(2);
 			String^ telefon = dataReader->GetString(3);
 			String^ correu = dataReader->GetString(4);
-			PassarelaEntitat(id, nom, contrasenya, Convert::ToInt32(telefon), correu);
+			PassarelaEntitat p2(id, nom, contrasenya, Convert::ToInt32(telefon), correu);
 			conn->Close();
+			return p2;
 
 		}
 		else throw(EntitatNoExisteix);

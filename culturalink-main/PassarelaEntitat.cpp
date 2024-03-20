@@ -16,6 +16,15 @@ PassarelaEntitat::PassarelaEntitat(String^ nomA, String^ contrasenyaA, String^ c
     telefon = telefonA;
     id_entitat = id_entitatA;
 }
+PassarelaEntitat::PassarelaEntitat(const PassarelaEntitat% p1)
+{
+    this->nom = p1.nom;
+    this->contrasenya = p1.contrasenya;
+    this->correuElectronic = p1.correuElectronic;
+    this->telefon = p1.telefon;
+    this->id_entitat = p1.id_entitat;
+
+}
 void PassarelaEntitat::insereix()
 {
     String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
