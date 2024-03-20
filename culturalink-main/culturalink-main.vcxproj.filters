@@ -59,6 +59,9 @@
     <ClInclude Include="PassarelaCiutada.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="RegisterFormCiutada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -98,6 +101,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PassarelaCiutada.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegisterFormCiutada.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

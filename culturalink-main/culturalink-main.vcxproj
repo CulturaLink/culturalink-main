@@ -142,6 +142,9 @@
     <ClInclude Include="PassarelaEntitat.h" />
     <ClInclude Include="PassarelaEsdeveniment.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="RegisterFormCiutada.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="RegistraEsdevenimentUI1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -165,6 +168,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="RegisterFormCiutada.cpp" />
     <ClCompile Include="RegistraEsdevenimentUI1.cpp" />
     <ClCompile Include="Sistema.cpp" />
     <ClCompile Include="Transaccio.cpp" />
@@ -189,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterFormCiutada.resx">
+      <DependentUpon>RegisterFormCiutada.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
