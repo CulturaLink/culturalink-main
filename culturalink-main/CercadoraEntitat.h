@@ -1,8 +1,5 @@
 #pragma once
 #include "PassarelaEntitat.h"
-#include <string>
-#include <iostream>
-#include "Windows.h"
 
 using namespace std;
 
@@ -15,4 +12,3 @@ public:
 	CercadoraEntitat();
 private:
 };
-

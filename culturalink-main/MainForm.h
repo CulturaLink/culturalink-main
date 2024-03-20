@@ -167,7 +167,9 @@ namespace culturalink_main {
 	}
 	private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
 		Login^ login = gcnew Login();
+		this->Visible = false;
 		login->ShowDialog();
+		this->Visible = true;
 	
 	}
 };

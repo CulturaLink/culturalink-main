@@ -33,4 +33,3 @@ PassarelaEntitat CercadoraEntitat::cercaEntitat(String^ correuE)
 		MessageBox::Show(ex->Message);
 	}
 }
-

@@ -1,5 +1,6 @@
 #pragma once
 #include "RegistraEntitat.h"
+#include "TxIniciaSessio.h"
 
 namespace culturalink_main {
 
@@ -162,11 +163,17 @@ namespace culturalink_main {
 		}
 #pragma endregion
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		String^ correu = textBox1->Text;
+		String^ contrasenya = textBox2->Text;
+		TxIniciaSessio txlogin(correu, contrasenya);
 		
+
 	}
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
 	RegistraEntitat^ reg = gcnew RegistraEntitat();
+	this->Visible = false;
 	reg->ShowDialog();
+	this->Visible = true;
 }
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Close();

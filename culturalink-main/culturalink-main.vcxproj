@@ -143,7 +143,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Resource.h" />
-    <ClInclude Include="TxLogin.h" />
+    <ClInclude Include="TxIniciaSessio.h" />
     <ClInclude Include="TxRegistraEntitat.h" />
   </ItemGroup>
   <ItemGroup>
@@ -160,7 +160,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="RegistraEntitat.cpp" />
-    <ClCompile Include="TxLogin.cpp" />
+    <ClCompile Include="TxIniciaSessio.cpp" />
     <ClCompile Include="TxRegistraEntitat.cpp" />
   </ItemGroup>
   <ItemGroup>

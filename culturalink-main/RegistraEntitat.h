@@ -1,5 +1,5 @@
 #pragma once
-//#include"TxRegistraEntitat.h"
+#include "TxRegistraEntitat.h"
 
 namespace culturalink_main {
 
@@ -199,12 +199,13 @@ namespace culturalink_main {
 	}
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 	String^ nom = this->textBox1->Text;
-	String^ contrasenya = this->textBox1->Text;
-	String^ correu = this->textBox1->Text;
-	String^ telefon = this->textBox1->Text;
-	String^ id = "2";
-	//TxRegistraEntitat tx1(nom, contrasenya, correu, Convert::ToInt32(telefon), id);
-	//tx1.executar();
+	String^ contrasenya = this->textBox2->Text;
+	String^ correu = this->textBox3->Text;
+	String^ telefon = this->textBox4->Text;
+	String^ id = "3";
+	TxRegistraEntitat tx1(nom, contrasenya, correu, Convert::ToInt32(telefon), id);
+	tx1.executar();
+	this->Close();
 }
 };
 }

@@ -20,7 +20,7 @@ void PassarelaEntitat::insereix()
 {
     String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
     MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
-    String^ sql = "INSERT INTO usuari VALUES('" + id_entitat + "', '" + nom + "', '" + contrasenya + "', '" + telefon + "', '" + correuElectronic + "')";;
+    String^ sql = "INSERT INTO entitat VALUES('" + id_entitat + "', '" + nom + "', '" + contrasenya + "', '" + telefon + "', '" + correuElectronic + "')";;
     MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
     MySqlDataReader^ dataReader;
     try {

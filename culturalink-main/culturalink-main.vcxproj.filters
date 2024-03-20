@@ -41,7 +41,7 @@
     <ClInclude Include="RegistraEntitat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TxLogin.h">
+    <ClInclude Include="TxIniciaSessio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CercadoraEntitat.h">
@@ -73,7 +73,7 @@
     <ClCompile Include="RegistraEntitat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TxLogin.cpp">
+    <ClCompile Include="TxIniciaSessio.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CercadoraEntitat.cpp">

@@ -1,12 +1,12 @@
 #include "pch.h"
-#include "TxLogin.h"
+#include "TxIniciaSessio.h"
 
-TxLogin::TxLogin(String^ cE, String^ contraE)
+TxIniciaSessio::TxIniciaSessio(String^ cE, String^ contraE)
 {
 	correuE = cE;
 	contrasenyaE = contraE;
 }
-void TxLogin::executar2()
+void TxIniciaSessio::executar()
 {
 	//CercadoraEntitat c1;
 	//PassarelaEntitat p1 = c1.cercaEntitat(correuE);
