@@ -68,6 +68,12 @@
     <ClInclude Include="CercadoraAjuntament.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="AjuntamentIniciat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TxLoginAjuntament.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -116,6 +122,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CercadoraAjuntament.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxLoginAjuntament.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

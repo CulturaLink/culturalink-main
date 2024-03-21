@@ -1,8 +1,9 @@
 #pragma once
+#include "pch.h"
 #include <iostream>
 #include <string>
 #include "config.h"
-#include <Windows.h>
+//#include <Windows.h>
 
 using namespace std;
 using namespace MySql::Data::MySqlClient;
@@ -11,15 +12,20 @@ using namespace System::Windows::Forms;
 
 ref class PassarelaAjuntament
 {
-public:
-    PassarelaAjuntament();
-    PassarelaAjuntament(String^ nom, String^ clau, int cp, int telefon, String^ correu);
+    public:
+        PassarelaAjuntament();
+        PassarelaAjuntament(String^ nomP);
+        PassarelaAjuntament(String^ nom, String^ clau, int cp, int telefon, String^ correu, String^ contrasenya);
+        PassarelaAjuntament% operator=(const PassarelaAjuntament% other);
+        PassarelaAjuntament(const PassarelaAjuntament% p1);
+        String^ getClau();
+        String^ getContrasenya();
 
-private:
-    String^ nom;
-    String^ clau;
-    int cp;
-    int telefon;
-    String^ correu;
+    private:
+        String^ nom;
+        String^ clau;
+        String^ contrasenya;
+        int cp;
+        int telefon;
+        String^ correu;
 };
-

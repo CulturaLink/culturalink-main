@@ -130,6 +130,7 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AjuntamentIniciat.h" />
     <ClInclude Include="CercadoraAjuntament.h" />
     <ClInclude Include="Ciutada.h" />
     <ClInclude Include="config.h" />
@@ -153,6 +154,7 @@
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Sistema.h" />
     <ClInclude Include="Transaccio.h" />
+    <ClInclude Include="TxLoginAjuntament.h" />
     <ClInclude Include="TxRegistraEsdeveniment.h" />
   </ItemGroup>
   <ItemGroup>
@@ -176,6 +178,7 @@
     <ClCompile Include="RegistraEsdevenimentUI1.cpp" />
     <ClCompile Include="Sistema.cpp" />
     <ClCompile Include="Transaccio.cpp" />
+    <ClCompile Include="TxLoginAjuntament.cpp" />
     <ClCompile Include="TxRegistraEsdeveniment.cpp" />
   </ItemGroup>
   <ItemGroup>

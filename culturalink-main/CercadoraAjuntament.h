@@ -1,4 +1,5 @@
 #pragma once
+
 #include "PassarelaAjuntament.h"
 #include <string>
 #include <iostream>
@@ -10,9 +11,9 @@ using namespace System;
 ref class CercadoraAjuntament
 {
 public:
-	PassarelaAjuntament cercaAjuntament(String^ clau);
 	CercadoraAjuntament();
+	PassarelaAjuntament cercaAjuntament(String^ clau);
+
 private:
 
 };
-
