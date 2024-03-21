@@ -40,21 +40,42 @@ PassarelaCiutada% PassarelaCiutada::operator=(const PassarelaCiutada% other)
 	return *this;
 }
 
+void PassarelaCiutada::crear(String^ name, String^ fullName, String^ password, String^ email, String^ date)
+{
+	_nickname = name;
+	_nom_complet = fullName;
+	_contrasenya = password;
+	_correu = email;
+	_data_naix = date;
+	_diners = 0;
+	_punts = 0;
+}
+
 //Register
 void PassarelaCiutada::insereix() {
 
 	String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
 	MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
 
-	String^ sql = "INSERT INTO amep14.esdeveniment (id_esdeveniment, id_entitat, preu_esdeveniment, ajuntament_esdeveniment, descripcio_esdeveniment, nom_esdeveniment)"
-		"VALUES('2', '2', '21', 'vilanovaSSSS', 'rfsesfSSSSSs', 'adeu');";
+	String^ sql = "INSERT INTO amep14.ciutada (nickname, nom_complert, contrasenya, correu, data_naix, diners, punts)"
+		"VALUES(@name, @fullName, @password, @email, @date, @diners, @punts);";
 	MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
+
+	cmd->Parameters->AddWithValue("@name", _nickname);
+	cmd->Parameters->AddWithValue("@fullName", _nom_complet);
+	cmd->Parameters->AddWithValue("@password", _contrasenya);
+	cmd->Parameters->AddWithValue("@email", _correu);
+	cmd->Parameters->AddWithValue("@date", _data_naix);
+	cmd->Parameters->AddWithValue("@diners", 0);
+	cmd->Parameters->AddWithValue("@punts", 0);
+
 	MySqlDataReader^ dataReader;
 	try {
 		// obrim la connexió
 		conn->Open();
 		// executem la comanda creada abans del try
 		dataReader = cmd->ExecuteReader();
+		MessageBox::Show("Data inserted successfully.");
 	}
 	catch (Exception^ ex) {
 		// codi per mostrar l’error en una finestra

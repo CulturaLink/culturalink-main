@@ -19,6 +19,7 @@ public:
 	PassarelaCiutada();
 	PassarelaCiutada(const PassarelaCiutada% p1);
 	PassarelaCiutada% operator=(const PassarelaCiutada% other);
+	void crear(String^ name, String^ fullName, String^ password, String^ email, String^ date);
 	void insereix();
 	//Ciutada();
 	PassarelaCiutada(String^ nickname);//Omple ciutada segons nick

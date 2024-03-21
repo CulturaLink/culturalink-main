@@ -156,6 +156,7 @@
     <ClInclude Include="Sistema.h" />
     <ClInclude Include="Transaccio.h" />
     <ClInclude Include="TxLoginCiutada.h" />
+    <ClInclude Include="TxRegisterCiutada.h" />
     <ClInclude Include="TxRegistraEsdeveniment.h" />
     <ClInclude Include="UsuariIniciat.h" />
   </ItemGroup>
@@ -181,6 +182,7 @@
     <ClCompile Include="Sistema.cpp" />
     <ClCompile Include="Transaccio.cpp" />
     <ClCompile Include="TxLoginCiutada.cpp" />
+    <ClCompile Include="TxRegisterCiutada.cpp" />
     <ClCompile Include="TxRegistraEsdeveniment.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -18,6 +18,7 @@
     <ClCompile Include="TxLoginCiutada.cpp" />
     <ClCompile Include="TxRegistraEsdeveniment.cpp" />
     <ClCompile Include="PerfilCiutada.cpp" />
+    <ClCompile Include="TxRegisterCiutada.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CercadoraCiutada.h" />
@@ -38,6 +39,7 @@
     <ClInclude Include="TxRegistraEsdeveniment.h" />
     <ClInclude Include="PerfilCiutada.h" />
     <ClInclude Include="UsuariIniciat.h" />
+    <ClInclude Include="TxRegisterCiutada.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc" />

@@ -1,4 +1,5 @@
 #pragma once
+#include "TxRegisterCiutada.h"
 
 namespace culturalink_main {
 
@@ -302,6 +303,18 @@ namespace culturalink_main {
 		}
 
 		//Conneccio a la db
+		try
+		{
+			TxRegisterCiutada tx(name, email, fullName, password, date);
+			tx.executar();
+			MessageBox::Show("Dades correctes!", "Usuari registrat");
+		}
+		catch (const std::exception& e)
+		{
+			// Convertir la excepción de C++ a System::String^
+			String^ mensajeError = gcnew String(e.what());
+			MessageBox::Show(mensajeError, "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		}
 
 	}
 };
