@@ -12,11 +12,14 @@ using namespace System::Windows::Forms;
 ref class PassarelaEsdeveniment {
 
 public:
+    PassarelaEsdeveniment(int idEnt, float preu, String^ ajEsd, String^ descEsd, String^ nomEsd);
     PassarelaEsdeveniment();
     void insereix();
 
 private:
-    String^ nom;
-    String^ descripcio;
-    float preu;
+    int _idEnt;
+    float _preu;
+    String^ _ajEsd;
+    String^ _descEsd;
+    String^ _nomEsd;
 };

@@ -130,6 +130,7 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CercadoraEsdeveniment.h" />
     <ClInclude Include="config.h" />
     <ClInclude Include="Login.h">
       <FileType>CppForm</FileType>
@@ -147,10 +148,12 @@
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Sistema.h" />
     <ClInclude Include="Transaccio.h" />
+    <ClInclude Include="TxConsultaEsdeveniment.h" />
     <ClInclude Include="TxRegistraEsdeveniment.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="CercadoraEsdeveniment.cpp" />
     <ClCompile Include="culturalinkmain.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="MainForm.cpp" />
@@ -166,6 +169,7 @@
     <ClCompile Include="RegistraEsdevenimentUI1.cpp" />
     <ClCompile Include="Sistema.cpp" />
     <ClCompile Include="Transaccio.cpp" />
+    <ClCompile Include="TxConsultaEsdeveniment.cpp" />
     <ClCompile Include="TxRegistraEsdeveniment.cpp" />
   </ItemGroup>
   <ItemGroup>
