@@ -357,14 +357,23 @@ namespace culturalink_main {
 		this->Close();
 	}
 private: System::Void InfoAjuntament_Load(System::Object^ sender, System::EventArgs^ e) {
-	TxConsultaAjuntament tc;
-	tc.executar();
-	List<String^>^ res = tc.getResult();
-	this->Lnom->Text = res[0];
-	this->Lclau->Text = res[1];
-	this->Lcp->Text = res[2];
-	this->Ltelefon->Text = res[3];
-	this->Lcorreu->Text = res[4];
+	try
+	{
+		TxConsultaAjuntament tc;
+		tc.executar();
+		List<String^>^ res = tc.getResult();
+		this->Lnom->Text = res[0];
+		this->Lclau->Text = res[1];
+		this->Lcp->Text = res[2];
+		this->Ltelefon->Text = res[3];
+		this->Lcorreu->Text = res[4];
+	}
+	catch (const std::exception& e)
+	{
+		// Convertir la excepción de C++ a System::String^
+		String^ mensajeError = gcnew String(e.what());
+		MessageBox::Show(mensajeError, "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+	}
 }
 private: System::Void Bshow_Click(System::Object^ sender, System::EventArgs^ e) {
 	Lclau->Visible = true;
