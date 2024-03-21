@@ -143,6 +143,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="Sistema.h" />
+    <ClInclude Include="Transaccio.h" />
+    <ClInclude Include="TxConsultaEntitat.h" />
     <ClInclude Include="TxIniciaSessio.h" />
     <ClInclude Include="TxRegistraEntitat.h" />
   </ItemGroup>
@@ -160,6 +163,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="RegistraEntitat.cpp" />
+    <ClCompile Include="Sistema.cpp" />
+    <ClCompile Include="Transaccio.cpp" />
+    <ClCompile Include="TxConsultaEntitat.cpp" />
     <ClCompile Include="TxIniciaSessio.cpp" />
     <ClCompile Include="TxRegistraEntitat.cpp" />
   </ItemGroup>

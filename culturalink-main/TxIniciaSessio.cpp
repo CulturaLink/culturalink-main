@@ -10,5 +10,5 @@ void TxIniciaSessio::executar()
 {
 	CercadoraEntitat c1;
 	PassarelaEntitat p1 = c1.cercaEntitat(correuE);
-	if (p1.obteContrasenya() != contrasenyaE) throw(ErrorContranseya);
+	if(%p1 != nullptr) if (p1.obteContrasenya() != contrasenyaE) throw(ErrorContranseya);
 }

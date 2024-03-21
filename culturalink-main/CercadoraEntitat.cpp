@@ -12,6 +12,7 @@ PassarelaEntitat CercadoraEntitat::cercaEntitat(String^ correuE)
 	MySqlDataReader^ dataReader;
 	try {
 		// obrim la connexió
+		conn->Open();
 		// executem la comanda (cmd) que s’ha creat abans del try
 		dataReader = cmd->ExecuteReader();
 		if (dataReader->Read()) {
@@ -22,7 +23,7 @@ PassarelaEntitat CercadoraEntitat::cercaEntitat(String^ correuE)
 			String^ contrasenya = dataReader->GetString(2);
 			String^ telefon = dataReader->GetString(3);
 			String^ correu = dataReader->GetString(4);
-			PassarelaEntitat p2(id, nom, contrasenya, Convert::ToInt32(telefon), correu);
+			PassarelaEntitat p2(nom, contrasenya, correu, Convert::ToInt32(telefon), id);
 			conn->Close();
 			return p2;
 
@@ -31,6 +32,6 @@ PassarelaEntitat CercadoraEntitat::cercaEntitat(String^ correuE)
 	}
 	catch (Exception^ ex) {
 		// codi per mostrar l’error en una finestra
-		MessageBox::Show(ex->Message);
+		throw(EntitatNoExisteix);
 	}
 }

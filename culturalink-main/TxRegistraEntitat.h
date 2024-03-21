@@ -1,7 +1,8 @@
 #pragma once
 #include "PassarelaEntitat.h"
+#include "Transaccio.h"
 
-ref class TxRegistraEntitat
+ref class TxRegistraEntitat : public Transaccio
 {
 private:
     String^ nom;
@@ -13,7 +14,7 @@ private:
 public:
     TxRegistraEntitat();
     TxRegistraEntitat(String^ nomA, String^ contrasenyaA, String^ correuA, int telefonA, String^ id_entitatA);
-    void executar();
+    void executar() override;
 };
 
 
