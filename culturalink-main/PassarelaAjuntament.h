@@ -18,7 +18,11 @@ ref class PassarelaAjuntament
         PassarelaAjuntament(String^ nom, String^ clau, int cp, int telefon, String^ correu, String^ contrasenya);
         PassarelaAjuntament% operator=(const PassarelaAjuntament% other);
         PassarelaAjuntament(const PassarelaAjuntament% p1);
+        String^ getNom();
         String^ getClau();
+        int getCP();
+        int getTelf();
+        String^ getCorreu();
         String^ getContrasenya();
 
     private:

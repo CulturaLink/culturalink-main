@@ -32,7 +32,10 @@ PassarelaAjuntament CercadoraAjuntament::cercaAjuntament(String^ clau) {
 
 			PassarelaAjuntament ajt(_nom, _clau, _cp, _telefon, _correu, _contrasenya);
 			return ajt;
-
+		}
+		else {
+			PassarelaAjuntament ajt;
+			return ajt;
 		}
 	}
 	catch (Exception^ ex) {

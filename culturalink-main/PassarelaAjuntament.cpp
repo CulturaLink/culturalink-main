@@ -54,14 +54,26 @@ PassarelaAjuntament::PassarelaAjuntament(const PassarelaAjuntament% p1) {
 	contrasenya = p1.contrasenya;
 }
 
+String^ PassarelaAjuntament::getNom() {
+	return nom;
+}
+
+int PassarelaAjuntament::getCP() {
+	return cp;
+}
+
+int PassarelaAjuntament::getTelf() {
+	return telefon;
+}
+
+String^ PassarelaAjuntament::getCorreu() {
+	return correu;
+}
+
 String^ PassarelaAjuntament::getClau() {
-
 	return clau;
-
 }
 
 String^ PassarelaAjuntament::getContrasenya() {
-
 	return contrasenya;
-
 }

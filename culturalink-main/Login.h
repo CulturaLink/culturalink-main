@@ -287,6 +287,7 @@ private: System::Void buttonOK_Click(System::Object^ sender, System::EventArgs^ 
 		if (logged.getContrasenya() != contra) {
 			//MessageBox::Show("DB: "+ logged.getContrasenya()+", ENTRAT: "+contra, "Debuh");
 			MessageBox::Show("Nickname o contrasenya incorrectes, siusplau torna-ho a intentar.", "Nickname o contrasenya incorrectes");
+			this->Close();
 		}
 		else {
 			MessageBox::Show("Nickname i contrasenya correctes!", "Login");
@@ -299,6 +300,7 @@ private: System::Void buttonOK_Click(System::Object^ sender, System::EventArgs^ 
 			TxLoginAjuntament tx(nick, contra);
 			tx.executar();
 			MessageBox::Show("Nickname i contrasenya correctes!", "Login");
+			this->Close();
 		}
 		catch (const std::exception& e)
 		{
