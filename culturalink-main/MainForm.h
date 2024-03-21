@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include "Login.h"
 
 namespace culturalink_main {
@@ -20,13 +20,13 @@ namespace culturalink_main {
 		{
 			InitializeComponent();
 			//
-			//TODO: agregar código de constructor aquí
+			//TODO: agregar cï¿½digo de constructor aquï¿½
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Limpiar los recursos que se estén usando.
+		/// Limpiar los recursos que se estï¿½n usando.
 		/// </summary>
 		~MainForm()
 		{
@@ -35,13 +35,24 @@ namespace culturalink_main {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Panel^ panelMenu;
-	private: System::Windows::Forms::Panel^ panel1;
-	private: System::Windows::Forms::PictureBox^ pictureBox1;
-	private: System::Windows::Forms::Panel^ panelTitleBar;
-	private: System::Windows::Forms::Panel^ panelDesktop;
+
+
+
+
+
 	private: System::Windows::Forms::NotifyIcon^ notifyIcon1;
+
+
+	private: System::Windows::Forms::Panel^ panelDesktop;
+	private: System::Windows::Forms::Panel^ panelMenu;
+	private: System::Windows::Forms::Panel^ panelTitleBar;
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
+
+	private: System::Windows::Forms::PictureBox^ pictureBox1;
+	private: System::Windows::Forms::Button^ button1;
+
+
+
 	private: System::ComponentModel::IContainer^ components;
 	protected:
 
@@ -49,128 +60,141 @@ namespace culturalink_main {
 
 	private:
 		/// <summary>
-		/// Variable del diseñador necesaria.
+		/// Variable del diseï¿½ador necesaria.
 		/// </summary>
 
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Método necesario para admitir el Diseñador. No se puede modificar
-		/// el contenido de este método con el editor de código.
+		/// Mï¿½todo necesario para admitir el Diseï¿½ador. No se puede modificar
+		/// el contenido de este mï¿½todo con el editor de cï¿½digo.
 		/// </summary>
 		void InitializeComponent(void)
 		{
 			this->components = (gcnew System::ComponentModel::Container());
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MainForm::typeid));
-			this->panelMenu = (gcnew System::Windows::Forms::Panel());
-			this->panel1 = (gcnew System::Windows::Forms::Panel());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
-			this->panelTitleBar = (gcnew System::Windows::Forms::Panel());
-			this->panelDesktop = (gcnew System::Windows::Forms::Panel());
 			this->notifyIcon1 = (gcnew System::Windows::Forms::NotifyIcon(this->components));
+			this->panelDesktop = (gcnew System::Windows::Forms::Panel());
+			this->panelMenu = (gcnew System::Windows::Forms::Panel());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->panelTitleBar = (gcnew System::Windows::Forms::Panel());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			this->panelMenu->SuspendLayout();
-			this->panel1->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->panelTitleBar->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
-			// 
-			// panelMenu
-			// 
-			this->panelMenu->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->panelMenu->Controls->Add(this->panel1);
-			this->panelMenu->Dock = System::Windows::Forms::DockStyle::Left;
-			this->panelMenu->Location = System::Drawing::Point(0, 0);
-			this->panelMenu->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
-			this->panelMenu->Name = L"panelMenu";
-			this->panelMenu->Size = System::Drawing::Size(172, 240);
-			this->panelMenu->TabIndex = 0;
-			// 
-			// panel1
-			// 
-			this->panel1->Controls->Add(this->pictureBox1);
-			this->panel1->Dock = System::Windows::Forms::DockStyle::Top;
-			this->panel1->Location = System::Drawing::Point(0, 0);
-			this->panel1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
-			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(172, 81);
-			this->panel1->TabIndex = 0;
-			// 
-			// pictureBox1
-			// 
-			this->pictureBox1->Location = System::Drawing::Point(25, 7);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(75, 41);
-			this->pictureBox1->TabIndex = 0;
-			this->pictureBox1->TabStop = false;
-			// 
-			// panelTitleBar
-			// 
-			this->panelTitleBar->BackColor = System::Drawing::Color::White;
-			this->panelTitleBar->Controls->Add(this->pictureBox2);
-			this->panelTitleBar->Dock = System::Windows::Forms::DockStyle::Top;
-			this->panelTitleBar->Location = System::Drawing::Point(172, 0);
-			this->panelTitleBar->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
-			this->panelTitleBar->Name = L"panelTitleBar";
-			this->panelTitleBar->Size = System::Drawing::Size(246, 49);
-			this->panelTitleBar->TabIndex = 1;
-			// 
-			// panelDesktop
-			// 
-			this->panelDesktop->BackColor = System::Drawing::SystemColors::Menu;
-			this->panelDesktop->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->panelDesktop->Location = System::Drawing::Point(172, 49);
-			this->panelDesktop->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
-			this->panelDesktop->Name = L"panelDesktop";
-			this->panelDesktop->Size = System::Drawing::Size(246, 191);
-			this->panelDesktop->TabIndex = 2;
 			// 
 			// notifyIcon1
 			// 
 			this->notifyIcon1->Text = L"notifyIcon1";
 			this->notifyIcon1->Visible = true;
 			// 
+			// panelDesktop
+			// 
+			this->panelDesktop->AutoSize = true;
+			this->panelDesktop->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
+			this->panelDesktop->BackColor = System::Drawing::Color::LightSalmon;
+			this->panelDesktop->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->panelDesktop->Location = System::Drawing::Point(190, 75);
+			this->panelDesktop->Name = L"panelDesktop";
+			this->panelDesktop->Size = System::Drawing::Size(744, 460);
+			this->panelDesktop->TabIndex = 4;
+			// 
+			// panelMenu
+			// 
+			this->panelMenu->BackColor = System::Drawing::SystemColors::ActiveCaption;
+			this->panelMenu->Controls->Add(this->button1);
+			this->panelMenu->Dock = System::Windows::Forms::DockStyle::Left;
+			this->panelMenu->Location = System::Drawing::Point(0, 75);
+			this->panelMenu->Name = L"panelMenu";
+			this->panelMenu->Size = System::Drawing::Size(190, 460);
+			this->panelMenu->TabIndex = 0;
+			// 
+			// button1
+			// 
+			this->button1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->button1->BackColor = System::Drawing::Color::PaleTurquoise;
+			this->button1->FlatAppearance->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(255)));
+			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button1.Image")));
+			this->button1->Location = System::Drawing::Point(18, 392);
+			this->button1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(147, 49);
+			this->button1->TabIndex = 0;
+			this->button1->Text = L"Settings";
+			this->button1->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
+			this->button1->TextImageRelation = System::Windows::Forms::TextImageRelation::ImageBeforeText;
+			this->button1->UseVisualStyleBackColor = false;
+			// 
+			// panelTitleBar
+			// 
+			this->panelTitleBar->BackColor = System::Drawing::Color::White;
+			this->panelTitleBar->Controls->Add(this->pictureBox1);
+			this->panelTitleBar->Controls->Add(this->pictureBox2);
+			this->panelTitleBar->Dock = System::Windows::Forms::DockStyle::Top;
+			this->panelTitleBar->Location = System::Drawing::Point(0, 0);
+			this->panelTitleBar->Name = L"panelTitleBar";
+			this->panelTitleBar->Size = System::Drawing::Size(934, 75);
+			this->panelTitleBar->TabIndex = 3;
+			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(4, 0);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(74, 77);
+			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->pictureBox1->TabIndex = 1;
+			this->pictureBox1->TabStop = false;
+			this->pictureBox1->Click += gcnew System::EventHandler(this, &MainForm::pictureBox1_Click);
+			// 
 			// pictureBox2
 			// 
+			this->pictureBox2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(185, 3);
+			this->pictureBox2->Location = System::Drawing::Point(856, -2);
+			this->pictureBox2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(49, 46);
+			this->pictureBox2->Size = System::Drawing::Size(74, 77);
+			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox2->TabIndex = 0;
 			this->pictureBox2->TabStop = false;
-			this->pictureBox2->Click += gcnew System::EventHandler(this, &MainForm::pictureBox2_Click);
+			this->pictureBox2->Click += gcnew System::EventHandler(this, &MainForm::pictureBox2_Click_1);
 			// 
 			// MainForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(418, 240);
+			this->ClientSize = System::Drawing::Size(934, 535);
 			this->Controls->Add(this->panelDesktop);
-			this->Controls->Add(this->panelTitleBar);
 			this->Controls->Add(this->panelMenu);
-			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->Controls->Add(this->panelTitleBar);
 			this->Name = L"MainForm";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"MainForm";
-			this->Load += gcnew System::EventHandler(this, &MainForm::MainForm_Load);
 			this->panelMenu->ResumeLayout(false);
-			this->panel1->ResumeLayout(false);
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->panelTitleBar->ResumeLayout(false);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
-	private: System::Void MainForm_Load(System::Object^ sender, System::EventArgs^ e) {
-	}
-	private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void pictureBox2_Click_1(System::Object^ sender, System::EventArgs^ e) {
 		Login^ login = gcnew Login();
 		this->Visible = false;
 		login->ShowDialog();
 		this->Visible = true;
-	
 	}
-};
+	private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
+		panelMenu->Visible = !panelMenu->Visible;
+	}
+	};
 }
