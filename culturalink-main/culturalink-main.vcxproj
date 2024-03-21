@@ -154,6 +154,7 @@
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Sistema.h" />
     <ClInclude Include="Transaccio.h" />
+    <ClInclude Include="TxConsultaAjuntament.h" />
     <ClInclude Include="TxLoginAjuntament.h" />
     <ClInclude Include="TxRegistraEsdeveniment.h" />
   </ItemGroup>
@@ -178,6 +179,7 @@
     <ClCompile Include="RegistraEsdevenimentUI1.cpp" />
     <ClCompile Include="Sistema.cpp" />
     <ClCompile Include="Transaccio.cpp" />
+    <ClCompile Include="TxConsultaAjuntament.cpp" />
     <ClCompile Include="TxLoginAjuntament.cpp" />
     <ClCompile Include="TxRegistraEsdeveniment.cpp" />
   </ItemGroup>
