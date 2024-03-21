@@ -6,21 +6,25 @@ TxConsultaEntitat::TxConsultaEntitat(){}
 
 void TxConsultaEntitat::executar()
 {
-    Sistema& sist = Sistema::getInstance();
-    //PassarelaEntitat e = sist.obteEntitat();
-    //ent = e;
+    EntitatIniciat^ sist = EntitatIniciat::ObtenerInstancia();
+    PassarelaEntitat e = sist->getUsuari();
+    ent = e;
 
-   /*result.push_back(ent.obteNom());
-    result.push_back(ent.obteContrasenya());
-    result.push_back(ent.obteCorreuElectronic());
-    result.push_back(ent.obteid());
-    result.push_back(Convert::ToString(ent.obteTelefon()));*/
+    List<String^>^ _result = gcnew List<String^>();
+
+    _result->Add(e.obteid());
+    _result->Add(e.obteNom());
+    _result->Add(e.obteCorreuElectronic());
+    _result->Add(e.obteContrasenya());
+    _result->Add(Convert::ToString(e.obteTelefon()));
+
+    result = _result;
 }
 
-//vector<String^> TxConsultaEntitat::obteResultat()
-//{
-    //return resultat;
-//}
+List<String^>^ TxConsultaEntitat::obteResultat()
+{
+    return result;
+}
 
 PassarelaEntitat TxConsultaEntitat::obteEntitat() {
     return ent;

@@ -6,7 +6,6 @@ PassarelaEntitat CercadoraEntitat::cercaEntitat(String^ correuE)
 {
 	String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
 	MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
-
 	String^ sql = "SELECT * FROM entitat WHERE correu='" + correuE + "'";
 	MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
 	MySqlDataReader^ dataReader;

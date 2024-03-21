@@ -1,5 +1,6 @@
 #pragma once
 #include "PassarelaEntitat.h"
+#include "EntitatIniciat.h"
 
 using namespace std;
 

@@ -1,5 +1,7 @@
 ﻿#pragma once
 #include "Login.h"
+#include "InfoEntitat.h"
+#include "TxConsultaEntitat.h"
 
 namespace culturalink_main {
 
@@ -35,11 +37,6 @@ namespace culturalink_main {
 				delete components;
 			}
 		}
-
-
-
-
-
 	private: System::Windows::Forms::NotifyIcon^ notifyIcon1;
 
 
@@ -168,7 +165,7 @@ namespace culturalink_main {
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(119, 34);
 			this->button1->TabIndex = 0;
-			this->button1->Text = L"Consultar Info";
+			this->button1->Text = L"Homepage";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &MainForm::button1_Click);
 			// 
@@ -252,9 +249,14 @@ namespace culturalink_main {
 		panelMenu->Visible = !panelMenu->Visible;
 	}
 	private: System::Void pictureBox3_Click(System::Object^ sender, System::EventArgs^ e) {
+		InfoEntitat^ inf = gcnew InfoEntitat();
+		this->Visible = false;
+		TxConsultaEntitat tx4;
+		tx4.executar();
+		inf->ShowDialog();
+		this->Visible = true;
 	}
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-
 }
 };
 }

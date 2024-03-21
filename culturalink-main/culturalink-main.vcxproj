@@ -131,6 +131,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CercadoraEntitat.h" />
+    <ClInclude Include="InfoEntitat.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Login.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -143,7 +146,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Resource.h" />
-    <ClInclude Include="Sistema.h" />
+    <ClInclude Include="EntitatIniciat.h" />
     <ClInclude Include="Transaccio.h" />
     <ClInclude Include="TxConsultaEntitat.h" />
     <ClInclude Include="TxIniciaSessio.h" />
@@ -153,6 +156,7 @@
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="CercadoraEntitat.cpp" />
     <ClCompile Include="culturalinkmain.cpp" />
+    <ClCompile Include="InfoEntitat.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="MainForm.cpp" />
     <ClCompile Include="PassarelaEntitat.cpp" />
@@ -163,7 +167,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="RegistraEntitat.cpp" />
-    <ClCompile Include="Sistema.cpp" />
     <ClCompile Include="Transaccio.cpp" />
     <ClCompile Include="TxConsultaEntitat.cpp" />
     <ClCompile Include="TxIniciaSessio.cpp" />
@@ -183,6 +186,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="InfoEntitat.resx">
+      <DependentUpon>InfoEntitat.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.h</DependentUpon>
     </EmbeddedResource>

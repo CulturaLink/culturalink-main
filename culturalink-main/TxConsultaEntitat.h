@@ -1,18 +1,23 @@
 #pragma once
 #include "PassarelaEntitat.h"
-#include "CercadoraEntitat.h"
 #include "Transaccio.h"
-#include "Sistema.h"
+#include "EntitatIniciat.h"
+#include <vector>
+#include <string>
+
+
+
+using namespace std;
 
 
 ref class TxConsultaEntitat : public Transaccio
 {
 private:
     PassarelaEntitat ent;
-    //vector<String^> result;
+    List<String^>^ result;
 public:
     TxConsultaEntitat();
     void executar() override;
-    //vector<String^> obteResultat();
+    List<String^>^ obteResultat();
     PassarelaEntitat obteEntitat();
 };

@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <random>
 
 
 using namespace std;
@@ -13,6 +14,7 @@ ref class PassarelaEntitat {
 public:
     PassarelaEntitat(const PassarelaEntitat% p1);
     PassarelaEntitat();
+    PassarelaEntitat% operator=(const PassarelaEntitat% other);
     PassarelaEntitat(String^ nomA, String^ contrasenyaA, String^ correuA, int telefonA, String^ id_entitatA);
     void insereix();
     //void modifica();

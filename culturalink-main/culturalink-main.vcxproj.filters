@@ -47,13 +47,16 @@
     <ClInclude Include="CercadoraEntitat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Sistema.h">
+    <ClInclude Include="EntitatIniciat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Transaccio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="TxConsultaEntitat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoEntitat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -88,14 +91,14 @@
     <ClCompile Include="CercadoraEntitat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Sistema.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Transaccio.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TxConsultaEntitat.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InfoEntitat.cpp">
+      <Filter>Header Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

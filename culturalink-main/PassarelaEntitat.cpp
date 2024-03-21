@@ -25,11 +25,44 @@ PassarelaEntitat::PassarelaEntitat(const PassarelaEntitat% p1)
     this->id_entitat = p1.id_entitat;
 
 }
+PassarelaEntitat% PassarelaEntitat::operator=(const PassarelaEntitat% other)
+{
+    if (this != % other)
+    {
+        nom = other.nom;
+        contrasenya = other.contrasenya;
+        telefon = other.telefon;
+        correuElectronic = other.correuElectronic;
+        id_entitat = other.id_entitat;
+    }
+    return *this;
+}
 void PassarelaEntitat::insereix()
 {
+    bool encontrado = false;
     String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
     MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
-    String^ sql = "INSERT INTO entitat VALUES('" + id_entitat + "', '" + nom + "', '" + contrasenya + "', '" + telefon + "', '" + correuElectronic + "')";;
+    int numeroAleatorio;
+    while (encontrado == false)
+    {
+        random_device rd;
+        mt19937 gen(rd());
+        uniform_int_distribution<int> dis(1, 9999);
+        numeroAleatorio = dis(gen);
+        posaId_Entitat(numeroAleatorio.ToString());
+        String^ sql = "SELECT * FROM entitat WHERE id_entitat='" + id_entitat + "'";
+        MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
+        MySqlDataReader^ dataReader;
+        conn->Open();
+        dataReader = cmd->ExecuteReader();
+        if (!dataReader->Read())
+        {
+            encontrado = true;
+        }
+    }
+    conn->Close();
+    posaId_Entitat(numeroAleatorio.ToString());
+    String^ sql = "INSERT INTO entitat VALUES('" + numeroAleatorio + "', '" + nom + "', '" + contrasenya + "', '" + telefon + "', '" + correuElectronic + "')";;
     MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
     MySqlDataReader^ dataReader;
     try {
@@ -46,6 +79,7 @@ void PassarelaEntitat::insereix()
         // si tot va bé es tanca la connexió
         conn->Close();
     }
+    
 }
 
 String^ PassarelaEntitat::obteContrasenya() {
