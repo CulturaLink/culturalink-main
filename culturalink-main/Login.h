@@ -1,5 +1,6 @@
 #pragma once
 #include "TxLoginCiutada.h"
+#include "RegisterFormCiutada.h"
 
 namespace culturalink_main {
 
@@ -231,6 +232,7 @@ namespace culturalink_main {
 			this->registre->TabIndex = 9;
 			this->registre->Text = L"Registra\'t";
 			this->registre->UseVisualStyleBackColor = true;
+			this->registre->Click += gcnew System::EventHandler(this, &Login::registre_Click);
 			// 
 			// Login
 			// 
@@ -290,6 +292,16 @@ private: System::Void buttonOK_Click(System::Object^ sender, System::EventArgs^ 
 	}
 	else if (RBent->Checked){
 		//TODO
+	}
+}
+
+private: System::Void registre_Click(System::Object^ sender, System::EventArgs^ e) {
+	if (RBcit->Checked)
+	{
+		RegisterFormCiutada^ registerCiutada = gcnew RegisterFormCiutada();
+		this->Hide();
+		registerCiutada->ShowDialog();
+		this->Show();
 	}
 }
 };

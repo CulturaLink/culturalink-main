@@ -278,6 +278,30 @@ namespace culturalink_main {
 		this->Close();
 	}
 	private: System::Void btnOK_Click(System::Object^ sender, System::EventArgs^ e) {
+		String^ name = tbName->Text;
+		String^ email = tbCorreu->Text;
+		String^ fullName = tbFullName->Text;
+		String^ password = tbPassword->Text;
+		String^ confirmPassword = tbConfirmPassword->Text;
+		String^ date = tbDate->Text;
+
+		if (name->Length == 0 || email->Length == 0
+			|| fullName->Length == 0 || password->Length == 0
+			|| date->Length == 0)
+		{
+			MessageBox::Show("Omple tots els camps", 
+				"Un o mes camps buits", MessageBoxButtons::OK);
+			return;
+		}
+
+		if (String::Compare(password, confirmPassword) != 0)
+		{
+			MessageBox::Show("Les contrasenyes no coincideixen", 
+				"Password error", MessageBoxButtons::OK);
+			return;
+		}
+
+		//Conneccio a la db
 
 	}
 };
