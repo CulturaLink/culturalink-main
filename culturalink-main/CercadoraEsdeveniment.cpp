@@ -4,7 +4,7 @@
 
 CercadoraEsdeveniment::CercadoraEsdeveniment() {}
 
-PassarelaEsdeveniment^ CercadoraEsdeveniment::cercaEsdeveniment(String^ clau) {
+PassarelaEsdeveniment CercadoraEsdeveniment::cercaEsdeveniment(String^ clau) {
 
 	//DATABASE
 	String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
@@ -15,7 +15,6 @@ PassarelaEsdeveniment^ CercadoraEsdeveniment::cercaEsdeveniment(String^ clau) {
 	MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
 	cmd->Parameters->AddWithValue("@clau", clau); // Asignación del valor del parámetro
 	MySqlDataReader^ dataReader;
-
 	try {
 		// obrim la connexió
 		conn->Open();
@@ -30,8 +29,8 @@ PassarelaEsdeveniment^ CercadoraEsdeveniment::cercaEsdeveniment(String^ clau) {
 			String^ _nomEsdeveniment = dataReader->GetString(4);
 
 			
-			return gcnew PassarelaEsdeveniment (_idEntitat, _preuEsdeveniment, _ajEsdeveniment, _descEsdeveniment, _nomEsdeveniment);
-
+			PassarelaEsdeveniment P1 (_idEntitat, _preuEsdeveniment, _ajEsdeveniment, _descEsdeveniment, _nomEsdeveniment);
+			return P1;
 		}
 	}
 	catch (Exception^ ex) {

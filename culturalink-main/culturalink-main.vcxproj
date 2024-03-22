@@ -132,6 +132,9 @@
   <ItemGroup>
     <ClInclude Include="CercadoraEsdeveniment.h" />
     <ClInclude Include="config.h" />
+    <ClInclude Include="ConsultaEsdevenimentUI.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Login.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -154,6 +157,7 @@
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="CercadoraEsdeveniment.cpp" />
+    <ClCompile Include="ConsultaEsdevenimentUI.cpp" />
     <ClCompile Include="culturalinkmain.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="MainForm.cpp" />
@@ -186,6 +190,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ConsultaEsdevenimentUI.resx">
+      <DependentUpon>ConsultaEsdevenimentUI.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.h</DependentUpon>
     </EmbeddedResource>

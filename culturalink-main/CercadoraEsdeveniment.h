@@ -12,7 +12,7 @@ ref class CercadoraEsdeveniment
 {
 public:
 	CercadoraEsdeveniment();
-	PassarelaEsdeveniment^ cercaEsdeveniment(String^ clau);
+	PassarelaEsdeveniment cercaEsdeveniment(String^ clau);
 
 private:
 

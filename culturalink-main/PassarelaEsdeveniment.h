@@ -15,6 +15,14 @@ public:
     PassarelaEsdeveniment(int idEnt, float preu, String^ ajEsd, String^ descEsd, String^ nomEsd);
     PassarelaEsdeveniment();
     void insereix();
+    PassarelaEsdeveniment% operator=(const PassarelaEsdeveniment% other);
+    PassarelaEsdeveniment(const PassarelaEsdeveniment% p1);
+    int getIdEnt();
+    int getPreu();
+    String^ getAjEsd();
+    String^ getDescEsd();
+    String^ getNomEsd();
+
 
 private:
     int _idEnt;
