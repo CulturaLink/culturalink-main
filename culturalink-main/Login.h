@@ -1,4 +1,6 @@
 #pragma once
+#include "RegistraEntitat.h"
+#include "TxIniciaSessio.h"
 #include "Ciutada.h"
 #include "TxLoginAjuntament.h"
 
@@ -65,7 +67,7 @@ namespace culturalink_main {
 		/// <summary>
 		/// Variable del diseñador necesaria.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -311,12 +313,34 @@ private: System::Void buttonOK_Click(System::Object^ sender, System::EventArgs^ 
 
 	}
 	else if (RBent->Checked){
+		try
+		{
+			String^ correu = this->TBUsr->Text;
+			String^ contra = this->TBpwd->Text;
+			TxIniciaSessio txlogin(correu, contra);
+			txlogin.executar();
+			MessageBox::Show("Correu i contrasenya correctes!", "Login");
+			this->Close();
+		}
+		catch (string er)
+		{
+			MessageBox::Show("Correu o contrasenya incorrectes, siusplau torna-ho a intentar.", "Correu o contrasenya incorrectes");
+		}
 	}
 }
 private: System::Void RBajt_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
 	if (RBajt->Checked) registre->Visible = false;
 	else registre->Visible = true;
 }
+	   private: System::Void registre_Click(System::Object^ sender, System::EventArgs^ e) {
+		   if (RBcit->Checked) {}
+		   else if (RBent->Checked) {
+			   RegistraEntitat^ reg = gcnew RegistraEntitat();
+			   this->Visible = false;
+			   reg->ShowDialog();
+			   this->Visible = true;
+		   }
+	   }
 private: System::Void TBUsr_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 };

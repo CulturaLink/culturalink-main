@@ -1,13 +1,8 @@
 #pragma once
 #include <iostream>
 #include <string>
-//#include "CercadoraUsuari.cpp"
-//#include "CercadoraCompres.cpp"
-//#include "CercadoraElemCompra.cpp"
-//#include "CercadoraConte.cpp"
-//#include "CercadoraVideojocs.cpp"
-//#include "CercadoraPaquetVideojoc.cpp"
-//#include "Videoconsola.cpp"
+#include <cstdlib>
+#include <vector>
 
 using namespace std;
 
