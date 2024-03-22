@@ -320,10 +320,13 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	else registre->Visible = true;
 }
 private: System::Void registre_Click(System::Object^ sender, System::EventArgs^ e) {
-	RegistraEntitat^ reg = gcnew RegistraEntitat();
-	this->Visible = false;
-	reg->ShowDialog();
-	this->Visible = true;
+	if(RBcit->Checked){}
+	else if (RBent->Checked) {
+		RegistraEntitat^ reg = gcnew RegistraEntitat();
+		this->Visible = false;
+		reg->ShowDialog();
+		this->Visible = true;
+	}
 }
 };
 }
