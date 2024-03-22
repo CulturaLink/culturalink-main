@@ -130,13 +130,23 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< Updated upstream:AMEP_CppCLR/AMEP_CppCLR/AMEP_CppCLR.vcxproj
     <ClInclude Include="Form1.h">
+=======
+    <ClInclude Include="AjuntamentIniciat.h" />
+    <ClInclude Include="CercadoraAjuntament.h" />
+    <ClInclude Include="CercadoraCiutada.h" />
+    <ClInclude Include="CercadoraEntitat.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="InfoAjuntament.h">
+>>>>>>> Stashed changes:culturalink-main/culturalink-main.vcxproj
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Form2.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="pch.h" />
+<<<<<<< Updated upstream:AMEP_CppCLR/AMEP_CppCLR/AMEP_CppCLR.vcxproj
     <ClInclude Include="Resource.h" />
   </ItemGroup>
   <ItemGroup>
@@ -144,12 +154,65 @@
     <ClCompile Include="CppCLR_WinFormsProject.cpp" />
     <ClCompile Include="Form1.cpp" />
     <ClCompile Include="Form2.cpp" />
+=======
+    <ClInclude Include="PerfilCiutada.h" />
+    <ClInclude Include="RegistraEntitat.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="RegistraEsdevenimentUI1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Sistema.h" />
+    <ClInclude Include="Transaccio.h" />
+    <ClInclude Include="TxConsultaAjuntament.h" />
+    <ClInclude Include="TxLoginAjuntament.h" />
+    <ClInclude Include="TxLoginCiutada.h" />
+    <ClInclude Include="TxRegisterCiutada.h" />
+    <ClInclude Include="TxRegistraEsdeveniment.h" />
+    <ClInclude Include="EntitatIniciat.h" />
+    <ClInclude Include="TxConsultaEntitat.h" />
+    <ClInclude Include="TxIniciaSessio.h" />
+    <ClInclude Include="TxRegistraEntitat.h" />
+    <ClInclude Include="UsuariIniciat.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="CercadoraAjuntament.cpp" />
+    <ClCompile Include="CercadoraCiutada.cpp" />
+    <ClCompile Include="CercadoraEntitat.cpp" />
+    <ClCompile Include="culturalinkmain.cpp" />
+    <ClCompile Include="InfoAjuntament.cpp" />
+    <ClCompile Include="InfoEntitat.cpp" />
+    <ClCompile Include="Login.cpp" />
+    <ClCompile Include="MainForm.cpp" />
+    <ClCompile Include="PassarelaAjuntament.cpp" />
+    <ClCompile Include="PassarelaCiutada.cpp" />
+    <ClCompile Include="PassarelaEntitat.cpp" />
+    <ClCompile Include="PassarelaEsdeveniment.cpp" />
+>>>>>>> Stashed changes:culturalink-main/culturalink-main.vcxproj
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+<<<<<<< Updated upstream:AMEP_CppCLR/AMEP_CppCLR/AMEP_CppCLR.vcxproj
+=======
+    <ClCompile Include="PerfilCiutada.cpp" />
+    <ClCompile Include="RegistraEsdevenimentUI1.cpp" />
+    <ClCompile Include="Sistema.cpp" />
+    <ClCompile Include="Transaccio.cpp" />
+    <ClCompile Include="TxConsultaAjuntament.cpp" />
+    <ClCompile Include="TxLoginAjuntament.cpp" />
+    <ClCompile Include="TxLoginCiutada.cpp" />
+    <ClCompile Include="TxRegisterCiutada.cpp" />
+    <ClCompile Include="TxRegistraEsdeveniment.cpp" />
+    <ClCompile Include="RegistraEntitat.cpp" />
+    <ClCompile Include="TxConsultaEntitat.cpp" />
+    <ClCompile Include="TxIniciaSessio.cpp" />
+    <ClCompile Include="TxRegistraEntitat.cpp" />
+>>>>>>> Stashed changes:culturalink-main/culturalink-main.vcxproj
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico" />
@@ -168,6 +231,26 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.h</DependentUpon>
     </EmbeddedResource>
+<<<<<<< Updated upstream:AMEP_CppCLR/AMEP_CppCLR/AMEP_CppCLR.vcxproj
+=======
+    <EmbeddedResource Include="InfoEntitat.resx">
+      <DependentUpon>InfoEntitat.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilCiutada.resx" />
+    <EmbeddedResource Include="RegistraEntitat.resx">
+      <DependentUpon>RegistraEntitat.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistraEsdevenimentUI1.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="config.txt" />
+>>>>>>> Stashed changes:culturalink-main/culturalink-main.vcxproj
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
