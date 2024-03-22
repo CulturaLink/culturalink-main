@@ -17,5 +17,5 @@ void TxRegisterCiutada::executar() {
 	//CercadoraCiutada cerc;
 	PassarelaCiutada pC;
 	pC.crear(_nickname, _nom_complet, _contrasenya, _correu, _data_naix);
-
+	pC.insereix();
 }
