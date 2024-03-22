@@ -147,6 +147,7 @@
     </ClInclude>
     <ClInclude Include="pch.h" />
 <<<<<<< Updated upstream:AMEP_CppCLR/AMEP_CppCLR/AMEP_CppCLR.vcxproj
+<<<<<<< Updated upstream:AMEP_CppCLR/AMEP_CppCLR/AMEP_CppCLR.vcxproj
     <ClInclude Include="Resource.h" />
   </ItemGroup>
   <ItemGroup>
@@ -155,6 +156,8 @@
     <ClCompile Include="Form1.cpp" />
     <ClCompile Include="Form2.cpp" />
 =======
+=======
+>>>>>>> Stashed changes:culturalink-main/culturalink-main.vcxproj
     <ClInclude Include="PerfilCiutada.h" />
     <ClInclude Include="RegistraEntitat.h">
       <FileType>CppForm</FileType>
@@ -168,7 +171,10 @@
     <ClInclude Include="TxConsultaAjuntament.h" />
     <ClInclude Include="TxLoginAjuntament.h" />
     <ClInclude Include="TxLoginCiutada.h" />
+<<<<<<< Updated upstream:AMEP_CppCLR/AMEP_CppCLR/AMEP_CppCLR.vcxproj
     <ClInclude Include="TxRegisterCiutada.h" />
+=======
+>>>>>>> Stashed changes:culturalink-main/culturalink-main.vcxproj
     <ClInclude Include="TxRegistraEsdeveniment.h" />
     <ClInclude Include="EntitatIniciat.h" />
     <ClInclude Include="TxConsultaEntitat.h" />
@@ -198,7 +204,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
 <<<<<<< Updated upstream:AMEP_CppCLR/AMEP_CppCLR/AMEP_CppCLR.vcxproj
+<<<<<<< Updated upstream:AMEP_CppCLR/AMEP_CppCLR/AMEP_CppCLR.vcxproj
 =======
+=======
+>>>>>>> Stashed changes:culturalink-main/culturalink-main.vcxproj
     <ClCompile Include="PerfilCiutada.cpp" />
     <ClCompile Include="RegistraEsdevenimentUI1.cpp" />
     <ClCompile Include="Sistema.cpp" />
@@ -206,7 +215,10 @@
     <ClCompile Include="TxConsultaAjuntament.cpp" />
     <ClCompile Include="TxLoginAjuntament.cpp" />
     <ClCompile Include="TxLoginCiutada.cpp" />
+<<<<<<< Updated upstream:AMEP_CppCLR/AMEP_CppCLR/AMEP_CppCLR.vcxproj
     <ClCompile Include="TxRegisterCiutada.cpp" />
+=======
+>>>>>>> Stashed changes:culturalink-main/culturalink-main.vcxproj
     <ClCompile Include="TxRegistraEsdeveniment.cpp" />
     <ClCompile Include="RegistraEntitat.cpp" />
     <ClCompile Include="TxConsultaEntitat.cpp" />

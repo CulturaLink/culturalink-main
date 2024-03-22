@@ -1,8 +1,13 @@
 #pragma once
 #include "RegistraEntitat.h"
 #include "TxIniciaSessio.h"
+<<<<<<< Updated upstream
+=======
+#include "TxLoginCiutada.h"
+>>>>>>> Stashed changes
 #include "TxLoginAjuntament.h"
 #include "TxLoginCiutada.h"
+
 
 namespace culturalink_main {
 

@@ -4,6 +4,8 @@
 #include "InfoEntitat.h"
 #include "PerfilCiutada.h"
 #include "TxConsultaEntitat.h"
+#include "UsuariIniciat.h"
+#include "PerfilCiutada.h"
 
 namespace culturalink_main {
 
@@ -253,16 +255,26 @@ private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArg
 	panelMenu->Visible = !panelMenu->Visible;
 }
 private: System::Void pictureBox3_Click(System::Object^ sender, System::EventArgs^ e) {
+<<<<<<< Updated upstream
 	UsuariIniciat^ usuari = UsuariIniciat::ObtenerInstancia();
 	Object^ usuariIniciat = usuari->getUsuari();
 	TipoPassarela tipusUsuari = usuari->getTipoPassarela();
 	// Verificar el tipo de passarela
 	if (tipusUsuari == TipoPassarela::Ciutada) {
+=======
+	UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
+	Object^ usuarioAlmacenado = usuario->getUsuari();
+	TipoPassarela tipoUsuario = usuario->getTipoPassarela();
+
+	// Verificar el tipo de usuario y actuar en consecuencia
+	if (tipoUsuario == TipoPassarela::Ciutada) {
+>>>>>>> Stashed changes
 		PerfilCiutada^ forminfoA = gcnew PerfilCiutada;
 		this->Hide();
 		forminfoA->ShowDialog();
 		this->Show();
 	}
+<<<<<<< Updated upstream
 	else if (tipusUsuari == TipoPassarela::Entitat) {
 		//TODO
 		/*InfoEntitat^ inf = gcnew InfoEntitat();
@@ -273,12 +285,23 @@ private: System::Void pictureBox3_Click(System::Object^ sender, System::EventArg
 		this->Visible = true;*/
 	}
 	else if (tipusUsuari == TipoPassarela::Ajuntament) {
+=======
+	else if (tipoUsuario == TipoPassarela::Entitat) {
+		// Realizar acciones específicas para el tipo de usuario "Entitat"
+		// ...
+	}
+	else if (tipoUsuario == TipoPassarela::Ajuntament) {
+>>>>>>> Stashed changes
 		InfoAjuntament^ forminfoA = gcnew InfoAjuntament;
 		this->Hide();
 		forminfoA->ShowDialog();
 		this->Show();
 	}
+<<<<<<< Updated upstream
 
+=======
+	
+>>>>>>> Stashed changes
 
 }
 };

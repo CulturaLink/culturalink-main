@@ -8,9 +8,14 @@ void TxConsultaAjuntament::executar(){
     UsuariIniciat^ usuari = UsuariIniciat::ObtenerInstancia();
     Object^ usuariIniciat = usuari->getUsuari();
     TipoPassarela tipusUsuari = usuari->getTipoPassarela();
+<<<<<<< Updated upstream
     if (tipusUsuari != TipoPassarela::Ajuntament) {
         return;
     }
+=======
+
+    // Convertir el objeto de passarela al tipo
+>>>>>>> Stashed changes
     PassarelaAjuntament^ a = safe_cast<PassarelaAjuntament^>(usuariIniciat);
     ajuntament = a;
 

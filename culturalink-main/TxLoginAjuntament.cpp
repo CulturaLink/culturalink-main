@@ -20,8 +20,13 @@ void TxLoginAjuntament::executar() {
 	}
 	else {
 		//uso de la clase Singleton
+<<<<<<< Updated upstream
 		UsuariIniciat^ usuari = UsuariIniciat::ObtenerInstancia();
 		usuari->setUsuari(% pA, TipoPassarela::Ajuntament);
+=======
+		UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
+		usuario->setUsuari(% pA, TipoPassarela::Ajuntament);
+>>>>>>> Stashed changes
 	}
 
 }
