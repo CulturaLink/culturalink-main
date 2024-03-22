@@ -1,9 +1,0 @@
-﻿  pch.cpp
-  AssemblyInfo.cpp
-  CppCLR_WinFormsProject.cpp
-  Form1.cpp
-  Form2.cpp
-  Generating Code...
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
-  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  AMEP_CppCLR.vcxproj -> C:\Users\Ferran\Documents\GitHub\culturalink-backend\AMEP_CppCLR\x64\Debug\AMEP_CppCLR.exe
