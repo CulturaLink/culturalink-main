@@ -1,0 +1,5 @@
+DBNAME=amep14
+USER=amep14
+PASSWORD=Yee7zaeheih9-
+HOSTADDR=ubiwan.epsevg.upc.edu
+PORT=3306
