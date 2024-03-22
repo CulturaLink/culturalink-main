@@ -136,6 +136,8 @@
     <ClInclude Include="Ciutada.h" />
     <ClInclude Include="config.h" />
     <ClInclude Include="InfoAjuntament.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="InfoEntitat.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -151,6 +153,8 @@
     <ClInclude Include="PassarelaEsdeveniment.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="RegistraEntitat.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="RegistraEsdevenimentUI1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
