@@ -1,0 +1,27 @@
+C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink-main.vcxproj.AssemblyReference.cache
+C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.InfoAjuntament.resources
+C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.InfoEntitat.resources
+C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.Login.resources
+C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.MainForm.resources
+C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.PerfilCiutada.resources
+C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistraEntitat.resources
+C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink-main.vcxproj.GenerateResource.cache
+C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink-main.vcxproj.CopyComplete
+C:\Users\Ferran\Documents\GitHub\culturalink-main - Copymergexavi-ferran\culturalink-main\x64\Debug\culturalink-main.vcxproj.AssemblyReference.cache
+C:\Users\Ferran\Documents\GitHub\culturalink-main - Copymergexavi-ferran\culturalink-main\x64\Debug\culturalink_main.InfoAjuntament.resources
+C:\Users\Ferran\Documents\GitHub\culturalink-main - Copymergexavi-ferran\culturalink-main\x64\Debug\culturalink_main.InfoEntitat.resources
+C:\Users\Ferran\Documents\GitHub\culturalink-main - Copymergexavi-ferran\culturalink-main\x64\Debug\culturalink_main.Login.resources
+C:\Users\Ferran\Documents\GitHub\culturalink-main - Copymergexavi-ferran\culturalink-main\x64\Debug\culturalink_main.MainForm.resources
+C:\Users\Ferran\Documents\GitHub\culturalink-main - Copymergexavi-ferran\culturalink-main\x64\Debug\culturalink_main.PerfilCiutada.resources
+C:\Users\Ferran\Documents\GitHub\culturalink-main - Copymergexavi-ferran\culturalink-main\x64\Debug\culturalink_main.RegistraEntitat.resources
+C:\Users\Ferran\Documents\GitHub\culturalink-main - Copymergexavi-ferran\culturalink-main\x64\Debug\culturalink-main.vcxproj.GenerateResource.cache
+C:\Users\Ferran\Documents\GitHub\culturalink-main - Copymergexavi-ferran\culturalink-main\x64\Debug\culturalink-main.vcxproj.CopyComplete
+C:\Users\patri\Documents\culturalink-main - Copymergexavi-ferran\culturalink-main\x64\Debug\culturalink-main.vcxproj.AssemblyReference.cache
+C:\Users\patri\Documents\culturalink-main - Copymergexavi-ferran\culturalink-main\x64\Debug\culturalink_main.InfoAjuntament.resources
+C:\Users\patri\Documents\culturalink-main - Copymergexavi-ferran\culturalink-main\x64\Debug\culturalink_main.InfoEntitat.resources
+C:\Users\patri\Documents\culturalink-main - Copymergexavi-ferran\culturalink-main\x64\Debug\culturalink_main.Login.resources
+C:\Users\patri\Documents\culturalink-main - Copymergexavi-ferran\culturalink-main\x64\Debug\culturalink_main.MainForm.resources
+C:\Users\patri\Documents\culturalink-main - Copymergexavi-ferran\culturalink-main\x64\Debug\culturalink_main.PerfilCiutada.resources
+C:\Users\patri\Documents\culturalink-main - Copymergexavi-ferran\culturalink-main\x64\Debug\culturalink_main.RegistraEntitat.resources
+C:\Users\patri\Documents\culturalink-main - Copymergexavi-ferran\culturalink-main\x64\Debug\culturalink-main.vcxproj.GenerateResource.cache
+C:\Users\patri\Documents\culturalink-main - Copymergexavi-ferran\culturalink-main\x64\Debug\culturalink-main.vcxproj.CopyComplete
