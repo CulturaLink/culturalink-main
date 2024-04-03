@@ -34,3 +34,12 @@ D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\cult
 D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistraEntitat.resources
 D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink-main.vcxproj.GenerateResource.cache
 D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\cultural.EBB58B54.Up2Date
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink-main.vcxproj.AssemblyReference.cache
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.InfoAjuntament.resources
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.InfoEntitat.resources
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.Login.resources
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.MainForm.resources
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.PerfilCiutada.resources
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistraEntitat.resources
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink-main.vcxproj.GenerateResource.cache
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink-main.vcxproj.CopyComplete
