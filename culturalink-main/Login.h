@@ -3,6 +3,7 @@
 #include "TxIniciaSessio.h"
 #include "TxLoginCiutada.h"
 #include "TxLoginAjuntament.h"
+#include "RegisterFormCiutada.h"
 
 
 namespace culturalink_main {
@@ -331,7 +332,12 @@ private: System::Void RBajt_CheckedChanged(System::Object^ sender, System::Event
 private: System::Void TBUsr_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void registre_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (RBcit->Checked) {}
+	if (RBcit->Checked) {
+		RegisterFormCiutada^ registerCiutada = gcnew RegisterFormCiutada();
+		this->Hide();
+		registerCiutada->ShowDialog();
+		this->Show();
+	}
 	else if (RBent->Checked) {
 		RegistraEntitat^ reg = gcnew RegistraEntitat();
 		this->Visible = false;

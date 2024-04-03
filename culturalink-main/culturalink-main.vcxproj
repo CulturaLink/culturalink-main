@@ -153,6 +153,9 @@
     <ClInclude Include="PassarelaEsdeveniment.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="PerfilCiutada.h" />
+    <ClInclude Include="RegisterFormCiutada.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="RegistraEntitat.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -165,6 +168,7 @@
     <ClInclude Include="TxConsultaAjuntament.h" />
     <ClInclude Include="TxLoginAjuntament.h" />
     <ClInclude Include="TxLoginCiutada.h" />
+    <ClInclude Include="TxRegisterCiutada.h" />
     <ClInclude Include="TxRegistraEsdeveniment.h" />
     <ClInclude Include="EntitatIniciat.h" />
     <ClInclude Include="TxConsultaEntitat.h" />
@@ -193,12 +197,14 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="PerfilCiutada.cpp" />
+    <ClCompile Include="RegisterFormCiutada.cpp" />
     <ClCompile Include="RegistraEsdevenimentUI1.cpp" />
     <ClCompile Include="Sistema.cpp" />
     <ClCompile Include="Transaccio.cpp" />
     <ClCompile Include="TxConsultaAjuntament.cpp" />
     <ClCompile Include="TxLoginAjuntament.cpp" />
     <ClCompile Include="TxLoginCiutada.cpp" />
+    <ClCompile Include="TxRegisterCiutada.cpp" />
     <ClCompile Include="TxRegistraEsdeveniment.cpp" />
     <ClCompile Include="RegistraEntitat.cpp" />
     <ClCompile Include="TxConsultaEntitat.cpp" />

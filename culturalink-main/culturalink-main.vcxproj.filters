@@ -107,6 +107,12 @@
     <ClInclude Include="UsuariIniciat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TxRegisterCiutada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RegisterFormCiutada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -191,6 +197,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TxLoginCiutada.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxRegisterCiutada.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegisterFormCiutada.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

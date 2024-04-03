@@ -43,3 +43,12 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\cult
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistraEntitat.resources
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink-main.vcxproj.GenerateResource.cache
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink-main.vcxproj.CopyComplete
+C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink-main.vcxproj.AssemblyReference.cache
+C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.InfoAjuntament.resources
+C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.InfoEntitat.resources
+C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.Login.resources
+C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.MainForm.resources
+C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.PerfilCiutada.resources
+C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistraEntitat.resources
+C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink-main.vcxproj.GenerateResource.cache
+C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\cultural.EBB58B54.Up2Date
