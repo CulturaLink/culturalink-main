@@ -5,6 +5,7 @@
 #include "TxConsultaEntitat.h"
 #include "UsuariIniciat.h"
 #include "PerfilCiutada.h"
+#include "RegistrarEsdevenimentUI.h"
 
 namespace culturalink_main {
 
@@ -105,6 +106,7 @@ namespace culturalink_main {
 			// 
 			this->notifyIcon1->Text = L"notifyIcon1";
 			this->notifyIcon1->Visible = true;
+			this->notifyIcon1->MouseDoubleClick += gcnew System::Windows::Forms::MouseEventHandler(this, &MainForm::notifyIcon1_MouseDoubleClick);
 			// 
 			// panelDesktop
 			// 
@@ -117,6 +119,7 @@ namespace culturalink_main {
 			this->panelDesktop->Name = L"panelDesktop";
 			this->panelDesktop->Size = System::Drawing::Size(662, 368);
 			this->panelDesktop->TabIndex = 4;
+			this->panelDesktop->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MainForm::panelDesktop_Paint);
 			// 
 			// panelMenu
 			// 
@@ -131,13 +134,14 @@ namespace culturalink_main {
 			this->panelMenu->Name = L"panelMenu";
 			this->panelMenu->Size = System::Drawing::Size(169, 368);
 			this->panelMenu->TabIndex = 0;
+			this->panelMenu->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MainForm::panelMenu_Paint);
 			// 
 			// button4
 			// 
 			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button4->Location = System::Drawing::Point(4, 156);
-			this->button4->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button4->Margin = System::Windows::Forms::Padding(4);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(159, 42);
 			this->button4->TabIndex = 3;
@@ -151,36 +155,39 @@ namespace culturalink_main {
 			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button3->Location = System::Drawing::Point(4, 107);
-			this->button3->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button3->Margin = System::Windows::Forms::Padding(4);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(159, 42);
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"Homepage";
 			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &MainForm::button3_Click);
 			// 
 			// button2
 			// 
 			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button2->Location = System::Drawing::Point(4, 58);
-			this->button2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button2->Margin = System::Windows::Forms::Padding(4);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(159, 42);
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"Homepage";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &MainForm::button2_Click);
 			// 
 			// button1
 			// 
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button1->Location = System::Drawing::Point(4, 9);
-			this->button1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button1->Margin = System::Windows::Forms::Padding(4);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(159, 42);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"Homepage";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &MainForm::button1_Click);
 			// 
 			// panelTitleBar
 			// 
@@ -194,13 +201,14 @@ namespace culturalink_main {
 			this->panelTitleBar->Name = L"panelTitleBar";
 			this->panelTitleBar->Size = System::Drawing::Size(831, 60);
 			this->panelTitleBar->TabIndex = 3;
+			this->panelTitleBar->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MainForm::panelTitleBar_Paint);
 			// 
 			// pictureBox3
 			// 
 			this->pictureBox3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
 			this->pictureBox3->Location = System::Drawing::Point(688, 0);
-			this->pictureBox3->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->pictureBox3->Margin = System::Windows::Forms::Padding(4);
 			this->pictureBox3->Name = L"pictureBox3";
 			this->pictureBox3->Size = System::Drawing::Size(65, 62);
 			this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -212,7 +220,7 @@ namespace culturalink_main {
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
 			this->pictureBox1->Location = System::Drawing::Point(4, 0);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(4);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(65, 62);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -225,7 +233,7 @@ namespace culturalink_main {
 			this->pictureBox2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
 			this->pictureBox2->Location = System::Drawing::Point(761, -1);
-			this->pictureBox2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->pictureBox2->Margin = System::Windows::Forms::Padding(4);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(65, 62);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -292,6 +300,28 @@ private: System::Void pictureBox3_Click(System::Object^ sender, System::EventArg
 	}
 }
 private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+
+	RegistrarEsdevenimentUI^ formLog = gcnew RegistrarEsdevenimentUI;
+	formLog->ShowDialog();
+	/*UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
+	if (usuario->getTipoPassarela() == TipoPassarela::Entitat) {
+		this->button4->Visible = true;
+	}*/
+
+}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void panelDesktop_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+}
+private: System::Void panelMenu_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+}
+private: System::Void notifyIcon1_MouseDoubleClick(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e) {
+}
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void panelTitleBar_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 }
 };
 }

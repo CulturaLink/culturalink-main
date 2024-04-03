@@ -13,10 +13,12 @@ ref class PassarelaEsdeveniment {
 
 public:
     PassarelaEsdeveniment();
+    PassarelaEsdeveniment(String^ nomE, float preuE, String^ descripcioE, String^ ajuntamentE);
     void insereix();
 
 private:
     String^ nom;
-    String^ descripcio;
     float preu;
+    String^ descripcio;
+    String^ ajuntament;
 };

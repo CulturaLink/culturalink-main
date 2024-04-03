@@ -11,12 +11,12 @@ using namespace System::Windows::Forms;
 ref class TxRegistraEsdeveniment : public Transaccio {
 private:
     String^ nomE;
-    String^ descripcioE;
     float preuE;
-    String^ correuElectronicE;
+    String^ descripcioE;
+    String^ ajuntamentE;
 
 public:
     TxRegistraEsdeveniment();
-    //TxRegistraEsdeveniment(string nU, string sU, string cU, string ceU, string dnU);
+    TxRegistraEsdeveniment(String^ nomEsd, float preuEsd, String^ descEsd, String^ ajuntamEsdv);
     void executar() override;
 };

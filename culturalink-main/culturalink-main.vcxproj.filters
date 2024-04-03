@@ -113,6 +113,9 @@
     <ClInclude Include="RegisterFormCiutada.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="RegistrarEsdevenimentUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -203,6 +206,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="RegisterFormCiutada.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegistrarEsdevenimentUI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

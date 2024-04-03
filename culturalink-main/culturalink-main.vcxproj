@@ -162,6 +162,9 @@
     <ClInclude Include="RegistraEsdevenimentUI1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="RegistrarEsdevenimentUI.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Sistema.h" />
     <ClInclude Include="Transaccio.h" />
@@ -199,6 +202,7 @@
     <ClCompile Include="PerfilCiutada.cpp" />
     <ClCompile Include="RegisterFormCiutada.cpp" />
     <ClCompile Include="RegistraEsdevenimentUI1.cpp" />
+    <ClCompile Include="RegistrarEsdevenimentUI.cpp" />
     <ClCompile Include="Sistema.cpp" />
     <ClCompile Include="Transaccio.cpp" />
     <ClCompile Include="TxConsultaAjuntament.cpp" />
@@ -240,6 +244,12 @@
     <EmbeddedResource Include="PerfilCiutada.resx" />
     <EmbeddedResource Include="RegistraEntitat.resx">
       <DependentUpon>RegistraEntitat.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistraEsdevenimentUI1.resx">
+      <DependentUpon>RegistraEsdevenimentUI1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarEsdevenimentUI.resx">
+      <DependentUpon>RegistrarEsdevenimentUI.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
