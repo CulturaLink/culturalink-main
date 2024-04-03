@@ -1,5 +1,6 @@
 #pragma once
 #include "TxConsultaEntitat.h"
+
 namespace culturalink_main {
 
 	using namespace System;
@@ -36,40 +37,22 @@ namespace culturalink_main {
 		}
 
 	private: System::Windows::Forms::NotifyIcon^ notifyIcon1;
-
-
 	private: System::Windows::Forms::Panel^ panelDesktop;
 	private: System::Windows::Forms::Panel^ panelMenu;
 	private: System::Windows::Forms::Panel^ panelTitleBar;
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
-
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Label^ label5;
 	private: System::Windows::Forms::Label^ label4;
-
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Label^ Lcorreu;
 	private: System::Windows::Forms::Label^ Ltelefon;
-
-
-
 	private: System::Windows::Forms::Label^ Lnom;
 	private: System::Windows::Forms::Label^ Lclau;
-
-
-
-
-
-
-
-
-
-
-
-
 	private: System::ComponentModel::IContainer^ components;
+
 	protected:
 
 	protected:
@@ -91,6 +74,7 @@ namespace culturalink_main {
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(InfoEntitat::typeid));
 			this->notifyIcon1 = (gcnew System::Windows::Forms::NotifyIcon(this->components));
 			this->panelDesktop = (gcnew System::Windows::Forms::Panel());
+			this->Lclau = (gcnew System::Windows::Forms::Label());
 			this->Lcorreu = (gcnew System::Windows::Forms::Label());
 			this->Ltelefon = (gcnew System::Windows::Forms::Label());
 			this->Lnom = (gcnew System::Windows::Forms::Label());
@@ -103,7 +87,6 @@ namespace culturalink_main {
 			this->panelTitleBar = (gcnew System::Windows::Forms::Panel());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
-			this->Lclau = (gcnew System::Windows::Forms::Label());
 			this->panelDesktop->SuspendLayout();
 			this->panelMenu->SuspendLayout();
 			this->panelTitleBar->SuspendLayout();
@@ -135,6 +118,17 @@ namespace culturalink_main {
 			this->panelDesktop->Name = L"panelDesktop";
 			this->panelDesktop->Size = System::Drawing::Size(496, 299);
 			this->panelDesktop->TabIndex = 4;
+			// 
+			// Lclau
+			// 
+			this->Lclau->AutoSize = true;
+			this->Lclau->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->Lclau->Location = System::Drawing::Point(28, 81);
+			this->Lclau->Name = L"Lclau";
+			this->Lclau->Size = System::Drawing::Size(56, 18);
+			this->Lclau->TabIndex = 11;
+			this->Lclau->Text = L"********";
 			// 
 			// Lcorreu
 			// 
@@ -251,14 +245,11 @@ namespace culturalink_main {
 			// 
 			// pictureBox1
 			// 
-			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(3, 0);
+			this->pictureBox1->Location = System::Drawing::Point(0, 0);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(49, 50);
-			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
-			this->pictureBox1->TabIndex = 1;
+			this->pictureBox1->Size = System::Drawing::Size(100, 50);
+			this->pictureBox1->TabIndex = 0;
 			this->pictureBox1->TabStop = false;
-			this->pictureBox1->Click += gcnew System::EventHandler(this, &InfoEntitat::pictureBox1_Click);
 			// 
 			// pictureBox2
 			// 
@@ -272,17 +263,6 @@ namespace culturalink_main {
 			this->pictureBox2->TabStop = false;
 			this->pictureBox2->Click += gcnew System::EventHandler(this, &InfoEntitat::pictureBox2_Click);
 			// 
-			// Lclau
-			// 
-			this->Lclau->AutoSize = true;
-			this->Lclau->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->Lclau->Location = System::Drawing::Point(28, 81);
-			this->Lclau->Name = L"Lclau";
-			this->Lclau->Size = System::Drawing::Size(56, 18);
-			this->Lclau->TabIndex = 11;
-			this->Lclau->Text = L"********";
-			// 
 			// InfoEntitat
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -295,7 +275,7 @@ namespace culturalink_main {
 			this->Name = L"InfoEntitat";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Info Entitat";
-			this->Load += gcnew System::EventHandler(this, &InfoEntitat::InfoAjuntament_Load);
+			this->Load += gcnew System::EventHandler(this, &InfoEntitat::InfoEntitat_Load);
 			this->panelDesktop->ResumeLayout(false);
 			this->panelDesktop->PerformLayout();
 			this->panelMenu->ResumeLayout(false);
@@ -310,18 +290,13 @@ namespace culturalink_main {
 	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 
 	}
-
-
 	private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
-	}
-	private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
-		
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->Close();
 	}
 
-	private: System::Void InfoAjuntament_Load(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void InfoEntitat_Load(System::Object^ sender, System::EventArgs^ e) {
 		try
 		{
 			TxConsultaEntitat tc;
@@ -339,7 +314,6 @@ namespace culturalink_main {
 			MessageBox::Show(mensajeError, "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 		}
 	}
-
-	}; 
+};
 }
 

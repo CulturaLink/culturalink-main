@@ -260,14 +260,16 @@ private: System::Void pictureBox3_Click(System::Object^ sender, System::EventArg
 
 	// Verificar el tipo de usuario y actuar en consecuencia
 	if (tipoUsuario == TipoPassarela::Ciutada) {
-		PerfilCiutada^ forminfoA = gcnew PerfilCiutada;
+		PerfilCiutada^ forminfoC = gcnew PerfilCiutada;
 		this->Hide();
-		forminfoA->ShowDialog();
+		forminfoC->ShowDialog();
 		this->Show();
 	}
 	else if (tipoUsuario == TipoPassarela::Entitat) {
-		// Realizar acciones específicas para el tipo de usuario "Entitat"
-		// ...
+		InfoEntitat^ forminfoE = gcnew InfoEntitat();
+		this->Visible = false;
+		forminfoE->ShowDialog();
+		this->Visible = true;
 	}
 	else if (tipoUsuario == TipoPassarela::Ajuntament) {
 		InfoAjuntament^ forminfoA = gcnew InfoAjuntament;
@@ -275,14 +277,6 @@ private: System::Void pictureBox3_Click(System::Object^ sender, System::EventArg
 		forminfoA->ShowDialog();
 		this->Show();
 	}
-	
-
-	/*InfoEntitat^ inf = gcnew InfoEntitat();
-	this->Visible = false;
-	TxConsultaEntitat tx4;
-	tx4.executar();
-	inf->ShowDialog();
-	this->Visible = true;*/
 }
 };
 }

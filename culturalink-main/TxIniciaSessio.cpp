@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "TxIniciaSessio.h"
+#include "UsuariIniciat.h"
 
 TxIniciaSessio::TxIniciaSessio(String^ cE, String^ contraE)
 {
@@ -13,7 +14,7 @@ void TxIniciaSessio::executar()
 	if(%p1 != nullptr) if (p1.obteContrasenya() != contrasenyaE) throw(ErrorContranseya);
 	else
 	{
-		EntitatIniciat^ sist = EntitatIniciat::ObtenerInstancia();
-		sist->setUsuari(p1);
+		UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
+		usuario->setUsuari(% p1, TipoPassarela::Entitat);
 	}
 }

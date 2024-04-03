@@ -284,6 +284,7 @@ private: System::Void buttonOK_Click(System::Object^ sender, System::EventArgs^ 
 			TxLoginCiutada tx(nick, contra);
 			tx.executar();
 			MessageBox::Show("Nickname i contrasenya correctes!", "Login");
+			this->Close();
 		}
 		catch (const std::exception& e)
 		{

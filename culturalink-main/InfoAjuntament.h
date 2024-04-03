@@ -38,13 +38,10 @@ namespace culturalink_main {
 		}
 
 	private: System::Windows::Forms::NotifyIcon^ notifyIcon1;
-
-
 	private: System::Windows::Forms::Panel^ panelDesktop;
 	private: System::Windows::Forms::Panel^ panelMenu;
 	private: System::Windows::Forms::Panel^ panelTitleBar;
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
-
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Label^ label5;
@@ -58,19 +55,8 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Button^ Bshow;
 	private: System::Windows::Forms::Label^ Lclau;
 	private: System::Windows::Forms::Label^ Lnom;
-
-
-
-
-
-
-
-
-
-
-
-
 	private: System::ComponentModel::IContainer^ components;
+
 	protected:
 
 	protected:
