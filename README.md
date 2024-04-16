@@ -1,7 +1,16 @@
-# <img src="https://github.com/CulturaLink/culturalink-main/assets/92806890/49b53ba2-f25a-45e7-9e71-55463121461d" width="50" /> culturalink-main
-
-### "Connecting Cultures, Creating Community: Your Gateway to the Local Cultural World."
+<p align="center">
+<img src="https://github.com/CulturaLink/culturalink-main/assets/92806890/98ee2a77-4935-44b6-a138-789b521af800" height="190">
+</p>
+<h1 align="center">
+</h1>
+<p align="center"><i><b>Connecting Cultures, Creating Community: Your Gateway to the Local Cultural World.</b></i></p>
+<p align="center">
 Software system to help councils promote culture in their municipality.
+<p>
+  
+<p align="center">
+  <a href=""><img src="https://img.shields.io/badge/v.1.01-8ec33f"></a>
+<p>
 
 #
 
