@@ -24,5 +24,9 @@ void TxConsultaEsdeveniment::executar() {
 
 List<String^>^ TxConsultaEsdeveniment::getResult() {
     return _result;
+<<<<<<< Updated upstream
 }
 
+=======
+}
+>>>>>>> Stashed changes

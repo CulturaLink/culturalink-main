@@ -10,6 +10,7 @@ using namespace System::Windows::Forms;
 
 ref class TxRegistraEsdeveniment : public Transaccio {
 private:
+    int idE;
     String^ nomE;
     String^ descripcioE;
     float preuE;
@@ -17,6 +18,10 @@ private:
 
 public:
     TxRegistraEsdeveniment();
+<<<<<<< Updated upstream
     //TxRegistraEsdeveniment(string nU, string sU, string cU, string ceU, string dnU);
+=======
+    TxRegistraEsdeveniment(int idEsd, String^ nomEsd, float preuEsd, String^ descEsd, String^ ajuntamEsdv);
+>>>>>>> Stashed changes
     void executar() override;
 };

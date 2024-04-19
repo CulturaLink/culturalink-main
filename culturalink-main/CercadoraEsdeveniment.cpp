@@ -11,7 +11,11 @@ PassarelaEsdeveniment CercadoraEsdeveniment::cercaEsdeveniment(String^ clau) {
 	MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
 
 	// Uso de parámetros en la consulta SQL
+<<<<<<< Updated upstream
 	String^ sql = "SELECT * FROM esdeveniment WHERE id_esdeveniment = @clau";
+=======
+	String^ sql = "SELECT * FROM esdeveniment WHERE nom_esdeveniment = @clau";
+>>>>>>> Stashed changes
 	MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
 	cmd->Parameters->AddWithValue("@clau", clau); // Asignación del valor del parámetro
 	MySqlDataReader^ dataReader;
@@ -28,8 +32,13 @@ PassarelaEsdeveniment CercadoraEsdeveniment::cercaEsdeveniment(String^ clau) {
 			String^ _descEsdeveniment = dataReader->GetString(3);
 			String^ _nomEsdeveniment = dataReader->GetString(4);
 
+<<<<<<< Updated upstream
 			
 			PassarelaEsdeveniment P1 (_idEntitat, _preuEsdeveniment, _ajEsdeveniment, _descEsdeveniment, _nomEsdeveniment);
+=======
+
+			PassarelaEsdeveniment P1(_idEntitat, _preuEsdeveniment, _ajEsdeveniment, _descEsdeveniment, _nomEsdeveniment);
+>>>>>>> Stashed changes
 			return P1;
 		}
 	}

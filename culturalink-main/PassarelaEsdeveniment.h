@@ -2,7 +2,14 @@
 #include <iostream>
 #include <string>
 #include "config.h"
+<<<<<<< Updated upstream
 #include <Windows.h>
+=======
+#include "EntitatIniciat.h"
+//#include <Windows.h>
+>>>>>>> Stashed changes
+
+const int preuNegatiu = 1;
 
 using namespace std;
 using namespace MySql::Data::MySqlClient;
@@ -22,7 +29,10 @@ public:
     String^ getAjEsd();
     String^ getDescEsd();
     String^ getNomEsd();
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 
 private:
     int _idEnt;

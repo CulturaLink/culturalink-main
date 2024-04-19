@@ -130,9 +130,25 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
     <ClInclude Include="CercadoraEsdeveniment.h" />
     <ClInclude Include="config.h" />
     <ClInclude Include="ConsultaEsdevenimentUI.h">
+=======
+    <ClInclude Include="AjuntamentIniciat.h" />
+    <ClInclude Include="CercadoraAjuntament.h" />
+    <ClInclude Include="CercadoraCiutada.h" />
+    <ClInclude Include="CercadoraEntitat.h" />
+    <ClInclude Include="CercadoraEsdeveniment.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="ConsultaEsdevenimentUI.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="InfoAjuntament.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="InfoEntitat.h">
+>>>>>>> Stashed changes
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Login.h">
@@ -151,11 +167,25 @@
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Sistema.h" />
     <ClInclude Include="Transaccio.h" />
+<<<<<<< Updated upstream
     <ClInclude Include="TxConsultaEsdeveniment.h" />
+=======
+    <ClInclude Include="TxConsultaAjuntament.h" />
+    <ClInclude Include="TxConsultaEsdeveniment.h" />
+    <ClInclude Include="TxLoginAjuntament.h" />
+    <ClInclude Include="TxLoginCiutada.h" />
+    <ClInclude Include="TxRegisterCiutada.h" />
+>>>>>>> Stashed changes
     <ClInclude Include="TxRegistraEsdeveniment.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
+<<<<<<< Updated upstream
+=======
+    <ClCompile Include="CercadoraAjuntament.cpp" />
+    <ClCompile Include="CercadoraCiutada.cpp" />
+    <ClCompile Include="CercadoraEntitat.cpp" />
+>>>>>>> Stashed changes
     <ClCompile Include="CercadoraEsdeveniment.cpp" />
     <ClCompile Include="ConsultaEsdevenimentUI.cpp" />
     <ClCompile Include="culturalinkmain.cpp" />
@@ -173,7 +203,15 @@
     <ClCompile Include="RegistraEsdevenimentUI1.cpp" />
     <ClCompile Include="Sistema.cpp" />
     <ClCompile Include="Transaccio.cpp" />
+<<<<<<< Updated upstream
     <ClCompile Include="TxConsultaEsdeveniment.cpp" />
+=======
+    <ClCompile Include="TxConsultaAjuntament.cpp" />
+    <ClCompile Include="TxConsultaEsdeveniment.cpp" />
+    <ClCompile Include="TxLoginAjuntament.cpp" />
+    <ClCompile Include="TxLoginCiutada.cpp" />
+    <ClCompile Include="TxRegisterCiutada.cpp" />
+>>>>>>> Stashed changes
     <ClCompile Include="TxRegistraEsdeveniment.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -192,6 +230,15 @@
   <ItemGroup>
     <EmbeddedResource Include="ConsultaEsdevenimentUI.resx">
       <DependentUpon>ConsultaEsdevenimentUI.h</DependentUpon>
+<<<<<<< Updated upstream
+=======
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoAjuntament.resx">
+      <DependentUpon>InfoAjuntament.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoEntitat.resx">
+      <DependentUpon>InfoEntitat.h</DependentUpon>
+>>>>>>> Stashed changes
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.h</DependentUpon>

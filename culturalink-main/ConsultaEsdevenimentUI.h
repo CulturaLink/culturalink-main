@@ -55,7 +55,11 @@ namespace culturalink_main {
 		/// <summary>
 		/// Variable del diseñador necesaria.
 		/// </summary>
+<<<<<<< Updated upstream
 		System::ComponentModel::Container ^components;
+=======
+		System::ComponentModel::Container^ components;
+>>>>>>> Stashed changes
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -182,7 +186,11 @@ namespace culturalink_main {
 		}
 #pragma endregion
 	private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+<<<<<<< Updated upstream
 		
+=======
+
+>>>>>>> Stashed changes
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		String^ nomEsd = this->textBox1->Text;
@@ -197,6 +205,7 @@ namespace culturalink_main {
 	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 
 	}
+<<<<<<< Updated upstream
 private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -206,3 +215,14 @@ private: System::Void ConsultaEsdevenimentUI_Load(System::Object^ sender, System
 }
 };
 }
+=======
+	private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void ConsultaEsdevenimentUI_Load(System::Object^ sender, System::EventArgs^ e) {
+
+	}
+	};
+}
+>>>>>>> Stashed changes

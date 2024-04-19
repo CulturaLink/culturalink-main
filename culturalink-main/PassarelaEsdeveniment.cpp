@@ -2,9 +2,13 @@
 #include "pch.h"
 #include "PassarelaEsdeveniment.h"
 
+<<<<<<< Updated upstream
 
 
 PassarelaEsdeveniment::PassarelaEsdeveniment(int idEnt, float preu, String^ ajEsd , String^ descEsd, String^ nomEsd ) {
+=======
+PassarelaEsdeveniment::PassarelaEsdeveniment(int idEnt, float preu, String^ ajEsd, String^ descEsd, String^ nomEsd) {
+>>>>>>> Stashed changes
     _idEnt = idEnt;
     _preu = preu;
     _ajEsd = ajEsd;
@@ -12,7 +16,10 @@ PassarelaEsdeveniment::PassarelaEsdeveniment(int idEnt, float preu, String^ ajEs
     _nomEsd = nomEsd;
 }
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 PassarelaEsdeveniment::PassarelaEsdeveniment() {
     _idEnt = 0;
     _preu = 0;
@@ -35,8 +42,22 @@ void PassarelaEsdeveniment::insereix() {
         String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
         MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
 
+       // EntitatIniciat^ entitat = EntitatIniciat::ObtenerInstancia();
+
+        //String^ id = (entitat->getId())->ToString();
+ 
+        if (_preu < 0) {
+            throw (preuNegatiu);
+        }
+
         String^ sql = "INSERT INTO amep14.esdeveniment (id_entitat, preu_esdeveniment, ajuntament_esdeveniment, descripcio_esdeveniment, nom_esdeveniment)"
+<<<<<<< Updated upstream
             "VALUES(@_idEnt, @_preu, @_ajEsd, @_descEsd, @_nomEsd);";
+=======
+                      //"VALUES('" + id + "', '" + preu + "', '" + ajuntament + "', '" + descripcio + "', '" + nom + "');";
+                      "VALUES('5236', '" + _preu + "', '" + _ajEsd + "', '" + _descEsd + "', '" + _nomEsd + "');";
+
+>>>>>>> Stashed changes
         MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
 
         cmd->Parameters->AddWithValue("@_idEnt", _idEnt);
@@ -93,5 +114,9 @@ String^ PassarelaEsdeveniment::getDescEsd() {
 
 String^ PassarelaEsdeveniment::getNomEsd() {
     return _nomEsd;
+<<<<<<< Updated upstream
 }
 
+=======
+}
+>>>>>>> Stashed changes

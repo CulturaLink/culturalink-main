@@ -16,5 +16,9 @@ public:
 
 private:
 
+<<<<<<< Updated upstream
 };
 
+=======
+};
+>>>>>>> Stashed changes

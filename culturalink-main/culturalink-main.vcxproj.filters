@@ -65,6 +65,15 @@
     <ClInclude Include="ConsultaEsdevenimentUI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ConsultaEsdevenimentUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TxConsultaEsdeveniment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CercadoraEsdeveniment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -110,6 +119,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ConsultaEsdevenimentUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsultaEsdevenimentUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxConsultaEsdeveniment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CercadoraEsdeveniment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
