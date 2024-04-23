@@ -1,3 +1,10 @@
-﻿  PassarelaEsdeveniment.cpp
-  AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
-  culturalink-main.vcxproj -> C:\Users\patri\Documents\GitHub\culturalink-main\x64\Debug\culturalink-main.exe
+﻿  TxIniciaSessio.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+  (compiling source file '/TxIniciaSessio.cpp')
+  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': is abstract
+  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  see declaration of 'Transaccio::executar'
+  
+  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  culturalink-main.vcxproj -> D:\Users\xavit\Documents\GitHub\culturalink-main\x64\Debug\culturalink-main.exe

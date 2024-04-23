@@ -27,10 +27,13 @@ PassarelaEntitat CercadoraEntitat::cercaEntitat(String^ correuE)
 			return p2;
 
 		}
-		else throw(EntitatNoExisteix);
+		else {
+			PassarelaEntitat ent;
+			return ent;
+		}
 	}
 	catch (Exception^ ex) {
 		// codi per mostrar l’error en una finestra
-		throw(EntitatNoExisteix);
+		MessageBox::Show(ex->Message);
 	}
 }

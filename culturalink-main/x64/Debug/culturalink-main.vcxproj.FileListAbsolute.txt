@@ -54,3 +54,5 @@ C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\D
 C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\cultural.EBB58B54.Up2Date
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistraEsdevenimentUI1.resources
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistrarEsdevenimentUI.resources
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistraEsdevenimentUI1.resources
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistrarEsdevenimentUI.resources

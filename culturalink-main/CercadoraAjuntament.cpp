@@ -44,7 +44,7 @@ PassarelaAjuntament CercadoraAjuntament::cercaAjuntament(String^ clau) {
 	}
 	finally {
 		// si tot va bé es tanca la connexió
-		MessageBox::Show("Connexio DB exitosa!");
+		// MessageBox::Show("Connexio DB exitosa!");
 		conn->Close();
 	}
 

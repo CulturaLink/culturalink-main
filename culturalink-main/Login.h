@@ -96,7 +96,7 @@ namespace culturalink_main {
 			// TBUsr
 			// 
 			this->TBUsr->Location = System::Drawing::Point(84, 85);
-			this->TBUsr->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->TBUsr->Margin = System::Windows::Forms::Padding(2);
 			this->TBUsr->Name = L"TBUsr";
 			this->TBUsr->Size = System::Drawing::Size(355, 20);
 			this->TBUsr->TabIndex = 1;
@@ -105,7 +105,7 @@ namespace culturalink_main {
 			// TBpwd
 			// 
 			this->TBpwd->Location = System::Drawing::Point(136, 129);
-			this->TBpwd->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->TBpwd->Margin = System::Windows::Forms::Padding(2);
 			this->TBpwd->Name = L"TBpwd";
 			this->TBpwd->Size = System::Drawing::Size(303, 20);
 			this->TBpwd->TabIndex = 2;
@@ -150,7 +150,7 @@ namespace culturalink_main {
 			this->buttonOK->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->buttonOK->Location = System::Drawing::Point(214, 170);
-			this->buttonOK->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->buttonOK->Margin = System::Windows::Forms::Padding(2);
 			this->buttonOK->Name = L"buttonOK";
 			this->buttonOK->Size = System::Drawing::Size(225, 41);
 			this->buttonOK->TabIndex = 6;
@@ -163,7 +163,7 @@ namespace culturalink_main {
 			this->cancel->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->cancel->Location = System::Drawing::Point(334, 216);
-			this->cancel->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->cancel->Margin = System::Windows::Forms::Padding(2);
 			this->cancel->Name = L"cancel";
 			this->cancel->Size = System::Drawing::Size(105, 41);
 			this->cancel->TabIndex = 7;
@@ -232,7 +232,7 @@ namespace culturalink_main {
 			this->registre->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->registre->Location = System::Drawing::Point(214, 216);
-			this->registre->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->registre->Margin = System::Windows::Forms::Padding(2);
 			this->registre->Name = L"registre";
 			this->registre->Size = System::Drawing::Size(116, 41);
 			this->registre->TabIndex = 9;
@@ -255,7 +255,7 @@ namespace culturalink_main {
 			this->Controls->Add(this->TBpwd);
 			this->Controls->Add(this->TBUsr);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
-			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"Login";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Login";
@@ -319,9 +319,11 @@ private: System::Void buttonOK_Click(System::Object^ sender, System::EventArgs^ 
 			MessageBox::Show("Correu i contrasenya correctes!", "Login");
 			this->Close();
 		}
-		catch (string er)
+		catch (const std::exception& e)
 		{
-			MessageBox::Show("Correu o contrasenya incorrectes, siusplau torna-ho a intentar.", "Correu o contrasenya incorrectes");
+			// Convertir la excepción de C++ a System::String^
+			String^ mensajeError = gcnew String(e.what());
+			MessageBox::Show(mensajeError, "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 		}
 	}
 }
