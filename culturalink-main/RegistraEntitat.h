@@ -209,6 +209,61 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 			"Un o mes camps buits", MessageBoxButtons::OK);
 		return;
 	}
+	
+    //NOM EXCEPCIONS
+	bool encontrado = false;
+	for (int i = 0; i < nom->Length && encontrado == false; i++)
+	{
+		if (47 < nom[i] && nom[i] < 58) encontrado = true;
+	}
+	if (encontrado == true)
+	{
+		MessageBox::Show("Revisa el camp 'nom' no té el format indicat ", "Camp amb format incorrecte", MessageBoxButtons::OK);
+		return;
+	}
+
+	//CONTRASENYA EXCEPCIONS
+	if (contrasenya->Length < 8)
+	{
+		MessageBox::Show("Revisa el camp 'contrasenya' ha de tenir com a mínim 8 caracters",
+			"Camp amb format incorrecte", MessageBoxButtons::OK);
+		return;
+	}
+
+	encontrado = false;
+	for (int i = 0; i < contrasenya->Length && encontrado == false; i++)
+	{
+		if (64 < contrasenya[i] && contrasenya[i] < 91) encontrado = true;
+	}
+	if (encontrado == false)
+	{
+		MessageBox::Show("Revisa el camp 'contrasenya' no té el format indicat ", "Camp amb format incorrecte", MessageBoxButtons::OK);
+		return;
+	}
+
+	encontrado = false;
+	for (int i = 0; i < contrasenya->Length && encontrado == false; i++)
+	{
+		if (47 < contrasenya[i] && contrasenya[i] < 58) encontrado = true;
+	}
+	if (encontrado == false)
+	{
+		MessageBox::Show("Revisa el camp 'contrasenya' no té el format indicat ", "Camp amb format incorrecte", MessageBoxButtons::OK);
+		return;
+	}
+
+
+	//TELEFON EXCEPCIONS
+	encontrado = false;
+	for (int i = 0; i < telefon->Length && encontrado == false; i++)
+	{
+		if (!(47 < telefon[i] && telefon[i] < 58)) encontrado = true;
+	}
+	if (encontrado == true)
+	{
+		MessageBox::Show("Revisa el camp 'telefon' no té el format indicat", "Camp amb format incorrecte", MessageBoxButtons::OK);
+		return;
+	}
 	TxRegistraEntitat tx1(nom, contrasenya, correu, Convert::ToInt32(telefon), 0);
 	tx1.executar();
 	this->Close();

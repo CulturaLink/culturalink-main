@@ -160,7 +160,7 @@ namespace culturalink_main {
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(119, 48);
 			this->button2->TabIndex = 1;
-			this->button2->Text = L"Consultar Entitat";
+			this->button2->Text = L"Homepage";
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &MainForm::button2_Click);
 			// 
@@ -253,20 +253,13 @@ private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArg
 	panelMenu->Visible = !panelMenu->Visible;
 }
 private: System::Void pictureBox3_Click(System::Object^ sender, System::EventArgs^ e) {
-	InfoAjuntament^ forminfoA = gcnew InfoAjuntament;
-	this->Hide();
-	forminfoA->ShowDialog();
-	this->Show();
-
+	InfoEntitat^ inf = gcnew InfoEntitat();
+	this->Visible = false;
+	inf->ShowDialog();
+	this->Visible = true;
 }
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 
-	InfoEntitat^ inf = gcnew InfoEntitat();
-	this->Visible = false;
-	TxConsultaEntitat tx4;
-	tx4.executar();
-	inf->ShowDialog();
-	this->Visible = true;
 }
 };
 }
