@@ -7,12 +7,13 @@
 using namespace std;
 using namespace MySql::Data::MySqlClient;
 using namespace System;
+using namespace System::Collections::Generic;
 
 ref class TxConsultaAjuntament {
 
 private:
 
-    PassarelaAjuntament ajuntament;
+    PassarelaAjuntament^ ajuntament;
     List<String^>^ result;
 
 public:
@@ -20,6 +21,6 @@ public:
 
     void executar();
     List<String^>^ getResult();
-    PassarelaAjuntament getAjuntament();
+    PassarelaAjuntament^ getAjuntament();
 };
 

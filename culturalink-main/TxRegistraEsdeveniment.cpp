@@ -6,8 +6,15 @@ TxRegistraEsdeveniment::TxRegistraEsdeveniment() {
     inicialitza();
 }
 
+TxRegistraEsdeveniment::TxRegistraEsdeveniment(String^ nomEsd, float preuEsd, String^ descEsd, String^ ajuntamEsdv)
+{
+    nomE = nomEsd;
+    preuE = preuEsd;
+    descripcioE = descEsd;
+    ajuntamentE = ajuntamEsdv;
+}
+
 void TxRegistraEsdeveniment::executar() {
-    //PassarelaUsuari u(nomU, sobrenomU, contrasenyaU, correuElectronicU, dataNaixementU);
-    PassarelaEsdeveniment e;
+    PassarelaEsdeveniment e(nomE, preuE, descripcioE, ajuntamentE);
     e.insereix();
 }

@@ -1,9 +1,16 @@
-# <img src="https://github.com/CulturaLink/culturalink-main/assets/92806890/49b53ba2-f25a-45e7-9e71-55463121461d" width="50" /> culturalink-main
-
-### "Connecting Cultures, Creating Community: Your Gateway to the Local Cultural World."
+<p align="center">
+<img src="README-assets/CulturaLinkLogo.png" height="190">
+</p>
+<h1 align="center">
+</h1>
+<p align="center"><i><b>Connecting Cultures, Creating Community: Your Gateway to the Local Cultural World.</b></i></p>
+<p align="center">
 Software system to help councils promote culture in their municipality.
-
-#
+<p>
+  
+<p align="center">
+  <a href=""><img src="https://img.shields.io/badge/v.1.01-8ec33f"></a>
+<p>
 
 <!--
 |          Members         |                   GitHub User                |
@@ -20,11 +27,11 @@ Software system to help councils promote culture in their municipality.
 
 ## Our Team
 
-<table>
+<table> 
   <tr>
     <td align="center">
       <a href="https://github.com/artHub-j">
-        <img src="https://github.com/CulturaLink/culturalink-main/assets/92806890/72122832-1b56-48d1-a7a2-4a1fec160721" width="75px;" alt="artHub-j"/><br>
+        <img src="README-assets/arturo.jpeg" width="75px;" alt="artHub-j"/><br>
         <sub><b>@artHub-j</b></sub>
       </a><br/>
       <sub>Arturo Aragón</sub>
@@ -32,7 +39,7 @@ Software system to help councils promote culture in their municipality.
     </td> <!-- --------------------------------------------------------------------------------------------------------------------------------------- -->
     <td align="center">
       <a href="https://github.com/3R1C2001">
-        <img src="https://github.com/CulturaLink/culturalink-main/assets/92806890/72c8514a-85af-4235-b53d-8f2fe9fb13a3" width="75px;" alt="3R1C2001"/><br>
+        <img src="README-assets/eric.jpg" width="75px;" alt="3R1C2001"/><br>
         <sub><b>@3R1C2001</b></sub>
       </a><br/>
       <sub>Eric Álvarez</sub>
@@ -40,7 +47,7 @@ Software system to help councils promote culture in their municipality.
     </td> <!-- --------------------------------------------------------------------------------------------------------------------------------------- -->
     <td align="center">
       <a href="https://github.com/FerranEJ/">
-        <img src="https://github.com/CulturaLink/culturalink-main/assets/92806890/6a96188d-5300-46ef-a103-bfc1f2ff0242" width="75px;" alt="FerranEJ"/><br>
+        <img src="README-assets/ferran.jpeg" width="75px;" alt="FerranEJ"/><br>
         <sub><b>@FerranEJ</b></sub>
       </a><br/>
       <sub>Ferran Escala</sub>
@@ -48,7 +55,7 @@ Software system to help councils promote culture in their municipality.
     </td> <!-- --------------------------------------------------------------------------------------------------------------------------------------- -->
     <td align="center">
       <a href="https://github.com/Ha1r1to">
-        <img src="https://github.com/CulturaLink/culturalink-main/assets/92806890/a46c0548-6d9d-4481-81a2-89cfba697a38" width="75px;" alt="Ha1r1to"/><br>
+        <img src="README-assets/alejandro.jpeg" width="75px;" alt="Ha1r1to"/><br>
         <sub><b>@Ha1r1to</b></sub>
       </a><br/>
       <sub>Alejandro Nevado</sub>
@@ -56,7 +63,7 @@ Software system to help councils promote culture in their municipality.
     </td> <!-- --------------------------------------------------------------------------------------------------------------------------------------- -->
     <td align="center">
       <a href="https://github.com/nghaffar21">
-        <img src="https://github.com/CulturaLink/culturalink-main/assets/92806890/54bbf198-e394-4cf4-90e5-31a29c0017aa" width="75px;" alt="nghaffar21"/><br>
+        <img src="README-assets/nima.jpeg" width="75px;" alt="nghaffar21"/><br>
         <sub><b>@nghaffar21</b></sub>
       </a><br/>
       <sub>Nima Ghaffarzadeh</sub>
@@ -64,7 +71,7 @@ Software system to help councils promote culture in their municipality.
     </td> <!-- --------------------------------------------------------------------------------------------------------------------------------------- -->
     <td align="center">
       <a href="https://github.com/ProGer211">
-        <img src="https://github.com/CulturaLink/culturalink-main/assets/92806890/e760ea4d-a33d-4c93-8c7d-e394cc18aa63" width="75px;" alt="ProGer211"/><br>
+        <img src="README-assets/gerard.png" width="75px;" alt="ProGer211"/><br>
         <sub><b>@ProGer211</b></sub>
       </a><br/>
       <sub>Gerard Chaparro</sub>
@@ -72,7 +79,7 @@ Software system to help councils promote culture in their municipality.
     </td> <!-- --------------------------------------------------------------------------------------------------------------------------------------- -->
     <td align="center"> 
       <a href="https://github.com/jesikajz">
-        <img src="https://github.com/CulturaLink/culturalink-main/assets/92806890/e7c08e9a-7221-4509-a003-773bddc3a4f9" width="75px;" alt="jesikajz"/><br>
+        <img src="README-assets/jesika.png" width="75px;" alt="jesikajz"/><br>
         <sub><b>@jesikajz</b></sub>
       </a><br/>
       <sub>Jesika Jiménez</sub>
@@ -80,7 +87,7 @@ Software system to help councils promote culture in their municipality.
     </td> <!-- --------------------------------------------------------------------------------------------------------------------------------------- -->
     <td align="center">
       <a href="https://github.com/xvimo">
-        <img src="https://github.com/CulturaLink/culturalink-main/assets/92806890/8f31f6ee-9a5a-45d4-a9b6-311762e0f14f" width="75px;" alt="xvimo"/><br>
+        <img src="README-assets/xavi.jpeg" width="75px;" alt="xvimo"/><br>
         <sub><b>@xvimo</b></sub>
       </a><br/>
       <sub>Xavier Vila</sub>
@@ -88,6 +95,3 @@ Software system to help councils promote culture in their municipality.
     </td> <!-- --------------------------------------------------------------------------------------------------------------------------------------- -->
   </tr>
 </table>
-
-| Final Mark | - |
-|------------|:-:|

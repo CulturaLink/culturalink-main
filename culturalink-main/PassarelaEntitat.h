@@ -15,7 +15,7 @@ public:
     PassarelaEntitat(const PassarelaEntitat% p1);
     PassarelaEntitat();
     PassarelaEntitat% operator=(const PassarelaEntitat% other);
-    PassarelaEntitat(String^ nomA, String^ contrasenyaA, String^ correuA, int telefonA, String^ id_entitatA);
+    PassarelaEntitat(String^ nomA, String^ contrasenyaA, String^ correuA, int^ telefonA, int^ id_entitatA);
     void insereix();
     //void modifica();
     //void esborra();
@@ -23,20 +23,20 @@ public:
     String^ obteNom();
     String^ obteContrasenya();
     String^ obteCorreuElectronic();
-    String^ obteid();
-    int obteTelefon();
+    int^ obteid();
+    int^ obteTelefon();
 
     void posaNom(String^ nomA);
     void posaContrasenya(String^ contrasenyaA);
     void posaCorreu(String^ correuA);
-    void posaId_Entitat(String^ id_entitatA);
-    void posaTelefon(int telefonA);
+    void posaId_Entitat(int^ id_entitatA);
+    void posaTelefon(int^ telefonA);
 
 private:
     String^ nom;
     String^ contrasenya;
     String^ correuElectronic;
-    String^ id_entitat;
-    int telefon;
+    int^ id_entitat;
+    int^ telefon;
 };
 

@@ -1,6 +1,7 @@
 #pragma once
 #include "pch.h"
 #include "TxLoginAjuntament.h"
+#include "UsuariIniciat.h"
 
 TxLoginAjuntament::TxLoginAjuntament(String^ clauAj, String^ contrasenyaAj) {
 
@@ -19,8 +20,8 @@ void TxLoginAjuntament::executar() {
 	}
 	else {
 		//uso de la clase Singleton
-		AjuntamentIniciat^ ajuntament = AjuntamentIniciat::ObtenerInstancia();
-		ajuntament->setAjuntament(pA);
+		UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
+		usuario->setUsuari(% pA, TipoPassarela::Ajuntament);
 	}
 
 }

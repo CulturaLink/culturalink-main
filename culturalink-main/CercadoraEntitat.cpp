@@ -17,7 +17,7 @@ PassarelaEntitat CercadoraEntitat::cercaEntitat(String^ correuE)
 		if (dataReader->Read()) {
 			// Es llegeix la informació per crear un objecte de tipus Professor
 			// Agafarem les columnes per índex, la primera és la 0
-			String^ id = dataReader->GetString(0);
+			int^ id = dataReader->GetInt32(0);
 			String^ nom = dataReader->GetString(1);
 			String^ contrasenya = dataReader->GetString(2);
 			String^ telefon = dataReader->GetString(3);
@@ -27,10 +27,13 @@ PassarelaEntitat CercadoraEntitat::cercaEntitat(String^ correuE)
 			return p2;
 
 		}
-		else throw(EntitatNoExisteix);
+		else {
+			PassarelaEntitat ent;
+			return ent;
+		}
 	}
 	catch (Exception^ ex) {
 		// codi per mostrar l’error en una finestra
-		throw(EntitatNoExisteix);
+		MessageBox::Show(ex->Message);
 	}
 }
