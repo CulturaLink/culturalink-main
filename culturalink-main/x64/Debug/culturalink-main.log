@@ -1,7 +1,4 @@
-﻿  AssemblyInfo.cpp
-  CercadoraAjuntament.cpp
-  CercadoraCiutada.cpp
-  CercadoraEntitat.cpp
+﻿  CercadoraCiutada.cpp
 H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
@@ -12,26 +9,7 @@ H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(1
 H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(281,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-  InfoAjuntament.cpp
-  InfoEntitat.cpp
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/InfoEntitat.cpp")
-  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
-  
-  Login.cpp
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/Login.cpp")
-  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
-  
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(281,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/Login.cpp")
-  
+  InfoCiutada.cpp
   MainForm.cpp
 H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/MainForm.cpp")
@@ -43,7 +21,6 @@ H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(1
 H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(281,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/MainForm.cpp")
   
-  PassarelaAjuntament.cpp
   PassarelaCiutada.cpp
 H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/PassarelaCiutada.cpp")
@@ -73,67 +50,6 @@ H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiuta
 H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(70,42): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-  PassarelaEntitat.cpp
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaEntitat.cpp(9,15): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/PassarelaEntitat.cpp")
-  
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaEntitat.cpp(10,18): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/PassarelaEntitat.cpp")
-  
-  PassarelaEsdeveniment.cpp
-  PerfilCiutada.cpp
-  RegisterFormCiutada.cpp
-  RegistraEntitat.cpp
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/RegistraEntitat.cpp")
-  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
-  
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(281,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/RegistraEntitat.cpp")
-  
-  RegistraEsdevenimentUI1.cpp
-  RegistrarEsdevenimentUI.cpp
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/RegistrarEsdevenimentUI.cpp")
-  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
-  
-  Sistema.cpp
-  Transaccio.cpp
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/Transaccio.cpp")
-  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
-  
-  TxConsultaAjuntament.cpp
-  Generando código...
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\CercadoraEntitat.cpp(39,1): warning C4715: 'CercadoraEntitat::cercaEntitat': no todas las rutas de acceso de control devuelven un valor
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\CercadoraAjuntament.cpp(51,1): warning C4715: 'CercadoraAjuntament::cercaAjuntament': no todas las rutas de acceso de control devuelven un valor
-  Compilando...
-  TxConsultaEntitat.cpp
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/TxConsultaEntitat.cpp")
-  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
-  
-  TxIniciaSessio.cpp
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/TxIniciaSessio.cpp")
-  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
-  
-  TxLoginAjuntament.cpp
   TxLoginCiutada.cpp
 H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/TxLoginCiutada.cpp")
@@ -155,22 +71,6 @@ H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(1
   
 H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(281,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
-  
-  TxRegistraEntitat.cpp
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/TxRegistraEntitat.cpp")
-  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
-  
-  TxRegistraEsdeveniment.cpp
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/TxRegistraEsdeveniment.cpp")
-  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
   
   culturalinkmain.cpp
 H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas

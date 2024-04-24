@@ -138,6 +138,9 @@
     <ClInclude Include="InfoAjuntament.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="InfoCiutada.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="InfoEntitat.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -186,6 +189,7 @@
     <ClCompile Include="CercadoraEntitat.cpp" />
     <ClCompile Include="culturalinkmain.cpp" />
     <ClCompile Include="InfoAjuntament.cpp" />
+    <ClCompile Include="InfoCiutada.cpp" />
     <ClCompile Include="InfoEntitat.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="MainForm.cpp" />
@@ -231,6 +235,9 @@
   <ItemGroup>
     <EmbeddedResource Include="InfoAjuntament.resx">
       <DependentUpon>InfoAjuntament.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoCiutada.resx">
+      <DependentUpon>InfoCiutada.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InfoEntitat.resx">
       <DependentUpon>InfoEntitat.h</DependentUpon>

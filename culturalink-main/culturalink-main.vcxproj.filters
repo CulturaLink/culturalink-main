@@ -116,6 +116,9 @@
     <ClInclude Include="RegistrarEsdevenimentUI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="InfoCiutada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -190,9 +193,6 @@
     <ClCompile Include="TxConsultaAjuntament.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="InfoEntitat.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
     <ClCompile Include="CercadoraCiutada.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -211,6 +211,12 @@
     <ClCompile Include="RegistrarEsdevenimentUI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="InfoEntitat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InfoCiutada.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico">
@@ -218,13 +224,13 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="config.txt">
-      <Filter>Header Files</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="PerfilCiutada.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="config.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
