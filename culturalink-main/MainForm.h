@@ -6,6 +6,7 @@
 #include "UsuariIniciat.h"
 #include "InfoCiutada.h"
 #include "RegistrarEsdevenimentUI.h"
+#include "ConsultaEsdevenimentUI.h"
 
 namespace culturalink_main {
 
@@ -120,6 +121,7 @@ namespace culturalink_main {
 			this->panelDesktop->Name = L"panelDesktop";
 			this->panelDesktop->Size = System::Drawing::Size(628, 392);
 			this->panelDesktop->TabIndex = 4;
+			this->panelDesktop->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MainForm::panelDesktop_Paint);
 			// 
 			// panelMenu
 			// 
@@ -157,7 +159,7 @@ namespace culturalink_main {
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(156, 40);
 			this->button3->TabIndex = 2;
-			this->button3->Text = L"Homepage";
+			this->button3->Text = L"Cons. Esdev.";
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &MainForm::button3_Click);
 			// 
@@ -316,10 +318,14 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 
 }
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+	ConsultaEsdevenimentUI^ formLog = gcnew ConsultaEsdevenimentUI;
+	formLog->ShowDialog();
 }
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void panelDesktop_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 }
 };
 }

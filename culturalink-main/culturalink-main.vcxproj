@@ -134,7 +134,11 @@
     <ClInclude Include="CercadoraAjuntament.h" />
     <ClInclude Include="CercadoraCiutada.h" />
     <ClInclude Include="CercadoraEntitat.h" />
+    <ClInclude Include="CercadoraEsdeveniment.h" />
     <ClInclude Include="config.h" />
+    <ClInclude Include="ConsultaEsdevenimentUI.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="InfoAjuntament.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -171,6 +175,7 @@
     <ClInclude Include="Sistema.h" />
     <ClInclude Include="Transaccio.h" />
     <ClInclude Include="TxConsultaAjuntament.h" />
+    <ClInclude Include="TxConsultaEsdeveniment.h" />
     <ClInclude Include="TxLoginAjuntament.h" />
     <ClInclude Include="TxLoginCiutada.h" />
     <ClInclude Include="TxRegisterCiutada.h" />
@@ -186,6 +191,8 @@
     <ClCompile Include="CercadoraAjuntament.cpp" />
     <ClCompile Include="CercadoraCiutada.cpp" />
     <ClCompile Include="CercadoraEntitat.cpp" />
+    <ClCompile Include="CercadoraEsdeveniment.cpp" />
+    <ClCompile Include="ConsultaEsdevenimentUI.cpp" />
     <ClCompile Include="culturalinkmain.cpp" />
     <ClCompile Include="InfoAjuntament.cpp" />
     <ClCompile Include="InfoCiutada.cpp" />
@@ -208,6 +215,7 @@
     <ClCompile Include="Sistema.cpp" />
     <ClCompile Include="Transaccio.cpp" />
     <ClCompile Include="TxConsultaAjuntament.cpp" />
+    <ClCompile Include="TxConsultaEsdeveniment.cpp" />
     <ClCompile Include="TxLoginAjuntament.cpp" />
     <ClCompile Include="TxLoginCiutada.cpp" />
     <ClCompile Include="TxRegisterCiutada.cpp" />
@@ -231,6 +239,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ConsultaEsdevenimentUI.resx">
+      <DependentUpon>ConsultaEsdevenimentUI.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InfoAjuntament.resx">
       <DependentUpon>InfoAjuntament.h</DependentUpon>
     </EmbeddedResource>
