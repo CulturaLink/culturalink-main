@@ -114,10 +114,11 @@ namespace culturalink_main {
 			this->panelDesktop->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
 			this->panelDesktop->BackColor = System::Drawing::Color::LightSalmon;
 			this->panelDesktop->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->panelDesktop->Location = System::Drawing::Point(127, 49);
+			this->panelDesktop->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
+			this->panelDesktop->Location = System::Drawing::Point(156, 49);
 			this->panelDesktop->Margin = System::Windows::Forms::Padding(2);
 			this->panelDesktop->Name = L"panelDesktop";
-			this->panelDesktop->Size = System::Drawing::Size(657, 392);
+			this->panelDesktop->Size = System::Drawing::Size(628, 392);
 			this->panelDesktop->TabIndex = 4;
 			// 
 			// panelMenu
@@ -131,18 +132,17 @@ namespace culturalink_main {
 			this->panelMenu->Location = System::Drawing::Point(0, 49);
 			this->panelMenu->Margin = System::Windows::Forms::Padding(2);
 			this->panelMenu->Name = L"panelMenu";
-			this->panelMenu->Size = System::Drawing::Size(127, 392);
+			this->panelMenu->Size = System::Drawing::Size(156, 392);
 			this->panelMenu->TabIndex = 0;
 			// 
 			// button4
 			// 
 			this->button4->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button4->Dock = System::Windows::Forms::DockStyle::Top;
-			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->button4->Location = System::Drawing::Point(0, 102);
+			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
+			this->button4->Location = System::Drawing::Point(0, 120);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(127, 34);
+			this->button4->Size = System::Drawing::Size(156, 40);
 			this->button4->TabIndex = 3;
 			this->button4->Text = L"Reg. Esdev.";
 			this->button4->UseVisualStyleBackColor = true;
@@ -152,11 +152,10 @@ namespace culturalink_main {
 			// button3
 			// 
 			this->button3->Dock = System::Windows::Forms::DockStyle::Top;
-			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->button3->Location = System::Drawing::Point(0, 68);
+			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
+			this->button3->Location = System::Drawing::Point(0, 80);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(127, 34);
+			this->button3->Size = System::Drawing::Size(156, 40);
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"Homepage";
 			this->button3->UseVisualStyleBackColor = true;
@@ -165,11 +164,10 @@ namespace culturalink_main {
 			// button2
 			// 
 			this->button2->Dock = System::Windows::Forms::DockStyle::Top;
-			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->button2->Location = System::Drawing::Point(0, 34);
+			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
+			this->button2->Location = System::Drawing::Point(0, 40);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(127, 34);
+			this->button2->Size = System::Drawing::Size(156, 40);
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"Homepage";
 			this->button2->UseVisualStyleBackColor = true;
@@ -178,11 +176,10 @@ namespace culturalink_main {
 			// button1
 			// 
 			this->button1->Dock = System::Windows::Forms::DockStyle::Top;
-			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
 			this->button1->Location = System::Drawing::Point(0, 0);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(127, 34);
+			this->button1->Size = System::Drawing::Size(156, 40);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"Homepage";
 			this->button1->UseVisualStyleBackColor = true;

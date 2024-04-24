@@ -6,10 +6,30 @@ H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(1
   H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
   vea la declaración de 'Transaccio::executar'
   
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(281,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
+  InfoAjuntament.cpp
   InfoCiutada.cpp
+  InfoEntitat.cpp
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/InfoEntitat.cpp")
+  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
+  
+  Login.cpp
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/Login.cpp")
+  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
+  
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/Login.cpp")
+  
   MainForm.cpp
 H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/MainForm.cpp")
@@ -18,7 +38,7 @@ H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(1
   H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
   vea la declaración de 'Transaccio::executar'
   
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(281,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/MainForm.cpp")
   
   PassarelaCiutada.cpp
@@ -29,7 +49,7 @@ H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(1
   H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
   vea la declaración de 'Transaccio::executar'
   
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(281,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
 H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(14,12): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
@@ -50,6 +70,14 @@ H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiuta
 H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(70,42): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
+  RegistrarEsdevenimentUI.cpp
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/RegistrarEsdevenimentUI.cpp")
+  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
+  
   TxLoginCiutada.cpp
 H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/TxLoginCiutada.cpp")
@@ -58,7 +86,7 @@ H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(1
   H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
   vea la declaración de 'Transaccio::executar'
   
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(281,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
   TxRegisterCiutada.cpp
@@ -69,7 +97,7 @@ H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(1
   H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
   vea la declaración de 'Transaccio::executar'
   
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(281,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
   culturalinkmain.cpp
@@ -80,7 +108,7 @@ H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(1
   H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
   vea la declaración de 'Transaccio::executar'
   
-H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(281,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/culturalinkmain.cpp")
   
   Generando código...

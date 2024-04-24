@@ -59,7 +59,7 @@ namespace culturalink_main {
 	private: System::Windows::Forms::TextBox^ tbDate;
 	private: System::Windows::Forms::Button^ btnOK;
 	private: System::Windows::Forms::Button^ btnCancel;
-	private: System::Windows::Forms::LinkLabel^ llLogin;
+
 
 
 
@@ -93,7 +93,6 @@ namespace culturalink_main {
 			this->tbDate = (gcnew System::Windows::Forms::TextBox());
 			this->btnOK = (gcnew System::Windows::Forms::Button());
 			this->btnCancel = (gcnew System::Windows::Forms::Button());
-			this->llLogin = (gcnew System::Windows::Forms::LinkLabel());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -226,23 +225,11 @@ namespace culturalink_main {
 			this->btnCancel->UseVisualStyleBackColor = true;
 			this->btnCancel->Click += gcnew System::EventHandler(this, &RegisterFormCiutada::btnCancel_Click);
 			// 
-			// llLogin
-			// 
-			this->llLogin->AutoSize = true;
-			this->llLogin->Location = System::Drawing::Point(696, 494);
-			this->llLogin->Name = L"llLogin";
-			this->llLogin->Size = System::Drawing::Size(65, 25);
-			this->llLogin->TabIndex = 5;
-			this->llLogin->TabStop = true;
-			this->llLogin->Text = L"Login";
-			this->llLogin->LinkClicked += gcnew System::Windows::Forms::LinkLabelLinkClickedEventHandler(this, &RegisterFormCiutada::llLogin_LinkClicked);
-			// 
 			// RegisterFormCiutada
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(790, 528);
-			this->Controls->Add(this->llLogin);
+			this->ClientSize = System::Drawing::Size(790, 499);
 			this->Controls->Add(this->btnCancel);
 			this->Controls->Add(this->btnOK);
 			this->Controls->Add(this->tbDate);

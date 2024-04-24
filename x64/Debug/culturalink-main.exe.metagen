@@ -3,7 +3,7 @@
   culturalink_main.InfoEntitat.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.Login.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.MainForm.resources - Embedded, ContainedInManifestFile, 
-  culturalink_main.PerfilCiutada.resources - Embedded, ContainedInManifestFile, 
+  culturalink_main.RegisterFormCiutada.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.RegistraEntitat.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.RegistraEsdevenimentUI1.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.RegistrarEsdevenimentUI.resources - Embedded, ContainedInManifestFile, 
@@ -48,9 +48,6 @@ Class culturalink_main.RegistrarEsdevenimentUI: AutoLayout, AnsiClass, Class, Pu
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class culturalink_main.MainForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-  :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class culturalink_main.PerfilCiutada: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class culturalink_main.RegistraEsdevenimentUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit

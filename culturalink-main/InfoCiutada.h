@@ -129,10 +129,10 @@ namespace culturalink_main {
 			this->panelDesktop->Controls->Add(this->label2);
 			this->panelDesktop->Controls->Add(this->label1);
 			this->panelDesktop->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->panelDesktop->Location = System::Drawing::Point(127, 49);
+			this->panelDesktop->Location = System::Drawing::Point(150, 49);
 			this->panelDesktop->Margin = System::Windows::Forms::Padding(2);
 			this->panelDesktop->Name = L"panelDesktop";
-			this->panelDesktop->Size = System::Drawing::Size(657, 392);
+			this->panelDesktop->Size = System::Drawing::Size(634, 392);
 			this->panelDesktop->TabIndex = 7;
 			// 
 			// lPunts
@@ -278,18 +278,17 @@ namespace culturalink_main {
 			this->panelMenu->Location = System::Drawing::Point(0, 49);
 			this->panelMenu->Margin = System::Windows::Forms::Padding(2);
 			this->panelMenu->Name = L"panelMenu";
-			this->panelMenu->Size = System::Drawing::Size(127, 392);
+			this->panelMenu->Size = System::Drawing::Size(150, 392);
 			this->panelMenu->TabIndex = 5;
 			// 
 			// button3
 			// 
 			this->button3->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button3->Dock = System::Windows::Forms::DockStyle::Top;
-			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->button3->Location = System::Drawing::Point(0, 68);
+			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
+			this->button3->Location = System::Drawing::Point(0, 80);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(127, 34);
+			this->button3->Size = System::Drawing::Size(150, 40);
 			this->button3->TabIndex = 5;
 			this->button3->Text = L"Hist. Compres";
 			this->button3->UseVisualStyleBackColor = true;
@@ -298,25 +297,24 @@ namespace culturalink_main {
 			// 
 			this->button2->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button2->Dock = System::Windows::Forms::DockStyle::Top;
-			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->button2->Location = System::Drawing::Point(0, 34);
+			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
+			this->button2->Location = System::Drawing::Point(0, 40);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(127, 34);
+			this->button2->Size = System::Drawing::Size(150, 40);
 			this->button2->TabIndex = 4;
 			this->button2->Text = L"Modifica";
 			this->button2->UseVisualStyleBackColor = true;
 			// 
 			// logOut
 			// 
+			this->logOut->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->logOut->Dock = System::Windows::Forms::DockStyle::Bottom;
 			this->logOut->FlatAppearance->MouseOverBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
 				static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(192)));
-			this->logOut->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->logOut->Location = System::Drawing::Point(0, 358);
+			this->logOut->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
+			this->logOut->Location = System::Drawing::Point(0, 352);
 			this->logOut->Name = L"logOut";
-			this->logOut->Size = System::Drawing::Size(127, 34);
+			this->logOut->Size = System::Drawing::Size(150, 40);
 			this->logOut->TabIndex = 3;
 			this->logOut->Text = L"Tancar Sessio";
 			this->logOut->UseVisualStyleBackColor = true;
@@ -325,11 +323,10 @@ namespace culturalink_main {
 			// 
 			this->button1->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button1->Dock = System::Windows::Forms::DockStyle::Top;
-			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
 			this->button1->Location = System::Drawing::Point(0, 0);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(127, 34);
+			this->button1->Size = System::Drawing::Size(150, 40);
 			this->button1->TabIndex = 1;
 			this->button1->Text = L"Homepage";
 			this->button1->UseVisualStyleBackColor = true;

@@ -98,9 +98,6 @@
     <ClInclude Include="CercadoraCiutada.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PerfilCiutada.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="TxLoginCiutada.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -196,9 +193,6 @@
     <ClCompile Include="CercadoraCiutada.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PerfilCiutada.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="TxLoginCiutada.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -222,11 +216,6 @@
     <Image Include="app.ico">
       <Filter>Resource Files</Filter>
     </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="PerfilCiutada.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Text Include="config.txt">
