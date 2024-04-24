@@ -56,3 +56,14 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\cult
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistrarEsdevenimentUI.resources
 D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistraEsdevenimentUI1.resources
 D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistrarEsdevenimentUI.resources
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink-main.vcxproj.AssemblyReference.cache
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.InfoAjuntament.resources
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.InfoEntitat.resources
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.Login.resources
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.MainForm.resources
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.PerfilCiutada.resources
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistraEntitat.resources
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistraEsdevenimentUI1.resources
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistrarEsdevenimentUI.resources
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink-main.vcxproj.GenerateResource.cache
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\cultural.EBB58B54.Up2Date

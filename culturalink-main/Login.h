@@ -254,7 +254,7 @@ namespace culturalink_main {
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->TBpwd);
 			this->Controls->Add(this->TBUsr);
-			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedToolWindow;
 			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"Login";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;

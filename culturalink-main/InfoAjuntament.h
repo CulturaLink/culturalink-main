@@ -166,6 +166,7 @@ namespace culturalink_main {
 			// 
 			this->Bshow->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"Bshow.BackgroundImage")));
 			this->Bshow->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
+			this->Bshow->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->Bshow->Location = System::Drawing::Point(69, 57);
 			this->Bshow->Name = L"Bshow";
 			this->Bshow->Size = System::Drawing::Size(24, 24);
@@ -264,11 +265,13 @@ namespace culturalink_main {
 			// 
 			// button1
 			// 
+			this->button1->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button1->Dock = System::Windows::Forms::DockStyle::Top;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button1->Location = System::Drawing::Point(3, 7);
+			this->button1->Location = System::Drawing::Point(0, 0);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(119, 34);
+			this->button1->Size = System::Drawing::Size(127, 34);
 			this->button1->TabIndex = 1;
 			this->button1->Text = L"Homepage";
 			this->button1->UseVisualStyleBackColor = true;
@@ -288,10 +291,12 @@ namespace culturalink_main {
 			// 
 			// pictureBox1
 			// 
+			this->pictureBox1->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->pictureBox1->Dock = System::Windows::Forms::DockStyle::Left;
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(3, 0);
+			this->pictureBox1->Location = System::Drawing::Point(0, 0);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(49, 50);
+			this->pictureBox1->Size = System::Drawing::Size(49, 49);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox1->TabIndex = 1;
 			this->pictureBox1->TabStop = false;
@@ -299,9 +304,10 @@ namespace culturalink_main {
 			// 
 			// pictureBox2
 			// 
-			this->pictureBox2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
+			this->pictureBox2->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->pictureBox2->Dock = System::Windows::Forms::DockStyle::Right;
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(571, 0);
+			this->pictureBox2->Location = System::Drawing::Point(574, 0);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(49, 49);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -362,7 +368,7 @@ private: System::Void InfoAjuntament_Load(System::Object^ sender, System::EventA
 	}
 }
 private: System::Void Bshow_Click(System::Object^ sender, System::EventArgs^ e) {
-	Lclau->Visible = true;
+	Lclau->Visible = !Lclau->Visible;
 }
 };
 }

@@ -136,11 +136,13 @@ namespace culturalink_main {
 			// 
 			// button4
 			// 
+			this->button4->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button4->Dock = System::Windows::Forms::DockStyle::Top;
 			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button4->Location = System::Drawing::Point(3, 127);
+			this->button4->Location = System::Drawing::Point(0, 102);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(119, 34);
+			this->button4->Size = System::Drawing::Size(127, 34);
 			this->button4->TabIndex = 3;
 			this->button4->Text = L"Reg. Esdev.";
 			this->button4->UseVisualStyleBackColor = true;
@@ -149,11 +151,12 @@ namespace culturalink_main {
 			// 
 			// button3
 			// 
+			this->button3->Dock = System::Windows::Forms::DockStyle::Top;
 			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button3->Location = System::Drawing::Point(3, 87);
+			this->button3->Location = System::Drawing::Point(0, 68);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(119, 34);
+			this->button3->Size = System::Drawing::Size(127, 34);
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"Homepage";
 			this->button3->UseVisualStyleBackColor = true;
@@ -161,11 +164,12 @@ namespace culturalink_main {
 			// 
 			// button2
 			// 
+			this->button2->Dock = System::Windows::Forms::DockStyle::Top;
 			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button2->Location = System::Drawing::Point(3, 47);
+			this->button2->Location = System::Drawing::Point(0, 34);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(119, 34);
+			this->button2->Size = System::Drawing::Size(127, 34);
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"Homepage";
 			this->button2->UseVisualStyleBackColor = true;
@@ -173,11 +177,12 @@ namespace culturalink_main {
 			// 
 			// button1
 			// 
+			this->button1->Dock = System::Windows::Forms::DockStyle::Top;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button1->Location = System::Drawing::Point(3, 7);
+			this->button1->Location = System::Drawing::Point(0, 0);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(119, 34);
+			this->button1->Size = System::Drawing::Size(127, 34);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"Homepage";
 			this->button1->UseVisualStyleBackColor = true;
@@ -198,11 +203,12 @@ namespace culturalink_main {
 			// 
 			// infoUsuariIcon
 			// 
-			this->infoUsuariIcon->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
+			this->infoUsuariIcon->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->infoUsuariIcon->Dock = System::Windows::Forms::DockStyle::Right;
 			this->infoUsuariIcon->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"infoUsuariIcon.Image")));
-			this->infoUsuariIcon->Location = System::Drawing::Point(516, 0);
+			this->infoUsuariIcon->Location = System::Drawing::Point(525, 0);
 			this->infoUsuariIcon->Name = L"infoUsuariIcon";
-			this->infoUsuariIcon->Size = System::Drawing::Size(49, 50);
+			this->infoUsuariIcon->Size = System::Drawing::Size(49, 49);
 			this->infoUsuariIcon->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->infoUsuariIcon->TabIndex = 2;
 			this->infoUsuariIcon->TabStop = false;
@@ -211,10 +217,12 @@ namespace culturalink_main {
 			// 
 			// menuIcon
 			// 
+			this->menuIcon->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->menuIcon->Dock = System::Windows::Forms::DockStyle::Left;
 			this->menuIcon->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"menuIcon.Image")));
-			this->menuIcon->Location = System::Drawing::Point(3, 0);
+			this->menuIcon->Location = System::Drawing::Point(0, 0);
 			this->menuIcon->Name = L"menuIcon";
-			this->menuIcon->Size = System::Drawing::Size(49, 50);
+			this->menuIcon->Size = System::Drawing::Size(49, 49);
 			this->menuIcon->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->menuIcon->TabIndex = 1;
 			this->menuIcon->TabStop = false;
@@ -222,11 +230,12 @@ namespace culturalink_main {
 			// 
 			// logInIcon
 			// 
-			this->logInIcon->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
+			this->logInIcon->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->logInIcon->Dock = System::Windows::Forms::DockStyle::Right;
 			this->logInIcon->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"logInIcon.Image")));
-			this->logInIcon->Location = System::Drawing::Point(571, -1);
+			this->logInIcon->Location = System::Drawing::Point(574, 0);
 			this->logInIcon->Name = L"logInIcon";
-			this->logInIcon->Size = System::Drawing::Size(49, 50);
+			this->logInIcon->Size = System::Drawing::Size(49, 49);
 			this->logInIcon->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->logInIcon->TabIndex = 0;
 			this->logInIcon->TabStop = false;
@@ -265,6 +274,7 @@ private: System::Void pictureBox2_Click_1(System::Object^ sender, System::EventA
 	UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
 	if (usuario->getUsuari() != nullptr) {
 		this->infoUsuariIcon->Visible = true;
+		this->logInIcon->Visible = false;
 	}
 	if (usuario->getTipoPassarela() == TipoPassarela::Entitat)
 		this->button4->Visible = true;
