@@ -12,11 +12,14 @@ ref class TxRegistraEsdeveniment : public Transaccio {
 private:
     String^ nomE;
     float preuE;
+    int idE;
     String^ descripcioE;
     String^ ajuntamentE;
 
 public:
     TxRegistraEsdeveniment();
-    TxRegistraEsdeveniment(String^ nomEsd, float preuEsd, String^ descEsd, String^ ajuntamEsdv);
+    TxRegistraEsdeveniment(int idEnt, String^ nomEsd, float preuEsd, String^ descEsd, String^ ajuntamEsdv);
+    //TxRegistraEsdeveniment(String^ nomEsd, float preuEsd, String^ descEsd, String^ ajuntamEsdv);
     void executar() override;
 };
+
