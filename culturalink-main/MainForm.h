@@ -7,6 +7,7 @@
 #include "InfoCiutada.h"
 #include "RegistrarEsdevenimentUI.h"
 #include "ConsultaEsdevenimentUI.h"
+#include "ProvesUI.h"
 
 namespace culturalink_main {
 
@@ -64,6 +65,7 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::PictureBox^ infoUsuariIcon;
 	private: System::Diagnostics::EventLog^ eventLog1;
+	private: System::Windows::Forms::Button^ button5;
 
 
 
@@ -91,6 +93,7 @@ namespace culturalink_main {
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MainForm::typeid));
 			this->notifyIcon1 = (gcnew System::Windows::Forms::NotifyIcon(this->components));
 			this->panelDesktop = (gcnew System::Windows::Forms::Panel());
+			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->panelMenu = (gcnew System::Windows::Forms::Panel());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
@@ -101,6 +104,7 @@ namespace culturalink_main {
 			this->menuIcon = (gcnew System::Windows::Forms::PictureBox());
 			this->logInIcon = (gcnew System::Windows::Forms::PictureBox());
 			this->eventLog1 = (gcnew System::Diagnostics::EventLog());
+			this->panelDesktop->SuspendLayout();
 			this->panelMenu->SuspendLayout();
 			this->panelTitleBar->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->infoUsuariIcon))->BeginInit();
@@ -114,6 +118,7 @@ namespace culturalink_main {
 			this->panelDesktop->AutoSize = true;
 			this->panelDesktop->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
 			this->panelDesktop->BackColor = System::Drawing::Color::LightSalmon;
+			this->panelDesktop->Controls->Add(this->button5);
 			this->panelDesktop->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->panelDesktop->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
 			this->panelDesktop->Location = System::Drawing::Point(156, 49);
@@ -122,6 +127,17 @@ namespace culturalink_main {
 			this->panelDesktop->Size = System::Drawing::Size(628, 392);
 			this->panelDesktop->TabIndex = 4;
 			this->panelDesktop->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MainForm::panelDesktop_Paint);
+			// 
+			// button5
+			// 
+			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
+			this->button5->Location = System::Drawing::Point(541, 357);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(75, 23);
+			this->button5->TabIndex = 0;
+			this->button5->Text = L"Proves";
+			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &MainForm::button5_Click);
 			// 
 			// panelMenu
 			// 
@@ -252,10 +268,12 @@ namespace culturalink_main {
 			this->Controls->Add(this->panelDesktop);
 			this->Controls->Add(this->panelMenu);
 			this->Controls->Add(this->panelTitleBar);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"MainForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"MainForm";
+			this->panelDesktop->ResumeLayout(false);
 			this->panelMenu->ResumeLayout(false);
 			this->panelTitleBar->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->infoUsuariIcon))->EndInit();
@@ -326,6 +344,10 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void panelDesktop_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+}
+private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+	ProvesUI^ formLog = gcnew ProvesUI;
+	formLog->ShowDialog();
 }
 };
 }
