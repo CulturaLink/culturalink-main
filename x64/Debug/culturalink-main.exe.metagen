@@ -4,6 +4,7 @@
   culturalink_main.InfoEntitat.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.Login.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.MainForm.resources - Embedded, ContainedInManifestFile, 
+  culturalink_main.ProvesEsdevsUI.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.RegisterFormCiutada.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.RegistraEntitat.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.RegistraEsdevenimentUI1.resources - Embedded, ContainedInManifestFile, 
@@ -13,7 +14,7 @@ Assembly culturalink-main, Version=1.0.*, Culture=Todos los idiomas (todos los p
 	hash=SHA1, flags=PublicKey
 Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
-Assembly MySql.Data, Version=8.0.33.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d: 
+Assembly MySql.Data, Version=8.3.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d: 
 	hash=None, flags=None
 Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
@@ -49,6 +50,9 @@ Class culturalink_main.RegistrarEsdevenimentUI: AutoLayout, AnsiClass, Class, Pu
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class culturalink_main.ConsultaEsdevenimentUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class culturalink_main.ProvesEsdevsUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class culturalink_main.MainForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit

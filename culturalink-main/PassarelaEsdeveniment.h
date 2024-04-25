@@ -18,6 +18,7 @@ ref class PassarelaEsdeveniment {
 
 public:
     PassarelaEsdeveniment(int idEnt, float preu, String^ ajEsd, String^ descEsd, String^ nomEsd);
+    PassarelaEsdeveniment(String^ nomEsdev, float preu);
     PassarelaEsdeveniment();
     void insereix();
     PassarelaEsdeveniment% operator=(const PassarelaEsdeveniment% other);

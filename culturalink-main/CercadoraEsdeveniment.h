@@ -3,6 +3,7 @@
 #include "PassarelaEsdeveniment.h"
 #include <string>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 using namespace MySql::Data::MySqlClient;
@@ -13,6 +14,7 @@ ref class CercadoraEsdeveniment
 public:
     CercadoraEsdeveniment();
     PassarelaEsdeveniment cercaEsdeveniment(String^ clau);
+    List<PassarelaEsdeveniment^>^ cercaTotsEsdeveniments();
 
 private:
 
