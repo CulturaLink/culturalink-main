@@ -128,6 +128,8 @@ namespace culturalink_main {
 			this->btnClose->TabIndex = 0;
 			this->btnClose->UseVisualStyleBackColor = false;
 			this->btnClose->Click += gcnew System::EventHandler(this, &ProvesUI::btnClose_Click);
+			this->btnClose->MouseLeave += gcnew System::EventHandler(this, &ProvesUI::bntClose_MouseLeave);
+			this->btnClose->MouseHover += gcnew System::EventHandler(this, &ProvesUI::bntClose_MouseHover);
 			// 
 			// ProvesUI
 			// 
@@ -153,6 +155,14 @@ namespace culturalink_main {
 	}
 	private: System::Void btnClose_Click(System::Object^ sender, System::EventArgs^ e) {
 		Close();
+	}
+	private: System::Void bntClose_MouseHover(System::Object^ sender, System::EventArgs^ e) {
+		this->btnClose->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+			static_cast<System::Int32>(static_cast<System::Byte>(0)));
+	}
+	private: System::Void bntClose_MouseLeave(System::Object^ sender, System::EventArgs^ e) {
+		this->btnClose->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(31)), static_cast<System::Int32>(static_cast<System::Byte>(31)),
+			static_cast<System::Int32>(static_cast<System::Byte>(31)));
 	}
 };
 }
