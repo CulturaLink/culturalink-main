@@ -3,7 +3,6 @@
 
 TxConsultaEsdeveniment::TxConsultaEsdeveniment(String^ Esdeveniment) {
     _esdev = Esdeveniment;
-
 }
 
 void TxConsultaEsdeveniment::executar() {

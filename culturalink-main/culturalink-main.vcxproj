@@ -159,6 +159,9 @@
     <ClInclude Include="PassarelaEntitat.h" />
     <ClInclude Include="PassarelaEsdeveniment.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="ProvesEsdevsUI.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="RegisterFormCiutada.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -176,6 +179,7 @@
     <ClInclude Include="Transaccio.h" />
     <ClInclude Include="TxConsultaAjuntament.h" />
     <ClInclude Include="TxConsultaEsdeveniment.h" />
+    <ClInclude Include="TxConsultaVarisEsdeveniments.h" />
     <ClInclude Include="TxLoginAjuntament.h" />
     <ClInclude Include="TxLoginCiutada.h" />
     <ClInclude Include="TxRegisterCiutada.h" />
@@ -209,6 +213,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="ProvesEsdevsUI.cpp" />
     <ClCompile Include="RegisterFormCiutada.cpp" />
     <ClCompile Include="RegistraEsdevenimentUI1.cpp" />
     <ClCompile Include="RegistrarEsdevenimentUI.cpp" />
@@ -216,6 +221,7 @@
     <ClCompile Include="Transaccio.cpp" />
     <ClCompile Include="TxConsultaAjuntament.cpp" />
     <ClCompile Include="TxConsultaEsdeveniment.cpp" />
+    <ClCompile Include="TxConsultaVarisEsdeveniments.cpp" />
     <ClCompile Include="TxLoginAjuntament.cpp" />
     <ClCompile Include="TxLoginCiutada.cpp" />
     <ClCompile Include="TxRegisterCiutada.cpp" />
@@ -256,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProvesEsdevsUI.resx">
+      <DependentUpon>ProvesEsdevsUI.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegisterFormCiutada.resx">
       <DependentUpon>RegisterFormCiutada.h</DependentUpon>

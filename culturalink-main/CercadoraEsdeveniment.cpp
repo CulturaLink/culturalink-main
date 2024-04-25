@@ -44,3 +44,47 @@ PassarelaEsdeveniment CercadoraEsdeveniment::cercaEsdeveniment(String^ clau) {
     }
 
 }
+
+List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaTotsEsdeveniments()
+{
+    String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
+    MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
+    String^ sql1 = "SELECT COUNT(*) FROM esdeveniment";
+    String^ sql2 = "SELECT nom_esdeveniment, preu_esdeveniment FROM esdeveniment";
+    MySqlCommand^ cmd1 = gcnew MySqlCommand(sql1, conn);
+    MySqlCommand^ cmd2 = gcnew MySqlCommand(sql2, conn);
+    MySqlDataReader^ dataReader;
+
+    try {
+        conn->Open();
+        dataReader = cmd1->ExecuteReader();
+
+        int numEsdevs = 0;
+
+        if (dataReader->Read()) {
+            numEsdevs = Convert::ToInt32(dataReader[0]);
+        }
+
+        dataReader->Close();
+
+        List<PassarelaEsdeveniment^>^ totsEsdev = gcnew List<PassarelaEsdeveniment^>(); // Initialize the list
+
+        cmd2 = gcnew MySqlCommand(sql2, conn);
+        dataReader = cmd2->ExecuteReader();
+
+        while (dataReader->Read()) { // Use while loop to iterate through all rows
+            String^ nomEsdev = dataReader->GetString(0);
+            float preuEsdev = dataReader->GetFloat(1);
+
+            PassarelaEsdeveniment^ passEsdev = gcnew PassarelaEsdeveniment(nomEsdev, preuEsdev);
+
+            totsEsdev->Add(passEsdev);
+        }
+        conn->Close();
+        return totsEsdev; // Return the list
+    }
+    catch (Exception^ ex) {
+        MessageBox::Show(ex->Message);
+        return nullptr; // Return null in case of exception
+    }
+}

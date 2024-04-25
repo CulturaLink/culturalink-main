@@ -18,6 +18,12 @@ PassarelaEsdeveniment::PassarelaEsdeveniment(int idEnt, float preu, String^ ajEs
     _nomEsd = nomEsd;
 }
 
+PassarelaEsdeveniment::PassarelaEsdeveniment(String^ nomEsdev, float preu)
+{
+    _nomEsd = nomEsdev;
+    _preu = preu;
+}
+
 
 PassarelaEsdeveniment% PassarelaEsdeveniment::operator=(const PassarelaEsdeveniment% other)
 {
