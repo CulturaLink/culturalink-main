@@ -124,7 +124,7 @@ namespace culturalink_main {
 			this->panelDesktop->Location = System::Drawing::Point(156, 49);
 			this->panelDesktop->Margin = System::Windows::Forms::Padding(2);
 			this->panelDesktop->Name = L"panelDesktop";
-			this->panelDesktop->Size = System::Drawing::Size(628, 392);
+			this->panelDesktop->Size = System::Drawing::Size(0, 0);
 			this->panelDesktop->TabIndex = 4;
 			this->panelDesktop->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MainForm::panelDesktop_Paint);
 			// 
@@ -150,7 +150,7 @@ namespace culturalink_main {
 			this->panelMenu->Location = System::Drawing::Point(0, 49);
 			this->panelMenu->Margin = System::Windows::Forms::Padding(2);
 			this->panelMenu->Name = L"panelMenu";
-			this->panelMenu->Size = System::Drawing::Size(156, 392);
+			this->panelMenu->Size = System::Drawing::Size(156, 0);
 			this->panelMenu->TabIndex = 0;
 			// 
 			// button4
@@ -213,7 +213,7 @@ namespace culturalink_main {
 			this->panelTitleBar->Location = System::Drawing::Point(0, 0);
 			this->panelTitleBar->Margin = System::Windows::Forms::Padding(2);
 			this->panelTitleBar->Name = L"panelTitleBar";
-			this->panelTitleBar->Size = System::Drawing::Size(784, 49);
+			this->panelTitleBar->Size = System::Drawing::Size(120, 49);
 			this->panelTitleBar->TabIndex = 3;
 			// 
 			// infoUsuariIcon
@@ -221,7 +221,7 @@ namespace culturalink_main {
 			this->infoUsuariIcon->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->infoUsuariIcon->Dock = System::Windows::Forms::DockStyle::Right;
 			this->infoUsuariIcon->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"infoUsuariIcon.Image")));
-			this->infoUsuariIcon->Location = System::Drawing::Point(686, 0);
+			this->infoUsuariIcon->Location = System::Drawing::Point(22, 0);
 			this->infoUsuariIcon->Name = L"infoUsuariIcon";
 			this->infoUsuariIcon->Size = System::Drawing::Size(49, 49);
 			this->infoUsuariIcon->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -248,7 +248,7 @@ namespace culturalink_main {
 			this->logInIcon->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->logInIcon->Dock = System::Windows::Forms::DockStyle::Right;
 			this->logInIcon->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"logInIcon.Image")));
-			this->logInIcon->Location = System::Drawing::Point(735, 0);
+			this->logInIcon->Location = System::Drawing::Point(71, 0);
 			this->logInIcon->Name = L"logInIcon";
 			this->logInIcon->Size = System::Drawing::Size(49, 49);
 			this->logInIcon->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -264,7 +264,7 @@ namespace culturalink_main {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(784, 441);
+			this->ClientSize = System::Drawing::Size(120, 46);
 			this->Controls->Add(this->panelDesktop);
 			this->Controls->Add(this->panelMenu);
 			this->Controls->Add(this->panelTitleBar);
@@ -295,6 +295,8 @@ private: System::Void pictureBox2_Click_1(System::Object^ sender, System::EventA
 	}
 	if (usuario->getTipoPassarela() == TipoPassarela::Entitat)
 		this->button4->Visible = true;
+
+	this->Close();
 }
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 	panelMenu->Visible = !panelMenu->Visible;

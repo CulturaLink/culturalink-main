@@ -37,6 +37,9 @@ Class culturalink_main.RegisterFormCiutada: AutoLayout, AnsiClass, Class, Public
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
     Boolean switchToLogin : Public
+Class culturalink_main.ProvesUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class culturalink_main.Login: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -50,9 +53,6 @@ Class culturalink_main.RegistrarEsdevenimentUI: AutoLayout, AnsiClass, Class, Pu
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class culturalink_main.ConsultaEsdevenimentUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-  :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class culturalink_main.ProvesUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class culturalink_main.MainForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
