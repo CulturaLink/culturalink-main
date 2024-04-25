@@ -15,6 +15,7 @@ public:
     CercadoraEsdeveniment();
     PassarelaEsdeveniment cercaEsdeveniment(String^ clau);
     List<PassarelaEsdeveniment^>^ cercaTotsEsdeveniments();
+    List<PassarelaEsdeveniment^>^ cercaEsdevenimentsAmbTipus(String^ tipus);
 
 private:
 
