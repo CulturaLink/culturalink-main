@@ -93,6 +93,7 @@ namespace culturalink_main {
 			this->btnMinimize->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->btnMinimize->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(31)), static_cast<System::Int32>(static_cast<System::Byte>(31)),
 				static_cast<System::Int32>(static_cast<System::Byte>(31)));
+			this->btnMinimize->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnMinimize.Image")));
 			this->btnMinimize->Location = System::Drawing::Point(95, 0);
 			this->btnMinimize->Name = L"btnMinimize";
 			this->btnMinimize->Size = System::Drawing::Size(35, 30);
@@ -105,6 +106,7 @@ namespace culturalink_main {
 			this->btnMaximize->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->btnMaximize->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(31)), static_cast<System::Int32>(static_cast<System::Byte>(31)),
 				static_cast<System::Int32>(static_cast<System::Byte>(31)));
+			this->btnMaximize->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnMaximize.Image")));
 			this->btnMaximize->Location = System::Drawing::Point(130, 0);
 			this->btnMaximize->Name = L"btnMaximize";
 			this->btnMaximize->Size = System::Drawing::Size(35, 30);
