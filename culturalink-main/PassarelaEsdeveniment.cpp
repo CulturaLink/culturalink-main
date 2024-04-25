@@ -51,26 +51,21 @@ void PassarelaEsdeveniment::insereix() {
     String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
     MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
 
-    // EntitatIniciat^ entitat = EntitatIniciat::ObtenerInstancia();
+    UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
 
-     //String^ id = (entitat->getId())->ToString();
+    PassarelaEntitat^ passEnt = safe_cast<PassarelaEntitat^>(usuario->getUsuari());
+    
+    String^ idString = passEnt->obteid()->ToString();
 
     if (_preu < 0) {
         throw (preuNegatiu);
     }
 
     String^ sql = "INSERT INTO amep14.esdeveniment (id_entitat, preu_esdeveniment, ajuntament_esdeveniment, descripcio_esdeveniment, nom_esdeveniment)"
-        //"VALUES('" + id + "', '" + preu + "', '" + ajuntament + "', '" + descripcio + "', '" + nom + "');";
-        "VALUES('5236', '" + _preu + "', '" + _ajEsd + "', '" + _descEsd + "', '" + _nomEsd + "');";
+        "VALUES('" + idString + "', '" + _preu + "', '" + _ajEsd + "', '" + _descEsd + "', '" + _nomEsd + "');";
 
 
     MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
-
-    /*cmd->Parameters->AddWithValue("@_idEnt", _idEnt);
-    cmd->Parameters->AddWithValue("@_preu", _preu);
-    cmd->Parameters->AddWithValue("@_ajEsd", _ajEsd);
-    cmd->Parameters->AddWithValue("@_descEsd", _descEsd);
-    cmd->Parameters->AddWithValue("@_nomEsd", _nomEsd);*/
 
     MySqlDataReader^ dataReader;
     try {
