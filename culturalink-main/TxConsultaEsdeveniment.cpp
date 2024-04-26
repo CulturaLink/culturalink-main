@@ -16,6 +16,12 @@ void TxConsultaEsdeveniment::executar() {
     result->Add(_passEsdev.getAjEsd());
     result->Add(_passEsdev.getDescEsd());
     result->Add(_passEsdev.getNomEsd());
+    result->Add(_passEsdev.getTipusEsd());
+    result->Add(_passEsdev.getAforamentEsd().ToString());
+    result->Add(_passEsdev.getPuntsCostEsd().ToString());
+    result->Add(_passEsdev.getDataEsd());
+    result->Add(_passEsdev.getPuntsDescEsd().ToString());
+   
 
     _result = result;
 }

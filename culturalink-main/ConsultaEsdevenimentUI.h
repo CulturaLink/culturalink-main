@@ -47,8 +47,21 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ label5;
+
+
 	private: System::Windows::Forms::Label^ label6;
 	private: System::Windows::Forms::Label^ label7;
+	private: System::Windows::Forms::Label^ lblTipus;
+	private: System::Windows::Forms::Label^ lblAforament;
+	private: System::Windows::Forms::Label^ lblPuntsCost;
+	private: System::Windows::Forms::Label^ lblData;
+	private: System::Windows::Forms::Label^ lblPuntsDesc;
+	private: System::Windows::Forms::Label^ label8;
+	private: System::Windows::Forms::Label^ label9;
+	private: System::Windows::Forms::Label^ label10;
+	private: System::Windows::Forms::Label^ label11;
+	private: System::Windows::Forms::Label^ label12;
+
 	protected:
 
 	private:
@@ -73,6 +86,16 @@ namespace culturalink_main {
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->lblTipus = (gcnew System::Windows::Forms::Label());
+			this->lblAforament = (gcnew System::Windows::Forms::Label());
+			this->lblPuntsCost = (gcnew System::Windows::Forms::Label());
+			this->lblData = (gcnew System::Windows::Forms::Label());
+			this->lblPuntsDesc = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->label10 = (gcnew System::Windows::Forms::Label());
+			this->label11 = (gcnew System::Windows::Forms::Label());
+			this->label12 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// textBox1
@@ -85,7 +108,7 @@ namespace culturalink_main {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(174, 195);
+			this->button1->Location = System::Drawing::Point(292, 363);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 23);
 			this->button1->TabIndex = 1;
@@ -159,11 +182,111 @@ namespace culturalink_main {
 			this->label7->TabIndex = 12;
 			this->label7->Text = L"label7";
 			// 
+			// lblTipus
+			// 
+			this->lblTipus->AutoSize = true;
+			this->lblTipus->Location = System::Drawing::Point(140, 186);
+			this->lblTipus->Name = L"lblTipus";
+			this->lblTipus->Size = System::Drawing::Size(35, 13);
+			this->lblTipus->TabIndex = 13;
+			this->lblTipus->Text = L"label8";
+			// 
+			// lblAforament
+			// 
+			this->lblAforament->AutoSize = true;
+			this->lblAforament->Location = System::Drawing::Point(140, 218);
+			this->lblAforament->Name = L"lblAforament";
+			this->lblAforament->Size = System::Drawing::Size(35, 13);
+			this->lblAforament->TabIndex = 14;
+			this->lblAforament->Text = L"label8";
+			// 
+			// lblPuntsCost
+			// 
+			this->lblPuntsCost->AutoSize = true;
+			this->lblPuntsCost->Location = System::Drawing::Point(161, 253);
+			this->lblPuntsCost->Name = L"lblPuntsCost";
+			this->lblPuntsCost->Size = System::Drawing::Size(35, 13);
+			this->lblPuntsCost->TabIndex = 15;
+			this->lblPuntsCost->Text = L"label8";
+			// 
+			// lblData
+			// 
+			this->lblData->AutoSize = true;
+			this->lblData->Location = System::Drawing::Point(140, 290);
+			this->lblData->Name = L"lblData";
+			this->lblData->Size = System::Drawing::Size(35, 13);
+			this->lblData->TabIndex = 16;
+			this->lblData->Text = L"label8";
+			// 
+			// lblPuntsDesc
+			// 
+			this->lblPuntsDesc->AutoSize = true;
+			this->lblPuntsDesc->Location = System::Drawing::Point(192, 330);
+			this->lblPuntsDesc->Name = L"lblPuntsDesc";
+			this->lblPuntsDesc->Size = System::Drawing::Size(35, 13);
+			this->lblPuntsDesc->TabIndex = 17;
+			this->lblPuntsDesc->Text = L"label8";
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Location = System::Drawing::Point(12, 186);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(111, 13);
+			this->label8->TabIndex = 18;
+			this->label8->Text = L"Tipus d\'Esdeveniment";
+			// 
+			// label9
+			// 
+			this->label9->AutoSize = true;
+			this->label9->Location = System::Drawing::Point(7, 218);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(125, 13);
+			this->label9->TabIndex = 19;
+			this->label9->Text = L"Aforament Esdeveniment";
+			// 
+			// label10
+			// 
+			this->label10->AutoSize = true;
+			this->label10->Location = System::Drawing::Point(7, 253);
+			this->label10->Name = L"label10";
+			this->label10->Size = System::Drawing::Size(135, 13);
+			this->label10->TabIndex = 20;
+			this->label10->Text = L"Preu (Punts) Esdeveniment";
+			// 
+			// label11
+			// 
+			this->label11->AutoSize = true;
+			this->label11->Location = System::Drawing::Point(12, 290);
+			this->label11->Name = L"label11";
+			this->label11->Size = System::Drawing::Size(100, 13);
+			this->label11->TabIndex = 21;
+			this->label11->Text = L"Data Esdeveniment";
+			// 
+			// label12
+			// 
+			this->label12->AutoSize = true;
+			this->label12->Location = System::Drawing::Point(12, 330);
+			this->label12->Name = L"label12";
+			this->label12->Size = System::Drawing::Size(161, 13);
+			this->label12->TabIndex = 22;
+			this->label12->Text = L"Punts Descompte Esdeveniment";
+			// 
 			// ConsultaEsdevenimentUI
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(268, 229);
+			this->ClientSize = System::Drawing::Size(458, 451);
+			this->Controls->Add(this->label12);
+			this->Controls->Add(this->label11);
+			this->Controls->Add(this->label10);
+			this->Controls->Add(this->label9);
+			this->Controls->Add(this->label8);
+			this->Controls->Add(this->lblPuntsDesc);
+			this->Controls->Add(this->lblData);
+			this->Controls->Add(this->lblPuntsCost);
+			this->Controls->Add(this->lblAforament);
+			this->Controls->Add(this->lblTipus);
 			this->Controls->Add(this->label7);
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->label5);
@@ -194,6 +317,11 @@ namespace culturalink_main {
 		label5->Text = infoEsd[1];
 		label6->Text = infoEsd[2];
 		label7->Text = infoEsd[3];
+		lblTipus->Text = infoEsd[5];
+		lblAforament->Text = infoEsd[6];
+		lblPuntsCost->Text = infoEsd[7];
+		lblData->Text = infoEsd[8];
+		lblPuntsDesc->Text = infoEsd[9];
 	}
 	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 
@@ -205,6 +333,7 @@ namespace culturalink_main {
 	private: System::Void ConsultaEsdevenimentUI_Load(System::Object^ sender, System::EventArgs^ e) {
 
 	}
-	};
+	
+};
 }
 

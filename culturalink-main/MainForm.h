@@ -93,6 +93,7 @@ namespace culturalink_main {
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MainForm::typeid));
 			this->notifyIcon1 = (gcnew System::Windows::Forms::NotifyIcon(this->components));
 			this->panelDesktop = (gcnew System::Windows::Forms::Panel());
+			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->panelMenu = (gcnew System::Windows::Forms::Panel());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
@@ -103,7 +104,6 @@ namespace culturalink_main {
 			this->menuIcon = (gcnew System::Windows::Forms::PictureBox());
 			this->logInIcon = (gcnew System::Windows::Forms::PictureBox());
 			this->eventLog1 = (gcnew System::Diagnostics::EventLog());
-			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->panelDesktop->SuspendLayout();
 			this->panelMenu->SuspendLayout();
 			this->panelTitleBar->SuspendLayout();
@@ -127,6 +127,17 @@ namespace culturalink_main {
 			this->panelDesktop->Size = System::Drawing::Size(628, 392);
 			this->panelDesktop->TabIndex = 4;
 			this->panelDesktop->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MainForm::panelDesktop_Paint);
+			// 
+			// button5
+			// 
+			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8));
+			this->button5->Location = System::Drawing::Point(541, 357);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(75, 23);
+			this->button5->TabIndex = 0;
+			this->button5->Text = L"proves";
+			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &MainForm::button5_Click);
 			// 
 			// panelMenu
 			// 
@@ -248,17 +259,6 @@ namespace culturalink_main {
 			// eventLog1
 			// 
 			this->eventLog1->SynchronizingObject = this;
-			// 
-			// button5
-			// 
-			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8));
-			this->button5->Location = System::Drawing::Point(541, 357);
-			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(75, 23);
-			this->button5->TabIndex = 0;
-			this->button5->Text = L"proves";
-			this->button5->UseVisualStyleBackColor = true;
-			this->button5->Click += gcnew System::EventHandler(this, &MainForm::button5_Click);
 			// 
 			// MainForm
 			// 
