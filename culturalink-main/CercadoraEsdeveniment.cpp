@@ -31,7 +31,7 @@ PassarelaEsdeveniment CercadoraEsdeveniment::cercaEsdeveniment(String^ clau) {
             String^ _tipusEsdeveniment = dataReader->GetString(5);
             int _aforamentEsdeveniment = dataReader->GetInt32(6);
             int _puntsCostEsdeveniment = dataReader->GetInt32(7);
-            String^ _dataEsdeveniment = dataReader->GetString(8);
+            String^ _dataEsdeveniment = dataReader->GetDateTime(8).ToString();
             int _puntsDescEsdeveniment = dataReader->GetInt32(9);
 
             PassarelaEsdeveniment P1(_idEntitat, _preuEsdeveniment, _ajEsdeveniment, _descEsdeveniment, _nomEsdeveniment, _tipusEsdeveniment, _aforamentEsdeveniment, _puntsCostEsdeveniment, _dataEsdeveniment, _puntsDescEsdeveniment);
