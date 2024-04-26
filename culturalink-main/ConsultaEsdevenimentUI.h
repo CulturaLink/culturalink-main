@@ -1,6 +1,7 @@
 #pragma once
 
 #include "TxConsultaEsdeveniment.h"
+#include "TxCompraEntradaEsdeveniment.h"
 
 namespace culturalink_main {
 
@@ -49,6 +50,7 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Label^ label5;
 	private: System::Windows::Forms::Label^ label6;
 	private: System::Windows::Forms::Label^ label7;
+	private: System::Windows::Forms::Button^ button2;
 	protected:
 
 	private:
@@ -73,6 +75,7 @@ namespace culturalink_main {
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// textBox1
@@ -139,6 +142,7 @@ namespace culturalink_main {
 			this->label5->Size = System::Drawing::Size(35, 13);
 			this->label5->TabIndex = 10;
 			this->label5->Text = L"label5";
+			this->label5->Visible = false;
 			this->label5->Click += gcnew System::EventHandler(this, &ConsultaEsdevenimentUI::label5_Click);
 			// 
 			// label6
@@ -149,6 +153,7 @@ namespace culturalink_main {
 			this->label6->Size = System::Drawing::Size(35, 13);
 			this->label6->TabIndex = 11;
 			this->label6->Text = L"label6";
+			this->label6->Visible = false;
 			// 
 			// label7
 			// 
@@ -158,12 +163,25 @@ namespace culturalink_main {
 			this->label7->Size = System::Drawing::Size(35, 13);
 			this->label7->TabIndex = 12;
 			this->label7->Text = L"label7";
+			this->label7->Visible = false;
+			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(59, 195);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(109, 23);
+			this->button2->TabIndex = 13;
+			this->button2->Text = L"Compra Entrada";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Visible = false;
+			this->button2->Click += gcnew System::EventHandler(this, &ConsultaEsdevenimentUI::button2_Click);
 			// 
 			// ConsultaEsdevenimentUI
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(268, 229);
+			this->Controls->Add(this->button2);
 			this->Controls->Add(this->label7);
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->label5);
@@ -187,6 +205,12 @@ namespace culturalink_main {
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		String^ nomEsd = this->textBox1->Text;
+		if (nomEsd->Length == 0)
+		{
+			MessageBox::Show("Omple el camp buit",
+				"Un camp buit", MessageBoxButtons::OK);
+			return;
+		}
 		List<String^>^ infoEsd;
 		TxConsultaEsdeveniment txConsEsd(nomEsd);
 		txConsEsd.executar();
@@ -194,6 +218,10 @@ namespace culturalink_main {
 		label5->Text = infoEsd[1];
 		label6->Text = infoEsd[2];
 		label7->Text = infoEsd[3];
+		label5->Visible = true;
+		label6->Visible = true;
+		label7->Visible = true;
+		button2->Visible = true;
 	}
 	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 
@@ -205,6 +233,12 @@ namespace culturalink_main {
 	private: System::Void ConsultaEsdevenimentUI_Load(System::Object^ sender, System::EventArgs^ e) {
 
 	}
-	};
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		String^ nomEsd = this->textBox1->Text;
+		TxCompraEntradaEsdeveniment tx1;
+		tx1.executar();
+		
+	}
+};
 }
 

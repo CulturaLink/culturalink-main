@@ -134,6 +134,9 @@
     <ClInclude Include="TxConsultaEsdevenimentsAmbTipus.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TxCompraEntradaEsdeveniment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -245,6 +248,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TxConsultaEsdevenimentsAmbTipus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxCompraEntradaEsdeveniment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
