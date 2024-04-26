@@ -15,10 +15,16 @@ private:
     int idE;
     String^ descripcioE;
     String^ ajuntamentE;
+    String^ tipusE;
+    int aforamentE;
+    int puntsCostE; 
+    String^ dataE;
+    int puntsDescE;
+
 
 public:
     TxRegistraEsdeveniment();
-    TxRegistraEsdeveniment(int idEnt, String^ nomEsd, float preuEsd, String^ descEsd, String^ ajuntamEsdv);
+    TxRegistraEsdeveniment(int idEnt, String^ nomEsd, float preuEsd, String^ descEsd, String^ ajuntamEsd, String^ tipusEsd, int aforamentEsd, int puntsCostEsd, String^ data, int puntsDescE);
     //TxRegistraEsdeveniment(String^ nomEsd, float preuEsd, String^ descEsd, String^ ajuntamEsdv);
     void executar() override;
 };

@@ -64,6 +64,7 @@ namespace culturalink_main {
 			this->listBox1->Name = L"listBox1";
 			this->listBox1->Size = System::Drawing::Size(650, 212);
 			this->listBox1->TabIndex = 0;
+			this->listBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &ProvesEsdevsUI::listBox1_SelectedIndexChanged);
 			// 
 			// ProvesEsdevsUI
 			// 
@@ -89,6 +90,8 @@ namespace culturalink_main {
 			this->listBox1->Items->Add(nom_preu);
 		}
 		
+	}
+	private: System::Void listBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 	}
 	};
 }

@@ -28,8 +28,13 @@ PassarelaEsdeveniment CercadoraEsdeveniment::cercaEsdeveniment(String^ clau) {
             String^ _ajEsdeveniment = dataReader->GetString(2);
             String^ _descEsdeveniment = dataReader->GetString(3);
             String^ _nomEsdeveniment = dataReader->GetString(4);
+            String^ _tipusEsdeveniment = dataReader->GetString(5);
+            int _aforamentEsdeveniment = dataReader->GetInt32(6);
+            int _puntsCostEsdeveniment = dataReader->GetInt32(7);
+            String^ _dataEsdeveniment = dataReader->GetString(8);
+            int _puntsDescEsdeveniment = dataReader->GetInt32(9);
 
-            PassarelaEsdeveniment P1(_idEntitat, _preuEsdeveniment, _ajEsdeveniment, _descEsdeveniment, _nomEsdeveniment);
+            PassarelaEsdeveniment P1(_idEntitat, _preuEsdeveniment, _ajEsdeveniment, _descEsdeveniment, _nomEsdeveniment, _tipusEsdeveniment, _aforamentEsdeveniment, _puntsCostEsdeveniment, _dataEsdeveniment, _puntsDescEsdeveniment);
             return P1;
         }
     }
@@ -95,7 +100,7 @@ List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaEsdevenimentsAmbTipus(
     MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
 
     // Uso de parámetros en la consulta SQL
-    String^ sql1 = "SELECT COUNT() FROM esdeveniment";
+    String^ sql1 = "SELECT COUNT(*) FROM esdeveniment";
 
     MySqlCommand^ cmd1 = gcnew MySqlCommand(sql1, conn);
     MySqlDataReader^ dataReader1;
@@ -109,7 +114,7 @@ List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaEsdevenimentsAmbTipus(
 
     List<PassarelaEsdeveniment^>^ totsEsdev;
 
-    String^ sql2 = "SELECT FROM esdeveniment WHERE tipus = @tipus";
+    String^ sql2 = "SELECT * FROM esdeveniment WHERE tipus = @tipus";
 
     MySqlCommand^ cmd2 = gcnew MySqlCommand(sql2, conn);
     cmd2->Parameters->AddWithValue("@tipus", tipus); // Asignación del valor del parámetro
@@ -123,8 +128,13 @@ List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaEsdevenimentsAmbTipus(
         String^ _ajEsdeveniment = dataReader2->GetString(2);
         String^ _descEsdeveniment = dataReader2->GetString(3);
         String^ _nomEsdeveniment = dataReader2->GetString(4);
+        String^ _tipusEsdeveniment = dataReader2->GetString(5);
+        int _aforamentEsdeveniment = dataReader2->GetInt32(6);
+        int _puntsCostEsdeveniment = dataReader2->GetInt32(7);
+        String^ _dataEsdeveniment = dataReader2->GetString(8);
+        int _puntsDescEsdeveniment = dataReader2->GetInt32(9);
 
-        PassarelaEsdeveniment^ passEsdev = gcnew PassarelaEsdeveniment(_idEntitat, _preuEsdeveniment, _ajEsdeveniment, _descEsdeveniment, _nomEsdeveniment);
+        PassarelaEsdeveniment^ passEsdev = gcnew PassarelaEsdeveniment(_idEntitat, _preuEsdeveniment, _ajEsdeveniment, _descEsdeveniment, _nomEsdeveniment, _tipusEsdeveniment, _aforamentEsdeveniment, _puntsCostEsdeveniment, _dataEsdeveniment, _puntsDescEsdeveniment);
 
         totsEsdev->Add(passEsdev);
     }
