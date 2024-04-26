@@ -35,9 +35,6 @@
     <ClInclude Include="PassarelaEsdeveniment.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="TxRegistraEsdeveniment.h">
       <Filter>Header Files</Filter>
     </ClInclude>

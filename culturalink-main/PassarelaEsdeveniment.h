@@ -1,7 +1,6 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "config.h"
 #include "EntitatIniciat.h"
 //#include <Windows.h>
 

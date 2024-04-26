@@ -75,6 +75,7 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Panel^ panel4;
 	private: System::Windows::Forms::Panel^ panel5;
 	private: System::Windows::Forms::Panel^ panel6;
+	private: System::Windows::Forms::Label^ label5;
 
 	protected:
 
@@ -114,6 +115,7 @@ namespace culturalink_main {
 			this->panel4 = (gcnew System::Windows::Forms::Panel());
 			this->panel5 = (gcnew System::Windows::Forms::Panel());
 			this->panel6 = (gcnew System::Windows::Forms::Panel());
+			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1->SuspendLayout();
 			this->panel1->SuspendLayout();
 			this->panel3->SuspendLayout();
@@ -126,21 +128,23 @@ namespace culturalink_main {
 			// 
 			// TBUsr
 			// 
-			this->TBUsr->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
-			this->TBUsr->Location = System::Drawing::Point(97, 18);
-			this->TBUsr->Margin = System::Windows::Forms::Padding(2);
+			this->TBUsr->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->TBUsr->Location = System::Drawing::Point(129, 22);
+			this->TBUsr->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->TBUsr->Name = L"TBUsr";
-			this->TBUsr->Size = System::Drawing::Size(219, 31);
+			this->TBUsr->Size = System::Drawing::Size(291, 34);
 			this->TBUsr->TabIndex = 1;
 			// 
 			// TBpwd
 			// 
-			this->TBpwd->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
-			this->TBpwd->Location = System::Drawing::Point(97, 65);
-			this->TBpwd->Margin = System::Windows::Forms::Padding(2);
+			this->TBpwd->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->TBpwd->Location = System::Drawing::Point(129, 80);
+			this->TBpwd->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->TBpwd->Name = L"TBpwd";
 			this->TBpwd->PasswordChar = '*';
-			this->TBpwd->Size = System::Drawing::Size(219, 31);
+			this->TBpwd->Size = System::Drawing::Size(291, 34);
 			this->TBpwd->TabIndex = 2;
 			// 
 			// label1
@@ -151,8 +155,9 @@ namespace culturalink_main {
 				static_cast<System::Byte>(0)));
 			this->label1->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			this->label1->Location = System::Drawing::Point(0, 0);
+			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(329, 53);
+			this->label1->Size = System::Drawing::Size(439, 65);
 			this->label1->TabIndex = 3;
 			this->label1->Text = L"Login";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -162,9 +167,10 @@ namespace culturalink_main {
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Arial", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(12, 26);
+			this->label2->Location = System::Drawing::Point(16, 32);
+			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(77, 18);
+			this->label2->Size = System::Drawing::Size(96, 23);
 			this->label2->TabIndex = 4;
 			this->label2->Text = L"username";
 			// 
@@ -173,9 +179,10 @@ namespace culturalink_main {
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Arial", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(12, 73);
+			this->label3->Location = System::Drawing::Point(16, 90);
+			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(76, 18);
+			this->label3->Size = System::Drawing::Size(96, 23);
 			this->label3->TabIndex = 5;
 			this->label3->Text = L"password";
 			// 
@@ -183,10 +190,10 @@ namespace culturalink_main {
 			// 
 			this->buttonOK->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->buttonOK->Location = System::Drawing::Point(174, 369);
-			this->buttonOK->Margin = System::Windows::Forms::Padding(2);
+			this->buttonOK->Location = System::Drawing::Point(232, 454);
+			this->buttonOK->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->buttonOK->Name = L"buttonOK";
-			this->buttonOK->Size = System::Drawing::Size(120, 30);
+			this->buttonOK->Size = System::Drawing::Size(160, 37);
 			this->buttonOK->TabIndex = 6;
 			this->buttonOK->Text = L"Inicia Sesió";
 			this->buttonOK->UseVisualStyleBackColor = true;
@@ -200,8 +207,10 @@ namespace culturalink_main {
 			this->groupBox1->Dock = System::Windows::Forms::DockStyle::Top;
 			this->groupBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.25F));
 			this->groupBox1->Location = System::Drawing::Point(0, 0);
+			this->groupBox1->Margin = System::Windows::Forms::Padding(4);
 			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(329, 99);
+			this->groupBox1->Padding = System::Windows::Forms::Padding(4);
+			this->groupBox1->Size = System::Drawing::Size(439, 122);
 			this->groupBox1->TabIndex = 8;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Select User Type";
@@ -211,9 +220,10 @@ namespace culturalink_main {
 			this->RBajt->AutoSize = true;
 			this->RBajt->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->RBajt->Location = System::Drawing::Point(6, 67);
+			this->RBajt->Location = System::Drawing::Point(8, 82);
+			this->RBajt->Margin = System::Windows::Forms::Padding(4);
 			this->RBajt->Name = L"RBajt";
-			this->RBajt->Size = System::Drawing::Size(109, 24);
+			this->RBajt->Size = System::Drawing::Size(132, 29);
 			this->RBajt->TabIndex = 2;
 			this->RBajt->Text = L"Ajuntament";
 			this->RBajt->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -225,9 +235,10 @@ namespace culturalink_main {
 			this->RBent->AutoSize = true;
 			this->RBent->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->RBent->Location = System::Drawing::Point(6, 43);
+			this->RBent->Location = System::Drawing::Point(8, 53);
+			this->RBent->Margin = System::Windows::Forms::Padding(4);
 			this->RBent->Name = L"RBent";
-			this->RBent->Size = System::Drawing::Size(74, 24);
+			this->RBent->Size = System::Drawing::Size(87, 29);
 			this->RBent->TabIndex = 1;
 			this->RBent->Text = L"Entitat";
 			this->RBent->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -240,12 +251,13 @@ namespace culturalink_main {
 			this->RBcit->Checked = true;
 			this->RBcit->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->RBcit->Location = System::Drawing::Point(6, 19);
+			this->RBcit->Location = System::Drawing::Point(8, 23);
+			this->RBcit->Margin = System::Windows::Forms::Padding(4);
 			this->RBcit->Name = L"RBcit";
-			this->RBcit->Size = System::Drawing::Size(82, 24);
+			this->RBcit->Size = System::Drawing::Size(101, 29);
 			this->RBcit->TabIndex = 0;
 			this->RBcit->TabStop = true;
-			this->RBcit->Text = L"Ciutada";
+			this->RBcit->Text = L"Ciutadà";
 			this->RBcit->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->RBcit->UseVisualStyleBackColor = true;
 			this->RBcit->CheckedChanged += gcnew System::EventHandler(this, &Login::RBcit_CheckedChanged);
@@ -254,10 +266,10 @@ namespace culturalink_main {
 			// 
 			this->registre->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->registre->Location = System::Drawing::Point(28, 369);
-			this->registre->Margin = System::Windows::Forms::Padding(2);
+			this->registre->Location = System::Drawing::Point(37, 454);
+			this->registre->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->registre->Name = L"registre";
-			this->registre->Size = System::Drawing::Size(120, 30);
+			this->registre->Size = System::Drawing::Size(160, 37);
 			this->registre->TabIndex = 9;
 			this->registre->Text = L"Registra\'t";
 			this->registre->UseVisualStyleBackColor = true;
@@ -272,7 +284,7 @@ namespace culturalink_main {
 			this->panel1->Location = System::Drawing::Point(0, 0);
 			this->panel1->Margin = System::Windows::Forms::Padding(0);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(329, 30);
+			this->panel1->Size = System::Drawing::Size(439, 37);
 			this->panel1->TabIndex = 10;
 			// 
 			// panel3
@@ -280,8 +292,9 @@ namespace culturalink_main {
 			this->panel3->Controls->Add(this->label4);
 			this->panel3->Controls->Add(this->AppIcon);
 			this->panel3->Location = System::Drawing::Point(0, 0);
+			this->panel3->Margin = System::Windows::Forms::Padding(4);
 			this->panel3->Name = L"panel3";
-			this->panel3->Size = System::Drawing::Size(207, 30);
+			this->panel3->Size = System::Drawing::Size(276, 37);
 			this->panel3->TabIndex = 1;
 			// 
 			// label4
@@ -290,9 +303,10 @@ namespace culturalink_main {
 			this->label4->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label4->ForeColor = System::Drawing::Color::Silver;
-			this->label4->Location = System::Drawing::Point(25, 7);
+			this->label4->Location = System::Drawing::Point(33, 9);
+			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(67, 15);
+			this->label4->Size = System::Drawing::Size(82, 20);
 			this->label4->TabIndex = 1;
 			this->label4->Text = L"CulturaLink";
 			// 
@@ -300,9 +314,10 @@ namespace culturalink_main {
 			// 
 			this->AppIcon->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"AppIcon.Image")));
 			this->AppIcon->InitialImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"AppIcon.InitialImage")));
-			this->AppIcon->Location = System::Drawing::Point(5, 5);
+			this->AppIcon->Location = System::Drawing::Point(7, 6);
+			this->AppIcon->Margin = System::Windows::Forms::Padding(4);
 			this->AppIcon->Name = L"AppIcon";
-			this->AppIcon->Size = System::Drawing::Size(35, 30);
+			this->AppIcon->Size = System::Drawing::Size(47, 37);
 			this->AppIcon->TabIndex = 0;
 			this->AppIcon->TabStop = false;
 			// 
@@ -312,9 +327,10 @@ namespace culturalink_main {
 			this->panel2->Controls->Add(this->btnMaximize);
 			this->panel2->Controls->Add(this->btnClose);
 			this->panel2->Dock = System::Windows::Forms::DockStyle::Right;
-			this->panel2->Location = System::Drawing::Point(129, 0);
+			this->panel2->Location = System::Drawing::Point(172, 0);
+			this->panel2->Margin = System::Windows::Forms::Padding(4);
 			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(200, 30);
+			this->panel2->Size = System::Drawing::Size(267, 37);
 			this->panel2->TabIndex = 0;
 			// 
 			// btnMinimize
@@ -324,9 +340,10 @@ namespace culturalink_main {
 			this->btnMinimize->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(31)), static_cast<System::Int32>(static_cast<System::Byte>(31)),
 				static_cast<System::Int32>(static_cast<System::Byte>(31)));
 			this->btnMinimize->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnMinimize.Image")));
-			this->btnMinimize->Location = System::Drawing::Point(95, 0);
+			this->btnMinimize->Location = System::Drawing::Point(126, 0);
+			this->btnMinimize->Margin = System::Windows::Forms::Padding(4);
 			this->btnMinimize->Name = L"btnMinimize";
-			this->btnMinimize->Size = System::Drawing::Size(35, 30);
+			this->btnMinimize->Size = System::Drawing::Size(47, 37);
 			this->btnMinimize->TabIndex = 2;
 			this->btnMinimize->UseVisualStyleBackColor = true;
 			this->btnMinimize->Click += gcnew System::EventHandler(this, &Login::btnMinimize_Click);
@@ -340,9 +357,10 @@ namespace culturalink_main {
 			this->btnMaximize->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(31)), static_cast<System::Int32>(static_cast<System::Byte>(31)),
 				static_cast<System::Int32>(static_cast<System::Byte>(31)));
 			this->btnMaximize->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnMaximize.Image")));
-			this->btnMaximize->Location = System::Drawing::Point(130, 0);
+			this->btnMaximize->Location = System::Drawing::Point(173, 0);
+			this->btnMaximize->Margin = System::Windows::Forms::Padding(4);
 			this->btnMaximize->Name = L"btnMaximize";
-			this->btnMaximize->Size = System::Drawing::Size(35, 30);
+			this->btnMaximize->Size = System::Drawing::Size(47, 37);
 			this->btnMaximize->TabIndex = 1;
 			this->btnMaximize->UseVisualStyleBackColor = true;
 			this->btnMaximize->Click += gcnew System::EventHandler(this, &Login::btnMaximize_Click);
@@ -351,16 +369,16 @@ namespace culturalink_main {
 			// 
 			// btnClose
 			// 
-			this->btnClose->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(31)), static_cast<System::Int32>(static_cast<System::Byte>(31)),
-				static_cast<System::Int32>(static_cast<System::Byte>(31)));
+			this->btnClose->BackColor = System::Drawing::Color::Black;
 			this->btnClose->Dock = System::Windows::Forms::DockStyle::Right;
 			this->btnClose->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->btnClose->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(31)), static_cast<System::Int32>(static_cast<System::Byte>(31)),
 				static_cast<System::Int32>(static_cast<System::Byte>(31)));
 			this->btnClose->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnClose.Image")));
-			this->btnClose->Location = System::Drawing::Point(165, 0);
+			this->btnClose->Location = System::Drawing::Point(220, 0);
+			this->btnClose->Margin = System::Windows::Forms::Padding(4);
 			this->btnClose->Name = L"btnClose";
-			this->btnClose->Size = System::Drawing::Size(35, 30);
+			this->btnClose->Size = System::Drawing::Size(47, 37);
 			this->btnClose->TabIndex = 0;
 			this->btnClose->UseVisualStyleBackColor = false;
 			this->btnClose->Click += gcnew System::EventHandler(this, &Login::btnClose_Click);
@@ -371,9 +389,10 @@ namespace culturalink_main {
 			// 
 			this->panel4->Controls->Add(this->label1);
 			this->panel4->Dock = System::Windows::Forms::DockStyle::Top;
-			this->panel4->Location = System::Drawing::Point(0, 30);
+			this->panel4->Location = System::Drawing::Point(0, 37);
+			this->panel4->Margin = System::Windows::Forms::Padding(4);
 			this->panel4->Name = L"panel4";
-			this->panel4->Size = System::Drawing::Size(329, 53);
+			this->panel4->Size = System::Drawing::Size(439, 65);
 			this->panel4->TabIndex = 11;
 			// 
 			// panel5
@@ -383,25 +402,40 @@ namespace culturalink_main {
 			this->panel5->Controls->Add(this->label3);
 			this->panel5->Controls->Add(this->TBpwd);
 			this->panel5->Dock = System::Windows::Forms::DockStyle::Top;
-			this->panel5->Location = System::Drawing::Point(0, 83);
+			this->panel5->Location = System::Drawing::Point(0, 102);
+			this->panel5->Margin = System::Windows::Forms::Padding(4);
 			this->panel5->Name = L"panel5";
-			this->panel5->Size = System::Drawing::Size(329, 130);
+			this->panel5->Size = System::Drawing::Size(439, 160);
 			this->panel5->TabIndex = 12;
 			// 
 			// panel6
 			// 
+			this->panel6->Controls->Add(this->label5);
 			this->panel6->Controls->Add(this->groupBox1);
 			this->panel6->Dock = System::Windows::Forms::DockStyle::Top;
-			this->panel6->Location = System::Drawing::Point(0, 213);
+			this->panel6->Location = System::Drawing::Point(0, 262);
+			this->panel6->Margin = System::Windows::Forms::Padding(4);
 			this->panel6->Name = L"panel6";
-			this->panel6->Size = System::Drawing::Size(329, 150);
+			this->panel6->Size = System::Drawing::Size(439, 185);
 			this->panel6->TabIndex = 13;
+			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label5->ForeColor = System::Drawing::Color::Red;
+			this->label5->Location = System::Drawing::Point(89, 146);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(0, 17);
+			this->label5->TabIndex = 9;
+			this->label5->Visible = false;
 			// 
 			// Login
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(329, 410);
+			this->ClientSize = System::Drawing::Size(439, 505);
 			this->Controls->Add(this->panel6);
 			this->Controls->Add(this->panel5);
 			this->Controls->Add(this->panel4);
@@ -409,7 +443,7 @@ namespace culturalink_main {
 			this->Controls->Add(this->registre);
 			this->Controls->Add(this->buttonOK);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
-			this->Margin = System::Windows::Forms::Padding(2);
+			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Name = L"Login";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Login";
@@ -425,6 +459,7 @@ namespace culturalink_main {
 			this->panel5->ResumeLayout(false);
 			this->panel5->PerformLayout();
 			this->panel6->ResumeLayout(false);
+			this->panel6->PerformLayout();
 			this->ResumeLayout(false);
 
 		}
@@ -435,7 +470,9 @@ private: System::Void buttonOK_Click(System::Object^ sender, System::EventArgs^ 
 	String^ nick = this->TBUsr->Text;
 	String^ contra = this->TBpwd->Text;
 	if (nick->Length == 0) {
-		MessageBox::Show("Nickname buit. Introdueixi el seu nickname siusplau.", "Nickname buit");
+		//MessageBox::Show("Nickname buit. Introdueixi el seu nickname siusplau.", "Nickname buit");
+		this->label5->Text = L"Error: Camps username/password buits.";
+		this->label5->Visible = true;
 		return;
 	}
 	if (RBcit->Checked) {
@@ -443,17 +480,20 @@ private: System::Void buttonOK_Click(System::Object^ sender, System::EventArgs^ 
 		{
 			TxLoginCiutada tx(nick, contra);
 			tx.executar();
-			MessageBox::Show("Nickname i contrasenya correctes!", "Login");
-			this->Close();
+
+			//MessageBox::Show("Nickname i contrasenya correctes!", "Login");
+			//this->Close();
 			ProvesUI^ formLog = gcnew ProvesUI;
 			formLog->ShowDialog();
-			this->Close();
+			//this->Close();
 		}
 		catch (const std::exception& e)
 		{
 			// Convertir la excepción de C++ a System::String^
-			String^ mensajeError = gcnew String(e.what());
-			MessageBox::Show(mensajeError, "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			//String^ mensajeError = gcnew String(e.what());
+			//MessageBox::Show(mensajeError, "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			this->label5->Text = L"Error: username o password incorrectes.";
+			this->label5->Visible = true;
 		}
 	}
 	else if (RBajt->Checked){
@@ -462,14 +502,18 @@ private: System::Void buttonOK_Click(System::Object^ sender, System::EventArgs^ 
 		{
 			TxLoginAjuntament tx(nick, contra);
 			tx.executar();
-			MessageBox::Show("Nickname i contrasenya correctes!", "Login");
+			//MessageBox::Show("Nickname i contrasenya correctes!", "Login");
+			ProvesUI^ formLog = gcnew ProvesUI;
+			formLog->ShowDialog();
 			this->Close();
 		}
 		catch (const std::exception& e)
 		{
 			// Convertir la excepción de C++ a System::String^
-			String^ mensajeError = gcnew String(e.what());
-			MessageBox::Show(mensajeError, "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			/*String^ mensajeError = gcnew String(e.what());
+			MessageBox::Show(mensajeError, "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);*/
+			this->label5->Text = L"Error: username o password incorrectes.";
+			this->label5->Visible = true;
 		}
 
 	}
@@ -478,14 +522,18 @@ private: System::Void buttonOK_Click(System::Object^ sender, System::EventArgs^ 
 		{
 			TxIniciaSessio txlogin(nick, contra);
 			txlogin.executar();
-			MessageBox::Show("Correu i contrasenya correctes!", "Login");
+			//MessageBox::Show("Correu i contrasenya correctes!", "Login");
+			ProvesUI^ formLog = gcnew ProvesUI;
+			formLog->ShowDialog();
 			this->Close();
 		}
 		catch (const std::exception& e)
 		{
 			// Convertir la excepción de C++ a System::String^
-			String^ mensajeError = gcnew String(e.what());
-			MessageBox::Show(mensajeError, "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			/*String^ mensajeError = gcnew String(e.what());
+			MessageBox::Show(mensajeError, "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);*/
+			this->label5->Text = L"Error: username o password incorrectes.";
+			this->label5->Visible = true;
 		}
 	}
 }

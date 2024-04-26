@@ -4,7 +4,6 @@
 #include <string>
 #include "PassarelaCiutada.h"
 #include "PassarelaEntitat.h"
-#include "config.h"
 
 using namespace std;
 

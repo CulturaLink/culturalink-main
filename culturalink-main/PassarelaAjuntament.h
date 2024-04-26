@@ -2,7 +2,6 @@
 #include "pch.h"
 #include <iostream>
 #include <string>
-#include "config.h"
 //#include <Windows.h>
 
 using namespace std;

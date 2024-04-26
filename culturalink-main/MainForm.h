@@ -121,8 +121,8 @@ namespace culturalink_main {
 			this->panelDesktop->Controls->Add(this->button5);
 			this->panelDesktop->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->panelDesktop->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
-			this->panelDesktop->Location = System::Drawing::Point(156, 49);
-			this->panelDesktop->Margin = System::Windows::Forms::Padding(2);
+			this->panelDesktop->Location = System::Drawing::Point(208, 60);
+			this->panelDesktop->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->panelDesktop->Name = L"panelDesktop";
 			this->panelDesktop->Size = System::Drawing::Size(0, 0);
 			this->panelDesktop->TabIndex = 4;
@@ -131,9 +131,10 @@ namespace culturalink_main {
 			// button5
 			// 
 			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
-			this->button5->Location = System::Drawing::Point(541, 357);
+			this->button5->Location = System::Drawing::Point(721, 439);
+			this->button5->Margin = System::Windows::Forms::Padding(4);
 			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(75, 23);
+			this->button5->Size = System::Drawing::Size(100, 28);
 			this->button5->TabIndex = 0;
 			this->button5->Text = L"Proves";
 			this->button5->UseVisualStyleBackColor = true;
@@ -147,10 +148,10 @@ namespace culturalink_main {
 			this->panelMenu->Controls->Add(this->button2);
 			this->panelMenu->Controls->Add(this->button1);
 			this->panelMenu->Dock = System::Windows::Forms::DockStyle::Left;
-			this->panelMenu->Location = System::Drawing::Point(0, 49);
-			this->panelMenu->Margin = System::Windows::Forms::Padding(2);
+			this->panelMenu->Location = System::Drawing::Point(0, 60);
+			this->panelMenu->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->panelMenu->Name = L"panelMenu";
-			this->panelMenu->Size = System::Drawing::Size(156, 0);
+			this->panelMenu->Size = System::Drawing::Size(208, 0);
 			this->panelMenu->TabIndex = 0;
 			// 
 			// button4
@@ -158,9 +159,10 @@ namespace culturalink_main {
 			this->button4->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button4->Dock = System::Windows::Forms::DockStyle::Top;
 			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
-			this->button4->Location = System::Drawing::Point(0, 120);
+			this->button4->Location = System::Drawing::Point(0, 147);
+			this->button4->Margin = System::Windows::Forms::Padding(4);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(156, 40);
+			this->button4->Size = System::Drawing::Size(208, 49);
 			this->button4->TabIndex = 3;
 			this->button4->Text = L"Reg. Esdev.";
 			this->button4->UseVisualStyleBackColor = true;
@@ -171,9 +173,10 @@ namespace culturalink_main {
 			// 
 			this->button3->Dock = System::Windows::Forms::DockStyle::Top;
 			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
-			this->button3->Location = System::Drawing::Point(0, 80);
+			this->button3->Location = System::Drawing::Point(0, 98);
+			this->button3->Margin = System::Windows::Forms::Padding(4);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(156, 40);
+			this->button3->Size = System::Drawing::Size(208, 49);
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"Cons. Esdev.";
 			this->button3->UseVisualStyleBackColor = true;
@@ -183,9 +186,10 @@ namespace culturalink_main {
 			// 
 			this->button2->Dock = System::Windows::Forms::DockStyle::Top;
 			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
-			this->button2->Location = System::Drawing::Point(0, 40);
+			this->button2->Location = System::Drawing::Point(0, 49);
+			this->button2->Margin = System::Windows::Forms::Padding(4);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(156, 40);
+			this->button2->Size = System::Drawing::Size(208, 49);
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"Homepage";
 			this->button2->UseVisualStyleBackColor = true;
@@ -196,8 +200,9 @@ namespace culturalink_main {
 			this->button1->Dock = System::Windows::Forms::DockStyle::Top;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
 			this->button1->Location = System::Drawing::Point(0, 0);
+			this->button1->Margin = System::Windows::Forms::Padding(4);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(156, 40);
+			this->button1->Size = System::Drawing::Size(208, 49);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"Homepage";
 			this->button1->UseVisualStyleBackColor = true;
@@ -211,9 +216,9 @@ namespace culturalink_main {
 			this->panelTitleBar->Controls->Add(this->logInIcon);
 			this->panelTitleBar->Dock = System::Windows::Forms::DockStyle::Top;
 			this->panelTitleBar->Location = System::Drawing::Point(0, 0);
-			this->panelTitleBar->Margin = System::Windows::Forms::Padding(2);
+			this->panelTitleBar->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->panelTitleBar->Name = L"panelTitleBar";
-			this->panelTitleBar->Size = System::Drawing::Size(120, 49);
+			this->panelTitleBar->Size = System::Drawing::Size(197, 60);
 			this->panelTitleBar->TabIndex = 3;
 			// 
 			// infoUsuariIcon
@@ -221,9 +226,10 @@ namespace culturalink_main {
 			this->infoUsuariIcon->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->infoUsuariIcon->Dock = System::Windows::Forms::DockStyle::Right;
 			this->infoUsuariIcon->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"infoUsuariIcon.Image")));
-			this->infoUsuariIcon->Location = System::Drawing::Point(22, 0);
+			this->infoUsuariIcon->Location = System::Drawing::Point(67, 0);
+			this->infoUsuariIcon->Margin = System::Windows::Forms::Padding(4);
 			this->infoUsuariIcon->Name = L"infoUsuariIcon";
-			this->infoUsuariIcon->Size = System::Drawing::Size(49, 49);
+			this->infoUsuariIcon->Size = System::Drawing::Size(65, 60);
 			this->infoUsuariIcon->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->infoUsuariIcon->TabIndex = 2;
 			this->infoUsuariIcon->TabStop = false;
@@ -236,8 +242,9 @@ namespace culturalink_main {
 			this->menuIcon->Dock = System::Windows::Forms::DockStyle::Left;
 			this->menuIcon->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"menuIcon.Image")));
 			this->menuIcon->Location = System::Drawing::Point(0, 0);
+			this->menuIcon->Margin = System::Windows::Forms::Padding(4);
 			this->menuIcon->Name = L"menuIcon";
-			this->menuIcon->Size = System::Drawing::Size(49, 49);
+			this->menuIcon->Size = System::Drawing::Size(65, 60);
 			this->menuIcon->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->menuIcon->TabIndex = 1;
 			this->menuIcon->TabStop = false;
@@ -248,9 +255,10 @@ namespace culturalink_main {
 			this->logInIcon->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->logInIcon->Dock = System::Windows::Forms::DockStyle::Right;
 			this->logInIcon->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"logInIcon.Image")));
-			this->logInIcon->Location = System::Drawing::Point(71, 0);
+			this->logInIcon->Location = System::Drawing::Point(132, 0);
+			this->logInIcon->Margin = System::Windows::Forms::Padding(4);
 			this->logInIcon->Name = L"logInIcon";
-			this->logInIcon->Size = System::Drawing::Size(49, 49);
+			this->logInIcon->Size = System::Drawing::Size(65, 60);
 			this->logInIcon->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->logInIcon->TabIndex = 0;
 			this->logInIcon->TabStop = false;
@@ -262,17 +270,18 @@ namespace culturalink_main {
 			// 
 			// MainForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(120, 46);
+			this->ClientSize = System::Drawing::Size(197, 57);
 			this->Controls->Add(this->panelDesktop);
 			this->Controls->Add(this->panelMenu);
 			this->Controls->Add(this->panelTitleBar);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
-			this->Margin = System::Windows::Forms::Padding(2);
+			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Name = L"MainForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"MainForm";
+			this->Load += gcnew System::EventHandler(this, &MainForm::MainForm_Load);
 			this->panelDesktop->ResumeLayout(false);
 			this->panelMenu->ResumeLayout(false);
 			this->panelTitleBar->ResumeLayout(false);
@@ -348,8 +357,10 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void panelDesktop_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 }
 private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
-	ProvesUI^ formLog = gcnew ProvesUI;
-	formLog->ShowDialog();
+	/*ProvesUI^ formLog = gcnew ProvesUI;
+	formLog->ShowDialog();*/
+}
+private: System::Void MainForm_Load(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

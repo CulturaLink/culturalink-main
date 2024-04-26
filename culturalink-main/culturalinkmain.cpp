@@ -21,7 +21,7 @@ int main()
   Application::EnableVisualStyles();
   Application::SetCompatibleTextRenderingDefault(false);
 
-  Application::Run(gcnew culturalink_main::MainForm());
+  Application::Run(gcnew culturalink_main::Login());
 
   return 0;
 }
