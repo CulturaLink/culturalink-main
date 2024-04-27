@@ -25,6 +25,20 @@ Software system to help councils promote culture in their municipality.
 | Vila Monge, Xavier       | [@xvimo](https://github.com/xvimo)           |  
 -->
 
+## UI 
+
+### 1. Form Login:
+
+<img src="https://github.com/CulturaLink/culturalink-main/assets/92806890/8d1d77f6-bfda-4808-be5e-966f28159901" width="300">
+
+### 2. Main Form:
+
+<img src="https://github.com/CulturaLink/culturalink-main/assets/92806890/88868784-099c-4ac7-96db-2976b81ca61e" width="900">
+
+<img src="https://github.com/CulturaLink/culturalink-main/assets/92806890/88f0b717-a1e2-41e1-90eb-4034d0f13c4c" width="900">
+
+
+
 ## Our Team
 
 <table> 
