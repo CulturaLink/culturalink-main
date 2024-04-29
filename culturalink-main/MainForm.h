@@ -8,6 +8,7 @@
 #include "RegistrarEsdevenimentUI.h"
 #include "ConsultaEsdevenimentUI.h"
 #include "ProvesEsdevsUI.h"
+#include "TxConsultaEsdevenimentsAmbTipus.h"
 
 namespace culturalink_main {
 
@@ -66,10 +67,9 @@ namespace culturalink_main {
 	private: System::Windows::Forms::PictureBox^ infoUsuariIcon;
 	private: System::Diagnostics::EventLog^ eventLog1;
 	private: System::Windows::Forms::Button^ button5;
-
-
-
-
+	private: System::Windows::Forms::TextBox^ textBox1;
+	private: System::Windows::Forms::Button^ button6;
+	private: System::Windows::Forms::ListBox^ listBox1;
 
 	private: System::ComponentModel::IContainer^ components;
 	protected:
@@ -93,6 +93,9 @@ namespace culturalink_main {
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MainForm::typeid));
 			this->notifyIcon1 = (gcnew System::Windows::Forms::NotifyIcon(this->components));
 			this->panelDesktop = (gcnew System::Windows::Forms::Panel());
+			this->listBox1 = (gcnew System::Windows::Forms::ListBox());
+			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->panelMenu = (gcnew System::Windows::Forms::Panel());
 			this->button4 = (gcnew System::Windows::Forms::Button());
@@ -118,15 +121,51 @@ namespace culturalink_main {
 			this->panelDesktop->AutoSize = true;
 			this->panelDesktop->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
 			this->panelDesktop->BackColor = System::Drawing::Color::LightSalmon;
+			this->panelDesktop->Controls->Add(this->listBox1);
+			this->panelDesktop->Controls->Add(this->button6);
+			this->panelDesktop->Controls->Add(this->textBox1);
 			this->panelDesktop->Controls->Add(this->button5);
 			this->panelDesktop->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->panelDesktop->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
-			this->panelDesktop->Location = System::Drawing::Point(156, 49);
-			this->panelDesktop->Margin = System::Windows::Forms::Padding(2);
+			this->panelDesktop->Location = System::Drawing::Point(208, 60);
+			this->panelDesktop->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->panelDesktop->Name = L"panelDesktop";
-			this->panelDesktop->Size = System::Drawing::Size(628, 392);
+			this->panelDesktop->Size = System::Drawing::Size(837, 483);
 			this->panelDesktop->TabIndex = 4;
 			this->panelDesktop->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MainForm::panelDesktop_Paint);
+			// 
+
+			// 
+			// listBox1
+			// 
+			this->listBox1->FormattingEnabled = true;
+			this->listBox1->ItemHeight = 30;
+			this->listBox1->Location = System::Drawing::Point(105, 77);
+			this->listBox1->Name = L"listBox1";
+			this->listBox1->Size = System::Drawing::Size(460, 64);
+			this->listBox1->TabIndex = 3;
+			this->listBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &MainForm::listBox1_SelectedIndexChanged);
+			// 
+			// button6
+			// 
+			this->button6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
+			this->button6->Location = System::Drawing::Point(588, 37);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(120, 41);
+			this->button6->TabIndex = 2;
+			this->button6->Text = L"Cerca";
+			this->button6->UseVisualStyleBackColor = true;
+			this->button6->Click += gcnew System::EventHandler(this, &MainForm::button6_Click);
+			// 
+			// textBox1
+			// 
+			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
+			this->textBox1->Location = System::Drawing::Point(105, 45);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(460, 26);
+			this->textBox1->TabIndex = 1;
+			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox1_TextChanged);
+
 			// 
 			// button5
 			// 
@@ -348,6 +387,26 @@ private: System::Void panelDesktop_Paint(System::Object^ sender, System::Windows
 private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
 	ProvesEsdevsUI^ formLog = gcnew ProvesEsdevsUI;
 	formLog->ShowDialog();
+}
+	   private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	   }
+private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
+	String^ cercaEsdev = this->textBox1->Text;
+
+	if (cercaEsdev != "") {
+		TxConsultaEsdevenimentsAmbTipus txConEsdev(cercaEsdev);
+		txConEsdev.executar();
+		List<String^>^ result = txConEsdev.getResult();
+
+		listBox1->Items->Clear();
+
+		for (int i = 0; i < result->Count; i++) {
+			String^ esdev = result[i];
+			listBox1->Items->Add(esdev);
+		}
+	}
+}
+private: System::Void listBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
