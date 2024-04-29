@@ -1,6 +1,7 @@
 #include "pch.h"
-#include "Transaccio.h"
-#include "TxRegistraEsdeveniment.h"
+
+#include "Modules/Transaccions/Transaccio.h"
+#include "Modules/Transaccions/TxRegistraEsdeveniment.h"
 
 using namespace System;
 
@@ -9,9 +10,9 @@ using namespace System;
 //    return 0;
 // }
 
-#include "InfoAjuntament.h"
-#include "Login.h"
-#include "MainForm.h"
+#include "Forms/InfoAjuntament.h"
+#include "Forms/Login.h"
+#include "Forms/MainForm.h"
 
 using namespace System::Windows::Forms;
 

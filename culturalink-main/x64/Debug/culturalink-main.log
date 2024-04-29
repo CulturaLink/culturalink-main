@@ -1,197 +1,67 @@
-﻿  pch.cpp
-  AssemblyInfo.cpp
-  CercadoraAjuntament.cpp
-  CercadoraCiutada.cpp
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/CercadoraCiutada.cpp')
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/CercadoraCiutada.cpp')
-  
-  CercadoraEntitat.cpp
-  CercadoraEsdeveniment.cpp
-  ConsultaEsdevenimentUI.cpp
-  culturalinkmain.cpp
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/culturalinkmain.cpp')
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/culturalinkmain.cpp')
-  
+﻿  ConsultaEsdevenimentUI.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Forms\ConsultaEsdevenimentUI.cpp(4,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
   InfoAjuntament.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Forms\InfoAjuntament.cpp(4,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
   InfoCiutada.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Forms\InfoCiutada.cpp(4,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
   InfoEntitat.cpp
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/InfoEntitat.cpp')
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Forms\InfoEntitat.cpp(4,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
   Login.cpp
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/Login.cpp')
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/Login.cpp')
-  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Forms\Login.cpp(4,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
   MainForm.cpp
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/MainForm.cpp')
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/MainForm.cpp')
-  
-  PassarelaAjuntament.cpp
-  PassarelaCiutada.cpp
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/PassarelaCiutada.cpp')
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaCiutada.cpp')
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(14,12): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaCiutada.cpp')
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(15,11): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaCiutada.cpp')
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(50,12): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaCiutada.cpp')
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(51,11): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaCiutada.cpp')
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(69,43): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaCiutada.cpp')
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(70,42): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaCiutada.cpp')
-  
-  PassarelaEntitat.cpp
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\PassarelaEntitat.cpp(9,15): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaEntitat.cpp')
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\PassarelaEntitat.cpp(10,18): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaEntitat.cpp')
-  
-  PassarelaEsdeveniment.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Forms\MainForm.cpp(6,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
   ProvesEsdevsUI.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Forms\ProvesEsdevsUI.cpp(4,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
   RegisterFormCiutada.cpp
-  RegistraEsdevenimentUI1.cpp
-  RegistrarEsdevenimentUI.cpp
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/RegistrarEsdevenimentUI.cpp')
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-  Generating Code...
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\CercadoraEsdeveniment.cpp(51): warning C4715: 'CercadoraEsdeveniment::cercaEsdeveniment': not all control paths return a value
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\CercadoraEntitat.cpp(39): warning C4715: 'CercadoraEntitat::cercaEntitat': not all control paths return a value
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\CercadoraAjuntament.cpp(51): warning C4715: 'CercadoraAjuntament::cercaAjuntament': not all control paths return a value
-  Compiling...
-  Sistema.cpp
-  Transaccio.cpp
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/Transaccio.cpp')
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-  TxConsultaAjuntament.cpp
-  TxConsultaEsdeveniment.cpp
-  TxConsultaEsdevenimentsAmbTipus.cpp
-  TxConsultaVarisEsdeveniments.cpp
-  TxLoginAjuntament.cpp
-  TxLoginCiutada.cpp
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/TxLoginCiutada.cpp')
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxLoginCiutada.cpp')
-  
-  TxRegisterCiutada.cpp
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/TxRegisterCiutada.cpp')
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxRegisterCiutada.cpp')
-  
-  TxRegistraEsdeveniment.cpp
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/TxRegistraEsdeveniment.cpp')
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Forms\RegisterFormCiutada.cpp(4,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
   RegistraEntitat.cpp
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/RegistraEntitat.cpp')
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/RegistraEntitat.cpp')
-  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Forms\RegistraEntitat.cpp(4,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  RegistraEsdevenimentUI.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Forms\RegistraEsdevenimentUI.cpp(4,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  RegistraEsdevenimentUI1.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Forms\RegistraEsdevenimentUI1.cpp(4,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  RegistrarEsdevenimentUI.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Forms\RegistrarEsdevenimentUI.cpp(4,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  CercadoraAjuntament.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Modules\Cercadores\CercadoraAjuntament.cpp(52,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  CercadoraCiutada.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Modules\Cercadores\CercadoraCiutada.cpp(9,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  CercadoraEntitat.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Modules\Cercadores\CercadoraEntitat.cpp(40,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  CercadoraEsdeveniment.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Modules\Cercadores\CercadoraEsdeveniment.cpp(144,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  PassarelaAjuntament.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Modules\Passareles\PassarelaAjuntament.cpp(80,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  PassarelaCiutada.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Modules\Passareles\PassarelaCiutada.cpp(144,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  PassarelaEntitat.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Modules\Passareles\PassarelaEntitat.cpp(140,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  PassarelaEsdeveniment.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Modules\Passareles\PassarelaEsdeveniment.cpp(163,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  Generando código...
+  Compilando...
+  Transaccio.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Modules\Transaccions\Transaccio.cpp(16,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  TxConsultaAjuntament.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Modules\Transaccions\TxConsultaAjuntament.cpp(33,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
   TxConsultaEntitat.cpp
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/TxConsultaEntitat.cpp')
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Modules\Transaccions\TxConsultaEntitat.cpp(38,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  TxConsultaEsdeveniment.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Modules\Transaccions\TxConsultaEsdeveniment.cpp(34,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  TxConsultaEsdevenimentsAmbTipus.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Modules\Transaccions\TxConsultaEsdevenimentsAmbTipus.cpp(29,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  TxConsultaVarisEsdeveniments.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Modules\Transaccions\TxConsultaVarisEsdeveniments.cpp(28,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
   TxIniciaSessio.cpp
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/TxIniciaSessio.cpp')
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Modules\Transaccions\TxIniciaSessio.cpp(23,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  TxLoginAjuntament.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Modules\Transaccions\TxLoginAjuntament.cpp(27,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  TxLoginCiutada.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Modules\Transaccions\TxLoginCiutada.cpp(22,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  TxRegisterCiutada.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Modules\Transaccions\TxRegisterCiutada.cpp(19,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
   TxRegistraEntitat.cpp
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/TxRegistraEntitat.cpp')
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-  Generating Code...
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
-  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  culturalink-main.vcxproj -> C:\Users\Ferran\Documents\GitHub\culturalink-main\x64\Debug\culturalink-main.exe
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Modules\Transaccions\TxRegistraEntitat.cpp(21,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  TxRegistraEsdeveniment.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Modules\Transaccions\TxRegistraEsdeveniment.cpp(39,1): error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "pch.h"' al código fuente?
+  Generando código...

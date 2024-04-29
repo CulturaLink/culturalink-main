@@ -20,231 +20,112 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pch.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MainForm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Login.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PassarelaEsdeveniment.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TxRegistraEsdeveniment.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Transaccio.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Sistema.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PassarelaCiutada.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TxRegistraEntitat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PassarelaEntitat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RegistraEntitat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TxIniciaSessio.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CercadoraEntitat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="EntitatIniciat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TxConsultaEntitat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="InfoEntitat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RegistraEsdevenimentUI1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PassarelaAjuntament.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="InfoAjuntament.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CercadoraAjuntament.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AjuntamentIniciat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TxLoginAjuntament.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TxConsultaAjuntament.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CercadoraCiutada.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TxLoginCiutada.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UsuariIniciat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TxRegisterCiutada.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RegisterFormCiutada.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RegistrarEsdevenimentUI.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="InfoCiutada.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TxConsultaEsdeveniment.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CercadoraEsdeveniment.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ConsultaEsdevenimentUI.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TxConsultaVarisEsdeveniments.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ProvesEsdevsUI.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TxConsultaEsdevenimentsAmbTipus.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="culturalinkmain.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="AssemblyInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MainForm.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Login.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TxRegistraEntitat.cpp">
+    <ClCompile Include="Transaccio.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PassarelaEntitat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RegistraEntitat.cpp">
+    <ClCompile Include="Modules\Cercadores\CercadoraAjuntament.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TxIniciaSessio.cpp">
+    <ClCompile Include="Modules\Cercadores\CercadoraCiutada.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CercadoraEntitat.cpp">
+    <ClCompile Include="Modules\Cercadores\CercadoraEntitat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Transaccio.cpp">
+    <ClCompile Include="Modules\Cercadores\CercadoraEsdeveniment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TxConsultaEntitat.cpp">
+    <ClCompile Include="Modules\Passareles\PassarelaAjuntament.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PassarelaEsdeveniment.cpp">
+    <ClCompile Include="Modules\Passareles\PassarelaCiutada.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TxRegistraEsdeveniment.cpp">
+    <ClCompile Include="Modules\Passareles\PassarelaEntitat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Transaccio.cpp">
+    <ClCompile Include="Modules\Passareles\PassarelaEsdeveniment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Sistema.cpp">
+    <ClCompile Include="Modules\Transaccions\Transaccio.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PassarelaEntitat.cpp">
+    <ClCompile Include="Modules\Transaccions\TxConsultaAjuntament.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PassarelaCiutada.cpp">
+    <ClCompile Include="Modules\Transaccions\TxConsultaEntitat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RegistraEsdevenimentUI1.cpp">
+    <ClCompile Include="Modules\Transaccions\TxConsultaEsdeveniment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PassarelaAjuntament.cpp">
+    <ClCompile Include="Modules\Transaccions\TxConsultaEsdevenimentsAmbTipus.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="InfoAjuntament.cpp">
+    <ClCompile Include="Modules\Transaccions\TxConsultaVarisEsdeveniments.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CercadoraAjuntament.cpp">
+    <ClCompile Include="Modules\Transaccions\TxIniciaSessio.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TxLoginAjuntament.cpp">
+    <ClCompile Include="Modules\Transaccions\TxLoginAjuntament.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TxConsultaAjuntament.cpp">
+    <ClCompile Include="Modules\Transaccions\TxLoginCiutada.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CercadoraCiutada.cpp">
+    <ClCompile Include="Modules\Transaccions\TxRegisterCiutada.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TxLoginCiutada.cpp">
+    <ClCompile Include="Modules\Transaccions\TxRegistraEntitat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TxRegisterCiutada.cpp">
+    <ClCompile Include="Modules\Transaccions\TxRegistraEsdeveniment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RegisterFormCiutada.cpp">
+    <ClCompile Include="Forms\ConsultaEsdevenimentUI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RegistrarEsdevenimentUI.cpp">
+    <ClCompile Include="Forms\InfoAjuntament.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="InfoEntitat.cpp">
+    <ClCompile Include="Forms\InfoCiutada.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="InfoCiutada.cpp">
+    <ClCompile Include="Forms\InfoEntitat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TxConsultaEsdeveniment.cpp">
+    <ClCompile Include="Forms\Login.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CercadoraEsdeveniment.cpp">
+    <ClCompile Include="Forms\MainForm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ConsultaEsdevenimentUI.cpp">
+    <ClCompile Include="Forms\ProvesEsdevsUI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TxConsultaVarisEsdeveniments.cpp">
+    <ClCompile Include="Forms\RegisterFormCiutada.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ProvesEsdevsUI.cpp">
+    <ClCompile Include="Forms\RegistraEntitat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TxConsultaEsdevenimentsAmbTipus.cpp">
+    <ClCompile Include="Forms\RegistraEsdevenimentUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Forms\RegistraEsdevenimentUI1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Forms\RegistrarEsdevenimentUI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -254,8 +135,80 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="config.txt">
-      <Filter>Source Files</Filter>
-    </Text>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Cercadores\CercadoraAjuntament.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Cercadores\CercadoraCiutada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Cercadores\CercadoraEntitat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Cercadores\CercadoraEsdeveniment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Passareles\PassarelaAjuntament.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Passareles\PassarelaCiutada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Passareles\PassarelaEntitat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Passareles\PassarelaEsdeveniment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Transaccions\Transaccio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Transaccions\TxConsultaAjuntament.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Transaccions\TxConsultaEntitat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Transaccions\TxConsultaEsdeveniment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Transaccions\TxConsultaEsdevenimentsAmbTipus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Transaccions\TxConsultaVarisEsdeveniments.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Transaccions\TxIniciaSessio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Transaccions\TxLoginAjuntament.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Transaccions\TxLoginCiutada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Transaccions\TxRegisterCiutada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Transaccions\TxRegistraEntitat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Transaccions\TxRegistraEsdeveniment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Users\AjuntamentIniciat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Users\EntitatIniciat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Users\UsuariIniciat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

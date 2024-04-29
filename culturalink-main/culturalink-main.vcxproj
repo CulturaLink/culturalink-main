@@ -130,108 +130,45 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AjuntamentIniciat.h" />
-    <ClInclude Include="CercadoraAjuntament.h" />
-    <ClInclude Include="CercadoraCiutada.h" />
-    <ClInclude Include="CercadoraEntitat.h" />
-    <ClInclude Include="CercadoraEsdeveniment.h" />
-    <ClInclude Include="config.h" />
-    <ClInclude Include="ConsultaEsdevenimentUI.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="InfoAjuntament.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="InfoCiutada.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="InfoEntitat.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="Login.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="MainForm.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="PassarelaAjuntament.h" />
-    <ClInclude Include="PassarelaCiutada.h" />
-    <ClInclude Include="PassarelaEntitat.h" />
-    <ClInclude Include="PassarelaEsdeveniment.h" />
-    <ClInclude Include="pch.h" />
-    <ClInclude Include="ProvesEsdevsUI.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="RegisterFormCiutada.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="RegistraEntitat.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="RegistraEsdevenimentUI1.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="RegistrarEsdevenimentUI.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="Resource.h" />
-    <ClInclude Include="Sistema.h" />
-    <ClInclude Include="Transaccio.h" />
-    <ClInclude Include="TxConsultaAjuntament.h" />
-    <ClInclude Include="TxConsultaEsdeveniment.h" />
-    <ClInclude Include="TxConsultaEsdevenimentsAmbTipus.h" />
-    <ClInclude Include="TxConsultaVarisEsdeveniments.h" />
-    <ClInclude Include="TxLoginAjuntament.h" />
-    <ClInclude Include="TxLoginCiutada.h" />
-    <ClInclude Include="TxRegisterCiutada.h" />
-    <ClInclude Include="TxRegistraEsdeveniment.h" />
-    <ClInclude Include="EntitatIniciat.h" />
-    <ClInclude Include="TxConsultaEntitat.h" />
-    <ClInclude Include="TxIniciaSessio.h" />
-    <ClInclude Include="TxRegistraEntitat.h" />
-    <ClInclude Include="UsuariIniciat.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
-    <ClCompile Include="CercadoraAjuntament.cpp" />
-    <ClCompile Include="CercadoraCiutada.cpp" />
-    <ClCompile Include="CercadoraEntitat.cpp" />
-    <ClCompile Include="CercadoraEsdeveniment.cpp" />
-    <ClCompile Include="ConsultaEsdevenimentUI.cpp" />
-    <ClCompile Include="culturalinkmain.cpp" />
-    <ClCompile Include="InfoAjuntament.cpp" />
-    <ClCompile Include="InfoCiutada.cpp" />
-    <ClCompile Include="InfoEntitat.cpp" />
-    <ClCompile Include="Login.cpp" />
-    <ClCompile Include="MainForm.cpp" />
-    <ClCompile Include="PassarelaAjuntament.cpp" />
-    <ClCompile Include="PassarelaCiutada.cpp" />
-    <ClCompile Include="PassarelaEntitat.cpp" />
-    <ClCompile Include="PassarelaEsdeveniment.cpp" />
+    <ClCompile Include="Forms\ConsultaEsdevenimentUI.cpp" />
+    <ClCompile Include="Forms\InfoAjuntament.cpp" />
+    <ClCompile Include="Forms\InfoCiutada.cpp" />
+    <ClCompile Include="Forms\InfoEntitat.cpp" />
+    <ClCompile Include="Forms\Login.cpp" />
+    <ClCompile Include="Forms\MainForm.cpp" />
+    <ClCompile Include="Forms\ProvesEsdevsUI.cpp" />
+    <ClCompile Include="Forms\RegisterFormCiutada.cpp" />
+    <ClCompile Include="Forms\RegistraEntitat.cpp" />
+    <ClCompile Include="Forms\RegistraEsdevenimentUI.cpp" />
+    <ClCompile Include="Forms\RegistraEsdevenimentUI1.cpp" />
+    <ClCompile Include="Forms\RegistrarEsdevenimentUI.cpp" />
+    <ClCompile Include="Modules\Cercadores\CercadoraAjuntament.cpp" />
+    <ClCompile Include="Modules\Cercadores\CercadoraCiutada.cpp" />
+    <ClCompile Include="Modules\Cercadores\CercadoraEntitat.cpp" />
+    <ClCompile Include="Modules\Cercadores\CercadoraEsdeveniment.cpp" />
+    <ClCompile Include="Modules\Passareles\PassarelaAjuntament.cpp" />
+    <ClCompile Include="Modules\Passareles\PassarelaCiutada.cpp" />
+    <ClCompile Include="Modules\Passareles\PassarelaEntitat.cpp" />
+    <ClCompile Include="Modules\Passareles\PassarelaEsdeveniment.cpp" />
+    <ClCompile Include="Modules\Transaccions\Transaccio.cpp" />
+    <ClCompile Include="Modules\Transaccions\TxConsultaAjuntament.cpp" />
+    <ClCompile Include="Modules\Transaccions\TxConsultaEntitat.cpp" />
+    <ClCompile Include="Modules\Transaccions\TxConsultaEsdeveniment.cpp" />
+    <ClCompile Include="Modules\Transaccions\TxConsultaEsdevenimentsAmbTipus.cpp" />
+    <ClCompile Include="Modules\Transaccions\TxConsultaVarisEsdeveniments.cpp" />
+    <ClCompile Include="Modules\Transaccions\TxIniciaSessio.cpp" />
+    <ClCompile Include="Modules\Transaccions\TxLoginAjuntament.cpp" />
+    <ClCompile Include="Modules\Transaccions\TxLoginCiutada.cpp" />
+    <ClCompile Include="Modules\Transaccions\TxRegisterCiutada.cpp" />
+    <ClCompile Include="Modules\Transaccions\TxRegistraEntitat.cpp" />
+    <ClCompile Include="Modules\Transaccions\TxRegistraEsdeveniment.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="ProvesEsdevsUI.cpp" />
-    <ClCompile Include="RegisterFormCiutada.cpp" />
-    <ClCompile Include="RegistraEsdevenimentUI1.cpp" />
-    <ClCompile Include="RegistrarEsdevenimentUI.cpp" />
-    <ClCompile Include="Sistema.cpp" />
-    <ClCompile Include="Transaccio.cpp" />
-    <ClCompile Include="TxConsultaAjuntament.cpp" />
-    <ClCompile Include="TxConsultaEsdeveniment.cpp" />
-    <ClCompile Include="TxConsultaEsdevenimentsAmbTipus.cpp" />
-    <ClCompile Include="TxConsultaVarisEsdeveniments.cpp" />
-    <ClCompile Include="TxLoginAjuntament.cpp" />
-    <ClCompile Include="TxLoginCiutada.cpp" />
-    <ClCompile Include="TxRegisterCiutada.cpp" />
-    <ClCompile Include="TxRegistraEsdeveniment.cpp" />
-    <ClCompile Include="RegistraEntitat.cpp" />
-    <ClCompile Include="TxConsultaEntitat.cpp" />
-    <ClCompile Include="TxIniciaSessio.cpp" />
-    <ClCompile Include="TxRegistraEntitat.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico" />
@@ -247,42 +184,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ConsultaEsdevenimentUI.resx">
-      <DependentUpon>ConsultaEsdevenimentUI.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InfoAjuntament.resx">
-      <DependentUpon>InfoAjuntament.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InfoCiutada.resx">
-      <DependentUpon>InfoCiutada.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InfoEntitat.resx">
-      <DependentUpon>InfoEntitat.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ProvesEsdevsUI.resx">
-      <DependentUpon>ProvesEsdevsUI.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RegisterFormCiutada.resx">
-      <DependentUpon>RegisterFormCiutada.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RegistraEntitat.resx">
-      <DependentUpon>RegistraEntitat.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RegistraEsdevenimentUI1.resx">
-      <DependentUpon>RegistraEsdevenimentUI1.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RegistrarEsdevenimentUI.resx">
-      <DependentUpon>RegistrarEsdevenimentUI.h</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="config.txt" />
+    <ClInclude Include="Modules\Cercadores\CercadoraAjuntament.h" />
+    <ClInclude Include="Modules\Cercadores\CercadoraCiutada.h" />
+    <ClInclude Include="Modules\Cercadores\CercadoraEntitat.h" />
+    <ClInclude Include="Modules\Cercadores\CercadoraEsdeveniment.h" />
+    <ClInclude Include="Modules\Passareles\PassarelaAjuntament.h" />
+    <ClInclude Include="Modules\Passareles\PassarelaCiutada.h" />
+    <ClInclude Include="Modules\Passareles\PassarelaEntitat.h" />
+    <ClInclude Include="Modules\Passareles\PassarelaEsdeveniment.h" />
+    <ClInclude Include="Modules\Transaccions\Transaccio.h" />
+    <ClInclude Include="Modules\Transaccions\TxConsultaAjuntament.h" />
+    <ClInclude Include="Modules\Transaccions\TxConsultaEntitat.h" />
+    <ClInclude Include="Modules\Transaccions\TxConsultaEsdeveniment.h" />
+    <ClInclude Include="Modules\Transaccions\TxConsultaEsdevenimentsAmbTipus.h" />
+    <ClInclude Include="Modules\Transaccions\TxConsultaVarisEsdeveniments.h" />
+    <ClInclude Include="Modules\Transaccions\TxIniciaSessio.h" />
+    <ClInclude Include="Modules\Transaccions\TxLoginAjuntament.h" />
+    <ClInclude Include="Modules\Transaccions\TxLoginCiutada.h" />
+    <ClInclude Include="Modules\Transaccions\TxRegisterCiutada.h" />
+    <ClInclude Include="Modules\Transaccions\TxRegistraEntitat.h" />
+    <ClInclude Include="Modules\Transaccions\TxRegistraEsdeveniment.h" />
+    <ClInclude Include="Modules\Users\AjuntamentIniciat.h" />
+    <ClInclude Include="Modules\Users\EntitatIniciat.h" />
+    <ClInclude Include="Modules\Users\UsuariIniciat.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Resource.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
