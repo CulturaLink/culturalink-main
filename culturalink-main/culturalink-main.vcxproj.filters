@@ -134,6 +134,15 @@
     <ClInclude Include="TxConsultaEsdevenimentsAmbTipus.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CercadoraInscripcio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PassarelaInscripcio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TxConsultaInscripcions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -245,6 +254,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TxConsultaEsdevenimentsAmbTipus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CercadoraInscripcio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PassarelaInscripcio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxConsultaInscripcions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
