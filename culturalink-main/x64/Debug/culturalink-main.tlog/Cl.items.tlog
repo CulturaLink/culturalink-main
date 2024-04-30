@@ -5,6 +5,7 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\CercadoraEntit
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\CercadoraEsdeveniment.cpp;C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\CercadoraEsdeveniment.obj
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ConsultaEsdevenimentUI.cpp;C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\ConsultaEsdevenimentUI.obj
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\culturalinkmain.cpp;C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalinkmain.obj
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Esdeveniment.cpp;C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\Esdeveniment.obj
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\InfoAjuntament.cpp;C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\InfoAjuntament.obj
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\InfoCiutada.cpp;C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\InfoCiutada.obj
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\InfoEntitat.cpp;C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\InfoEntitat.obj
@@ -23,6 +24,8 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Sistema.cpp;C:
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.cpp;C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\Transaccio.obj
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxConsultaAjuntament.cpp;C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\TxConsultaAjuntament.obj
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxConsultaEsdeveniment.cpp;C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\TxConsultaEsdeveniment.obj
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxConsultaEsdevenimentsAmbTipus.cpp;C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\TxConsultaEsdevenimentsAmbTipus.obj
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxConsultaTotsEsdeveniments.cpp;C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\TxConsultaTotsEsdeveniments.obj
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxLoginAjuntament.cpp;C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\TxLoginAjuntament.obj
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxLoginCiutada.cpp;C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\TxLoginCiutada.obj
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxRegisterCiutada.cpp;C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\TxRegisterCiutada.obj

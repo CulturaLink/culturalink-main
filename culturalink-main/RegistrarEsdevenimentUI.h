@@ -356,13 +356,13 @@ namespace culturalink_main {
 
 	}
 private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
-	String^ nomEsdeveniment = this->textBox1->Text;
-	String^ preu = this->textBox2->Text;
-	String^ descripcio = this->textBox3->Text;
-	String^ ajuntament = this->textBox4->Text;
-	TxRegistraEsdeveniment tx1(5236,nomEsdeveniment, Convert::ToSingle(preu), descripcio, ajuntament);
-	tx1.executar();
-	this->Close();
+	//String^ nomEsdeveniment = this->textBox1->Text;
+	//String^ preu = this->textBox2->Text;
+	//String^ descripcio = this->textBox3->Text;
+	//String^ ajuntament = this->textBox4->Text;
+	//TxRegistraEsdeveniment tx1(5236,nomEsdeveniment, Convert::ToSingle(preu), descripcio, ajuntament);
+	//tx1.executar();
+	//this->Close();
 }
 private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 }

@@ -125,6 +125,15 @@
     <ClInclude Include="ProvesUI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TxConsultaEsdevenimentsAmbTipus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Esdeveniment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TxConsultaTotsEsdeveniments.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -230,6 +239,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ProvesUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxConsultaEsdevenimentsAmbTipus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Esdeveniment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxConsultaTotsEsdeveniments.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
