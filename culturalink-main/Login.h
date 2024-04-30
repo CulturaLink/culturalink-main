@@ -466,6 +466,7 @@ namespace culturalink_main {
 		}
 #pragma endregion
 	private: System::Void Login_Load(System::Object^ sender, System::EventArgs^ e) {
+
 	}
 private: System::Void buttonOK_Click(System::Object^ sender, System::EventArgs^ e) {
 	String^ nick = this->TBUsr->Text;
@@ -484,9 +485,11 @@ private: System::Void buttonOK_Click(System::Object^ sender, System::EventArgs^ 
 
 			//MessageBox::Show("Nickname i contrasenya correctes!", "Login");
 			//this->Close();
+			this->Hide();
 			ProvesUI^ formLog = gcnew ProvesUI;
 			formLog->ShowDialog();
 			//this->Close();
+			this->Show();
 		}
 		catch (const std::exception& e)
 		{
@@ -504,10 +507,11 @@ private: System::Void buttonOK_Click(System::Object^ sender, System::EventArgs^ 
 			TxLoginAjuntament tx(nick, contra);
 			tx.executar();
 			//MessageBox::Show("Nickname i contrasenya correctes!", "Login");
+			this->Hide();
 			ProvesUI^ formLog = gcnew ProvesUI;
 			formLog->ShowDialog();
 			/*this->Close();*/
-			this->Hide();
+			this->Show();
 		}
 		catch (const std::exception& e)
 		{
@@ -525,11 +529,11 @@ private: System::Void buttonOK_Click(System::Object^ sender, System::EventArgs^ 
 			TxIniciaSessio txlogin(nick, contra);
 			txlogin.executar();
 			//MessageBox::Show("Correu i contrasenya correctes!", "Login");
+			this->Hide();
 			ProvesUI^ formLog = gcnew ProvesUI;
 			formLog->ShowDialog();
 			//this->Close();
-			this->Hide();
-
+			this->Show();
 		}
 		catch (const std::exception& e)
 		{
@@ -563,11 +567,11 @@ private: System::Void registre_Click(System::Object^ sender, System::EventArgs^ 
 	}
 }
 private: System::Void RBent_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
-	if (RBent->Checked) label2->Text = "Correu";
+	//if (RBent->Checked) label2->Text = "Correu";
 }
 
 private: System::Void RBcit_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
-	if (RBcit->Checked) label2->Text = "Usuari";
+	//if (RBcit->Checked) label2->Text = "Usuari";
 }
 private: System::Void btnClose_Click(System::Object^ sender, System::EventArgs^ e) {
 	Close();
