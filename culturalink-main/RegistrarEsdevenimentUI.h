@@ -1,5 +1,6 @@
 #pragma once
 #include "TxRegistraEsdeveniment.h"
+#include "UsuariIniciat.h"
 
 namespace culturalink_main {
 
@@ -57,6 +58,26 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Button^ button5;
+	private: System::Windows::Forms::Label^ lblTipus;
+	private: System::Windows::Forms::Label^ lblPuntsRegal;
+
+
+	private: System::Windows::Forms::Label^ lblData;
+
+	private: System::Windows::Forms::Label^ lblPreuPunts;
+
+	private: System::Windows::Forms::Label^ lblAforament;
+
+
+
+	private: System::Windows::Forms::TextBox^ txtBData;
+	private: System::Windows::Forms::TextBox^ txtbAforament;
+	private: System::Windows::Forms::TextBox^ txtBTipus;
+	private: System::Windows::Forms::TextBox^ txtBPuntsRegal;
+
+
+	private: System::Windows::Forms::TextBox^ txtBPreuPunts;
+	private: System::Windows::Forms::Label^ label1;
 	private: System::ComponentModel::IContainer^ components;
 
 	private:
@@ -76,6 +97,17 @@ namespace culturalink_main {
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(RegistrarEsdevenimentUI::typeid));
 			this->notifyIcon1 = (gcnew System::Windows::Forms::NotifyIcon(this->components));
 			this->panelDesktop = (gcnew System::Windows::Forms::Panel());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->txtBData = (gcnew System::Windows::Forms::TextBox());
+			this->txtbAforament = (gcnew System::Windows::Forms::TextBox());
+			this->txtBTipus = (gcnew System::Windows::Forms::TextBox());
+			this->txtBPuntsRegal = (gcnew System::Windows::Forms::TextBox());
+			this->txtBPreuPunts = (gcnew System::Windows::Forms::TextBox());
+			this->lblPuntsRegal = (gcnew System::Windows::Forms::Label());
+			this->lblData = (gcnew System::Windows::Forms::Label());
+			this->lblPreuPunts = (gcnew System::Windows::Forms::Label());
+			this->lblAforament = (gcnew System::Windows::Forms::Label());
+			this->lblTipus = (gcnew System::Windows::Forms::Label());
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
 			this->label6 = (gcnew System::Windows::Forms::Label());
@@ -111,6 +143,17 @@ namespace culturalink_main {
 			this->panelDesktop->AutoSize = true;
 			this->panelDesktop->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
 			this->panelDesktop->BackColor = System::Drawing::Color::LightSalmon;
+			this->panelDesktop->Controls->Add(this->label1);
+			this->panelDesktop->Controls->Add(this->txtBData);
+			this->panelDesktop->Controls->Add(this->txtbAforament);
+			this->panelDesktop->Controls->Add(this->txtBTipus);
+			this->panelDesktop->Controls->Add(this->txtBPuntsRegal);
+			this->panelDesktop->Controls->Add(this->txtBPreuPunts);
+			this->panelDesktop->Controls->Add(this->lblPuntsRegal);
+			this->panelDesktop->Controls->Add(this->lblData);
+			this->panelDesktop->Controls->Add(this->lblPreuPunts);
+			this->panelDesktop->Controls->Add(this->lblAforament);
+			this->panelDesktop->Controls->Add(this->lblTipus);
 			this->panelDesktop->Controls->Add(this->button5);
 			this->panelDesktop->Controls->Add(this->textBox4);
 			this->panelDesktop->Controls->Add(this->label6);
@@ -129,10 +172,116 @@ namespace culturalink_main {
 			this->panelDesktop->TabIndex = 7;
 			this->panelDesktop->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &RegistrarEsdevenimentUI::panelDesktop_Paint);
 			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
+			this->label1->ForeColor = System::Drawing::Color::Crimson;
+			this->label1->Location = System::Drawing::Point(322, 356);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(225, 25);
+			this->label1->TabIndex = 31;
+			this->label1->Text = L"Format YYYY-MM-DD";
+			// 
+			// txtBData
+			// 
+			this->txtBData->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
+			this->txtBData->Location = System::Drawing::Point(94, 350);
+			this->txtBData->Margin = System::Windows::Forms::Padding(2);
+			this->txtBData->Name = L"txtBData";
+			this->txtBData->Size = System::Drawing::Size(208, 31);
+			this->txtBData->TabIndex = 30;
+			// 
+			// txtbAforament
+			// 
+			this->txtbAforament->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
+			this->txtbAforament->Location = System::Drawing::Point(139, 312);
+			this->txtbAforament->Margin = System::Windows::Forms::Padding(2);
+			this->txtbAforament->Name = L"txtbAforament";
+			this->txtbAforament->Size = System::Drawing::Size(208, 31);
+			this->txtbAforament->TabIndex = 29;
+			// 
+			// txtBTipus
+			// 
+			this->txtBTipus->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
+			this->txtBTipus->Location = System::Drawing::Point(94, 225);
+			this->txtBTipus->Margin = System::Windows::Forms::Padding(2);
+			this->txtBTipus->Name = L"txtBTipus";
+			this->txtBTipus->Size = System::Drawing::Size(208, 31);
+			this->txtBTipus->TabIndex = 28;
+			// 
+			// txtBPuntsRegal
+			// 
+			this->txtBPuntsRegal->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
+			this->txtBPuntsRegal->Location = System::Drawing::Point(191, 138);
+			this->txtBPuntsRegal->Margin = System::Windows::Forms::Padding(2);
+			this->txtBPuntsRegal->Name = L"txtBPuntsRegal";
+			this->txtBPuntsRegal->Size = System::Drawing::Size(208, 31);
+			this->txtBPuntsRegal->TabIndex = 27;
+			// 
+			// txtBPreuPunts
+			// 
+			this->txtBPreuPunts->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
+			this->txtBPreuPunts->Location = System::Drawing::Point(161, 95);
+			this->txtBPreuPunts->Margin = System::Windows::Forms::Padding(2);
+			this->txtBPreuPunts->Name = L"txtBPreuPunts";
+			this->txtBPreuPunts->Size = System::Drawing::Size(208, 31);
+			this->txtBPreuPunts->TabIndex = 26;
+			// 
+			// lblPuntsRegal
+			// 
+			this->lblPuntsRegal->AutoSize = true;
+			this->lblPuntsRegal->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
+			this->lblPuntsRegal->Location = System::Drawing::Point(18, 138);
+			this->lblPuntsRegal->Name = L"lblPuntsRegal";
+			this->lblPuntsRegal->Size = System::Drawing::Size(159, 25);
+			this->lblPuntsRegal->TabIndex = 25;
+			this->lblPuntsRegal->Text = L"Punts de Regal";
+			// 
+			// lblData
+			// 
+			this->lblData->AutoSize = true;
+			this->lblData->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
+			this->lblData->Location = System::Drawing::Point(18, 353);
+			this->lblData->Name = L"lblData";
+			this->lblData->Size = System::Drawing::Size(63, 25);
+			this->lblData->TabIndex = 24;
+			this->lblData->Text = L"Data:";
+			// 
+			// lblPreuPunts
+			// 
+			this->lblPreuPunts->AutoSize = true;
+			this->lblPreuPunts->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
+			this->lblPreuPunts->Location = System::Drawing::Point(18, 95);
+			this->lblPreuPunts->Name = L"lblPreuPunts";
+			this->lblPreuPunts->Size = System::Drawing::Size(138, 25);
+			this->lblPreuPunts->TabIndex = 23;
+			this->lblPreuPunts->Text = L"Preu (Punts):";
+			// 
+			// lblAforament
+			// 
+			this->lblAforament->AutoSize = true;
+			this->lblAforament->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
+			this->lblAforament->Location = System::Drawing::Point(18, 312);
+			this->lblAforament->Name = L"lblAforament";
+			this->lblAforament->Size = System::Drawing::Size(116, 25);
+			this->lblAforament->TabIndex = 22;
+			this->lblAforament->Text = L"Aforament:";
+			// 
+			// lblTipus
+			// 
+			this->lblTipus->AutoSize = true;
+			this->lblTipus->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
+			this->lblTipus->Location = System::Drawing::Point(18, 228);
+			this->lblTipus->Name = L"lblTipus";
+			this->lblTipus->Size = System::Drawing::Size(71, 25);
+			this->lblTipus->TabIndex = 20;
+			this->lblTipus->Text = L"Tipus:";
+			// 
 			// button5
 			// 
 			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
-			this->button5->Location = System::Drawing::Point(420, 245);
+			this->button5->Location = System::Drawing::Point(435, 288);
 			this->button5->Margin = System::Windows::Forms::Padding(2);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(142, 49);
@@ -144,7 +293,7 @@ namespace culturalink_main {
 			// textBox4
 			// 
 			this->textBox4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
-			this->textBox4->Location = System::Drawing::Point(152, 132);
+			this->textBox4->Location = System::Drawing::Point(154, 268);
 			this->textBox4->Margin = System::Windows::Forms::Padding(2);
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(210, 31);
@@ -154,7 +303,7 @@ namespace culturalink_main {
 			// 
 			this->label6->AutoSize = true;
 			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
-			this->label6->Location = System::Drawing::Point(16, 135);
+			this->label6->Location = System::Drawing::Point(18, 271);
 			this->label6->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(132, 25);
@@ -164,17 +313,17 @@ namespace culturalink_main {
 			// textBox3
 			// 
 			this->textBox3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
-			this->textBox3->Location = System::Drawing::Point(139, 94);
+			this->textBox3->Location = System::Drawing::Point(141, 181);
 			this->textBox3->Margin = System::Windows::Forms::Padding(2);
 			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(423, 31);
+			this->textBox3->Size = System::Drawing::Size(467, 31);
 			this->textBox3->TabIndex = 16;
 			// 
 			// label5
 			// 
 			this->label5->AutoSize = true;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
-			this->label5->Location = System::Drawing::Point(16, 97);
+			this->label5->Location = System::Drawing::Point(18, 181);
 			this->label5->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(119, 25);
@@ -355,26 +504,41 @@ namespace culturalink_main {
 
 
 	}
-private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
-	String^ nomEsdeveniment = this->textBox1->Text;
-	String^ preu = this->textBox2->Text;
-	String^ descripcio = this->textBox3->Text;
-	String^ ajuntament = this->textBox4->Text;
-	TxRegistraEsdeveniment tx1(5236,nomEsdeveniment, Convert::ToSingle(preu), descripcio, ajuntament);
-	tx1.executar();
-	this->Close();
-}
-private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void panelDesktop_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
-}
-private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+		String^ nomEsdeveniment = this->textBox1->Text;
+		String^ preu = this->textBox2->Text;
+		String^ descripcio = this->textBox3->Text;
+		String^ ajuntament = this->textBox4->Text;
+		String^ tipus = this->txtBTipus->Text;
+		String^ aforamentS = this->txtbAforament->Text;
+		int aforament = System::Convert::ToInt32(aforamentS);
+		String^ puntsCostS = this->txtBPreuPunts->Text;
+		int puntsCost = System::Convert::ToInt32(puntsCostS);
+		String^ data = this->txtBData->Text;
+		String^ puntsDescS = this->txtBPuntsRegal->Text;
+		int puntsDesc = System::Convert::ToInt32(puntsDescS);
+		UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
+		PassarelaEntitat^ passEnt = safe_cast<PassarelaEntitat^>(usuario->getUsuari());
+		/*int^ idE = passEnt->obteid();
+		int idEsd = *idE;*/
+
+		TxRegistraEsdeveniment tx1(5236, nomEsdeveniment, Convert::ToSingle(preu), descripcio, ajuntament, tipus, aforament, puntsCost, data, puntsDesc);
+		tx1.executar();
+		this->Close();
+	}
+	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void panelDesktop_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+	}
+	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 
 
 
-	panelMenu->Visible = !panelMenu->Visible;
-}
-private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-};
+		panelMenu->Visible = !panelMenu->Visible;
+	}
+	private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+
+
+	};
 }

@@ -134,7 +134,7 @@
     <ClInclude Include="TxConsultaEsdevenimentsAmbTipus.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TxCompraEntradaEsdeveniment.h">
+    <ClInclude Include="TxCompraEntradaEsdevenimentPunts.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -250,7 +250,7 @@
     <ClCompile Include="TxConsultaEsdevenimentsAmbTipus.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TxCompraEntradaEsdeveniment.cpp">
+    <ClCompile Include="TxCompraEntradaEsdevenimentPunts.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
