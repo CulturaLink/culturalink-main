@@ -13,6 +13,7 @@ ref class TxConsultaEsdevenimentsAmbTipus {
 
 private:
     String^ _tipus;
+    List<String^>^ _multiplestipus;
     List<PassarelaEsdeveniment^>^ _passEsdev;
     List<String^>^ _result;
 

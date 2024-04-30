@@ -14,10 +14,13 @@ ref class TxConsultaTotsEsdeveniments {
 private:
     List<String^>^ _noms;
     List<String^>^ _preus;
+    List<String^>^ _result;
 
 public:
     TxConsultaTotsEsdeveniments();
     void executar();
     List<String^>^ getNoms();
     List<String^>^ getPreus();
+    List<String^>^ getResult();
+
 };

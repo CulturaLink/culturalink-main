@@ -118,7 +118,7 @@ List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaEsdevenimentsAmbTipus(
 
         List<PassarelaEsdeveniment^>^ totsEsdev = gcnew List<PassarelaEsdeveniment^>(); // Initialize the list;
 
-        String^ sql2 = "SELECT * FROM esdeveniment WHERE tipus = @tipus";
+        String^ sql2 = "SELECT * FROM esdeveniment WHERE FIND_IN_SET(@tipus, tipus) > 0";
 
         MySqlCommand^ cmd2 = gcnew MySqlCommand(sql2, conn);
         cmd2->Parameters->AddWithValue("@tipus", tipus); // Asignaci�n del valor del par�metro

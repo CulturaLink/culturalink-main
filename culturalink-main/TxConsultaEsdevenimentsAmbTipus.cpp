@@ -16,7 +16,7 @@ void TxConsultaEsdevenimentsAmbTipus::executar() {
         result->Add(esdev->getAjEsd());
         result->Add(esdev->getDescEsd());*/
         result->Add(esdev->getNomEsd());
-        //result->Add(esdev->getPreu().ToString());
+        result->Add(esdev->getPreu().ToString());
     }
 
     _result = result;

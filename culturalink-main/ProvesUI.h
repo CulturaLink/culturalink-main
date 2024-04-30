@@ -113,6 +113,7 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Button^ button6;
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::PictureBox^ pictureBox7;
+	private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPanel2;
 
 
 
@@ -174,13 +175,14 @@ namespace culturalink_main {
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->lblTitlePage = (gcnew System::Windows::Forms::Label());
 			this->pnlMain = (gcnew System::Windows::Forms::Panel());
+			this->flowLayoutPanel2 = (gcnew System::Windows::Forms::FlowLayoutPanel());
+			this->btnFiltrGala = (gcnew System::Windows::Forms::Button());
+			this->btnFiltreDeportivo = (gcnew System::Windows::Forms::Button());
 			this->flowLayoutPanel1 = (gcnew System::Windows::Forms::FlowLayoutPanel());
 			this->pnlEsdevPauta = (gcnew System::Windows::Forms::Panel());
 			this->button6 = (gcnew System::Windows::Forms::Button());
 			this->lblNameEsdev = (gcnew System::Windows::Forms::Label());
 			this->pictureBox6 = (gcnew System::Windows::Forms::PictureBox());
-			this->btnFiltreDeportivo = (gcnew System::Windows::Forms::Button());
-			this->btnFiltrGala = (gcnew System::Windows::Forms::Button());
 			this->btnViewNavBar = (gcnew System::Windows::Forms::Button());
 			this->pnlTopBar->SuspendLayout();
 			this->pnlTopBarAppInfo->SuspendLayout();
@@ -202,6 +204,7 @@ namespace culturalink_main {
 			this->pnlMainTop->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox7))->BeginInit();
 			this->pnlMain->SuspendLayout();
+			this->flowLayoutPanel2->SuspendLayout();
 			this->flowLayoutPanel1->SuspendLayout();
 			this->pnlEsdevPauta->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox6))->BeginInit();
@@ -709,7 +712,7 @@ namespace culturalink_main {
 			// 
 			this->pictureBox7->BackColor = System::Drawing::Color::White;
 			this->pictureBox7->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox7.Image")));
-			this->pictureBox7->Location = System::Drawing::Point(740, 55);
+			this->pictureBox7->Location = System::Drawing::Point(721, 54);
 			this->pictureBox7->Name = L"pictureBox7";
 			this->pictureBox7->Size = System::Drawing::Size(16, 16);
 			this->pictureBox7->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -736,9 +739,8 @@ namespace culturalink_main {
 			// 
 			// pnlMain
 			// 
+			this->pnlMain->Controls->Add(this->flowLayoutPanel2);
 			this->pnlMain->Controls->Add(this->flowLayoutPanel1);
-			this->pnlMain->Controls->Add(this->btnFiltreDeportivo);
-			this->pnlMain->Controls->Add(this->btnFiltrGala);
 			this->pnlMain->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->pnlMain->Location = System::Drawing::Point(207, 141);
 			this->pnlMain->Margin = System::Windows::Forms::Padding(2);
@@ -746,12 +748,53 @@ namespace culturalink_main {
 			this->pnlMain->Size = System::Drawing::Size(1127, 513);
 			this->pnlMain->TabIndex = 4;
 			// 
+			// flowLayoutPanel2
+			// 
+			this->flowLayoutPanel2->Controls->Add(this->btnFiltrGala);
+			this->flowLayoutPanel2->Controls->Add(this->btnFiltreDeportivo);
+			this->flowLayoutPanel2->Dock = System::Windows::Forms::DockStyle::Top;
+			this->flowLayoutPanel2->Location = System::Drawing::Point(0, 0);
+			this->flowLayoutPanel2->Name = L"flowLayoutPanel2";
+			this->flowLayoutPanel2->Size = System::Drawing::Size(1127, 70);
+			this->flowLayoutPanel2->TabIndex = 4;
+			this->flowLayoutPanel2->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &ProvesUI::flowLayoutPanel2_Paint);
+			// 
+			// btnFiltrGala
+			// 
+			this->btnFiltrGala->BackColor = System::Drawing::Color::Crimson;
+			this->btnFiltrGala->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->btnFiltrGala->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->btnFiltrGala->ForeColor = System::Drawing::Color::White;
+			this->btnFiltrGala->Location = System::Drawing::Point(3, 3);
+			this->btnFiltrGala->Name = L"btnFiltrGala";
+			this->btnFiltrGala->Size = System::Drawing::Size(75, 23);
+			this->btnFiltrGala->TabIndex = 0;
+			this->btnFiltrGala->Text = L"Gala";
+			this->btnFiltrGala->UseVisualStyleBackColor = false;
+			this->btnFiltrGala->Click += gcnew System::EventHandler(this, &ProvesUI::btnFiltrGala_Click);
+			// 
+			// btnFiltreDeportivo
+			// 
+			this->btnFiltreDeportivo->BackColor = System::Drawing::Color::Crimson;
+			this->btnFiltreDeportivo->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->btnFiltreDeportivo->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->btnFiltreDeportivo->ForeColor = System::Drawing::Color::White;
+			this->btnFiltreDeportivo->Location = System::Drawing::Point(84, 3);
+			this->btnFiltreDeportivo->Name = L"btnFiltreDeportivo";
+			this->btnFiltreDeportivo->Size = System::Drawing::Size(75, 23);
+			this->btnFiltreDeportivo->TabIndex = 1;
+			this->btnFiltreDeportivo->Text = L"Deportivo";
+			this->btnFiltreDeportivo->UseVisualStyleBackColor = false;
+			this->btnFiltreDeportivo->Click += gcnew System::EventHandler(this, &ProvesUI::btnFiltreDeportivo_Click);
+			// 
 			// flowLayoutPanel1
 			// 
 			this->flowLayoutPanel1->Controls->Add(this->pnlEsdevPauta);
-			this->flowLayoutPanel1->Location = System::Drawing::Point(23, 52);
+			this->flowLayoutPanel1->Location = System::Drawing::Point(23, 76);
 			this->flowLayoutPanel1->Name = L"flowLayoutPanel1";
-			this->flowLayoutPanel1->Size = System::Drawing::Size(1069, 415);
+			this->flowLayoutPanel1->Size = System::Drawing::Size(1069, 434);
 			this->flowLayoutPanel1->TabIndex = 3;
 			this->flowLayoutPanel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &ProvesUI::flowLayoutPanel1_Paint);
 			// 
@@ -799,36 +842,6 @@ namespace culturalink_main {
 			this->pictureBox6->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox6->TabIndex = 3;
 			this->pictureBox6->TabStop = false;
-			// 
-			// btnFiltreDeportivo
-			// 
-			this->btnFiltreDeportivo->BackColor = System::Drawing::Color::Crimson;
-			this->btnFiltreDeportivo->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->btnFiltreDeportivo->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->btnFiltreDeportivo->ForeColor = System::Drawing::Color::White;
-			this->btnFiltreDeportivo->Location = System::Drawing::Point(113, 11);
-			this->btnFiltreDeportivo->Name = L"btnFiltreDeportivo";
-			this->btnFiltreDeportivo->Size = System::Drawing::Size(75, 23);
-			this->btnFiltreDeportivo->TabIndex = 1;
-			this->btnFiltreDeportivo->Text = L"Deportivo";
-			this->btnFiltreDeportivo->UseVisualStyleBackColor = false;
-			this->btnFiltreDeportivo->Click += gcnew System::EventHandler(this, &ProvesUI::btnFiltreDeportivo_Click);
-			// 
-			// btnFiltrGala
-			// 
-			this->btnFiltrGala->BackColor = System::Drawing::Color::Crimson;
-			this->btnFiltrGala->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->btnFiltrGala->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->btnFiltrGala->ForeColor = System::Drawing::Color::White;
-			this->btnFiltrGala->Location = System::Drawing::Point(23, 11);
-			this->btnFiltrGala->Name = L"btnFiltrGala";
-			this->btnFiltrGala->Size = System::Drawing::Size(75, 23);
-			this->btnFiltrGala->TabIndex = 0;
-			this->btnFiltrGala->Text = L"Gala";
-			this->btnFiltrGala->UseVisualStyleBackColor = false;
-			this->btnFiltrGala->Click += gcnew System::EventHandler(this, &ProvesUI::btnFiltrGala_Click);
 			// 
 			// btnViewNavBar
 			// 
@@ -891,6 +904,7 @@ namespace culturalink_main {
 			this->pnlMainTop->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox7))->EndInit();
 			this->pnlMain->ResumeLayout(false);
+			this->flowLayoutPanel2->ResumeLayout(false);
 			this->flowLayoutPanel1->ResumeLayout(false);
 			this->pnlEsdevPauta->ResumeLayout(false);
 			this->pnlEsdevPauta->PerformLayout();
@@ -1011,15 +1025,43 @@ namespace culturalink_main {
 		TxConsultaTotsEsdeveniments txConsTotsEsdevs;
 		txConsTotsEsdevs.executar();
 
-		List<String^>^ totsEsdevs = txConsTotsEsdevs.getNoms();
+		List<String^>^ totsEsdevs = txConsTotsEsdevs.getResult();
 
 		List<System::Windows::Forms::Panel^>^ list_esdevs;
 
 		int num_filtre_panel = totsEsdevs->Count;
 
-		for (int i = 0; i < num_filtre_panel; ++i) {
-			Esdeveniment^ esdev = gcnew Esdeveniment(totsEsdevs[i], 0);
+
+		for (int i = 0; i < num_filtre_panel; i += 2) {
+			String^ nom = totsEsdevs[i];
+			String^ preu = totsEsdevs[i + 1];
+			Esdeveniment^ esdev = gcnew Esdeveniment(nom, preu);
 			addEsdevToUI(esdev);
+		}
+
+		List<String^>^ tipus = gcnew List<String^>();
+
+		tipus->Add("Gastronómico");
+		tipus->Add("Artístico");
+		tipus->Add("Deportivo");
+		tipus->Add("Educativo");
+		tipus->Add("Tecnológico");
+		tipus->Add("Carnaval");
+		tipus->Add("Musical");
+		tipus->Add("Cinematográfico");
+		tipus->Add("Taller");
+		tipus->Add("Exposición");
+		tipus->Add("Concierto");
+		tipus->Add("Festival");
+		tipus->Add("Competición");
+		tipus->Add("Torneo");
+		tipus->Add("Ceremonia");
+		tipus->Add("Gala");
+
+		int num_filtre_btn = tipus->Count;
+
+		for (int i = 0; i < num_filtre_btn; ++i) {
+			addFiltrButtonToUI(tipus[i]);
 		}
 
 	}
@@ -1093,14 +1135,16 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 	TxConsultaTotsEsdeveniments txConsTotsEsdevs;
 	txConsTotsEsdevs.executar();
 
-	List<String^>^ totsEsdevs = txConsTotsEsdevs.getNoms();
+	List<String^>^ totsEsdevs = txConsTotsEsdevs.getResult();
 
 	List<System::Windows::Forms::Panel^>^ list_esdevs;
 
 	int num_filtre_panel = totsEsdevs->Count;
 
-	for (int i = 0; i < num_filtre_panel; ++i) {
-		Esdeveniment^ esdev = gcnew Esdeveniment(totsEsdevs[i], 0);
+	for (int i = 0; i < num_filtre_panel; i += 2) {
+		String^ nom = totsEsdevs[i];
+		String^ preu = totsEsdevs[i + 1];
+		Esdeveniment^ esdev = gcnew Esdeveniment(nom, preu);
 		addEsdevToUI(esdev);
 	}
 }
@@ -1125,19 +1169,17 @@ private: System::Void btnFiltrGala_Click(System::Object^ sender, System::EventAr
 	txConsEsdevs.executar();
 
 	List<String^>^ esdevsGala = txConsEsdevs.getResult();
-	
+	/*List<String^>^ esdevsGalaNoms = txConsEsdevs.getNoms();
+	List<String^>^ esdevsGalaPreus = txConsEsdevs.getPreus();*/
+
 	List<System::Windows::Forms::Panel^>^ list_esdevs;
 
 	int num_filtre_panel = esdevsGala->Count;
 
-	int initialPosX = 23;
-	int initialPosY = 68;
-	int margin = 182;
+	for (int i = 0; i < num_filtre_panel; i+=2) {
 
-	for (int i = 0; i < num_filtre_panel; ++i) {
-		
 		String^ nom = esdevsGala[i];
-		float preu = 0;
+		String^ preu = esdevsGala[i+1];
 		Esdeveniment^ esdev = gcnew Esdeveniment(nom, preu);
 		addEsdevToUI(esdev);
 	}
@@ -1169,7 +1211,7 @@ private: Void addEsdevToUI(Esdeveniment^ esdev)
 
 	System::Windows::Forms::Label^ lblEsdevPreu = gcnew Label;
 	lblEsdevPreu->Name = String::Format("lblEsdevPreu{0}", esdev->getPreu());
-	lblEsdevPreu->Text = esdev->getPreu().ToString() + " €";
+	lblEsdevPreu->Text = esdev->getPreu() + " €";
 	lblEsdevPreu->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 9.5F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 		static_cast<System::Byte>(0)));
 	lblEsdevPreu->Location = System::Drawing::Point(59, 168);
@@ -1177,7 +1219,7 @@ private: Void addEsdevToUI(Esdeveniment^ esdev)
 
 	System::Windows::Forms::Button^ btnComprar = gcnew Button;
 	btnComprar->Name = "btnComprar{0}";
-	btnComprar->Text = "Comprar";
+	btnComprar->Text = "+ Info";
 	btnComprar->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 9.5F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 		static_cast<System::Byte>(0)));
 	btnComprar->Dock = System::Windows::Forms::DockStyle::Bottom;
@@ -1223,14 +1265,31 @@ private: System::Void btnFiltreDeportivo_Click(System::Object^ sender, System::E
 
 	int num_filtre_panel = esdevsGala->Count;
 
-	int initialPosX = 23;
-	int initialPosY = 68;
-	int margin = 182;
+	for (int i = 0; i < num_filtre_panel; i += 2) {
 
-	for (int i = 0; i < num_filtre_panel; ++i) {
-		Esdeveniment^ esdev = gcnew Esdeveniment(esdevsGala[i], 0);
+		String^ nom = esdevsGala[i];
+		String^ preu = esdevsGala[i + 1];
+		Esdeveniment^ esdev = gcnew Esdeveniment(nom, preu);
 		addEsdevToUI(esdev);
 	}
 }
+private: System::Void flowLayoutPanel2_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+}
+private: Void addFiltrButtonToUI(String^ tipus)
+{
+	System::Windows::Forms::Button^ btnFiltrType = gcnew Button;
+	btnFiltrType->BackColor = System::Drawing::Color::Crimson;
+	btnFiltrType->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+	btnFiltrType->Name = String::Format("btnFiltr{0}", tipus);
+	btnFiltrType->Text = tipus;
+	btnFiltrType->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+		static_cast<System::Byte>(0)));
+	btnFiltrType->ForeColor = System::Drawing::Color::White;
+	btnFiltrType->Size = System::Drawing::Size(75, 23);
+	btnFiltrType->Click += gcnew System::EventHandler(this, &ProvesUI::btnFiltrGala_Click);
+
+	this->flowLayoutPanel2->Controls->Add(btnFiltrType);
+}
 };
+
 }

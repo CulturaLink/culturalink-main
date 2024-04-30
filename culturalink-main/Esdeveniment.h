@@ -7,12 +7,12 @@ ref class Esdeveniment
 {
 public:
 	String^ _nom;
-	float _preu;
+	String^ _preu;
 
 	Esdeveniment();
-	Esdeveniment(String^ nom, float preu);
+	Esdeveniment(String^ nom, String^ preu);
 
 	String^ getNom();
-	float getPreu();
+	String^ getPreu();
 };
 
