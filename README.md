@@ -27,6 +27,13 @@ Software system to help councils promote culture in their municipality.
 
 ## UI 
 
+## Actualització 30 Abril 2024:
+
+![image](https://github.com/CulturaLink/culturalink-main/assets/92806890/10ac21e7-f97b-4f5a-bb9b-bccd7af3b88f)
+
+#### Ara es mostren tots els Esdeveniments possibles a l'obrir l'aplicació (pàgina Homepage). Al filtrar (Botons Gala, Desportivo, etc.) es mostren únicament els Esdeveniments amb el tipus esmentat.
+#### Cada Esdeveniment té el seu propi Panel amb les seves dades. Apareixen iterativament amb l'ús d'un FlowPanel.
+
 ### 1. Form Login:
 
 <img src="https://github.com/CulturaLink/culturalink-main/assets/92806890/8d1d77f6-bfda-4808-be5e-966f28159901" width="300">
