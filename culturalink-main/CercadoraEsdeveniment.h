@@ -17,6 +17,8 @@ public:
     List<PassarelaEsdeveniment^>^ cercaTotsEsdeveniments();
     List<PassarelaEsdeveniment^>^ cercaEsdevenimentsAmbTipus(String^ tipus);
 
+    List<PassarelaEsdeveniment^>^ cercaEsdevenimentsPerEntitat(String^ ent);
+
 private:
 
 };

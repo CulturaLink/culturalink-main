@@ -9,6 +9,7 @@ void TxConsultaTotsEsdeveniments::executar()
 {
     CercadoraEsdeveniment cercEsdev;
     List<PassarelaEsdeveniment^>^ passEsdevs = cercEsdev.cercaTotsEsdeveniments();
+    CercadoraEsdeveniment cercaEsdevPerEntitat;
 
     List<String^>^ noms = gcnew List<String^>();
     List<String^>^ preus = gcnew List<String^>();

@@ -109,6 +109,50 @@ void PassarelaEsdeveniment::insereix() {
 }
 
 
+
+void PassarelaEsdeveniment::modifica() {
+
+    // Cadena de conexión a la base de datos
+    String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username=amep14; password=\"Yee7zaeheih9-\"; database=amep14;";
+    MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
+
+    try {
+        conn->Open(); // Intentar abrir la conexión con la base de datos
+
+        // Comando SQL para actualizar un evento
+        String^ sql = "UPDATE amep14.esdeveniment SET "
+            "nom_esdeveniment = @nom, preu_esdeveniment = @preu, ajuntament_esdeveniment = @ajEsd, "
+            "descripcio_esdeveniment = @desc, tipus = @tipus, aforament = @aforament, "
+            "punts_cost = @puntsCost, data = @data, punts_descompte = @puntsDesc "
+            "WHERE id_esdeveniment = @idEvent;";
+
+        MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
+
+        // Asignar valores a los parámetros
+        cmd->Parameters->AddWithValue("@nom", _nomEsd);
+        cmd->Parameters->AddWithValue("@preu", _preu);
+        cmd->Parameters->AddWithValue("@desc", _descEsd);
+        cmd->Parameters->AddWithValue("@tipus", _tipusEsd);
+        cmd->Parameters->AddWithValue("@aforament", _aforamentEsd);
+        cmd->Parameters->AddWithValue("@puntsCost", _puntsCostEsd);
+        cmd->Parameters->AddWithValue("@data", _dataEsd);
+        cmd->Parameters->AddWithValue("@puntsDesc", _puntsDescEsd);
+
+        // Ejecutar el comando
+        cmd->ExecuteNonQuery();
+        MessageBox::Show("Evento modificado exitosamente!");
+    }
+    catch (Exception^ ex) {
+        MessageBox::Show("Error al modificar el evento: " + ex->Message);
+    }
+    finally {
+        conn->Close(); // Cerrar la conexión independientemente del resultado
+    }
+}
+
+
+
+
 int PassarelaEsdeveniment::getIdEnt() {
     return _idEnt;
 }
@@ -149,3 +193,34 @@ int PassarelaEsdeveniment::getPuntsDescEsd() {
     return _puntsDescEsd;
 }
 
+void PassarelaEsdeveniment::posaPreu(float preu) {
+    _preu = preu;
+}
+
+void PassarelaEsdeveniment::posaDescripcio(String^ descripcio) {
+    _descEsd = descripcio;
+}
+
+void PassarelaEsdeveniment::posaNom(String^ nom) {
+    _nomEsd = nom;
+}
+
+void PassarelaEsdeveniment::posaTipus(String^ tipus) {
+    _tipusEsd = tipus;
+}
+
+void PassarelaEsdeveniment::posaAforament(int aforament) {
+    _aforamentEsd = aforament;
+}
+
+void PassarelaEsdeveniment::posaPuntsCost(int puntsCost) {
+    _puntsCostEsd = puntsCost;
+}
+
+void PassarelaEsdeveniment::posaData(String^ data) {
+    _dataEsd = data;
+}
+
+void PassarelaEsdeveniment::posaPuntsDesc(int puntsDesc) {
+    _puntsDescEsd = puntsDesc;
+}

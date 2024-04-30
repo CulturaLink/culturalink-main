@@ -407,6 +407,7 @@ namespace culturalink_main {
 			this->panel5->Name = L"panel5";
 			this->panel5->Size = System::Drawing::Size(439, 160);
 			this->panel5->TabIndex = 12;
+			this->panel5->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Login::panel5_Paint);
 			// 
 			// panel6
 			// 
@@ -505,7 +506,8 @@ private: System::Void buttonOK_Click(System::Object^ sender, System::EventArgs^ 
 			//MessageBox::Show("Nickname i contrasenya correctes!", "Login");
 			ProvesUI^ formLog = gcnew ProvesUI;
 			formLog->ShowDialog();
-			this->Close();
+			/*this->Close();*/
+			this->Hide();
 		}
 		catch (const std::exception& e)
 		{
@@ -525,7 +527,9 @@ private: System::Void buttonOK_Click(System::Object^ sender, System::EventArgs^ 
 			//MessageBox::Show("Correu i contrasenya correctes!", "Login");
 			ProvesUI^ formLog = gcnew ProvesUI;
 			formLog->ShowDialog();
-			this->Close();
+			//this->Close();
+			this->Hide();
+
 		}
 		catch (const std::exception& e)
 		{
@@ -596,6 +600,8 @@ private: System::Void btnMinimize_MouseHover(System::Object^ sender, System::Eve
 private: System::Void btnMinimize_MouseLeave(System::Object^ sender, System::EventArgs^ e) {
 	this->btnMinimize->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(31)), static_cast<System::Int32>(static_cast<System::Byte>(31)),
 		static_cast<System::Int32>(static_cast<System::Byte>(31)));
+}
+private: System::Void panel5_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 }
 };
 }

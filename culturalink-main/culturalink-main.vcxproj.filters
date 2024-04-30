@@ -134,6 +134,12 @@
     <ClInclude Include="TxConsultaTotsEsdeveniments.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CtrlModificaEsdeveniment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TxConsultaTotsEsdevenimentsPerEntitat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -248,6 +254,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TxConsultaTotsEsdeveniments.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CtrlModificaEsdeveniment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxConsultaTotsEsdevenimentsPerEntitat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

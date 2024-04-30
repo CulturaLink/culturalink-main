@@ -18,6 +18,8 @@ void TxConsultaEsdeveniment::executar() {
     result->Add(_passEsdev.getDescEsd());
     result->Add(_passEsdev.getNomEsd());
 
+    //result->Add(_passEsdev.getAforamentEsd());
+
     _result = result;
 }
 

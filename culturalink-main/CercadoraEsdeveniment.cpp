@@ -40,12 +40,12 @@ PassarelaEsdeveniment CercadoraEsdeveniment::cercaEsdeveniment(String^ clau) {
     }
     catch (Exception^ ex) {
         // codi per mostrar l�error en una finestra
-        MessageBox::Show(ex->Message);
+        //MessageBox::Show(ex->Message);
     }
     finally {
         // si tot va b� es tanca la connexi�
-        MessageBox::Show("Connexio DB exitosa!");
-        conn->Close();
+        /*MessageBox::Show("Connexio DB exitosa!");
+        conn->Close();*/
     }
 
 }
@@ -144,6 +144,41 @@ List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaEsdevenimentsAmbTipus(
         }
         conn->Close();
         return totsEsdev;
+    }
+    catch (Exception^ ex) {
+        MessageBox::Show(ex->Message);
+        return nullptr; // Return null in case of exception
+    }
+}
+
+List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaEsdevenimentsPerEntitat(String^ ent)
+{
+    String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
+
+    MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
+    String^ sql2 = "SELECT nom_esdeveniment FROM esdeveniment WHERE id_entitat='@idE'";
+    MySqlCommand^ cmd2 = gcnew MySqlCommand(sql2, conn);
+    cmd2->Parameters->AddWithValue("@idE", ent);
+    MySqlDataReader^ dataReader;
+
+    try {
+        conn->Open();
+  
+        List<PassarelaEsdeveniment^>^ totsEsdev = gcnew List<PassarelaEsdeveniment^>(); // Initialize the list
+
+        cmd2 = gcnew MySqlCommand(sql2, conn);
+        dataReader = cmd2->ExecuteReader();
+
+        while (dataReader->Read()) { // Use while loop to iterate through all rows
+            String^ nomEsdev = dataReader->GetString(0);
+            float preuEsdev = dataReader->GetFloat(1);
+
+            PassarelaEsdeveniment^ passEsdev = gcnew PassarelaEsdeveniment(nomEsdev, preuEsdev);
+
+            totsEsdev->Add(passEsdev);
+        }
+        conn->Close();
+        return totsEsdev; // Return the list
     }
     catch (Exception^ ex) {
         MessageBox::Show(ex->Message);
