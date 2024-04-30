@@ -1,258 +1,358 @@
-﻿  CercadoraCiutada.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+﻿  pch.cpp
+  AssemblyInfo.cpp
+  CercadoraAjuntament.cpp
+  CercadoraCiutada.cpp
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/CercadoraCiutada.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
   'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
   vea la declaración de 'Transaccio::executar'
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1030,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1030,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1140,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1140,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1175,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1175,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1264,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1264,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(490,32): warning C4101: 'e': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(490,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(530,32): warning C4101: 'e': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(530,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
+  
+  CercadoraEntitat.cpp
+  CercadoraEsdeveniment.cpp
+  ConsultaEsdevenimentUI.cpp
+  culturalinkmain.cpp
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1030,41): warning C4101: 'list_esdevs': variable local sin referencia
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1140,40): warning C4101: 'list_esdevs': variable local sin referencia
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1175,40): warning C4101: 'list_esdevs': variable local sin referencia
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1264,40): warning C4101: 'list_esdevs': variable local sin referencia
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(490,32): warning C4101: 'e': variable local sin referencia
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(530,32): warning C4101: 'e': variable local sin referencia
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+  Esdeveniment.cpp
+  InfoAjuntament.cpp
+  InfoCiutada.cpp
+  InfoEntitat.cpp
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/InfoEntitat.cpp")
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
   
   Login.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/Login.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
   'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
   vea la declaración de 'Transaccio::executar'
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1030,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1030,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1140,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1140,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1175,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1175,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1264,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1264,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(490,32): warning C4101: 'e': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(490,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(530,32): warning C4101: 'e': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(530,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
   MainForm.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/MainForm.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
   'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
   vea la declaración de 'Transaccio::executar'
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1030,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1030,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1140,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1140,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1175,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1175,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1264,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1264,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(490,32): warning C4101: 'e': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(490,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(530,32): warning C4101: 'e': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(530,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
+  PassarelaAjuntament.cpp
   PassarelaCiutada.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/PassarelaCiutada.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
   'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
   vea la declaración de 'Transaccio::executar'
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1030,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1030,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1140,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1140,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1175,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1175,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1264,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1264,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(490,32): warning C4101: 'e': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(490,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(530,32): warning C4101: 'e': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(530,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(14,12): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\PassarelaCiutada.cpp(14,12): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(15,11): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\PassarelaCiutada.cpp(15,11): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(50,12): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\PassarelaCiutada.cpp(50,12): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(51,11): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\PassarelaCiutada.cpp(51,11): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(69,43): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\PassarelaCiutada.cpp(69,43): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(70,42): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\PassarelaCiutada.cpp(70,42): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
+  PassarelaEntitat.cpp
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\PassarelaEntitat.cpp(9,15): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaEntitat.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\PassarelaEntitat.cpp(10,18): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaEntitat.cpp")
+  
+  PassarelaEsdeveniment.cpp
   ProvesUI.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1030,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1030,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/ProvesUI.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1140,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1140,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/ProvesUI.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1175,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1175,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/ProvesUI.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1264,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1264,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/ProvesUI.cpp")
   
+  RegisterFormCiutada.cpp
+  RegistraEsdevenimentUI1.cpp
+  Generando código...
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\CercadoraEsdeveniment.cpp(51,1): warning C4715: 'CercadoraEsdeveniment::cercaEsdeveniment': no todas las rutas de acceso de control devuelven un valor
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\CercadoraEntitat.cpp(39,1): warning C4715: 'CercadoraEntitat::cercaEntitat': no todas las rutas de acceso de control devuelven un valor
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\CercadoraAjuntament.cpp(51,1): warning C4715: 'CercadoraAjuntament::cercaAjuntament': no todas las rutas de acceso de control devuelven un valor
+  Compilando...
+  RegistrarEsdevenimentUI.cpp
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/RegistrarEsdevenimentUI.cpp")
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
+  
+  Sistema.cpp
+  Transaccio.cpp
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/Transaccio.cpp")
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
+  
+  TxConsultaAjuntament.cpp
+  TxConsultaEsdeveniment.cpp
+  TxConsultaEsdevenimentsAmbTipus.cpp
+  TxConsultaTotsEsdeveniments.cpp
+  TxLoginAjuntament.cpp
   TxLoginCiutada.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/TxLoginCiutada.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
   'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
   vea la declaración de 'Transaccio::executar'
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1030,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1030,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1140,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1140,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1175,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1175,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1264,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1264,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(490,32): warning C4101: 'e': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(490,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(530,32): warning C4101: 'e': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(530,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
+  CtrlModificaEsdeveniment.cpp
   TxRegisterCiutada.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
   'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
   vea la declaración de 'Transaccio::executar'
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1030,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1030,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1140,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1140,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1175,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1175,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1264,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\ProvesUI.h(1264,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(490,32): warning C4101: 'e': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(490,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(530,32): warning C4101: 'e': variable local sin referencia
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Login.h(530,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-  culturalinkmain.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  TxRegistraEsdeveniment.cpp
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/TxRegistraEsdeveniment.cpp")
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
   'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
   vea la declaración de 'Transaccio::executar'
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/culturalinkmain.cpp")
+  RegistraEntitat.cpp
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/RegistraEntitat.cpp")
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1030,41): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/RegistraEntitat.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1140,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
+  TxConsultaEntitat.cpp
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/TxConsultaEntitat.cpp")
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1175,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
+  TxIniciaSessio.cpp
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/TxIniciaSessio.cpp")
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1264,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(490,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(530,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
+  TxRegistraEntitat.cpp
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/TxRegistraEntitat.cpp")
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
   
   Generando código...
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
   AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
-  culturalink-main.vcxproj -> C:\Users\patri\Documents\GitHub\culturalink-main\x64\Debug\culturalink-main.exe
+  culturalink-main.vcxproj -> C:\Users\eric1\Desktop\culturalink-main\x64\Debug\culturalink-main.exe

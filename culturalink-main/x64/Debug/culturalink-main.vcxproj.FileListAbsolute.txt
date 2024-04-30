@@ -84,3 +84,4 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\cult
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.InfoCiutada.resources
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegisterFormCiutada.resources
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ProvesUI.resources
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ProvesUI.resources

@@ -18,6 +18,7 @@ public:
     PassarelaEsdeveniment(String^ nomEsdev, float preu);
     PassarelaEsdeveniment();
     void insereix();
+    void modifica();
     PassarelaEsdeveniment% operator=(const PassarelaEsdeveniment% other);
     PassarelaEsdeveniment(const PassarelaEsdeveniment% p1);
     int getIdEnt();
@@ -30,6 +31,14 @@ public:
     int getPuntsCostEsd();
     String^ getDataEsd();
     int getPuntsDescEsd();
+    void posaPreu(float preu);
+    void posaDescripcio(String^ descripcio);
+    void posaNom(String^ nom);
+    void posaTipus(String^ tipus);
+    void posaAforament(int aforament);
+    void posaPuntsCost(int puntsCost);
+    void posaData(String^ data);
+    void posaPuntsDesc(int puntsDesc);
 
 private:
     int _idEnt;
