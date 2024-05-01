@@ -22,6 +22,7 @@ public:
 	void crear(String^ name, String^ fullName, String^ password, String^ email, String^ date);
 	void insereix();
 	void borrar_punts();
+	void borrar_diners(int^ preuEsd);
 	//Ciutada();
 	PassarelaCiutada(String^ nickname);//Omple ciutada segons nick
 	PassarelaCiutada(String^ nickname, String^ nom_complet, String^ correu);

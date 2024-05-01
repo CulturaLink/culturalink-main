@@ -140,6 +140,9 @@
     <ClInclude Include="PassarelaInscripcio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TxCompraEntradaEsdevenimentDiners.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -257,6 +260,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PassarelaInscripcio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxCompraEntradaEsdevenimentDiners.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

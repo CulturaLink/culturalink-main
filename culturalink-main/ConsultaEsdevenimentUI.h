@@ -2,7 +2,7 @@
 
 #include "TxConsultaEsdeveniment.h"
 #include "TxCompraEntradaEsdevenimentPunts.h"
-
+#include "TxCompraEntradaEsdevenimentDiners.h"
 const string ErrorUsuari = "No hi ha cap usuari amb sessio iniciada";
 namespace culturalink_main {
 
@@ -428,11 +428,11 @@ private: System::Void Compra_Click(System::Object^ sender, System::EventArgs^ e)
 				this->Close();
 			}
 		}
-		/*else if (radioButton1->Checked)
+		else if (radioButton1->Checked)
 		{
-			//TxCompraEntradaEsdeveniment tx1(nomEsd);
-			//tx1.executar();
-		}*/
+			TxCompraEntradaEsdevenimentDiners tx1(nomEsd);
+			tx1.executar();
+		}
 	}
 	catch (const string err)
 	{
