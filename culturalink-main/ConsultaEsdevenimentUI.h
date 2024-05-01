@@ -430,6 +430,7 @@ private: System::Void Compra_Click(System::Object^ sender, System::EventArgs^ e)
 		}
 		else if (radioButton1->Checked)
 		{
+
 			TxCompraEntradaEsdevenimentDiners tx1(nomEsd);
 			tx1.executar();
 		}
