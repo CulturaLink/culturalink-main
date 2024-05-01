@@ -313,6 +313,7 @@ namespace culturalink_main {
 			this->radioButton1->TabStop = true;
 			this->radioButton1->Text = L"Diners";
 			this->radioButton1->UseVisualStyleBackColor = true;
+			this->radioButton1->Visible = false;
 			// 
 			// radioButton2
 			// 
@@ -324,6 +325,7 @@ namespace culturalink_main {
 			this->radioButton2->TabStop = true;
 			this->radioButton2->Text = L"Punts";
 			this->radioButton2->UseVisualStyleBackColor = true;
+			this->radioButton2->Visible = false;
 			// 
 			// ConsultaEsdevenimentUI
 			// 
@@ -393,6 +395,8 @@ namespace culturalink_main {
 		lblData->Visible = true;
 		lblPuntsDesc->Visible = true;
 		Compra->Visible = true;
+		radioButton1->Visible = true;
+		radioButton2->Visible = true;
 		
 	}
 	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -418,9 +422,10 @@ private: System::Void Compra_Click(System::Object^ sender, System::EventArgs^ e)
 			if (usuarioAlmacenado == nullptr) throw(ErrorUsuari);
 			// Verificar el tipo de usuario y actuar en consecuencia
 			if (tipoUsuario == TipoPassarela::Ciutada) {
-
 				TxCompraEntradaEsdevenimentPunts tx1(nomEsd);
 				tx1.executar();
+				MessageBox::Show("Compra finalitzada amb exit","", MessageBoxButtons::OK);
+				this->Close();
 			}
 		}
 		/*else if (radioButton1->Checked)
@@ -431,7 +436,7 @@ private: System::Void Compra_Click(System::Object^ sender, System::EventArgs^ e)
 	}
 	catch (const string err)
 	{
-		//MessageBox::Show(err, "Error", MessageBoxButtons::OK);
+		MessageBox::Show(gcnew String(err.c_str()), "Error", MessageBoxButtons::OK);
 		return;
 	}
 }
