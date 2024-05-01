@@ -68,6 +68,7 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Label^ label7;
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Button^ btnEsborrarUsuari;
 
 	private:
 		/// <summary>
@@ -104,6 +105,7 @@ namespace culturalink_main {
 			this->panelTitleBar = (gcnew System::Windows::Forms::Panel());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
+			this->btnEsborrarUsuari = (gcnew System::Windows::Forms::Button());
 			this->panelDesktop->SuspendLayout();
 			this->panelMenu->SuspendLayout();
 			this->panelTitleBar->SuspendLayout();
@@ -116,6 +118,7 @@ namespace culturalink_main {
 			this->panelDesktop->AutoSize = true;
 			this->panelDesktop->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
 			this->panelDesktop->BackColor = System::Drawing::Color::LightSalmon;
+			this->panelDesktop->Controls->Add(this->btnEsborrarUsuari);
 			this->panelDesktop->Controls->Add(this->lPunts);
 			this->panelDesktop->Controls->Add(this->label7);
 			this->panelDesktop->Controls->Add(this->lSaldo);
@@ -369,6 +372,17 @@ namespace culturalink_main {
 			this->pictureBox2->TabIndex = 0;
 			this->pictureBox2->TabStop = false;
 			// 
+			// btnEsborrarUsuari
+			// 
+			this->btnEsborrarUsuari->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
+			this->btnEsborrarUsuari->Location = System::Drawing::Point(452, 320);
+			this->btnEsborrarUsuari->Name = L"btnEsborrarUsuari";
+			this->btnEsborrarUsuari->Size = System::Drawing::Size(170, 60);
+			this->btnEsborrarUsuari->TabIndex = 13;
+			this->btnEsborrarUsuari->Text = L"Esborrar Usuari";
+			this->btnEsborrarUsuari->UseVisualStyleBackColor = true;
+			this->btnEsborrarUsuari->Click += gcnew System::EventHandler(this, &InfoCiutada::btnEsborrarUsuari_Click);
+			// 
 			// InfoCiutada
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -416,6 +430,12 @@ private: System::Void InfoCiutada_Load(System::Object^ sender, System::EventArgs
 }
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 	panelMenu->Visible = !panelMenu->Visible;
+}
+private: System::Void btnEsborrarUsuari_Click(System::Object^ sender, System::EventArgs^ e) {
+	TxEsborraCiutada tx(nick, contra);
+	tx.executar();
+	MessageBox::Show("Nickname i contrasenya correctes!", "Login");
+	this->Close();
 }
 };
 }

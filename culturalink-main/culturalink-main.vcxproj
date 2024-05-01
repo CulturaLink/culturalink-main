@@ -181,6 +181,7 @@
     <ClInclude Include="TxConsultaEsdeveniment.h" />
     <ClInclude Include="TxConsultaEsdevenimentsAmbTipus.h" />
     <ClInclude Include="TxConsultaVarisEsdeveniments.h" />
+    <ClInclude Include="TxEsborraCiutada.h" />
     <ClInclude Include="TxLoginAjuntament.h" />
     <ClInclude Include="TxLoginCiutada.h" />
     <ClInclude Include="TxRegisterCiutada.h" />
@@ -224,6 +225,7 @@
     <ClCompile Include="TxConsultaEsdeveniment.cpp" />
     <ClCompile Include="TxConsultaEsdevenimentsAmbTipus.cpp" />
     <ClCompile Include="TxConsultaVarisEsdeveniments.cpp" />
+    <ClCompile Include="TxEsborraCiutada.cpp" />
     <ClCompile Include="TxLoginAjuntament.cpp" />
     <ClCompile Include="TxLoginCiutada.cpp" />
     <ClCompile Include="TxRegisterCiutada.cpp" />
