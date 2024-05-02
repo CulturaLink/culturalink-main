@@ -135,7 +135,6 @@
     <ClInclude Include="CercadoraCiutada.h" />
     <ClInclude Include="CercadoraEntitat.h" />
     <ClInclude Include="CercadoraEsdeveniment.h" />
-    <ClInclude Include="CercadoraInscripcio.h" />
     <ClInclude Include="config.h" />
     <ClInclude Include="ConsultaEsdevenimentUI.h">
       <FileType>CppForm</FileType>
@@ -165,7 +164,6 @@
     <ClInclude Include="PassarelaCiutada.h" />
     <ClInclude Include="PassarelaEntitat.h" />
     <ClInclude Include="PassarelaEsdeveniment.h" />
-    <ClInclude Include="PassarelaInscripcio.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="ProvesEsdevsUI.h">
       <FileType>CppForm</FileType>
@@ -188,7 +186,6 @@
     <ClInclude Include="TxConsultaAjuntament.h" />
     <ClInclude Include="TxConsultaEsdeveniment.h" />
     <ClInclude Include="TxConsultaEsdevenimentsAmbTipus.h" />
-    <ClInclude Include="TxConsultaInscripcions.h" />
     <ClInclude Include="TxConsultaVarisEsdeveniments.h" />
     <ClInclude Include="TxEsborraCiutada.h" />
     <ClInclude Include="TxEsborraEntitat.h" />
@@ -208,7 +205,6 @@
     <ClCompile Include="CercadoraCiutada.cpp" />
     <ClCompile Include="CercadoraEntitat.cpp" />
     <ClCompile Include="CercadoraEsdeveniment.cpp" />
-    <ClCompile Include="CercadoraInscripcio.cpp" />
     <ClCompile Include="ConsultaEsdevenimentUI.cpp" />
     <ClCompile Include="culturalinkmain.cpp" />
     <ClCompile Include="EsborraFormCiutada.cpp" />
@@ -221,7 +217,6 @@
     <ClCompile Include="PassarelaCiutada.cpp" />
     <ClCompile Include="PassarelaEntitat.cpp" />
     <ClCompile Include="PassarelaEsdeveniment.cpp" />
-    <ClCompile Include="PassarelaInscripcio.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -237,7 +232,6 @@
     <ClCompile Include="TxConsultaAjuntament.cpp" />
     <ClCompile Include="TxConsultaEsdeveniment.cpp" />
     <ClCompile Include="TxConsultaEsdevenimentsAmbTipus.cpp" />
-    <ClCompile Include="TxConsultaInscripcions.cpp" />
     <ClCompile Include="TxConsultaVarisEsdeveniments.cpp" />
     <ClCompile Include="TxEsborraCiutada.cpp" />
     <ClCompile Include="TxEsborrarEntitat.cpp" />
