@@ -117,7 +117,7 @@ namespace culturalink_main {
 			this->cancela->UseVisualStyleBackColor = true;
 			this->cancela->Click += gcnew System::EventHandler(this, &EsborraFormEntitat::cancela_Click);
 			// 
-			// MyForm
+			// EsborraFormEntitat
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
@@ -127,7 +127,9 @@ namespace culturalink_main {
 			this->Controls->Add(this->password);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label3);
-			this->Name = L"MyForm";
+			this->Name = L"EsborraFormEntitat";
+			this->RightToLeftLayout = true;
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"MyForm";
 			this->Load += gcnew System::EventHandler(this, &EsborraFormEntitat::MyForm_Load);
 			this->ResumeLayout(false);
