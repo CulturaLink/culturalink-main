@@ -260,6 +260,9 @@
     <EmbeddedResource Include="ConsultaEsdevenimentUI.resx">
       <DependentUpon>ConsultaEsdevenimentUI.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormulariCompraEntrada.resx">
+      <DependentUpon>FormulariCompraEntrada.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InfoAjuntament.resx">
       <DependentUpon>InfoAjuntament.h</DependentUpon>
     </EmbeddedResource>

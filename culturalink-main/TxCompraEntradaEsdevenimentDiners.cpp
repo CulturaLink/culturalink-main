@@ -20,7 +20,7 @@ void TxCompraEntradaEsdevenimentDiners::executar()
 		int diners = *passarelaCiutada->getDiners();
 		if (pes.getPreu() > diners)throw(errorDinersInsuficients);
 	}
-	if (pes.getAforamentEsd() == 0) throw(errorAforament);
+	if (pes.getAforamentEsd() == 0) throw(errorAforament2);
 	auto now = std::chrono::system_clock::now();
 	std::time_t now_time = std::chrono::system_clock::to_time_t(now);
 	std::tm* local_time = std::localtime(&now_time);

@@ -3,6 +3,7 @@
 #include "TxConsultaEsdeveniment.h"
 #include "TxCompraEntradaEsdevenimentPunts.h"
 #include "TxCompraEntradaEsdevenimentDiners.h"
+#include "FormulariCompraEntrada.h"
 const string ErrorUsuari = "No hi ha cap usuari amb sessio iniciada";
 namespace culturalink_main {
 
@@ -38,6 +39,7 @@ namespace culturalink_main {
 				delete components;
 			}
 		}
+
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Label^ label1;
@@ -66,11 +68,6 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Button^ Compra;
 	private: System::Windows::Forms::RadioButton^ radioButton1;
 	private: System::Windows::Forms::RadioButton^ radioButton2;
-
-
-
-
-
 	protected:
 
 	private:
@@ -430,9 +427,22 @@ private: System::Void Compra_Click(System::Object^ sender, System::EventArgs^ e)
 		}
 		else if (radioButton1->Checked)
 		{
-
-			TxCompraEntradaEsdevenimentDiners tx1(nomEsd);
-			tx1.executar();
+			UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
+			Object^ usuarioAlmacenado = usuario->getUsuari();
+			TipoPassarela tipoUsuario = usuario->getTipoPassarela();
+			if (usuarioAlmacenado == nullptr) throw(ErrorUsuari);
+			// Verificar el tipo de usuario y actuar en consecuencia
+			if (tipoUsuario == TipoPassarela::Ciutada) {
+				FormulariCompraEntrada^ f2 = gcnew FormulariCompraEntrada();
+				this->Visible = false;
+				f2->ShowDialog();
+				this->Show();
+				this->Visible = true;
+				TxCompraEntradaEsdevenimentDiners tx1(nomEsd);
+				tx1.executar();
+				MessageBox::Show("Compra finalitzada amb exit", "", MessageBoxButtons::OK);
+				this->Close();
+			}
 		}
 	}
 	catch (const string err)

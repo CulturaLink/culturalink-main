@@ -1,5 +1,5 @@
 #pragma once
-
+#include "TxCompraEntradaEsdevenimentDiners.h"
 namespace culturalink_main {
 
 	using namespace System;
@@ -21,7 +21,10 @@ namespace culturalink_main {
 			//
 			//TODO: agregar código de constructor aquí
 			//
+			this->FormClosing += gcnew FormClosingEventHandler(this, &FormulariCompraEntrada::FormulariCompraEntrada_FormClosing);
+			this->close = false;
 		}
+		
 
 	protected:
 		/// <summary>
@@ -49,8 +52,21 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::Button^ sortirButton;
 	private: System::Windows::Forms::Button^ button1;
 
+	private:
+
+		bool close;
+		System::Void FormulariCompraEntrada_FormClosing(System::Object^ sender, FormClosingEventArgs^ e) {
+			// Verificar si el cierre es causado por el usuario haciendo clic en la "X"
+			if (e->CloseReason == CloseReason::UserClosing && !close) {
+				// El usuario está cerrando manualmente el formulario
+				// Aquí puedes realizar acciones adicionales, o cancelar el cierre según sea necesario
+				MessageBox::Show("S'ha tancat forzadament el formulari de compra, per sortir del formulari has de polsar el boto 'Sortir'", "Error", MessageBoxButtons::OK);
+				e->Cancel = true;
+			}
+		}
 	private:
 		/// <summary>
 		/// Variable del diseñador necesaria.
@@ -74,6 +90,7 @@ namespace culturalink_main {
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->sortirButton = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// titular
@@ -151,7 +168,7 @@ namespace culturalink_main {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(125, 232);
+			this->button1->Location = System::Drawing::Point(81, 231);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 23);
 			this->button1->TabIndex = 9;
@@ -159,11 +176,22 @@ namespace culturalink_main {
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &FormulariCompraEntrada::button1_Click);
 			// 
+			// sortirButton
+			// 
+			this->sortirButton->Location = System::Drawing::Point(182, 231);
+			this->sortirButton->Name = L"sortirButton";
+			this->sortirButton->Size = System::Drawing::Size(75, 23);
+			this->sortirButton->TabIndex = 10;
+			this->sortirButton->Text = L"Sortir";
+			this->sortirButton->UseVisualStyleBackColor = true;
+			this->sortirButton->Click += gcnew System::EventHandler(this, &FormulariCompraEntrada::sortirButton_Click);
+			// 
 			// FormulariCompraEntrada
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(318, 277);
+			this->Controls->Add(this->sortirButton);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->label4);
@@ -193,6 +221,53 @@ namespace culturalink_main {
 				"Un o mes camps buits", MessageBoxButtons::OK);
 			return;
 		}
+		bool encontrado = false;
+		for (int i = 0; i < titular_tarjeta->Length && encontrado == false; i++)
+		{
+			if (47 < titular_tarjeta[i] && titular_tarjeta[i] < 58) encontrado = true;
+			else if (titular_tarjeta[i] == 32) encontrado = true;
+		}
+		if (encontrado == true)
+		{
+			MessageBox::Show("Revisa el camp 'Titular de la tarjeta' no té el format indicat ", "Camp amb format incorrecte", MessageBoxButtons::OK);
+			return;
+		}
+		encontrado = false;
+		for (int i = 0; i < numero->Length && encontrado == false; i++)
+		{
+			if (!(47 < numero[i] && numero[i] < 58)) encontrado = true;
+		}
+		if (encontrado == true)
+		{
+			MessageBox::Show("Revisa el camp 'Numero de la tarjeta' no té el format indicat", "Camp amb format incorrecte", MessageBoxButtons::OK);
+			return;
+		}
+		encontrado = false;
+		for (int i = 0; i < fecha_cadu->Length && encontrado == false; i++)
+		{
+			if (!(47 < fecha_cadu[i] && fecha_cadu[i] < 58) && fecha_cadu[i] != 45) encontrado = true;
+		}
+		if (encontrado == true)
+		{
+			MessageBox::Show("Revisa el camp 'Fecha de caducidad' no té el format indicat", "Camp amb format incorrecte", MessageBoxButtons::OK);
+			return;
+		}
+		encontrado = false;
+		for (int i = 0; i < CVV_->Length && encontrado == false; i++)
+		{
+			if (!(47 < CVV_[i] && CVV_[i] < 58)) encontrado = true;
+			if (i == 3) encontrado = true;
+		}
+		if (encontrado == true)
+		{
+			MessageBox::Show("Revisa el camp 'CVV' no té el format indicat", "Camp amb format incorrecte", MessageBoxButtons::OK);
+			return;
+		}
+		this->Close();
 	}
+private: System::Void sortirButton_Click(System::Object^ sender, System::EventArgs^ e) {
+	close = true;
+	this->Close();
+}
 };
 }

@@ -1,4 +1,5 @@
   culturalink_main.ConsultaEsdevenimentUI.resources - Embedded, ContainedInManifestFile, 
+  culturalink_main.FormulariCompraEntrada.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.InfoAjuntament.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.InfoCiutada.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.InfoEntitat.resources - Embedded, ContainedInManifestFile, 
@@ -49,6 +50,14 @@ Class culturalink_main.InfoCiutada: AutoLayout, AnsiClass, Class, Public, Before
 Class culturalink_main.RegistrarEsdevenimentUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class culturalink_main.FormulariCompraEntrada: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Events:
+    System.EventHandler SalirButtonClick: SpecialName
+  Methods:
+    add_SalirButtonClick(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SalirButtonClick(EventHandler): PrivateScope, Public, HideBySig, SpecialName
 Class culturalink_main.ConsultaEsdevenimentUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
