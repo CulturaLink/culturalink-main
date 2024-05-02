@@ -134,6 +134,7 @@
     <ClInclude Include="TxConsultaEsdevenimentsAmbTipus.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="TxEsborraCiutada.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -144,6 +145,11 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="EsborraFormEntitat.h">
+=======
+    <ClInclude Include="CercadoraInscripcio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PassarelaInscripcio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="TxConsultaInscripcions.h">
