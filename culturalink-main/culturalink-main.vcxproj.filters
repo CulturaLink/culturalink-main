@@ -140,6 +140,12 @@
     <ClInclude Include="EsborraFormCiutada.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TxEsborraEntitat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EsborraFormEntitat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -254,6 +260,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="EsborraFormCiutada.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxEsborrarEntitat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EsborraFormEntitat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

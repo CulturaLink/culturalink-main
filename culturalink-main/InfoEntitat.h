@@ -1,5 +1,6 @@
 #pragma once
 #include "TxConsultaEntitat.h"
+#include "EsborraFormEntitat.h"
 
 namespace culturalink_main {
 
@@ -55,6 +56,7 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Button^ logOut;
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::Button^ btnEsborrarUsuari;
 	private: System::ComponentModel::IContainer^ components;
 
 	protected:
@@ -94,6 +96,7 @@ namespace culturalink_main {
 			this->panelTitleBar = (gcnew System::Windows::Forms::Panel());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
+			this->btnEsborrarUsuari = (gcnew System::Windows::Forms::Button());
 			this->panelDesktop->SuspendLayout();
 			this->panelMenu->SuspendLayout();
 			this->panelTitleBar->SuspendLayout();
@@ -111,6 +114,7 @@ namespace culturalink_main {
 			this->panelDesktop->AutoSize = true;
 			this->panelDesktop->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
 			this->panelDesktop->BackColor = System::Drawing::Color::LightSalmon;
+			this->panelDesktop->Controls->Add(this->btnEsborrarUsuari);
 			this->panelDesktop->Controls->Add(this->Lclau);
 			this->panelDesktop->Controls->Add(this->Lcorreu);
 			this->panelDesktop->Controls->Add(this->Ltelefon);
@@ -317,6 +321,17 @@ namespace culturalink_main {
 			this->pictureBox2->TabStop = false;
 			this->pictureBox2->Click += gcnew System::EventHandler(this, &InfoEntitat::pictureBox2_Click);
 			// 
+			// btnEsborrarUsuari
+			// 
+			this->btnEsborrarUsuari->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
+			this->btnEsborrarUsuari->Location = System::Drawing::Point(455, 338);
+			this->btnEsborrarUsuari->Name = L"btnEsborrarUsuari";
+			this->btnEsborrarUsuari->Size = System::Drawing::Size(167, 42);
+			this->btnEsborrarUsuari->TabIndex = 14;
+			this->btnEsborrarUsuari->Text = L"Esborrar Usuari";
+			this->btnEsborrarUsuari->UseVisualStyleBackColor = true;
+			this->btnEsborrarUsuari->Click += gcnew System::EventHandler(this, &InfoEntitat::btnEsborrarUsuari_Click);
+			// 
 			// InfoEntitat
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -368,6 +383,12 @@ namespace culturalink_main {
 			MessageBox::Show(mensajeError, "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 		}
 	}
+private: System::Void btnEsborrarUsuari_Click(System::Object^ sender, System::EventArgs^ e) {
+	EsborraFormEntitat^ esborraEntitat = gcnew EsborraFormEntitat();
+	this->Hide();
+	esborraEntitat->ShowDialog();
+	this->Show();
+}
 };
 }
 

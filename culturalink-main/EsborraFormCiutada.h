@@ -40,9 +40,10 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::TextBox^ nickname;
-	private: System::Windows::Forms::TextBox^ password;
+
 	private: System::Windows::Forms::Button^ esborra;
 	private: System::Windows::Forms::Button^ cancela;
+	private: System::Windows::Forms::TextBox^ password;
 
 
 
@@ -63,9 +64,9 @@ namespace culturalink_main {
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->nickname = (gcnew System::Windows::Forms::TextBox());
-			this->password = (gcnew System::Windows::Forms::TextBox());
 			this->esborra = (gcnew System::Windows::Forms::Button());
 			this->cancela = (gcnew System::Windows::Forms::Button());
+			this->password = (gcnew System::Windows::Forms::TextBox());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -107,15 +108,6 @@ namespace culturalink_main {
 			this->nickname->Size = System::Drawing::Size(180, 30);
 			this->nickname->TabIndex = 3;
 			// 
-			// password
-			// 
-			this->password->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
-			this->password->Location = System::Drawing::Point(164, 185);
-			this->password->Name = L"password";
-			this->password->PasswordChar = '*';
-			this->password->Size = System::Drawing::Size(180, 30);
-			this->password->TabIndex = 4;
-			// 
 			// esborra
 			// 
 			this->esborra->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
@@ -137,6 +129,15 @@ namespace culturalink_main {
 			this->cancela->Text = L"Cancela";
 			this->cancela->UseVisualStyleBackColor = true;
 			this->cancela->Click += gcnew System::EventHandler(this, &EsborraFormCiutada::cancela_Click);
+			// 
+			// password
+			// 
+			this->password->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
+			this->password->Location = System::Drawing::Point(164, 185);
+			this->password->Name = L"password";
+			this->password->PasswordChar = '*';
+			this->password->Size = System::Drawing::Size(180, 30);
+			this->password->TabIndex = 4;
 			// 
 			// EsborraFormCiutada
 			// 
@@ -166,9 +167,17 @@ private: System::Void esborra_Click(System::Object^ sender, System::EventArgs^ e
 	String^ contra = this->password->Text;
 
 	TxEsborraCiutada tx(nick, contra);
-	tx.executar();
-	MessageBox::Show("Nickname i contrasenya correctes!", "Login");
-	this->Close();
+	try {
+		tx.executar();
+		MessageBox::Show("Nickname i contrasenya correctes!", "Login");
+		this->Close();
+	}
+	catch (const std::exception& e){
+		String^ mensajeError = gcnew String(e.what());
+		MessageBox::Show(mensajeError, "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+	}
+	
+	
 }
 };
 }

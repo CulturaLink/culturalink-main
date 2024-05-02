@@ -87,6 +87,7 @@ namespace culturalink_main {
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(InfoCiutada::typeid));
 			this->panelDesktop = (gcnew System::Windows::Forms::Panel());
+			this->btnEsborrarUsuari = (gcnew System::Windows::Forms::Button());
 			this->lPunts = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->lSaldo = (gcnew System::Windows::Forms::Label());
@@ -107,7 +108,6 @@ namespace culturalink_main {
 			this->panelTitleBar = (gcnew System::Windows::Forms::Panel());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
-			this->btnEsborrarUsuari = (gcnew System::Windows::Forms::Button());
 			this->panelDesktop->SuspendLayout();
 			this->panelMenu->SuspendLayout();
 			this->panelTitleBar->SuspendLayout();
@@ -139,6 +139,17 @@ namespace culturalink_main {
 			this->panelDesktop->Name = L"panelDesktop";
 			this->panelDesktop->Size = System::Drawing::Size(634, 392);
 			this->panelDesktop->TabIndex = 7;
+			// 
+			// btnEsborrarUsuari
+			// 
+			this->btnEsborrarUsuari->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
+			this->btnEsborrarUsuari->Location = System::Drawing::Point(462, 340);
+			this->btnEsborrarUsuari->Name = L"btnEsborrarUsuari";
+			this->btnEsborrarUsuari->Size = System::Drawing::Size(160, 40);
+			this->btnEsborrarUsuari->TabIndex = 13;
+			this->btnEsborrarUsuari->Text = L"Esborrar Usuari";
+			this->btnEsborrarUsuari->UseVisualStyleBackColor = true;
+			this->btnEsborrarUsuari->Click += gcnew System::EventHandler(this, &InfoCiutada::btnEsborrarUsuari_Click);
 			// 
 			// lPunts
 			// 
@@ -373,17 +384,6 @@ namespace culturalink_main {
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox2->TabIndex = 0;
 			this->pictureBox2->TabStop = false;
-			// 
-			// btnEsborrarUsuari
-			// 
-			this->btnEsborrarUsuari->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
-			this->btnEsborrarUsuari->Location = System::Drawing::Point(452, 320);
-			this->btnEsborrarUsuari->Name = L"btnEsborrarUsuari";
-			this->btnEsborrarUsuari->Size = System::Drawing::Size(170, 60);
-			this->btnEsborrarUsuari->TabIndex = 13;
-			this->btnEsborrarUsuari->Text = L"Esborrar Usuari";
-			this->btnEsborrarUsuari->UseVisualStyleBackColor = true;
-			this->btnEsborrarUsuari->Click += gcnew System::EventHandler(this, &InfoCiutada::btnEsborrarUsuari_Click);
 			// 
 			// InfoCiutada
 			// 

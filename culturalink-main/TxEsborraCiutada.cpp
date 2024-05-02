@@ -18,10 +18,11 @@ void TxEsborraCiutada::executar() {
 	}
 	else {
 		//uso de la clase Singleton
-		//UsuariIniciat^ usuari = UsuariIniciat::ObtenerInstancia();
+		UsuariIniciat^ usuari = UsuariIniciat::ObtenerInstancia();
 		//usuari->setUsuari(% pC, TipoPassarela::Ciutada);
 
 		//Esborra usuari
 		pC.esborra(_nickname);
+		usuari->logOut();
 	}
 }
