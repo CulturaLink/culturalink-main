@@ -6,7 +6,7 @@ using namespace System;
 ref class PassarelaCiutada
 {
 private:
-	
+
 	String^ _nickname;
 	String^ _nom_complet;
 	String^ _contrasenya;
@@ -27,9 +27,8 @@ public:
 	String^ getContrasenya();
 	String^ getNickname();
 	String^ getNomComplet() { return _nom_complet; }
-	String^ getCorreu() { return _correu; } 
-	String^ getDataNaix() { return _data_naix; } 
+	String^ getCorreu() { return _correu; }
+	String^ getDataNaix() { return _data_naix; }
 	int^ getDiners() { return _diners; }
-	int^ getPunts() { return _punts; } 
+	int^ getPunts() { return _punts; }
 };
-

@@ -1,4 +1,4 @@
-#include "pch.h"
+ï»¿#include "pch.h"
 #include "PassarelaCiutada.h"
 #include "MainForm.h"
 using namespace System::Windows::Forms;
@@ -71,18 +71,18 @@ void PassarelaCiutada::insereix() {
 
 	MySqlDataReader^ dataReader;
 	try {
-		// obrim la connexió
+		// obrim la connexiï¿½
 		conn->Open();
 		// executem la comanda creada abans del try
 		dataReader = cmd->ExecuteReader();
 		MessageBox::Show("Data inserted successfully.");
 	}
 	catch (Exception^ ex) {
-		// codi per mostrar l’error en una finestra
+		// codi per mostrar lï¿½error en una finestra
 		MessageBox::Show(ex->Message);
 	}
 	finally {
-		// si tot va bé es tanca la connexió
+		// si tot va bï¿½ es tanca la connexiï¿½
 		conn->Close();
 	}
 }
@@ -93,20 +93,20 @@ PassarelaCiutada::PassarelaCiutada(String^ nickname) {
 	String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
 	MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
 
-	// Uso de parámetros en la consulta SQL
+	// Uso de parï¿½metros en la consulta SQL
 	String^ sql = "SELECT * FROM ciutada WHERE nickname = @nickname";
 	MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
-	cmd->Parameters->AddWithValue("@nickname", nickname); // Asignación del valor del parámetro
+	cmd->Parameters->AddWithValue("@nickname", nickname); // Asignaciï¿½n del valor del parï¿½metro
 	MySqlDataReader^ dataReader;
 
 	try {
-		// obrim la connexió
+		// obrim la connexiï¿½
 		conn->Open();
-		// executem la comanda (cmd) que s’ha creat abans del try
+		// executem la comanda (cmd) que sï¿½ha creat abans del try
 		dataReader = cmd->ExecuteReader();
 		if (dataReader->Read()) {
-			// Es llegeix la informació per crear un objecte de tipus Ciutada
-			// Agafarem les columnes per índex, la primera és la 0 (nickname ja el tenim)
+			// Es llegeix la informaciï¿½ per crear un objecte de tipus Ciutada
+			// Agafarem les columnes per ï¿½ndex, la primera ï¿½s la 0 (nickname ja el tenim)
 			_nickname = nickname;
 			_nom_complet = dataReader->GetString(1);
 			_contrasenya = dataReader->GetString(2);
@@ -117,11 +117,11 @@ PassarelaCiutada::PassarelaCiutada(String^ nickname) {
 		}
 	}
 	catch (Exception^ ex) {
-		// codi per mostrar l’error en una finestra
+		// codi per mostrar lï¿½error en una finestra
 		MessageBox::Show(ex->Message);
 	}
 	finally {
-		// si tot va bé es tanca la connexió
+		// si tot va bï¿½ es tanca la connexiï¿½
 		//MessageBox::Show("Connexio DB exitosa!");
 		conn->Close();
 	}
