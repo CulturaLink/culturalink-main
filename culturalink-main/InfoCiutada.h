@@ -1,6 +1,7 @@
 #pragma once
 #include "UsuariIniciat.h"
 #include "PassarelaCiutada.h"
+#include "TxConsultaInscripcions.h"
 
 namespace culturalink_main {
 
@@ -72,6 +73,9 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Label^ TitleCC;
 	private: System::Windows::Forms::ListBox^ listBox1;
 
+
+
+
 	private:
 		/// <summary>
 		/// Variable del diseñador necesaria.
@@ -87,9 +91,6 @@ namespace culturalink_main {
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(InfoCiutada::typeid));
 			this->panelDesktop = (gcnew System::Windows::Forms::Panel());
-			this->panel1 = (gcnew System::Windows::Forms::Panel());
-			this->TitleCC = (gcnew System::Windows::Forms::Label());
-			this->listBox1 = (gcnew System::Windows::Forms::ListBox());
 			this->lPunts = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->lSaldo = (gcnew System::Windows::Forms::Label());
@@ -102,6 +103,9 @@ namespace culturalink_main {
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->TitleCC = (gcnew System::Windows::Forms::Label());
+			this->listBox1 = (gcnew System::Windows::Forms::ListBox());
 			this->panelMenu = (gcnew System::Windows::Forms::Panel());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
@@ -123,7 +127,6 @@ namespace culturalink_main {
 			this->panelDesktop->AutoSize = true;
 			this->panelDesktop->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
 			this->panelDesktop->BackColor = System::Drawing::Color::LightSalmon;
-			this->panelDesktop->Controls->Add(this->panel1);
 			this->panelDesktop->Controls->Add(this->lPunts);
 			this->panelDesktop->Controls->Add(this->label7);
 			this->panelDesktop->Controls->Add(this->lSaldo);
@@ -142,41 +145,6 @@ namespace culturalink_main {
 			this->panelDesktop->Name = L"panelDesktop";
 			this->panelDesktop->Size = System::Drawing::Size(576, 381);
 			this->panelDesktop->TabIndex = 7;
-			// 
-			// panel1
-			// 
-			this->panel1->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->panel1->Controls->Add(this->TitleCC);
-			this->panel1->Controls->Add(this->listBox1);
-			this->panel1->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->panel1->Location = System::Drawing::Point(0, 0);
-			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(576, 381);
-			this->panel1->TabIndex = 13;
-			this->panel1->Visible = false;
-			// 
-			// TitleCC
-			// 
-			this->TitleCC->AutoSize = true;
-			this->TitleCC->Dock = System::Windows::Forms::DockStyle::Top;
-			this->TitleCC->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 36, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->TitleCC->Location = System::Drawing::Point(0, 0);
-			this->TitleCC->Name = L"TitleCC";
-			this->TitleCC->Size = System::Drawing::Size(498, 55);
-			this->TitleCC->TabIndex = 1;
-			this->TitleCC->Text = L"Compres realitzades:";
-			// 
-			// listBox1
-			// 
-			this->listBox1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
-			this->listBox1->FormattingEnabled = true;
-			this->listBox1->Location = System::Drawing::Point(9, 63);
-			this->listBox1->Name = L"listBox1";
-			this->listBox1->Size = System::Drawing::Size(555, 303);
-			this->listBox1->TabIndex = 0;
 			// 
 			// lPunts
 			// 
@@ -310,6 +278,43 @@ namespace culturalink_main {
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Usuari:";
 			// 
+			// panel1
+			// 
+			this->panel1->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->panel1->Controls->Add(this->TitleCC);
+			this->panel1->Controls->Add(this->listBox1);
+			this->panel1->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->panel1->Location = System::Drawing::Point(150, 49);
+			this->panel1->Name = L"panel1";
+			this->panel1->Size = System::Drawing::Size(576, 381);
+			this->panel1->TabIndex = 13;
+			// 
+			// TitleCC
+			// 
+			this->TitleCC->AutoSize = true;
+			this->TitleCC->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 36, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->TitleCC->Location = System::Drawing::Point(6, 5);
+			this->TitleCC->Name = L"TitleCC";
+			this->TitleCC->Size = System::Drawing::Size(498, 55);
+			this->TitleCC->TabIndex = 1;
+			this->TitleCC->Text = L"Compres realitzades:";
+			// 
+			// listBox1
+			// 
+			this->listBox1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->listBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->listBox1->FormattingEnabled = true;
+			this->listBox1->ItemHeight = 24;
+			this->listBox1->Location = System::Drawing::Point(9, 63);
+			this->listBox1->Name = L"listBox1";
+			this->listBox1->Size = System::Drawing::Size(555, 292);
+			this->listBox1->Sorted = true;
+			this->listBox1->TabIndex = 0;
+			// 
 			// panelMenu
 			// 
 			this->panelMenu->BackColor = System::Drawing::SystemColors::ActiveCaption;
@@ -412,6 +417,7 @@ namespace culturalink_main {
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox2->TabIndex = 0;
 			this->pictureBox2->TabStop = false;
+			this->pictureBox2->Click += gcnew System::EventHandler(this, &InfoCiutada::pictureBox2_Click);
 			// 
 			// InfoCiutada
 			// 
@@ -419,6 +425,7 @@ namespace culturalink_main {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(726, 430);
 			this->Controls->Add(this->panelDesktop);
+			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->panelMenu);
 			this->Controls->Add(this->panelTitleBar);
 			this->Name = L"InfoCiutada";
@@ -459,12 +466,29 @@ private: System::Void InfoCiutada_Load(System::Object^ sender, System::EventArgs
 		lSaldo->Text = passarelaCiutada->getDiners()->ToString();
 		lPunts->Text = passarelaCiutada->getPunts()->ToString();
 	}
+
+	TxConsultaInscripcions tI;
+	tI.executar();
+
+	List<String^>^ result = tI.getResult();
+
+	for each (String ^ line in result)
+		this->listBox1->Items->Add(line);
+
+	panel1->Visible = false;
 }
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 	panelMenu->Visible = !panelMenu->Visible;
 }
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
-
+	panelDesktop->Visible = false;
+	panel1->Visible = true;
+	panel1->Invalidate(); // Force redraw if necessary
+	panel1->PerformLayout(); // Recalculate layout if necessary
+}
+private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
+	panel1->Visible = false;
+	panelDesktop->Visible = true;
 }
 };
 }

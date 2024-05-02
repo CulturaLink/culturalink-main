@@ -1,87 +1,88 @@
 ﻿  CercadoraCiutada.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/CercadoraCiutada.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+  (compiling source file '/CercadoraCiutada.cpp')
+  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': is abstract
+  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  see declaration of 'Transaccio::executar'
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/CercadoraCiutada.cpp")
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  (compiling source file '/CercadoraCiutada.cpp')
   
+  InfoCiutada.cpp
   MainForm.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/MainForm.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+  (compiling source file '/MainForm.cpp')
+  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': is abstract
+  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  see declaration of 'Transaccio::executar'
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/MainForm.cpp")
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  (compiling source file '/MainForm.cpp')
   
   PassarelaCiutada.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+  (compiling source file '/PassarelaCiutada.cpp')
+  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': is abstract
+  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  see declaration of 'Transaccio::executar'
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  (compiling source file '/PassarelaCiutada.cpp')
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(14,12): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(14,12): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  (compiling source file '/PassarelaCiutada.cpp')
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(15,11): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(15,11): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  (compiling source file '/PassarelaCiutada.cpp')
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(50,12): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(50,12): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  (compiling source file '/PassarelaCiutada.cpp')
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(51,11): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(51,11): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  (compiling source file '/PassarelaCiutada.cpp')
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(69,43): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(69,43): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  (compiling source file '/PassarelaCiutada.cpp')
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(70,42): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(70,42): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  (compiling source file '/PassarelaCiutada.cpp')
   
   TxLoginCiutada.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/TxLoginCiutada.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+  (compiling source file '/TxLoginCiutada.cpp')
+  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': is abstract
+  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  see declaration of 'Transaccio::executar'
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/TxLoginCiutada.cpp")
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  (compiling source file '/TxLoginCiutada.cpp')
   
   TxRegisterCiutada.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/TxRegisterCiutada.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+  (compiling source file '/TxRegisterCiutada.cpp')
+  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': is abstract
+  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  see declaration of 'Transaccio::executar'
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/TxRegisterCiutada.cpp")
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  (compiling source file '/TxRegisterCiutada.cpp')
   
   culturalinkmain.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+  (compiling source file '/culturalinkmain.cpp')
+  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': is abstract
+  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  see declaration of 'Transaccio::executar'
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/culturalinkmain.cpp")
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  (compiling source file '/culturalinkmain.cpp')
   
-  Generando código...
-  AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
-  culturalink-main.vcxproj -> C:\Users\patri\Documents\GitHub\culturalink-main\x64\Debug\culturalink-main.exe
+  Generating Code...
+  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  culturalink-main.vcxproj -> D:\Users\xavit\Documents\GitHub\culturalink-main\x64\Debug\culturalink-main.exe

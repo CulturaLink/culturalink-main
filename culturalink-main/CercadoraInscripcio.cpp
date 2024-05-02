@@ -16,18 +16,23 @@ List<PassarelaInscripcio^>^ CercadoraInscripcio::cercaTotesInscripcions(String^ 
     try {
         // obrim la connexió
         conn->Open();
+
+        List<PassarelaInscripcio^>^ totsInscrip = gcnew List<PassarelaInscripcio^>(); // Initialize the list
         // executem la comanda (cmd) que s’ha creat abans del try
         dataReader = cmd->ExecuteReader();
         while (dataReader->Read()) {
 
             String^ nickC = dataReader->GetString(0);
-            String^ dataC = dataReader->GetString(1);
+            String^ dataC = dataReader->GetMySqlDateTime(1).ToString();
             float preuC = dataReader->GetFloat(2);
             String^ esdev = dataReader->GetString(3);
 
-            String^ inscripcio = nickC
-            
+            PassarelaInscripcio^ pI = gcnew PassarelaInscripcio(nickC, dataC, preuC, esdev);
+
+            totsInscrip->Add(pI);
         }
+
+        return totsInscrip;
     }
     catch (Exception^ ex) {
         // codi per mostrar l’error en una finestra
@@ -35,7 +40,7 @@ List<PassarelaInscripcio^>^ CercadoraInscripcio::cercaTotesInscripcions(String^ 
     }
     finally {
         // si tot va bé es tanca la connexió
-        MessageBox::Show("Connexio DB exitosa!");
+        //MessageBox::Show("Connexio DB exitosa!");
         conn->Close();
     }
 }
