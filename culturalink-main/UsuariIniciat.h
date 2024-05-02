@@ -48,4 +48,12 @@ public:
     {
         return tipoPassarela;
     }
+
+    bool algunUsuariIniciat() {
+        return !(usuariIniciat == NULL);
+    }
+
+    void logOut() {
+        usuariIniciat = NULL;
+    }
 };

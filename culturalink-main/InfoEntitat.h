@@ -52,9 +52,14 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Label^ Lnom;
 	private: System::Windows::Forms::Label^ Lclau;
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
-	private: System::Windows::Forms::Button^ logOut;
+	private: System::Windows::Forms::Button^ btn_esborrar_usuari;
+
+
+
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::Button^ btn_tancar_sessio;
+
 	private: System::ComponentModel::IContainer^ components;
 
 	protected:
@@ -89,11 +94,12 @@ namespace culturalink_main {
 			this->panelMenu = (gcnew System::Windows::Forms::Panel());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->logOut = (gcnew System::Windows::Forms::Button());
+			this->btn_esborrar_usuari = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->panelTitleBar = (gcnew System::Windows::Forms::Panel());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
+			this->btn_tancar_sessio = (gcnew System::Windows::Forms::Button());
 			this->panelDesktop->SuspendLayout();
 			this->panelMenu->SuspendLayout();
 			this->panelTitleBar->SuspendLayout();
@@ -218,9 +224,10 @@ namespace culturalink_main {
 			// panelMenu
 			// 
 			this->panelMenu->BackColor = System::Drawing::SystemColors::ActiveCaption;
+			this->panelMenu->Controls->Add(this->btn_tancar_sessio);
 			this->panelMenu->Controls->Add(this->button4);
 			this->panelMenu->Controls->Add(this->button2);
-			this->panelMenu->Controls->Add(this->logOut);
+			this->panelMenu->Controls->Add(this->btn_esborrar_usuari);
 			this->panelMenu->Controls->Add(this->button1);
 			this->panelMenu->Dock = System::Windows::Forms::DockStyle::Left;
 			this->panelMenu->Location = System::Drawing::Point(0, 49);
@@ -254,19 +261,19 @@ namespace culturalink_main {
 			this->button2->Text = L"Modifica";
 			this->button2->UseVisualStyleBackColor = true;
 			// 
-			// logOut
+			// btn_esborrar_usuari
 			// 
-			this->logOut->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->logOut->Dock = System::Windows::Forms::DockStyle::Bottom;
-			this->logOut->FlatAppearance->MouseOverBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
+			this->btn_esborrar_usuari->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->btn_esborrar_usuari->Dock = System::Windows::Forms::DockStyle::Bottom;
+			this->btn_esborrar_usuari->FlatAppearance->MouseOverBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
 				static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(192)));
-			this->logOut->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
-			this->logOut->Location = System::Drawing::Point(0, 352);
-			this->logOut->Name = L"logOut";
-			this->logOut->Size = System::Drawing::Size(150, 40);
-			this->logOut->TabIndex = 2;
-			this->logOut->Text = L"Tancar Sessio";
-			this->logOut->UseVisualStyleBackColor = true;
+			this->btn_esborrar_usuari->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
+			this->btn_esborrar_usuari->Location = System::Drawing::Point(0, 352);
+			this->btn_esborrar_usuari->Name = L"btn_esborrar_usuari";
+			this->btn_esborrar_usuari->Size = System::Drawing::Size(150, 40);
+			this->btn_esborrar_usuari->TabIndex = 2;
+			this->btn_esborrar_usuari->Text = L"Esborrar perfil";
+			this->btn_esborrar_usuari->UseVisualStyleBackColor = true;
 			// 
 			// button1
 			// 
@@ -316,6 +323,21 @@ namespace culturalink_main {
 			this->pictureBox2->TabIndex = 0;
 			this->pictureBox2->TabStop = false;
 			this->pictureBox2->Click += gcnew System::EventHandler(this, &InfoEntitat::pictureBox2_Click);
+			// 
+			// btn_tancar_sessio
+			// 
+			this->btn_tancar_sessio->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->btn_tancar_sessio->Dock = System::Windows::Forms::DockStyle::Bottom;
+			this->btn_tancar_sessio->FlatAppearance->MouseOverBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(192)));
+			this->btn_tancar_sessio->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
+			this->btn_tancar_sessio->Location = System::Drawing::Point(0, 312);
+			this->btn_tancar_sessio->Name = L"btn_tancar_sessio";
+			this->btn_tancar_sessio->Size = System::Drawing::Size(150, 40);
+			this->btn_tancar_sessio->TabIndex = 7;
+			this->btn_tancar_sessio->Text = L"Tancar Sessio";
+			this->btn_tancar_sessio->UseVisualStyleBackColor = true;
+			this->btn_tancar_sessio->Click += gcnew System::EventHandler(this, &InfoEntitat::button3_Click);
 			// 
 			// InfoEntitat
 			// 
@@ -368,6 +390,8 @@ namespace culturalink_main {
 			MessageBox::Show(mensajeError, "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 		}
 	}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }
 
