@@ -439,6 +439,17 @@ private: System::Void btnEsborrarUsuari_Click(System::Object^ sender, System::Ev
 	this->Hide();
 	esborraCiutada->ShowDialog();
 	this->Show();
+
+	//no funciona a partir d'aqui
+	UsuariIniciat^ usuari = UsuariIniciat::ObtenerInstancia();
+	Object^ usuarioAlmacenado = usuari->getUsuari();
+	TipoPassarela tipoUsuario = usuari->getTipoPassarela();
+	usuari->logOut();
+
+	if (!usuari->algunUsuariIniciat())
+	{
+		this->Close();
+	}
 }
 };
 }

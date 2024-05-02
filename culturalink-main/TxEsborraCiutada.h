@@ -11,7 +11,7 @@ private:
 	String^ _contrasenya;
 
 public:
-	TxEsborraCiutada(String^ nick, String^ contra);
+	TxEsborraCiutada(String^ contra);
 	void executar();
 };
 

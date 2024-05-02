@@ -89,14 +89,14 @@ void PassarelaCiutada::insereix() {
 }
 
 //Esborrar Ciutada
-void PassarelaCiutada::esborra(String^ nickname) {
+void PassarelaCiutada::esborra() {
 	String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
 	MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
 
 	String^ sql = "DELETE FROM ciutada WHERE nickname = @nickname;";
 	MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
 
-	cmd->Parameters->AddWithValue("@nickname", nickname);
+	cmd->Parameters->AddWithValue("@nickname", _nickname);
 
 	try {
 		conn->Open();  // Open the connection

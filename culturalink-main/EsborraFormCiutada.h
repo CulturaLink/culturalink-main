@@ -1,5 +1,6 @@
 #pragma once
 #include "TxEsborraCiutada.h"
+#include "UsuariIniciat.h"
 
 namespace culturalink_main {
 
@@ -35,11 +36,11 @@ namespace culturalink_main {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Label^ label1;
+
 	protected:
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label3;
-	private: System::Windows::Forms::TextBox^ nickname;
+
 
 	private: System::Windows::Forms::Button^ esborra;
 	private: System::Windows::Forms::Button^ cancela;
@@ -60,30 +61,18 @@ namespace culturalink_main {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->nickname = (gcnew System::Windows::Forms::TextBox());
 			this->esborra = (gcnew System::Windows::Forms::Button());
 			this->cancela = (gcnew System::Windows::Forms::Button());
 			this->password = (gcnew System::Windows::Forms::TextBox());
 			this->SuspendLayout();
 			// 
-			// label1
-			// 
-			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
-			this->label1->Location = System::Drawing::Point(14, 126);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(96, 25);
-			this->label1->TabIndex = 0;
-			this->label1->Text = L"nickname";
-			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
-			this->label2->Location = System::Drawing::Point(14, 190);
+			this->label2->Location = System::Drawing::Point(12, 139);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(119, 25);
 			this->label2->TabIndex = 1;
@@ -99,14 +88,6 @@ namespace culturalink_main {
 			this->label3->TabIndex = 2;
 			this->label3->Text = L"Esborra Usuari";
 			this->label3->TextAlign = System::Drawing::ContentAlignment::TopCenter;
-			// 
-			// nickname
-			// 
-			this->nickname->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
-			this->nickname->Location = System::Drawing::Point(164, 123);
-			this->nickname->Name = L"nickname";
-			this->nickname->Size = System::Drawing::Size(180, 30);
-			this->nickname->TabIndex = 3;
 			// 
 			// esborra
 			// 
@@ -133,7 +114,7 @@ namespace culturalink_main {
 			// password
 			// 
 			this->password->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
-			this->password->Location = System::Drawing::Point(164, 185);
+			this->password->Location = System::Drawing::Point(171, 136);
 			this->password->Name = L"password";
 			this->password->PasswordChar = '*';
 			this->password->Size = System::Drawing::Size(180, 30);
@@ -147,10 +128,8 @@ namespace culturalink_main {
 			this->Controls->Add(this->cancela);
 			this->Controls->Add(this->esborra);
 			this->Controls->Add(this->password);
-			this->Controls->Add(this->nickname);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
-			this->Controls->Add(this->label1);
 			this->Name = L"EsborraFormCiutada";
 			this->Text = L"EsborraFormCiutada";
 			this->ResumeLayout(false);
@@ -163,10 +142,10 @@ namespace culturalink_main {
 		this->Close();
 	}
 private: System::Void esborra_Click(System::Object^ sender, System::EventArgs^ e) {
-	String^ nick = this->nickname->Text;
+	
 	String^ contra = this->password->Text;
 
-	TxEsborraCiutada tx(nick, contra);
+	TxEsborraCiutada tx(contra);
 	try {
 		tx.executar();
 		MessageBox::Show("Nickname i contrasenya correctes!", "Login");
