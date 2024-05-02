@@ -53,11 +53,6 @@ Class culturalink_main.RegistrarEsdevenimentUI: AutoLayout, AnsiClass, Class, Pu
 Class culturalink_main.FormulariCompraEntrada: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-  Events:
-    System.EventHandler SalirButtonClick: SpecialName
-  Methods:
-    add_SalirButtonClick(EventHandler): PrivateScope, Public, HideBySig, SpecialName
-    remove_SalirButtonClick(EventHandler): PrivateScope, Public, HideBySig, SpecialName
 Class culturalink_main.ConsultaEsdevenimentUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

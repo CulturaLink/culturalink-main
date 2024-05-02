@@ -32,4 +32,5 @@ void TxCompraEntradaEsdevenimentDiners::executar()
 	PassarelaInscripcio inscrip(passarelaCiutada->getNickname(), time, pes.getNomEsd(), preu);
 	inscrip.insereix();
 	pes.restar_aforament();
+	passarelaCiutada->afegir_punts_entrada(pes.getPuntsDescEsd());
 }

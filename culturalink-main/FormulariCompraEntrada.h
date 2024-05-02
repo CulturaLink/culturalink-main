@@ -253,6 +253,7 @@ namespace culturalink_main {
 			return;
 		}
 		encontrado = false;
+		if (CVV_->Length < 3) encontrado = true;
 		for (int i = 0; i < CVV_->Length && encontrado == false; i++)
 		{
 			if (!(47 < CVV_[i] && CVV_[i] < 58)) encontrado = true;
@@ -263,6 +264,7 @@ namespace culturalink_main {
 			MessageBox::Show("Revisa el camp 'CVV' no té el format indicat", "Camp amb format incorrecte", MessageBoxButtons::OK);
 			return;
 		}
+		close = true;
 		this->Close();
 	}
 private: System::Void sortirButton_Click(System::Object^ sender, System::EventArgs^ e) {
