@@ -146,6 +146,10 @@
     <ClInclude Include="EsborraFormEntitat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TxConsultaInscripcions.h">
+>>>>>>> task#58_consultar_historial_compres
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -256,6 +260,7 @@
     <ClCompile Include="TxConsultaEsdevenimentsAmbTipus.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="TxEsborraCiutada.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -266,6 +271,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="EsborraFormEntitat.cpp">
+=======
+    <ClCompile Include="CercadoraInscripcio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PassarelaInscripcio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxConsultaInscripcions.cpp">
+>>>>>>> task#58_consultar_historial_compres
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
