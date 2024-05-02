@@ -80,6 +80,7 @@ void PassarelaCiutada::insereix() {
 	catch (Exception^ ex) {
 		// codi per mostrar l’error en una finestra
 		MessageBox::Show(ex->Message);
+		throw runtime_error("El format de la data no es correcte o l'usuai ja existeix");
 	}
 	finally {
 		// si tot va bé es tanca la connexió

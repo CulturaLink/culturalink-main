@@ -207,7 +207,6 @@
     <ClCompile Include="InfoAjuntament.cpp" />
     <ClCompile Include="InfoCiutada.cpp" />
     <ClCompile Include="InfoEntitat.cpp" />
-    <ClCompile Include="Login.cpp" />
     <ClCompile Include="MainForm.cpp" />
     <ClCompile Include="PassarelaAjuntament.cpp" />
     <ClCompile Include="PassarelaCiutada.cpp" />

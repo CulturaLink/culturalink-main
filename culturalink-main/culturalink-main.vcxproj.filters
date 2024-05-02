@@ -154,9 +154,6 @@
     <ClCompile Include="MainForm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Login.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="TxRegistraEntitat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
