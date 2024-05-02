@@ -18,16 +18,15 @@ List<PassarelaInscripcio^>^ CercadoraInscripcio::cercaTotesInscripcions(String^ 
         conn->Open();
         // executem la comanda (cmd) que s’ha creat abans del try
         dataReader = cmd->ExecuteReader();
-        if (dataReader->Read()) {
+        while (dataReader->Read()) {
 
             String^ nickC = dataReader->GetString(0);
             String^ dataC = dataReader->GetString(1);
             float preuC = dataReader->GetFloat(2);
             String^ esdev = dataReader->GetString(3);
 
-
-            PassarelaInscripcio P1(nickC, dataC, preuC, esdev);
-            return P1;
+            String^ inscripcio = nickC
+            
         }
     }
     catch (Exception^ ex) {
