@@ -134,6 +134,18 @@
     <ClInclude Include="TxConsultaEsdevenimentsAmbTipus.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TxEsborraCiutada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EsborraFormCiutada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TxEsborraEntitat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EsborraFormEntitat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -146,9 +158,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MainForm.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Login.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TxRegistraEntitat.cpp">
@@ -245,6 +254,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TxConsultaEsdevenimentsAmbTipus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxEsborraCiutada.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EsborraFormCiutada.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxEsborrarEntitat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EsborraFormEntitat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

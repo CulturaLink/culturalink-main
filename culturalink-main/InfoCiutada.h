@@ -1,6 +1,8 @@
 #pragma once
 #include "UsuariIniciat.h"
 #include "PassarelaCiutada.h"
+#include "TxEsborraCiutada.h"
+#include "EsborraFormCiutada.h"
 
 namespace culturalink_main {
 
@@ -68,6 +70,7 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Label^ label7;
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Button^ btnEsborrarUsuari;
 
 	private:
 		/// <summary>
@@ -84,6 +87,7 @@ namespace culturalink_main {
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(InfoCiutada::typeid));
 			this->panelDesktop = (gcnew System::Windows::Forms::Panel());
+			this->btnEsborrarUsuari = (gcnew System::Windows::Forms::Button());
 			this->lPunts = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->lSaldo = (gcnew System::Windows::Forms::Label());
@@ -116,6 +120,7 @@ namespace culturalink_main {
 			this->panelDesktop->AutoSize = true;
 			this->panelDesktop->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
 			this->panelDesktop->BackColor = System::Drawing::Color::LightSalmon;
+			this->panelDesktop->Controls->Add(this->btnEsborrarUsuari);
 			this->panelDesktop->Controls->Add(this->lPunts);
 			this->panelDesktop->Controls->Add(this->label7);
 			this->panelDesktop->Controls->Add(this->lSaldo);
@@ -134,6 +139,17 @@ namespace culturalink_main {
 			this->panelDesktop->Name = L"panelDesktop";
 			this->panelDesktop->Size = System::Drawing::Size(634, 392);
 			this->panelDesktop->TabIndex = 7;
+			// 
+			// btnEsborrarUsuari
+			// 
+			this->btnEsborrarUsuari->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
+			this->btnEsborrarUsuari->Location = System::Drawing::Point(462, 340);
+			this->btnEsborrarUsuari->Name = L"btnEsborrarUsuari";
+			this->btnEsborrarUsuari->Size = System::Drawing::Size(160, 40);
+			this->btnEsborrarUsuari->TabIndex = 13;
+			this->btnEsborrarUsuari->Text = L"Esborrar Usuari";
+			this->btnEsborrarUsuari->UseVisualStyleBackColor = true;
+			this->btnEsborrarUsuari->Click += gcnew System::EventHandler(this, &InfoCiutada::btnEsborrarUsuari_Click);
 			// 
 			// lPunts
 			// 
@@ -416,6 +432,13 @@ private: System::Void InfoCiutada_Load(System::Object^ sender, System::EventArgs
 }
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 	panelMenu->Visible = !panelMenu->Visible;
+}
+private: System::Void btnEsborrarUsuari_Click(System::Object^ sender, System::EventArgs^ e) {
+	
+	EsborraFormCiutada^ esborraCiutada = gcnew EsborraFormCiutada();
+	this->Hide();
+	esborraCiutada->ShowDialog();
+	this->Show();
 }
 };
 }

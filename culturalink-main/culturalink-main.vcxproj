@@ -139,6 +139,9 @@
     <ClInclude Include="ConsultaEsdevenimentUI.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="EsborraFormCiutada.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="InfoAjuntament.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -152,6 +155,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="MainForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EsborraFormEntitat.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="PassarelaAjuntament.h" />
@@ -181,6 +187,8 @@
     <ClInclude Include="TxConsultaEsdeveniment.h" />
     <ClInclude Include="TxConsultaEsdevenimentsAmbTipus.h" />
     <ClInclude Include="TxConsultaVarisEsdeveniments.h" />
+    <ClInclude Include="TxEsborraCiutada.h" />
+    <ClInclude Include="TxEsborraEntitat.h" />
     <ClInclude Include="TxLoginAjuntament.h" />
     <ClInclude Include="TxLoginCiutada.h" />
     <ClInclude Include="TxRegisterCiutada.h" />
@@ -199,11 +207,12 @@
     <ClCompile Include="CercadoraEsdeveniment.cpp" />
     <ClCompile Include="ConsultaEsdevenimentUI.cpp" />
     <ClCompile Include="culturalinkmain.cpp" />
+    <ClCompile Include="EsborraFormCiutada.cpp" />
     <ClCompile Include="InfoAjuntament.cpp" />
     <ClCompile Include="InfoCiutada.cpp" />
     <ClCompile Include="InfoEntitat.cpp" />
-    <ClCompile Include="Login.cpp" />
     <ClCompile Include="MainForm.cpp" />
+    <ClCompile Include="EsborraFormEntitat.cpp" />
     <ClCompile Include="PassarelaAjuntament.cpp" />
     <ClCompile Include="PassarelaCiutada.cpp" />
     <ClCompile Include="PassarelaEntitat.cpp" />
@@ -224,6 +233,8 @@
     <ClCompile Include="TxConsultaEsdeveniment.cpp" />
     <ClCompile Include="TxConsultaEsdevenimentsAmbTipus.cpp" />
     <ClCompile Include="TxConsultaVarisEsdeveniments.cpp" />
+    <ClCompile Include="TxEsborraCiutada.cpp" />
+    <ClCompile Include="TxEsborrarEntitat.cpp" />
     <ClCompile Include="TxLoginAjuntament.cpp" />
     <ClCompile Include="TxLoginCiutada.cpp" />
     <ClCompile Include="TxRegisterCiutada.cpp" />
@@ -249,6 +260,12 @@
   <ItemGroup>
     <EmbeddedResource Include="ConsultaEsdevenimentUI.resx">
       <DependentUpon>ConsultaEsdevenimentUI.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EsborraFormCiutada.resx">
+      <DependentUpon>EsborraFormCiutada.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EsborraFormEntitat.resx">
+      <DependentUpon>EsborraFormEntitat.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InfoAjuntament.resx">
       <DependentUpon>InfoAjuntament.h</DependentUpon>

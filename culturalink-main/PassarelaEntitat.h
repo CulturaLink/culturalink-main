@@ -18,7 +18,7 @@ public:
     PassarelaEntitat(String^ nomA, String^ contrasenyaA, String^ correuA, int^ telefonA, int^ id_entitatA);
     void insereix();
     //void modifica();
-    //void esborra();
+    void esborra();
 
     String^ obteNom();
     String^ obteContrasenya();

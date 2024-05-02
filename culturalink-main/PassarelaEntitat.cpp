@@ -82,6 +82,29 @@ void PassarelaEntitat::insereix()
     
 }
 
+void PassarelaEntitat::esborra()
+{
+    String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
+    MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
+
+    String^ sql = "DELETE FROM entitat WHERE id_entitat = @id_entitat;";
+    MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
+
+    cmd->Parameters->AddWithValue("@id_entitat", id_entitat);
+
+    try {
+        conn->Open();  // Open the connection
+        cmd->ExecuteNonQuery();  // Execute the DELETE command
+        //MessageBox::Show("User deleted successfully.");
+    }
+    catch (Exception^ ex) {
+        MessageBox::Show(ex->Message);  // Show error message if something goes wrong
+    }
+    finally {
+        conn->Close();  // Close the connection regardless of the result
+    }
+}
+
 String^ PassarelaEntitat::obteContrasenya() {
     return contrasenya;
 }
