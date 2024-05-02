@@ -22,6 +22,6 @@ void TxEsborraCiutada::executar() {
 		//usuari->setUsuari(% pC, TipoPassarela::Ciutada);
 
 		//Esborra usuari
-
+		pC.esborra(_nickname);
 	}
 }

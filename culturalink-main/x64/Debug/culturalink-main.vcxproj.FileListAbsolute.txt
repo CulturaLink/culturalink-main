@@ -38,7 +38,6 @@ C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\D
 C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.InfoEntitat.resources
 C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.Login.resources
 C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.MainForm.resources
-C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.PerfilCiutada.resources
 C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistraEntitat.resources
 C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink-main.vcxproj.GenerateResource.cache
 C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\cultural.EBB58B54.Up2Date
@@ -90,3 +89,10 @@ C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\cul
 C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegisterFormCiutada.resources
 C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistraEsdevenimentUI1.resources
 C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistrarEsdevenimentUI.resources
+C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ConsultaEsdevenimentUI.resources
+C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.EsborraFormCiutada.resources
+C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.InfoCiutada.resources
+C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ProvesEsdevsUI.resources
+C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegisterFormCiutada.resources
+C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistraEsdevenimentUI1.resources
+C:\Users\bokut\OneDrive\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistrarEsdevenimentUI.resources

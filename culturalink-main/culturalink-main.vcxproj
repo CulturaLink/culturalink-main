@@ -139,6 +139,9 @@
     <ClInclude Include="ConsultaEsdevenimentUI.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="EsborraFormCiutada.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="InfoAjuntament.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -200,6 +203,7 @@
     <ClCompile Include="CercadoraEsdeveniment.cpp" />
     <ClCompile Include="ConsultaEsdevenimentUI.cpp" />
     <ClCompile Include="culturalinkmain.cpp" />
+    <ClCompile Include="EsborraFormCiutada.cpp" />
     <ClCompile Include="InfoAjuntament.cpp" />
     <ClCompile Include="InfoCiutada.cpp" />
     <ClCompile Include="InfoEntitat.cpp" />
@@ -251,6 +255,9 @@
   <ItemGroup>
     <EmbeddedResource Include="ConsultaEsdevenimentUI.resx">
       <DependentUpon>ConsultaEsdevenimentUI.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EsborraFormCiutada.resx">
+      <DependentUpon>EsborraFormCiutada.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InfoAjuntament.resx">
       <DependentUpon>InfoAjuntament.h</DependentUpon>

@@ -1,6 +1,8 @@
 #pragma once
 #include "UsuariIniciat.h"
 #include "PassarelaCiutada.h"
+#include "TxEsborraCiutada.h"
+#include "EsborraFormCiutada.h"
 
 namespace culturalink_main {
 
@@ -432,10 +434,11 @@ private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArg
 	panelMenu->Visible = !panelMenu->Visible;
 }
 private: System::Void btnEsborrarUsuari_Click(System::Object^ sender, System::EventArgs^ e) {
-	TxEsborraCiutada tx(nick, contra);
-	tx.executar();
-	MessageBox::Show("Nickname i contrasenya correctes!", "Login");
-	this->Close();
+	
+	EsborraFormCiutada^ esborraCiutada = gcnew EsborraFormCiutada();
+	this->Hide();
+	esborraCiutada->ShowDialog();
+	this->Show();
 }
 };
 }
