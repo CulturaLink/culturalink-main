@@ -104,7 +104,7 @@ namespace culturalink_main {
 			// textBox3
 			// 
 			this->textBox3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
-			this->textBox3->Location = System::Drawing::Point(329, 268);
+			this->textBox3->Location = System::Drawing::Point(329, 225);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(432, 31);
 			this->textBox3->TabIndex = 8;
@@ -112,7 +112,7 @@ namespace culturalink_main {
 			// textBox4
 			// 
 			this->textBox4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
-			this->textBox4->Location = System::Drawing::Point(329, 225);
+			this->textBox4->Location = System::Drawing::Point(329, 271);
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(432, 31);
 			this->textBox4->TabIndex = 9;

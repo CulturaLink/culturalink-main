@@ -2,6 +2,8 @@
 
 //Forms:
 
+#include "ModificaEsdevenimentUI.h"
+
 //Passareles:
 #include "PassarelaCiutada.h"
 #include "PassarelaEntitat.h"
@@ -114,6 +116,7 @@ namespace culturalink_main {
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::PictureBox^ pictureBox7;
 	private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPanel2;
+	private: System::Windows::Forms::Button^ button7;
 
 
 
@@ -171,6 +174,7 @@ namespace culturalink_main {
 			this->lblUsername = (gcnew System::Windows::Forms::Label());
 			this->picBoxUserPic = (gcnew System::Windows::Forms::PictureBox());
 			this->pnlMainTop = (gcnew System::Windows::Forms::Panel());
+			this->button7 = (gcnew System::Windows::Forms::Button());
 			this->pictureBox7 = (gcnew System::Windows::Forms::PictureBox());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->lblTitlePage = (gcnew System::Windows::Forms::Label());
@@ -261,7 +265,7 @@ namespace culturalink_main {
 			this->lblNameApp->ForeColor = System::Drawing::Color::Silver;
 			this->lblNameApp->Location = System::Drawing::Point(25, 7);
 			this->lblNameApp->Name = L"lblNameApp";
-			this->lblNameApp->Size = System::Drawing::Size(82, 20);
+			this->lblNameApp->Size = System::Drawing::Size(67, 15);
 			this->lblNameApp->TabIndex = 1;
 			this->lblNameApp->Text = L"CulturaLink";
 			// 
@@ -394,7 +398,7 @@ namespace culturalink_main {
 			this->label5->Location = System::Drawing::Point(45, 11);
 			this->label5->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(83, 28);
+			this->label5->Size = System::Drawing::Size(66, 21);
 			this->label5->TabIndex = 1;
 			this->label5->Text = L"Log Out";
 			// 
@@ -449,7 +453,7 @@ namespace culturalink_main {
 			this->label4->Location = System::Drawing::Point(45, 11);
 			this->label4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(83, 28);
+			this->label4->Size = System::Drawing::Size(66, 21);
 			this->label4->TabIndex = 1;
 			this->label4->Text = L"Settings";
 			// 
@@ -504,7 +508,7 @@ namespace culturalink_main {
 			this->label3->Location = System::Drawing::Point(45, 10);
 			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(193, 28);
+			this->label3->Size = System::Drawing::Size(155, 21);
 			this->label3->TabIndex = 1;
 			this->label3->Text = L"Registar-se en Esdev.";
 			// 
@@ -558,7 +562,7 @@ namespace culturalink_main {
 			this->label2->Location = System::Drawing::Point(45, 10);
 			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(153, 28);
+			this->label2->Size = System::Drawing::Size(123, 21);
 			this->label2->TabIndex = 1;
 			this->label2->Text = L"Consultar Esdev.";
 			// 
@@ -614,7 +618,7 @@ namespace culturalink_main {
 			this->label1->Location = System::Drawing::Point(40, 0);
 			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(65, 28);
+			this->label1->Size = System::Drawing::Size(52, 21);
 			this->label1->TabIndex = 1;
 			this->label1->Text = L"Home";
 			// 
@@ -655,7 +659,7 @@ namespace culturalink_main {
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->lblTypeUser->Location = System::Drawing::Point(96, 62);
 			this->lblTypeUser->Name = L"lblTypeUser";
-			this->lblTypeUser->Size = System::Drawing::Size(66, 19);
+			this->lblTypeUser->Size = System::Drawing::Size(54, 13);
 			this->lblTypeUser->TabIndex = 3;
 			this->lblTypeUser->Text = L"UserType";
 			// 
@@ -667,7 +671,7 @@ namespace culturalink_main {
 			this->lblFullNameUser->ForeColor = System::Drawing::Color::White;
 			this->lblFullNameUser->Location = System::Drawing::Point(90, 18);
 			this->lblFullNameUser->Name = L"lblFullNameUser";
-			this->lblFullNameUser->Size = System::Drawing::Size(150, 28);
+			this->lblFullNameUser->Size = System::Drawing::Size(118, 21);
 			this->lblFullNameUser->TabIndex = 2;
 			this->lblFullNameUser->Text = L"User Full Name";
 			// 
@@ -679,7 +683,7 @@ namespace culturalink_main {
 			this->lblUsername->ForeColor = System::Drawing::Color::Silver;
 			this->lblUsername->Location = System::Drawing::Point(91, 38);
 			this->lblUsername->Name = L"lblUsername";
-			this->lblUsername->Size = System::Drawing::Size(82, 19);
+			this->lblUsername->Size = System::Drawing::Size(66, 13);
 			this->lblUsername->TabIndex = 1;
 			this->lblUsername->Text = L"@username";
 			// 
@@ -699,6 +703,7 @@ namespace culturalink_main {
 			// 
 			this->pnlMainTop->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(249)), static_cast<System::Int32>(static_cast<System::Byte>(184)),
 				static_cast<System::Int32>(static_cast<System::Byte>(23)));
+			this->pnlMainTop->Controls->Add(this->button7);
 			this->pnlMainTop->Controls->Add(this->pictureBox7);
 			this->pnlMainTop->Controls->Add(this->textBox1);
 			this->pnlMainTop->Controls->Add(this->lblTitlePage);
@@ -707,6 +712,16 @@ namespace culturalink_main {
 			this->pnlMainTop->Name = L"pnlMainTop";
 			this->pnlMainTop->Size = System::Drawing::Size(1127, 111);
 			this->pnlMainTop->TabIndex = 3;
+			// 
+			// button7
+			// 
+			this->button7->Location = System::Drawing::Point(640, 51);
+			this->button7->Name = L"button7";
+			this->button7->Size = System::Drawing::Size(75, 23);
+			this->button7->TabIndex = 3;
+			this->button7->Text = L"button7";
+			this->button7->UseVisualStyleBackColor = true;
+			this->button7->Click += gcnew System::EventHandler(this, &ProvesUI::button7_Click);
 			// 
 			// pictureBox7
 			// 
@@ -718,6 +733,7 @@ namespace culturalink_main {
 			this->pictureBox7->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox7->TabIndex = 2;
 			this->pictureBox7->TabStop = false;
+			this->pictureBox7->Click += gcnew System::EventHandler(this, &ProvesUI::pictureBox7_Click);
 			// 
 			// textBox1
 			// 
@@ -725,6 +741,7 @@ namespace culturalink_main {
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(385, 20);
 			this->textBox1->TabIndex = 1;
+			this->textBox1->TextChanged += gcnew System::EventHandler(this, &ProvesUI::textBox1_TextChanged);
 			// 
 			// lblTitlePage
 			// 
@@ -733,7 +750,7 @@ namespace culturalink_main {
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->lblTitlePage->Location = System::Drawing::Point(16, 35);
 			this->lblTitlePage->Name = L"lblTitlePage";
-			this->lblTitlePage->Size = System::Drawing::Size(220, 50);
+			this->lblTitlePage->Size = System::Drawing::Size(172, 40);
 			this->lblTitlePage->TabIndex = 0;
 			this->lblTitlePage->Text = L"HOMEPAGE";
 			// 
@@ -825,9 +842,9 @@ namespace culturalink_main {
 			this->lblNameEsdev->Dock = System::Windows::Forms::DockStyle::Bottom;
 			this->lblNameEsdev->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblNameEsdev->Location = System::Drawing::Point(0, 185);
+			this->lblNameEsdev->Location = System::Drawing::Point(0, 191);
 			this->lblNameEsdev->Name = L"lblNameEsdev";
-			this->lblNameEsdev->Size = System::Drawing::Size(70, 23);
+			this->lblNameEsdev->Size = System::Drawing::Size(54, 17);
 			this->lblNameEsdev->TabIndex = 1;
 			this->lblNameEsdev->Text = L"( Nom )";
 			this->lblNameEsdev->Click += gcnew System::EventHandler(this, &ProvesUI::label6_Click);
@@ -1289,6 +1306,17 @@ private: Void addFiltrButtonToUI(String^ tipus)
 	btnFiltrType->Click += gcnew System::EventHandler(this, &ProvesUI::btnFiltrGala_Click);
 
 	this->flowLayoutPanel2->Controls->Add(btnFiltrType);
+}
+private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void pictureBox7_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
+	String^ esdev = this->textBox1->Text;
+
+	ModificaEsdevenimentUI^ formModEsdev = gcnew ModificaEsdevenimentUI;
+	formModEsdev->ShowDialog();
+
 }
 };
 

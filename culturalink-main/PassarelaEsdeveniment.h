@@ -18,7 +18,7 @@ public:
     PassarelaEsdeveniment(String^ nomEsdev, float preu);
     PassarelaEsdeveniment();
     void insereix();
-    void modifica();
+    void modifica(String^ ESDEV);
     PassarelaEsdeveniment% operator=(const PassarelaEsdeveniment% other);
     PassarelaEsdeveniment(const PassarelaEsdeveniment% p1);
     int getIdEnt();

@@ -1,16 +1,14 @@
 #include "pch.h"
 #include "CtrlModificaEsdeveniment.h"
 
-
 CtrlModificaEsdeveniment::CtrlModificaEsdeveniment() {
-
 
 }
 
-//CtrlModificaEsdeveniment::CtrlModificaEsdeveniment(const CtrlModificaEsdeveniment& C) {
-//
-//	esdev = C.esdev;
-//}
+CtrlModificaEsdeveniment::CtrlModificaEsdeveniment(const CtrlModificaEsdeveniment^& C) 
+{
+	_esdev = C->_esdev;
+}
 
 List<String^>^ CtrlModificaEsdeveniment::consultaEsdeveniment(String^ esdeveniment) {
 
@@ -26,15 +24,24 @@ List<String^>^ CtrlModificaEsdeveniment::consultaEsdeveniment(String^ esdevenime
 
 }
 
-void CtrlModificaEsdeveniment::modificaEsdeveniment(float preu, String^ descr, String^ nom, String^ tipus, int aforament, int puntsCost, String^ data, int puntsDesc) {
+void CtrlModificaEsdeveniment::modificaEsdeveniment(String^ ESDEV, float preu, String^ descr, String^ tipus, int aforament, int puntsCost, String^ data, int puntsDesc) {
 
-	if (preu != NULL) esdev.posaPreu(preu);
-	if (descr != "") esdev.posaDescripcio(descr);
-	if (nom != "") esdev.posaNom(nom);
-	if (tipus != "") esdev.posaTipus(tipus);
-	if (aforament != NULL) esdev.posaAforament(aforament);
-	if (puntsCost != NULL) esdev.posaPuntsCost(puntsCost);
-	if (data != "") esdev.posaData(data);
-	if (puntsDesc != NULL) esdev.posaPuntsDesc(puntsDesc);
-    esdev.modifica();
+	CercadoraEsdeveniment^ cercEsdev;
+
+	_esdev = cercEsdev->cercaEsdeveniment(ESDEV);
+
+	if (preu != NULL) _esdev.posaPreu(preu);
+	if (descr != "") _esdev.posaDescripcio(descr);
+	//if (nom != "") _esdev.posaNom(nom);
+	if (tipus != "") _esdev.posaTipus(tipus);
+	if (aforament != NULL) _esdev.posaAforament(aforament);
+	if (puntsCost != NULL) _esdev.posaPuntsCost(puntsCost);
+	if (data != "") _esdev.posaData(data);
+	if (puntsDesc != NULL) _esdev.posaPuntsDesc(puntsDesc);
+
+    _esdev.modifica(ESDEV);
 }
+
+/*
+	
+*/

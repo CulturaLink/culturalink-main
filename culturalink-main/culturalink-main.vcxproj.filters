@@ -137,6 +137,9 @@
     <ClInclude Include="CtrlModificaEsdeveniment.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ModificaEsdevenimentUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -254,6 +257,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CtrlModificaEsdeveniment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModificaEsdevenimentUI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
