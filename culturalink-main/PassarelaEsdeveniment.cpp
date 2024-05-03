@@ -110,6 +110,27 @@ void PassarelaEsdeveniment::insereix() {
     }
 }
 
+void PassarelaEsdeveniment::esborra(int idEsd) {
+    String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username=amep14; password='Yee7zaeheih9-'; database=amep14;";
+    MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
+    String^ sql = "DELETE FROM amep14.esdeveniment WHERE id_esdeveniment = " + idEsd + ";";
+
+    MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
+
+    try {
+        conn->Open(); // Open the connection
+        cmd->ExecuteNonQuery(); // Execute the delete command
+        MessageBox::Show("Esdeveniment esborrat correctament."); // Show success message
+    }
+    catch (Exception^ ex) {
+        MessageBox::Show(ex->Message); // Show error message if something goes wrong
+    }
+    finally {
+        conn->Close(); // Close the connection regardless of the outcome
+    }
+}
+
+
 
     int PassarelaEsdeveniment::getIdEnt() {
         return _idEnt;
