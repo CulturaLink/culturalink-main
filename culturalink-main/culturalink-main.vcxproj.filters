@@ -140,6 +140,9 @@
     <ClInclude Include="TxConsultaTotsEsdevenimentsPerEntitat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ConsultarUsuariUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -260,6 +263,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TxConsultaTotsEsdevenimentsPerEntitat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsultarUsuariUI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

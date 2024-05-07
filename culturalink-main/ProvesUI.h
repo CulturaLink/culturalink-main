@@ -1,6 +1,7 @@
 #pragma once
 
 //Forms:
+#include "ConsultarUsuariUI.h"
 
 //Passareles:
 #include "PassarelaCiutada.h"
@@ -55,7 +56,6 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Panel^ pnlTopBarMinMaxClose;
 	private: bool isNavBarExpanded = true;
 	protected:
-
 
 	private: System::Windows::Forms::Button^ btnMinimize;
 	private: System::Windows::Forms::Button^ btnMaximize;
@@ -135,21 +135,16 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Label^ lblConsultEsdevDesc;
 	private: System::Windows::Forms::Label^ lblEsdevConsultPreu;
 	private: System::Windows::Forms::Label^ lblEsdevConsultNom;
-private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel1;
-private: System::Windows::Forms::Label^ lblConsultEsdevTipus;
-private: System::Windows::Forms::Label^ lblConsultEsdevPreuDesc;
-private: System::Windows::Forms::Label^ lblConsultEsdevData;
-private: System::Windows::Forms::Label^ lblConsultEsdevPuntsCost;
-private: System::Windows::Forms::Label^ lblConsultEsdevAfor;
-private: System::Windows::Forms::Label^ lblConsultEsdevAjunt;
-private: System::Windows::Forms::Button^ btnConsEsdevGoBack;
-private: System::Windows::Forms::Button^ btnConsEsdevComprar;
-private: System::Windows::Forms::Panel^ panel9;
-
-
-
-
-
+	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel1;
+	private: System::Windows::Forms::Label^ lblConsultEsdevTipus;
+	private: System::Windows::Forms::Label^ lblConsultEsdevPreuDesc;
+	private: System::Windows::Forms::Label^ lblConsultEsdevData;
+	private: System::Windows::Forms::Label^ lblConsultEsdevPuntsCost;
+	private: System::Windows::Forms::Label^ lblConsultEsdevAfor;
+	private: System::Windows::Forms::Label^ lblConsultEsdevAjunt;
+	private: System::Windows::Forms::Button^ btnConsEsdevGoBack;
+	private: System::Windows::Forms::Button^ btnConsEsdevComprar;
+	private: System::Windows::Forms::Panel^ panel9;
 
 	protected:
 
@@ -215,6 +210,11 @@ private: System::Windows::Forms::Panel^ panel9;
 			this->pictureBox7 = (gcnew System::Windows::Forms::PictureBox());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->lblTitlePage = (gcnew System::Windows::Forms::Label());
+			this->flowLayoutPanel1 = (gcnew System::Windows::Forms::FlowLayoutPanel());
+			this->pnlEsdevPauta = (gcnew System::Windows::Forms::Panel());
+			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->lblNameEsdev = (gcnew System::Windows::Forms::Label());
+			this->pictureBox6 = (gcnew System::Windows::Forms::PictureBox());
 			this->pnlMain = (gcnew System::Windows::Forms::Panel());
 			this->PANELPROVA = (gcnew System::Windows::Forms::Panel());
 			this->btnConsEsdevComprar = (gcnew System::Windows::Forms::Button());
@@ -230,11 +230,6 @@ private: System::Windows::Forms::Panel^ panel9;
 			this->lblConsultEsdevPuntsCost = (gcnew System::Windows::Forms::Label());
 			this->lblConsultEsdevAjunt = (gcnew System::Windows::Forms::Label());
 			this->lblConsultEsdevAfor = (gcnew System::Windows::Forms::Label());
-			this->flowLayoutPanel1 = (gcnew System::Windows::Forms::FlowLayoutPanel());
-			this->pnlEsdevPauta = (gcnew System::Windows::Forms::Panel());
-			this->button6 = (gcnew System::Windows::Forms::Button());
-			this->lblNameEsdev = (gcnew System::Windows::Forms::Label());
-			this->pictureBox6 = (gcnew System::Windows::Forms::PictureBox());
 			this->pnlInfoUsu = (gcnew System::Windows::Forms::Panel());
 			this->panel8 = (gcnew System::Windows::Forms::Panel());
 			this->button8 = (gcnew System::Windows::Forms::Button());
@@ -265,13 +260,12 @@ private: System::Windows::Forms::Panel^ panel9;
 			this->pnlMainTop->SuspendLayout();
 			this->flowLayoutPanel2->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox7))->BeginInit();
-			this->pnlMain->SuspendLayout();
-			this->PANELPROVA->SuspendLayout();
-			this->tableLayoutPanel1->SuspendLayout();
 			this->flowLayoutPanel1->SuspendLayout();
 			this->pnlEsdevPauta->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox6))->BeginInit();
-			this->pnlInfoUsu->SuspendLayout();
+			this->pnlMain->SuspendLayout();
+			this->PANELPROVA->SuspendLayout();
+			this->tableLayoutPanel1->SuspendLayout();
 			this->panel8->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->BeginInit();
 			this->pnlMainModEsdv->SuspendLayout();
@@ -906,7 +900,6 @@ private: System::Windows::Forms::Panel^ panel9;
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(385, 20);
 			this->textBox1->TabIndex = 1;
-			this->textBox1->TextChanged += gcnew System::EventHandler(this, &ProvesUI::textBox1_TextChanged);
 			// 
 			// lblTitlePage
 			// 
@@ -919,9 +912,65 @@ private: System::Windows::Forms::Panel^ panel9;
 			this->lblTitlePage->TabIndex = 0;
 			this->lblTitlePage->Text = L"HOMEPAGE";
 			// 
+			// flowLayoutPanel1
+			// 
+			this->flowLayoutPanel1->Controls->Add(this->pnlEsdevPauta);
+			this->flowLayoutPanel1->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->flowLayoutPanel1->Location = System::Drawing::Point(0, 0);
+			this->flowLayoutPanel1->Name = L"flowLayoutPanel1";
+			this->flowLayoutPanel1->Padding = System::Windows::Forms::Padding(22, 0, 0, 0);
+			this->flowLayoutPanel1->Size = System::Drawing::Size(1127, 443);
+			this->flowLayoutPanel1->TabIndex = 3;
+			this->flowLayoutPanel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &ProvesUI::flowLayoutPanel1_Paint);
+			// 
+			// pnlEsdevPauta
+			// 
+			this->pnlEsdevPauta->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->pnlEsdevPauta->Controls->Add(this->button6);
+			this->pnlEsdevPauta->Controls->Add(this->lblNameEsdev);
+			this->pnlEsdevPauta->Controls->Add(this->pictureBox6);
+			this->pnlEsdevPauta->Location = System::Drawing::Point(25, 3);
+			this->pnlEsdevPauta->Name = L"pnlEsdevPauta";
+			this->pnlEsdevPauta->Size = System::Drawing::Size(165, 210);
+			this->pnlEsdevPauta->TabIndex = 2;
+			this->pnlEsdevPauta->Visible = false;
+			// 
+			// button6
+			// 
+			this->button6->Location = System::Drawing::Point(88, 182);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(75, 23);
+			this->button6->TabIndex = 2;
+			this->button6->Text = L"Comprar";
+			this->button6->UseVisualStyleBackColor = true;
+			// 
+			// lblNameEsdev
+			// 
+			this->lblNameEsdev->AutoSize = true;
+			this->lblNameEsdev->Dock = System::Windows::Forms::DockStyle::Bottom;
+			this->lblNameEsdev->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->lblNameEsdev->Location = System::Drawing::Point(0, 191);
+			this->lblNameEsdev->Name = L"lblNameEsdev";
+			this->lblNameEsdev->Size = System::Drawing::Size(54, 17);
+			this->lblNameEsdev->TabIndex = 1;
+			this->lblNameEsdev->Text = L"( Nom )";
+			this->lblNameEsdev->Click += gcnew System::EventHandler(this, &ProvesUI::label6_Click);
+			// 
+			// pictureBox6
+			// 
+			this->pictureBox6->Dock = System::Windows::Forms::DockStyle::Top;
+			this->pictureBox6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox6.Image")));
+			this->pictureBox6->Location = System::Drawing::Point(0, 0);
+			this->pictureBox6->Name = L"pictureBox6";
+			this->pictureBox6->Size = System::Drawing::Size(163, 165);
+			this->pictureBox6->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox6->TabIndex = 3;
+			this->pictureBox6->TabStop = false;
+			// 
 			// pnlMain
 			// 
-			this->pnlMain->Controls->Add(this->PANELPROVA);
+			this->pnlMain->Controls->Add(this->flowLayoutPanel1);
 			this->pnlMain->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->pnlMain->Location = System::Drawing::Point(207, 211);
 			this->pnlMain->Margin = System::Windows::Forms::Padding(2);
@@ -935,11 +984,10 @@ private: System::Windows::Forms::Panel^ panel9;
 			this->PANELPROVA->Controls->Add(this->btnConsEsdevComprar);
 			this->PANELPROVA->Controls->Add(this->btnConsEsdevGoBack);
 			this->PANELPROVA->Controls->Add(this->tableLayoutPanel1);
-			this->PANELPROVA->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->PANELPROVA->Location = System::Drawing::Point(0, 0);
+			this->PANELPROVA->Location = System::Drawing::Point(890, 2);
 			this->PANELPROVA->Margin = System::Windows::Forms::Padding(2);
 			this->PANELPROVA->Name = L"PANELPROVA";
-			this->PANELPROVA->Size = System::Drawing::Size(1127, 443);
+			this->PANELPROVA->Size = System::Drawing::Size(237, 443);
 			this->PANELPROVA->TabIndex = 3;
 			this->PANELPROVA->Visible = false;
 			// 
@@ -1100,66 +1148,9 @@ private: System::Windows::Forms::Panel^ panel9;
 			this->lblConsultEsdevAfor->TabIndex = 5;
 			this->lblConsultEsdevAfor->Text = L"(Aforament)";
 			// 
-			// flowLayoutPanel1
-			// 
-			this->flowLayoutPanel1->BackColor = System::Drawing::Color::White;
-			this->flowLayoutPanel1->Controls->Add(this->pnlEsdevPauta);
-			this->flowLayoutPanel1->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->flowLayoutPanel1->Location = System::Drawing::Point(0, 0);
-			this->flowLayoutPanel1->Name = L"flowLayoutPanel1";
-			this->flowLayoutPanel1->Padding = System::Windows::Forms::Padding(22, 0, 0, 0);
-			this->flowLayoutPanel1->Size = System::Drawing::Size(1127, 443);
-			this->flowLayoutPanel1->TabIndex = 3;
-			this->flowLayoutPanel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &ProvesUI::flowLayoutPanel1_Paint);
-			// 
-			// pnlEsdevPauta
-			// 
-			this->pnlEsdevPauta->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->pnlEsdevPauta->Controls->Add(this->button6);
-			this->pnlEsdevPauta->Controls->Add(this->lblNameEsdev);
-			this->pnlEsdevPauta->Controls->Add(this->pictureBox6);
-			this->pnlEsdevPauta->Location = System::Drawing::Point(25, 3);
-			this->pnlEsdevPauta->Name = L"pnlEsdevPauta";
-			this->pnlEsdevPauta->Size = System::Drawing::Size(165, 210);
-			this->pnlEsdevPauta->TabIndex = 2;
-			this->pnlEsdevPauta->Visible = false;
-			// 
-			// button6
-			// 
-			this->button6->Location = System::Drawing::Point(88, 182);
-			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(75, 23);
-			this->button6->TabIndex = 2;
-			this->button6->Text = L"Comprar";
-			this->button6->UseVisualStyleBackColor = true;
-			// 
-			// lblNameEsdev
-			// 
-			this->lblNameEsdev->AutoSize = true;
-			this->lblNameEsdev->Dock = System::Windows::Forms::DockStyle::Bottom;
-			this->lblNameEsdev->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->lblNameEsdev->Location = System::Drawing::Point(0, 191);
-			this->lblNameEsdev->Name = L"lblNameEsdev";
-			this->lblNameEsdev->Size = System::Drawing::Size(54, 17);
-			this->lblNameEsdev->TabIndex = 1;
-			this->lblNameEsdev->Text = L"( Nom )";
-			this->lblNameEsdev->Click += gcnew System::EventHandler(this, &ProvesUI::label6_Click);
-			// 
-			// pictureBox6
-			// 
-			this->pictureBox6->Dock = System::Windows::Forms::DockStyle::Top;
-			this->pictureBox6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox6.Image")));
-			this->pictureBox6->Location = System::Drawing::Point(0, 0);
-			this->pictureBox6->Name = L"pictureBox6";
-			this->pictureBox6->Size = System::Drawing::Size(163, 165);
-			this->pictureBox6->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox6->TabIndex = 3;
-			this->pictureBox6->TabStop = false;
-			// 
 			// pnlInfoUsu
 			// 
-			this->pnlInfoUsu->Controls->Add(this->flowLayoutPanel1);
+			this->pnlInfoUsu->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->pnlInfoUsu->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->pnlInfoUsu->Location = System::Drawing::Point(207, 211);
 			this->pnlInfoUsu->Margin = System::Windows::Forms::Padding(2);
@@ -1299,15 +1290,14 @@ private: System::Windows::Forms::Panel^ panel9;
 			this->pnlMainTop->PerformLayout();
 			this->flowLayoutPanel2->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox7))->EndInit();
-			this->pnlMain->ResumeLayout(false);
-			this->PANELPROVA->ResumeLayout(false);
-			this->tableLayoutPanel1->ResumeLayout(false);
-			this->tableLayoutPanel1->PerformLayout();
 			this->flowLayoutPanel1->ResumeLayout(false);
 			this->pnlEsdevPauta->ResumeLayout(false);
 			this->pnlEsdevPauta->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox6))->EndInit();
-			this->pnlInfoUsu->ResumeLayout(false);
+			this->pnlMain->ResumeLayout(false);
+			this->PANELPROVA->ResumeLayout(false);
+			this->tableLayoutPanel1->ResumeLayout(false);
+			this->tableLayoutPanel1->PerformLayout();
 			this->panel8->ResumeLayout(false);
 			this->panel8->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->EndInit();
@@ -1316,185 +1306,10 @@ private: System::Windows::Forms::Panel^ panel9;
 			this->ResumeLayout(false);
 
 		}
+// ------------------------------------FI DECLARACIÓ OBJECTES UI-------------------------------------------------
+
 #pragma endregion
-	private: System::Void ProvesUI_Load(System::Object^ sender, System::EventArgs^ e) {
 
-		this->pnlMainModEsdv->Visible = false;
-
-		int y = Screen::PrimaryScreen->Bounds.Height / 2;
-		this->btnViewNavBar->Location = System::Drawing::Point(210, y);
-
-		UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
-		PassarelaCiutada^ passCiu;
-		PassarelaEntitat^ passEnt;
-		PassarelaAjuntament^ passAj;
-
-		String^ fullName;
-		String^ fl;
-		String^ rl;
-		String^ userName;
-
-		TxConsultaTotsEsdeveniments txConsTotsEsdevs;
-		int num_filtre_panel = 0;
-		List<String^>^ totsEsdevs;
-
-		TxConsultaTotsEsdevenimentsPerEntitat txConsTotsEsdevsEnt;
-		int num_filtre_panel2 = 0;
-		List<String^>^ totsEsdevsEnt;
-
-		switch (usuario->getTipoPassarela())
-		{
-			case TipoPassarela::Ciutada:
-				this->lblTypeUser->Text = L"Ciutadà";
-				this->lblTypeUser->BackColor = System::Drawing::Color::FromArgb(
-					static_cast<System::Int32>(static_cast<System::Byte>(0)),
-					static_cast<System::Int32>(static_cast<System::Byte>(192)),
-					static_cast<System::Int32>(static_cast<System::Byte>(0)));
-
-				passCiu = safe_cast<PassarelaCiutada^>(usuario->getUsuari());
-
-				fullName = passCiu->getNomComplet();
-				userName = passCiu->getNickname();
-
-				fl = fullName->Substring(0, 1)->ToUpper();
-				rl = fullName->Substring(1)->ToLower();
-
-				fullName = fl + rl;
-
-				lblFullNameUser->Text = L"" + fullName;
-				lblUsername->Text = L"" + "@" + userName;
-
-				flowLayoutPanel1->Visible = true;
-
-				this->flowLayoutPanel1->Controls->Clear();
-
-				txConsTotsEsdevs.executar();
-
-				totsEsdevs = txConsTotsEsdevs.getResult();
-
-				List<System::Windows::Forms::Panel^>^ list_esdevs;
-
-				num_filtre_panel = totsEsdevs->Count;
-
-
-				for (int i = 0; i < num_filtre_panel; i += 2) {
-					String^ nom = totsEsdevs[i];
-					String^ preu = totsEsdevs[i + 1];
-					Esdeveniment^ esdev = gcnew Esdeveniment(nom, preu);
-					addEsdevToUI(esdev);
-				}
-
-				this->flowLayoutPanel1->Visible = true;
-
-			break;
-			case TipoPassarela::Entitat:
-				this->lblTypeUser->Text = L"Entitat";
-				this->lblTypeUser->BackColor = System::Drawing::Color::FromArgb(
-					static_cast<System::Int32>(static_cast<System::Byte>(246)), 
-					static_cast<System::Int32>(static_cast<System::Byte>(210)),
-					static_cast<System::Int32>(static_cast<System::Byte>(60)));
-
-				passEnt = safe_cast<PassarelaEntitat^>(usuario->getUsuari());
-
-				fullName = passEnt->obteNom();
-				userName = passEnt->obteid()->ToString();
-
-				fl = fullName->Substring(0, 1)->ToUpper();
-				rl = fullName->Substring(1)->ToLower();
-
-				fullName = fl + rl;
-
-				lblFullNameUser->Text = L"" + fullName;
-				lblUsername->Text = L"" + userName;
-
-				//Visibilitat Opcions NavBar:
-				//panel1->Visible = false;
-				panel2->Visible = false;
-				panel3->Visible = false;
-				panel4->Visible = false;
-				panel5->Visible = false;
-				panel6->Visible = false;
-				//panel7->Visible = false;
-
-				this->pnlModEsdev->Visible = true;
-
-				flowLayoutPanel1->Visible = false;
-				flowLayoutPanel2->Visible = false;
-
-				this->pnlMainTop->Size = System::Drawing::Size(1503, 112);;
-
-				// Entitat:
-				txConsTotsEsdevsEnt.executar(userName);
-				totsEsdevsEnt = txConsTotsEsdevsEnt.getResult();
-				num_filtre_panel2 = totsEsdevsEnt->Count;
-				for (int i = 0; i < num_filtre_panel2; i += 2) {
-					String^ nom = totsEsdevsEnt[i];
-					String^ preu = totsEsdevsEnt[i + 1];
-					Esdeveniment^ esdev = gcnew Esdeveniment(nom, preu);
-					addEsdevToUI_Mod(esdev);
-				}
-
-				this->pnlMainModEsdv->Visible = true;
-
-			break;
-			case TipoPassarela::Ajuntament:
-				this->lblTypeUser->Text = L"Ajuntament";
-				this->lblTypeUser->BackColor = System::Drawing::Color::FromArgb(
-					static_cast<System::Int32>(static_cast<System::Byte>(49)),
-					static_cast<System::Int32>(static_cast<System::Byte>(168)),
-					static_cast<System::Int32>(static_cast<System::Byte>(255)));
-
-				passAj = safe_cast<PassarelaAjuntament^>(usuario->getUsuari());
-
-				fullName = passAj->getNom();
-				userName = passAj->getClau();
-
-				fl = fullName->Substring(0, 1)->ToUpper();
-				rl = fullName->Substring(1)->ToLower();
-
-				fullName = fl + rl;
-
-				lblFullNameUser->Text = L"" + fullName;
-				lblUsername->Text = L"" + userName;
-
-				//Visibilitat Opcions NavBar:
-				//panel1->Visible = false;
-				panel2->Visible = false;
-				panel3->Visible = false;
-				panel4->Visible = false;
-				panel5->Visible = false;
-				panel6->Visible = false;
-				//panel7->Visible = false;
-
-				flowLayoutPanel1->Visible = false;
-			break;
-		}
-
-		List<String^>^ tipus = gcnew List<String^>();
-
-		tipus->Add("Gastronómico");
-		tipus->Add("Artístico");
-		tipus->Add("Deportivo");
-		tipus->Add("Educativo");
-		tipus->Add("Tecnológico");
-		tipus->Add("Carnaval");
-		tipus->Add("Musical");
-		tipus->Add("Cinematográfico");
-		tipus->Add("Taller");
-		tipus->Add("Exposición");
-		tipus->Add("Concierto");
-		tipus->Add("Festival");
-		tipus->Add("Competición");
-		tipus->Add("Torneo");
-		tipus->Add("Ceremonia");
-		tipus->Add("Gala");
-
-		int num_filtre_btn = tipus->Count;
-
-		for (int i = 0; i < num_filtre_btn; ++i) {
-			addFiltrButtonToUI(tipus[i]);
-		}
-	}
 	private: System::Void btnClose_Click(System::Object^ sender, System::EventArgs^ e) {
 		Close();
 	}
@@ -1559,34 +1374,7 @@ private: System::Windows::Forms::Panel^ panel9;
 		}
 		isNavBarExpanded = !isNavBarExpanded;
 	}
-private: System::Void picBoxUserPic_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->lblTitlePage->Text = "PROFILE";
-	this->flowLayoutPanel1->Visible = false;
-	this->flowLayoutPanel2->Visible = false;
-	this->pnlMainTop->Size = System::Drawing::Size(1127, 111);
 
-	this->pnlMain->Visible = false;
-	this->pnlInfoUsu->Visible = true;
-
-	UsuariIniciat^ usuari = UsuariIniciat::ObtenerInstancia();
-	Object^ usuariIniciat = usuari->getUsuari();
-	TipoPassarela tipusUsuari = usuari->getTipoPassarela();
-
-	// Verificar si el tipo de passarela es Ciutada
-	if (tipusUsuari == TipoPassarela::Ciutada) {
-		// Convertir el objeto de passarela al tipo PassarelaCiutada^
-		PassarelaCiutada^ passarelaCiutada = safe_cast<PassarelaCiutada^>(usuariIniciat);
-
-		// Utilizar los métodos y propiedades específicos de PassarelaCiutada
-		/*lNick->Text = passarelaCiutada->getNickname();
-		lNom->Text = passarelaCiutada->getNomComplet();
-		lCorreu->Text = passarelaCiutada->getCorreu();
-		lData->Text = passarelaCiutada->getDataNaix();
-		lSaldo->Text = passarelaCiutada->getDiners()->ToString();
-		lPunts->Text = passarelaCiutada->getPunts()->ToString();*/
-	}
-
-}
 private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^ e) {
 	this->lblTitlePage->Text = "HOMEPAGE";
 
@@ -1597,7 +1385,7 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 	this->pnlMain->Visible = true;
 	this->pnlInfoUsu->Visible = false;
 
-	this->pnlMain->Visible = true;
+	//this->pnlMain->Visible = true;
 	this->flowLayoutPanel1->Controls->Clear();
 
 	TxConsultaTotsEsdeveniments txConsTotsEsdevs;
@@ -1705,48 +1493,6 @@ private: Void addEsdevToUI(Esdeveniment^ esdev)
 	
 	this->flowLayoutPanel1->Controls->Add(pnlEsdev);
 }
-
-private: Void addEsdevToUI_Mod(Esdeveniment^ esdev)
-{
-	System::Windows::Forms::Panel^ pnlEsdev = gcnew Panel;
-	pnlEsdev->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-	pnlEsdev->Location = System::Drawing::Point(0, 0);
-	pnlEsdev->Name = String::Format("pnlEsdev{0}", esdev->getNom());
-	pnlEsdev->Size = System::Drawing::Size(165, 235);
-	pnlEsdev->TabIndex = 2;
-	pnlEsdev->Visible = true;
-
-	System::Windows::Forms::Label^ lblEsdev = gcnew Label;
-	lblEsdev->Name = String::Format("lblEsdev{0}", esdev->getNom());
-	lblEsdev->Text = esdev->getNom();
-	lblEsdev->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 14.0F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-		static_cast<System::Byte>(0)));
-	lblEsdev->Location = System::Drawing::Point(59, 168);
-	lblEsdev->Dock = System::Windows::Forms::DockStyle::Bottom;
-
-	System::Windows::Forms::Label^ lblEsdevPreu = gcnew Label;
-	lblEsdevPreu->Name = String::Format("lblEsdevPreu{0}", esdev->getPreu());
-	//lblEsdevPreu->Text = esdev->getPreu() + " €";
-	lblEsdevPreu->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 9.5F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-		static_cast<System::Byte>(0)));
-	lblEsdevPreu->Location = System::Drawing::Point(59, 168);
-	lblEsdevPreu->Dock = System::Windows::Forms::DockStyle::Bottom;
-
-	System::Windows::Forms::Button^ btnComprar = gcnew Button;
-	btnComprar->Name = "btnComprar{0}";
-	btnComprar->Text = "Modificar";
-	btnComprar->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 9.5F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-		static_cast<System::Byte>(0)));
-	btnComprar->Dock = System::Windows::Forms::DockStyle::Bottom;
-
-	btnComprar->Click += gcnew System::EventHandler(this, &ProvesUI::btnComprar_Click);
-
-	pnlEsdev->Controls->Add(this->pictureBox6);
-	pnlEsdev->Controls->Add(lblEsdev);
-	pnlEsdev->Controls->Add(lblEsdevPreu);
-	pnlEsdev->Controls->Add(btnComprar);
-
-}
 private: System::Void btnConsultar_Click(System::Object^ sender, System::EventArgs^ e) {
 
 	this->flowLayoutPanel1->Visible = false;
@@ -1807,26 +1553,8 @@ private: System::Void btnFiltreDeportivo_Click(System::Object^ sender, System::E
 }
 private: System::Void flowLayoutPanel2_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 }
-private: Void addFiltrButtonToUI(String^ tipus)
-{
-	System::Windows::Forms::Button^ btnFiltrType = gcnew Button;
-	btnFiltrType->BackColor = System::Drawing::Color::Crimson;
-	btnFiltrType->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-	btnFiltrType->Name = String::Format("btnFiltr{0}", tipus);
-	btnFiltrType->Text = tipus;
-	btnFiltrType->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-		static_cast<System::Byte>(0)));
-	btnFiltrType->ForeColor = System::Drawing::Color::White;
-	btnFiltrType->Size = System::Drawing::Size(75, 23);
-	btnFiltrType->Click += gcnew System::EventHandler(this, &ProvesUI::btnFiltrGala_Click);
-
-	this->flowLayoutPanel2->Controls->Add(btnFiltrType);
-}
 private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->lblTitlePage->Text = "MODIFICAR ESDEVENIMENTS";
-}
-private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-	//String^ val = this->textBox1->Text;
 }
 private: System::Void button9_Click(System::Object^ sender, System::EventArgs^ e)  // btnSearch
 {
@@ -1857,6 +1585,8 @@ private: System::Void button10_Click(System::Object^ sender, System::EventArgs^ 
 	this->PANELPROVA->Visible = false;
 	this->PANELPROVA->Dock = System::Windows::Forms::DockStyle::Right;
 }
+
+// CIUTADÀ------------------------------------------------------------------------------
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->lblTitlePage->Text = "HOMEPAGE";
 	this->flowLayoutPanel1->Controls->Clear();
@@ -1886,13 +1616,266 @@ private: System::Void pictureBox3_Click(System::Object^ sender, System::EventArg
 private: System::Void pictureBox4_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->lblTitlePage->Text = "SETTINGS";
 }
+private: Void addEsdevToUI_Mod(Esdeveniment^ esdev)
+{
+	System::Windows::Forms::Panel^ pnlEsdev = gcnew Panel;
+	pnlEsdev->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+	pnlEsdev->Location = System::Drawing::Point(0, 0);
+	pnlEsdev->Name = String::Format("pnlEsdev{0}", esdev->getNom());
+	pnlEsdev->Size = System::Drawing::Size(165, 235);
+	pnlEsdev->TabIndex = 2;
+	pnlEsdev->Visible = true;
+
+	System::Windows::Forms::Label^ lblEsdev = gcnew Label;
+	lblEsdev->Name = String::Format("lblEsdev{0}", esdev->getNom());
+	lblEsdev->Text = esdev->getNom();
+	lblEsdev->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 14.0F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+		static_cast<System::Byte>(0)));
+	lblEsdev->Location = System::Drawing::Point(59, 168);
+	lblEsdev->Dock = System::Windows::Forms::DockStyle::Bottom;
+
+	System::Windows::Forms::Label^ lblEsdevPreu = gcnew Label;
+	lblEsdevPreu->Name = String::Format("lblEsdevPreu{0}", esdev->getPreu());
+	//lblEsdevPreu->Text = esdev->getPreu() + " €";
+	lblEsdevPreu->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 9.5F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+		static_cast<System::Byte>(0)));
+	lblEsdevPreu->Location = System::Drawing::Point(59, 168);
+	lblEsdevPreu->Dock = System::Windows::Forms::DockStyle::Bottom;
+
+	System::Windows::Forms::Button^ btnComprar = gcnew Button;
+	btnComprar->Name = "btnComprar{0}";
+	btnComprar->Text = "Modificar";
+	btnComprar->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 9.5F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+		static_cast<System::Byte>(0)));
+	btnComprar->Dock = System::Windows::Forms::DockStyle::Bottom;
+
+	btnComprar->Click += gcnew System::EventHandler(this, &ProvesUI::btnComprar_Click);
+
+	pnlEsdev->Controls->Add(this->pictureBox6);
+	pnlEsdev->Controls->Add(lblEsdev);
+	pnlEsdev->Controls->Add(lblEsdevPreu);
+	pnlEsdev->Controls->Add(btnComprar);
+
+}
+private: Void addFiltrButtonToUI(String^ tipus)
+{
+	System::Windows::Forms::Button^ btnFiltrType = gcnew Button;
+	btnFiltrType->BackColor = System::Drawing::Color::Crimson;
+	btnFiltrType->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+	btnFiltrType->Name = String::Format("btnFiltr{0}", tipus);
+	btnFiltrType->Text = tipus;
+	btnFiltrType->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+		static_cast<System::Byte>(0)));
+	btnFiltrType->ForeColor = System::Drawing::Color::White;
+	btnFiltrType->Size = System::Drawing::Size(75, 23);
+	btnFiltrType->Click += gcnew System::EventHandler(this, &ProvesUI::btnFiltrGala_Click);
+
+	this->flowLayoutPanel2->Controls->Add(btnFiltrType);
+}
+// ENTITAT------------------------------------------------------------------------------
 private: System::Void pictureBox8_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->lblTitlePage->Text = "MODIFICAR ESDEVENIMENTS";
 }
+// AJUNTAMENT---------------------------------------------------------------------------
+
+
+
+// COMPARTIT----------------------------------------------------------------------------
 private: System::Void pictureBox5_Click(System::Object^ sender, System::EventArgs^ e) {
 	UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
 	usuario->logOut();
 	this->Close();
+}
+// Consultar Usuari (Ciutadà, Entitat, Ajuntament)
+private: System::Void picBoxUserPic_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->lblTitlePage->Text = "PROFILE";
+	this->flowLayoutPanel1->Visible = false;
+	this->flowLayoutPanel2->Visible = false;
+	this->pnlMainTop->Size = System::Drawing::Size(1127, 111);
+
+	this->pnlMain->Visible = false;
+	this->pnlInfoUsu->Visible = true;
+
+	ConsultarUsuariUI^ formConsultUsu = gcnew ConsultarUsuariUI;
+	formConsultUsu->ShowDialog();
+}
+private: System::Void ProvesUI_Load(System::Object^ sender, System::EventArgs^ e) {
+
+	this->pnlMainModEsdv->Visible = false;
+
+	int y = Screen::PrimaryScreen->Bounds.Height / 2;
+	this->btnViewNavBar->Location = System::Drawing::Point(210, y);
+
+	UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
+	PassarelaCiutada^ passCiu;
+	PassarelaEntitat^ passEnt;
+	PassarelaAjuntament^ passAj;
+
+	String^ fullName;
+	String^ fl;
+	String^ rl;
+	String^ userName;
+
+	TxConsultaTotsEsdeveniments txConsTotsEsdevs;
+	int num_filtre_panel = 0;
+	List<String^>^ totsEsdevs;
+
+	TxConsultaTotsEsdevenimentsPerEntitat txConsTotsEsdevsEnt;
+	int num_filtre_panel2 = 0;
+	List<String^>^ totsEsdevsEnt;
+
+	switch (usuario->getTipoPassarela())
+	{
+	case TipoPassarela::Ciutada:
+		this->lblTypeUser->Text = L"Ciutadà";
+		this->lblTypeUser->BackColor = System::Drawing::Color::FromArgb(
+			static_cast<System::Int32>(static_cast<System::Byte>(0)),
+			static_cast<System::Int32>(static_cast<System::Byte>(192)),
+			static_cast<System::Int32>(static_cast<System::Byte>(0)));
+
+		passCiu = safe_cast<PassarelaCiutada^>(usuario->getUsuari());
+
+		fullName = passCiu->getNomComplet();
+		userName = passCiu->getNickname();
+
+		fl = fullName->Substring(0, 1)->ToUpper();
+		rl = fullName->Substring(1)->ToLower();
+
+		fullName = fl + rl;
+
+		lblFullNameUser->Text = L"" + fullName;
+		lblUsername->Text = L"" + "@" + userName;
+
+		flowLayoutPanel1->Visible = true;
+
+		this->flowLayoutPanel1->Controls->Clear();
+
+		txConsTotsEsdevs.executar();
+
+		totsEsdevs = txConsTotsEsdevs.getResult();
+
+		List<System::Windows::Forms::Panel^>^ list_esdevs;
+
+		num_filtre_panel = totsEsdevs->Count;
+
+
+		for (int i = 0; i < num_filtre_panel; i += 2) {
+			String^ nom = totsEsdevs[i];
+			String^ preu = totsEsdevs[i + 1];
+			Esdeveniment^ esdev = gcnew Esdeveniment(nom, preu);
+			addEsdevToUI(esdev);
+		}
+
+		this->flowLayoutPanel1->Visible = true;
+
+		break;
+	case TipoPassarela::Entitat:
+		this->lblTypeUser->Text = L"Entitat";
+		this->lblTypeUser->BackColor = System::Drawing::Color::FromArgb(
+			static_cast<System::Int32>(static_cast<System::Byte>(246)),
+			static_cast<System::Int32>(static_cast<System::Byte>(210)),
+			static_cast<System::Int32>(static_cast<System::Byte>(60)));
+
+		passEnt = safe_cast<PassarelaEntitat^>(usuario->getUsuari());
+
+		fullName = passEnt->obteNom();
+		userName = passEnt->obteid()->ToString();
+
+		fl = fullName->Substring(0, 1)->ToUpper();
+		rl = fullName->Substring(1)->ToLower();
+
+		fullName = fl + rl;
+
+		lblFullNameUser->Text = L"" + fullName;
+		lblUsername->Text = L"" + userName;
+
+		//Visibilitat Opcions NavBar:
+		//panel1->Visible = false;
+		panel2->Visible = false;
+		panel3->Visible = false;
+		panel4->Visible = false;
+		panel5->Visible = false;
+		panel6->Visible = false;
+		//panel7->Visible = false;
+
+		this->pnlModEsdev->Visible = true;
+
+		flowLayoutPanel1->Visible = false;
+		flowLayoutPanel2->Visible = false;
+
+		this->pnlMainTop->Size = System::Drawing::Size(1503, 112);;
+
+		// Entitat:
+		txConsTotsEsdevsEnt.executar(userName);
+		totsEsdevsEnt = txConsTotsEsdevsEnt.getResult();
+		num_filtre_panel2 = totsEsdevsEnt->Count;
+		for (int i = 0; i < num_filtre_panel2; i += 2) {
+			String^ nom = totsEsdevsEnt[i];
+			String^ preu = totsEsdevsEnt[i + 1];
+			Esdeveniment^ esdev = gcnew Esdeveniment(nom, preu);
+			addEsdevToUI_Mod(esdev);
+		}
+
+		//this->pnlMainModEsdv->Visible = true;
+
+		break;
+	case TipoPassarela::Ajuntament:
+		this->lblTypeUser->Text = L"Ajuntament";
+		this->lblTypeUser->BackColor = System::Drawing::Color::FromArgb(
+			static_cast<System::Int32>(static_cast<System::Byte>(49)),
+			static_cast<System::Int32>(static_cast<System::Byte>(168)),
+			static_cast<System::Int32>(static_cast<System::Byte>(255)));
+
+		passAj = safe_cast<PassarelaAjuntament^>(usuario->getUsuari());
+
+		fullName = passAj->getNom();
+		userName = passAj->getClau();
+
+		fl = fullName->Substring(0, 1)->ToUpper();
+		rl = fullName->Substring(1)->ToLower();
+
+		fullName = fl + rl;
+
+		lblFullNameUser->Text = L"" + fullName;
+		lblUsername->Text = L"" + userName;
+
+		//Visibilitat Opcions NavBar:
+		//panel1->Visible = false;
+		panel2->Visible = false;
+		panel3->Visible = false;
+		panel4->Visible = false;
+		panel5->Visible = false;
+		panel6->Visible = false;
+		//panel7->Visible = false;
+
+		flowLayoutPanel1->Visible = false;
+		break;
+	}
+
+	List<String^>^ tipus = gcnew List<String^>();
+
+	tipus->Add("Gastronómico");
+	tipus->Add("Artístico");
+	tipus->Add("Deportivo");
+	tipus->Add("Educativo");
+	tipus->Add("Tecnológico");
+	tipus->Add("Carnaval");
+	tipus->Add("Musical");
+	tipus->Add("Cinematográfico");
+	tipus->Add("Taller");
+	tipus->Add("Exposición");
+	tipus->Add("Concierto");
+	tipus->Add("Festival");
+	tipus->Add("Competición");
+	tipus->Add("Torneo");
+	tipus->Add("Ceremonia");
+	tipus->Add("Gala");
+
+	int num_filtre_btn = tipus->Count;
+
+	for (int i = 0; i < num_filtre_btn; ++i) {
+		addFiltrButtonToUI(tipus[i]);
+	}
 }
 };
 

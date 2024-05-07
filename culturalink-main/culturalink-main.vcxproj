@@ -74,7 +74,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>..</OutDir>
+    <OutDir>.</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -140,6 +140,9 @@
     <ClInclude Include="ConsultaEsdevenimentUI.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="ConsultarUsuariUI.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="CtrlModificaEsdeveniment.h" />
     <ClInclude Include="Esdeveniment.h" />
     <ClInclude Include="InfoAjuntament.h">
@@ -202,6 +205,7 @@
     <ClCompile Include="CercadoraEntitat.cpp" />
     <ClCompile Include="CercadoraEsdeveniment.cpp" />
     <ClCompile Include="ConsultaEsdevenimentUI.cpp" />
+    <ClCompile Include="ConsultarUsuariUI.cpp" />
     <ClCompile Include="CtrlModificaEsdeveniment.cpp" />
     <ClCompile Include="culturalinkmain.cpp" />
     <ClCompile Include="Esdeveniment.cpp" />
@@ -257,6 +261,9 @@
   <ItemGroup>
     <EmbeddedResource Include="ConsultaEsdevenimentUI.resx">
       <DependentUpon>ConsultaEsdevenimentUI.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarUsuariUI.resx">
+      <DependentUpon>ConsultarUsuariUI.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InfoAjuntament.resx">
       <DependentUpon>InfoAjuntament.h</DependentUpon>

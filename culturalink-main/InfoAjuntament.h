@@ -132,6 +132,7 @@ namespace culturalink_main {
 			this->panelDesktop->Name = L"panelDesktop";
 			this->panelDesktop->Size = System::Drawing::Size(634, 392);
 			this->panelDesktop->TabIndex = 4;
+			this->panelDesktop->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &InfoAjuntament::panelDesktop_Paint);
 			// 
 			// Lcorreu
 			// 
@@ -400,6 +401,8 @@ private: System::Void InfoAjuntament_Load(System::Object^ sender, System::EventA
 }
 private: System::Void Bshow_Click(System::Object^ sender, System::EventArgs^ e) {
 	Lclau->Visible = !Lclau->Visible;
+}
+private: System::Void panelDesktop_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 }
 };
 }

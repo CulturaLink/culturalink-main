@@ -125,6 +125,7 @@ namespace culturalink_main {
 			this->panelDesktop->Name = L"panelDesktop";
 			this->panelDesktop->Size = System::Drawing::Size(634, 392);
 			this->panelDesktop->TabIndex = 4;
+			this->panelDesktop->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &InfoEntitat::panelDesktop_Paint);
 			// 
 			// Lclau
 			// 
@@ -368,6 +369,8 @@ namespace culturalink_main {
 			MessageBox::Show(mensajeError, "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 		}
 	}
+private: System::Void panelDesktop_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+}
 };
 }
 
