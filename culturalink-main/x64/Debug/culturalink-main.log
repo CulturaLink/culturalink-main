@@ -1,17 +1,10 @@
-﻿  PassarelaEntitat.cpp
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\PassarelaEntitat.cpp(9,15): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaEntitat.cpp')
+﻿  CercadoraEsdeveniment.cpp
+C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/CercadoraEsdeveniment.cpp")
   
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\PassarelaEntitat.cpp(10,18): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaEntitat.cpp')
+C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/CercadoraEsdeveniment.cpp")
   
-  TxEsborrarEntitat.cpp
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxEsborrarEntitat.cpp')
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxEsborrarEntitat.cpp')
-  
-  Generating Code...
-  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  culturalink-main.vcxproj -> C:\Users\Ferran\Documents\GitHub\culturalink-main\x64\Debug\culturalink-main.exe
+C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\CercadoraEsdeveniment.cpp(51): warning C4715: 'CercadoraEsdeveniment::cercaEsdeveniment': no todas las rutas de acceso de control devuelven un valor
+  AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+  culturalink-main.vcxproj -> C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink-main.exe

@@ -1,7 +1,10 @@
 #pragma once
 
 #include "TxConsultaEsdeveniment.h"
-
+#include "TxCompraEntradaEsdevenimentPunts.h"
+#include "TxCompraEntradaEsdevenimentDiners.h"
+#include "FormulariCompraEntrada.h"
+const string ErrorUsuari = "No hi ha cap usuari amb sessio iniciada";
 namespace culturalink_main {
 
 	using namespace System;
@@ -36,6 +39,7 @@ namespace culturalink_main {
 				delete components;
 			}
 		}
+
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Label^ label1;
@@ -61,7 +65,9 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Label^ label10;
 	private: System::Windows::Forms::Label^ label11;
 	private: System::Windows::Forms::Label^ label12;
-
+	private: System::Windows::Forms::Button^ Compra;
+	private: System::Windows::Forms::RadioButton^ radioButton1;
+	private: System::Windows::Forms::RadioButton^ radioButton2;
 	protected:
 
 	private:
@@ -96,6 +102,9 @@ namespace culturalink_main {
 			this->label10 = (gcnew System::Windows::Forms::Label());
 			this->label11 = (gcnew System::Windows::Forms::Label());
 			this->label12 = (gcnew System::Windows::Forms::Label());
+			this->Compra = (gcnew System::Windows::Forms::Button());
+			this->radioButton1 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton2 = (gcnew System::Windows::Forms::RadioButton());
 			this->SuspendLayout();
 			// 
 			// textBox1
@@ -162,6 +171,7 @@ namespace culturalink_main {
 			this->label5->Size = System::Drawing::Size(35, 13);
 			this->label5->TabIndex = 10;
 			this->label5->Text = L"label5";
+			this->label5->Visible = false;
 			this->label5->Click += gcnew System::EventHandler(this, &ConsultaEsdevenimentUI::label5_Click);
 			// 
 			// label6
@@ -172,6 +182,7 @@ namespace culturalink_main {
 			this->label6->Size = System::Drawing::Size(35, 13);
 			this->label6->TabIndex = 11;
 			this->label6->Text = L"label6";
+			this->label6->Visible = false;
 			// 
 			// label7
 			// 
@@ -181,6 +192,7 @@ namespace culturalink_main {
 			this->label7->Size = System::Drawing::Size(35, 13);
 			this->label7->TabIndex = 12;
 			this->label7->Text = L"label7";
+			this->label7->Visible = false;
 			// 
 			// lblTipus
 			// 
@@ -190,6 +202,7 @@ namespace culturalink_main {
 			this->lblTipus->Size = System::Drawing::Size(35, 13);
 			this->lblTipus->TabIndex = 13;
 			this->lblTipus->Text = L"label8";
+			this->lblTipus->Visible = false;
 			// 
 			// lblAforament
 			// 
@@ -199,6 +212,7 @@ namespace culturalink_main {
 			this->lblAforament->Size = System::Drawing::Size(35, 13);
 			this->lblAforament->TabIndex = 14;
 			this->lblAforament->Text = L"label8";
+			this->lblAforament->Visible = false;
 			// 
 			// lblPuntsCost
 			// 
@@ -208,6 +222,7 @@ namespace culturalink_main {
 			this->lblPuntsCost->Size = System::Drawing::Size(35, 13);
 			this->lblPuntsCost->TabIndex = 15;
 			this->lblPuntsCost->Text = L"label8";
+			this->lblPuntsCost->Visible = false;
 			// 
 			// lblData
 			// 
@@ -217,6 +232,7 @@ namespace culturalink_main {
 			this->lblData->Size = System::Drawing::Size(35, 13);
 			this->lblData->TabIndex = 16;
 			this->lblData->Text = L"label8";
+			this->lblData->Visible = false;
 			// 
 			// lblPuntsDesc
 			// 
@@ -226,6 +242,7 @@ namespace culturalink_main {
 			this->lblPuntsDesc->Size = System::Drawing::Size(35, 13);
 			this->lblPuntsDesc->TabIndex = 17;
 			this->lblPuntsDesc->Text = L"label8";
+			this->lblPuntsDesc->Visible = false;
 			// 
 			// label8
 			// 
@@ -272,11 +289,49 @@ namespace culturalink_main {
 			this->label12->TabIndex = 22;
 			this->label12->Text = L"Punts Descompte Esdeveniment";
 			// 
+			// Compra
+			// 
+			this->Compra->Location = System::Drawing::Point(106, 363);
+			this->Compra->Name = L"Compra";
+			this->Compra->Size = System::Drawing::Size(75, 23);
+			this->Compra->TabIndex = 23;
+			this->Compra->Text = L"Compra";
+			this->Compra->UseVisualStyleBackColor = true;
+			this->Compra->Visible = false;
+			this->Compra->Click += gcnew System::EventHandler(this, &ConsultaEsdevenimentUI::Compra_Click);
+			// 
+			// radioButton1
+			// 
+			this->radioButton1->AutoSize = true;
+			this->radioButton1->Location = System::Drawing::Point(79, 394);
+			this->radioButton1->Name = L"radioButton1";
+			this->radioButton1->Size = System::Drawing::Size(55, 17);
+			this->radioButton1->TabIndex = 24;
+			this->radioButton1->TabStop = true;
+			this->radioButton1->Text = L"Diners";
+			this->radioButton1->UseVisualStyleBackColor = true;
+			this->radioButton1->Visible = false;
+			// 
+			// radioButton2
+			// 
+			this->radioButton2->AutoSize = true;
+			this->radioButton2->Location = System::Drawing::Point(79, 418);
+			this->radioButton2->Name = L"radioButton2";
+			this->radioButton2->Size = System::Drawing::Size(52, 17);
+			this->radioButton2->TabIndex = 25;
+			this->radioButton2->TabStop = true;
+			this->radioButton2->Text = L"Punts";
+			this->radioButton2->UseVisualStyleBackColor = true;
+			this->radioButton2->Visible = false;
+			// 
 			// ConsultaEsdevenimentUI
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(458, 451);
+			this->Controls->Add(this->radioButton2);
+			this->Controls->Add(this->radioButton1);
+			this->Controls->Add(this->Compra);
 			this->Controls->Add(this->label12);
 			this->Controls->Add(this->label11);
 			this->Controls->Add(this->label10);
@@ -310,6 +365,12 @@ namespace culturalink_main {
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		String^ nomEsd = this->textBox1->Text;
+		if (nomEsd->Length == 0)
+		{
+			MessageBox::Show("Omple el camp buit",
+				"Un camp buit", MessageBoxButtons::OK);
+			return;
+		}
 		List<String^>^ infoEsd;
 		TxConsultaEsdeveniment txConsEsd(nomEsd);
 		txConsEsd.executar();
@@ -322,6 +383,18 @@ namespace culturalink_main {
 		lblPuntsCost->Text = infoEsd[7];
 		lblData->Text = infoEsd[8];
 		lblPuntsDesc->Text = infoEsd[9];
+		label5->Visible = true;
+		label6->Visible = true;
+		label7->Visible = true;
+		lblTipus->Visible = true;
+		lblAforament->Visible = true;
+		lblPuntsCost->Visible = true;
+		lblData->Visible = true;
+		lblPuntsDesc->Visible = true;
+		Compra->Visible = true;
+		radioButton1->Visible = true;
+		radioButton2->Visible = true;
+
 	}
 	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 
@@ -333,7 +406,54 @@ namespace culturalink_main {
 	private: System::Void ConsultaEsdevenimentUI_Load(System::Object^ sender, System::EventArgs^ e) {
 
 	}
-	
-};
+
+	private: System::Void Compra_Click(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			String^ nomEsd = this->textBox1->Text;
+			if (radioButton2->Checked)
+			{
+				UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
+				Object^ usuarioAlmacenado = usuario->getUsuari();
+				TipoPassarela tipoUsuario = usuario->getTipoPassarela();
+				if (usuarioAlmacenado == nullptr) throw(ErrorUsuari);
+				// Verificar el tipo de usuario y actuar en consecuencia
+				if (tipoUsuario == TipoPassarela::Ciutada) {
+					TxCompraEntradaEsdevenimentPunts tx1(nomEsd);
+					tx1.executar();
+					MessageBox::Show("Compra finalitzada amb exit", "", MessageBoxButtons::OK);
+					this->Close();
+				}
+			}
+			else if (radioButton1->Checked)
+			{
+				UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
+				Object^ usuarioAlmacenado = usuario->getUsuari();
+				TipoPassarela tipoUsuario = usuario->getTipoPassarela();
+				if (usuarioAlmacenado == nullptr) throw(ErrorUsuari);
+				// Verificar el tipo de usuario y actuar en consecuencia
+				if (tipoUsuario == TipoPassarela::Ciutada) {
+					FormulariCompraEntrada^ f2 = gcnew FormulariCompraEntrada();
+					this->Visible = false;
+					f2->ShowDialog();
+					this->Show();
+					this->Visible = true;
+					TxCompraEntradaEsdevenimentDiners tx1(nomEsd);
+					tx1.executar();
+					MessageBox::Show("Compra finalitzada amb exit", "", MessageBoxButtons::OK);
+					this->Close();
+				}
+			}
+		}
+		catch (const string err)
+		{
+			MessageBox::Show(gcnew String(err.c_str()), "Error", MessageBoxButtons::OK);
+			return;
+		}
+	}
+
+	private: System::Void checkedListBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+	};
 }
 
