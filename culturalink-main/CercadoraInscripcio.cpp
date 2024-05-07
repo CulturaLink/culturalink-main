@@ -24,10 +24,10 @@ List<PassarelaInscripcio^>^ CercadoraInscripcio::cercaTotesInscripcions(String^ 
 
             String^ nickC = dataReader->GetString(0);
             String^ dataC = dataReader->GetMySqlDateTime(1).ToString();
-            float preuC = dataReader->GetFloat(2);
+            int preuC = dataReader->GetFloat(2);
             String^ esdev = dataReader->GetString(3);
 
-            PassarelaInscripcio^ pI = gcnew PassarelaInscripcio(nickC, dataC, preuC, esdev);
+            PassarelaInscripcio^ pI = gcnew PassarelaInscripcio(nickC, dataC, esdev, preuC);
 
             totsInscrip->Add(pI);
         }

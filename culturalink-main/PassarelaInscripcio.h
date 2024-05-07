@@ -9,6 +9,7 @@ using namespace System;
 using namespace System::Windows::Forms;
 
 const string errorCompra = "Ya tens una entrada comprada per aquest esdeveniment";
+
 ref class PassarelaInscripcio {
 public:
     PassarelaInscripcio(const PassarelaInscripcio% p1);

@@ -3,6 +3,7 @@
 #include "PassarelaCiutada.h"
 #include "TxEsborraCiutada.h"
 #include "EsborraFormCiutada.h"
+#include "TxConsultaInscripcions.h"
 
 namespace culturalink_main {
 
@@ -315,6 +316,7 @@ namespace culturalink_main {
 			this->button3->TabIndex = 5;
 			this->button3->Text = L"Hist. Compres";
 			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &InfoCiutada::button3_Click);
 			// 
 			// button2
 			// 
@@ -476,6 +478,16 @@ private: System::Void InfoCiutada_Load(System::Object^ sender, System::EventArgs
 		lSaldo->Text = passarelaCiutada->getDiners()->ToString();
 		lPunts->Text = passarelaCiutada->getPunts()->ToString();
 	}
+
+	TxConsultaInscripcions tI;
+	tI.executar();
+
+	List<String^>^ result = tI.getResult();
+
+	for each (String ^ line in result)
+		this->listBox1->Items->Add(line);
+
+	panel1->Visible = false;
 }
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 	panelMenu->Visible = !panelMenu->Visible;
@@ -486,6 +498,12 @@ private: System::Void btnEsborrarUsuari_Click(System::Object^ sender, System::Ev
 	this->Hide();
 	esborraCiutada->ShowDialog();
 	this->Show();
+}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+	panelDesktop->Visible = false;
+	panel1->Visible = true;
+	panel1->Invalidate(); // Force redraw if necessary
+	panel1->PerformLayout(); // Recalculate layout if necessary
 }
 };
 }

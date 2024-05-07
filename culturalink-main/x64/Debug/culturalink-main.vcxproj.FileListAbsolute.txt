@@ -29,7 +29,6 @@ D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\cult
 D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.InfoEntitat.resources
 D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.Login.resources
 D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.MainForm.resources
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.PerfilCiutada.resources
 D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistraEntitat.resources
 D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink-main.vcxproj.GenerateResource.cache
 D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\cultural.EBB58B54.Up2Date
@@ -114,3 +113,9 @@ C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-m
 C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistrarEsdevenimentUI.resources
 C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\x64\Debug\culturalink-main.vcxproj.GenerateResource.cache
 C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\x64\Debug\culturalink-main.vcxproj.CopyComplete
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ConsultaEsdevenimentUI.resources
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.EsborraFormCiutada.resources
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.EsborraFormEntitat.resources
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.InfoCiutada.resources
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ProvesEsdevsUI.resources
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegisterFormCiutada.resources

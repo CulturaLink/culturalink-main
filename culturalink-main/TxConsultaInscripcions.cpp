@@ -17,9 +17,9 @@ void TxConsultaInscripcions::executar() {
 	List<String^>^ result = gcnew List<String^>();
 
 	for each (PassarelaInscripcio ^ insc in pI) {
-		result->Add(insc->getNomEsdeveniment() + ", " + 
-			insc->getDataCompra() + ", " + 
-			insc->getPreuPagat() + "€");
+		result->Add(insc->ObteNomEsdeveniment() + ", " + 
+			insc->ObteData() + ", " + 
+			insc->ObtePreu() + "€");
 	}
 
 	_result = result;

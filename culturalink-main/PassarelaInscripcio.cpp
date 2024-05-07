@@ -1,5 +1,4 @@
 #include "pch.h"
-
 #include "PassarelaInscripcio.h"
 
 
