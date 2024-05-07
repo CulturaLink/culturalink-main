@@ -135,6 +135,7 @@
     <ClInclude Include="CercadoraCiutada.h" />
     <ClInclude Include="CercadoraEntitat.h" />
     <ClInclude Include="CercadoraEsdeveniment.h" />
+    <ClInclude Include="CercadoraInscripcio.h" />
     <ClInclude Include="config.h" />
     <ClInclude Include="ConsultaEsdevenimentUI.h">
       <FileType>CppForm</FileType>
@@ -192,6 +193,7 @@
     <ClInclude Include="TxConsultaAjuntament.h" />
     <ClInclude Include="TxConsultaEsdeveniment.h" />
     <ClInclude Include="TxConsultaEsdevenimentsAmbTipus.h" />
+    <ClInclude Include="TxConsultaInscripcions.h" />
     <ClInclude Include="TxConsultaVarisEsdeveniments.h" />
     <ClInclude Include="TxEsborraCiutada.h" />
     <ClInclude Include="TxEsborraEntitat.h" />
@@ -211,6 +213,7 @@
     <ClCompile Include="CercadoraCiutada.cpp" />
     <ClCompile Include="CercadoraEntitat.cpp" />
     <ClCompile Include="CercadoraEsdeveniment.cpp" />
+    <ClCompile Include="CercadoraInscripcio.cpp" />
     <ClCompile Include="ConsultaEsdevenimentUI.cpp" />
     <ClCompile Include="culturalinkmain.cpp" />
     <ClCompile Include="EsborraFormCiutada.cpp" />
@@ -218,6 +221,7 @@
     <ClCompile Include="InfoAjuntament.cpp" />
     <ClCompile Include="InfoCiutada.cpp" />
     <ClCompile Include="InfoEntitat.cpp" />
+    <ClCompile Include="Login.cpp" />
     <ClCompile Include="MainForm.cpp" />
     <ClCompile Include="EsborraFormEntitat.cpp" />
     <ClCompile Include="PassarelaAjuntament.cpp" />
@@ -242,6 +246,7 @@
     <ClCompile Include="TxConsultaAjuntament.cpp" />
     <ClCompile Include="TxConsultaEsdeveniment.cpp" />
     <ClCompile Include="TxConsultaEsdevenimentsAmbTipus.cpp" />
+    <ClCompile Include="TxConsultaInscripcions.cpp" />
     <ClCompile Include="TxConsultaVarisEsdeveniments.cpp" />
     <ClCompile Include="TxEsborraCiutada.cpp" />
     <ClCompile Include="TxEsborrarEntitat.cpp" />
