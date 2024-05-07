@@ -110,7 +110,7 @@ void PassarelaEsdeveniment::insereix() {
     }
 }
 
-void PassarelaEsdeveniment::esborra(int idEsd) {
+void PassarelaEsdeveniment::esborra(String^ idEsd) {
     String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username=amep14; password='Yee7zaeheih9-'; database=amep14;";
     MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
     String^ sql = "DELETE FROM amep14.esdeveniment WHERE id_esdeveniment = " + idEsd + ";";
