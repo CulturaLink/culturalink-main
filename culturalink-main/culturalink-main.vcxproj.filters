@@ -64,6 +64,8 @@
     <ClCompile Include="culturalinkmain.cpp">
       <Filter>Config files</Filter>
     </ClCompile>
+    <ClCompile Include="ModificarAjuntament.cpp" />
+    <ClCompile Include="CtrlModificaAjuntament.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ConsultaEsdevenimentUI.h" />
@@ -132,6 +134,9 @@
     <ClInclude Include="Resource.h">
       <Filter>Config files</Filter>
     </ClInclude>
+    <ClInclude Include="ModificarAjuntament.h" />
+    <ClInclude Include="CtrlModificaAjuntament.h" />
+    <ClInclude Include="ExcepcioCorreuExisteix.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc" />

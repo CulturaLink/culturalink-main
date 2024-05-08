@@ -1,5 +1,6 @@
 #pragma once
 #include "TxConsultaAjuntament.h"
+#include "ModificarAjuntament.h"
 #include <vector>
 
 namespace culturalink_main {
@@ -57,6 +58,7 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Label^ Lnom;
 	private: System::Windows::Forms::Button^ logOut;
 	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Button^ button3;
 	private: System::ComponentModel::IContainer^ components;
 
 	protected:
@@ -80,6 +82,7 @@ namespace culturalink_main {
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(InfoAjuntament::typeid));
 			this->notifyIcon1 = (gcnew System::Windows::Forms::NotifyIcon(this->components));
 			this->panelDesktop = (gcnew System::Windows::Forms::Panel());
+			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->Lcorreu = (gcnew System::Windows::Forms::Label());
 			this->Ltelefon = (gcnew System::Windows::Forms::Label());
 			this->Lcp = (gcnew System::Windows::Forms::Label());
@@ -115,6 +118,7 @@ namespace culturalink_main {
 			this->panelDesktop->AutoSize = true;
 			this->panelDesktop->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
 			this->panelDesktop->BackColor = System::Drawing::Color::LightSalmon;
+			this->panelDesktop->Controls->Add(this->button3);
 			this->panelDesktop->Controls->Add(this->Lcorreu);
 			this->panelDesktop->Controls->Add(this->Ltelefon);
 			this->panelDesktop->Controls->Add(this->Lcp);
@@ -132,6 +136,17 @@ namespace culturalink_main {
 			this->panelDesktop->Name = L"panelDesktop";
 			this->panelDesktop->Size = System::Drawing::Size(634, 392);
 			this->panelDesktop->TabIndex = 4;
+			// 
+			// button3
+			// 
+			this->button3->Location = System::Drawing::Point(494, 308);
+			this->button3->Margin = System::Windows::Forms::Padding(2);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(68, 26);
+			this->button3->TabIndex = 11;
+			this->button3->Text = L"Modificar";
+			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &InfoAjuntament::button3_Click);
 			// 
 			// Lcorreu
 			// 
@@ -244,6 +259,7 @@ namespace culturalink_main {
 			this->label2->Size = System::Drawing::Size(58, 24);
 			this->label2->TabIndex = 1;
 			this->label2->Text = L"Clau:";
+			this->label2->Click += gcnew System::EventHandler(this, &InfoAjuntament::label2_Click);
 			// 
 			// label1
 			// 
@@ -400,6 +416,31 @@ private: System::Void InfoAjuntament_Load(System::Object^ sender, System::EventA
 }
 private: System::Void Bshow_Click(System::Object^ sender, System::EventArgs^ e) {
 	Lclau->Visible = !Lclau->Visible;
+}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+	ModificarAjuntament^ formLog = gcnew ModificarAjuntament;
+	formLog->ShowDialog();
+
+	// Carga la pagina otra vez segun la informacion nueva
+	try
+	{
+		TxConsultaAjuntament tc;
+		tc.executar();
+		List<String^>^ res = tc.getResult();
+		this->Lnom->Text = res[0];
+		this->Lclau->Text = res[1];
+		this->Lcp->Text = res[2];
+		this->Ltelefon->Text = res[3];
+		this->Lcorreu->Text = res[4];
+	}
+	catch (const std::exception& e)
+	{
+		// Convertir la excepción de C++ a System::String^
+		String^ mensajeError = gcnew String(e.what());
+		MessageBox::Show(mensajeError, "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+	}
+}
+private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

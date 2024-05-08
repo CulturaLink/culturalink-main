@@ -140,9 +140,11 @@
     <ClInclude Include="ConsultaEsdevenimentUI.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="CtrlModificaAjuntament.h" />
     <ClInclude Include="EsborraFormCiutada.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="ExcepcioCorreuExisteix.h" />
     <ClInclude Include="FormulariCompraEntrada.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -162,6 +164,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="EsborraFormEntitat.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ModificarAjuntament.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="PassarelaAjuntament.h" />
@@ -215,6 +220,7 @@
     <ClCompile Include="CercadoraEsdeveniment.cpp" />
     <ClCompile Include="CercadoraInscripcio.cpp" />
     <ClCompile Include="ConsultaEsdevenimentUI.cpp" />
+    <ClCompile Include="CtrlModificaAjuntament.cpp" />
     <ClCompile Include="culturalinkmain.cpp" />
     <ClCompile Include="EsborraFormCiutada.cpp" />
     <ClCompile Include="FormulariCompraEntrada.cpp" />
@@ -224,6 +230,7 @@
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="MainForm.cpp" />
     <ClCompile Include="EsborraFormEntitat.cpp" />
+    <ClCompile Include="ModificarAjuntament.cpp" />
     <ClCompile Include="PassarelaAjuntament.cpp" />
     <ClCompile Include="PassarelaCiutada.cpp" />
     <ClCompile Include="PassarelaEntitat.cpp" />
@@ -296,6 +303,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarAjuntament.resx">
+      <DependentUpon>ModificarAjuntament.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProvesEsdevsUI.resx">
       <DependentUpon>ProvesEsdevsUI.h</DependentUpon>

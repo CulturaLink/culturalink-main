@@ -2,9 +2,9 @@
 #include "TxConsultaAjuntament.h"
 #include "UsuariIniciat.h"
 
-TxConsultaAjuntament::TxConsultaAjuntament(){}
+TxConsultaAjuntament::TxConsultaAjuntament() {}
 
-void TxConsultaAjuntament::executar(){
+void TxConsultaAjuntament::executar() {
     UsuariIniciat^ usuari = UsuariIniciat::ObtenerInstancia();
     Object^ usuariIniciat = usuari->getUsuari();
     TipoPassarela tipusUsuari = usuari->getTipoPassarela();
@@ -17,17 +17,18 @@ void TxConsultaAjuntament::executar(){
 
     _result->Add(a->getNom());
     _result->Add(a->getClau());
-    _result->Add(a->getCP().ToString());
+    _result->Add(a->getPoblacio().ToString());
     _result->Add(a->getTelf().ToString());
     _result->Add(a->getCorreu());
+    _result->Add(a->getContrasenya());
 
     result = _result;
 }
 
-List<String^>^ TxConsultaAjuntament::getResult(){
+List<String^>^ TxConsultaAjuntament::getResult() {
     return result;
 }
 
-PassarelaAjuntament^ TxConsultaAjuntament::getAjuntament(){
-    return ajuntament;    
+PassarelaAjuntament^ TxConsultaAjuntament::getAjuntament() {
+    return ajuntament;
 }
