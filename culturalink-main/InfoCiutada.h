@@ -72,9 +72,12 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Button^ btnEsborrarUsuari;
-	private: System::Windows::Forms::ListBox^ listBox1;
-	private: System::Windows::Forms::Label^ TitleCC;
 	private: System::Windows::Forms::Panel^ panel1;
+	private: System::Windows::Forms::Label^ TitleCC;
+	private: System::Windows::Forms::ListBox^ listBox1;
+
+
+
 
 	private:
 		/// <summary>
@@ -112,9 +115,9 @@ namespace culturalink_main {
 			this->panelTitleBar = (gcnew System::Windows::Forms::Panel());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
-			this->listBox1 = (gcnew System::Windows::Forms::ListBox());
-			this->TitleCC = (gcnew System::Windows::Forms::Label());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->TitleCC = (gcnew System::Windows::Forms::Label());
+			this->listBox1 = (gcnew System::Windows::Forms::ListBox());
 			this->panelDesktop->SuspendLayout();
 			this->panelMenu->SuspendLayout();
 			this->panelTitleBar->SuspendLayout();
@@ -393,6 +396,29 @@ namespace culturalink_main {
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox2->TabIndex = 0;
 			this->pictureBox2->TabStop = false;
+			this->pictureBox2->Click += gcnew System::EventHandler(this, &InfoCiutada::pictureBox2_Click);
+			// 
+			// panel1
+			// 
+			this->panel1->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->panel1->Controls->Add(this->TitleCC);
+			this->panel1->Controls->Add(this->listBox1);
+			this->panel1->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->panel1->Location = System::Drawing::Point(150, 49);
+			this->panel1->Name = L"panel1";
+			this->panel1->Size = System::Drawing::Size(634, 392);
+			this->panel1->TabIndex = 15;
+			// 
+			// TitleCC
+			// 
+			this->TitleCC->AutoSize = true;
+			this->TitleCC->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 36, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->TitleCC->Location = System::Drawing::Point(6, 5);
+			this->TitleCC->Name = L"TitleCC";
+			this->TitleCC->Size = System::Drawing::Size(498, 55);
+			this->TitleCC->TabIndex = 1;
+			this->TitleCC->Text = L"Compres realitzades:";
 			// 
 			// listBox1
 			// 
@@ -408,28 +434,6 @@ namespace culturalink_main {
 			this->listBox1->Size = System::Drawing::Size(613, 292);
 			this->listBox1->Sorted = true;
 			this->listBox1->TabIndex = 0;
-			// 
-			// TitleCC
-			// 
-			this->TitleCC->AutoSize = true;
-			this->TitleCC->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 36, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->TitleCC->Location = System::Drawing::Point(6, 5);
-			this->TitleCC->Name = L"TitleCC";
-			this->TitleCC->Size = System::Drawing::Size(498, 55);
-			this->TitleCC->TabIndex = 1;
-			this->TitleCC->Text = L"Compres realitzades:";
-			// 
-			// panel1
-			// 
-			this->panel1->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->panel1->Controls->Add(this->TitleCC);
-			this->panel1->Controls->Add(this->listBox1);
-			this->panel1->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->panel1->Location = System::Drawing::Point(150, 49);
-			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(634, 392);
-			this->panel1->TabIndex = 14;
 			// 
 			// InfoCiutada
 			// 
@@ -504,6 +508,12 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 	panel1->Visible = true;
 	panel1->Invalidate(); // Force redraw if necessary
 	panel1->PerformLayout(); // Recalculate layout if necessary
+}
+private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
+	panel1->Visible = false;
+	panelDesktop->Visible = true;
+	panelDesktop->Invalidate(); // Force redraw if necessary
+	panelDesktop->PerformLayout(); // Recalculate layout if necessary
 }
 };
 }

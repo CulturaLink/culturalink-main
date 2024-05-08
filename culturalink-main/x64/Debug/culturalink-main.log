@@ -1,428 +1,147 @@
-﻿  pch.cpp
-  AssemblyInfo.cpp
-  CercadoraAjuntament.cpp
-  CercadoraCiutada.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/CercadoraCiutada.cpp')
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
+﻿  CercadoraCiutada.cpp
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/CercadoraCiutada.cpp")
+  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/CercadoraCiutada.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/CercadoraCiutada.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/CercadoraCiutada.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-  CercadoraEntitat.cpp
-  CercadoraEsdeveniment.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/CercadoraEsdeveniment.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/CercadoraEsdeveniment.cpp')
-  
-  CercadoraInscripcio.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/CercadoraInscripcio.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/CercadoraInscripcio.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\CercadoraInscripcio.cpp(27,23): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/CercadoraInscripcio.cpp')
-  
-  ConsultaEsdevenimentUI.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/ConsultaEsdevenimentUI.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/ConsultaEsdevenimentUI.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/ConsultaEsdevenimentUI.cpp')
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-  culturalinkmain.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/culturalinkmain.cpp')
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/culturalinkmain.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/culturalinkmain.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/culturalinkmain.cpp')
-  
-  EsborraFormCiutada.cpp
-  FormulariCompraEntrada.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/FormulariCompraEntrada.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/FormulariCompraEntrada.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/FormulariCompraEntrada.cpp')
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-  InfoAjuntament.cpp
   InfoCiutada.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/InfoCiutada.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/InfoCiutada.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/InfoCiutada.cpp')
-  
-  InfoEntitat.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/InfoEntitat.cpp')
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-  Login.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/Login.cpp')
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/Login.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/InfoCiutada.cpp")
   
   MainForm.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/MainForm.cpp')
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/MainForm.cpp")
+  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/MainForm.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/MainForm.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/MainForm.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/MainForm.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/MainForm.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/MainForm.cpp")
   
-  EsborraFormEntitat.cpp
-  PassarelaAjuntament.cpp
   PassarelaCiutada.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/PassarelaCiutada.cpp')
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
+  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaCiutada.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaCiutada.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaCiutada.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(14,12): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaCiutada.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(14,12): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(15,11): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaCiutada.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(15,11): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(50,12): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaCiutada.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(50,12): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(51,11): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaCiutada.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(51,11): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(69,43): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaCiutada.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(69,43): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(70,42): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaCiutada.cpp')
-  
-  PassarelaEntitat.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaEntitat.cpp(9,15): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaEntitat.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaEntitat.cpp(10,18): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaEntitat.cpp')
-  
-  PassarelaEsdeveniment.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaEsdeveniment.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaEsdeveniment.cpp')
-  
-  Generating Code...
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\CercadoraInscripcio.cpp(46,1): warning C4715: 'CercadoraInscripcio::cercaTotesInscripcions': not all control paths return a value
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\CercadoraEsdeveniment.cpp(51,1): warning C4715: 'CercadoraEsdeveniment::cercaEsdeveniment': not all control paths return a value
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\CercadoraEntitat.cpp(39,1): warning C4715: 'CercadoraEntitat::cercaEntitat': not all control paths return a value
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\CercadoraAjuntament.cpp(51,1): warning C4715: 'CercadoraAjuntament::cercaAjuntament': not all control paths return a value
-  Compiling...
-  PassarelaInscripcio.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaInscripcio.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaInscripcio.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaInscripcio.cpp(17,12): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/PassarelaInscripcio.cpp')
-  
-  ProvesEsdevsUI.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/ProvesEsdevsUI.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/ProvesEsdevsUI.cpp')
-  
-  RegisterFormCiutada.cpp
-  RegistraEsdevenimentUI1.cpp
-  RegistrarEsdevenimentUI.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/RegistrarEsdevenimentUI.cpp')
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/RegistrarEsdevenimentUI.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/RegistrarEsdevenimentUI.cpp')
-  
-  Sistema.cpp
-  Transaccio.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/Transaccio.cpp')
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-  TxCompraEntradaEsdevenimentDiners.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxCompraEntradaEsdevenimentDiners.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxCompraEntradaEsdevenimentDiners.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/TxCompraEntradaEsdevenimentDiners.cpp')
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\TxCompraEntradaEsdevenimentDiners.cpp(26,29): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  (compiling source file '/TxCompraEntradaEsdevenimentDiners.cpp')
-  
-  TxCompraEntradaEsdevenimentPunts.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxCompraEntradaEsdevenimentPunts.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxCompraEntradaEsdevenimentPunts.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/TxCompraEntradaEsdevenimentPunts.cpp')
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\TxCompraEntradaEsdevenimentPunts.cpp(26,29): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  (compiling source file '/TxCompraEntradaEsdevenimentPunts.cpp')
-  
-  TxConsultaAjuntament.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxConsultaAjuntament.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxConsultaAjuntament.cpp')
-  
-  TxConsultaEsdeveniment.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxConsultaEsdeveniment.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxConsultaEsdeveniment.cpp')
-  
-  TxConsultaEsdevenimentsAmbTipus.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxConsultaEsdevenimentsAmbTipus.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxConsultaEsdevenimentsAmbTipus.cpp')
-  
-  TxConsultaInscripcions.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxConsultaInscripcions.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxConsultaInscripcions.cpp')
-  
-  TxConsultaVarisEsdeveniments.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxConsultaVarisEsdeveniments.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxConsultaVarisEsdeveniments.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(70,42): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
   
   TxEsborraCiutada.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/TxEsborraCiutada.cpp')
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/TxEsborraCiutada.cpp")
+  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxEsborraCiutada.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxEsborraCiutada.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxEsborraCiutada.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxEsborraCiutada.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxEsborraCiutada.cpp')
-  
-  TxEsborrarEntitat.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxEsborrarEntitat.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxEsborrarEntitat.cpp')
-  
-  TxLoginAjuntament.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxLoginAjuntament.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxLoginAjuntament.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxEsborraCiutada.cpp")
   
   TxLoginCiutada.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/TxLoginCiutada.cpp')
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/TxLoginCiutada.cpp")
+  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxLoginCiutada.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxLoginCiutada.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxLoginCiutada.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxLoginCiutada.cpp")
   
   TxRegisterCiutada.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/TxRegisterCiutada.cpp')
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/TxRegisterCiutada.cpp")
+  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxRegisterCiutada.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxRegisterCiutada.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxRegisterCiutada.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-  TxRegistraEsdeveniment.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/TxRegistraEsdeveniment.cpp')
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
+  culturalinkmain.cpp
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxRegistraEsdeveniment.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/culturalinkmain.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxRegistraEsdeveniment.cpp')
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/culturalinkmain.cpp")
   
-  Generating Code...
-  Compiling...
-  RegistraEntitat.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/RegistraEntitat.cpp')
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/culturalinkmain.cpp")
   
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/RegistraEntitat.cpp')
-  
-  TxConsultaEntitat.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/TxConsultaEntitat.cpp')
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxConsultaEntitat.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxConsultaEntitat.cpp')
-  
-  TxIniciaSessio.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/TxIniciaSessio.cpp')
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxIniciaSessio.cpp')
-  
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/TxIniciaSessio.cpp')
-  
-  TxRegistraEntitat.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/TxRegistraEntitat.cpp')
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-  Generating Code...
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
-  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  culturalink-main.vcxproj -> D:\Users\xavit\Documents\GitHub\culturalink-main\x64\Debug\culturalink-main.exe
+  Generando código...
+  AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+  culturalink-main.vcxproj -> H:\Users\xavit\Documents\GitHub\culturalink-main\x64\Debug\culturalink-main.exe

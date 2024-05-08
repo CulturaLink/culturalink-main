@@ -119,3 +119,7 @@ D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\cult
 D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.InfoCiutada.resources
 D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ProvesEsdevsUI.resources
 D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegisterFormCiutada.resources
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ConsultaEsdevenimentUI.resources
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.EsborraFormCiutada.resources
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.EsborraFormEntitat.resources
+H:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ProvesEsdevsUI.resources
