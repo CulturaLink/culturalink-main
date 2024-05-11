@@ -45,11 +45,8 @@ namespace culturalink_main {
 
 	protected:
 
-
-
 	private: System::Windows::Forms::PictureBox^ picBoxEntitat;
 	private: System::Windows::Forms::PictureBox^ picBoxAjuntament;
-
 
 	private: System::Windows::Forms::Label^ lblPuntsCiu;
 	private: System::Windows::Forms::Label^ labelPuntsCiu;
@@ -167,17 +164,19 @@ namespace culturalink_main {
 			this->pnlInfoCiutada->Controls->Add(this->picBoxCiutada);
 			this->pnlInfoCiutada->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->pnlInfoCiutada->Location = System::Drawing::Point(0, 0);
+			this->pnlInfoCiutada->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->pnlInfoCiutada->Name = L"pnlInfoCiutada";
-			this->pnlInfoCiutada->Size = System::Drawing::Size(539, 328);
+			this->pnlInfoCiutada->Size = System::Drawing::Size(719, 404);
 			this->pnlInfoCiutada->TabIndex = 0;
 			// 
 			// btnCloseInfoCiu
 			// 
 			this->btnCloseInfoCiu->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->btnCloseInfoCiu->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->btnCloseInfoCiu->Location = System::Drawing::Point(436, 287);
+			this->btnCloseInfoCiu->Location = System::Drawing::Point(581, 353);
+			this->btnCloseInfoCiu->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->btnCloseInfoCiu->Name = L"btnCloseInfoCiu";
-			this->btnCloseInfoCiu->Size = System::Drawing::Size(75, 23);
+			this->btnCloseInfoCiu->Size = System::Drawing::Size(100, 28);
 			this->btnCloseInfoCiu->TabIndex = 25;
 			this->btnCloseInfoCiu->Text = L"OK";
 			this->btnCloseInfoCiu->UseVisualStyleBackColor = false;
@@ -188,9 +187,10 @@ namespace culturalink_main {
 			this->lblPuntsCiu->AutoSize = true;
 			this->lblPuntsCiu->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblPuntsCiu->Location = System::Drawing::Point(132, 292);
+			this->lblPuntsCiu->Location = System::Drawing::Point(176, 359);
+			this->lblPuntsCiu->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->lblPuntsCiu->Name = L"lblPuntsCiu";
-			this->lblPuntsCiu->Size = System::Drawing::Size(56, 18);
+			this->lblPuntsCiu->Size = System::Drawing::Size(66, 24);
 			this->lblPuntsCiu->TabIndex = 24;
 			this->lblPuntsCiu->Text = L"********";
 			// 
@@ -199,9 +199,10 @@ namespace culturalink_main {
 			this->labelPuntsCiu->AutoSize = true;
 			this->labelPuntsCiu->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelPuntsCiu->Location = System::Drawing::Point(109, 268);
+			this->labelPuntsCiu->Location = System::Drawing::Point(145, 330);
+			this->labelPuntsCiu->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->labelPuntsCiu->Name = L"labelPuntsCiu";
-			this->labelPuntsCiu->Size = System::Drawing::Size(207, 24);
+			this->labelPuntsCiu->Size = System::Drawing::Size(258, 29);
 			this->labelPuntsCiu->TabIndex = 23;
 			this->labelPuntsCiu->Text = L"Punts de descompte:";
 			// 
@@ -210,9 +211,10 @@ namespace culturalink_main {
 			this->lblSaldoCiu->AutoSize = true;
 			this->lblSaldoCiu->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblSaldoCiu->Location = System::Drawing::Point(132, 240);
+			this->lblSaldoCiu->Location = System::Drawing::Point(176, 295);
+			this->lblSaldoCiu->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->lblSaldoCiu->Name = L"lblSaldoCiu";
-			this->lblSaldoCiu->Size = System::Drawing::Size(56, 18);
+			this->lblSaldoCiu->Size = System::Drawing::Size(66, 24);
 			this->lblSaldoCiu->TabIndex = 22;
 			this->lblSaldoCiu->Text = L"********";
 			// 
@@ -221,9 +223,10 @@ namespace culturalink_main {
 			this->lblDataCiu->AutoSize = true;
 			this->lblDataCiu->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblDataCiu->Location = System::Drawing::Point(132, 190);
+			this->lblDataCiu->Location = System::Drawing::Point(176, 234);
+			this->lblDataCiu->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->lblDataCiu->Name = L"lblDataCiu";
-			this->lblDataCiu->Size = System::Drawing::Size(56, 18);
+			this->lblDataCiu->Size = System::Drawing::Size(66, 24);
 			this->lblDataCiu->TabIndex = 21;
 			this->lblDataCiu->Text = L"********";
 			// 
@@ -232,9 +235,10 @@ namespace culturalink_main {
 			this->lblCorreuCiu->AutoSize = true;
 			this->lblCorreuCiu->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblCorreuCiu->Location = System::Drawing::Point(132, 138);
+			this->lblCorreuCiu->Location = System::Drawing::Point(176, 170);
+			this->lblCorreuCiu->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->lblCorreuCiu->Name = L"lblCorreuCiu";
-			this->lblCorreuCiu->Size = System::Drawing::Size(56, 18);
+			this->lblCorreuCiu->Size = System::Drawing::Size(66, 24);
 			this->lblCorreuCiu->TabIndex = 20;
 			this->lblCorreuCiu->Text = L"********";
 			// 
@@ -243,9 +247,10 @@ namespace culturalink_main {
 			this->lblNomCiu->AutoSize = true;
 			this->lblNomCiu->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblNomCiu->Location = System::Drawing::Point(132, 86);
+			this->lblNomCiu->Location = System::Drawing::Point(176, 106);
+			this->lblNomCiu->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->lblNomCiu->Name = L"lblNomCiu";
-			this->lblNomCiu->Size = System::Drawing::Size(56, 18);
+			this->lblNomCiu->Size = System::Drawing::Size(66, 24);
 			this->lblNomCiu->TabIndex = 19;
 			this->lblNomCiu->Text = L"********";
 			// 
@@ -254,9 +259,10 @@ namespace culturalink_main {
 			this->lblUsuariCiu->AutoSize = true;
 			this->lblUsuariCiu->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblUsuariCiu->Location = System::Drawing::Point(132, 36);
+			this->lblUsuariCiu->Location = System::Drawing::Point(176, 44);
+			this->lblUsuariCiu->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->lblUsuariCiu->Name = L"lblUsuariCiu";
-			this->lblUsuariCiu->Size = System::Drawing::Size(46, 18);
+			this->lblUsuariCiu->Size = System::Drawing::Size(60, 24);
 			this->lblUsuariCiu->TabIndex = 18;
 			this->lblUsuariCiu->Text = L"label6";
 			// 
@@ -265,9 +271,10 @@ namespace culturalink_main {
 			this->labelSaldCiu->AutoSize = true;
 			this->labelSaldCiu->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelSaldCiu->Location = System::Drawing::Point(109, 216);
+			this->labelSaldCiu->Location = System::Drawing::Point(145, 266);
+			this->labelSaldCiu->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->labelSaldCiu->Name = L"labelSaldCiu";
-			this->labelSaldCiu->Size = System::Drawing::Size(69, 24);
+			this->labelSaldCiu->Size = System::Drawing::Size(88, 29);
 			this->labelSaldCiu->TabIndex = 17;
 			this->labelSaldCiu->Text = L"Saldo:";
 			// 
@@ -276,9 +283,10 @@ namespace culturalink_main {
 			this->labelDatCiu->AutoSize = true;
 			this->labelDatCiu->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelDatCiu->Location = System::Drawing::Point(109, 166);
+			this->labelDatCiu->Location = System::Drawing::Point(145, 204);
+			this->labelDatCiu->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->labelDatCiu->Name = L"labelDatCiu";
-			this->labelDatCiu->Size = System::Drawing::Size(193, 24);
+			this->labelDatCiu->Size = System::Drawing::Size(241, 29);
 			this->labelDatCiu->TabIndex = 16;
 			this->labelDatCiu->Text = L"Data de Naixement:";
 			// 
@@ -287,9 +295,10 @@ namespace culturalink_main {
 			this->labelCorrCiu->AutoSize = true;
 			this->labelCorrCiu->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelCorrCiu->Location = System::Drawing::Point(109, 114);
+			this->labelCorrCiu->Location = System::Drawing::Point(145, 140);
+			this->labelCorrCiu->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->labelCorrCiu->Name = L"labelCorrCiu";
-			this->labelCorrCiu->Size = System::Drawing::Size(80, 24);
+			this->labelCorrCiu->Size = System::Drawing::Size(100, 29);
 			this->labelCorrCiu->TabIndex = 15;
 			this->labelCorrCiu->Text = L"Correu:";
 			// 
@@ -298,9 +307,10 @@ namespace culturalink_main {
 			this->labelNomCiu->AutoSize = true;
 			this->labelNomCiu->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelNomCiu->Location = System::Drawing::Point(109, 62);
+			this->labelNomCiu->Location = System::Drawing::Point(145, 76);
+			this->labelNomCiu->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->labelNomCiu->Name = L"labelNomCiu";
-			this->labelNomCiu->Size = System::Drawing::Size(60, 24);
+			this->labelNomCiu->Size = System::Drawing::Size(75, 29);
 			this->labelNomCiu->TabIndex = 14;
 			this->labelNomCiu->Text = L"Nom:";
 			// 
@@ -309,19 +319,20 @@ namespace culturalink_main {
 			this->labelUsuCiu->AutoSize = true;
 			this->labelUsuCiu->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelUsuCiu->Location = System::Drawing::Point(109, 12);
+			this->labelUsuCiu->Location = System::Drawing::Point(145, 15);
+			this->labelUsuCiu->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->labelUsuCiu->Name = L"labelUsuCiu";
-			this->labelUsuCiu->Size = System::Drawing::Size(75, 24);
+			this->labelUsuCiu->Size = System::Drawing::Size(95, 29);
 			this->labelUsuCiu->TabIndex = 13;
 			this->labelUsuCiu->Text = L"Usuari:";
 			// 
 			// picBoxCiutada
 			// 
 			this->picBoxCiutada->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"picBoxCiutada.Image")));
-			this->picBoxCiutada->Location = System::Drawing::Point(13, 12);
+			this->picBoxCiutada->Location = System::Drawing::Point(17, 15);
 			this->picBoxCiutada->Margin = System::Windows::Forms::Padding(0);
 			this->picBoxCiutada->Name = L"picBoxCiutada";
-			this->picBoxCiutada->Size = System::Drawing::Size(79, 81);
+			this->picBoxCiutada->Size = System::Drawing::Size(105, 100);
 			this->picBoxCiutada->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->picBoxCiutada->TabIndex = 1;
 			this->picBoxCiutada->TabStop = false;
@@ -341,17 +352,19 @@ namespace culturalink_main {
 			this->pnlInfoEntitat->Controls->Add(this->picBoxEntitat);
 			this->pnlInfoEntitat->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->pnlInfoEntitat->Location = System::Drawing::Point(0, 0);
+			this->pnlInfoEntitat->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->pnlInfoEntitat->Name = L"pnlInfoEntitat";
-			this->pnlInfoEntitat->Size = System::Drawing::Size(539, 328);
+			this->pnlInfoEntitat->Size = System::Drawing::Size(719, 404);
 			this->pnlInfoEntitat->TabIndex = 1;
 			// 
 			// btnCloseInfoEnt
 			// 
 			this->btnCloseInfoEnt->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->btnCloseInfoEnt->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->btnCloseInfoEnt->Location = System::Drawing::Point(436, 287);
+			this->btnCloseInfoEnt->Location = System::Drawing::Point(581, 353);
+			this->btnCloseInfoEnt->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->btnCloseInfoEnt->Name = L"btnCloseInfoEnt";
-			this->btnCloseInfoEnt->Size = System::Drawing::Size(75, 23);
+			this->btnCloseInfoEnt->Size = System::Drawing::Size(100, 28);
 			this->btnCloseInfoEnt->TabIndex = 20;
 			this->btnCloseInfoEnt->Text = L"OK";
 			this->btnCloseInfoEnt->UseVisualStyleBackColor = false;
@@ -362,9 +375,10 @@ namespace culturalink_main {
 			this->lblIdEnt->AutoSize = true;
 			this->lblIdEnt->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblIdEnt->Location = System::Drawing::Point(134, 86);
+			this->lblIdEnt->Location = System::Drawing::Point(179, 106);
+			this->lblIdEnt->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->lblIdEnt->Name = L"lblIdEnt";
-			this->lblIdEnt->Size = System::Drawing::Size(56, 18);
+			this->lblIdEnt->Size = System::Drawing::Size(66, 24);
 			this->lblIdEnt->TabIndex = 19;
 			this->lblIdEnt->Text = L"********";
 			// 
@@ -373,9 +387,10 @@ namespace culturalink_main {
 			this->lblCorrEnt->AutoSize = true;
 			this->lblCorrEnt->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblCorrEnt->Location = System::Drawing::Point(134, 210);
+			this->lblCorrEnt->Location = System::Drawing::Point(179, 258);
+			this->lblCorrEnt->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->lblCorrEnt->Name = L"lblCorrEnt";
-			this->lblCorrEnt->Size = System::Drawing::Size(56, 18);
+			this->lblCorrEnt->Size = System::Drawing::Size(66, 24);
 			this->lblCorrEnt->TabIndex = 18;
 			this->lblCorrEnt->Text = L"********";
 			// 
@@ -384,9 +399,10 @@ namespace culturalink_main {
 			this->lblTelEnt->AutoSize = true;
 			this->lblTelEnt->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblTelEnt->Location = System::Drawing::Point(134, 147);
+			this->lblTelEnt->Location = System::Drawing::Point(179, 181);
+			this->lblTelEnt->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->lblTelEnt->Name = L"lblTelEnt";
-			this->lblTelEnt->Size = System::Drawing::Size(56, 18);
+			this->lblTelEnt->Size = System::Drawing::Size(66, 24);
 			this->lblTelEnt->TabIndex = 17;
 			this->lblTelEnt->Text = L"********";
 			// 
@@ -395,9 +411,10 @@ namespace culturalink_main {
 			this->lblNomEnt->AutoSize = true;
 			this->lblNomEnt->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblNomEnt->Location = System::Drawing::Point(134, 36);
+			this->lblNomEnt->Location = System::Drawing::Point(179, 44);
+			this->lblNomEnt->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->lblNomEnt->Name = L"lblNomEnt";
-			this->lblNomEnt->Size = System::Drawing::Size(46, 18);
+			this->lblNomEnt->Size = System::Drawing::Size(60, 24);
 			this->lblNomEnt->TabIndex = 16;
 			this->lblNomEnt->Text = L"label6";
 			// 
@@ -406,9 +423,10 @@ namespace culturalink_main {
 			this->labelCorrEnt->AutoSize = true;
 			this->labelCorrEnt->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelCorrEnt->Location = System::Drawing::Point(111, 174);
+			this->labelCorrEnt->Location = System::Drawing::Point(148, 214);
+			this->labelCorrEnt->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->labelCorrEnt->Name = L"labelCorrEnt";
-			this->labelCorrEnt->Size = System::Drawing::Size(195, 24);
+			this->labelCorrEnt->Size = System::Drawing::Size(242, 29);
 			this->labelCorrEnt->TabIndex = 15;
 			this->labelCorrEnt->Text = L"Correu de contacte:";
 			// 
@@ -417,9 +435,10 @@ namespace culturalink_main {
 			this->labelTelEnt->AutoSize = true;
 			this->labelTelEnt->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelTelEnt->Location = System::Drawing::Point(104, 114);
+			this->labelTelEnt->Location = System::Drawing::Point(139, 140);
+			this->labelTelEnt->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->labelTelEnt->Name = L"labelTelEnt";
-			this->labelTelEnt->Size = System::Drawing::Size(202, 24);
+			this->labelTelEnt->Size = System::Drawing::Size(252, 29);
 			this->labelTelEnt->TabIndex = 14;
 			this->labelTelEnt->Text = L"Telefon de contacte:";
 			// 
@@ -428,9 +447,10 @@ namespace culturalink_main {
 			this->labelIdEnt->AutoSize = true;
 			this->labelIdEnt->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelIdEnt->Location = System::Drawing::Point(111, 62);
+			this->labelIdEnt->Location = System::Drawing::Point(148, 76);
+			this->labelIdEnt->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->labelIdEnt->Name = L"labelIdEnt";
-			this->labelIdEnt->Size = System::Drawing::Size(33, 24);
+			this->labelIdEnt->Size = System::Drawing::Size(42, 29);
 			this->labelIdEnt->TabIndex = 13;
 			this->labelIdEnt->Text = L"Id:";
 			// 
@@ -439,19 +459,20 @@ namespace culturalink_main {
 			this->labelNomEnt->AutoSize = true;
 			this->labelNomEnt->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelNomEnt->Location = System::Drawing::Point(111, 12);
+			this->labelNomEnt->Location = System::Drawing::Point(148, 15);
+			this->labelNomEnt->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->labelNomEnt->Name = L"labelNomEnt";
-			this->labelNomEnt->Size = System::Drawing::Size(60, 24);
+			this->labelNomEnt->Size = System::Drawing::Size(75, 29);
 			this->labelNomEnt->TabIndex = 12;
 			this->labelNomEnt->Text = L"Nom:";
 			// 
 			// picBoxEntitat
 			// 
 			this->picBoxEntitat->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"picBoxEntitat.Image")));
-			this->picBoxEntitat->Location = System::Drawing::Point(11, 12);
+			this->picBoxEntitat->Location = System::Drawing::Point(15, 15);
 			this->picBoxEntitat->Margin = System::Windows::Forms::Padding(0);
 			this->picBoxEntitat->Name = L"picBoxEntitat";
-			this->picBoxEntitat->Size = System::Drawing::Size(79, 81);
+			this->picBoxEntitat->Size = System::Drawing::Size(105, 100);
 			this->picBoxEntitat->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->picBoxEntitat->TabIndex = 2;
 			this->picBoxEntitat->TabStop = false;
@@ -474,17 +495,20 @@ namespace culturalink_main {
 			this->pnlInfojuntament->Controls->Add(this->picBoxAjuntament);
 			this->pnlInfojuntament->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->pnlInfojuntament->Location = System::Drawing::Point(0, 0);
+			this->pnlInfojuntament->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->pnlInfojuntament->Name = L"pnlInfojuntament";
-			this->pnlInfojuntament->Size = System::Drawing::Size(539, 328);
+			this->pnlInfojuntament->Size = System::Drawing::Size(719, 404);
 			this->pnlInfojuntament->TabIndex = 2;
+			this->pnlInfojuntament->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &ConsultarUsuariUI::pnlInfojuntament_Paint);
 			// 
 			// btnCloseInfoAj
 			// 
 			this->btnCloseInfoAj->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->btnCloseInfoAj->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->btnCloseInfoAj->Location = System::Drawing::Point(436, 287);
+			this->btnCloseInfoAj->Location = System::Drawing::Point(581, 353);
+			this->btnCloseInfoAj->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->btnCloseInfoAj->Name = L"btnCloseInfoAj";
-			this->btnCloseInfoAj->Size = System::Drawing::Size(75, 23);
+			this->btnCloseInfoAj->Size = System::Drawing::Size(100, 28);
 			this->btnCloseInfoAj->TabIndex = 22;
 			this->btnCloseInfoAj->Text = L"OK";
 			this->btnCloseInfoAj->UseVisualStyleBackColor = false;
@@ -495,9 +519,10 @@ namespace culturalink_main {
 			this->lblCorreuAj->AutoSize = true;
 			this->lblCorreuAj->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblCorreuAj->Location = System::Drawing::Point(143, 240);
+			this->lblCorreuAj->Location = System::Drawing::Point(191, 295);
+			this->lblCorreuAj->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->lblCorreuAj->Name = L"lblCorreuAj";
-			this->lblCorreuAj->Size = System::Drawing::Size(56, 18);
+			this->lblCorreuAj->Size = System::Drawing::Size(66, 24);
 			this->lblCorreuAj->TabIndex = 21;
 			this->lblCorreuAj->Text = L"********";
 			// 
@@ -506,9 +531,10 @@ namespace culturalink_main {
 			this->lblTelAj->AutoSize = true;
 			this->lblTelAj->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblTelAj->Location = System::Drawing::Point(143, 190);
+			this->lblTelAj->Location = System::Drawing::Point(191, 234);
+			this->lblTelAj->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->lblTelAj->Name = L"lblTelAj";
-			this->lblTelAj->Size = System::Drawing::Size(56, 18);
+			this->lblTelAj->Size = System::Drawing::Size(66, 24);
 			this->lblTelAj->TabIndex = 20;
 			this->lblTelAj->Text = L"********";
 			// 
@@ -517,9 +543,10 @@ namespace culturalink_main {
 			this->lblPobAj->AutoSize = true;
 			this->lblPobAj->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblPobAj->Location = System::Drawing::Point(143, 138);
+			this->lblPobAj->Location = System::Drawing::Point(191, 170);
+			this->lblPobAj->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->lblPobAj->Name = L"lblPobAj";
-			this->lblPobAj->Size = System::Drawing::Size(56, 18);
+			this->lblPobAj->Size = System::Drawing::Size(66, 24);
 			this->lblPobAj->TabIndex = 19;
 			this->lblPobAj->Text = L"********";
 			// 
@@ -528,9 +555,10 @@ namespace culturalink_main {
 			this->Bshow->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"Bshow.BackgroundImage")));
 			this->Bshow->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->Bshow->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->Bshow->Location = System::Drawing::Point(184, 62);
+			this->Bshow->Location = System::Drawing::Point(245, 76);
+			this->Bshow->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Bshow->Name = L"Bshow";
-			this->Bshow->Size = System::Drawing::Size(24, 24);
+			this->Bshow->Size = System::Drawing::Size(32, 30);
 			this->Bshow->TabIndex = 18;
 			this->Bshow->UseVisualStyleBackColor = true;
 			this->Bshow->Click += gcnew System::EventHandler(this, &ConsultarUsuariUI::Bshow_Click);
@@ -540,9 +568,10 @@ namespace culturalink_main {
 			this->lblClauAj->AutoSize = true;
 			this->lblClauAj->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblClauAj->Location = System::Drawing::Point(143, 86);
+			this->lblClauAj->Location = System::Drawing::Point(191, 106);
+			this->lblClauAj->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->lblClauAj->Name = L"lblClauAj";
-			this->lblClauAj->Size = System::Drawing::Size(56, 18);
+			this->lblClauAj->Size = System::Drawing::Size(66, 24);
 			this->lblClauAj->TabIndex = 17;
 			this->lblClauAj->Text = L"********";
 			this->lblClauAj->Visible = false;
@@ -552,9 +581,10 @@ namespace culturalink_main {
 			this->lblNomAj->AutoSize = true;
 			this->lblNomAj->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblNomAj->Location = System::Drawing::Point(143, 36);
+			this->lblNomAj->Location = System::Drawing::Point(191, 44);
+			this->lblNomAj->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->lblNomAj->Name = L"lblNomAj";
-			this->lblNomAj->Size = System::Drawing::Size(46, 18);
+			this->lblNomAj->Size = System::Drawing::Size(60, 24);
 			this->lblNomAj->TabIndex = 16;
 			this->lblNomAj->Text = L"label6";
 			// 
@@ -563,9 +593,10 @@ namespace culturalink_main {
 			this->labelCorrAj->AutoSize = true;
 			this->labelCorrAj->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelCorrAj->Location = System::Drawing::Point(120, 216);
+			this->labelCorrAj->Location = System::Drawing::Point(160, 266);
+			this->labelCorrAj->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->labelCorrAj->Name = L"labelCorrAj";
-			this->labelCorrAj->Size = System::Drawing::Size(195, 24);
+			this->labelCorrAj->Size = System::Drawing::Size(242, 29);
 			this->labelCorrAj->TabIndex = 15;
 			this->labelCorrAj->Text = L"Correu de contacte:";
 			// 
@@ -574,9 +605,10 @@ namespace culturalink_main {
 			this->labelTelAj->AutoSize = true;
 			this->labelTelAj->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelTelAj->Location = System::Drawing::Point(120, 166);
+			this->labelTelAj->Location = System::Drawing::Point(160, 204);
+			this->labelTelAj->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->labelTelAj->Name = L"labelTelAj";
-			this->labelTelAj->Size = System::Drawing::Size(202, 24);
+			this->labelTelAj->Size = System::Drawing::Size(252, 29);
 			this->labelTelAj->TabIndex = 14;
 			this->labelTelAj->Text = L"Telefon de contacte:";
 			// 
@@ -585,9 +617,10 @@ namespace culturalink_main {
 			this->labelPobAj->AutoSize = true;
 			this->labelPobAj->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelPobAj->Location = System::Drawing::Point(120, 114);
+			this->labelPobAj->Location = System::Drawing::Point(160, 140);
+			this->labelPobAj->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->labelPobAj->Name = L"labelPobAj";
-			this->labelPobAj->Size = System::Drawing::Size(97, 24);
+			this->labelPobAj->Size = System::Drawing::Size(123, 29);
 			this->labelPobAj->TabIndex = 13;
 			this->labelPobAj->Text = L"Poblacio:";
 			// 
@@ -596,9 +629,10 @@ namespace culturalink_main {
 			this->labelClauAj->AutoSize = true;
 			this->labelClauAj->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelClauAj->Location = System::Drawing::Point(120, 62);
+			this->labelClauAj->Location = System::Drawing::Point(160, 76);
+			this->labelClauAj->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->labelClauAj->Name = L"labelClauAj";
-			this->labelClauAj->Size = System::Drawing::Size(58, 24);
+			this->labelClauAj->Size = System::Drawing::Size(73, 29);
 			this->labelClauAj->TabIndex = 12;
 			this->labelClauAj->Text = L"Clau:";
 			// 
@@ -607,19 +641,20 @@ namespace culturalink_main {
 			this->labelNomAj->AutoSize = true;
 			this->labelNomAj->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelNomAj->Location = System::Drawing::Point(120, 12);
+			this->labelNomAj->Location = System::Drawing::Point(160, 15);
+			this->labelNomAj->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->labelNomAj->Name = L"labelNomAj";
-			this->labelNomAj->Size = System::Drawing::Size(60, 24);
+			this->labelNomAj->Size = System::Drawing::Size(75, 29);
 			this->labelNomAj->TabIndex = 11;
 			this->labelNomAj->Text = L"Nom:";
 			// 
 			// picBoxAjuntament
 			// 
 			this->picBoxAjuntament->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"picBoxAjuntament.Image")));
-			this->picBoxAjuntament->Location = System::Drawing::Point(13, 12);
+			this->picBoxAjuntament->Location = System::Drawing::Point(17, 15);
 			this->picBoxAjuntament->Margin = System::Windows::Forms::Padding(0);
 			this->picBoxAjuntament->Name = L"picBoxAjuntament";
-			this->picBoxAjuntament->Size = System::Drawing::Size(79, 81);
+			this->picBoxAjuntament->Size = System::Drawing::Size(105, 100);
 			this->picBoxAjuntament->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->picBoxAjuntament->TabIndex = 3;
 			this->picBoxAjuntament->TabStop = false;
@@ -627,13 +662,14 @@ namespace culturalink_main {
 			// 
 			// ConsultarUsuariUI
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(539, 328);
+			this->ClientSize = System::Drawing::Size(719, 404);
 			this->Controls->Add(this->pnlInfojuntament);
 			this->Controls->Add(this->pnlInfoEntitat);
 			this->Controls->Add(this->pnlInfoCiutada);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
+			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Name = L"ConsultarUsuariUI";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"ConsultarUsuariUI";
@@ -682,8 +718,8 @@ private: System::Void ConsultarUsuariUI_Load(System::Object^ sender, System::Eve
 		List<String^>^ res = tc.obteResultat();
 		this->lblNomEnt->Text = res[1];
 		this->lblIdEnt->Text = res[0];
-		this->lblTelEnt->Text = res[2];
-		this->lblCorrEnt->Text = res[4];
+		this->lblCorrEnt->Text = res[2];
+		this->lblTelEnt->Text = res[4];
 
 		this->pnlInfoEntitat->Visible = true;
 	}
@@ -718,6 +754,8 @@ private: System::Void picBoxAjuntament_Click(System::Object^ sender, System::Eve
 }
 private: System::Void Bshow_Click(System::Object^ sender, System::EventArgs^ e) {
 	lblClauAj->Visible = !lblClauAj->Visible;
+}
+private: System::Void pnlInfojuntament_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 }
 };
 }

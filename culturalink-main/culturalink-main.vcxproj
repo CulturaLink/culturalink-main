@@ -137,6 +137,9 @@
     <ClInclude Include="CercadoraCiutada.h" />
     <ClInclude Include="CercadoraEntitat.h" />
     <ClInclude Include="CercadoraEsdeveniment.h" />
+    <ClInclude Include="ComprarEsdevenimentUI.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="ConsultaEsdevenimentUI.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -204,6 +207,7 @@
     <ClCompile Include="CercadoraCiutada.cpp" />
     <ClCompile Include="CercadoraEntitat.cpp" />
     <ClCompile Include="CercadoraEsdeveniment.cpp" />
+    <ClCompile Include="ComprarEsdevenimentUI.cpp" />
     <ClCompile Include="ConsultaEsdevenimentUI.cpp" />
     <ClCompile Include="ConsultarUsuariUI.cpp" />
     <ClCompile Include="CtrlModificaEsdeveniment.cpp" />
@@ -259,6 +263,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ComprarEsdevenimentUI.resx">
+      <DependentUpon>ComprarEsdevenimentUI.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultaEsdevenimentUI.resx">
       <DependentUpon>ConsultaEsdevenimentUI.h</DependentUpon>
     </EmbeddedResource>

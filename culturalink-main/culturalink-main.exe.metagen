@@ -1,3 +1,4 @@
+  culturalink_main.ComprarEsdevenimentUI.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.ConsultaEsdevenimentUI.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.ConsultarUsuariUI.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.InfoAjuntament.resources - Embedded, ContainedInManifestFile, 
@@ -41,6 +42,9 @@ Class culturalink_main.RegisterFormCiutada: AutoLayout, AnsiClass, Class, Public
   Fields:
     Boolean switchToLogin : Public
 Class culturalink_main.ConsultarUsuariUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class culturalink_main.ComprarEsdevenimentUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class culturalink_main.ProvesUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit

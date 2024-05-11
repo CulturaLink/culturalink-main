@@ -2,6 +2,7 @@
 
 //Forms:
 #include "ConsultarUsuariUI.h"
+#include "ComprarEsdevenimentUI.h"
 
 //Passareles:
 #include "PassarelaCiutada.h"
@@ -17,6 +18,8 @@
 #include "TxConsultaTotsEsdeveniments.h"
 #include "TxConsultaTotsEsdevenimentsPerEntitat.h"
 #include "TxConsultaEsdeveniment.h"
+
+// Custom Tools
 
 namespace culturalink_main {
 
@@ -1448,83 +1451,42 @@ private: System::Void flowLayoutPanel1_Paint(System::Object^ sender, System::Win
 private: Void addBntFiltreToUI() {
 
 }
-private: Void addEsdevToUI(Esdeveniment^ esdev) 
-{
-	System::Windows::Forms::Panel^ pnlEsdev = gcnew Panel;
-	pnlEsdev->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-	pnlEsdev->Location = System::Drawing::Point(0, 0);
-	pnlEsdev->Name = String::Format("pnlEsdev{0}", esdev->getNom());
-	pnlEsdev->Size = System::Drawing::Size(165, 235);
-	pnlEsdev->TabIndex = 2;
-	pnlEsdev->Visible = true;
 
-	System::Windows::Forms::Label^ lblEsdev = gcnew Label;
-	lblEsdev->Name = String::Format("lblEsdev{0}", esdev->getNom());
-	lblEsdev->Text = esdev->getNom();
-	lblEsdev->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 14.0F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-		static_cast<System::Byte>(0)));
-	lblEsdev->Location = System::Drawing::Point(59, 168);
-	lblEsdev->Dock = System::Windows::Forms::DockStyle::Bottom;
-
-	System::Windows::Forms::Label^ lblEsdevPreu = gcnew Label;
-	lblEsdevPreu->Name = String::Format("lblEsdevPreu{0}", esdev->getPreu());
-	lblEsdevPreu->Text = esdev->getPreu() + " €";
-	lblEsdevPreu->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 9.5F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-		static_cast<System::Byte>(0)));
-	lblEsdevPreu->Location = System::Drawing::Point(59, 168);
-	lblEsdevPreu->Dock = System::Windows::Forms::DockStyle::Bottom;
-
-	System::Windows::Forms::Button^ btnConsultar = gcnew Button;
-	btnConsultar->Name = "btnMoreInfo{0}";
-	btnConsultar->Text = "+ Info";
-	btnConsultar->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 9.5F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-		static_cast<System::Byte>(0)));
-	btnConsultar->BackColor = System::Drawing::Color::Black;
-	btnConsultar->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-	btnConsultar->ForeColor = System::Drawing::Color::White;
-	btnConsultar->Dock = System::Windows::Forms::DockStyle::Bottom;
-
-	btnConsultar->Click += gcnew System::EventHandler(this, &ProvesUI::btnConsultar_Click);
-
-	pnlEsdev->Controls->Add(this->pictureBox6);
-	pnlEsdev->Controls->Add(lblEsdev);
-	pnlEsdev->Controls->Add(lblEsdevPreu);
-	pnlEsdev->Controls->Add(btnConsultar);
-	
-	this->flowLayoutPanel1->Controls->Add(pnlEsdev);
-}
 private: System::Void btnConsultar_Click(System::Object^ sender, System::EventArgs^ e) {
 
-	this->flowLayoutPanel1->Visible = false;
-	this->PANELPROVA->Visible = true;
-	this->PANELPROVA->Dock = System::Windows::Forms::DockStyle::Fill;
+	this->flowLayoutPanel1->Visible = true;
+	/*this->PANELPROVA->Visible = true;
+	this->PANELPROVA->Dock = System::Windows::Forms::DockStyle::Fill;*/
 
-	// CODI PER MOSTRAR DADES ALS LABELS
+	ComprarEsdevenimentUI^ formComprEsdev = gcnew ComprarEsdevenimentUI;
+	formComprEsdev->ShowDialog();
 
-	TxConsultaEsdeveniment^ txConsEsdev = gcnew TxConsultaEsdeveniment("MessiExperience");
-	txConsEsdev->executar();
+	//// CODI PER MOSTRAR DADES ALS LABELS
 
-	String^ idEnt = txConsEsdev->getResult()[0];
-	String^ preu = txConsEsdev->getResult()[1];
-	String^ ajunt = txConsEsdev->getResult()[2];
-	String^ desc = txConsEsdev->getResult()[3];
-	String^ nom = txConsEsdev->getResult()[4];
-	String^ tipus = "-";
-	String^ aforament = "-";
-	String^ puntsCost = "-";
-	String^ data = "-";
-	String^ puntsDesc = "-";
+	//TxConsultaEsdeveniment^ txConsEsdev = gcnew TxConsultaEsdeveniment("MessiExperience");
+	//txConsEsdev->executar();
 
-	//Esdeveniment^ esdev = gcnew Esdeveniment(idEnt, preu, ajunt, desc, nom, tipus,
-		//aforament, puntsCost, data, puntsDesc);
+	//String^ idEnt = txConsEsdev->getResult()[0];
+	//String^ preu = txConsEsdev->getResult()[1];
+	//String^ ajunt = txConsEsdev->getResult()[2];
+	//String^ desc = txConsEsdev->getResult()[3];
+	//String^ nom = txConsEsdev->getResult()[4];
+	//String^ tipus = "-";
+	//String^ aforament = "-";
+	//String^ puntsCost = "-";
+	//String^ data = "-";
+	//String^ puntsDesc = "-";
 
-	//addEsdevToUI_Mod(esdev);
+	////Esdeveniment^ esdev = gcnew Esdeveniment(idEnt, preu, ajunt, desc, nom, tipus,
+	//	//aforament, puntsCost, data, puntsDesc);
 
-	this->lblConsultEsdevEntit->Text = idEnt;
-	this->lblEsdevConsultPreu->Text = preu;
-	this->lblConsultEsdevAjunt->Text = ajunt;
-	this->lblConsultEsdevDesc->Text = desc;
-	this->lblEsdevConsultNom->Text = nom;
+	////addEsdevToUI_Mod(esdev);
+
+	//this->lblConsultEsdevEntit->Text = idEnt;
+	//this->lblEsdevConsultPreu->Text = preu;
+	//this->lblConsultEsdevAjunt->Text = ajunt;
+	//this->lblConsultEsdevDesc->Text = desc;
+	//this->lblEsdevConsultNom->Text = nom;
 }
 
 private: System::Void btnComprar_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -1616,6 +1578,54 @@ private: System::Void pictureBox3_Click(System::Object^ sender, System::EventArg
 private: System::Void pictureBox4_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->lblTitlePage->Text = "SETTINGS";
 }
+// Creació de panells amb l'Esdeveniment donat (+ Info)
+private: Void addEsdevToUI(Esdeveniment^ esdev)
+{
+	System::Windows::Forms::Panel^ pnlEsdev = gcnew Panel;
+	pnlEsdev->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+	pnlEsdev->Location = System::Drawing::Point(0, 0);
+	pnlEsdev->Name = String::Format("pnlEsdev{0}", esdev->getNom());
+	pnlEsdev->Size = System::Drawing::Size(165, 235);
+	pnlEsdev->TabIndex = 2;
+	pnlEsdev->Visible = true;
+
+	System::Windows::Forms::Label^ lblEsdev = gcnew Label;
+	lblEsdev->Name = String::Format("lblEsdev{0}", esdev->getNom());
+	lblEsdev->Text = esdev->getNom();
+	lblEsdev->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 14.0F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+		static_cast<System::Byte>(0)));
+	lblEsdev->Location = System::Drawing::Point(59, 168);
+	lblEsdev->Dock = System::Windows::Forms::DockStyle::Bottom;
+
+	System::Windows::Forms::Label^ lblEsdevPreu = gcnew Label;
+	lblEsdevPreu->Name = String::Format("lblEsdevPreu{0}", esdev->getPreu());
+	lblEsdevPreu->Text = esdev->getPreu() + " €";
+	lblEsdevPreu->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 9.5F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+		static_cast<System::Byte>(0)));
+	lblEsdevPreu->Location = System::Drawing::Point(59, 168);
+	lblEsdevPreu->Dock = System::Windows::Forms::DockStyle::Bottom;
+
+	//CustomButton^ btnConsultar = gcnew CustomButton("Messi", "Gala");
+	Button^ btnConsultar = gcnew Button;
+	btnConsultar->Name = "btnMoreInfo{0}";
+	btnConsultar->Text = "+ Info";
+	btnConsultar->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 9.5F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+		static_cast<System::Byte>(0)));
+	btnConsultar->BackColor = System::Drawing::Color::Black;
+	btnConsultar->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+	btnConsultar->ForeColor = System::Drawing::Color::White;
+	btnConsultar->Dock = System::Windows::Forms::DockStyle::Bottom;
+
+	btnConsultar->Click += gcnew System::EventHandler(this, &ProvesUI::btnConsultar_Click);
+
+	pnlEsdev->Controls->Add(this->pictureBox6);
+	pnlEsdev->Controls->Add(lblEsdev);
+	pnlEsdev->Controls->Add(lblEsdevPreu);
+	pnlEsdev->Controls->Add(btnConsultar);
+
+	this->flowLayoutPanel1->Controls->Add(pnlEsdev);
+}
+// Creació de panells amb l'Esdeveniment donat (Modificar)
 private: Void addEsdevToUI_Mod(Esdeveniment^ esdev)
 {
 	System::Windows::Forms::Panel^ pnlEsdev = gcnew Panel;
@@ -1657,6 +1667,7 @@ private: Void addEsdevToUI_Mod(Esdeveniment^ esdev)
 	pnlEsdev->Controls->Add(btnComprar);
 
 }
+// Creació de botons de filtres
 private: Void addFiltrButtonToUI(String^ tipus)
 {
 	System::Windows::Forms::Button^ btnFiltrType = gcnew Button;
@@ -1699,6 +1710,7 @@ private: System::Void picBoxUserPic_Click(System::Object^ sender, System::EventA
 	ConsultarUsuariUI^ formConsultUsu = gcnew ConsultarUsuariUI;
 	formConsultUsu->ShowDialog();
 }
+// Main
 private: System::Void ProvesUI_Load(System::Object^ sender, System::EventArgs^ e) {
 
 	this->pnlMainModEsdv->Visible = false;
@@ -1758,7 +1770,6 @@ private: System::Void ProvesUI_Load(System::Object^ sender, System::EventArgs^ e
 
 		num_filtre_panel = totsEsdevs->Count;
 
-
 		for (int i = 0; i < num_filtre_panel; i += 2) {
 			String^ nom = totsEsdevs[i];
 			String^ preu = totsEsdevs[i + 1];
@@ -1801,7 +1812,7 @@ private: System::Void ProvesUI_Load(System::Object^ sender, System::EventArgs^ e
 		this->pnlModEsdev->Visible = true;
 
 		flowLayoutPanel1->Visible = false;
-		flowLayoutPanel2->Visible = false;
+		flowLayoutPanel2->Visible = true;
 
 		this->pnlMainTop->Size = System::Drawing::Size(1503, 112);;
 
