@@ -433,11 +433,19 @@ namespace culturalink_main {
 				if (usuarioAlmacenado == nullptr) throw(ErrorUsuari);
 				// Verificar el tipo de usuario y actuar en consecuencia
 				if (tipoUsuario == TipoPassarela::Ciutada) {
-					FormulariCompraEntrada^ f2 = gcnew FormulariCompraEntrada();
-					this->Visible = false;
-					f2->ShowDialog();
-					this->Show();
-					this->Visible = true;
+					if(label5->Text != "0")
+					{
+						FormulariCompraEntrada^ f2 = gcnew FormulariCompraEntrada();
+						this->Visible = false;
+						if (f2->ShowDialog() == System::Windows::Forms::DialogResult::OK)
+						{
+							this->Show();
+							this->Visible = true;
+							return;
+						}
+							this->Show();
+							this->Visible = true;
+					}
 					TxCompraEntradaEsdevenimentDiners tx1(nomEsd);
 					tx1.executar();
 					MessageBox::Show("Compra finalitzada amb exit", "", MessageBoxButtons::OK);

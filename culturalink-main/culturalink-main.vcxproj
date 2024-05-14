@@ -289,6 +289,9 @@
     <EmbeddedResource Include="EsborraFormEntitat.resx">
       <DependentUpon>EsborraFormEntitat.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormulariCompraEntrada.resx">
+      <DependentUpon>FormulariCompraEntrada.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InfoAjuntament.resx">
       <DependentUpon>InfoAjuntament.h</DependentUpon>
     </EmbeddedResource>

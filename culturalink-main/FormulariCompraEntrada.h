@@ -39,7 +39,8 @@ namespace culturalink_main {
 		}
 	private: System::Windows::Forms::TextBox^ titular;
 	private: System::Windows::Forms::TextBox^ numero_tarjeta;
-	private: System::Windows::Forms::TextBox^ fecha_caducidad;
+	private: System::Windows::Forms::TextBox^ fecha_caducidad_mes;
+
 	private: System::Windows::Forms::TextBox^ CVV;
 	protected:
 
@@ -54,6 +55,9 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Label^ label5;
 	private: System::Windows::Forms::Button^ sortirButton;
 	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::TextBox^ fecha_caducidad_año;
+
+	private: System::Windows::Forms::Label^ label6;
 
 	private:
 
@@ -82,7 +86,7 @@ namespace culturalink_main {
 		{
 			this->titular = (gcnew System::Windows::Forms::TextBox());
 			this->numero_tarjeta = (gcnew System::Windows::Forms::TextBox());
-			this->fecha_caducidad = (gcnew System::Windows::Forms::TextBox());
+			this->fecha_caducidad_mes = (gcnew System::Windows::Forms::TextBox());
 			this->CVV = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
@@ -91,6 +95,8 @@ namespace culturalink_main {
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->sortirButton = (gcnew System::Windows::Forms::Button());
+			this->fecha_caducidad_año = (gcnew System::Windows::Forms::TextBox());
+			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// titular
@@ -107,12 +113,12 @@ namespace culturalink_main {
 			this->numero_tarjeta->Size = System::Drawing::Size(100, 20);
 			this->numero_tarjeta->TabIndex = 1;
 			// 
-			// fecha_caducidad
+			// fecha_caducidad_mes
 			// 
-			this->fecha_caducidad->Location = System::Drawing::Point(125, 139);
-			this->fecha_caducidad->Name = L"fecha_caducidad";
-			this->fecha_caducidad->Size = System::Drawing::Size(100, 20);
-			this->fecha_caducidad->TabIndex = 2;
+			this->fecha_caducidad_mes->Location = System::Drawing::Point(125, 139);
+			this->fecha_caducidad_mes->Name = L"fecha_caducidad_mes";
+			this->fecha_caducidad_mes->Size = System::Drawing::Size(41, 20);
+			this->fecha_caducidad_mes->TabIndex = 2;
 			// 
 			// CVV
 			// 
@@ -186,11 +192,32 @@ namespace culturalink_main {
 			this->sortirButton->UseVisualStyleBackColor = true;
 			this->sortirButton->Click += gcnew System::EventHandler(this, &FormulariCompraEntrada::sortirButton_Click);
 			// 
+			// fecha_caducidad_año
+			// 
+			this->fecha_caducidad_año->Location = System::Drawing::Point(172, 139);
+			this->fecha_caducidad_año->Name = L"fecha_caducidad_año";
+			this->fecha_caducidad_año->Size = System::Drawing::Size(43, 20);
+			this->fecha_caducidad_año->TabIndex = 11;
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label6->ForeColor = System::Drawing::Color::Red;
+			this->label6->Location = System::Drawing::Point(221, 139);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(82, 18);
+			this->label6->TabIndex = 12;
+			this->label6->Text = L"MM / YYYY";
+			// 
 			// FormulariCompraEntrada
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(318, 277);
+			this->Controls->Add(this->label6);
+			this->Controls->Add(this->fecha_caducidad_año);
 			this->Controls->Add(this->sortirButton);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label5);
@@ -199,7 +226,7 @@ namespace culturalink_main {
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->CVV);
-			this->Controls->Add(this->fecha_caducidad);
+			this->Controls->Add(this->fecha_caducidad_mes);
 			this->Controls->Add(this->numero_tarjeta);
 			this->Controls->Add(this->titular);
 			this->Name = L"FormulariCompraEntrada";
@@ -213,14 +240,16 @@ namespace culturalink_main {
 
 		String^ numero = this->numero_tarjeta->Text;
 		String^ titular_tarjeta = this->titular->Text;
-		String^ fecha_cadu = this->fecha_caducidad->Text;
+		String^ fecha_cadu_año = this->fecha_caducidad_año->Text;
+		String^ fecha_cadu_mes = this->fecha_caducidad_mes->Text;
 		String^ CVV_ = this->CVV->Text;
-		if (numero->Length == 0 || titular_tarjeta->Length == 0 || fecha_cadu->Length == 0 || CVV_->Length == 0)
+		if (numero->Length == 0 || titular_tarjeta->Length == 0 || fecha_cadu_mes->Length == 0 || CVV_->Length == 0 || fecha_cadu_año->Length == 0)
 		{
 			MessageBox::Show("Omple tots els camps",
 				"Un o mes camps buits", MessageBoxButtons::OK);
 			return;
 		}
+		//TITULAR
 		bool encontrado = false;
 		for (int i = 0; i < titular_tarjeta->Length && encontrado == false; i++)
 		{
@@ -232,7 +261,9 @@ namespace culturalink_main {
 			MessageBox::Show("Revisa el camp 'Titular de la tarjeta' no té el format indicat ", "Camp amb format incorrecte", MessageBoxButtons::OK);
 			return;
 		}
+		//NUMERO
 		encontrado = false;
+		if (numero->Length < 13 || numero->Length > 18) encontrado = true;
 		for (int i = 0; i < numero->Length && encontrado == false; i++)
 		{
 			if (!(47 < numero[i] && numero[i] < 58)) encontrado = true;
@@ -243,9 +274,11 @@ namespace culturalink_main {
 			return;
 		}
 		encontrado = false;
-		for (int i = 0; i < fecha_cadu->Length && encontrado == false; i++)
+		//MES
+		if (fecha_cadu_mes->Length != 2) encontrado = true;
+		for (int i = 0; i < fecha_cadu_mes->Length && encontrado == false; i++)
 		{
-			if (!(47 < fecha_cadu[i] && fecha_cadu[i] < 58) && fecha_cadu[i] != 45) encontrado = true;
+			if (!(47 < fecha_cadu_mes[i] && fecha_cadu_mes[i] < 58)) encontrado = true;
 		}
 		if (encontrado == true)
 		{
@@ -253,7 +286,22 @@ namespace culturalink_main {
 			return;
 		}
 		encontrado = false;
-		if (CVV_->Length < 3) encontrado = true;
+		//AÑO
+		if (fecha_cadu_año->Length != 4) encontrado = true;
+		for (int i = 0; i < fecha_cadu_año->Length && encontrado == false; i++)
+		{
+			if (!(47 < fecha_cadu_año[i] && fecha_cadu_año[i] < 58)) encontrado = true;
+		}
+		if (encontrado == true)
+		{
+			MessageBox::Show("Revisa el camp 'Fecha de caducidad' no té el format indicat", "Camp amb format incorrecte", MessageBoxButtons::OK);
+			return;
+		}
+		
+
+		//CVV
+		encontrado = false;
+		if (CVV_->Length != 3) encontrado = true;
 		for (int i = 0; i < CVV_->Length && encontrado == false; i++)
 		{
 			if (!(47 < CVV_[i] && CVV_[i] < 58)) encontrado = true;
@@ -269,6 +317,7 @@ namespace culturalink_main {
 	}
 	private: System::Void sortirButton_Click(System::Object^ sender, System::EventArgs^ e) {
 		close = true;
+		this->DialogResult = System::Windows::Forms::DialogResult::OK;
 		this->Close();
 	}
 	};
