@@ -3,6 +3,7 @@
 //Forms:
 #include "ConsultarUsuariUI.h"
 #include "ComprarEsdevenimentUI.h"
+#include "RegistrarEsdevenimentUI.h"
 
 //Passareles:
 #include "PassarelaCiutada.h"
@@ -149,6 +150,8 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Button^ btnConsEsdevGoBack;
 	private: System::Windows::Forms::Button^ btnConsEsdevComprar;
 	private: System::Windows::Forms::Panel^ panel9;
+private: System::Windows::Forms::Panel^ panel10;
+private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 
 	protected:
 
@@ -242,6 +245,8 @@ namespace culturalink_main {
 		this->pnlMainModEsdv = (gcnew System::Windows::Forms::Panel());
 		this->label7 = (gcnew System::Windows::Forms::Label());
 		this->btnViewNavBar = (gcnew System::Windows::Forms::Button());
+		this->panel10 = (gcnew System::Windows::Forms::Panel());
+		this->btnRegEsdevAJ = (gcnew System::Windows::Forms::Button());
 		this->pnlTopBar->SuspendLayout();
 		this->pnlTopBarAppInfo->SuspendLayout();
 		(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->AppIcon))->BeginInit();
@@ -273,6 +278,7 @@ namespace culturalink_main {
 		this->panel8->SuspendLayout();
 		(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->BeginInit();
 		this->pnlMainModEsdv->SuspendLayout();
+		this->panel10->SuspendLayout();
 		this->SuspendLayout();
 		// 
 		// pnlTopBar
@@ -314,7 +320,7 @@ namespace culturalink_main {
 		this->pnlTopBarAppInfo->Controls->Add(this->lblNameApp);
 		this->pnlTopBarAppInfo->Controls->Add(this->AppIcon);
 		this->pnlTopBarAppInfo->Location = System::Drawing::Point(0, 0);
-		this->pnlTopBarAppInfo->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->pnlTopBarAppInfo->Margin = System::Windows::Forms::Padding(4);
 		this->pnlTopBarAppInfo->Name = L"pnlTopBarAppInfo";
 		this->pnlTopBarAppInfo->Size = System::Drawing::Size(276, 37);
 		this->pnlTopBarAppInfo->TabIndex = 1;
@@ -337,7 +343,7 @@ namespace culturalink_main {
 		this->AppIcon->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"AppIcon.Image")));
 		this->AppIcon->InitialImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"AppIcon.InitialImage")));
 		this->AppIcon->Location = System::Drawing::Point(7, 6);
-		this->AppIcon->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->AppIcon->Margin = System::Windows::Forms::Padding(4);
 		this->AppIcon->Name = L"AppIcon";
 		this->AppIcon->Size = System::Drawing::Size(47, 37);
 		this->AppIcon->TabIndex = 0;
@@ -350,7 +356,7 @@ namespace culturalink_main {
 		this->pnlTopBarMinMaxClose->Controls->Add(this->btnClose);
 		this->pnlTopBarMinMaxClose->Dock = System::Windows::Forms::DockStyle::Right;
 		this->pnlTopBarMinMaxClose->Location = System::Drawing::Point(1512, 0);
-		this->pnlTopBarMinMaxClose->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->pnlTopBarMinMaxClose->Margin = System::Windows::Forms::Padding(4);
 		this->pnlTopBarMinMaxClose->Name = L"pnlTopBarMinMaxClose";
 		this->pnlTopBarMinMaxClose->Size = System::Drawing::Size(267, 37);
 		this->pnlTopBarMinMaxClose->TabIndex = 0;
@@ -365,7 +371,7 @@ namespace culturalink_main {
 			static_cast<System::Int32>(static_cast<System::Byte>(31)));
 		this->btnMinimize->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnMinimize.Image")));
 		this->btnMinimize->Location = System::Drawing::Point(126, 0);
-		this->btnMinimize->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->btnMinimize->Margin = System::Windows::Forms::Padding(4);
 		this->btnMinimize->Name = L"btnMinimize";
 		this->btnMinimize->Size = System::Drawing::Size(47, 37);
 		this->btnMinimize->TabIndex = 2;
@@ -384,7 +390,7 @@ namespace culturalink_main {
 			static_cast<System::Int32>(static_cast<System::Byte>(31)));
 		this->btnMaximize->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnMaximize.Image")));
 		this->btnMaximize->Location = System::Drawing::Point(173, 0);
-		this->btnMaximize->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->btnMaximize->Margin = System::Windows::Forms::Padding(4);
 		this->btnMaximize->Name = L"btnMaximize";
 		this->btnMaximize->Size = System::Drawing::Size(47, 37);
 		this->btnMaximize->TabIndex = 1;
@@ -403,7 +409,7 @@ namespace culturalink_main {
 			static_cast<System::Int32>(static_cast<System::Byte>(31)));
 		this->btnClose->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnClose.Image")));
 		this->btnClose->Location = System::Drawing::Point(220, 0);
-		this->btnClose->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->btnClose->Margin = System::Windows::Forms::Padding(4);
 		this->btnClose->Name = L"btnClose";
 		this->btnClose->Size = System::Drawing::Size(47, 37);
 		this->btnClose->TabIndex = 0;
@@ -416,6 +422,7 @@ namespace culturalink_main {
 		// 
 		this->panelNavBar->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(40)), static_cast<System::Int32>(static_cast<System::Byte>(40)),
 			static_cast<System::Int32>(static_cast<System::Byte>(40)));
+		this->panelNavBar->Controls->Add(this->panel10);
 		this->panelNavBar->Controls->Add(this->pnlModEsdev);
 		this->panelNavBar->Controls->Add(this->panel7);
 		this->panelNavBar->Controls->Add(this->panel6);
@@ -425,7 +432,7 @@ namespace culturalink_main {
 		this->panelNavBar->Controls->Add(this->panelUserInfo);
 		this->panelNavBar->Dock = System::Windows::Forms::DockStyle::Left;
 		this->panelNavBar->Location = System::Drawing::Point(0, 37);
-		this->panelNavBar->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->panelNavBar->Margin = System::Windows::Forms::Padding(4);
 		this->panelNavBar->Name = L"panelNavBar";
 		this->panelNavBar->Size = System::Drawing::Size(276, 768);
 		this->panelNavBar->TabIndex = 1;
@@ -436,7 +443,7 @@ namespace culturalink_main {
 		this->pnlModEsdev->Controls->Add(this->button7);
 		this->pnlModEsdev->Dock = System::Windows::Forms::DockStyle::Top;
 		this->pnlModEsdev->Location = System::Drawing::Point(0, 345);
-		this->pnlModEsdev->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->pnlModEsdev->Margin = System::Windows::Forms::Padding(4);
 		this->pnlModEsdev->Name = L"pnlModEsdev";
 		this->pnlModEsdev->Size = System::Drawing::Size(276, 52);
 		this->pnlModEsdev->TabIndex = 6;
@@ -465,7 +472,7 @@ namespace culturalink_main {
 		this->button7->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F));
 		this->button7->ForeColor = System::Drawing::Color::Transparent;
 		this->button7->Location = System::Drawing::Point(53, 0);
-		this->button7->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->button7->Margin = System::Windows::Forms::Padding(4);
 		this->button7->Name = L"button7";
 		this->button7->Size = System::Drawing::Size(223, 52);
 		this->button7->TabIndex = 0;
@@ -760,7 +767,7 @@ namespace culturalink_main {
 		this->panelUserInfo->Controls->Add(this->picBoxUserPic);
 		this->panelUserInfo->Dock = System::Windows::Forms::DockStyle::Top;
 		this->panelUserInfo->Location = System::Drawing::Point(0, 0);
-		this->panelUserInfo->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->panelUserInfo->Margin = System::Windows::Forms::Padding(4);
 		this->panelUserInfo->Name = L"panelUserInfo";
 		this->panelUserInfo->Size = System::Drawing::Size(276, 137);
 		this->panelUserInfo->TabIndex = 0;
@@ -785,7 +792,7 @@ namespace culturalink_main {
 		this->panel9->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
 			static_cast<System::Int32>(static_cast<System::Byte>(64)));
 		this->panel9->Location = System::Drawing::Point(276, 137);
-		this->panel9->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->panel9->Margin = System::Windows::Forms::Padding(4);
 		this->panel9->Name = L"panel9";
 		this->panel9->Size = System::Drawing::Size(1033, 558);
 		this->panel9->TabIndex = 3;
@@ -839,7 +846,7 @@ namespace culturalink_main {
 		this->pnlMainTop->Controls->Add(this->lblTitlePage);
 		this->pnlMainTop->Dock = System::Windows::Forms::DockStyle::Top;
 		this->pnlMainTop->Location = System::Drawing::Point(276, 37);
-		this->pnlMainTop->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->pnlMainTop->Margin = System::Windows::Forms::Padding(4);
 		this->pnlMainTop->Name = L"pnlMainTop";
 		this->pnlMainTop->Size = System::Drawing::Size(1503, 223);
 		this->pnlMainTop->TabIndex = 3;
@@ -862,7 +869,7 @@ namespace culturalink_main {
 		this->flowLayoutPanel2->Controls->Add(this->btnFiltreDeportivo);
 		this->flowLayoutPanel2->Dock = System::Windows::Forms::DockStyle::Bottom;
 		this->flowLayoutPanel2->Location = System::Drawing::Point(0, 137);
-		this->flowLayoutPanel2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->flowLayoutPanel2->Margin = System::Windows::Forms::Padding(4);
 		this->flowLayoutPanel2->Name = L"flowLayoutPanel2";
 		this->flowLayoutPanel2->Padding = System::Windows::Forms::Padding(29, 10, 0, 0);
 		this->flowLayoutPanel2->Size = System::Drawing::Size(1503, 86);
@@ -877,7 +884,7 @@ namespace culturalink_main {
 			static_cast<System::Byte>(0)));
 		this->btnFiltrGala->ForeColor = System::Drawing::Color::White;
 		this->btnFiltrGala->Location = System::Drawing::Point(33, 14);
-		this->btnFiltrGala->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->btnFiltrGala->Margin = System::Windows::Forms::Padding(4);
 		this->btnFiltrGala->Name = L"btnFiltrGala";
 		this->btnFiltrGala->Size = System::Drawing::Size(100, 28);
 		this->btnFiltrGala->TabIndex = 0;
@@ -893,7 +900,7 @@ namespace culturalink_main {
 			static_cast<System::Byte>(0)));
 		this->btnFiltreDeportivo->ForeColor = System::Drawing::Color::White;
 		this->btnFiltreDeportivo->Location = System::Drawing::Point(141, 14);
-		this->btnFiltreDeportivo->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->btnFiltreDeportivo->Margin = System::Windows::Forms::Padding(4);
 		this->btnFiltreDeportivo->Name = L"btnFiltreDeportivo";
 		this->btnFiltreDeportivo->Size = System::Drawing::Size(100, 28);
 		this->btnFiltreDeportivo->TabIndex = 1;
@@ -906,7 +913,7 @@ namespace culturalink_main {
 		this->pictureBox7->BackColor = System::Drawing::Color::White;
 		this->pictureBox7->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox7.Image")));
 		this->pictureBox7->Location = System::Drawing::Point(961, 66);
-		this->pictureBox7->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->pictureBox7->Margin = System::Windows::Forms::Padding(4);
 		this->pictureBox7->Name = L"pictureBox7";
 		this->pictureBox7->Size = System::Drawing::Size(21, 20);
 		this->pictureBox7->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -916,7 +923,7 @@ namespace culturalink_main {
 		// textBox1
 		// 
 		this->textBox1->Location = System::Drawing::Point(985, 65);
-		this->textBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->textBox1->Margin = System::Windows::Forms::Padding(4);
 		this->textBox1->Name = L"textBox1";
 		this->textBox1->Size = System::Drawing::Size(512, 22);
 		this->textBox1->TabIndex = 1;
@@ -938,7 +945,7 @@ namespace culturalink_main {
 		this->flowLayoutPanel1->Controls->Add(this->pnlEsdevPauta);
 		this->flowLayoutPanel1->Dock = System::Windows::Forms::DockStyle::Fill;
 		this->flowLayoutPanel1->Location = System::Drawing::Point(0, 0);
-		this->flowLayoutPanel1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->flowLayoutPanel1->Margin = System::Windows::Forms::Padding(4);
 		this->flowLayoutPanel1->Name = L"flowLayoutPanel1";
 		this->flowLayoutPanel1->Padding = System::Windows::Forms::Padding(29, 0, 0, 0);
 		this->flowLayoutPanel1->Size = System::Drawing::Size(1503, 545);
@@ -952,7 +959,7 @@ namespace culturalink_main {
 		this->pnlEsdevPauta->Controls->Add(this->lblNameEsdev);
 		this->pnlEsdevPauta->Controls->Add(this->pictureBox6);
 		this->pnlEsdevPauta->Location = System::Drawing::Point(33, 4);
-		this->pnlEsdevPauta->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->pnlEsdevPauta->Margin = System::Windows::Forms::Padding(4);
 		this->pnlEsdevPauta->Name = L"pnlEsdevPauta";
 		this->pnlEsdevPauta->Size = System::Drawing::Size(219, 258);
 		this->pnlEsdevPauta->TabIndex = 2;
@@ -961,7 +968,7 @@ namespace culturalink_main {
 		// button6
 		// 
 		this->button6->Location = System::Drawing::Point(117, 224);
-		this->button6->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->button6->Margin = System::Windows::Forms::Padding(4);
 		this->button6->Name = L"button6";
 		this->button6->Size = System::Drawing::Size(100, 28);
 		this->button6->TabIndex = 2;
@@ -987,7 +994,7 @@ namespace culturalink_main {
 		this->pictureBox6->Dock = System::Windows::Forms::DockStyle::Top;
 		this->pictureBox6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox6.Image")));
 		this->pictureBox6->Location = System::Drawing::Point(0, 0);
-		this->pictureBox6->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->pictureBox6->Margin = System::Windows::Forms::Padding(4);
 		this->pictureBox6->Name = L"pictureBox6";
 		this->pictureBox6->Size = System::Drawing::Size(217, 203);
 		this->pictureBox6->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -1267,6 +1274,26 @@ namespace culturalink_main {
 		this->btnViewNavBar->UseVisualStyleBackColor = false;
 		this->btnViewNavBar->Click += gcnew System::EventHandler(this, &ProvesUI::btnViewNavBar_Click);
 		// 
+		// panel10
+		// 
+		this->panel10->Controls->Add(this->btnRegEsdevAJ);
+		this->panel10->Dock = System::Windows::Forms::DockStyle::Top;
+		this->panel10->Location = System::Drawing::Point(0, 397);
+		this->panel10->Name = L"panel10";
+		this->panel10->Size = System::Drawing::Size(276, 52);
+		this->panel10->TabIndex = 7;
+		// 
+		// btnRegEsdevAJ
+		// 
+		this->btnRegEsdevAJ->Dock = System::Windows::Forms::DockStyle::Right;
+		this->btnRegEsdevAJ->Location = System::Drawing::Point(53, 0);
+		this->btnRegEsdevAJ->Name = L"btnRegEsdevAJ";
+		this->btnRegEsdevAJ->Size = System::Drawing::Size(223, 52);
+		this->btnRegEsdevAJ->TabIndex = 0;
+		this->btnRegEsdevAJ->Text = L"Registrar Esdeveniment";
+		this->btnRegEsdevAJ->UseVisualStyleBackColor = true;
+		this->btnRegEsdevAJ->Click += gcnew System::EventHandler(this, &ProvesUI::btnRegEsdevAJ_Click);
+		// 
 		// ProvesUI
 		// 
 		this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -1281,7 +1308,7 @@ namespace culturalink_main {
 		this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
 		this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 		this->Location = System::Drawing::Point(2, 0);
-		this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+		this->Margin = System::Windows::Forms::Padding(4);
 		this->Name = L"ProvesUI";
 		this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 		this->Text = L"ProvesUI";
@@ -1330,6 +1357,7 @@ namespace culturalink_main {
 		(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->EndInit();
 		this->pnlMainModEsdv->ResumeLayout(false);
 		this->pnlMainModEsdv->PerformLayout();
+		this->panel10->ResumeLayout(false);
 		this->ResumeLayout(false);
 
 	}
@@ -1911,6 +1939,10 @@ private: System::Void ProvesUI_Load(System::Object^ sender, System::EventArgs^ e
 	for (int i = 0; i < num_filtre_btn; ++i) {
 		addFiltrButtonToUI(tipus[i]);
 	}
+}
+private: System::Void btnRegEsdevAJ_Click(System::Object^ sender, System::EventArgs^ e) {
+	RegistrarEsdevenimentUI^ formConsultUsu = gcnew RegistrarEsdevenimentUI;
+	formConsultUsu->ShowDialog();
 }
 };
 

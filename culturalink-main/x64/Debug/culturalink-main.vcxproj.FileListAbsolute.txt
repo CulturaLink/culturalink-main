@@ -21,3 +21,5 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\System.Buffers
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\MySql.Data.xml
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ComprarEsdevenimentUI.resources
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.BandejaEntradaUI.resources
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.BandejaEntradaSolAjuntament.resources
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.Entitat_BandejaEntradaSolicitud.resources

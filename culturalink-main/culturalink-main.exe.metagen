@@ -1,7 +1,9 @@
+  culturalink_main.BandejaEntradaSolAjuntament.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.BandejaEntradaUI.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.ComprarEsdevenimentUI.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.ConsultaEsdevenimentUI.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.ConsultarUsuariUI.resources - Embedded, ContainedInManifestFile, 
+  culturalink_main.Entitat_BandejaEntradaSolicitud.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.InfoAjuntament.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.InfoCiutada.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.InfoEntitat.resources - Embedded, ContainedInManifestFile, 
@@ -31,6 +33,9 @@ Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
+Class culturalink_main.BandejaEntradaSolAjuntament: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class culturalink_main.BandejaEntradaUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -51,6 +56,9 @@ Class culturalink_main.ConsultarUsuariUI: AutoLayout, AnsiClass, Class, Public, 
 Class culturalink_main.ComprarEsdevenimentUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class culturalink_main.RegistrarEsdevenimentUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class culturalink_main.ProvesUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -63,13 +71,13 @@ Class culturalink_main.InfoEntitat: AutoLayout, AnsiClass, Class, Public, Before
 Class culturalink_main.InfoCiutada: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class culturalink_main.RegistrarEsdevenimentUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-  :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class culturalink_main.ConsultaEsdevenimentUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class culturalink_main.MainForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class culturalink_main.Entitat_BandejaEntradaSolicitud: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class culturalink_main.RegistraEsdevenimentUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
