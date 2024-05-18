@@ -146,6 +146,18 @@
     <ClInclude Include="ComprarEsdevenimentUI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BandejaEntradaUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Entitat_BandejaEntradaSolicitud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TxConsultarSolicitudCreacioEsdeveniment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BandejaEntradaSolAjuntament.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -272,6 +284,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ComprarEsdevenimentUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BandejaEntradaUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Entitat_BandejaEntradaSolicitud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxConsultarSolicitudCreacioEsdeveniment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BandejaEntradaSolAjuntament.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

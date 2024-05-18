@@ -1,3 +1,4 @@
+  culturalink_main.BandejaEntradaUI.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.ComprarEsdevenimentUI.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.ConsultaEsdevenimentUI.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.ConsultarUsuariUI.resources - Embedded, ContainedInManifestFile, 
@@ -30,6 +31,9 @@ Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
+Class culturalink_main.BandejaEntradaUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class culturalink_main.InfoAjuntament: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

@@ -132,7 +132,7 @@ namespace culturalink_main {
 			// 
 			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
 			this->button5->Location = System::Drawing::Point(721, 439);
-			this->button5->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button5->Margin = System::Windows::Forms::Padding(4);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(100, 28);
 			this->button5->TabIndex = 0;
@@ -160,7 +160,7 @@ namespace culturalink_main {
 			this->button4->Dock = System::Windows::Forms::DockStyle::Top;
 			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
 			this->button4->Location = System::Drawing::Point(0, 147);
-			this->button4->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button4->Margin = System::Windows::Forms::Padding(4);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(208, 49);
 			this->button4->TabIndex = 3;
@@ -174,7 +174,7 @@ namespace culturalink_main {
 			this->button3->Dock = System::Windows::Forms::DockStyle::Top;
 			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
 			this->button3->Location = System::Drawing::Point(0, 98);
-			this->button3->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button3->Margin = System::Windows::Forms::Padding(4);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(208, 49);
 			this->button3->TabIndex = 2;
@@ -187,7 +187,7 @@ namespace culturalink_main {
 			this->button2->Dock = System::Windows::Forms::DockStyle::Top;
 			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
 			this->button2->Location = System::Drawing::Point(0, 49);
-			this->button2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button2->Margin = System::Windows::Forms::Padding(4);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(208, 49);
 			this->button2->TabIndex = 1;
@@ -200,7 +200,7 @@ namespace culturalink_main {
 			this->button1->Dock = System::Windows::Forms::DockStyle::Top;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
 			this->button1->Location = System::Drawing::Point(0, 0);
-			this->button1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button1->Margin = System::Windows::Forms::Padding(4);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(208, 49);
 			this->button1->TabIndex = 0;
@@ -227,7 +227,7 @@ namespace culturalink_main {
 			this->infoUsuariIcon->Dock = System::Windows::Forms::DockStyle::Right;
 			this->infoUsuariIcon->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"infoUsuariIcon.Image")));
 			this->infoUsuariIcon->Location = System::Drawing::Point(67, 0);
-			this->infoUsuariIcon->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->infoUsuariIcon->Margin = System::Windows::Forms::Padding(4);
 			this->infoUsuariIcon->Name = L"infoUsuariIcon";
 			this->infoUsuariIcon->Size = System::Drawing::Size(65, 60);
 			this->infoUsuariIcon->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -242,7 +242,7 @@ namespace culturalink_main {
 			this->menuIcon->Dock = System::Windows::Forms::DockStyle::Left;
 			this->menuIcon->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"menuIcon.Image")));
 			this->menuIcon->Location = System::Drawing::Point(0, 0);
-			this->menuIcon->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->menuIcon->Margin = System::Windows::Forms::Padding(4);
 			this->menuIcon->Name = L"menuIcon";
 			this->menuIcon->Size = System::Drawing::Size(65, 60);
 			this->menuIcon->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -256,7 +256,7 @@ namespace culturalink_main {
 			this->logInIcon->Dock = System::Windows::Forms::DockStyle::Right;
 			this->logInIcon->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"logInIcon.Image")));
 			this->logInIcon->Location = System::Drawing::Point(132, 0);
-			this->logInIcon->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->logInIcon->Margin = System::Windows::Forms::Padding(4);
 			this->logInIcon->Name = L"logInIcon";
 			this->logInIcon->Size = System::Drawing::Size(65, 60);
 			this->logInIcon->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;

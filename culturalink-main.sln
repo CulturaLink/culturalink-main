@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "culturalink-main", "culturalink-main\culturalink-main.vcxproj", "{28ECED3C-B925-42EF-B110-AE35567A020B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cultura-link-test", "cultura-link-test\cultura-link-test.vcxproj", "{679AEFCB-D1EA-4CF1-B5B8-BBF9DFAF66A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{28ECED3C-B925-42EF-B110-AE35567A020B}.Release|x64.Build.0 = Release|x64
 		{28ECED3C-B925-42EF-B110-AE35567A020B}.Release|x86.ActiveCfg = Release|Win32
 		{28ECED3C-B925-42EF-B110-AE35567A020B}.Release|x86.Build.0 = Release|Win32
+		{679AEFCB-D1EA-4CF1-B5B8-BBF9DFAF66A8}.Debug|x64.ActiveCfg = Debug|x64
+		{679AEFCB-D1EA-4CF1-B5B8-BBF9DFAF66A8}.Debug|x64.Build.0 = Debug|x64
+		{679AEFCB-D1EA-4CF1-B5B8-BBF9DFAF66A8}.Debug|x86.ActiveCfg = Debug|Win32
+		{679AEFCB-D1EA-4CF1-B5B8-BBF9DFAF66A8}.Debug|x86.Build.0 = Debug|Win32
+		{679AEFCB-D1EA-4CF1-B5B8-BBF9DFAF66A8}.Release|x64.ActiveCfg = Release|x64
+		{679AEFCB-D1EA-4CF1-B5B8-BBF9DFAF66A8}.Release|x64.Build.0 = Release|x64
+		{679AEFCB-D1EA-4CF1-B5B8-BBF9DFAF66A8}.Release|x86.ActiveCfg = Release|Win32
+		{679AEFCB-D1EA-4CF1-B5B8-BBF9DFAF66A8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
