@@ -1,6 +1,7 @@
 #pragma once
 #include "UsuariIniciat.h"
 #include "PassarelaCiutada.h"
+#include "TxConsultaCiutada.h"
 #include "TxConsultaInscripcions.h"
 
 namespace culturalink_main {
@@ -489,6 +490,7 @@ namespace culturalink_main {
 			this->panel2->Name = L"panel2";
 			this->panel2->Size = System::Drawing::Size(576, 381);
 			this->panel2->TabIndex = 14;
+			this->panel2->Visible = false;
 			// 
 			// label10
 			// 
@@ -668,33 +670,34 @@ namespace culturalink_main {
 		this->Close();
 	}
 private: System::Void InfoCiutada_Load(System::Object^ sender, System::EventArgs^ e) {
-	UsuariIniciat^ usuari = UsuariIniciat::ObtenerInstancia();
-	Object^ usuariIniciat = usuari->getUsuari();
-	TipoPassarela tipusUsuari = usuari->getTipoPassarela();
-
-	// Verificar si el tipo de passarela es Ciutada
-	if (tipusUsuari == TipoPassarela::Ciutada) {
-		// Convertir el objeto de passarela al tipo PassarelaCiutada^
-		PassarelaCiutada^ passarelaCiutada = safe_cast<PassarelaCiutada^>(usuariIniciat);
-
-		// Utilizar los métodos y propiedades específicos de PassarelaCiutada
-		lNick->Text = passarelaCiutada->getNickname();
-		lNom->Text = passarelaCiutada->getNomComplet();
-		lCorreu->Text = passarelaCiutada->getCorreu();
-		lData->Text = passarelaCiutada->getDataNaix();
-		lSaldo->Text = passarelaCiutada->getDiners()->ToString();
-		lPunts->Text = passarelaCiutada->getPunts()->ToString();
+	try
+	{
+		TxConsultaCiutada tc;
+		tc.executar();
+		List<String^>^ res = tc.getResult();
+		this->lNick->Text = res[0];
+		this->lNom->Text = res[1];
+		this->lCorreu->Text = res[2];
+		this->lData->Text = res[3];
+		this->lSaldo->Text = res[4];
+		this->lPunts->Text = res[5];
+	}
+	catch (const std::exception& e)
+	{
+		// Convertir la excepción de C++ a System::String^
+		String^ mensajeError = gcnew String(e.what());
+		MessageBox::Show(mensajeError, "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 	}
 
+	//carreguem llista de compres del usuari
 	TxConsultaInscripcions tI;
 	tI.executar();
-
 	List<String^>^ result = tI.getResult();
-
 	for each (String ^ line in result)
 		this->listBox1->Items->Add(line);
 
 	panel1->Visible = false;
+	panel2->Visible = false;
 }
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 	panelMenu->Visible = !panelMenu->Visible;

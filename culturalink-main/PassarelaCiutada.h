@@ -1,23 +1,19 @@
 #pragma once
-#include<iostream>
+#include <iostream>
+#include <string>
+#include "UsuariIniciat.h"
+
 using namespace std;
 using namespace MySql::Data::MySqlClient;
 using namespace System;
+using namespace System::Windows::Forms;
+
 ref class PassarelaCiutada
 {
-private:
-	
-	String^ _nickname;
-	String^ _nom_complet;
-	String^ _contrasenya;
-	String^ _correu;
-	String^ _data_naix;
-	int^ _diners;
-	int^ _punts;
-
 public:
 	PassarelaCiutada();
 	PassarelaCiutada(const PassarelaCiutada% p1);
+
 	PassarelaCiutada% operator=(const PassarelaCiutada% other);
 	void crear(String^ name, String^ fullName, String^ password, String^ email, String^ date);
 	void insereix();
@@ -30,6 +26,16 @@ public:
 	String^ getCorreu() { return _correu; } 
 	String^ getDataNaix() { return _data_naix; } 
 	int^ getDiners() { return _diners; }
-	int^ getPunts() { return _punts; } 
+	int^ getPunts() { return _punts; }
+
+private:
+	
+	String^ _nickname;
+	String^ _nom_complet;
+	String^ _contrasenya;
+	String^ _correu;
+	String^ _data_naix;
+	int^ _diners;
+	int^ _punts;
 };
 

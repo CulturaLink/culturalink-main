@@ -1,6 +1,5 @@
 #pragma once
 #include "CercadoraAjuntament.h"
-#include "AjuntamentIniciat.h"
 #include <iostream>
 #include <vector>
 
