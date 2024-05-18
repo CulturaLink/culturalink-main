@@ -66,6 +66,8 @@
     </ClCompile>
     <ClCompile Include="ModificarAjuntament.cpp" />
     <ClCompile Include="CtrlModificaAjuntament.cpp" />
+    <ClCompile Include="ModificarEntitat.cpp" />
+    <ClCompile Include="CtrlModificarEntitat.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ConsultaEsdevenimentUI.h" />
@@ -137,6 +139,8 @@
     <ClInclude Include="ModificarAjuntament.h" />
     <ClInclude Include="CtrlModificaAjuntament.h" />
     <ClInclude Include="ExcepcioCorreuExisteix.h" />
+    <ClInclude Include="ModificarEntitat.h" />
+    <ClInclude Include="CtrlModificarEntitat.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc" />

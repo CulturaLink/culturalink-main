@@ -141,6 +141,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="CtrlModificaAjuntament.h" />
+    <ClInclude Include="CtrlModificarEntitat.h" />
     <ClInclude Include="EsborraFormCiutada.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -167,6 +168,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="ModificarAjuntament.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ModificarEntitat.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="PassarelaAjuntament.h" />
@@ -221,6 +225,7 @@
     <ClCompile Include="CercadoraInscripcio.cpp" />
     <ClCompile Include="ConsultaEsdevenimentUI.cpp" />
     <ClCompile Include="CtrlModificaAjuntament.cpp" />
+    <ClCompile Include="CtrlModificarEntitat.cpp" />
     <ClCompile Include="culturalinkmain.cpp" />
     <ClCompile Include="EsborraFormCiutada.cpp" />
     <ClCompile Include="FormulariCompraEntrada.cpp" />
@@ -231,6 +236,7 @@
     <ClCompile Include="MainForm.cpp" />
     <ClCompile Include="EsborraFormEntitat.cpp" />
     <ClCompile Include="ModificarAjuntament.cpp" />
+    <ClCompile Include="ModificarEntitat.cpp" />
     <ClCompile Include="PassarelaAjuntament.cpp" />
     <ClCompile Include="PassarelaCiutada.cpp" />
     <ClCompile Include="PassarelaEntitat.cpp" />
@@ -309,6 +315,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarAjuntament.resx">
       <DependentUpon>ModificarAjuntament.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarEntitat.resx">
+      <DependentUpon>ModificarEntitat.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProvesEsdevsUI.resx">
       <DependentUpon>ProvesEsdevsUI.h</DependentUpon>

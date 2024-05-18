@@ -105,6 +105,57 @@ void PassarelaEntitat::esborra()
     }
 }
 
+void PassarelaEntitat::modifica() {
+    String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
+    MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
+
+    // Comprobar si el correu ya existe, throw excepcion en caso que si
+    String^ sqlCheckCorreu = "SELECT COUNT(*) FROM amep14.entitat WHERE correu = '" + obteCorreuElectronic() + "' AND id_entitat <> '" + obteid() + "';";
+
+    try {
+        // obrim la connexió
+        conn->Open();
+
+        MySqlCommand^ cmd1 = gcnew MySqlCommand(sqlCheckCorreu, conn);
+        MySqlDataReader^ dataReader1;
+        dataReader1 = cmd1->ExecuteReader();
+
+        int numEnt = 0;
+
+        if (dataReader1->Read()) { // Check if there are rows to read 
+            numEnt = Convert::ToInt32(dataReader1[0]); // Read the count from the first column (index 0)
+        }
+
+        if (numEnt != 0) throw gcnew CorreuExisteix("Correu ja existeix!");
+
+        dataReader1->Close();
+        //String^ clauString = passAju->getClau()->ToString();
+
+        String^ sql = "UPDATE amep14.entitat SET "
+            "nom = '" + obteNom() + "', "
+            "telefon = '" + obteTelefon() + "', "
+            "correu = '" + obteCorreuElectronic() + "', "
+            "contrasenya = '" + obteContrasenya() + "' "
+            "WHERE id_entitat = '" + obteid() + "';";
+
+        MySqlCommand^ cmd2 = gcnew MySqlCommand(sql, conn);
+
+        MySqlDataReader^ dataReader2;
+
+        // executem la comanda creada abans del try
+        dataReader2 = cmd2->ExecuteReader();
+    }
+    catch (Exception^ ex) {
+        // codi per mostrar l’error en una finestra
+        //MessageBox::Show(ex->Message);
+        throw ex;
+    }
+    finally {
+        // si tot va bé es tanca la connexió
+        conn->Close();
+    }
+}
+
 String^ PassarelaEntitat::obteContrasenya() {
     return contrasenya;
 }

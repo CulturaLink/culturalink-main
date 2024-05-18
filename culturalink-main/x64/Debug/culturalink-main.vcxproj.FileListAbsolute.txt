@@ -142,3 +142,5 @@ C:\Users\Asus\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\cultu
 C:\Users\Asus\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ModificarAjuntament.resources
 C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\x64\Debug\culturalink_main.FormulariCompraEntrada.resources
 C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ModificarAjuntament.resources
+C:\Users\Asus\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.FormulariCompraEntrada.resources
+C:\Users\Asus\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ModificarEntitat.resources
