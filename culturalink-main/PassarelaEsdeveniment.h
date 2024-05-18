@@ -15,6 +15,7 @@ ref class PassarelaEsdeveniment {
 
 public:
     PassarelaEsdeveniment(int idEnt, float preu, String^ ajEsd, String^ descEsd, String^ nomEsd, String^ tipusEsd, int aforamentEsd, int puntsCostEsd, String^ dataEsd, int puntsDescEsd);
+    PassarelaEsdeveniment(int idEnt, String^ nomEsd, String^ dataEsd, String^ descEsd);
     PassarelaEsdeveniment(String^ nomEsdev, float preu);
     PassarelaEsdeveniment();
     void insereix();

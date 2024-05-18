@@ -18,6 +18,8 @@ public:
     List<PassarelaEsdeveniment^>^ cercaEsdevenimentsAmbTipus(String^ tipus);
 
     List<PassarelaEsdeveniment^>^ cercaEsdevenimentsPerEntitat(String^ ent);
+    List<PassarelaEsdeveniment^>^ cercaEsdevenimentsPerAjuntament(String^ aj);
+
 
 private:
 

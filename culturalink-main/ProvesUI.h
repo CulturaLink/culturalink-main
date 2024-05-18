@@ -4,6 +4,7 @@
 #include "ConsultarUsuariUI.h"
 #include "ComprarEsdevenimentUI.h"
 #include "RegistrarEsdevenimentUI.h"
+#include "BandejaEntradaSolAjuntament.h"
 
 //Passareles:
 #include "PassarelaCiutada.h"
@@ -152,6 +153,8 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Panel^ panel9;
 private: System::Windows::Forms::Panel^ panel10;
 private: System::Windows::Forms::Button^ btnRegEsdevAJ;
+private: System::Windows::Forms::Panel^ panel11;
+private: System::Windows::Forms::Button^ button9;
 
 	protected:
 
@@ -180,6 +183,8 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->btnMaximize = (gcnew System::Windows::Forms::Button());
 		this->btnClose = (gcnew System::Windows::Forms::Button());
 		this->panelNavBar = (gcnew System::Windows::Forms::Panel());
+		this->panel10 = (gcnew System::Windows::Forms::Panel());
+		this->btnRegEsdevAJ = (gcnew System::Windows::Forms::Button());
 		this->pnlModEsdev = (gcnew System::Windows::Forms::Panel());
 		this->pictureBox8 = (gcnew System::Windows::Forms::PictureBox());
 		this->button7 = (gcnew System::Windows::Forms::Button());
@@ -245,13 +250,14 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->pnlMainModEsdv = (gcnew System::Windows::Forms::Panel());
 		this->label7 = (gcnew System::Windows::Forms::Label());
 		this->btnViewNavBar = (gcnew System::Windows::Forms::Button());
-		this->panel10 = (gcnew System::Windows::Forms::Panel());
-		this->btnRegEsdevAJ = (gcnew System::Windows::Forms::Button());
+		this->panel11 = (gcnew System::Windows::Forms::Panel());
+		this->button9 = (gcnew System::Windows::Forms::Button());
 		this->pnlTopBar->SuspendLayout();
 		this->pnlTopBarAppInfo->SuspendLayout();
 		(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->AppIcon))->BeginInit();
 		this->pnlTopBarMinMaxClose->SuspendLayout();
 		this->panelNavBar->SuspendLayout();
+		this->panel10->SuspendLayout();
 		this->pnlModEsdev->SuspendLayout();
 		(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox8))->BeginInit();
 		this->panel7->SuspendLayout();
@@ -278,7 +284,7 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->panel8->SuspendLayout();
 		(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->BeginInit();
 		this->pnlMainModEsdv->SuspendLayout();
-		this->panel10->SuspendLayout();
+		this->panel11->SuspendLayout();
 		this->SuspendLayout();
 		// 
 		// pnlTopBar
@@ -292,26 +298,26 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->pnlTopBar->Location = System::Drawing::Point(0, 0);
 		this->pnlTopBar->Margin = System::Windows::Forms::Padding(0);
 		this->pnlTopBar->Name = L"pnlTopBar";
-		this->pnlTopBar->Size = System::Drawing::Size(1779, 37);
+		this->pnlTopBar->Size = System::Drawing::Size(1334, 30);
 		this->pnlTopBar->TabIndex = 0;
 		// 
 		// panel5
 		// 
 		this->panel5->BackColor = System::Drawing::Color::Silver;
-		this->panel5->Location = System::Drawing::Point(461, 16);
-		this->panel5->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+		this->panel5->Location = System::Drawing::Point(346, 13);
+		this->panel5->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 		this->panel5->Name = L"panel5";
-		this->panel5->Size = System::Drawing::Size(181, 34);
+		this->panel5->Size = System::Drawing::Size(136, 28);
 		this->panel5->TabIndex = 5;
 		this->panel5->Visible = false;
 		// 
 		// panel4
 		// 
 		this->panel4->BackColor = System::Drawing::Color::White;
-		this->panel4->Location = System::Drawing::Point(276, 16);
-		this->panel4->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+		this->panel4->Location = System::Drawing::Point(207, 13);
+		this->panel4->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 		this->panel4->Name = L"panel4";
-		this->panel4->Size = System::Drawing::Size(181, 30);
+		this->panel4->Size = System::Drawing::Size(136, 24);
 		this->panel4->TabIndex = 4;
 		this->panel4->Visible = false;
 		// 
@@ -320,9 +326,8 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->pnlTopBarAppInfo->Controls->Add(this->lblNameApp);
 		this->pnlTopBarAppInfo->Controls->Add(this->AppIcon);
 		this->pnlTopBarAppInfo->Location = System::Drawing::Point(0, 0);
-		this->pnlTopBarAppInfo->Margin = System::Windows::Forms::Padding(4);
 		this->pnlTopBarAppInfo->Name = L"pnlTopBarAppInfo";
-		this->pnlTopBarAppInfo->Size = System::Drawing::Size(276, 37);
+		this->pnlTopBarAppInfo->Size = System::Drawing::Size(207, 30);
 		this->pnlTopBarAppInfo->TabIndex = 1;
 		// 
 		// lblNameApp
@@ -331,10 +336,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->lblNameApp->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 			static_cast<System::Byte>(0)));
 		this->lblNameApp->ForeColor = System::Drawing::Color::Silver;
-		this->lblNameApp->Location = System::Drawing::Point(33, 9);
-		this->lblNameApp->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+		this->lblNameApp->Location = System::Drawing::Point(25, 7);
 		this->lblNameApp->Name = L"lblNameApp";
-		this->lblNameApp->Size = System::Drawing::Size(82, 20);
+		this->lblNameApp->Size = System::Drawing::Size(67, 15);
 		this->lblNameApp->TabIndex = 1;
 		this->lblNameApp->Text = L"CulturaLink";
 		// 
@@ -342,10 +346,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		// 
 		this->AppIcon->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"AppIcon.Image")));
 		this->AppIcon->InitialImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"AppIcon.InitialImage")));
-		this->AppIcon->Location = System::Drawing::Point(7, 6);
-		this->AppIcon->Margin = System::Windows::Forms::Padding(4);
+		this->AppIcon->Location = System::Drawing::Point(5, 5);
 		this->AppIcon->Name = L"AppIcon";
-		this->AppIcon->Size = System::Drawing::Size(47, 37);
+		this->AppIcon->Size = System::Drawing::Size(35, 30);
 		this->AppIcon->TabIndex = 0;
 		this->AppIcon->TabStop = false;
 		// 
@@ -355,10 +358,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->pnlTopBarMinMaxClose->Controls->Add(this->btnMaximize);
 		this->pnlTopBarMinMaxClose->Controls->Add(this->btnClose);
 		this->pnlTopBarMinMaxClose->Dock = System::Windows::Forms::DockStyle::Right;
-		this->pnlTopBarMinMaxClose->Location = System::Drawing::Point(1512, 0);
-		this->pnlTopBarMinMaxClose->Margin = System::Windows::Forms::Padding(4);
+		this->pnlTopBarMinMaxClose->Location = System::Drawing::Point(1134, 0);
 		this->pnlTopBarMinMaxClose->Name = L"pnlTopBarMinMaxClose";
-		this->pnlTopBarMinMaxClose->Size = System::Drawing::Size(267, 37);
+		this->pnlTopBarMinMaxClose->Size = System::Drawing::Size(200, 30);
 		this->pnlTopBarMinMaxClose->TabIndex = 0;
 		// 
 		// btnMinimize
@@ -370,10 +372,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->btnMinimize->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(31)), static_cast<System::Int32>(static_cast<System::Byte>(31)),
 			static_cast<System::Int32>(static_cast<System::Byte>(31)));
 		this->btnMinimize->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnMinimize.Image")));
-		this->btnMinimize->Location = System::Drawing::Point(126, 0);
-		this->btnMinimize->Margin = System::Windows::Forms::Padding(4);
+		this->btnMinimize->Location = System::Drawing::Point(95, 0);
 		this->btnMinimize->Name = L"btnMinimize";
-		this->btnMinimize->Size = System::Drawing::Size(47, 37);
+		this->btnMinimize->Size = System::Drawing::Size(35, 30);
 		this->btnMinimize->TabIndex = 2;
 		this->btnMinimize->UseVisualStyleBackColor = false;
 		this->btnMinimize->Click += gcnew System::EventHandler(this, &ProvesUI::btnMinimize_Click);
@@ -389,10 +390,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->btnMaximize->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(31)), static_cast<System::Int32>(static_cast<System::Byte>(31)),
 			static_cast<System::Int32>(static_cast<System::Byte>(31)));
 		this->btnMaximize->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnMaximize.Image")));
-		this->btnMaximize->Location = System::Drawing::Point(173, 0);
-		this->btnMaximize->Margin = System::Windows::Forms::Padding(4);
+		this->btnMaximize->Location = System::Drawing::Point(130, 0);
 		this->btnMaximize->Name = L"btnMaximize";
-		this->btnMaximize->Size = System::Drawing::Size(47, 37);
+		this->btnMaximize->Size = System::Drawing::Size(35, 30);
 		this->btnMaximize->TabIndex = 1;
 		this->btnMaximize->UseVisualStyleBackColor = false;
 		this->btnMaximize->Click += gcnew System::EventHandler(this, &ProvesUI::btnMaximize_Click);
@@ -408,10 +408,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->btnClose->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(31)), static_cast<System::Int32>(static_cast<System::Byte>(31)),
 			static_cast<System::Int32>(static_cast<System::Byte>(31)));
 		this->btnClose->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnClose.Image")));
-		this->btnClose->Location = System::Drawing::Point(220, 0);
-		this->btnClose->Margin = System::Windows::Forms::Padding(4);
+		this->btnClose->Location = System::Drawing::Point(165, 0);
 		this->btnClose->Name = L"btnClose";
-		this->btnClose->Size = System::Drawing::Size(47, 37);
+		this->btnClose->Size = System::Drawing::Size(35, 30);
 		this->btnClose->TabIndex = 0;
 		this->btnClose->UseVisualStyleBackColor = false;
 		this->btnClose->Click += gcnew System::EventHandler(this, &ProvesUI::btnClose_Click);
@@ -422,6 +421,7 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		// 
 		this->panelNavBar->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(40)), static_cast<System::Int32>(static_cast<System::Byte>(40)),
 			static_cast<System::Int32>(static_cast<System::Byte>(40)));
+		this->panelNavBar->Controls->Add(this->panel11);
 		this->panelNavBar->Controls->Add(this->panel10);
 		this->panelNavBar->Controls->Add(this->pnlModEsdev);
 		this->panelNavBar->Controls->Add(this->panel7);
@@ -431,21 +431,41 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->panelNavBar->Controls->Add(this->panel1);
 		this->panelNavBar->Controls->Add(this->panelUserInfo);
 		this->panelNavBar->Dock = System::Windows::Forms::DockStyle::Left;
-		this->panelNavBar->Location = System::Drawing::Point(0, 37);
-		this->panelNavBar->Margin = System::Windows::Forms::Padding(4);
+		this->panelNavBar->Location = System::Drawing::Point(0, 30);
 		this->panelNavBar->Name = L"panelNavBar";
-		this->panelNavBar->Size = System::Drawing::Size(276, 768);
+		this->panelNavBar->Size = System::Drawing::Size(207, 624);
 		this->panelNavBar->TabIndex = 1;
+		// 
+		// panel10
+		// 
+		this->panel10->Controls->Add(this->btnRegEsdevAJ);
+		this->panel10->Dock = System::Windows::Forms::DockStyle::Top;
+		this->panel10->Location = System::Drawing::Point(0, 321);
+		this->panel10->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+		this->panel10->Name = L"panel10";
+		this->panel10->Size = System::Drawing::Size(207, 42);
+		this->panel10->TabIndex = 7;
+		// 
+		// btnRegEsdevAJ
+		// 
+		this->btnRegEsdevAJ->Dock = System::Windows::Forms::DockStyle::Right;
+		this->btnRegEsdevAJ->Location = System::Drawing::Point(40, 0);
+		this->btnRegEsdevAJ->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+		this->btnRegEsdevAJ->Name = L"btnRegEsdevAJ";
+		this->btnRegEsdevAJ->Size = System::Drawing::Size(167, 42);
+		this->btnRegEsdevAJ->TabIndex = 0;
+		this->btnRegEsdevAJ->Text = L"Registrar Esdeveniment";
+		this->btnRegEsdevAJ->UseVisualStyleBackColor = true;
+		this->btnRegEsdevAJ->Click += gcnew System::EventHandler(this, &ProvesUI::btnRegEsdevAJ_Click);
 		// 
 		// pnlModEsdev
 		// 
 		this->pnlModEsdev->Controls->Add(this->pictureBox8);
 		this->pnlModEsdev->Controls->Add(this->button7);
 		this->pnlModEsdev->Dock = System::Windows::Forms::DockStyle::Top;
-		this->pnlModEsdev->Location = System::Drawing::Point(0, 345);
-		this->pnlModEsdev->Margin = System::Windows::Forms::Padding(4);
+		this->pnlModEsdev->Location = System::Drawing::Point(0, 279);
 		this->pnlModEsdev->Name = L"pnlModEsdev";
-		this->pnlModEsdev->Size = System::Drawing::Size(276, 52);
+		this->pnlModEsdev->Size = System::Drawing::Size(207, 42);
 		this->pnlModEsdev->TabIndex = 6;
 		this->pnlModEsdev->Visible = false;
 		// 
@@ -456,9 +476,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->pictureBox8->ErrorImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox8.ErrorImage")));
 		this->pictureBox8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox8.Image")));
 		this->pictureBox8->Location = System::Drawing::Point(0, 0);
-		this->pictureBox8->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+		this->pictureBox8->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 		this->pictureBox8->Name = L"pictureBox8";
-		this->pictureBox8->Size = System::Drawing::Size(53, 52);
+		this->pictureBox8->Size = System::Drawing::Size(40, 42);
 		this->pictureBox8->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
 		this->pictureBox8->TabIndex = 1;
 		this->pictureBox8->TabStop = false;
@@ -471,10 +491,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->button7->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 		this->button7->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F));
 		this->button7->ForeColor = System::Drawing::Color::Transparent;
-		this->button7->Location = System::Drawing::Point(53, 0);
-		this->button7->Margin = System::Windows::Forms::Padding(4);
+		this->button7->Location = System::Drawing::Point(40, 0);
 		this->button7->Name = L"button7";
-		this->button7->Size = System::Drawing::Size(223, 52);
+		this->button7->Size = System::Drawing::Size(167, 42);
 		this->button7->TabIndex = 0;
 		this->button7->Text = L"Modif. Esdevs";
 		this->button7->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
@@ -488,10 +507,10 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->panel7->Controls->Add(this->label5);
 		this->panel7->Controls->Add(this->pictureBox5);
 		this->panel7->Dock = System::Windows::Forms::DockStyle::Bottom;
-		this->panel7->Location = System::Drawing::Point(0, 716);
-		this->panel7->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+		this->panel7->Location = System::Drawing::Point(0, 582);
+		this->panel7->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 		this->panel7->Name = L"panel7";
-		this->panel7->Size = System::Drawing::Size(276, 52);
+		this->panel7->Size = System::Drawing::Size(207, 42);
 		this->panel7->TabIndex = 5;
 		// 
 		// button5
@@ -500,10 +519,10 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->button5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 		this->button5->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F));
 		this->button5->ForeColor = System::Drawing::Color::DimGray;
-		this->button5->Location = System::Drawing::Point(53, 0);
-		this->button5->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+		this->button5->Location = System::Drawing::Point(40, 0);
+		this->button5->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 		this->button5->Name = L"button5";
-		this->button5->Size = System::Drawing::Size(223, 52);
+		this->button5->Size = System::Drawing::Size(167, 42);
 		this->button5->TabIndex = 6;
 		this->button5->Text = L"Log out";
 		this->button5->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
@@ -516,9 +535,10 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->label5->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 			static_cast<System::Byte>(0)));
 		this->label5->ForeColor = System::Drawing::Color::White;
-		this->label5->Location = System::Drawing::Point(60, 14);
+		this->label5->Location = System::Drawing::Point(45, 11);
+		this->label5->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 		this->label5->Name = L"label5";
-		this->label5->Size = System::Drawing::Size(83, 28);
+		this->label5->Size = System::Drawing::Size(66, 21);
 		this->label5->TabIndex = 1;
 		this->label5->Text = L"Log Out";
 		// 
@@ -528,9 +548,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->pictureBox5->ErrorImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox5.ErrorImage")));
 		this->pictureBox5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox5.Image")));
 		this->pictureBox5->Location = System::Drawing::Point(0, 0);
-		this->pictureBox5->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+		this->pictureBox5->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 		this->pictureBox5->Name = L"pictureBox5";
-		this->pictureBox5->Size = System::Drawing::Size(53, 52);
+		this->pictureBox5->Size = System::Drawing::Size(40, 42);
 		this->pictureBox5->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
 		this->pictureBox5->TabIndex = 0;
 		this->pictureBox5->TabStop = false;
@@ -543,10 +563,10 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->panel6->Controls->Add(this->label4);
 		this->panel6->Controls->Add(this->pictureBox4);
 		this->panel6->Dock = System::Windows::Forms::DockStyle::Top;
-		this->panel6->Location = System::Drawing::Point(0, 293);
-		this->panel6->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+		this->panel6->Location = System::Drawing::Point(0, 237);
+		this->panel6->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 		this->panel6->Name = L"panel6";
-		this->panel6->Size = System::Drawing::Size(276, 52);
+		this->panel6->Size = System::Drawing::Size(207, 42);
 		this->panel6->TabIndex = 4;
 		// 
 		// button4
@@ -555,10 +575,10 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 		this->button4->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F));
 		this->button4->ForeColor = System::Drawing::Color::Transparent;
-		this->button4->Location = System::Drawing::Point(53, 0);
-		this->button4->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+		this->button4->Location = System::Drawing::Point(40, 0);
+		this->button4->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 		this->button4->Name = L"button4";
-		this->button4->Size = System::Drawing::Size(223, 52);
+		this->button4->Size = System::Drawing::Size(167, 42);
 		this->button4->TabIndex = 5;
 		this->button4->Text = L"Settings";
 		this->button4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
@@ -571,9 +591,10 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->label4->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 			static_cast<System::Byte>(0)));
 		this->label4->ForeColor = System::Drawing::Color::White;
-		this->label4->Location = System::Drawing::Point(60, 14);
+		this->label4->Location = System::Drawing::Point(45, 11);
+		this->label4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 		this->label4->Name = L"label4";
-		this->label4->Size = System::Drawing::Size(83, 28);
+		this->label4->Size = System::Drawing::Size(66, 21);
 		this->label4->TabIndex = 1;
 		this->label4->Text = L"Settings";
 		// 
@@ -583,9 +604,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->pictureBox4->ErrorImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox4.ErrorImage")));
 		this->pictureBox4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox4.Image")));
 		this->pictureBox4->Location = System::Drawing::Point(0, 0);
-		this->pictureBox4->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+		this->pictureBox4->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 		this->pictureBox4->Name = L"pictureBox4";
-		this->pictureBox4->Size = System::Drawing::Size(53, 52);
+		this->pictureBox4->Size = System::Drawing::Size(40, 42);
 		this->pictureBox4->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
 		this->pictureBox4->TabIndex = 0;
 		this->pictureBox4->TabStop = false;
@@ -598,10 +619,10 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->panel3->Controls->Add(this->label3);
 		this->panel3->Controls->Add(this->pictureBox3);
 		this->panel3->Dock = System::Windows::Forms::DockStyle::Top;
-		this->panel3->Location = System::Drawing::Point(0, 241);
-		this->panel3->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+		this->panel3->Location = System::Drawing::Point(0, 195);
+		this->panel3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 		this->panel3->Name = L"panel3";
-		this->panel3->Size = System::Drawing::Size(276, 52);
+		this->panel3->Size = System::Drawing::Size(207, 42);
 		this->panel3->TabIndex = 3;
 		// 
 		// button3
@@ -610,10 +631,10 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 		this->button3->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F));
 		this->button3->ForeColor = System::Drawing::Color::DimGray;
-		this->button3->Location = System::Drawing::Point(53, 0);
-		this->button3->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+		this->button3->Location = System::Drawing::Point(40, 0);
+		this->button3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 		this->button3->Name = L"button3";
-		this->button3->Size = System::Drawing::Size(223, 52);
+		this->button3->Size = System::Drawing::Size(167, 42);
 		this->button3->TabIndex = 4;
 		this->button3->Text = L"Registar-se en Esdev.";
 		this->button3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
@@ -626,9 +647,10 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->label3->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 			static_cast<System::Byte>(0)));
 		this->label3->ForeColor = System::Drawing::Color::White;
-		this->label3->Location = System::Drawing::Point(60, 12);
+		this->label3->Location = System::Drawing::Point(45, 10);
+		this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 		this->label3->Name = L"label3";
-		this->label3->Size = System::Drawing::Size(193, 28);
+		this->label3->Size = System::Drawing::Size(155, 21);
 		this->label3->TabIndex = 1;
 		this->label3->Text = L"Registar-se en Esdev.";
 		// 
@@ -637,9 +659,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->pictureBox3->Dock = System::Windows::Forms::DockStyle::Left;
 		this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
 		this->pictureBox3->Location = System::Drawing::Point(0, 0);
-		this->pictureBox3->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+		this->pictureBox3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 		this->pictureBox3->Name = L"pictureBox3";
-		this->pictureBox3->Size = System::Drawing::Size(53, 52);
+		this->pictureBox3->Size = System::Drawing::Size(40, 42);
 		this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
 		this->pictureBox3->TabIndex = 0;
 		this->pictureBox3->TabStop = false;
@@ -652,10 +674,10 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->panel2->Controls->Add(this->label2);
 		this->panel2->Controls->Add(this->pictureBox2);
 		this->panel2->Dock = System::Windows::Forms::DockStyle::Top;
-		this->panel2->Location = System::Drawing::Point(0, 189);
-		this->panel2->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+		this->panel2->Location = System::Drawing::Point(0, 153);
+		this->panel2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 		this->panel2->Name = L"panel2";
-		this->panel2->Size = System::Drawing::Size(276, 52);
+		this->panel2->Size = System::Drawing::Size(207, 42);
 		this->panel2->TabIndex = 2;
 		// 
 		// button2
@@ -664,10 +686,10 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 		this->button2->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F));
 		this->button2->ForeColor = System::Drawing::Color::DimGray;
-		this->button2->Location = System::Drawing::Point(53, 0);
-		this->button2->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+		this->button2->Location = System::Drawing::Point(40, 0);
+		this->button2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 		this->button2->Name = L"button2";
-		this->button2->Size = System::Drawing::Size(223, 52);
+		this->button2->Size = System::Drawing::Size(167, 42);
 		this->button2->TabIndex = 3;
 		this->button2->Text = L"Consultar Esdev.";
 		this->button2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
@@ -680,9 +702,10 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->label2->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 			static_cast<System::Byte>(0)));
 		this->label2->ForeColor = System::Drawing::Color::White;
-		this->label2->Location = System::Drawing::Point(60, 12);
+		this->label2->Location = System::Drawing::Point(45, 10);
+		this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 		this->label2->Name = L"label2";
-		this->label2->Size = System::Drawing::Size(153, 28);
+		this->label2->Size = System::Drawing::Size(123, 21);
 		this->label2->TabIndex = 1;
 		this->label2->Text = L"Consultar Esdev.";
 		// 
@@ -691,9 +714,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->pictureBox2->Dock = System::Windows::Forms::DockStyle::Left;
 		this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
 		this->pictureBox2->Location = System::Drawing::Point(0, 0);
-		this->pictureBox2->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+		this->pictureBox2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 		this->pictureBox2->Name = L"pictureBox2";
-		this->pictureBox2->Size = System::Drawing::Size(53, 52);
+		this->pictureBox2->Size = System::Drawing::Size(40, 42);
 		this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
 		this->pictureBox2->TabIndex = 0;
 		this->pictureBox2->TabStop = false;
@@ -706,10 +729,10 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->panel1->Controls->Add(this->label1);
 		this->panel1->Controls->Add(this->pictureBox1);
 		this->panel1->Dock = System::Windows::Forms::DockStyle::Top;
-		this->panel1->Location = System::Drawing::Point(0, 137);
-		this->panel1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+		this->panel1->Location = System::Drawing::Point(0, 111);
+		this->panel1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 		this->panel1->Name = L"panel1";
-		this->panel1->Size = System::Drawing::Size(276, 52);
+		this->panel1->Size = System::Drawing::Size(207, 42);
 		this->panel1->TabIndex = 1;
 		// 
 		// button1
@@ -719,10 +742,10 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->button1->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 			static_cast<System::Byte>(0)));
 		this->button1->ForeColor = System::Drawing::Color::DimGray;
-		this->button1->Location = System::Drawing::Point(53, 0);
+		this->button1->Location = System::Drawing::Point(40, 0);
 		this->button1->Margin = System::Windows::Forms::Padding(0, 2, 0, 2);
 		this->button1->Name = L"button1";
-		this->button1->Size = System::Drawing::Size(223, 52);
+		this->button1->Size = System::Drawing::Size(167, 42);
 		this->button1->TabIndex = 2;
 		this->button1->Text = L"HomePage";
 		this->button1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
@@ -736,9 +759,10 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->label1->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 			static_cast<System::Byte>(0)));
 		this->label1->ForeColor = System::Drawing::Color::White;
-		this->label1->Location = System::Drawing::Point(53, 0);
+		this->label1->Location = System::Drawing::Point(40, 0);
+		this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 		this->label1->Name = L"label1";
-		this->label1->Size = System::Drawing::Size(65, 28);
+		this->label1->Size = System::Drawing::Size(52, 21);
 		this->label1->TabIndex = 1;
 		this->label1->Text = L"Home";
 		// 
@@ -748,9 +772,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->pictureBox1->ErrorImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.ErrorImage")));
 		this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
 		this->pictureBox1->Location = System::Drawing::Point(0, 0);
-		this->pictureBox1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+		this->pictureBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 		this->pictureBox1->Name = L"pictureBox1";
-		this->pictureBox1->Size = System::Drawing::Size(53, 52);
+		this->pictureBox1->Size = System::Drawing::Size(40, 42);
 		this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
 		this->pictureBox1->TabIndex = 0;
 		this->pictureBox1->TabStop = false;
@@ -767,9 +791,8 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->panelUserInfo->Controls->Add(this->picBoxUserPic);
 		this->panelUserInfo->Dock = System::Windows::Forms::DockStyle::Top;
 		this->panelUserInfo->Location = System::Drawing::Point(0, 0);
-		this->panelUserInfo->Margin = System::Windows::Forms::Padding(4);
 		this->panelUserInfo->Name = L"panelUserInfo";
-		this->panelUserInfo->Size = System::Drawing::Size(276, 137);
+		this->panelUserInfo->Size = System::Drawing::Size(207, 111);
 		this->panelUserInfo->TabIndex = 0;
 		// 
 		// lblTypeUser
@@ -780,10 +803,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->lblTypeUser->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 		this->lblTypeUser->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI Semibold", 8.25F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
 			System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-		this->lblTypeUser->Location = System::Drawing::Point(128, 76);
-		this->lblTypeUser->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+		this->lblTypeUser->Location = System::Drawing::Point(96, 62);
 		this->lblTypeUser->Name = L"lblTypeUser";
-		this->lblTypeUser->Size = System::Drawing::Size(66, 19);
+		this->lblTypeUser->Size = System::Drawing::Size(54, 13);
 		this->lblTypeUser->TabIndex = 3;
 		this->lblTypeUser->Text = L"UserType";
 		// 
@@ -791,10 +813,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		// 
 		this->panel9->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
 			static_cast<System::Int32>(static_cast<System::Byte>(64)));
-		this->panel9->Location = System::Drawing::Point(276, 137);
-		this->panel9->Margin = System::Windows::Forms::Padding(4);
+		this->panel9->Location = System::Drawing::Point(207, 111);
 		this->panel9->Name = L"panel9";
-		this->panel9->Size = System::Drawing::Size(1033, 558);
+		this->panel9->Size = System::Drawing::Size(775, 453);
 		this->panel9->TabIndex = 3;
 		// 
 		// lblFullNameUser
@@ -803,10 +824,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->lblFullNameUser->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 			static_cast<System::Byte>(0)));
 		this->lblFullNameUser->ForeColor = System::Drawing::Color::White;
-		this->lblFullNameUser->Location = System::Drawing::Point(120, 22);
-		this->lblFullNameUser->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+		this->lblFullNameUser->Location = System::Drawing::Point(90, 18);
 		this->lblFullNameUser->Name = L"lblFullNameUser";
-		this->lblFullNameUser->Size = System::Drawing::Size(150, 28);
+		this->lblFullNameUser->Size = System::Drawing::Size(118, 21);
 		this->lblFullNameUser->TabIndex = 2;
 		this->lblFullNameUser->Text = L"User Full Name";
 		// 
@@ -816,20 +836,19 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->lblUsername->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 			static_cast<System::Byte>(0)));
 		this->lblUsername->ForeColor = System::Drawing::Color::Silver;
-		this->lblUsername->Location = System::Drawing::Point(121, 47);
-		this->lblUsername->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+		this->lblUsername->Location = System::Drawing::Point(91, 38);
 		this->lblUsername->Name = L"lblUsername";
-		this->lblUsername->Size = System::Drawing::Size(82, 19);
+		this->lblUsername->Size = System::Drawing::Size(66, 13);
 		this->lblUsername->TabIndex = 1;
 		this->lblUsername->Text = L"@username";
 		// 
 		// picBoxUserPic
 		// 
 		this->picBoxUserPic->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"picBoxUserPic.Image")));
-		this->picBoxUserPic->Location = System::Drawing::Point(13, 18);
+		this->picBoxUserPic->Location = System::Drawing::Point(10, 15);
 		this->picBoxUserPic->Margin = System::Windows::Forms::Padding(0);
 		this->picBoxUserPic->Name = L"picBoxUserPic";
-		this->picBoxUserPic->Size = System::Drawing::Size(105, 100);
+		this->picBoxUserPic->Size = System::Drawing::Size(79, 81);
 		this->picBoxUserPic->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 		this->picBoxUserPic->TabIndex = 0;
 		this->picBoxUserPic->TabStop = false;
@@ -845,18 +864,17 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->pnlMainTop->Controls->Add(this->textBox1);
 		this->pnlMainTop->Controls->Add(this->lblTitlePage);
 		this->pnlMainTop->Dock = System::Windows::Forms::DockStyle::Top;
-		this->pnlMainTop->Location = System::Drawing::Point(276, 37);
-		this->pnlMainTop->Margin = System::Windows::Forms::Padding(4);
+		this->pnlMainTop->Location = System::Drawing::Point(207, 30);
 		this->pnlMainTop->Name = L"pnlMainTop";
-		this->pnlMainTop->Size = System::Drawing::Size(1503, 223);
+		this->pnlMainTop->Size = System::Drawing::Size(1127, 181);
 		this->pnlMainTop->TabIndex = 3;
 		// 
 		// btnSearch
 		// 
-		this->btnSearch->Location = System::Drawing::Point(879, 64);
-		this->btnSearch->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+		this->btnSearch->Location = System::Drawing::Point(659, 52);
+		this->btnSearch->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 		this->btnSearch->Name = L"btnSearch";
-		this->btnSearch->Size = System::Drawing::Size(75, 23);
+		this->btnSearch->Size = System::Drawing::Size(56, 19);
 		this->btnSearch->TabIndex = 5;
 		this->btnSearch->Text = L"Search";
 		this->btnSearch->UseVisualStyleBackColor = true;
@@ -868,11 +886,10 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->flowLayoutPanel2->Controls->Add(this->btnFiltrGala);
 		this->flowLayoutPanel2->Controls->Add(this->btnFiltreDeportivo);
 		this->flowLayoutPanel2->Dock = System::Windows::Forms::DockStyle::Bottom;
-		this->flowLayoutPanel2->Location = System::Drawing::Point(0, 137);
-		this->flowLayoutPanel2->Margin = System::Windows::Forms::Padding(4);
+		this->flowLayoutPanel2->Location = System::Drawing::Point(0, 111);
 		this->flowLayoutPanel2->Name = L"flowLayoutPanel2";
-		this->flowLayoutPanel2->Padding = System::Windows::Forms::Padding(29, 10, 0, 0);
-		this->flowLayoutPanel2->Size = System::Drawing::Size(1503, 86);
+		this->flowLayoutPanel2->Padding = System::Windows::Forms::Padding(22, 8, 0, 0);
+		this->flowLayoutPanel2->Size = System::Drawing::Size(1127, 70);
 		this->flowLayoutPanel2->TabIndex = 4;
 		this->flowLayoutPanel2->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &ProvesUI::flowLayoutPanel2_Paint);
 		// 
@@ -883,10 +900,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->btnFiltrGala->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 			static_cast<System::Byte>(0)));
 		this->btnFiltrGala->ForeColor = System::Drawing::Color::White;
-		this->btnFiltrGala->Location = System::Drawing::Point(33, 14);
-		this->btnFiltrGala->Margin = System::Windows::Forms::Padding(4);
+		this->btnFiltrGala->Location = System::Drawing::Point(25, 11);
 		this->btnFiltrGala->Name = L"btnFiltrGala";
-		this->btnFiltrGala->Size = System::Drawing::Size(100, 28);
+		this->btnFiltrGala->Size = System::Drawing::Size(75, 23);
 		this->btnFiltrGala->TabIndex = 0;
 		this->btnFiltrGala->Text = L"Gala";
 		this->btnFiltrGala->UseVisualStyleBackColor = false;
@@ -899,10 +915,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->btnFiltreDeportivo->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 			static_cast<System::Byte>(0)));
 		this->btnFiltreDeportivo->ForeColor = System::Drawing::Color::White;
-		this->btnFiltreDeportivo->Location = System::Drawing::Point(141, 14);
-		this->btnFiltreDeportivo->Margin = System::Windows::Forms::Padding(4);
+		this->btnFiltreDeportivo->Location = System::Drawing::Point(106, 11);
 		this->btnFiltreDeportivo->Name = L"btnFiltreDeportivo";
-		this->btnFiltreDeportivo->Size = System::Drawing::Size(100, 28);
+		this->btnFiltreDeportivo->Size = System::Drawing::Size(75, 23);
 		this->btnFiltreDeportivo->TabIndex = 1;
 		this->btnFiltreDeportivo->Text = L"Deportivo";
 		this->btnFiltreDeportivo->UseVisualStyleBackColor = false;
@@ -912,20 +927,18 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		// 
 		this->pictureBox7->BackColor = System::Drawing::Color::White;
 		this->pictureBox7->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox7.Image")));
-		this->pictureBox7->Location = System::Drawing::Point(961, 66);
-		this->pictureBox7->Margin = System::Windows::Forms::Padding(4);
+		this->pictureBox7->Location = System::Drawing::Point(721, 54);
 		this->pictureBox7->Name = L"pictureBox7";
-		this->pictureBox7->Size = System::Drawing::Size(21, 20);
+		this->pictureBox7->Size = System::Drawing::Size(16, 16);
 		this->pictureBox7->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 		this->pictureBox7->TabIndex = 2;
 		this->pictureBox7->TabStop = false;
 		// 
 		// textBox1
 		// 
-		this->textBox1->Location = System::Drawing::Point(985, 65);
-		this->textBox1->Margin = System::Windows::Forms::Padding(4);
+		this->textBox1->Location = System::Drawing::Point(739, 53);
 		this->textBox1->Name = L"textBox1";
-		this->textBox1->Size = System::Drawing::Size(512, 22);
+		this->textBox1->Size = System::Drawing::Size(385, 20);
 		this->textBox1->TabIndex = 1;
 		// 
 		// lblTitlePage
@@ -933,10 +946,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->lblTitlePage->AutoSize = true;
 		this->lblTitlePage->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 21.75F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Underline)),
 			System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-		this->lblTitlePage->Location = System::Drawing::Point(21, 48);
-		this->lblTitlePage->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+		this->lblTitlePage->Location = System::Drawing::Point(16, 39);
 		this->lblTitlePage->Name = L"lblTitlePage";
-		this->lblTitlePage->Size = System::Drawing::Size(220, 50);
+		this->lblTitlePage->Size = System::Drawing::Size(172, 40);
 		this->lblTitlePage->TabIndex = 0;
 		this->lblTitlePage->Text = L"HOMEPAGE";
 		// 
@@ -945,10 +957,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->flowLayoutPanel1->Controls->Add(this->pnlEsdevPauta);
 		this->flowLayoutPanel1->Dock = System::Windows::Forms::DockStyle::Fill;
 		this->flowLayoutPanel1->Location = System::Drawing::Point(0, 0);
-		this->flowLayoutPanel1->Margin = System::Windows::Forms::Padding(4);
 		this->flowLayoutPanel1->Name = L"flowLayoutPanel1";
-		this->flowLayoutPanel1->Padding = System::Windows::Forms::Padding(29, 0, 0, 0);
-		this->flowLayoutPanel1->Size = System::Drawing::Size(1503, 545);
+		this->flowLayoutPanel1->Padding = System::Windows::Forms::Padding(22, 0, 0, 0);
+		this->flowLayoutPanel1->Size = System::Drawing::Size(1127, 443);
 		this->flowLayoutPanel1->TabIndex = 3;
 		this->flowLayoutPanel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &ProvesUI::flowLayoutPanel1_Paint);
 		// 
@@ -958,19 +969,17 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->pnlEsdevPauta->Controls->Add(this->button6);
 		this->pnlEsdevPauta->Controls->Add(this->lblNameEsdev);
 		this->pnlEsdevPauta->Controls->Add(this->pictureBox6);
-		this->pnlEsdevPauta->Location = System::Drawing::Point(33, 4);
-		this->pnlEsdevPauta->Margin = System::Windows::Forms::Padding(4);
+		this->pnlEsdevPauta->Location = System::Drawing::Point(25, 3);
 		this->pnlEsdevPauta->Name = L"pnlEsdevPauta";
-		this->pnlEsdevPauta->Size = System::Drawing::Size(219, 258);
+		this->pnlEsdevPauta->Size = System::Drawing::Size(165, 210);
 		this->pnlEsdevPauta->TabIndex = 2;
 		this->pnlEsdevPauta->Visible = false;
 		// 
 		// button6
 		// 
-		this->button6->Location = System::Drawing::Point(117, 224);
-		this->button6->Margin = System::Windows::Forms::Padding(4);
+		this->button6->Location = System::Drawing::Point(88, 182);
 		this->button6->Name = L"button6";
-		this->button6->Size = System::Drawing::Size(100, 28);
+		this->button6->Size = System::Drawing::Size(75, 23);
 		this->button6->TabIndex = 2;
 		this->button6->Text = L"Comprar";
 		this->button6->UseVisualStyleBackColor = true;
@@ -981,10 +990,9 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->lblNameEsdev->Dock = System::Windows::Forms::DockStyle::Bottom;
 		this->lblNameEsdev->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 			static_cast<System::Byte>(0)));
-		this->lblNameEsdev->Location = System::Drawing::Point(0, 233);
-		this->lblNameEsdev->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+		this->lblNameEsdev->Location = System::Drawing::Point(0, 191);
 		this->lblNameEsdev->Name = L"lblNameEsdev";
-		this->lblNameEsdev->Size = System::Drawing::Size(70, 23);
+		this->lblNameEsdev->Size = System::Drawing::Size(54, 17);
 		this->lblNameEsdev->TabIndex = 1;
 		this->lblNameEsdev->Text = L"( Nom )";
 		this->lblNameEsdev->Click += gcnew System::EventHandler(this, &ProvesUI::label6_Click);
@@ -994,9 +1002,8 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->pictureBox6->Dock = System::Windows::Forms::DockStyle::Top;
 		this->pictureBox6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox6.Image")));
 		this->pictureBox6->Location = System::Drawing::Point(0, 0);
-		this->pictureBox6->Margin = System::Windows::Forms::Padding(4);
 		this->pictureBox6->Name = L"pictureBox6";
-		this->pictureBox6->Size = System::Drawing::Size(217, 203);
+		this->pictureBox6->Size = System::Drawing::Size(163, 165);
 		this->pictureBox6->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 		this->pictureBox6->TabIndex = 3;
 		this->pictureBox6->TabStop = false;
@@ -1005,10 +1012,10 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		// 
 		this->pnlMain->Controls->Add(this->flowLayoutPanel1);
 		this->pnlMain->Dock = System::Windows::Forms::DockStyle::Fill;
-		this->pnlMain->Location = System::Drawing::Point(276, 260);
-		this->pnlMain->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+		this->pnlMain->Location = System::Drawing::Point(207, 211);
+		this->pnlMain->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 		this->pnlMain->Name = L"pnlMain";
-		this->pnlMain->Size = System::Drawing::Size(1503, 545);
+		this->pnlMain->Size = System::Drawing::Size(1127, 443);
 		this->pnlMain->TabIndex = 4;
 		// 
 		// PANELPROVA
@@ -1087,7 +1094,7 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->lblEsdevConsultNom->Location = System::Drawing::Point(44, 3);
 		this->lblEsdevConsultNom->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 		this->lblEsdevConsultNom->Name = L"lblEsdevConsultNom";
-		this->lblEsdevConsultNom->Size = System::Drawing::Size(44, 16);
+		this->lblEsdevConsultNom->Size = System::Drawing::Size(35, 13);
 		this->lblEsdevConsultNom->TabIndex = 0;
 		this->lblEsdevConsultNom->Text = L"(Nom)";
 		// 
@@ -1097,7 +1104,7 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->lblConsultEsdevTipus->Location = System::Drawing::Point(44, 176);
 		this->lblConsultEsdevTipus->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 		this->lblConsultEsdevTipus->Name = L"lblConsultEsdevTipus";
-		this->lblConsultEsdevTipus->Size = System::Drawing::Size(49, 16);
+		this->lblConsultEsdevTipus->Size = System::Drawing::Size(39, 13);
 		this->lblConsultEsdevTipus->TabIndex = 9;
 		this->lblConsultEsdevTipus->Text = L"(Tipus)";
 		// 
@@ -1107,7 +1114,7 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->lblEsdevConsultPreu->Location = System::Drawing::Point(44, 23);
 		this->lblEsdevConsultPreu->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 		this->lblEsdevConsultPreu->Name = L"lblEsdevConsultPreu";
-		this->lblEsdevConsultPreu->Size = System::Drawing::Size(43, 16);
+		this->lblEsdevConsultPreu->Size = System::Drawing::Size(35, 13);
 		this->lblEsdevConsultPreu->TabIndex = 1;
 		this->lblEsdevConsultPreu->Text = L"(Preu)";
 		// 
@@ -1117,7 +1124,7 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->lblConsultEsdevPreuDesc->Location = System::Drawing::Point(44, 157);
 		this->lblConsultEsdevPreuDesc->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 		this->lblConsultEsdevPreuDesc->Name = L"lblConsultEsdevPreuDesc";
-		this->lblConsultEsdevPreuDesc->Size = System::Drawing::Size(118, 16);
+		this->lblConsultEsdevPreuDesc->Size = System::Drawing::Size(94, 13);
 		this->lblConsultEsdevPreuDesc->TabIndex = 8;
 		this->lblConsultEsdevPreuDesc->Text = L"(PuntsDescompte)";
 		// 
@@ -1127,7 +1134,7 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->lblConsultEsdevDesc->Location = System::Drawing::Point(44, 43);
 		this->lblConsultEsdevDesc->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 		this->lblConsultEsdevDesc->Name = L"lblConsultEsdevDesc";
-		this->lblConsultEsdevDesc->Size = System::Drawing::Size(80, 16);
+		this->lblConsultEsdevDesc->Size = System::Drawing::Size(63, 13);
 		this->lblConsultEsdevDesc->TabIndex = 2;
 		this->lblConsultEsdevDesc->Text = L"(Descripció)";
 		// 
@@ -1137,7 +1144,7 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->lblConsultEsdevData->Location = System::Drawing::Point(44, 138);
 		this->lblConsultEsdevData->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 		this->lblConsultEsdevData->Name = L"lblConsultEsdevData";
-		this->lblConsultEsdevData->Size = System::Drawing::Size(44, 16);
+		this->lblConsultEsdevData->Size = System::Drawing::Size(36, 13);
 		this->lblConsultEsdevData->TabIndex = 7;
 		this->lblConsultEsdevData->Text = L"(Data)";
 		// 
@@ -1147,7 +1154,7 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->lblConsultEsdevEntit->Location = System::Drawing::Point(44, 62);
 		this->lblConsultEsdevEntit->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 		this->lblConsultEsdevEntit->Name = L"lblConsultEsdevEntit";
-		this->lblConsultEsdevEntit->Size = System::Drawing::Size(51, 16);
+		this->lblConsultEsdevEntit->Size = System::Drawing::Size(43, 13);
 		this->lblConsultEsdevEntit->TabIndex = 3;
 		this->lblConsultEsdevEntit->Text = L"(Entitat)";
 		// 
@@ -1157,7 +1164,7 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->lblConsultEsdevPuntsCost->Location = System::Drawing::Point(44, 119);
 		this->lblConsultEsdevPuntsCost->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 		this->lblConsultEsdevPuntsCost->Name = L"lblConsultEsdevPuntsCost";
-		this->lblConsultEsdevPuntsCost->Size = System::Drawing::Size(75, 16);
+		this->lblConsultEsdevPuntsCost->Size = System::Drawing::Size(61, 13);
 		this->lblConsultEsdevPuntsCost->TabIndex = 6;
 		this->lblConsultEsdevPuntsCost->Text = L"(PuntsCost)";
 		// 
@@ -1167,7 +1174,7 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->lblConsultEsdevAjunt->Location = System::Drawing::Point(44, 81);
 		this->lblConsultEsdevAjunt->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 		this->lblConsultEsdevAjunt->Name = L"lblConsultEsdevAjunt";
-		this->lblConsultEsdevAjunt->Size = System::Drawing::Size(81, 16);
+		this->lblConsultEsdevAjunt->Size = System::Drawing::Size(66, 13);
 		this->lblConsultEsdevAjunt->TabIndex = 4;
 		this->lblConsultEsdevAjunt->Text = L"(Ajuntament)";
 		// 
@@ -1177,7 +1184,7 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->lblConsultEsdevAfor->Location = System::Drawing::Point(44, 100);
 		this->lblConsultEsdevAfor->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 		this->lblConsultEsdevAfor->Name = L"lblConsultEsdevAfor";
-		this->lblConsultEsdevAfor->Size = System::Drawing::Size(76, 16);
+		this->lblConsultEsdevAfor->Size = System::Drawing::Size(61, 13);
 		this->lblConsultEsdevAfor->TabIndex = 5;
 		this->lblConsultEsdevAfor->Text = L"(Aforament)";
 		// 
@@ -1220,10 +1227,10 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->label6->Dock = System::Windows::Forms::DockStyle::Bottom;
 		this->label6->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 			static_cast<System::Byte>(0)));
-		this->label6->Location = System::Drawing::Point(0, 233);
+		this->label6->Location = System::Drawing::Point(0, 239);
 		this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 		this->label6->Name = L"label6";
-		this->label6->Size = System::Drawing::Size(70, 23);
+		this->label6->Size = System::Drawing::Size(54, 17);
 		this->label6->TabIndex = 1;
 		this->label6->Text = L"( Nom )";
 		// 
@@ -1256,7 +1263,7 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->label7->Location = System::Drawing::Point(49, 50);
 		this->label7->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 		this->label7->Name = L"label7";
-		this->label7->Size = System::Drawing::Size(44, 16);
+		this->label7->Size = System::Drawing::Size(35, 13);
 		this->label7->TabIndex = 0;
 		this->label7->Text = L"label7";
 		// 
@@ -1269,37 +1276,37 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->btnViewNavBar->Location = System::Drawing::Point(0, 0);
 		this->btnViewNavBar->Margin = System::Windows::Forms::Padding(0);
 		this->btnViewNavBar->Name = L"btnViewNavBar";
-		this->btnViewNavBar->Size = System::Drawing::Size(17, 46);
+		this->btnViewNavBar->Size = System::Drawing::Size(13, 37);
 		this->btnViewNavBar->TabIndex = 3;
 		this->btnViewNavBar->UseVisualStyleBackColor = false;
 		this->btnViewNavBar->Click += gcnew System::EventHandler(this, &ProvesUI::btnViewNavBar_Click);
 		// 
-		// panel10
+		// panel11
 		// 
-		this->panel10->Controls->Add(this->btnRegEsdevAJ);
-		this->panel10->Dock = System::Windows::Forms::DockStyle::Top;
-		this->panel10->Location = System::Drawing::Point(0, 397);
-		this->panel10->Name = L"panel10";
-		this->panel10->Size = System::Drawing::Size(276, 52);
-		this->panel10->TabIndex = 7;
+		this->panel11->Controls->Add(this->button9);
+		this->panel11->Dock = System::Windows::Forms::DockStyle::Top;
+		this->panel11->Location = System::Drawing::Point(0, 363);
+		this->panel11->Name = L"panel11";
+		this->panel11->Size = System::Drawing::Size(207, 42);
+		this->panel11->TabIndex = 8;
 		// 
-		// btnRegEsdevAJ
+		// button9
 		// 
-		this->btnRegEsdevAJ->Dock = System::Windows::Forms::DockStyle::Right;
-		this->btnRegEsdevAJ->Location = System::Drawing::Point(53, 0);
-		this->btnRegEsdevAJ->Name = L"btnRegEsdevAJ";
-		this->btnRegEsdevAJ->Size = System::Drawing::Size(223, 52);
-		this->btnRegEsdevAJ->TabIndex = 0;
-		this->btnRegEsdevAJ->Text = L"Registrar Esdeveniment";
-		this->btnRegEsdevAJ->UseVisualStyleBackColor = true;
-		this->btnRegEsdevAJ->Click += gcnew System::EventHandler(this, &ProvesUI::btnRegEsdevAJ_Click);
+		this->button9->Dock = System::Windows::Forms::DockStyle::Right;
+		this->button9->Location = System::Drawing::Point(40, 0);
+		this->button9->Name = L"button9";
+		this->button9->Size = System::Drawing::Size(167, 42);
+		this->button9->TabIndex = 0;
+		this->button9->Text = L"Consultar Peticions";
+		this->button9->UseVisualStyleBackColor = true;
+		this->button9->Click += gcnew System::EventHandler(this, &ProvesUI::button9_Click_1);
 		// 
 		// ProvesUI
 		// 
-		this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+		this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 		this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 		this->BackColor = System::Drawing::SystemColors::ControlLightLight;
-		this->ClientSize = System::Drawing::Size(1779, 805);
+		this->ClientSize = System::Drawing::Size(1334, 654);
 		this->Controls->Add(this->btnViewNavBar);
 		this->Controls->Add(this->pnlMain);
 		this->Controls->Add(this->pnlMainTop);
@@ -1308,7 +1315,6 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
 		this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 		this->Location = System::Drawing::Point(2, 0);
-		this->Margin = System::Windows::Forms::Padding(4);
 		this->Name = L"ProvesUI";
 		this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 		this->Text = L"ProvesUI";
@@ -1320,6 +1326,7 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->AppIcon))->EndInit();
 		this->pnlTopBarMinMaxClose->ResumeLayout(false);
 		this->panelNavBar->ResumeLayout(false);
+		this->panel10->ResumeLayout(false);
 		this->pnlModEsdev->ResumeLayout(false);
 		(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox8))->EndInit();
 		this->panel7->ResumeLayout(false);
@@ -1357,7 +1364,7 @@ private: System::Windows::Forms::Button^ btnRegEsdevAJ;
 		(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->EndInit();
 		this->pnlMainModEsdv->ResumeLayout(false);
 		this->pnlMainModEsdv->PerformLayout();
-		this->panel10->ResumeLayout(false);
+		this->panel11->ResumeLayout(false);
 		this->ResumeLayout(false);
 
 	}
@@ -1942,6 +1949,10 @@ private: System::Void ProvesUI_Load(System::Object^ sender, System::EventArgs^ e
 }
 private: System::Void btnRegEsdevAJ_Click(System::Object^ sender, System::EventArgs^ e) {
 	RegistrarEsdevenimentUI^ formConsultUsu = gcnew RegistrarEsdevenimentUI;
+	formConsultUsu->ShowDialog();
+}
+private: System::Void button9_Click_1(System::Object^ sender, System::EventArgs^ e) {
+	BandejaEntradaSolAjuntament^ formConsultUsu = gcnew BandejaEntradaSolAjuntament;
 	formConsultUsu->ShowDialog();
 }
 };

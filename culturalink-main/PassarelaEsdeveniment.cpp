@@ -28,6 +28,17 @@ PassarelaEsdeveniment::PassarelaEsdeveniment(int idEnt, float preu, String^ ajEs
     _puntsDescEsd = puntsDescEsd;
 }
 
+
+PassarelaEsdeveniment::PassarelaEsdeveniment(int idEnt, String^ nomEsd, String^ dataEsd, String^ descEsd) {
+    _idEnt = idEnt;
+    _nomEsd = nomEsd;
+    _dataEsd = dataEsd;
+    _descEsd = descEsd;
+}
+
+
+
+
 PassarelaEsdeveniment::PassarelaEsdeveniment(String^ nomEsdev, float preu)
 {
     _nomEsd = nomEsdev;

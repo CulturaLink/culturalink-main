@@ -185,3 +185,43 @@ List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaEsdevenimentsPerEntita
         return nullptr; // Return null in case of exception
     }
 }
+
+
+List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaEsdevenimentsPerAjuntament(String^ aj) {
+    String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
+
+    MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
+    String^ sql2 = "SELECT id_entitat, nom_esdeveniment, data, descripcio_esdeveniment FROM esdeveniment WHERE ajuntament_esdeveniment='"+aj+"' AND confirmacio IS NULL";
+    MySqlCommand^ cmd2 = gcnew MySqlCommand(sql2, conn);
+    MySqlDataReader^ dataReader;
+
+    try {
+        conn->Open();
+
+        List<PassarelaEsdeveniment^>^ ajEsdev = gcnew List<PassarelaEsdeveniment^>(); // Initialize the list
+
+        cmd2 = gcnew MySqlCommand(sql2, conn);
+        dataReader = cmd2->ExecuteReader();
+
+        while (dataReader->Read()) { // Use while loop to iterate through all rows
+            int idEnt = dataReader->GetInt32(0);
+            String^ nomEsdev = dataReader->GetString(1);
+            String^ dataEsdev = dataReader->GetString(2);
+            String^ desEsdev = dataReader->GetString(3);
+
+            PassarelaEsdeveniment^ passEsdev = gcnew PassarelaEsdeveniment(idEnt, nomEsdev, dataEsdev, desEsdev);
+
+            ajEsdev->Add(passEsdev);
+        }
+        conn->Close();
+        return ajEsdev; // Return the list
+    }
+    catch (Exception^ ex) {
+        MessageBox::Show(ex->Message);
+        return nullptr; // Return null in case of exception
+    } 
+}
+
+
+
+
