@@ -206,7 +206,7 @@ List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaEsdevenimentsPerAjunta
         while (dataReader->Read()) { // Use while loop to iterate through all rows
             int idEnt = dataReader->GetInt32(0);
             String^ nomEsdev = dataReader->GetString(1);
-            String^ dataEsdev = dataReader->GetString(2);
+            String^ dataEsdev = dataReader->GetDateTime(2).ToString();
             String^ desEsdev = dataReader->GetString(3);
 
             PassarelaEsdeveniment^ passEsdev = gcnew PassarelaEsdeveniment(idEnt, nomEsdev, dataEsdev, desEsdev);

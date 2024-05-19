@@ -12,7 +12,9 @@ using namespace System;
 #include "InfoAjuntament.h"
 #include "Login.h"
 #include "MainForm.h"
+#include "CustomButtonEsdev.h"
 
+using namespace CustomControls;
 using namespace System::Windows::Forms;
 
 [STAThread]

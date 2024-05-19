@@ -153,6 +153,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="CtrlModificaEsdeveniment.h" />
+    <ClInclude Include="CustomButtonEsdev.h" />
     <ClInclude Include="Entitat_BandejaEntradaSolicitud.h">
       <FileType>CppForm</FileType>
     </ClInclude>
