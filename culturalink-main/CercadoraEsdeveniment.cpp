@@ -33,8 +33,9 @@ PassarelaEsdeveniment CercadoraEsdeveniment::cercaEsdeveniment(String^ clau) {
             int _puntsCostEsdeveniment = dataReader->GetInt32(7);
             String^ _dataEsdeveniment = dataReader->GetDateTime(8).ToString();
             int _puntsDescEsdeveniment = dataReader->GetInt32(9);
+            bool _entradaLliure = dataReader->GetBoolean(11);
 
-            PassarelaEsdeveniment P1(_idEntitat, _preuEsdeveniment, _ajEsdeveniment, _descEsdeveniment, _nomEsdeveniment, _tipusEsdeveniment, _aforamentEsdeveniment, _puntsCostEsdeveniment, _dataEsdeveniment, _puntsDescEsdeveniment);
+            PassarelaEsdeveniment P1(_idEntitat, _preuEsdeveniment, _ajEsdeveniment, _descEsdeveniment, _nomEsdeveniment, _tipusEsdeveniment, _aforamentEsdeveniment, _puntsCostEsdeveniment, _dataEsdeveniment, _puntsDescEsdeveniment, _entradaLliure);
             return P1;
         }
     }
@@ -137,8 +138,9 @@ List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaEsdevenimentsAmbTipus(
             int _puntsCostEsdeveniment = dataReader2->GetInt32(7);
             String^ _dataEsdeveniment = dataReader2->GetDateTime(8).ToString();
             int _puntsDescEsdeveniment = dataReader2->GetInt32(9);
+            bool _entradaLliure = dataReader2->GetBoolean(10);
 
-            PassarelaEsdeveniment^ passEsdev = gcnew PassarelaEsdeveniment(_idEntitat, _preuEsdeveniment, _ajEsdeveniment, _descEsdeveniment, _nomEsdeveniment, _tipusEsdeveniment, _aforamentEsdeveniment, _puntsCostEsdeveniment, _dataEsdeveniment, _puntsDescEsdeveniment);
+            PassarelaEsdeveniment^ passEsdev = gcnew PassarelaEsdeveniment(_idEntitat, _preuEsdeveniment, _ajEsdeveniment, _descEsdeveniment, _nomEsdeveniment, _tipusEsdeveniment, _aforamentEsdeveniment, _puntsCostEsdeveniment, _dataEsdeveniment, _puntsDescEsdeveniment, _entradaLliure);
 
             totsEsdev->Add(passEsdev);
         }

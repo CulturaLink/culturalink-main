@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "TxRegistraEsdeveniment.h"
 
-TxRegistraEsdeveniment::TxRegistraEsdeveniment(int idEnt, String^ nomEsd, float preuEsd, String^ descEsd, String^ ajuntamEsd, String^ tipusEsd, int aforamentEsd, int puntsCostEsd, String^ dataEsd, int puntsDescEsd)
+TxRegistraEsdeveniment::TxRegistraEsdeveniment(int idEnt, String^ nomEsd, float preuEsd, String^ descEsd, String^ ajuntamEsd, String^ tipusEsd, int aforamentEsd, int puntsCostEsd, String^ dataEsd, int puntsDescEsd, bool opcioEntradaLliure)
 {
     idE = idEnt;
     nomE = nomEsd;
@@ -13,6 +13,7 @@ TxRegistraEsdeveniment::TxRegistraEsdeveniment(int idEnt, String^ nomEsd, float 
     puntsCostE = puntsCostEsd;
     dataE = dataEsd;
     puntsDescE = puntsDescEsd;
+    entradaLliure = opcioEntradaLliure;
 
 }
 
@@ -28,11 +29,12 @@ TxRegistraEsdeveniment::TxRegistraEsdeveniment()
     puntsCostE = 0;
     dataE = "";
     puntsDescE = 0;
+    entradaLliure = false;
 
 }
 
 void TxRegistraEsdeveniment::executar() {
-    PassarelaEsdeveniment e(idE, preuE, ajuntamentE, descripcioE, nomE, tipusE, aforamentE, puntsCostE, dataE, puntsDescE);
+    PassarelaEsdeveniment e(idE, preuE, ajuntamentE, descripcioE, nomE, tipusE, aforamentE, puntsCostE, dataE, puntsDescE, entradaLliure);
     e.insereix();
 }
 

@@ -13,9 +13,10 @@ PassarelaEsdeveniment::PassarelaEsdeveniment() {
     _puntsCostEsd = 0;
     _dataEsd = "";
     _puntsDescEsd = 0;
+    _entradaLliure = false;
 }
 
-PassarelaEsdeveniment::PassarelaEsdeveniment(int idEnt, float preu, String^ ajEsd, String^ descEsd, String^ nomEsd, String^ tipusEsd, int aforamentEsd, int puntsCostEsd, String^ dataEsd, int puntsDescEsd) {
+PassarelaEsdeveniment::PassarelaEsdeveniment(int idEnt, float preu, String^ ajEsd, String^ descEsd, String^ nomEsd, String^ tipusEsd, int aforamentEsd, int puntsCostEsd, String^ dataEsd, int puntsDescEsd, bool entradaLliure) {
     _idEnt = idEnt;
     _preu = preu;
     _ajEsd = ajEsd;
@@ -26,6 +27,7 @@ PassarelaEsdeveniment::PassarelaEsdeveniment(int idEnt, float preu, String^ ajEs
     _puntsCostEsd = puntsCostEsd;
     _dataEsd = dataEsd;
     _puntsDescEsd = puntsDescEsd;
+    _entradaLliure = entradaLliure;
 }
 
 PassarelaEsdeveniment::PassarelaEsdeveniment(String^ nomEsdev, float preu)
@@ -49,6 +51,7 @@ PassarelaEsdeveniment% PassarelaEsdeveniment::operator=(const PassarelaEsdevenim
         _puntsCostEsd = other._puntsCostEsd;
         _dataEsd = other._dataEsd;
         _puntsDescEsd = other._puntsDescEsd;
+        _entradaLliure = other._entradaLliure;
 
     }
     return *this;
@@ -66,6 +69,7 @@ PassarelaEsdeveniment::PassarelaEsdeveniment(const PassarelaEsdeveniment% p1)
     this->_puntsCostEsd = p1._puntsCostEsd;
     this->_dataEsd = p1._dataEsd;
     this->_puntsDescEsd = p1._puntsDescEsd;
+    this->_entradaLliure = p1._entradaLliure;
 }
 
 void PassarelaEsdeveniment::insereix() {
@@ -82,13 +86,19 @@ void PassarelaEsdeveniment::insereix() {
         throw (preuNegatiu);
     }
 
-    String^ sql = "INSERT INTO amep14.esdeveniment "
+    /*String^ sql = "INSERT INTO amep14.esdeveniment "
         "(id_entitat, preu_esdeveniment, ajuntament_esdeveniment, descripcio_esdeveniment, "
         "nom_esdeveniment, tipus, aforament, punts_cost, data, punts_descompte) "
         "VALUES (" + idString + ", " + _preu + ", '" + _ajEsd + "', '" + _descEsd + "', '"
         + _nomEsd + "', '" + _tipusEsd + "', " + _aforamentEsd + ", " + _puntsCostEsd + ", '"
-        + _dataEsd + "', " + _puntsDescEsd + ");";
+        + _dataEsd + "', " + _puntsDescEsd + ");"; */
 
+    String^ sql = "INSERT INTO amep14.esdeveniment "
+        "(id_entitat, preu_esdeveniment, ajuntament_esdeveniment, descripcio_esdeveniment, "
+        "nom_esdeveniment, tipus, aforament, punts_cost, data, punts_descompte, entrada_lliure) "
+        "VALUES (" + idString + ", " + _preu + ", '" + _ajEsd + "', '" + _descEsd + "', '"
+        + _nomEsd + "', '" + _tipusEsd + "', " + _aforamentEsd + ", " + _puntsCostEsd + ", '"
+        + _dataEsd + "', " + _puntsDescEsd + ", " + _entradaLliure + ");";
 
 
     MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);

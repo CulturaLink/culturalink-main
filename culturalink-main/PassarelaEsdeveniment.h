@@ -17,7 +17,7 @@ using namespace System::Windows::Forms;
 ref class PassarelaEsdeveniment {
 
 public:
-    PassarelaEsdeveniment(int idEnt, float preu, String^ ajEsd, String^ descEsd, String^ nomEsd, String^ tipusEsd, int aforamentEsd, int puntsCostEsd, String^ dataEsd, int puntsDescEsd);
+    PassarelaEsdeveniment(int idEnt, float preu, String^ ajEsd, String^ descEsd, String^ nomEsd, String^ tipusEsd, int aforamentEsd, int puntsCostEsd, String^ dataEsd, int puntsDescEsd, bool entradaLliure);
     PassarelaEsdeveniment(String^ nomEsdev, float preu);
     PassarelaEsdeveniment();
     void insereix();
@@ -46,4 +46,5 @@ private:
     int _puntsCostEsd;
     String^ _dataEsd;
     int _puntsDescEsd;
+    bool _entradaLliure;
 };
