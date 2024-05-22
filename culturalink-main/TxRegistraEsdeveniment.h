@@ -20,11 +20,12 @@ private:
     int puntsCostE;
     String^ dataE;
     int puntsDescE;
+    bool entradaLliure;
 
 
 public:
     TxRegistraEsdeveniment();
-    TxRegistraEsdeveniment(int idEnt, String^ nomEsd, float preuEsd, String^ descEsd, String^ ajuntamEsd, String^ tipusEsd, int aforamentEsd, int puntsCostEsd, String^ data, int puntsDescE);
+    TxRegistraEsdeveniment(int idEnt, String^ nomEsd, float preuEsd, String^ descEsd, String^ ajuntamEsd, String^ tipusEsd, int aforamentEsd, int puntsCostEsd, String^ data, int puntsDescE, bool entradaLliure);
     //TxRegistraEsdeveniment(String^ nomEsd, float preuEsd, String^ descEsd, String^ ajuntamEsdv);
     void executar() override;
 };
