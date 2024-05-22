@@ -10,9 +10,11 @@ using namespace System;
 
 ref class CercadoraCiutada
 {
+public:
+	CercadoraCiutada();
+	PassarelaCiutada cercaCiutada(String^ nickname);
+
 private:
 
-public:
-	PassarelaCiutada cercaCiutada(String^ nickname);
 };
 

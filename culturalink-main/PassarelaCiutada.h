@@ -15,11 +15,11 @@ public:
 	PassarelaCiutada(const PassarelaCiutada% p1);
 
 	PassarelaCiutada% operator=(const PassarelaCiutada% other);
-	void crear(String^ name, String^ fullName, String^ password, String^ email, String^ date);
-	void insereix();
-	//Ciutada();
-	PassarelaCiutada(String^ nickname);//Omple ciutada segons nick
+	PassarelaCiutada(String^ name, String^ fullName, String^ password, String^ email, String^ date, int diners, int punts);
 	PassarelaCiutada(String^ nickname, String^ nom_complet, String^ correu);
+
+	void insereix();
+
 	String^ getContrasenya();
 	String^ getNickname();
 	String^ getNomComplet() { return _nom_complet; }
