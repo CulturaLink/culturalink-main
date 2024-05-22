@@ -101,3 +101,4 @@ C:\Users\Asus\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\cultu
 C:\Users\Asus\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.RegistrarEsdevenimentUI.resources
 C:\Users\Asus\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink-main.vcxproj.GenerateResource.cache
 C:\Users\Asus\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\cultural.EBB58B54.Up2Date
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ModificaEsdevenimentUI.resources

@@ -33,15 +33,41 @@ void CtrlModificaEsdeveniment::modificaEsdeveniment(String^ ESDEV, float preu, S
 	if (preu != NULL) _esdev.posaPreu(preu);
 	if (descr != "") _esdev.posaDescripcio(descr);
 	//if (nom != "") _esdev.posaNom(nom);
-	if (tipus != "") _esdev.posaTipus(tipus);
 	if (aforament != NULL) _esdev.posaAforament(aforament);
 	if (puntsCost != NULL) _esdev.posaPuntsCost(puntsCost);
-	if (data != "") _esdev.posaData(data);
 	if (puntsDesc != NULL) _esdev.posaPuntsDesc(puntsDesc);
+
+	//compruevo que no es una fecha futura
+	if (data != "") {
+		DateTime fechaEvento = DateTime::Parse(data);
+		DateTime ahora = DateTime::Now;
+		if (fechaEvento < ahora) {
+			throw(errorData);
+		}
+		else _esdev.posaData(data);
+	}
+	
+
+	//compruevo que el tipus sea correcto
+	String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
+	MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
+	conn->Open();
+	List<String^>^ tipusValids = gcnew List<String^>();
+
+	String^ consulta = "SELECT tipus FROM esdeveniment"; 
+	MySqlCommand^ cmd = gcnew MySqlCommand(consulta, conn);
+	MySqlDataReader^ reader = cmd->ExecuteReader();
+	while (reader->Read()) {
+		tipusValids->Add(reader["tipus"]->ToString());
+	}
+	reader->Close();
+	if (tipus != "") {
+		if (!tipusValids->Contains(tipus)) {
+			throw (errorTipusIncorrecte);
+		}
+		else _esdev.posaTipus(tipus);
+	}
+
 
     _esdev.modifica(ESDEV);
 }
-
-/*
-	
-*/

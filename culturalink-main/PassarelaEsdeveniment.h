@@ -4,7 +4,8 @@
 #include "UsuariIniciat.h"
 
 const int preuNegatiu = 1;
-
+const int errorData = 5;
+const int errorTipusIncorrecte = 6;
 
 using namespace std;
 using namespace MySql::Data::MySqlClient;

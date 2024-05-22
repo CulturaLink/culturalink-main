@@ -3,6 +3,14 @@
 #include "PassarelaEsdeveniment.h"
 #include "TxConsultaEsdeveniment.h"
 #include <list>
+#include <chrono>
+#include <sstream>
+#include <string>
+using namespace System;
+using namespace System::Data;
+using namespace System::Data::SqlClient;
+
+
 
 ref class CtrlModificaEsdeveniment
 {

@@ -60,6 +60,8 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Label^ label9;
 	private: System::Windows::Forms::Label^ label10;
 	private: System::Windows::Forms::Label^ label11;
+	private: System::Windows::Forms::Label^ label12;
+	private: System::Windows::Forms::Label^ label13;
 
 	private:
 		/// <summary>
@@ -95,22 +97,22 @@ namespace culturalink_main {
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->label10 = (gcnew System::Windows::Forms::Label());
 			this->label11 = (gcnew System::Windows::Forms::Label());
+			this->label12 = (gcnew System::Windows::Forms::Label());
+			this->label13 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(16, 18);
-			this->textBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox1->Location = System::Drawing::Point(12, 15);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(359, 22);
+			this->textBox1->Size = System::Drawing::Size(270, 20);
 			this->textBox1->TabIndex = 0;
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(384, 16);
-			this->button1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button1->Location = System::Drawing::Point(288, 13);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(152, 28);
+			this->button1->Size = System::Drawing::Size(114, 23);
 			this->button1->TabIndex = 1;
 			this->button1->Text = L"Cerca Esdeveniment";
 			this->button1->UseVisualStyleBackColor = true;
@@ -119,20 +121,18 @@ namespace culturalink_main {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(16, 74);
-			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label1->Location = System::Drawing::Point(12, 60);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(35, 16);
+			this->label1->Size = System::Drawing::Size(29, 13);
 			this->label1->TabIndex = 2;
 			this->label1->Text = L"Preu";
 			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(16, 105);
-			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label2->Location = System::Drawing::Point(12, 85);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(72, 16);
+			this->label2->Size = System::Drawing::Size(57, 13);
 			this->label2->TabIndex = 3;
 			this->label2->Text = L"Descripció";
 			this->label2->Click += gcnew System::EventHandler(this, &ModificaEsdevenimentUI::label2_Click);
@@ -140,116 +140,103 @@ namespace culturalink_main {
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(16, 142);
-			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label4->Location = System::Drawing::Point(12, 115);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(41, 16);
+			this->label4->Size = System::Drawing::Size(33, 13);
 			this->label4->TabIndex = 5;
 			this->label4->Text = L"Tipus";
 			// 
 			// label5
 			// 
 			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(16, 176);
-			this->label5->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label5->Location = System::Drawing::Point(12, 143);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(68, 16);
+			this->label5->Size = System::Drawing::Size(55, 13);
 			this->label5->TabIndex = 6;
 			this->label5->Text = L"Aforament";
 			// 
 			// label6
 			// 
 			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(16, 215);
-			this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label6->Location = System::Drawing::Point(12, 175);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(144, 16);
+			this->label6->Size = System::Drawing::Size(116, 13);
 			this->label6->TabIndex = 7;
 			this->label6->Text = L"Preu Punts Descompte";
 			// 
 			// label7
 			// 
 			this->label7->AutoSize = true;
-			this->label7->Location = System::Drawing::Point(16, 255);
-			this->label7->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label7->Location = System::Drawing::Point(12, 207);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(36, 16);
+			this->label7->Size = System::Drawing::Size(107, 13);
 			this->label7->TabIndex = 8;
-			this->label7->Text = L"Data";
+			this->label7->Text = L"Data (YYYY-MM-DD)";
 			// 
 			// label8
 			// 
 			this->label8->AutoSize = true;
-			this->label8->Location = System::Drawing::Point(16, 292);
-			this->label8->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label8->Location = System::Drawing::Point(12, 237);
 			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(167, 16);
+			this->label8->Size = System::Drawing::Size(134, 13);
 			this->label8->TabIndex = 9;
 			this->label8->Text = L"Punts Descompte Otorgats";
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(100, 74);
-			this->textBox2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox2->Location = System::Drawing::Point(75, 60);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(132, 22);
+			this->textBox2->Size = System::Drawing::Size(100, 20);
 			this->textBox2->TabIndex = 10;
 			this->textBox2->TextChanged += gcnew System::EventHandler(this, &ModificaEsdevenimentUI::textBox2_TextChanged);
 			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(100, 105);
-			this->textBox3->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox3->Location = System::Drawing::Point(75, 85);
 			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(132, 22);
+			this->textBox3->Size = System::Drawing::Size(100, 20);
 			this->textBox3->TabIndex = 11;
 			// 
 			// textBox5
 			// 
-			this->textBox5->Location = System::Drawing::Point(100, 142);
-			this->textBox5->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox5->Location = System::Drawing::Point(75, 115);
 			this->textBox5->Name = L"textBox5";
-			this->textBox5->Size = System::Drawing::Size(132, 22);
+			this->textBox5->Size = System::Drawing::Size(100, 20);
 			this->textBox5->TabIndex = 13;
 			// 
 			// textBox6
 			// 
-			this->textBox6->Location = System::Drawing::Point(100, 174);
-			this->textBox6->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox6->Location = System::Drawing::Point(75, 141);
 			this->textBox6->Name = L"textBox6";
-			this->textBox6->Size = System::Drawing::Size(132, 22);
+			this->textBox6->Size = System::Drawing::Size(100, 20);
 			this->textBox6->TabIndex = 14;
 			// 
 			// textBox7
 			// 
-			this->textBox7->Location = System::Drawing::Point(211, 212);
-			this->textBox7->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox7->Location = System::Drawing::Point(158, 172);
 			this->textBox7->Name = L"textBox7";
-			this->textBox7->Size = System::Drawing::Size(132, 22);
+			this->textBox7->Size = System::Drawing::Size(100, 20);
 			this->textBox7->TabIndex = 15;
 			// 
 			// textBox8
 			// 
-			this->textBox8->Location = System::Drawing::Point(211, 251);
-			this->textBox8->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox8->Location = System::Drawing::Point(158, 204);
 			this->textBox8->Name = L"textBox8";
-			this->textBox8->Size = System::Drawing::Size(132, 22);
+			this->textBox8->Size = System::Drawing::Size(100, 20);
 			this->textBox8->TabIndex = 16;
 			// 
 			// textBox9
 			// 
-			this->textBox9->Location = System::Drawing::Point(211, 288);
-			this->textBox9->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox9->Location = System::Drawing::Point(158, 234);
 			this->textBox9->Name = L"textBox9";
-			this->textBox9->Size = System::Drawing::Size(132, 22);
+			this->textBox9->Size = System::Drawing::Size(100, 20);
 			this->textBox9->TabIndex = 17;
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(397, 358);
-			this->button2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button2->Location = System::Drawing::Point(298, 291);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(139, 28);
+			this->button2->Size = System::Drawing::Size(104, 23);
 			this->button2->TabIndex = 18;
 			this->button2->Text = L"Modifica";
 			this->button2->UseVisualStyleBackColor = true;
@@ -259,10 +246,9 @@ namespace culturalink_main {
 			// 
 			this->label3->AutoSize = true;
 			this->label3->ForeColor = System::Drawing::Color::Red;
-			this->label3->Location = System::Drawing::Point(269, 78);
-			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label3->Location = System::Drawing::Point(202, 63);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(120, 16);
+			this->label3->Size = System::Drawing::Size(97, 13);
 			this->label3->TabIndex = 19;
 			this->label3->Text = L"Error: Preu Negatiu";
 			this->label3->Visible = false;
@@ -271,10 +257,9 @@ namespace culturalink_main {
 			// 
 			this->label9->AutoSize = true;
 			this->label9->ForeColor = System::Drawing::Color::Red;
-			this->label9->Location = System::Drawing::Point(269, 176);
-			this->label9->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label9->Location = System::Drawing::Point(202, 143);
 			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(120, 16);
+			this->label9->Size = System::Drawing::Size(97, 13);
 			this->label9->TabIndex = 20;
 			this->label9->Text = L"Error: Preu Negatiu";
 			this->label9->Visible = false;
@@ -283,10 +268,9 @@ namespace culturalink_main {
 			// 
 			this->label10->AutoSize = true;
 			this->label10->ForeColor = System::Drawing::Color::Red;
-			this->label10->Location = System::Drawing::Point(352, 215);
-			this->label10->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label10->Location = System::Drawing::Point(264, 175);
 			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(120, 16);
+			this->label10->Size = System::Drawing::Size(97, 13);
 			this->label10->TabIndex = 21;
 			this->label10->Text = L"Error: Preu Negatiu";
 			this->label10->Visible = false;
@@ -295,19 +279,45 @@ namespace culturalink_main {
 			// 
 			this->label11->AutoSize = true;
 			this->label11->ForeColor = System::Drawing::Color::Red;
-			this->label11->Location = System::Drawing::Point(352, 292);
-			this->label11->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label11->Location = System::Drawing::Point(264, 237);
 			this->label11->Name = L"label11";
-			this->label11->Size = System::Drawing::Size(120, 16);
+			this->label11->Size = System::Drawing::Size(97, 13);
 			this->label11->TabIndex = 22;
 			this->label11->Text = L"Error: Preu Negatiu";
 			this->label11->Visible = false;
 			// 
+			// label12
+			// 
+			this->label12->AutoSize = true;
+			this->label12->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label12->Location = System::Drawing::Point(285, 204);
+			this->label12->Name = L"label12";
+			this->label12->Size = System::Drawing::Size(63, 13);
+			this->label12->TabIndex = 23;
+			this->label12->Text = L"Data futura!";
+			this->label12->Visible = false;
+			this->label12->Click += gcnew System::EventHandler(this, &ModificaEsdevenimentUI::label12_Click);
+			// 
+			// label13
+			// 
+			this->label13->AutoSize = true;
+			this->label13->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label13->Location = System::Drawing::Point(202, 118);
+			this->label13->Name = L"label13";
+			this->label13->Size = System::Drawing::Size(115, 13);
+			this->label13->TabIndex = 24;
+			this->label13->Text = L"Error: Tipus Incorrecte!";
+			this->label13->Visible = false;
+			// 
 			// ModificaEsdevenimentUI
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(552, 400);
+			this->ClientSize = System::Drawing::Size(414, 325);
+			this->Controls->Add(this->label13);
+			this->Controls->Add(this->label12);
 			this->Controls->Add(this->label11);
 			this->Controls->Add(this->label10);
 			this->Controls->Add(this->label9);
@@ -329,7 +339,6 @@ namespace culturalink_main {
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox1);
-			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Name = L"ModificaEsdevenimentUI";
 			this->Text = L"ModificaEsdevenimentUI";
 			this->Load += gcnew System::EventHandler(this, &ModificaEsdevenimentUI::ModificaEsdevenimentUI_Load);
@@ -344,51 +353,65 @@ namespace culturalink_main {
 	}
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 
-	String^ PreuIntro = this->textBox2->Text;
-	float preu = Convert::ToSingle(PreuIntro);
-	String^ DescIntro = this->textBox3->Text;
-	String^ TipusIntro = this->textBox5->Text;
-	String^ AforamentIntro = this->textBox6->Text;
-	int aforament = Convert::ToInt32(AforamentIntro);
-	String^ PuntsCostIntro = this->textBox7->Text;
-	int puntosCost = Convert::ToInt32(PuntsCostIntro);
-	String^ DataIntro = this->textBox8->Text;
-	String^ PuntsDescIntro = this->textBox9->Text;
-	int puntosDesc = Convert::ToInt32(PuntsDescIntro);
+	try {
+		String^ PreuIntro = this->textBox2->Text;
+		float preu = Convert::ToSingle(PreuIntro);
+		String^ DescIntro = this->textBox3->Text;
+		String^ TipusIntro = this->textBox5->Text;
+		String^ AforamentIntro = this->textBox6->Text;
+		int aforament = Convert::ToInt32(AforamentIntro);
+		String^ PuntsCostIntro = this->textBox7->Text;
+		int puntosCost = Convert::ToInt32(PuntsCostIntro);
+		String^ DataIntro = this->textBox8->Text;
+		String^ PuntsDescIntro = this->textBox9->Text;
+		int puntosDesc = Convert::ToInt32(PuntsDescIntro);
 
-	//MessageBox::Show("Hasta aqui!");
+		//MessageBox::Show("Hasta aqui!");
 
-	if (preu < 0 || aforament <= 0 || puntosCost < 0 || puntosDesc < 0) {
-		
-		if (preu < 0) {
-			this->label3->Text = "Error: Preu Negatiu\n";
-			this->label3->Visible = true;
+		if (preu < 0 || aforament <= 0 || puntosCost < 0 || puntosDesc < 0 ) {
+
+			if (preu < 0) {
+				this->label3->Text = "Error: Preu Negatiu\n";
+				this->label3->Visible = true;
+			}
+			if (aforament <= 0) {
+				this->label9->Text = "Error: Aforament Negatiu o menor que 0\n";
+				this->label9->Visible = true;
+			}
+			if (puntosCost < 0) {
+				this->label10->Text = "Error: Punts Cost Negatiu\n";
+				this->label10->Visible = true;
+			}
+			if (puntosDesc < 0) {
+				this->label11->Text = "Error: Punts Descompte Negatiu\n";
+				this->label11->Visible = true;
+			}
 		}
-		if (aforament <= 0) {
-			this->label9->Text = "Error: Aforament Negatiu o menor que 0\n";
-			this->label9->Visible = true;
-		}
-		if (puntosCost < 0) {
-			this->label10->Text = "Error: Punts Cost Negatiu\n";
-			this->label10->Visible = true;
-		}
-		if (puntosDesc < 0) {
-			this->label11->Text = "Error: Punts Descompte Negatiu\n";
-			this->label11->Visible = true;
+		else {
+
+			CtrlModificaEsdeveniment^ ctrlModEsdev = gcnew CtrlModificaEsdeveniment();
+
+			String^ ESDEV = this->textBox1->Text;
+			if (ESDEV != "") ctrlModEsdev->modificaEsdeveniment(ESDEV, preu, DescIntro, TipusIntro, aforament, puntosCost, DataIntro, puntosDesc);
 		}
 	}
-	else {
-		
-		CtrlModificaEsdeveniment^ ctrlModEsdev = gcnew CtrlModificaEsdeveniment();
-
-		String^ ESDEV = this->textBox1->Text;
-
-		ctrlModEsdev->modificaEsdeveniment(ESDEV, preu, DescIntro, TipusIntro, aforament, puntosCost, DataIntro, puntosDesc);
+	catch(int e) {
+		if (e == errorData) {
+			this->label12->Text = "Error: Aquesta Data No és Futura! \n";
+			this->label12->Visible = true;
+		}
+		if (e == errorTipusIncorrecte) {
+			this->label13->Text = "Error: Aquest Tipus és Incorrecte! \n";
+			this->label13->Visible = true;
+		}
 	}
 }
+
 private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label12_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

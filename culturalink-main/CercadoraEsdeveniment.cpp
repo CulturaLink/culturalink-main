@@ -152,3 +152,5 @@ List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaEsdevenimentsAmbTipus(
         return nullptr; // Return null in case of exception
     }
 }
+
+
