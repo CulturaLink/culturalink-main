@@ -87,6 +87,10 @@ void PassarelaCiutada::insereix() {
 	}
 }
 
+void PassarelaCiutada::modifica() {
+
+}
+
 PassarelaCiutada::PassarelaCiutada(String^ nickname, String^ nom_complet, String^ correu) {
 	_nickname = nickname;
 	_nom_complet = nom_complet;

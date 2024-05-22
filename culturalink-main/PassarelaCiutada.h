@@ -19,6 +19,8 @@ public:
 	PassarelaCiutada(String^ nickname, String^ nom_complet, String^ correu);
 
 	void insereix();
+	void modifica();
+	//void esborra();
 
 	String^ getContrasenya();
 	String^ getNickname();
@@ -29,7 +31,6 @@ public:
 	int^ getPunts() { return _punts; }
 
 private:
-	
 	String^ _nickname;
 	String^ _nom_complet;
 	String^ _contrasenya;
