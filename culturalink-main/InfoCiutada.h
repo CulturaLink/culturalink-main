@@ -496,6 +496,7 @@ namespace culturalink_main {
 			// 
 			this->label10->AutoSize = true;
 			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.25F));
+			this->label10->ForeColor = System::Drawing::Color::Red;
 			this->label10->Location = System::Drawing::Point(13, 185);
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(413, 16);
