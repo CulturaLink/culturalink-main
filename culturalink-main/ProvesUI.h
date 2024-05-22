@@ -22,7 +22,7 @@
 #include "UsuariIniciat.h"
 
 // Custom Tools
-// #include "CustomButtonEsdeveniment.h"
+#include "CustomButtonEsdev.h"
 
 namespace culturalink_main {
 
@@ -32,6 +32,7 @@ namespace culturalink_main {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace CustomControls;
 
 	/// <summary>
 	/// Resumen de ProvesUI
@@ -298,7 +299,7 @@ private: System::Windows::Forms::Button^ button9;
 		this->pnlTopBar->Location = System::Drawing::Point(0, 0);
 		this->pnlTopBar->Margin = System::Windows::Forms::Padding(0);
 		this->pnlTopBar->Name = L"pnlTopBar";
-		this->pnlTopBar->Size = System::Drawing::Size(1779, 37);
+		this->pnlTopBar->Size = System::Drawing::Size(1360, 37);
 		this->pnlTopBar->TabIndex = 0;
 		// 
 		// panel5
@@ -361,7 +362,7 @@ private: System::Windows::Forms::Button^ button9;
 		this->pnlTopBarMinMaxClose->Controls->Add(this->btnMaximize);
 		this->pnlTopBarMinMaxClose->Controls->Add(this->btnClose);
 		this->pnlTopBarMinMaxClose->Dock = System::Windows::Forms::DockStyle::Right;
-		this->pnlTopBarMinMaxClose->Location = System::Drawing::Point(1512, 0);
+		this->pnlTopBarMinMaxClose->Location = System::Drawing::Point(1093, 0);
 		this->pnlTopBarMinMaxClose->Margin = System::Windows::Forms::Padding(4);
 		this->pnlTopBarMinMaxClose->Name = L"pnlTopBarMinMaxClose";
 		this->pnlTopBarMinMaxClose->Size = System::Drawing::Size(267, 37);
@@ -441,7 +442,7 @@ private: System::Windows::Forms::Button^ button9;
 		this->panelNavBar->Location = System::Drawing::Point(0, 37);
 		this->panelNavBar->Margin = System::Windows::Forms::Padding(4);
 		this->panelNavBar->Name = L"panelNavBar";
-		this->panelNavBar->Size = System::Drawing::Size(276, 768);
+		this->panelNavBar->Size = System::Drawing::Size(276, 736);
 		this->panelNavBar->TabIndex = 1;
 		// 
 		// panel11
@@ -453,6 +454,7 @@ private: System::Windows::Forms::Button^ button9;
 		this->panel11->Name = L"panel11";
 		this->panel11->Size = System::Drawing::Size(276, 52);
 		this->panel11->TabIndex = 8;
+		this->panel11->Visible = false;
 		// 
 		// button9
 		// 
@@ -475,6 +477,7 @@ private: System::Windows::Forms::Button^ button9;
 		this->panel10->Name = L"panel10";
 		this->panel10->Size = System::Drawing::Size(276, 52);
 		this->panel10->TabIndex = 7;
+		this->panel10->Visible = false;
 		// 
 		// btnRegEsdevAJ
 		// 
@@ -539,7 +542,7 @@ private: System::Windows::Forms::Button^ button9;
 		this->panel7->Controls->Add(this->label5);
 		this->panel7->Controls->Add(this->pictureBox5);
 		this->panel7->Dock = System::Windows::Forms::DockStyle::Bottom;
-		this->panel7->Location = System::Drawing::Point(0, 716);
+		this->panel7->Location = System::Drawing::Point(0, 684);
 		this->panel7->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 		this->panel7->Name = L"panel7";
 		this->panel7->Size = System::Drawing::Size(276, 52);
@@ -899,7 +902,7 @@ private: System::Windows::Forms::Button^ button9;
 		this->pnlMainTop->Location = System::Drawing::Point(276, 37);
 		this->pnlMainTop->Margin = System::Windows::Forms::Padding(4);
 		this->pnlMainTop->Name = L"pnlMainTop";
-		this->pnlMainTop->Size = System::Drawing::Size(1503, 223);
+		this->pnlMainTop->Size = System::Drawing::Size(1084, 223);
 		this->pnlMainTop->TabIndex = 3;
 		// 
 		// btnSearch
@@ -923,7 +926,7 @@ private: System::Windows::Forms::Button^ button9;
 		this->flowLayoutPanel2->Margin = System::Windows::Forms::Padding(4);
 		this->flowLayoutPanel2->Name = L"flowLayoutPanel2";
 		this->flowLayoutPanel2->Padding = System::Windows::Forms::Padding(29, 10, 0, 0);
-		this->flowLayoutPanel2->Size = System::Drawing::Size(1503, 86);
+		this->flowLayoutPanel2->Size = System::Drawing::Size(1084, 86);
 		this->flowLayoutPanel2->TabIndex = 4;
 		this->flowLayoutPanel2->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &ProvesUI::flowLayoutPanel2_Paint);
 		// 
@@ -999,7 +1002,7 @@ private: System::Windows::Forms::Button^ button9;
 		this->flowLayoutPanel1->Margin = System::Windows::Forms::Padding(4);
 		this->flowLayoutPanel1->Name = L"flowLayoutPanel1";
 		this->flowLayoutPanel1->Padding = System::Windows::Forms::Padding(29, 0, 0, 0);
-		this->flowLayoutPanel1->Size = System::Drawing::Size(1503, 545);
+		this->flowLayoutPanel1->Size = System::Drawing::Size(1084, 513);
 		this->flowLayoutPanel1->TabIndex = 3;
 		this->flowLayoutPanel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &ProvesUI::flowLayoutPanel1_Paint);
 		// 
@@ -1059,7 +1062,7 @@ private: System::Windows::Forms::Button^ button9;
 		this->pnlMain->Location = System::Drawing::Point(276, 260);
 		this->pnlMain->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 		this->pnlMain->Name = L"pnlMain";
-		this->pnlMain->Size = System::Drawing::Size(1503, 545);
+		this->pnlMain->Size = System::Drawing::Size(1084, 513);
 		this->pnlMain->TabIndex = 4;
 		// 
 		// PANELPROVA
@@ -1330,7 +1333,7 @@ private: System::Windows::Forms::Button^ button9;
 		this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 		this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 		this->BackColor = System::Drawing::SystemColors::ControlLightLight;
-		this->ClientSize = System::Drawing::Size(1779, 805);
+		this->ClientSize = System::Drawing::Size(1360, 773);
 		this->Controls->Add(this->btnViewNavBar);
 		this->Controls->Add(this->pnlMain);
 		this->Controls->Add(this->pnlMainTop);
@@ -1865,6 +1868,9 @@ private: System::Void ProvesUI_Load(System::Object^ sender, System::EventArgs^ e
 
 		break;
 	case TipoPassarela::Entitat:
+
+		this->panel10->Visible = true;
+
 		this->lblTypeUser->Text = L"Entitat";
 		this->lblTypeUser->BackColor = System::Drawing::Color::FromArgb(
 			static_cast<System::Int32>(static_cast<System::Byte>(246)),
@@ -1915,6 +1921,10 @@ private: System::Void ProvesUI_Load(System::Object^ sender, System::EventArgs^ e
 
 		break;
 	case TipoPassarela::Ajuntament:
+
+		this->panel11->Visible = true; // Consultar Peticions d'Esdeveniments
+
+
 		this->lblTypeUser->Text = L"Ajuntament";
 		this->lblTypeUser->BackColor = System::Drawing::Color::FromArgb(
 			static_cast<System::Int32>(static_cast<System::Byte>(49)),
@@ -1942,6 +1952,8 @@ private: System::Void ProvesUI_Load(System::Object^ sender, System::EventArgs^ e
 		panel5->Visible = false;
 		panel6->Visible = false;
 		//panel7->Visible = false;
+
+
 
 		flowLayoutPanel1->Visible = false;
 		break;

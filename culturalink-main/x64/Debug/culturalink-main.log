@@ -1,5 +1,13 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: El directorio Output no termina con una barra diagonal final. Esta instancia de compilación agregará la barra diagonal porque es necesaria para que se pueda evaluar correctamente el directorio Output.
   BandejaEntradaSolAjuntament.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\BandejaEntradaSolAjuntament.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/BandejaEntradaSolAjuntament.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\BandejaEntradaSolAjuntament.cpp(1,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\BandejaEntradaSolAjuntament.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/BandejaEntradaSolAjuntament.cpp")
+  
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/BandejaEntradaSolAjuntament.cpp")
   
@@ -7,6 +15,14 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.
   (compilando archivo de origen "/BandejaEntradaSolAjuntament.cpp")
   
   CercadoraCiutada.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\CercadoraCiutada.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/CercadoraCiutada.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\CercadoraCiutada.cpp(1,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\CercadoraCiutada.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/CercadoraCiutada.cpp")
+  
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
@@ -23,22 +39,22 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1483,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1486,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1520,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1523,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1588,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1591,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1616,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1619,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1645,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1648,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1853,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1856,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(494,32): warning C4101: 'e': variable local sin referencia
@@ -50,7 +66,130 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(516,32
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(538,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
+  CercadoraEsdeveniment.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\CercadoraEsdeveniment.cpp(2,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/CercadoraEsdeveniment.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\CercadoraEsdeveniment.cpp(2,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\CercadoraEsdeveniment.cpp(2,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/CercadoraEsdeveniment.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/CercadoraEsdeveniment.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/CercadoraEsdeveniment.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\CercadoraEsdeveniment.cpp(41,23): warning C4101: 'ex': variable local sin referencia
+  (compilando archivo de origen "/CercadoraEsdeveniment.cpp")
+  
+  ComprarEsdevenimentUI.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ComprarEsdevenimentUI.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/ComprarEsdevenimentUI.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ComprarEsdevenimentUI.cpp(1,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ComprarEsdevenimentUI.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/ComprarEsdevenimentUI.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/ComprarEsdevenimentUI.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/ComprarEsdevenimentUI.cpp")
+  
+  ConsultaEsdevenimentUI.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ConsultaEsdevenimentUI.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/ConsultaEsdevenimentUI.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ConsultaEsdevenimentUI.cpp(1,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ConsultaEsdevenimentUI.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/ConsultaEsdevenimentUI.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/ConsultaEsdevenimentUI.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/ConsultaEsdevenimentUI.cpp")
+  
+  CtrlModificaEsdeveniment.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\CtrlModificaEsdeveniment.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/CtrlModificaEsdeveniment.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\CtrlModificaEsdeveniment.cpp(1,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\CtrlModificaEsdeveniment.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/CtrlModificaEsdeveniment.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/CtrlModificaEsdeveniment.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/CtrlModificaEsdeveniment.cpp")
+  
+  culturalinkmain.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\culturalinkmain.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\culturalinkmain.cpp(1,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\culturalinkmain.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1486,40): warning C4101: 'list_esdevs': variable local sin referencia
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1523,40): warning C4101: 'list_esdevs': variable local sin referencia
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1591,40): warning C4101: 'list_esdevs': variable local sin referencia
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1619,40): warning C4101: 'list_esdevs': variable local sin referencia
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1648,40): warning C4101: 'list_esdevs': variable local sin referencia
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1856,41): warning C4101: 'list_esdevs': variable local sin referencia
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(494,32): warning C4101: 'e': variable local sin referencia
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(516,32): warning C4101: 'e': variable local sin referencia
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(538,32): warning C4101: 'e': variable local sin referencia
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
   Login.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/Login.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.cpp(1,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/Login.cpp")
+  
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/Login.cpp")
   C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
@@ -67,22 +206,22 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1483,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1486,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1520,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1523,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1588,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1591,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1616,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1619,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1645,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1648,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1853,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1856,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(494,32): warning C4101: 'e': variable local sin referencia
@@ -95,6 +234,14 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(538,32
   (compilando archivo de origen "/Login.cpp")
   
   MainForm.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\MainForm.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/MainForm.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\MainForm.cpp(1,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\MainForm.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/MainForm.cpp")
+  
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/MainForm.cpp")
   C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
@@ -111,22 +258,22 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1483,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1486,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1520,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1523,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1588,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1591,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1616,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1619,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1645,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1648,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1853,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1856,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(494,32): warning C4101: 'e': variable local sin referencia
@@ -139,6 +286,14 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(538,32
   (compilando archivo de origen "/MainForm.cpp")
   
   PassarelaCiutada.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(1,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
+  
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
@@ -155,22 +310,22 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1483,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1486,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1520,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1523,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1588,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1591,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1616,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1619,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1645,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1648,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1853,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1856,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(494,32): warning C4101: 'e': variable local sin referencia
@@ -200,7 +355,33 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiuta
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(70,42): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
+  PassarelaEsdeveniment.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaEsdeveniment.cpp(2,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/PassarelaEsdeveniment.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaEsdeveniment.cpp(2,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaEsdeveniment.cpp(2,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/PassarelaEsdeveniment.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaEsdeveniment.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaEsdeveniment.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaEsdeveniment.cpp(262,23): warning C4101: 'ex': variable local sin referencia
+  (compilando archivo de origen "/PassarelaEsdeveniment.cpp")
+  
   ProvesUI.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/ProvesUI.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.cpp(1,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/ProvesUI.cpp")
+  
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/ProvesUI.cpp")
   C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
@@ -214,25 +395,145 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/ProvesUI.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1483,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1486,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/ProvesUI.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1520,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1523,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/ProvesUI.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1588,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1591,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/ProvesUI.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1616,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1619,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/ProvesUI.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1645,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1648,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/ProvesUI.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1853,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1856,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/ProvesUI.cpp")
+  
+  RegistrarEsdevenimentUI.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistrarEsdevenimentUI.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/RegistrarEsdevenimentUI.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistrarEsdevenimentUI.cpp(1,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistrarEsdevenimentUI.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/RegistrarEsdevenimentUI.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/RegistrarEsdevenimentUI.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/RegistrarEsdevenimentUI.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/RegistrarEsdevenimentUI.cpp")
+  
+  TxCanviaEstatPeticio.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxCanviaEstatPeticio.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/TxCanviaEstatPeticio.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxCanviaEstatPeticio.cpp(1,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxCanviaEstatPeticio.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/TxCanviaEstatPeticio.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxCanviaEstatPeticio.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxCanviaEstatPeticio.cpp")
+  
+  TxConsultaEsdeveniment.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxConsultaEsdeveniment.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/TxConsultaEsdeveniment.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxConsultaEsdeveniment.cpp(1,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxConsultaEsdeveniment.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/TxConsultaEsdeveniment.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxConsultaEsdeveniment.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxConsultaEsdeveniment.cpp")
+  
+  TxConsultaEsdevenimentsAjuntament.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxConsultaEsdevenimentsAjuntament.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/TxConsultaEsdevenimentsAjuntament.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxConsultaEsdevenimentsAjuntament.cpp(1,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxConsultaEsdevenimentsAjuntament.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/TxConsultaEsdevenimentsAjuntament.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxConsultaEsdevenimentsAjuntament.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxConsultaEsdevenimentsAjuntament.cpp")
+  
+  TxConsultaEsdevenimentsAmbTipus.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxConsultaEsdevenimentsAmbTipus.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/TxConsultaEsdevenimentsAmbTipus.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxConsultaEsdevenimentsAmbTipus.cpp(1,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxConsultaEsdevenimentsAmbTipus.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/TxConsultaEsdevenimentsAmbTipus.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxConsultaEsdevenimentsAmbTipus.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxConsultaEsdevenimentsAmbTipus.cpp")
+  
+  TxConsultaTotsEsdeveniments.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxConsultaTotsEsdeveniments.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/TxConsultaTotsEsdeveniments.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxConsultaTotsEsdeveniments.cpp(1,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxConsultaTotsEsdeveniments.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/TxConsultaTotsEsdeveniments.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxConsultaTotsEsdeveniments.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxConsultaTotsEsdeveniments.cpp")
+  
+  TxConsultaTotsEsdevenimentsPerEntitat.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxConsultaTotsEsdevenimentsPerEntitat.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/TxConsultaTotsEsdevenimentsPerEntitat.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxConsultaTotsEsdevenimentsPerEntitat.cpp(1,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxConsultaTotsEsdevenimentsPerEntitat.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/TxConsultaTotsEsdevenimentsPerEntitat.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxConsultaTotsEsdevenimentsPerEntitat.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxConsultaTotsEsdevenimentsPerEntitat.cpp")
   
   TxLoginCiutada.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxLoginCiutada.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/TxLoginCiutada.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxLoginCiutada.cpp(1,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxLoginCiutada.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/TxLoginCiutada.cpp")
+  
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
@@ -249,22 +550,22 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1483,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1486,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1520,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1523,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1588,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1591,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1616,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1619,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1645,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1648,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1853,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1856,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(494,32): warning C4101: 'e': variable local sin referencia
@@ -276,7 +577,18 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(516,32
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(538,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
+  Generando código...
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\CercadoraEsdeveniment.cpp(51): warning C4715: 'CercadoraEsdeveniment::cercaEsdeveniment': no todas las rutas de acceso de control devuelven un valor
+  Compilando...
   TxRegisterCiutada.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxRegisterCiutada.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/TxRegisterCiutada.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxRegisterCiutada.cpp(1,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxRegisterCiutada.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/TxRegisterCiutada.cpp")
+  
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
@@ -293,22 +605,22 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1483,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1486,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1520,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1523,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1588,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1591,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1616,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1619,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1645,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1648,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1853,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1856,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(494,32): warning C4101: 'e': variable local sin referencia
@@ -320,49 +632,27 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(516,32
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(538,32): warning C4101: 'e': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-  culturalinkmain.cpp
+  TxRegistraEsdeveniment.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxRegistraEsdeveniment.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/TxRegistraEsdeveniment.cpp")
+  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxRegistraEsdeveniment.cpp(1,1):
+  '__CLR_VER' declarado previamente en la línea de comandos
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\TxRegistraEsdeveniment.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/TxRegistraEsdeveniment.cpp")
+  
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/culturalinkmain.cpp")
+  (compilando archivo de origen "/TxRegistraEsdeveniment.cpp")
   C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
   'void Transaccio::executar(void)': es abstracto
   C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
   vea la declaración de 'Transaccio::executar'
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/culturalinkmain.cpp")
+  (compilando archivo de origen "/TxRegistraEsdeveniment.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1483,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1520,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1588,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1616,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1645,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(1853,41): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(494,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(516,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(538,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
+  (compilando archivo de origen "/TxRegistraEsdeveniment.cpp")
   
   Generando código...
   AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo

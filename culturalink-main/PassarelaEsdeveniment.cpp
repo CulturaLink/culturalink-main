@@ -235,3 +235,34 @@ void PassarelaEsdeveniment::posaData(String^ data) {
 void PassarelaEsdeveniment::posaPuntsDesc(int puntsDesc) {
     _puntsDescEsd = puntsDesc;
 }
+
+void PassarelaEsdeveniment::modifica_estat(String^ nomEsdev, bool estat)
+{
+    // Cadena de conexión a la base de datos
+    String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username=amep14; password=\"Yee7zaeheih9-\"; database=amep14;";
+    MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
+
+    try {
+        conn->Open(); // Intentar abrir la conexión con la base de datos
+
+        // Comando SQL para actualizar un evento
+        String^ sql = "UPDATE amep14.esdeveniment SET "
+            "confirmacio = @estat WHERE nom_esdeveniment = @nom;";
+
+        MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
+
+        // Asignar valores a los parámetros
+        cmd->Parameters->AddWithValue("@nom", nomEsdev);
+        cmd->Parameters->AddWithValue("@estat", estat);
+
+        // Ejecutar el comando
+        cmd->ExecuteNonQuery();
+        //MessageBox::Show("Evento modificado exitosamente!");
+    }
+    catch (Exception^ ex) {
+        //MessageBox::Show("Error al modificar el evento: " + ex->Message);
+    }
+    finally {
+        conn->Close(); // Cerrar la conexión independientemente del resultado
+    }
+}

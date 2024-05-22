@@ -41,6 +41,8 @@ public:
     void posaData(String^ data);
     void posaPuntsDesc(int puntsDesc);
 
+    void modifica_estat(String^ nomEsdev, bool estat);
+
 private:
     int _idEnt;
     float _preu;
