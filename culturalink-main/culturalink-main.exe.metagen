@@ -44,6 +44,13 @@ Class CustomControls.CustomButton: AutoLayout, AnsiClass, Class, Public, BeforeF
 Class culturalink_main.BandejaEntradaSolAjuntament: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    BandejaEntradaSolAjuntament_Load(Object, EventArgs): PrivateScope, Public, HideBySig
+    addDynamicPanelBandejaEntradaAj(String, String, String, String): PrivateScope, Public, HideBySig
+    ButtonViewDesc_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    ButtonAcceptar_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    ButtonCancelar_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    initializeComponentBandejaEntradaAjuntament(): PrivateScope, Public, HideBySig
 Class culturalink_main.BandejaEntradaUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

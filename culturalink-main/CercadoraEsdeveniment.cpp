@@ -55,7 +55,7 @@ List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaTotsEsdeveniments()
     String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
     MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
     String^ sql1 = "SELECT COUNT(*) FROM esdeveniment";
-    String^ sql2 = "SELECT nom_esdeveniment, preu_esdeveniment FROM esdeveniment";
+    String^ sql2 = "SELECT nom_esdeveniment, preu_esdeveniment FROM esdeveniment WHERE confirmacio = 1";
     MySqlCommand^ cmd1 = gcnew MySqlCommand(sql1, conn);
     MySqlCommand^ cmd2 = gcnew MySqlCommand(sql2, conn);
     MySqlDataReader^ dataReader;
