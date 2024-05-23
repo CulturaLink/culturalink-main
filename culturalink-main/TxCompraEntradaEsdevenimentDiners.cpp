@@ -29,7 +29,7 @@ void TxCompraEntradaEsdevenimentDiners::executar()
 	System::String^ time = gcnew System::String(buffer);
 	int^ preu = gcnew int(static_cast<int>(pes.getPreu()));
 	passarelaCiutada->borrar_diners(preu);
-	PassarelaInscripcio inscrip(passarelaCiutada->getNickname(), time, pes.getNomEsd(), preu);
+	PassarelaInscripcio inscrip(passarelaCiutada->getNickname(), time, pes.getNomEsd(), preu,0);
 	inscrip.insereix();
 	pes.restar_aforament();
 	passarelaCiutada->afegir_punts_entrada(pes.getPuntsDescEsd());

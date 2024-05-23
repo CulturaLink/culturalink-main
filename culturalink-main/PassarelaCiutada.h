@@ -25,6 +25,8 @@ public:
 	void borrar_punts();
 	void borrar_diners(int^ preuEsd);
 	void afegir_punts_entrada(int^ punts);
+	void devolucio_punts(int^ punts);
+	void devolucio_diners(int^ diners);
 	//Ciutada();
 	PassarelaCiutada(String^ nickname);//Omple ciutada segons nick
 	PassarelaCiutada(String^ nickname, String^ nom_complet, String^ correu);

@@ -15,6 +15,7 @@ ref class CercadoraInscripcio
 public:
 	CercadoraInscripcio();
 	List<PassarelaInscripcio^>^ cercaTotesInscripcions(String^ nick);
+	PassarelaInscripcio cercaInscripcio(String^ nick, String^ nom_esdev);
 
 private:
 };

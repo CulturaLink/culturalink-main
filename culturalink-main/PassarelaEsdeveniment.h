@@ -22,6 +22,7 @@ public:
     PassarelaEsdeveniment();
     void insereix();
     void restar_aforament();
+    void sumar_aforament();
     PassarelaEsdeveniment% operator=(const PassarelaEsdeveniment% other);
     PassarelaEsdeveniment(const PassarelaEsdeveniment% p1);
     int getIdEnt();

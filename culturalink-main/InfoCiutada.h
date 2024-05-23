@@ -4,6 +4,7 @@
 #include "TxEsborraCiutada.h"
 #include "EsborraFormCiutada.h"
 #include "TxConsultaInscripcions.h"
+#include "TxAnulaRegistreEsdeveniment.h"
 
 namespace culturalink_main {
 
@@ -434,6 +435,7 @@ namespace culturalink_main {
 			this->listBox1->Size = System::Drawing::Size(613, 292);
 			this->listBox1->Sorted = true;
 			this->listBox1->TabIndex = 0;
+			this->listBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &InfoCiutada::listBox1_SelectedIndexChanged);
 			// 
 			// InfoCiutada
 			// 
@@ -514,6 +516,21 @@ private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArg
 	panelDesktop->Visible = true;
 	panelDesktop->Invalidate(); // Force redraw if necessary
 	panelDesktop->PerformLayout(); // Recalculate layout if necessary
+}
+private: System::Void listBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+
+	if (listBox1->SelectedItem != nullptr) 
+	{
+		String^ compra_seleccionada = this->listBox1->SelectedItem->ToString();
+		bool encontrado = false;
+		String^ buffer;
+		for (int i = 0; i < compra_seleccionada->Length || encontrado == true; i++)
+		{
+			if (compra_seleccionada[i] == 44) encontrado = true;
+			else buffer += compra_seleccionada[i];
+		}
+		TxAnulaRegistreEsdeveniment tx1(buffer);
+	}
 }
 };
 }

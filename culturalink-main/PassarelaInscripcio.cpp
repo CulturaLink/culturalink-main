@@ -8,6 +8,7 @@ PassarelaInscripcio::PassarelaInscripcio(const PassarelaInscripcio% p1)
     this->data = p1.data;
     this->nomEsdeveniment = p1.nomEsdeveniment;
     this->preu = p1.preu;
+    this->punts_diners = p1.punts_diners;
 }
 PassarelaInscripcio::PassarelaInscripcio()
 {
@@ -15,6 +16,7 @@ PassarelaInscripcio::PassarelaInscripcio()
     data = "";
     nomEsdeveniment = "";
     preu = 0;
+    punts_diners = 0;
 }
 PassarelaInscripcio% PassarelaInscripcio::operator=(const PassarelaInscripcio% other)
 {
@@ -24,16 +26,17 @@ PassarelaInscripcio% PassarelaInscripcio::operator=(const PassarelaInscripcio% o
         data = other.data;
         nomEsdeveniment = other.nomEsdeveniment;
         preu = other.preu;
+        punts_diners = other.punts_diners;
     }
     return *this;
 }
-PassarelaInscripcio::PassarelaInscripcio(String^ nickCiutadaI, String^ dataI, String^ nomEsdI, int^ preuI)
+PassarelaInscripcio::PassarelaInscripcio(String^ nickCiutadaI, String^ dataI, String^ nomEsdI, int^ preuI,int^ punts_dinersI)
 {
     nickCiutada = nickCiutadaI;
     data = dataI;
     nomEsdeveniment = nomEsdI;
     preu = preuI;
-
+    punts_diners = punts_dinersI;
 }
 void PassarelaInscripcio::insereix()
 {
@@ -52,7 +55,7 @@ void PassarelaInscripcio::insereix()
     {
         conn->Close();
         MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
-        String^ sql = "INSERT INTO inscripcio VALUES('" + nickCiutada + "', '" + data + "', '" + preu + "', '" + nomEsdeveniment + "')";;
+        String^ sql = "INSERT INTO inscripcio VALUES('" + nickCiutada + "', '" + data + "', '" + preu + "', '" + nomEsdeveniment + "', '" + punts_diners + "')";;
         MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
 
         MySqlDataReader^ dataReader;
@@ -72,6 +75,29 @@ void PassarelaInscripcio::insereix()
         }
     }
 }
+void PassarelaInscripcio::elimina()
+{
+    String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
+    MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
+
+    String^ sql = "DELETE FROM inscripcio WHERE nick_ciutada = @nick AND nom_esdeveniment=@nom;";
+    MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
+
+    cmd->Parameters->AddWithValue("@nick", nickCiutada);
+    cmd->Parameters->AddWithValue("@nom", nomEsdeveniment);
+
+    try {
+        conn->Open();  // Open the connection
+        cmd->ExecuteNonQuery();  // Execute the DELETE command
+        //MessageBox::Show("User deleted successfully.");
+    }
+    catch (Exception^ ex) {
+        MessageBox::Show(ex->Message);  // Show error message if something goes wrong
+    }
+    finally {
+        conn->Close();  // Close the connection regardless of the result
+    }
+}
 
 String^ PassarelaInscripcio::ObteNickCiutada()
 {
@@ -89,7 +115,10 @@ int^ PassarelaInscripcio::ObtePreu()
 {
     return preu;
 }
-
+int^ PassarelaInscripcio::ObtePunts_Diners()
+{
+    return punts_diners;
+}
 void PassarelaInscripcio::posaNickCiutada(String^ nickCiutadaI)
 {
     nickCiutada = nickCiutadaI;
