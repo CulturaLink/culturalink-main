@@ -144,3 +144,8 @@ C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-m
 C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ModificarAjuntament.resources
 C:\Users\Asus\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.FormulariCompraEntrada.resources
 C:\Users\Asus\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ModificarEntitat.resources
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\x64\Debug\culturalink_main.EsborraFormCiutada.resources
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\x64\Debug\culturalink_main.EsborraFormEntitat.resources
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\x64\Debug\culturalink_main.FormulariCompraEntrada.resources
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ModificarAjuntament.resources
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ModificarEntitat.resources

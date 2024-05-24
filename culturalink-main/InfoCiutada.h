@@ -4,6 +4,7 @@
 #include "TxEsborraCiutada.h"
 #include "EsborraFormCiutada.h"
 #include "TxConsultaInscripcions.h"
+#include "TxPuntuaEsdeveniment.h"
 
 namespace culturalink_main {
 
@@ -76,6 +77,16 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Label^ TitleCC;
 	private: System::Windows::Forms::ListBox^ listBox1;
 
+	private: System::Windows::Forms::Label^ nomEsdevenimentPuntuacio;
+	private: System::Windows::Forms::Button^ button6;
+	private: System::Windows::Forms::Button^ button5;
+	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::Button^ button8;
+	private: System::Windows::Forms::Button^ button7;
+
+
+
+
 
 
 
@@ -113,6 +124,12 @@ namespace culturalink_main {
 			this->logOut = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->panelTitleBar = (gcnew System::Windows::Forms::Panel());
+			this->button8 = (gcnew System::Windows::Forms::Button());
+			this->button7 = (gcnew System::Windows::Forms::Button());
+			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->nomEsdevenimentPuntuacio = (gcnew System::Windows::Forms::Label());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
@@ -363,6 +380,12 @@ namespace culturalink_main {
 			// panelTitleBar
 			// 
 			this->panelTitleBar->BackColor = System::Drawing::Color::White;
+			this->panelTitleBar->Controls->Add(this->button8);
+			this->panelTitleBar->Controls->Add(this->button7);
+			this->panelTitleBar->Controls->Add(this->button6);
+			this->panelTitleBar->Controls->Add(this->button5);
+			this->panelTitleBar->Controls->Add(this->button4);
+			this->panelTitleBar->Controls->Add(this->nomEsdevenimentPuntuacio);
 			this->panelTitleBar->Controls->Add(this->pictureBox1);
 			this->panelTitleBar->Controls->Add(this->pictureBox2);
 			this->panelTitleBar->Dock = System::Windows::Forms::DockStyle::Top;
@@ -371,6 +394,66 @@ namespace culturalink_main {
 			this->panelTitleBar->Name = L"panelTitleBar";
 			this->panelTitleBar->Size = System::Drawing::Size(784, 49);
 			this->panelTitleBar->TabIndex = 6;
+			// 
+			// button8
+			// 
+			this->button8->Location = System::Drawing::Point(654, 9);
+			this->button8->Name = L"button8";
+			this->button8->Size = System::Drawing::Size(75, 23);
+			this->button8->TabIndex = 7;
+			this->button8->Text = L"5";
+			this->button8->UseVisualStyleBackColor = true;
+			this->button8->Click += gcnew System::EventHandler(this, &InfoCiutada::button8_Click);
+			// 
+			// button7
+			// 
+			this->button7->Location = System::Drawing::Point(565, 9);
+			this->button7->Name = L"button7";
+			this->button7->Size = System::Drawing::Size(75, 23);
+			this->button7->TabIndex = 6;
+			this->button7->Text = L"4";
+			this->button7->UseVisualStyleBackColor = true;
+			this->button7->Click += gcnew System::EventHandler(this, &InfoCiutada::button7_Click);
+			// 
+			// button6
+			// 
+			this->button6->Location = System::Drawing::Point(473, 9);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(75, 23);
+			this->button6->TabIndex = 5;
+			this->button6->Text = L"3";
+			this->button6->UseVisualStyleBackColor = true;
+			this->button6->Click += gcnew System::EventHandler(this, &InfoCiutada::button6_Click);
+			// 
+			// button5
+			// 
+			this->button5->Location = System::Drawing::Point(383, 9);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(75, 23);
+			this->button5->TabIndex = 4;
+			this->button5->Text = L"2";
+			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &InfoCiutada::button5_Click);
+			// 
+			// button4
+			// 
+			this->button4->Location = System::Drawing::Point(287, 9);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(75, 23);
+			this->button4->TabIndex = 3;
+			this->button4->Text = L"1";
+			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &InfoCiutada::button4_Click);
+			// 
+			// nomEsdevenimentPuntuacio
+			// 
+			this->nomEsdevenimentPuntuacio->AutoSize = true;
+			this->nomEsdevenimentPuntuacio->Location = System::Drawing::Point(88, 14);
+			this->nomEsdevenimentPuntuacio->Name = L"nomEsdevenimentPuntuacio";
+			this->nomEsdevenimentPuntuacio->Size = System::Drawing::Size(49, 13);
+			this->nomEsdevenimentPuntuacio->TabIndex = 2;
+			this->nomEsdevenimentPuntuacio->Text = L"Metallica";
+			this->nomEsdevenimentPuntuacio->Click += gcnew System::EventHandler(this, &InfoCiutada::label6_Click);
 			// 
 			// pictureBox1
 			// 
@@ -434,6 +517,7 @@ namespace culturalink_main {
 			this->listBox1->Size = System::Drawing::Size(613, 292);
 			this->listBox1->Sorted = true;
 			this->listBox1->TabIndex = 0;
+			this->listBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &InfoCiutada::listBox1_SelectedIndexChanged);
 			// 
 			// InfoCiutada
 			// 
@@ -452,6 +536,7 @@ namespace culturalink_main {
 			this->panelDesktop->PerformLayout();
 			this->panelMenu->ResumeLayout(false);
 			this->panelTitleBar->ResumeLayout(false);
+			this->panelTitleBar->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
 			this->panel1->ResumeLayout(false);
@@ -514,6 +599,36 @@ private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArg
 	panelDesktop->Visible = true;
 	panelDesktop->Invalidate(); // Force redraw if necessary
 	panelDesktop->PerformLayout(); // Recalculate layout if necessary
+}
+private: System::Void listBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+	String^ nomEsdev = nomEsdevenimentPuntuacio->Text;
+	TxPuntuaEsdeveniment txPuntEsdev(nomEsdev, 1);
+	txPuntEsdev.executar();
+}
+private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+
+private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+	String^ nomEsdev = nomEsdevenimentPuntuacio->Text;
+	TxPuntuaEsdeveniment txPuntEsdev(nomEsdev, 2);
+	txPuntEsdev.executar();
+}
+private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
+	String^ nomEsdev = nomEsdevenimentPuntuacio->Text;
+	TxPuntuaEsdeveniment txPuntEsdev(nomEsdev, 3);
+	txPuntEsdev.executar();
+}
+private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
+	String^ nomEsdev = nomEsdevenimentPuntuacio->Text;
+	TxPuntuaEsdeveniment txPuntEsdev(nomEsdev, 4);
+	txPuntEsdev.executar();
+}
+private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {
+	String^ nomEsdev = nomEsdevenimentPuntuacio->Text;
+	TxPuntuaEsdeveniment txPuntEsdev(nomEsdev, 5);
+	txPuntEsdev.executar();
 }
 };
 }

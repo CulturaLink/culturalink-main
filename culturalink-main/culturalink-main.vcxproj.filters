@@ -68,6 +68,13 @@
     <ClCompile Include="CtrlModificaAjuntament.cpp" />
     <ClCompile Include="ModificarEntitat.cpp" />
     <ClCompile Include="CtrlModificarEntitat.cpp" />
+    <ClCompile Include="PuntuacioEsdevenimentUI.cpp" />
+    <ClCompile Include="PassarelaPuntuacioEsdeveniment.cpp" />
+    <ClCompile Include="TxPuntuaEsdeveniment.cpp" />
+    <ClCompile Include="CercadoraPuntuacioEsdeveniment.cpp">
+      <Filter>Config files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxConsultaPuntuacioEsdeveniment.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ConsultaEsdevenimentUI.h" />
@@ -141,6 +148,11 @@
     <ClInclude Include="ExcepcioCorreuExisteix.h" />
     <ClInclude Include="ModificarEntitat.h" />
     <ClInclude Include="CtrlModificarEntitat.h" />
+    <ClInclude Include="PuntuacioEsdevenimentUI.h" />
+    <ClInclude Include="PassarelaPuntuacioEsdeveniment.h" />
+    <ClInclude Include="CercadoraPuntuacioEsdeveniment.h" />
+    <ClInclude Include="TxPuntuaEsdeveniment.h" />
+    <ClInclude Include="TxConsultaPuntuacioEsdeveniment.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc" />
