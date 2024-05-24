@@ -82,6 +82,54 @@ private: System::Windows::Forms::Label^ lblAjuntEsdevCONSen;
 private: System::Windows::Forms::Panel^ pnl11CONS;
 private: System::Windows::Forms::Label^ lblAjuntEsdevCONS;
 private: System::Windows::Forms::PictureBox^ picBoxEsdevCONS;
+	private: System::Windows::Forms::Panel^ pnlCOMP;
+	private: System::Windows::Forms::Label^ lblNumTarjCOMPen;
+	private: System::Windows::Forms::TextBox^ textBoxNumTarjCOMP;
+	private: System::Windows::Forms::Panel^ pnlTarjUICOMP;
+
+
+
+
+	private: System::Windows::Forms::Label^ lblCVVCOMPen;
+	private: System::Windows::Forms::TextBox^ textBoxCVVCOMP;
+
+
+	private: System::Windows::Forms::TextBox^ textBoxYearCOMP;
+
+	private: System::Windows::Forms::Label^ lblDataCadCOMPen;
+	private: System::Windows::Forms::TextBox^ textBoxMonthCOMP;
+
+
+	private: System::Windows::Forms::Label^ lblTitularCOMPen;
+	private: System::Windows::Forms::TextBox^ textBoxTitularCOMP;
+	private: System::Windows::Forms::PictureBox^ pictureBoxChipUICOMP;
+
+	private: System::Windows::Forms::Label^ lbNumTarjUICOMP;
+
+
+
+
+	private: System::Windows::Forms::Button^ btnCancelarCOMP;
+
+	private: System::Windows::Forms::Button^ btnComprarCOMP;
+	private: System::Windows::Forms::Label^ lblCVVUICOMP;
+
+
+	private: System::Windows::Forms::Label^ lblCVVUICOMPen;
+	private: System::Windows::Forms::Label^ lblDataCadUICOMP;
+
+
+	private: System::Windows::Forms::Label^ lblDataCadUICOMPen;
+	private: System::Windows::Forms::Label^ lblTitularUICOMP;
+
+
+
+	private: System::Windows::Forms::Label^ lblTitularUICOMPen;
+
+	private: System::Windows::Forms::Panel^ pnlTitleCOMP;
+	private: System::Windows::Forms::Label^ lblTitleCOMP;
+
+
 
 	private: System::ComponentModel::IContainer^ components;
 
@@ -146,6 +194,29 @@ private: System::Windows::Forms::PictureBox^ picBoxEsdevCONS;
 			this->pnlNomEsdevTitleCONS = (gcnew System::Windows::Forms::Panel());
 			this->lblNomEsdevCONS = (gcnew System::Windows::Forms::Label());
 			this->contextMenuStrip1 = (gcnew System::Windows::Forms::ContextMenuStrip(this->components));
+			this->pnlCOMP = (gcnew System::Windows::Forms::Panel());
+			this->pnlTarjUICOMP = (gcnew System::Windows::Forms::Panel());
+			this->textBoxNumTarjCOMP = (gcnew System::Windows::Forms::TextBox());
+			this->lblNumTarjCOMPen = (gcnew System::Windows::Forms::Label());
+			this->lblTitularCOMPen = (gcnew System::Windows::Forms::Label());
+			this->textBoxTitularCOMP = (gcnew System::Windows::Forms::TextBox());
+			this->lblDataCadCOMPen = (gcnew System::Windows::Forms::Label());
+			this->textBoxMonthCOMP = (gcnew System::Windows::Forms::TextBox());
+			this->textBoxYearCOMP = (gcnew System::Windows::Forms::TextBox());
+			this->lblCVVCOMPen = (gcnew System::Windows::Forms::Label());
+			this->textBoxCVVCOMP = (gcnew System::Windows::Forms::TextBox());
+			this->pictureBoxChipUICOMP = (gcnew System::Windows::Forms::PictureBox());
+			this->lbNumTarjUICOMP = (gcnew System::Windows::Forms::Label());
+			this->lblTitularUICOMPen = (gcnew System::Windows::Forms::Label());
+			this->lblTitularUICOMP = (gcnew System::Windows::Forms::Label());
+			this->lblDataCadUICOMPen = (gcnew System::Windows::Forms::Label());
+			this->lblDataCadUICOMP = (gcnew System::Windows::Forms::Label());
+			this->lblCVVUICOMPen = (gcnew System::Windows::Forms::Label());
+			this->lblCVVUICOMP = (gcnew System::Windows::Forms::Label());
+			this->btnComprarCOMP = (gcnew System::Windows::Forms::Button());
+			this->btnCancelarCOMP = (gcnew System::Windows::Forms::Button());
+			this->pnlTitleCOMP = (gcnew System::Windows::Forms::Panel());
+			this->lblTitleCOMP = (gcnew System::Windows::Forms::Label());
 			this->pnlConsultarCompra->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->picBoxEsdevCONS))->BeginInit();
 			this->panelCONS->SuspendLayout();
@@ -166,6 +237,10 @@ private: System::Windows::Forms::PictureBox^ picBoxEsdevCONS;
 			this->pnlDescTitleCONS->SuspendLayout();
 			this->pnlPreusCONS->SuspendLayout();
 			this->pnlNomEsdevTitleCONS->SuspendLayout();
+			this->pnlCOMP->SuspendLayout();
+			this->pnlTarjUICOMP->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxChipUICOMP))->BeginInit();
+			this->pnlTitleCOMP->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// btnGoBackCONS
@@ -203,7 +278,7 @@ private: System::Windows::Forms::PictureBox^ picBoxEsdevCONS;
 			this->pnlConsultarCompra->Controls->Add(this->pnlNomEsdevTitleCONS);
 			this->pnlConsultarCompra->Controls->Add(this->btnComprarCONS);
 			this->pnlConsultarCompra->Controls->Add(this->btnGoBackCONS);
-			this->pnlConsultarCompra->Location = System::Drawing::Point(91, 12);
+			this->pnlConsultarCompra->Location = System::Drawing::Point(30, 12);
 			this->pnlConsultarCompra->Name = L"pnlConsultarCompra";
 			this->pnlConsultarCompra->Size = System::Drawing::Size(867, 670);
 			this->pnlConsultarCompra->TabIndex = 5;
@@ -643,12 +718,280 @@ private: System::Windows::Forms::PictureBox^ picBoxEsdevCONS;
 			this->contextMenuStrip1->Name = L"contextMenuStrip1";
 			this->contextMenuStrip1->Size = System::Drawing::Size(61, 4);
 			// 
+			// pnlCOMP
+			// 
+			this->pnlCOMP->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->pnlCOMP->Controls->Add(this->pnlTitleCOMP);
+			this->pnlCOMP->Controls->Add(this->btnCancelarCOMP);
+			this->pnlCOMP->Controls->Add(this->btnComprarCOMP);
+			this->pnlCOMP->Controls->Add(this->lblCVVCOMPen);
+			this->pnlCOMP->Controls->Add(this->textBoxCVVCOMP);
+			this->pnlCOMP->Controls->Add(this->textBoxYearCOMP);
+			this->pnlCOMP->Controls->Add(this->lblDataCadCOMPen);
+			this->pnlCOMP->Controls->Add(this->textBoxMonthCOMP);
+			this->pnlCOMP->Controls->Add(this->lblTitularCOMPen);
+			this->pnlCOMP->Controls->Add(this->lblNumTarjCOMPen);
+			this->pnlCOMP->Controls->Add(this->textBoxTitularCOMP);
+			this->pnlCOMP->Controls->Add(this->textBoxNumTarjCOMP);
+			this->pnlCOMP->Controls->Add(this->pnlTarjUICOMP);
+			this->pnlCOMP->Location = System::Drawing::Point(922, 12);
+			this->pnlCOMP->Name = L"pnlCOMP";
+			this->pnlCOMP->Size = System::Drawing::Size(612, 670);
+			this->pnlCOMP->TabIndex = 6;
+			// 
+			// pnlTarjUICOMP
+			// 
+			this->pnlTarjUICOMP->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(51)), static_cast<System::Int32>(static_cast<System::Byte>(63)),
+				static_cast<System::Int32>(static_cast<System::Byte>(175)));
+			this->pnlTarjUICOMP->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pnlTarjUICOMP.BackgroundImage")));
+			this->pnlTarjUICOMP->Controls->Add(this->lblCVVUICOMP);
+			this->pnlTarjUICOMP->Controls->Add(this->lblCVVUICOMPen);
+			this->pnlTarjUICOMP->Controls->Add(this->lblDataCadUICOMP);
+			this->pnlTarjUICOMP->Controls->Add(this->lblDataCadUICOMPen);
+			this->pnlTarjUICOMP->Controls->Add(this->lblTitularUICOMP);
+			this->pnlTarjUICOMP->Controls->Add(this->lblTitularUICOMPen);
+			this->pnlTarjUICOMP->Controls->Add(this->lbNumTarjUICOMP);
+			this->pnlTarjUICOMP->Controls->Add(this->pictureBoxChipUICOMP);
+			this->pnlTarjUICOMP->Location = System::Drawing::Point(20, 64);
+			this->pnlTarjUICOMP->Name = L"pnlTarjUICOMP";
+			this->pnlTarjUICOMP->Size = System::Drawing::Size(569, 297);
+			this->pnlTarjUICOMP->TabIndex = 0;
+			// 
+			// textBoxNumTarjCOMP
+			// 
+			this->textBoxNumTarjCOMP->Location = System::Drawing::Point(17, 404);
+			this->textBoxNumTarjCOMP->Name = L"textBoxNumTarjCOMP";
+			this->textBoxNumTarjCOMP->Size = System::Drawing::Size(569, 22);
+			this->textBoxNumTarjCOMP->TabIndex = 1;
+			// 
+			// lblNumTarjCOMPen
+			// 
+			this->lblNumTarjCOMPen->AutoSize = true;
+			this->lblNumTarjCOMPen->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->lblNumTarjCOMPen->Location = System::Drawing::Point(17, 382);
+			this->lblNumTarjCOMPen->Name = L"lblNumTarjCOMPen";
+			this->lblNumTarjCOMPen->Size = System::Drawing::Size(132, 17);
+			this->lblNumTarjCOMPen->TabIndex = 2;
+			this->lblNumTarjCOMPen->Text = L"Numero de la Tarjeta";
+			// 
+			// lblTitularCOMPen
+			// 
+			this->lblTitularCOMPen->AutoSize = true;
+			this->lblTitularCOMPen->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->lblTitularCOMPen->Location = System::Drawing::Point(17, 452);
+			this->lblTitularCOMPen->Name = L"lblTitularCOMPen";
+			this->lblTitularCOMPen->Size = System::Drawing::Size(120, 17);
+			this->lblTitularCOMPen->TabIndex = 8;
+			this->lblTitularCOMPen->Text = L"Titular de la Tarjeta";
+			// 
+			// textBoxTitularCOMP
+			// 
+			this->textBoxTitularCOMP->Location = System::Drawing::Point(17, 474);
+			this->textBoxTitularCOMP->Name = L"textBoxTitularCOMP";
+			this->textBoxTitularCOMP->Size = System::Drawing::Size(314, 22);
+			this->textBoxTitularCOMP->TabIndex = 7;
+			// 
+			// lblDataCadCOMPen
+			// 
+			this->lblDataCadCOMPen->AutoSize = true;
+			this->lblDataCadCOMPen->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->lblDataCadCOMPen->Location = System::Drawing::Point(354, 452);
+			this->lblDataCadCOMPen->Name = L"lblDataCadCOMPen";
+			this->lblDataCadCOMPen->Size = System::Drawing::Size(106, 17);
+			this->lblDataCadCOMPen->TabIndex = 10;
+			this->lblDataCadCOMPen->Text = L"Fecha Caducidad";
+			// 
+			// textBoxMonthCOMP
+			// 
+			this->textBoxMonthCOMP->Location = System::Drawing::Point(357, 474);
+			this->textBoxMonthCOMP->Name = L"textBoxMonthCOMP";
+			this->textBoxMonthCOMP->Size = System::Drawing::Size(106, 22);
+			this->textBoxMonthCOMP->TabIndex = 9;
+			this->textBoxMonthCOMP->Text = L"MM";
+			// 
+			// textBoxYearCOMP
+			// 
+			this->textBoxYearCOMP->Location = System::Drawing::Point(480, 474);
+			this->textBoxYearCOMP->Name = L"textBoxYearCOMP";
+			this->textBoxYearCOMP->Size = System::Drawing::Size(106, 22);
+			this->textBoxYearCOMP->TabIndex = 11;
+			this->textBoxYearCOMP->Text = L"YYYY";
+			// 
+			// lblCVVCOMPen
+			// 
+			this->lblCVVCOMPen->AutoSize = true;
+			this->lblCVVCOMPen->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->lblCVVCOMPen->Location = System::Drawing::Point(17, 512);
+			this->lblCVVCOMPen->Name = L"lblCVVCOMPen";
+			this->lblCVVCOMPen->Size = System::Drawing::Size(32, 17);
+			this->lblCVVCOMPen->TabIndex = 13;
+			this->lblCVVCOMPen->Text = L"CVV";
+			// 
+			// textBoxCVVCOMP
+			// 
+			this->textBoxCVVCOMP->Location = System::Drawing::Point(20, 534);
+			this->textBoxCVVCOMP->Name = L"textBoxCVVCOMP";
+			this->textBoxCVVCOMP->Size = System::Drawing::Size(106, 22);
+			this->textBoxCVVCOMP->TabIndex = 12;
+			// 
+			// pictureBoxChipUICOMP
+			// 
+			this->pictureBoxChipUICOMP->BackColor = System::Drawing::Color::Transparent;
+			this->pictureBoxChipUICOMP->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxChipUICOMP.Image")));
+			this->pictureBoxChipUICOMP->Location = System::Drawing::Point(21, 18);
+			this->pictureBoxChipUICOMP->Name = L"pictureBoxChipUICOMP";
+			this->pictureBoxChipUICOMP->Size = System::Drawing::Size(73, 50);
+			this->pictureBoxChipUICOMP->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBoxChipUICOMP->TabIndex = 0;
+			this->pictureBoxChipUICOMP->TabStop = false;
+			// 
+			// lbNumTarjUICOMP
+			// 
+			this->lbNumTarjUICOMP->AutoSize = true;
+			this->lbNumTarjUICOMP->BackColor = System::Drawing::Color::Transparent;
+			this->lbNumTarjUICOMP->Font = (gcnew System::Drawing::Font(L"Tahoma", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->lbNumTarjUICOMP->ForeColor = System::Drawing::Color::Transparent;
+			this->lbNumTarjUICOMP->Location = System::Drawing::Point(51, 114);
+			this->lbNumTarjUICOMP->Name = L"lbNumTarjUICOMP";
+			this->lbNumTarjUICOMP->Size = System::Drawing::Size(456, 48);
+			this->lbNumTarjUICOMP->TabIndex = 1;
+			this->lbNumTarjUICOMP->Text = L"1234 5678 9010 0010";
+			// 
+			// lblTitularUICOMPen
+			// 
+			this->lblTitularUICOMPen->AutoSize = true;
+			this->lblTitularUICOMPen->BackColor = System::Drawing::Color::Transparent;
+			this->lblTitularUICOMPen->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->lblTitularUICOMPen->ForeColor = System::Drawing::Color::Transparent;
+			this->lblTitularUICOMPen->Location = System::Drawing::Point(36, 200);
+			this->lblTitularUICOMPen->Name = L"lblTitularUICOMPen";
+			this->lblTitularUICOMPen->Size = System::Drawing::Size(58, 23);
+			this->lblTitularUICOMPen->TabIndex = 2;
+			this->lblTitularUICOMPen->Text = L"Titular";
+			// 
+			// lblTitularUICOMP
+			// 
+			this->lblTitularUICOMP->AutoSize = true;
+			this->lblTitularUICOMP->BackColor = System::Drawing::Color::Transparent;
+			this->lblTitularUICOMP->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->lblTitularUICOMP->ForeColor = System::Drawing::Color::Transparent;
+			this->lblTitularUICOMP->Location = System::Drawing::Point(39, 227);
+			this->lblTitularUICOMP->Name = L"lblTitularUICOMP";
+			this->lblTitularUICOMP->Size = System::Drawing::Size(126, 28);
+			this->lblTitularUICOMP->TabIndex = 3;
+			this->lblTitularUICOMP->Text = L"JOHN SMITH";
+			// 
+			// lblDataCadUICOMPen
+			// 
+			this->lblDataCadUICOMPen->AutoSize = true;
+			this->lblDataCadUICOMPen->BackColor = System::Drawing::Color::Transparent;
+			this->lblDataCadUICOMPen->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->lblDataCadUICOMPen->ForeColor = System::Drawing::Color::Transparent;
+			this->lblDataCadUICOMPen->Location = System::Drawing::Point(231, 200);
+			this->lblDataCadUICOMPen->Name = L"lblDataCadUICOMPen";
+			this->lblDataCadUICOMPen->Size = System::Drawing::Size(103, 23);
+			this->lblDataCadUICOMPen->TabIndex = 4;
+			this->lblDataCadUICOMPen->Text = L"Valido hasta";
+			// 
+			// lblDataCadUICOMP
+			// 
+			this->lblDataCadUICOMP->AutoSize = true;
+			this->lblDataCadUICOMP->BackColor = System::Drawing::Color::Transparent;
+			this->lblDataCadUICOMP->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->lblDataCadUICOMP->ForeColor = System::Drawing::Color::Transparent;
+			this->lblDataCadUICOMP->Location = System::Drawing::Point(230, 227);
+			this->lblDataCadUICOMP->Name = L"lblDataCadUICOMP";
+			this->lblDataCadUICOMP->Size = System::Drawing::Size(64, 28);
+			this->lblDataCadUICOMP->TabIndex = 5;
+			this->lblDataCadUICOMP->Text = L"01/00";
+			// 
+			// lblCVVUICOMPen
+			// 
+			this->lblCVVUICOMPen->AutoSize = true;
+			this->lblCVVUICOMPen->BackColor = System::Drawing::Color::Transparent;
+			this->lblCVVUICOMPen->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->lblCVVUICOMPen->ForeColor = System::Drawing::Color::Transparent;
+			this->lblCVVUICOMPen->Location = System::Drawing::Point(390, 200);
+			this->lblCVVUICOMPen->Name = L"lblCVVUICOMPen";
+			this->lblCVVUICOMPen->Size = System::Drawing::Size(43, 23);
+			this->lblCVVUICOMPen->TabIndex = 6;
+			this->lblCVVUICOMPen->Text = L"CVV";
+			// 
+			// lblCVVUICOMP
+			// 
+			this->lblCVVUICOMP->AutoSize = true;
+			this->lblCVVUICOMP->BackColor = System::Drawing::Color::Transparent;
+			this->lblCVVUICOMP->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->lblCVVUICOMP->ForeColor = System::Drawing::Color::Transparent;
+			this->lblCVVUICOMP->Location = System::Drawing::Point(389, 227);
+			this->lblCVVUICOMP->Name = L"lblCVVUICOMP";
+			this->lblCVVUICOMP->Size = System::Drawing::Size(36, 28);
+			this->lblCVVUICOMP->TabIndex = 7;
+			this->lblCVVUICOMP->Text = L"***";
+			// 
+			// btnComprarCOMP
+			// 
+			this->btnComprarCOMP->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)));
+			this->btnComprarCOMP->Location = System::Drawing::Point(371, 613);
+			this->btnComprarCOMP->Margin = System::Windows::Forms::Padding(4);
+			this->btnComprarCOMP->Name = L"btnComprarCOMP";
+			this->btnComprarCOMP->Size = System::Drawing::Size(218, 46);
+			this->btnComprarCOMP->TabIndex = 10;
+			this->btnComprarCOMP->Text = L"Comprar";
+			this->btnComprarCOMP->UseVisualStyleBackColor = false;
+			// 
+			// btnCancelarCOMP
+			// 
+			this->btnCancelarCOMP->Location = System::Drawing::Point(238, 613);
+			this->btnCancelarCOMP->Margin = System::Windows::Forms::Padding(4);
+			this->btnCancelarCOMP->Name = L"btnCancelarCOMP";
+			this->btnCancelarCOMP->Size = System::Drawing::Size(119, 46);
+			this->btnCancelarCOMP->TabIndex = 10;
+			this->btnCancelarCOMP->Text = L"Cancelar";
+			this->btnCancelarCOMP->UseVisualStyleBackColor = true;
+			// 
+			// pnlTitleCOMP
+			// 
+			this->pnlTitleCOMP->BackColor = System::Drawing::Color::Black;
+			this->pnlTitleCOMP->Controls->Add(this->lblTitleCOMP);
+			this->pnlTitleCOMP->Dock = System::Windows::Forms::DockStyle::Top;
+			this->pnlTitleCOMP->Location = System::Drawing::Point(0, 0);
+			this->pnlTitleCOMP->Name = L"pnlTitleCOMP";
+			this->pnlTitleCOMP->Size = System::Drawing::Size(612, 48);
+			this->pnlTitleCOMP->TabIndex = 14;
+			// 
+			// lblTitleCOMP
+			// 
+			this->lblTitleCOMP->AutoSize = true;
+			this->lblTitleCOMP->BackColor = System::Drawing::Color::Black;
+			this->lblTitleCOMP->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI Semibold", 13.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->lblTitleCOMP->ForeColor = System::Drawing::Color::White;
+			this->lblTitleCOMP->Location = System::Drawing::Point(11, 9);
+			this->lblTitleCOMP->Name = L"lblTitleCOMP";
+			this->lblTitleCOMP->Size = System::Drawing::Size(256, 31);
+			this->lblTitleCOMP->TabIndex = 1;
+			this->lblTitleCOMP->Text = L"Comprar Esdeveniment";
+			// 
 			// ComprarEsdevenimentUI
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::White;
-			this->ClientSize = System::Drawing::Size(1269, 716);
+			this->ClientSize = System::Drawing::Size(1551, 716);
+			this->Controls->Add(this->pnlCOMP);
 			this->Controls->Add(this->pnlConsultarCompra);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
 			this->Margin = System::Windows::Forms::Padding(4);
@@ -691,6 +1034,13 @@ private: System::Windows::Forms::PictureBox^ picBoxEsdevCONS;
 			this->pnlPreusCONS->PerformLayout();
 			this->pnlNomEsdevTitleCONS->ResumeLayout(false);
 			this->pnlNomEsdevTitleCONS->PerformLayout();
+			this->pnlCOMP->ResumeLayout(false);
+			this->pnlCOMP->PerformLayout();
+			this->pnlTarjUICOMP->ResumeLayout(false);
+			this->pnlTarjUICOMP->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxChipUICOMP))->EndInit();
+			this->pnlTitleCOMP->ResumeLayout(false);
+			this->pnlTitleCOMP->PerformLayout();
 			this->ResumeLayout(false);
 
 		}

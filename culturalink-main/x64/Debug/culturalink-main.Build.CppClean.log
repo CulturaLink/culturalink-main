@@ -1,6 +1,7 @@
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\culturalink-main.pch
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\vc143.pdb
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\pch.obj
+c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\passarelaajuntament.obj
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\mainform.obj
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\login.obj
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\infoentitat.obj
@@ -30,6 +31,7 @@ c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\txco
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\txconsultaesdevenimentsajuntament.obj
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\txconsultaesdeveniment.obj
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\txconsultaajuntament.obj
+c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\txcanviaestatpeticio.obj
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\transaccio.obj
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\sistema.obj
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\registraresdevenimentui.obj
@@ -39,14 +41,12 @@ c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\prov
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\passarelaesdeveniment.obj
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\passarelaentitat.obj
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\passarelaciutada.obj
-c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\passarelaajuntament.obj
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\txregistraentitat.obj
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\txiniciasessio.obj
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\txconsultaentitat.obj
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\registraentitat.obj
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\txregistraesdeveniment.obj
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\.netframework,version=v4.7.2.assemblyattributes.obj
-c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\txcanviaestatpeticio.obj
 c:\users\patri\documents\github\culturalink-main\culturalink-main\mysql.data.dll
 c:\users\patri\documents\github\culturalink-main\culturalink-main\system.memory.dll
 c:\users\patri\documents\github\culturalink-main\culturalink-main\system.threading.tasks.extensions.dll
@@ -56,8 +56,6 @@ c:\users\patri\documents\github\culturalink-main\culturalink-main\mysql.data.xml
 c:\users\patri\documents\github\culturalink-main\culturalink-main\culturalink-main.exe
 c:\users\patri\documents\github\culturalink-main\culturalink-main\culturalink-main.pdb
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\app.res
-c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\custombuttonesdev.obj
-c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\provaerrors.obj
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\culturalink-main.tlog\cl.command.1.tlog
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\culturalink-main.tlog\cl.items.tlog
 c:\users\patri\documents\github\culturalink-main\culturalink-main\x64\debug\culturalink-main.tlog\cl.read.1.tlog
