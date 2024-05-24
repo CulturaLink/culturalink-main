@@ -634,6 +634,8 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->textBoxNumTarjCOMP->Name = L"textBoxNumTarjCOMP";
 		this->textBoxNumTarjCOMP->Size = System::Drawing::Size(569, 22);
 		this->textBoxNumTarjCOMP->TabIndex = 1;
+		this->textBoxNumTarjCOMP->TextChanged += gcnew EventHandler(this, &ProvesUI::textBox1_TextChanged);
+
 		// 
 		// pnlTarjUICOMP
 		// 
@@ -2527,6 +2529,7 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 	}
 
 private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^ e) {
+
 	this->lblTitlePage->Text = "HOMEPAGE";
 
 	this->flowLayoutPanel2->Visible = true;
@@ -2534,7 +2537,7 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 
 	this->PANELbandEntrSolAj->Visible = false;
 	this->PANELEsdevHomepage->Visible = true;
-
+	this->PANELConsultarCompra->Visible = false;
 
 	this->pnlInfoUsu->Visible = false;
 
@@ -3353,7 +3356,13 @@ private: System::Void btnComprarCOMP_Click(System::Object^ sender, System::Event
 		MessageBox::Show("Revisa el camp 'CVV' no té el format indicat", "Camp amb format incorrecte", MessageBoxButtons::OK);
 		return;
 	}
-
+	
 }
+private:
+	void textBox1_TextChanged(Object^ sender, EventArgs^ e)
+	{
+		// Update the label with the text from the textBox
+		lbNumTarjUICOMP->Text = this->textBoxNumTarjCOMP->Text;
+	}
 };
 }
