@@ -951,6 +951,8 @@ private: System::Windows::Forms::PictureBox^ picBoxEsdevCONS;
 			this->btnComprarCOMP->TabIndex = 10;
 			this->btnComprarCOMP->Text = L"Comprar";
 			this->btnComprarCOMP->UseVisualStyleBackColor = false;
+			
+
 			// 
 			// btnCancelarCOMP
 			// 
@@ -1081,5 +1083,7 @@ private: System::Void btnGoBackCONS_Click(System::Object^ sender, System::EventA
 }
 private: System::Void btnComprarCONS_Click(System::Object^ sender, System::EventArgs^ e) {
 }
+
+
 };
 }

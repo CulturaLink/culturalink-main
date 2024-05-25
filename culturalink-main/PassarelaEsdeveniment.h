@@ -43,6 +43,9 @@ public:
 
     void modifica_estat(String^ nomEsdev, bool estat);
 
+    void restar_aforament();
+    void sumar_aforament();
+
 private:
     int _idEnt;
     float _preu;

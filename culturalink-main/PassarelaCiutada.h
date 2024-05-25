@@ -21,6 +21,12 @@ public:
 	PassarelaCiutada% operator=(const PassarelaCiutada% other);
 	void crear(String^ name, String^ fullName, String^ password, String^ email, String^ date);
 	void insereix();
+	void esborra(String^ nickname);
+	void borrar_punts(int^ preuPuntsEsdev);
+	void borrar_diners(int^ preuEsd);
+	void afegir_punts_entrada(int^ punts);
+	void devolucio_punts(int^ punts);
+	void devolucio_diners(int^ diners);
 	//Ciutada();
 	PassarelaCiutada(String^ nickname);//Omple ciutada segons nick
 	PassarelaCiutada(String^ nickname, String^ nom_complet, String^ correu);

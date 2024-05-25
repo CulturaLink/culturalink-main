@@ -71,18 +71,142 @@ void PassarelaCiutada::insereix() {
 
 	MySqlDataReader^ dataReader;
 	try {
-		// obrim la connexi�
+		// obrim la connexió
 		conn->Open();
 		// executem la comanda creada abans del try
 		dataReader = cmd->ExecuteReader();
 		MessageBox::Show("Data inserted successfully.");
 	}
 	catch (Exception^ ex) {
-		// codi per mostrar l�error en una finestra
+		// codi per mostrar l’error en una finestra
+		MessageBox::Show(ex->Message);
+		throw runtime_error("El format de la data no es correcte o l'usuai ja existeix");
+	}
+	finally {
+		// si tot va bé es tanca la connexió
+		conn->Close();
+	}
+}
+
+//Esborrar Ciutada
+void PassarelaCiutada::esborra(String^ nickname) {
+	String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
+	MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
+
+	String^ sql = "DELETE FROM ciutada WHERE nickname = @nickname;";
+	MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
+
+	cmd->Parameters->AddWithValue("@nickname", nickname);
+
+	try {
+		conn->Open();  // Open the connection
+		cmd->ExecuteNonQuery();  // Execute the DELETE command
+		MessageBox::Show("User deleted successfully.");
+	}
+	catch (Exception^ ex) {
+		MessageBox::Show(ex->Message);  // Show error message if something goes wrong
+	}
+	finally {
+		conn->Close();  // Close the connection regardless of the result
+	}
+}
+void PassarelaCiutada::borrar_punts(int ^preuPuntsEsdev)
+{
+	String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
+	MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
+
+	// Uso de parámetros en la consulta SQL
+	String^ sql = "UPDATE ciutada SET punts = @punts WHERE nickname = @nickname";
+	MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
+	cmd->Parameters->AddWithValue("@nickname", _nickname);// Asignación del valor del parámetro
+	int punts = *(_punts)-*(preuPuntsEsdev);
+	cmd->Parameters->AddWithValue("@punts", punts);// Asignación del valor del parámetro
+	MySqlDataReader^ dataReader;
+	try {
+		// obrim la connexió
+		conn->Open();
+		// executem la comanda (cmd) que s’ha creat abans del try
+		dataReader = cmd->ExecuteReader();
+		if (dataReader->Read()) {
+			// Es llegeix la informació per crear un objecte de tipus Ciutada
+			// Agafarem les columnes per índex, la primera és la 0 (nickname ja el tenim)
+
+		}
+	}
+	catch (Exception^ ex) {
+		// codi per mostrar l’error en una finestra
 		MessageBox::Show(ex->Message);
 	}
 	finally {
-		// si tot va b� es tanca la connexi�
+		// si tot va bé es tanca la connexió
+		//MessageBox::Show("Connexio DB exitosa!");
+		conn->Close();
+	}
+
+}
+void PassarelaCiutada::borrar_diners(int^ preuEsd)
+{
+	String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
+	MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
+
+	// Uso de parámetros en la consulta SQL
+	String^ sql = "UPDATE ciutada SET diners = @diners WHERE nickname = @nickname";
+	MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
+	cmd->Parameters->AddWithValue("@nickname", _nickname);// Asignación del valor del parámetro
+	int diners = *(_diners)-*(preuEsd);
+	cmd->Parameters->AddWithValue("@diners", diners);// Asignación del valor del parámetro
+	MySqlDataReader^ dataReader;
+	try {
+		// obrim la connexió
+		conn->Open();
+		// executem la comanda (cmd) que s’ha creat abans del try
+		dataReader = cmd->ExecuteReader();
+		if (dataReader->Read()) {
+			// Es llegeix la informació per crear un objecte de tipus Ciutada
+			// Agafarem les columnes per índex, la primera és la 0 (nickname ja el tenim)
+
+		}
+	}
+	catch (Exception^ ex) {
+		// codi per mostrar l’error en una finestra
+		MessageBox::Show(ex->Message);
+	}
+	finally {
+		// si tot va bé es tanca la connexió
+		//MessageBox::Show("Connexio DB exitosa!");
+		conn->Close();
+	}
+}
+void PassarelaCiutada::afegir_punts_entrada(int^ punts)
+{
+	String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
+	MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
+
+	// Uso de parámetros en la consulta SQL
+	String^ sql = "UPDATE ciutada SET punts = @punts WHERE nickname = @nickname";
+	MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
+	cmd->Parameters->AddWithValue("@nickname", _nickname);// Asignación del valor del parámetro
+	int punts2 = *(_punts)+*(punts);
+	cmd->Parameters->AddWithValue("@punts", punts2);// Asignación del valor del parámetro
+	MySqlDataReader^ dataReader;
+	try {
+		// obrim la connexió
+		conn->Open();
+		// executem la comanda (cmd) que s’ha creat abans del try
+		dataReader = cmd->ExecuteReader();
+		if (dataReader->Read()) {
+			// Es llegeix la informació per crear un objecte de tipus Ciutada
+			// Agafarem les columnes per índex, la primera és la 0 (nickname ja el tenim)
+
+		}
+	}
+	catch (Exception^ ex) {
+		// codi per mostrar l’error en una finestra
+		MessageBox::Show(ex->Message);
+	}
+	finally {
+		// si tot va bé es tanca la connexió
+		//MessageBox::Show("Connexio DB exitosa!");
 		conn->Close();
 	}
 }
@@ -93,20 +217,20 @@ PassarelaCiutada::PassarelaCiutada(String^ nickname) {
 	String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
 	MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
 
-	// Uso de par�metros en la consulta SQL
+	// Uso de parámetros en la consulta SQL
 	String^ sql = "SELECT * FROM ciutada WHERE nickname = @nickname";
 	MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
-	cmd->Parameters->AddWithValue("@nickname", nickname); // Asignaci�n del valor del par�metro
+	cmd->Parameters->AddWithValue("@nickname", nickname); // Asignación del valor del parámetro
 	MySqlDataReader^ dataReader;
 
 	try {
-		// obrim la connexi�
+		// obrim la connexió
 		conn->Open();
-		// executem la comanda (cmd) que s�ha creat abans del try
+		// executem la comanda (cmd) que s’ha creat abans del try
 		dataReader = cmd->ExecuteReader();
 		if (dataReader->Read()) {
-			// Es llegeix la informaci� per crear un objecte de tipus Ciutada
-			// Agafarem les columnes per �ndex, la primera �s la 0 (nickname ja el tenim)
+			// Es llegeix la informació per crear un objecte de tipus Ciutada
+			// Agafarem les columnes per índex, la primera és la 0 (nickname ja el tenim)
 			_nickname = nickname;
 			_nom_complet = dataReader->GetString(1);
 			_contrasenya = dataReader->GetString(2);
@@ -117,11 +241,11 @@ PassarelaCiutada::PassarelaCiutada(String^ nickname) {
 		}
 	}
 	catch (Exception^ ex) {
-		// codi per mostrar l�error en una finestra
+		// codi per mostrar l’error en una finestra
 		MessageBox::Show(ex->Message);
 	}
 	finally {
-		// si tot va b� es tanca la connexi�
+		// si tot va bé es tanca la connexió
 		//MessageBox::Show("Connexio DB exitosa!");
 		conn->Close();
 	}
@@ -129,7 +253,71 @@ PassarelaCiutada::PassarelaCiutada(String^ nickname) {
 
 
 }
+void PassarelaCiutada::devolucio_punts(int^ punts)
+{
+	String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
+	MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
 
+	// Uso de parámetros en la consulta SQL
+	String^ sql = "UPDATE ciutada SET punts = @punts WHERE nickname = @nickname";
+	MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
+	cmd->Parameters->AddWithValue("@nickname", _nickname);// Asignación del valor del parámetro
+	int punts2 = *(_punts)+*(punts);
+	cmd->Parameters->AddWithValue("@punts", punts2);// Asignación del valor del parámetro
+	MySqlDataReader^ dataReader;
+	try {
+		// obrim la connexió
+		conn->Open();
+		// executem la comanda (cmd) que s’ha creat abans del try
+		dataReader = cmd->ExecuteReader();
+		if (dataReader->Read()) {
+			// Es llegeix la informació per crear un objecte de tipus Ciutada
+			// Agafarem les columnes per índex, la primera és la 0 (nickname ja el tenim)
+
+		}
+	}
+	catch (Exception^ ex) {
+		// codi per mostrar l’error en una finestra
+		MessageBox::Show(ex->Message);
+	}
+	finally {
+		// si tot va bé es tanca la connexió
+		//MessageBox::Show("Connexio DB exitosa!");
+		conn->Close();
+	}
+}
+void PassarelaCiutada::devolucio_diners(int^ diners)
+{
+	String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
+	MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
+
+	// Uso de parámetros en la consulta SQL
+	String^ sql = "UPDATE ciutada SET diners = @diners WHERE nickname = @nickname";
+	MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
+	cmd->Parameters->AddWithValue("@nickname", _nickname);// Asignación del valor del parámetro
+	int diners2 = *(_diners)+*(diners);
+	cmd->Parameters->AddWithValue("@diners", diners2);// Asignación del valor del parámetro
+	MySqlDataReader^ dataReader;
+	try {
+		// obrim la connexió
+		conn->Open();
+		// executem la comanda (cmd) que s’ha creat abans del try
+		dataReader = cmd->ExecuteReader();
+		if (dataReader->Read()) {
+			// Es llegeix la informació per crear un objecte de tipus Ciutada
+			// Agafarem les columnes per índex, la primera és la 0 (nickname ja el tenim)
+		}
+	}
+	catch (Exception^ ex) {
+		// codi per mostrar l’error en una finestra
+		MessageBox::Show(ex->Message);
+	}
+	finally {
+		// si tot va bé es tanca la connexió
+		//MessageBox::Show("Connexio DB exitosa!");
+		conn->Close();
+	}
+}
 PassarelaCiutada::PassarelaCiutada(String^ nickname, String^ nom_complet, String^ correu) {
 	_nickname = nickname;
 	_nom_complet = nom_complet;

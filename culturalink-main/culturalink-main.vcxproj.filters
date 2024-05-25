@@ -167,6 +167,15 @@
     <ClInclude Include="TxCanviaEstatPeticio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TxCompraEntradaEsdevenimentDiners.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PassarelaInscripcio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TxCompraEntradaEsdevenimentPunts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -311,6 +320,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TxCanviaEstatPeticio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxCompraEntradaEsdevenimentDiners.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PassarelaInscripcio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxCompraEntradaEsdevenimentPunts.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

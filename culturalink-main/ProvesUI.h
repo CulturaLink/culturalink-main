@@ -16,6 +16,9 @@
 #include "TxConsultaTotsEsdeveniments.h"
 #include "TxConsultaEsdevenimentsAmbTipus.h"
 #include "TxConsultaTotsEsdevenimentsPerEntitat.h"
+#include "TxCompraEntradaEsdevenimentDiners.h"
+#include "TxCompraEntradaEsdevenimentPunts.h"
+
 
 // Altres:
 #include "Esdeveniment.h"
@@ -64,6 +67,7 @@ namespace culturalink_main {
 			}
 		}
 
+	private: String^ _NomEsdevPerComprar = "";
 	private: System::Windows::Forms::Button^ btnGoBackCONS;
 	private: System::Windows::Forms::Button^ btnComprarCONS;
 	private: System::Windows::Forms::Panel^ PANELConsultarCompra;
@@ -183,8 +187,10 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Label^ lblConsultEsdevEntit;
 	private: System::Windows::Forms::Label^ lblConsultEsdevDesc;
 	private: System::Windows::Forms::Label^ lblEsdevConsultPreu;
+private: System::Windows::Forms::Label^ lblPuntsUser;
 	private: System::Windows::Forms::Label^ lblEsdevConsultNom;
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel1;
+private: System::Windows::Forms::Button^ btnComprarPuntsCONS;
 	private: System::Windows::Forms::Label^ lblConsultEsdevTipus;
 	private: System::Windows::Forms::Label^ lblConsultEsdevPreuDesc;
 	private: System::Windows::Forms::Label^ lblConsultEsdevData;
@@ -339,6 +345,7 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->lblPreuEsdevCONSgran = (gcnew System::Windows::Forms::Label());
 		this->pnlNomEsdevTitleCONS = (gcnew System::Windows::Forms::Panel());
 		this->lblNomEsdevCONS = (gcnew System::Windows::Forms::Label());
+		this->btnComprarPuntsCONS = (gcnew System::Windows::Forms::Button());
 		this->PANELbandEntrSolAj = (gcnew System::Windows::Forms::Panel());
 		this->panelBandejaEntrada = (gcnew System::Windows::Forms::Panel());
 		this->flowLayoutPnlBndEntrAj = (gcnew System::Windows::Forms::FlowLayoutPanel());
@@ -389,6 +396,7 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->label1 = (gcnew System::Windows::Forms::Label());
 		this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 		this->panelUserInfo = (gcnew System::Windows::Forms::Panel());
+		this->lblPuntsUser = (gcnew System::Windows::Forms::Label());
 		this->lblTypeUser = (gcnew System::Windows::Forms::Label());
 		this->panel9 = (gcnew System::Windows::Forms::Panel());
 		this->lblFullNameUser = (gcnew System::Windows::Forms::Label());
@@ -634,8 +642,6 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->textBoxNumTarjCOMP->Name = L"textBoxNumTarjCOMP";
 		this->textBoxNumTarjCOMP->Size = System::Drawing::Size(569, 22);
 		this->textBoxNumTarjCOMP->TabIndex = 1;
-		this->textBoxNumTarjCOMP->TextChanged += gcnew EventHandler(this, &ProvesUI::textBox1_TextChanged);
-
 		// 
 		// pnlTarjUICOMP
 		// 
@@ -759,7 +765,7 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		// 
 		// btnGoBackCONS
 		// 
-		this->btnGoBackCONS->Location = System::Drawing::Point(500, 613);
+		this->btnGoBackCONS->Location = System::Drawing::Point(290, 613);
 		this->btnGoBackCONS->Margin = System::Windows::Forms::Padding(4);
 		this->btnGoBackCONS->Name = L"btnGoBackCONS";
 		this->btnGoBackCONS->Size = System::Drawing::Size(119, 46);
@@ -792,6 +798,7 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->PANELConsultarCompra->Controls->Add(this->pnlPreusCONS);
 		this->PANELConsultarCompra->Controls->Add(this->pnlNomEsdevTitleCONS);
 		this->PANELConsultarCompra->Controls->Add(this->btnComprarCONS);
+		this->PANELConsultarCompra->Controls->Add(this->btnComprarPuntsCONS);
 		this->PANELConsultarCompra->Controls->Add(this->btnGoBackCONS);
 		this->PANELConsultarCompra->Location = System::Drawing::Point(91, 20);
 		this->PANELConsultarCompra->Name = L"PANELConsultarCompra";
@@ -1225,6 +1232,19 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->lblNomEsdevCONS->Size = System::Drawing::Size(216, 31);
 		this->lblNomEsdevCONS->TabIndex = 0;
 		this->lblNomEsdevCONS->Text = L"Nom Esdeveniment";
+		// 
+		// btnComprarPuntsCONS
+		// 
+		this->btnComprarPuntsCONS->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)),
+			static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(255)));
+		this->btnComprarPuntsCONS->Location = System::Drawing::Point(409, 613);
+		this->btnComprarPuntsCONS->Margin = System::Windows::Forms::Padding(4);
+		this->btnComprarPuntsCONS->Name = L"btnComprarPuntsCONS";
+		this->btnComprarPuntsCONS->Size = System::Drawing::Size(218, 46);
+		this->btnComprarPuntsCONS->TabIndex = 10;
+		this->btnComprarPuntsCONS->Text = L"Comprar Amb Punts";
+		this->btnComprarPuntsCONS->UseVisualStyleBackColor = false;
+		this->btnComprarPuntsCONS->Click += gcnew System::EventHandler(this, &ProvesUI::btnComprarPuntsCONS_Click);
 		// 
 		// PANELbandEntrSolAj
 		// 
@@ -1798,7 +1818,7 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->button2->Name = L"button2";
 		this->button2->Size = System::Drawing::Size(223, 52);
 		this->button2->TabIndex = 3;
-		this->button2->Text = L"Consultar Esdev.";
+		this->button2->Text = L"Els Teus Esdev.";
 		this->button2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 		this->button2->UseVisualStyleBackColor = true;
 		this->button2->Click += gcnew System::EventHandler(this, &ProvesUI::button2_Click);
@@ -1889,6 +1909,7 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		// 
 		this->panelUserInfo->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(40)), static_cast<System::Int32>(static_cast<System::Byte>(40)),
 			static_cast<System::Int32>(static_cast<System::Byte>(40)));
+		this->panelUserInfo->Controls->Add(this->lblPuntsUser);
 		this->panelUserInfo->Controls->Add(this->lblTypeUser);
 		this->panelUserInfo->Controls->Add(this->panel9);
 		this->panelUserInfo->Controls->Add(this->lblFullNameUser);
@@ -1901,6 +1922,19 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->panelUserInfo->Size = System::Drawing::Size(276, 137);
 		this->panelUserInfo->TabIndex = 0;
 		// 
+		// lblPuntsUser
+		// 
+		this->lblPuntsUser->AutoSize = true;
+		this->lblPuntsUser->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			static_cast<System::Byte>(0)));
+		this->lblPuntsUser->ForeColor = System::Drawing::Color::Silver;
+		this->lblPuntsUser->Location = System::Drawing::Point(124, 71);
+		this->lblPuntsUser->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+		this->lblPuntsUser->Name = L"lblPuntsUser";
+		this->lblPuntsUser->Size = System::Drawing::Size(56, 19);
+		this->lblPuntsUser->TabIndex = 4;
+		this->lblPuntsUser->Text = L"X punts";
+		// 
 		// lblTypeUser
 		// 
 		this->lblTypeUser->AutoSize = true;
@@ -1909,7 +1943,7 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->lblTypeUser->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 		this->lblTypeUser->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI Semibold", 8.25F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
 			System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-		this->lblTypeUser->Location = System::Drawing::Point(128, 76);
+		this->lblTypeUser->Location = System::Drawing::Point(128, 95);
 		this->lblTypeUser->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 		this->lblTypeUser->Name = L"lblTypeUser";
 		this->lblTypeUser->Size = System::Drawing::Size(66, 19);
@@ -2607,6 +2641,7 @@ private: Void addBntFiltreToUI() {
 private: System::Void btnConsultar_Click(System::Object^ sender, System::EventArgs^ e) 
 {
 	CustomButton^ clickedButton = dynamic_cast<CustomButton^>(sender);
+	_NomEsdevPerComprar = clickedButton->NomEsdev;
 	String^ nomEsdev = clickedButton->NomEsdev;
 
 	this->flowLayoutPnlBndEntrAj->Controls->Clear();
@@ -2636,10 +2671,10 @@ private: System::Void btnConsultar_Click(System::Object^ sender, System::EventAr
 	this->lblDescEsdevCONS->Text = desc;
 	this->lblNomEsdevCONS->Text = nom;
 	this->lblTipusCONS->Text = tipus;
-	this->lblAforamCONS->Text = aforament;
-	this->lblPreuPuntsCONS->Text = puntsCost;
+	this->lblAforamCONS->Text = aforament + " Persones";
+	this->lblPreuPuntsCONS->Text = puntsCost + " Punts";
 	this->lblDataCONS->Text = data;
-	this->lblPuntsRegCONS->Text = puntsDesc;
+	this->lblPuntsRegCONS->Text = puntsDesc + " Punts de Regal";
 
 	/*ComprarEsdevenimentUI^ formComprEsdev = gcnew ComprarEsdevenimentUI;
 	formComprEsdev->ShowDialog();*/
@@ -2772,7 +2807,8 @@ private: Void addEsdevToUI(Esdeveniment^ esdev)
 	btnConsultar->ForeColor = System::Drawing::Color::White;
 	btnConsultar->Dock = System::Windows::Forms::DockStyle::Bottom;
 	btnConsultar->NomEsdev = esdev->getNom();
-
+	//this->btnComprarCONS->NomEsdev = esdev->getNom();
+	_NomEsdevPerComprar = btnConsultar->NomEsdev;
 	btnConsultar->Click += gcnew System::EventHandler(this, &ProvesUI::btnConsultar_Click);
 
 	pnlEsdev->Controls->Add(lblEsdev);
@@ -2869,8 +2905,7 @@ private: System::Void ProvesUI_Load(System::Object^ sender, System::EventArgs^ e
 	//this->pnlMainModEsdv->Visible = false;
 	this->PANELEsdevHomepage->Visible = true;
 	this->PANELbandEntrSolAj->Visible = false;
-
-
+	
 	int y = Screen::PrimaryScreen->Bounds.Height / 2;
 	this->btnViewNavBar->Location = System::Drawing::Point(210, y);
 
@@ -2883,6 +2918,7 @@ private: System::Void ProvesUI_Load(System::Object^ sender, System::EventArgs^ e
 	String^ fl;
 	String^ rl;
 	String^ userName;
+	int^ puntsCiutada;
 
 	TxConsultaTotsEsdeveniments txConsTotsEsdevs;
 	int num_filtre_panel = 0;
@@ -2905,15 +2941,18 @@ private: System::Void ProvesUI_Load(System::Object^ sender, System::EventArgs^ e
 
 		fullName = passCiu->getNomComplet();
 		userName = passCiu->getNickname();
+		puntsCiutada = passCiu->getPunts();
 
 		fl = fullName->Substring(0, 1)->ToUpper();
 		rl = fullName->Substring(1)->ToLower();
 
 		fullName = fl + rl;
 
+		this->lblPuntsUser->Visible = true;
+
 		lblFullNameUser->Text = L"" + fullName;
 		lblUsername->Text = L"" + "@" + userName;
-
+		this->lblPuntsUser->Text = L"" + puntsCiutada + " Punts";
 
 		this->flowLayoutPanel1->Controls->Clear();
 
@@ -3230,6 +3269,7 @@ private: System::Void button9_Click_1(System::Object^ sender, System::EventArgs^
 
 	private: void ButtonCancelar_Click(Object ^ sender, EventArgs ^ e) 
 	{
+		_NomEsdevPerComprar = "";
 		//Button^ clickedButton = dynamic_cast<Button^>(sender);
 		CustomButton^ clickedButton = dynamic_cast<CustomButton^>(sender);
 
@@ -3282,6 +3322,8 @@ private: System::Void btnComprarCONS_Click(System::Object^ sender, System::Event
 }
 
 private: System::Void btnComprarCOMP_Click(System::Object^ sender, System::EventArgs^ e) {
+
+	String^ nomEsdev = _NomEsdevPerComprar;
 
 	String^ numero = this->textBoxNumTarjCOMP->Text;
 	String^ titular_tarjeta = this->textBoxTitularCOMP->Text;
@@ -3356,8 +3398,101 @@ private: System::Void btnComprarCOMP_Click(System::Object^ sender, System::Event
 		MessageBox::Show("Revisa el camp 'CVV' no té el format indicat", "Camp amb format incorrecte", MessageBoxButtons::OK);
 		return;
 	}
-	
+	try
+	{
+		
+		//if (radioButton2->Checked) // Punts
+		//{
+		//	UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
+		//	Object^ usuarioAlmacenado = usuario->getUsuari();
+		//	TipoPassarela tipoUsuario = usuario->getTipoPassarela();
+		//	if (usuarioAlmacenado == nullptr) throw(ErrorUsuari);
+		//	// Verificar el tipo de usuario y actuar en consecuencia
+		//	if (tipoUsuario == TipoPassarela::Ciutada) {
+		//		TxCompraEntradaEsdevenimentPunts tx1(nomEsd);
+		//		tx1.executar();
+		//		MessageBox::Show("Compra finalitzada amb exit", "", MessageBoxButtons::OK);
+		//		this->Close();
+		//	}
+		//}
+		//else if (radioButton1->Checked) // Diners
+		//{
+			UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
+			Object^ usuarioAlmacenado = usuario->getUsuari();
+			TipoPassarela tipoUsuario = usuario->getTipoPassarela();
+			if (usuarioAlmacenado == nullptr) throw(ErrorUsuari);
+			// Verificar el tipo de usuario y actuar en consecuencia
+			if (tipoUsuario == TipoPassarela::Ciutada) {
+				/*if (label5->Text != "0")
+				{
+					FormulariCompraEntrada^ f2 = gcnew FormulariCompraEntrada();
+					this->Visible = false;
+					if (f2->ShowDialog() == System::Windows::Forms::DialogResult::OK)
+					{
+						this->Show();
+						this->Visible = true;
+						return;
+					}
+					this->Show();
+					this->Visible = true;
+				}*/
+				TxCompraEntradaEsdevenimentDiners tCompEsdevDin(_NomEsdevPerComprar);
+				tCompEsdevDin.executar();
+				MessageBox::Show("Compra finalitzada amb exit", "", MessageBoxButtons::OK);
+				//this->Close();
+				this->PANELConsultarCompra->Visible = false;
+				this->PANELEsdevHomepage->Visible = true;
+				this->pnlCOMP->Visible = false;
+				this->flowLayoutPanel2->Visible = true;
+				this->pnlMainTop->Size = System::Drawing::Size(1084, 223);
+			}
+		//}
+	}
+	catch (const string err)
+	{
+		MessageBox::Show(gcnew String(err.c_str()), "Error Al Comprar", MessageBoxButtons::OK);
+		return;
+	}
+
 }
+
+
+private: System::Void btnComprarPuntsCONS_Click(System::Object^ sender, System::EventArgs^ e) {
+	try
+	{
+		String^ nomEsdev = _NomEsdevPerComprar;
+		UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
+		Object^ usuarioAlmacenado = usuario->getUsuari();
+		TipoPassarela tipoUsuario = usuario->getTipoPassarela();
+		if (usuarioAlmacenado == nullptr) throw(ErrorUsuari);
+		// Verificar el tipo de usuario y actuar en consecuencia
+		if (tipoUsuario == TipoPassarela::Ciutada) {
+			TxCompraEntradaEsdevenimentPunts tx1(nomEsdev);
+			tx1.executar();
+			
+			MessageBox::Show("Compra finalitzada amb exit", "", MessageBoxButtons::OK);
+			/*this->Close();*/
+			this->PANELConsultarCompra->Visible = false;
+			this->PANELEsdevHomepage->Visible = true;
+			this->pnlCOMP->Visible = false;
+			this->flowLayoutPanel2->Visible = true;
+			this->pnlMainTop->Size = System::Drawing::Size(1084, 223);
+
+			PassarelaCiutada^ passCiu = safe_cast<PassarelaCiutada^>(usuario->getUsuari());
+
+			int^ puntsCiutada = passCiu->getPunts();
+
+			this->lblPuntsUser->Text = L"" + puntsCiutada + " Punts";
+
+		}
+	}
+	catch (const string err)
+	{
+		MessageBox::Show(gcnew String(err.c_str()), "Error Al Comprar", MessageBoxButtons::OK);
+		return;
+	}
+}
+
 private:
 	void textBox1_TextChanged(Object^ sender, EventArgs^ e)
 	{
