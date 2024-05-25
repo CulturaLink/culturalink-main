@@ -100,40 +100,22 @@ void PassarelaPuntuacioEsdeveniment::insereix() {
 }
 
 
-/*void PassarelaPuntuacioEsdeveniment::modifica() {
+void PassarelaPuntuacioEsdeveniment::modifica() {
 	String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
 	MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
 
-	// Comprobar si el correu ya existe, throw excepcion en caso que si
-	String^ sqlCheckCorreu = "SELECT COUNT(*) FROM amep14.ajuntament WHERE correu_electronic_ajuntament = '" + getCorreu() + "' AND clau_ajuntament <> '" + getClau() + "';";
+	
 
 	try {
 		// obrim la connexió
 		conn->Open();
 
-		MySqlCommand^ cmd1 = gcnew MySqlCommand(sqlCheckCorreu, conn);
-		MySqlDataReader^ dataReader1;
-		dataReader1 = cmd1->ExecuteReader();
+	
 
-		int numAj = 0;
-
-		if (dataReader1->Read()) { // Check if there are rows to read 
-			numAj = Convert::ToInt32(dataReader1[0]); // Read the count from the first column (index 0)
-		}
-
-		if (numAj != 0) throw gcnew CorreuExisteix("Correu ja existeix!");
-
-		dataReader1->Close();
-		//String^ clauString = passAju->getClau()->ToString();
-
-		String^ sql = "UPDATE amep14.ajuntament SET "
-			//"nom_ajuntament = '" + passAju->getNom() + " "
-			//"clau_ajuntament = '" + passAju->getClau() + " "
-			"poblacio_ajuntament = " + getPoblacio() + ", "
-			"telefon_ajuntament = " + getTelf() + ", "
-			"correu_electronic_ajuntament = '" + getCorreu() + "', "
-			"contrasenya_ajuntament = '" + getContrasenya() + "' "
-			"WHERE clau_ajuntament = '" + getClau() + "';";
+		String^ sql = "UPDATE amep14.puntuacio_esdeveniment SET "
+			"puntuacio = " + _puntuacioEsdeveniment + " "
+			"WHERE nom_esdeveniment = '" + _nomEsdeveniment + "' AND "
+			"nick_ciutada = '" + _nickCiutada + "';";
 
 		MySqlCommand^ cmd2 = gcnew MySqlCommand(sql, conn);
 
@@ -151,4 +133,4 @@ void PassarelaPuntuacioEsdeveniment::insereix() {
 		// si tot va bé es tanca la connexió
 		conn->Close();
 	}
-} */
+} 

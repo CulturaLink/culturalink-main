@@ -30,9 +30,11 @@ void TxConsultaPuntuacioEsdeveniment::executar()
 	String^ nickCiutada = passarelaCiutada->getNickname();
 	CercadoraPuntuacioEsdeveniment cercPunt;
 	PassarelaPuntuacioEsdeveniment pPunt = cercPunt.cercaPuntuacio(_nomEsdeveniment, nickCiutada);
+
+
 	_pPunt = pPunt;
 }
 
-int TxConsultaPuntuacioEsdeveniment::getResult() {
-	return _pPunt.getPuntuacioEsdeveniment();
+PassarelaPuntuacioEsdeveniment TxConsultaPuntuacioEsdeveniment::getResult() {
+	return _pPunt;
 }

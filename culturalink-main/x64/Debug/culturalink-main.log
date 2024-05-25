@@ -1,16 +1,154 @@
-﻿  TxConsultaPuntuacioEsdeveniment.cpp
+﻿  CercadoraCiutada.cpp
 C:\Users\eric1\Desktop\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/TxConsultaPuntuacioEsdeveniment.cpp")
+  (compilando archivo de origen "/CercadoraCiutada.cpp")
   
 C:\Users\eric1\Desktop\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/TxConsultaPuntuacioEsdeveniment.cpp")
+  (compilando archivo de origen "/CercadoraCiutada.cpp")
   
 C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/TxConsultaPuntuacioEsdeveniment.cpp")
+  (compilando archivo de origen "/CercadoraCiutada.cpp")
   C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
   'void Transaccio::executar(void)': es abstracto
   C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
   vea la declaración de 'Transaccio::executar'
   
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/CercadoraCiutada.cpp")
+  
+  InfoCiutada.cpp
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/InfoCiutada.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/InfoCiutada.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/InfoCiutada.cpp")
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
+  
+  MainForm.cpp
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/MainForm.cpp")
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/MainForm.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/MainForm.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/MainForm.cpp")
+  
+  PassarelaCiutada.cpp
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\PassarelaCiutada.cpp(14,12): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\PassarelaCiutada.cpp(15,11): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\PassarelaCiutada.cpp(50,12): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\PassarelaCiutada.cpp(51,11): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\PassarelaCiutada.cpp(69,43): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\PassarelaCiutada.cpp(70,42): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
+  
+  TxEsborraCiutada.cpp
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxEsborraCiutada.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxEsborraCiutada.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/TxEsborraCiutada.cpp")
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxEsborraCiutada.cpp")
+  
+  TxLoginCiutada.cpp
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxLoginCiutada.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxLoginCiutada.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/TxLoginCiutada.cpp")
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxLoginCiutada.cpp")
+  
+  TxRegisterCiutada.cpp
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxRegisterCiutada.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxRegisterCiutada.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/TxRegisterCiutada.cpp")
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxRegisterCiutada.cpp")
+  
+  culturalinkmain.cpp
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  C:\Users\eric1\Desktop\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+C:\Users\eric1\Desktop\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/culturalinkmain.cpp")
+  
+  Generando código...
   AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   culturalink-main.vcxproj -> C:\Users\eric1\Desktop\culturalink-main\x64\Debug\culturalink-main.exe

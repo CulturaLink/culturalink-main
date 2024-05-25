@@ -75,6 +75,7 @@
       <Filter>Config files</Filter>
     </ClCompile>
     <ClCompile Include="TxConsultaPuntuacioEsdeveniment.cpp" />
+    <ClCompile Include="TxModificaPuntuacioEsdeveniment.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ConsultaEsdevenimentUI.h" />
@@ -153,6 +154,7 @@
     <ClInclude Include="CercadoraPuntuacioEsdeveniment.h" />
     <ClInclude Include="TxPuntuaEsdeveniment.h" />
     <ClInclude Include="TxConsultaPuntuacioEsdeveniment.h" />
+    <ClInclude Include="TxModificaPuntuacioEsdeveniment.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc" />

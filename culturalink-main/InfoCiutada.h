@@ -5,6 +5,8 @@
 #include "EsborraFormCiutada.h"
 #include "TxConsultaInscripcions.h"
 #include "TxPuntuaEsdeveniment.h"
+#include "TxConsultaPuntuacioEsdeveniment.h"
+#include "TxModificaPuntuacioEsdeveniment.h"
 
 namespace culturalink_main {
 
@@ -603,32 +605,41 @@ private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArg
 private: System::Void listBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
-	String^ nomEsdev = nomEsdevenimentPuntuacio->Text;
-	TxPuntuaEsdeveniment txPuntEsdev(nomEsdev, 1);
-	txPuntEsdev.executar();
+	InserirPuntuacion(1);
+	
+	
+	
 }
 private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 
 private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
-	String^ nomEsdev = nomEsdevenimentPuntuacio->Text;
-	TxPuntuaEsdeveniment txPuntEsdev(nomEsdev, 2);
-	txPuntEsdev.executar();
+	InserirPuntuacion(2);
 }
 private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
-	String^ nomEsdev = nomEsdevenimentPuntuacio->Text;
-	TxPuntuaEsdeveniment txPuntEsdev(nomEsdev, 3);
-	txPuntEsdev.executar();
+	InserirPuntuacion(3);
 }
 private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
-	String^ nomEsdev = nomEsdevenimentPuntuacio->Text;
-	TxPuntuaEsdeveniment txPuntEsdev(nomEsdev, 4);
-	txPuntEsdev.executar();
+	InserirPuntuacion(4);
 }
 private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {
+	InserirPuntuacion(5);
+}
+
+private: System::Void InserirPuntuacion(int punt) {
 	String^ nomEsdev = nomEsdevenimentPuntuacio->Text;
-	TxPuntuaEsdeveniment txPuntEsdev(nomEsdev, 5);
-	txPuntEsdev.executar();
+	TxConsultaPuntuacioEsdeveniment esdCons(nomEsdev);
+	esdCons.executar();
+	PassarelaPuntuacioEsdeveniment punts = esdCons.getResult();
+
+	if (punts.getPuntuacioEsdeveniment() == 0) {
+		TxPuntuaEsdeveniment txPuntEsdev(nomEsdev, punt);
+		txPuntEsdev.executar();
+	}
+	else {
+		TxModificaPuntuacioEsdeveniment modPunt(punts);
+		modPunt.modificaPuntuacio(punt);
+	}
 }
 };
 }

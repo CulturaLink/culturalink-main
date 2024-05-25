@@ -30,7 +30,7 @@ public:
     String^ getNomEsdeveniment();
     int getPuntuacioEsdeveniment();
    
-    //void modifica();
+    void modifica();
     void insereix();
 
     void posaPuntuacio(int puntuacioEsdeveniment);

@@ -26,5 +26,5 @@ private:
 public:
 	TxConsultaPuntuacioEsdeveniment(String^ nomEsdeveniment);
 	void executar() override;
-	int getResult();
+	PassarelaPuntuacioEsdeveniment getResult();
 };

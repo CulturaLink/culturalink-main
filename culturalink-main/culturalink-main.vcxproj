@@ -214,6 +214,7 @@
     <ClInclude Include="TxEsborraEntitat.h" />
     <ClInclude Include="TxLoginAjuntament.h" />
     <ClInclude Include="TxLoginCiutada.h" />
+    <ClInclude Include="TxModificaPuntuacioEsdeveniment.h" />
     <ClInclude Include="TxPuntuaEsdeveniment.h" />
     <ClInclude Include="TxRegisterCiutada.h" />
     <ClInclude Include="TxRegistraEsdeveniment.h" />
@@ -276,6 +277,7 @@
     <ClCompile Include="TxEsborrarEntitat.cpp" />
     <ClCompile Include="TxLoginAjuntament.cpp" />
     <ClCompile Include="TxLoginCiutada.cpp" />
+    <ClCompile Include="TxModificaPuntuacioEsdeveniment.cpp" />
     <ClCompile Include="TxPuntuaEsdeveniment.cpp" />
     <ClCompile Include="TxRegisterCiutada.cpp" />
     <ClCompile Include="TxRegistraEsdeveniment.cpp" />
