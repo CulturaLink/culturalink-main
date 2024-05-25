@@ -22,8 +22,8 @@ public:
     String^ ObteNickCiutada();
     String^ ObteData();
     String^ ObteNomEsdeveniment();
-    int^ ObtePreu();
-    int^ ObtePunts_Diners();
+    int^ ObtePreu(); // Preu Diners
+    int^ ObtePunts_Diners(); // Da 0 o 1
 
     void posaNickCiutada(String^ nickCiutadaI);
     void posaData(String^ dataI);
@@ -37,4 +37,6 @@ private:
     String^ nomEsdeveniment;
     int^ preu;
     int^ punts_diners;
+
+    int^ _metodePag;
 };

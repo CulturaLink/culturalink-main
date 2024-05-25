@@ -46,3 +46,10 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\System.Threadi
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\System.Numerics.Vectors.dll
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\System.Buffers.dll
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\MySql.Data.xml
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\MySql.Data.dll
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\System.Memory.dll
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\System.Threading.Tasks.Extensions.dll
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\System.Numerics.Vectors.dll
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\System.Buffers.dll
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\MySql.Data.xml
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ElsMeusEsdevUI.resources

@@ -76,6 +76,7 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Panel^ panel5;
 	private: System::Windows::Forms::Panel^ panel6;
 	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::Button^ button1;
 
 	protected:
 
@@ -116,6 +117,7 @@ namespace culturalink_main {
 			this->panel5 = (gcnew System::Windows::Forms::Panel());
 			this->panel6 = (gcnew System::Windows::Forms::Panel());
 			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
 			this->panel1->SuspendLayout();
 			this->panel3->SuspendLayout();
@@ -411,6 +413,7 @@ namespace culturalink_main {
 			// 
 			// panel6
 			// 
+			this->panel6->Controls->Add(this->button1);
 			this->panel6->Controls->Add(this->label5);
 			this->panel6->Controls->Add(this->groupBox1);
 			this->panel6->Dock = System::Windows::Forms::DockStyle::Top;
@@ -431,6 +434,18 @@ namespace culturalink_main {
 			this->label5->Size = System::Drawing::Size(0, 17);
 			this->label5->TabIndex = 9;
 			this->label5->Visible = false;
+			// 
+			// button1
+			// 
+			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button1->Location = System::Drawing::Point(95, 134);
+			this->button1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(261, 37);
+			this->button1->TabIndex = 10;
+			this->button1->Text = L"Entrar Com a Convidat";
+			this->button1->UseVisualStyleBackColor = true;
 			// 
 			// Login
 			// 

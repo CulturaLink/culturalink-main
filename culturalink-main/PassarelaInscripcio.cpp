@@ -111,6 +111,7 @@ String^ PassarelaInscripcio::ObteNomEsdeveniment()
 {
     return nomEsdeveniment;
 }
+
 int^ PassarelaInscripcio::ObtePreu()
 {
     return preu;

@@ -18,7 +18,7 @@
 #include "TxConsultaTotsEsdevenimentsPerEntitat.h"
 #include "TxCompraEntradaEsdevenimentDiners.h"
 #include "TxCompraEntradaEsdevenimentPunts.h"
-
+#include "TxConsultaInscripcions.h"
 
 // Altres:
 #include "Esdeveniment.h"
@@ -266,6 +266,24 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 	private: System::Windows::Forms::Panel^ pnlTitleCOMP;
 	private: System::Windows::Forms::Label^ lblTitleCOMP;
 
+	private: System::Windows::Forms::Panel^ PANELMeusEsdevs;
+	private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPanelMESDEV;
+	/*private: System::Windows::Forms::Panel^ pnlDynMESDEVex;
+	private: System::Windows::Forms::Label^ lblNomEsdevMESDEVex;
+	private: System::Windows::Forms::Label^ lblDataMESDEVex;
+	private: System::Windows::Forms::Label^ lblPreuMESDEVex;
+	private: System::Windows::Forms::Panel^ pnlMetodeFMESDEVex;
+	private: System::Windows::Forms::Label^ lblMetodeMESDEVex;*/
+	private: System::Windows::Forms::Panel^ pnlTitlesMESDEV;
+	private: System::Windows::Forms::Label^ lblNomEsdevMESDEVen;
+	private: System::Windows::Forms::Label^ lblDataMESDEVen;
+	private: System::Windows::Forms::Label^ lblPreuMESDEVen;
+	private: System::Windows::Forms::Label^ lblMetPagMESDEVen;
+	private: System::Windows::Forms::Panel^ pnlTotGastatEsqMESDEV;
+	private: System::Windows::Forms::Label^ lblTotGastatMESDEVen;
+	private: System::Windows::Forms::Panel^ pnlTotGastatDretaMESDEV;
+	private: System::Windows::Forms::Label^ lblTotGastatMESDEV;
+
 	protected:
 
 	private:
@@ -411,6 +429,17 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 		this->lblTitlePage = (gcnew System::Windows::Forms::Label());
 		this->pnlMain = (gcnew System::Windows::Forms::Panel());
+		this->PANELMeusEsdevs = (gcnew System::Windows::Forms::Panel());
+		this->pnlTotGastatEsqMESDEV = (gcnew System::Windows::Forms::Panel());
+		this->lblTotGastatMESDEVen = (gcnew System::Windows::Forms::Label());
+		this->pnlTotGastatDretaMESDEV = (gcnew System::Windows::Forms::Panel());
+		this->lblTotGastatMESDEV = (gcnew System::Windows::Forms::Label());
+		this->flowLayoutPanelMESDEV = (gcnew System::Windows::Forms::FlowLayoutPanel());
+		this->pnlTitlesMESDEV = (gcnew System::Windows::Forms::Panel());
+		this->lblNomEsdevMESDEVen = (gcnew System::Windows::Forms::Label());
+		this->lblDataMESDEVen = (gcnew System::Windows::Forms::Label());
+		this->lblPreuMESDEVen = (gcnew System::Windows::Forms::Label());
+		this->lblMetPagMESDEVen = (gcnew System::Windows::Forms::Label());
 		this->PANELPROVA = (gcnew System::Windows::Forms::Panel());
 		this->btnConsEsdevComprar = (gcnew System::Windows::Forms::Button());
 		this->btnConsEsdevGoBack = (gcnew System::Windows::Forms::Button());
@@ -486,6 +515,10 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->flowLayoutPanel2->SuspendLayout();
 		(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox7))->BeginInit();
 		this->pnlMain->SuspendLayout();
+		this->PANELMeusEsdevs->SuspendLayout();
+		this->pnlTotGastatEsqMESDEV->SuspendLayout();
+		this->pnlTotGastatDretaMESDEV->SuspendLayout();
+		this->pnlTitlesMESDEV->SuspendLayout();
 		this->PANELPROVA->SuspendLayout();
 		this->tableLayoutPanel1->SuspendLayout();
 		this->panel8->SuspendLayout();
@@ -1818,7 +1851,7 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->button2->Name = L"button2";
 		this->button2->Size = System::Drawing::Size(223, 52);
 		this->button2->TabIndex = 3;
-		this->button2->Text = L"Els Teus Esdev.";
+		this->button2->Text = L"Els Meus Esdeveniments";
 		this->button2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 		this->button2->UseVisualStyleBackColor = true;
 		this->button2->Click += gcnew System::EventHandler(this, &ProvesUI::button2_Click);
@@ -2108,6 +2141,7 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		// 
 		// pnlMain
 		// 
+		this->pnlMain->Controls->Add(this->PANELMeusEsdevs);
 		this->pnlMain->Controls->Add(this->PANELConsultarCompra);
 		this->pnlMain->Controls->Add(this->PANELbandEntrSolAj);
 		this->pnlMain->Controls->Add(this->PANELEsdevHomepage);
@@ -2117,6 +2151,131 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->pnlMain->Name = L"pnlMain";
 		this->pnlMain->Size = System::Drawing::Size(1666, 513);
 		this->pnlMain->TabIndex = 4;
+		// 
+		// PANELMeusEsdevs
+		// 
+		this->PANELMeusEsdevs->BackColor = System::Drawing::Color::WhiteSmoke;
+		this->PANELMeusEsdevs->Controls->Add(this->pnlTotGastatEsqMESDEV);
+		this->PANELMeusEsdevs->Controls->Add(this->flowLayoutPanelMESDEV);
+		this->PANELMeusEsdevs->Controls->Add(this->pnlTitlesMESDEV);
+		this->PANELMeusEsdevs->Location = System::Drawing::Point(182, 25);
+		this->PANELMeusEsdevs->Name = L"PANELMeusEsdevs";
+		this->PANELMeusEsdevs->Size = System::Drawing::Size(792, 628);
+		this->PANELMeusEsdevs->TabIndex = 0;
+		this->PANELMeusEsdevs->Visible = false;
+		// 
+		// pnlTotGastatEsqMESDEV
+		// 
+		this->pnlTotGastatEsqMESDEV->BackColor = System::Drawing::Color::Black;
+		this->pnlTotGastatEsqMESDEV->Controls->Add(this->lblTotGastatMESDEVen);
+		this->pnlTotGastatEsqMESDEV->Controls->Add(this->pnlTotGastatDretaMESDEV);
+		this->pnlTotGastatEsqMESDEV->Location = System::Drawing::Point(468, 552);
+		this->pnlTotGastatEsqMESDEV->Name = L"pnlTotGastatEsqMESDEV";
+		this->pnlTotGastatEsqMESDEV->Size = System::Drawing::Size(324, 41);
+		this->pnlTotGastatEsqMESDEV->TabIndex = 4;
+		// 
+		// lblTotGastatMESDEVen
+		// 
+		this->lblTotGastatMESDEVen->AutoSize = true;
+		this->lblTotGastatMESDEVen->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			static_cast<System::Byte>(0)));
+		this->lblTotGastatMESDEVen->ForeColor = System::Drawing::Color::White;
+		this->lblTotGastatMESDEVen->Location = System::Drawing::Point(27, 12);
+		this->lblTotGastatMESDEVen->Name = L"lblTotGastatMESDEVen";
+		this->lblTotGastatMESDEVen->Size = System::Drawing::Size(97, 17);
+		this->lblTotGastatMESDEVen->TabIndex = 1;
+		this->lblTotGastatMESDEVen->Text = L"TOTAL GASTAT:";
+		// 
+		// pnlTotGastatDretaMESDEV
+		// 
+		this->pnlTotGastatDretaMESDEV->BackColor = System::Drawing::Color::White;
+		this->pnlTotGastatDretaMESDEV->Controls->Add(this->lblTotGastatMESDEV);
+		this->pnlTotGastatDretaMESDEV->Location = System::Drawing::Point(140, 3);
+		this->pnlTotGastatDretaMESDEV->Name = L"pnlTotGastatDretaMESDEV";
+		this->pnlTotGastatDretaMESDEV->Size = System::Drawing::Size(181, 35);
+		this->pnlTotGastatDretaMESDEV->TabIndex = 0;
+		// 
+		// lblTotGastatMESDEV
+		// 
+		this->lblTotGastatMESDEV->AutoSize = true;
+		this->lblTotGastatMESDEV->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			static_cast<System::Byte>(0)));
+		this->lblTotGastatMESDEV->Location = System::Drawing::Point(74, 9);
+		this->lblTotGastatMESDEV->Name = L"lblTotGastatMESDEV";
+		this->lblTotGastatMESDEV->Size = System::Drawing::Size(43, 17);
+		this->lblTotGastatMESDEV->TabIndex = 0;
+		this->lblTotGastatMESDEV->Text = L"0.00 €";
+		// 
+		// flowLayoutPanelMESDEV
+		// 
+		this->flowLayoutPanelMESDEV->BackColor = System::Drawing::Color::White;
+		this->flowLayoutPanelMESDEV->Dock = System::Windows::Forms::DockStyle::Top;
+		this->flowLayoutPanelMESDEV->FlowDirection = System::Windows::Forms::FlowDirection::TopDown;
+		this->flowLayoutPanelMESDEV->Location = System::Drawing::Point(0, 32);
+		this->flowLayoutPanelMESDEV->Name = L"flowLayoutPanelMESDEV";
+		this->flowLayoutPanelMESDEV->Size = System::Drawing::Size(792, 488);
+		this->flowLayoutPanelMESDEV->TabIndex = 3;
+		// 
+		// pnlTitlesMESDEV
+		// 
+		this->pnlTitlesMESDEV->BackColor = System::Drawing::Color::Black;
+		this->pnlTitlesMESDEV->Controls->Add(this->lblNomEsdevMESDEVen);
+		this->pnlTitlesMESDEV->Controls->Add(this->lblDataMESDEVen);
+		this->pnlTitlesMESDEV->Controls->Add(this->lblPreuMESDEVen);
+		this->pnlTitlesMESDEV->Controls->Add(this->lblMetPagMESDEVen);
+		this->pnlTitlesMESDEV->Dock = System::Windows::Forms::DockStyle::Top;
+		this->pnlTitlesMESDEV->Location = System::Drawing::Point(0, 0);
+		this->pnlTitlesMESDEV->Name = L"pnlTitlesMESDEV";
+		this->pnlTitlesMESDEV->Size = System::Drawing::Size(792, 32);
+		this->pnlTitlesMESDEV->TabIndex = 2;
+		// 
+		// lblNomEsdevMESDEVen
+		// 
+		this->lblNomEsdevMESDEVen->AutoSize = true;
+		this->lblNomEsdevMESDEVen->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			static_cast<System::Byte>(0)));
+		this->lblNomEsdevMESDEVen->ForeColor = System::Drawing::Color::White;
+		this->lblNomEsdevMESDEVen->Location = System::Drawing::Point(37, 8);
+		this->lblNomEsdevMESDEVen->Name = L"lblNomEsdevMESDEVen";
+		this->lblNomEsdevMESDEVen->Size = System::Drawing::Size(126, 16);
+		this->lblNomEsdevMESDEVen->TabIndex = 4;
+		this->lblNomEsdevMESDEVen->Text = L"ESDEVENIMENT";
+		// 
+		// lblDataMESDEVen
+		// 
+		this->lblDataMESDEVen->AutoSize = true;
+		this->lblDataMESDEVen->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			static_cast<System::Byte>(0)));
+		this->lblDataMESDEVen->ForeColor = System::Drawing::Color::White;
+		this->lblDataMESDEVen->Location = System::Drawing::Point(223, 9);
+		this->lblDataMESDEVen->Name = L"lblDataMESDEVen";
+		this->lblDataMESDEVen->Size = System::Drawing::Size(148, 16);
+		this->lblDataMESDEVen->TabIndex = 3;
+		this->lblDataMESDEVen->Text = L"DATA FACTURACIÓ";
+		// 
+		// lblPreuMESDEVen
+		// 
+		this->lblPreuMESDEVen->AutoSize = true;
+		this->lblPreuMESDEVen->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			static_cast<System::Byte>(0)));
+		this->lblPreuMESDEVen->ForeColor = System::Drawing::Color::White;
+		this->lblPreuMESDEVen->Location = System::Drawing::Point(449, 9);
+		this->lblPreuMESDEVen->Name = L"lblPreuMESDEVen";
+		this->lblPreuMESDEVen->Size = System::Drawing::Size(56, 16);
+		this->lblPreuMESDEVen->TabIndex = 2;
+		this->lblPreuMESDEVen->Text = L"TOTAL";
+		// 
+		// lblMetPagMESDEVen
+		// 
+		this->lblMetPagMESDEVen->AutoSize = true;
+		this->lblMetPagMESDEVen->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			static_cast<System::Byte>(0)));
+		this->lblMetPagMESDEVen->ForeColor = System::Drawing::Color::White;
+		this->lblMetPagMESDEVen->Location = System::Drawing::Point(596, 8);
+		this->lblMetPagMESDEVen->Name = L"lblMetPagMESDEVen";
+		this->lblMetPagMESDEVen->Size = System::Drawing::Size(159, 16);
+		this->lblMetPagMESDEVen->TabIndex = 1;
+		this->lblMetPagMESDEVen->Text = L"MÈTODE PAGAMENT";
 		// 
 		// PANELPROVA
 		// 
@@ -2482,6 +2641,13 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->flowLayoutPanel2->ResumeLayout(false);
 		(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox7))->EndInit();
 		this->pnlMain->ResumeLayout(false);
+		this->PANELMeusEsdevs->ResumeLayout(false);
+		this->pnlTotGastatEsqMESDEV->ResumeLayout(false);
+		this->pnlTotGastatEsqMESDEV->PerformLayout();
+		this->pnlTotGastatDretaMESDEV->ResumeLayout(false);
+		this->pnlTotGastatDretaMESDEV->PerformLayout();
+		this->pnlTitlesMESDEV->ResumeLayout(false);
+		this->pnlTitlesMESDEV->PerformLayout();
 		this->PANELPROVA->ResumeLayout(false);
 		this->tableLayoutPanel1->ResumeLayout(false);
 		this->tableLayoutPanel1->PerformLayout();
@@ -2569,9 +2735,11 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 	this->flowLayoutPanel2->Visible = true;
 	this->pnlMainTop->Size = System::Drawing::Size(1127, 181);
 
+	this->PANELMeusEsdevs->Visible = false;
 	this->PANELbandEntrSolAj->Visible = false;
-	this->PANELEsdevHomepage->Visible = true;
 	this->PANELConsultarCompra->Visible = false;
+	this->PANELEsdevHomepage->Visible = true;
+	
 
 	this->pnlInfoUsu->Visible = false;
 
@@ -2594,7 +2762,52 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 	}
 }
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->lblTitlePage->Text = "CONSULTAR ESDEVENIMENTS";
+	this->lblTitlePage->Text = "CONSULTAR ELS MEUS ESDEVENIMENTS";
+
+	this->flowLayoutPanelMESDEV->Controls->Clear();
+
+	this->flowLayoutPanel2->Visible = false;
+	this->pnlMainTop->Size = System::Drawing::Size(1084, 110);
+
+	this->PANELEsdevHomepage->Visible = false;
+	this->PANELConsultarCompra->Visible = false;
+
+	this->PANELMeusEsdevs->Visible = true;
+
+	TxConsultaInscripcions txConInsc;
+	txConInsc.executar();
+	List<String^>^ inscripcions = txConInsc.getResult();
+
+	int comptEsdevCiut = 0;
+
+	String^ nomEsdev = inscripcions[0];
+	String^ data = inscripcions[1];
+	String^ preu = inscripcions[2];
+	String^ metodePag = inscripcions[3];
+
+	comptEsdevCiut = inscripcions->Count;
+	for (int i = 0; i < comptEsdevCiut; i = i + 4) {
+		if (i + 3 < inscripcions->Count) {
+			nomEsdev = inscripcions[i];
+			data = inscripcions[i+1];
+			preu = inscripcions[i+2];
+			metodePag = inscripcions[i+3];
+			if (metodePag == "0") {
+				metodePag = "Targeta de Credit";
+				preu += " €";
+			}
+			else if (metodePag == "1") {
+				metodePag = "Punts";
+				preu += " Punts";
+			}
+			addDyamicPanelElsMeusEsdevs(nomEsdev, data, preu, metodePag);
+		}
+		else {
+			// Handle the case where there are not enough elements
+			// This could be logging an error, breaking the loop, or any other error handling
+			break; // or continue; or any other handling logic
+		}
+	}
 }
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->lblTitlePage->Text = "REGISTAR-SE EN ESDEVENIMENTS";
@@ -2650,6 +2863,7 @@ private: System::Void btnConsultar_Click(System::Object^ sender, System::EventAr
 	this->pnlMainTop->Size = System::Drawing::Size(1084, 110);
 
 	this->PANELEsdevHomepage->Visible = false;
+	this->PANELMeusEsdevs->Visible = false;
 	this->PANELConsultarCompra->Visible = true;
 
 	TxConsultaEsdeveniment^ txConsEsdev = gcnew TxConsultaEsdeveniment(nomEsdev);
@@ -2903,8 +3117,10 @@ private: System::Void picBoxUserPic_Click(System::Object^ sender, System::EventA
 private: System::Void ProvesUI_Load(System::Object^ sender, System::EventArgs^ e) {
 
 	//this->pnlMainModEsdv->Visible = false;
-	this->PANELEsdevHomepage->Visible = true;
+	this->PANELMeusEsdevs->Visible = false;
 	this->PANELbandEntrSolAj->Visible = false;
+	this->PANELEsdevHomepage->Visible = true;
+	
 	
 	int y = Screen::PrimaryScreen->Bounds.Height / 2;
 	this->btnViewNavBar->Location = System::Drawing::Point(210, y);
@@ -3098,6 +3314,7 @@ private: System::Void button9_Click_1(System::Object^ sender, System::EventArgs^
 	this->flowLayoutPanel2->Visible = false;
 	this->pnlMainTop->Size = System::Drawing::Size(1084, 110);
 
+	this->PANELMeusEsdevs->Visible = false;
 	this->PANELEsdevHomepage->Visible = false;
 	this->PANELbandEntrSolAj->Visible = true;
 
@@ -3293,8 +3510,9 @@ private: System::Void btnGoBackCONS_Click(System::Object^ sender, System::EventA
 
 	this->pnlCOMP->Visible = false;
 	this->flowLayoutPanel2->Visible = true;
-	this->pnlMainTop->Size = System::Drawing::Size(1084, 223);
+	//this->pnlMainTop->Size = System::Drawing::Size(1084, 223);
 
+	this->PANELMeusEsdevs->Visible = false;
 	this->PANELConsultarCompra->Visible = false;
 	this->PANELEsdevHomepage->Visible = true;
 
@@ -3440,6 +3658,7 @@ private: System::Void btnComprarCOMP_Click(System::Object^ sender, System::Event
 				tCompEsdevDin.executar();
 				MessageBox::Show("Compra finalitzada amb exit", "", MessageBoxButtons::OK);
 				//this->Close();
+				this->PANELMeusEsdevs->Visible = false;
 				this->PANELConsultarCompra->Visible = false;
 				this->PANELEsdevHomepage->Visible = true;
 				this->pnlCOMP->Visible = false;
@@ -3472,6 +3691,7 @@ private: System::Void btnComprarPuntsCONS_Click(System::Object^ sender, System::
 			
 			MessageBox::Show("Compra finalitzada amb exit", "", MessageBoxButtons::OK);
 			/*this->Close();*/
+			this->PANELMeusEsdevs->Visible = false;
 			this->PANELConsultarCompra->Visible = false;
 			this->PANELEsdevHomepage->Visible = true;
 			this->pnlCOMP->Visible = false;
@@ -3482,6 +3702,8 @@ private: System::Void btnComprarPuntsCONS_Click(System::Object^ sender, System::
 
 			int^ puntsCiutada = passCiu->getPunts();
 
+			panelUserInfo->Invalidate(); // Force redraw if necessary
+			panelUserInfo->PerformLayout(); // Recalculate layout if necessary
 			this->lblPuntsUser->Text = L"" + puntsCiutada + " Punts";
 
 		}
@@ -3492,12 +3714,113 @@ private: System::Void btnComprarPuntsCONS_Click(System::Object^ sender, System::
 		return;
 	}
 }
-
-private:
-	void textBox1_TextChanged(Object^ sender, EventArgs^ e)
-	{
-		// Update the label with the text from the textBox
+void dynamicTextChanged(Object^ sender, EventArgs^ e)
+{
+	TextBox^ txtBoxOmplert = dynamic_cast<TextBox^>(sender);
+	if (txtBoxOmplert->Name == L"textBoxNumTarjCOMP")
 		lbNumTarjUICOMP->Text = this->textBoxNumTarjCOMP->Text;
-	}
+	if (txtBoxOmplert->Name == L"textBoxTitularCOMP")
+		lblTitularUICOMP->Text = this->textBoxTitularCOMP->Text;
+	if (txtBoxOmplert->Name == L"textBoxMonthCOMP")
+		lblDataCadUICOMP->Text = this->textBoxMonthCOMP->Text + "/";
+	else if (txtBoxOmplert->Name == L"textBoxYearCOMP")
+		lblDataCadUICOMP->Text = lblDataCadUICOMP->Text + this->textBoxYearCOMP->Text;
+}
+
+void addDyamicPanelElsMeusEsdevs(String^ nomEsdev, String^ data, String^ preu, String^ metodePag) {
+
+	System::Windows::Forms::Panel^ pnlDynMESDEVex;
+	System::Windows::Forms::Label^ lblDynNomEsdevMESDEVex;
+	System::Windows::Forms::Label^ lblDynDataMESDEVex;
+	System::Windows::Forms::Label^ lblDynPreuMESDEVex;
+	System::Windows::Forms::Panel^ pnlDynMetodeFMESDEVex;
+	System::Windows::Forms::Label^ lblDynMetodeMESDEVex;
+
+	pnlDynMESDEVex = (gcnew System::Windows::Forms::Panel());
+	lblDynNomEsdevMESDEVex = (gcnew System::Windows::Forms::Label());
+	lblDynDataMESDEVex = (gcnew System::Windows::Forms::Label());
+	lblDynPreuMESDEVex = (gcnew System::Windows::Forms::Label());
+	pnlDynMetodeFMESDEVex = (gcnew System::Windows::Forms::Panel());
+	lblDynMetodeMESDEVex = (gcnew System::Windows::Forms::Label());
+
+	// 
+	// lblNomEsdevMESDEVex
+	// 
+	lblDynNomEsdevMESDEVex->AutoSize = true;
+	lblDynNomEsdevMESDEVex->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+		static_cast<System::Byte>(0)));
+	lblDynNomEsdevMESDEVex->Location = System::Drawing::Point(36, 17);
+	lblDynNomEsdevMESDEVex->Name = L"lblNomEsdevMESDEVex";
+	lblDynNomEsdevMESDEVex->Size = System::Drawing::Size(123, 17);
+	lblDynNomEsdevMESDEVex->TabIndex = 4;
+	lblDynNomEsdevMESDEVex->Text = L"NomEsdeveniment";
+	// 
+	// lblDataMESDEVex
+	// 
+	lblDynDataMESDEVex->AutoSize = true;
+	lblDynDataMESDEVex->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+		static_cast<System::Byte>(0)));
+	lblDynDataMESDEVex->Location = System::Drawing::Point(245-55, 14);
+	lblDynDataMESDEVex->Name = L"lblDataMESDEVex";
+	lblDynDataMESDEVex->Size = System::Drawing::Size(74, 17);
+	lblDynDataMESDEVex->TabIndex = 3;
+	lblDynDataMESDEVex->Text = L"01/01/2024";
+	// 
+	// lblPreuMESDEVex
+	// 
+	lblDynPreuMESDEVex->AutoSize = true;
+	lblDynPreuMESDEVex->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+		static_cast<System::Byte>(0)));
+	lblDynPreuMESDEVex->Location = System::Drawing::Point(451-110, 14);
+	lblDynPreuMESDEVex->Name = L"lblPreuMESDEVex";
+	lblDynPreuMESDEVex->Size = System::Drawing::Size(43, 17);
+	lblDynPreuMESDEVex->TabIndex = 2;
+	lblDynPreuMESDEVex->Text = L"0.00 €";
+	// 
+	// pnlMetodeFMESDEVex
+	// 
+	pnlDynMetodeFMESDEVex->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(190)),
+		static_cast<System::Int32>(static_cast<System::Byte>(219)), static_cast<System::Int32>(static_cast<System::Byte>(253)));
+	pnlDynMetodeFMESDEVex->Controls->Add(lblDynMetodeMESDEVex);
+	pnlDynMetodeFMESDEVex->Location = System::Drawing::Point(599-160, 7);
+	pnlDynMetodeFMESDEVex->Name = L"pnlMetodeFMESDEVex";
+	pnlDynMetodeFMESDEVex->Size = System::Drawing::Size(143, 29);
+	pnlDynMetodeFMESDEVex->TabIndex = 1;
+	// 
+	// lblMetodeMESDEVex
+	// 
+	lblDynMetodeMESDEVex->AutoSize = true;
+	lblDynMetodeMESDEVex->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+		static_cast<System::Byte>(0)));
+	lblDynMetodeMESDEVex->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(105)),
+		static_cast<System::Int32>(static_cast<System::Byte>(152)), static_cast<System::Int32>(static_cast<System::Byte>(243)));
+	lblDynMetodeMESDEVex->Location = System::Drawing::Point(26, 6);
+	lblDynMetodeMESDEVex->Name = L"lblMetodeMESDEVex";
+	lblDynMetodeMESDEVex->Size = System::Drawing::Size(93, 17);
+	lblDynMetodeMESDEVex->TabIndex = 0;
+	lblDynMetodeMESDEVex->Text = L"Trageta Crèdit";
+
+	lblDynNomEsdevMESDEVex->Text = nomEsdev;
+	lblDynDataMESDEVex->Text = data;
+	lblDynPreuMESDEVex->Text = preu;
+	lblDynMetodeMESDEVex->Text = metodePag;
+
+	// 
+	// pnlDynMESDEVex
+	// 
+	pnlDynMESDEVex->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+	pnlDynMESDEVex->Controls->Add(lblDynNomEsdevMESDEVex);
+	pnlDynMESDEVex->Controls->Add(lblDynDataMESDEVex);
+	pnlDynMESDEVex->Controls->Add(lblDynPreuMESDEVex);
+	pnlDynMESDEVex->Controls->Add(pnlDynMetodeFMESDEVex);
+	pnlDynMESDEVex->Location = System::Drawing::Point(3, 3);
+	pnlDynMESDEVex->Name = L"pnlDynMESDEVex";
+	pnlDynMESDEVex->Size = System::Drawing::Size(588, 48);
+	pnlDynMESDEVex->TabIndex = 0;
+
+
+	this->flowLayoutPanelMESDEV->Controls->Add(pnlDynMESDEVex);
+}
+
 };
 }
