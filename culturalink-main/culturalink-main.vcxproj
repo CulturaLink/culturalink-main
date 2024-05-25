@@ -140,6 +140,8 @@
     <ClInclude Include="ConsultaEsdevenimentUI.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="CtrlModificaCiutada.h" />
+    <ClInclude Include="ExcepcioCorreuExisteix.h" />
     <ClInclude Include="InfoAjuntament.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -203,6 +205,7 @@
     <ClCompile Include="CercadoraEsdeveniment.cpp" />
     <ClCompile Include="CercadoraInscripcio.cpp" />
     <ClCompile Include="ConsultaEsdevenimentUI.cpp" />
+    <ClCompile Include="CtrlModificaCiutada.cpp" />
     <ClCompile Include="culturalinkmain.cpp" />
     <ClCompile Include="InfoAjuntament.cpp" />
     <ClCompile Include="InfoCiutada.cpp" />
