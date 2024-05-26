@@ -122,7 +122,7 @@ void PassarelaAjuntament::modifica() {
 		if (dataReader1->Read()) { // Check if there are rows to read 
 			numAj = Convert::ToInt32(dataReader1[0]); // Read the count from the first column (index 0)
 		}
-		MessageBox::Show(numAj.ToString());
+
 		if (numAj != 0) throw gcnew CorreuExisteix("Correu ja existeix!");
 
 		dataReader1->Close();
