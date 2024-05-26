@@ -1,381 +1,233 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: El directorio Output no termina con una barra diagonal final. Esta instancia de compilación agregará la barra diagonal porque es necesaria para que se pueda evaluar correctamente el directorio Output.
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  BandejaEntradaSolAjuntament.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
   CercadoraCiutada.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/CercadoraCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/CercadoraCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/CercadoraCiutada.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/CercadoraCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3048,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/CercadoraCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3140,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/CercadoraCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3215,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/CercadoraCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3243,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/CercadoraCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3271,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/CercadoraCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3484,41): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/CercadoraCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3833,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/CercadoraCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/CercadoraCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(531,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/CercadoraCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(553,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/CercadoraCiutada.cpp")
-  
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3114,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3206,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3281,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3309,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3337,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3550,41): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3899,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(531,32): warning C4101: 'e': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(553,32): warning C4101: 'e': unreferenced local variable
+  CercadoraEsdeveniment.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\CercadoraEsdeveniment.cpp(41,23): warning C4101: 'ex': unreferenced local variable
+  CercadoraInscripcio.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\CercadoraInscripcio.cpp(27,23): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\CercadoraInscripcio.cpp(69,19): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  ComprarEsdevenimentUI.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  ConsultaEsdevenimentUI.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  ConsultarUsuariUI.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  CtrlModificaCiutada.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  CtrlModificaEsdeveniment.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  InfoCiutada.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
   Login.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/Login.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/Login.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/Login.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/Login.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3048,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/Login.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3140,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/Login.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3215,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/Login.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3243,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/Login.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3271,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/Login.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3484,41): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/Login.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3833,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/Login.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/Login.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(531,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/Login.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(553,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/Login.cpp")
-  
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3114,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3206,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3281,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3309,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3337,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3550,41): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3899,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(531,32): warning C4101: 'e': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(553,32): warning C4101: 'e': unreferenced local variable
   MainForm.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/MainForm.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/MainForm.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/MainForm.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/MainForm.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3048,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/MainForm.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3140,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/MainForm.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3215,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/MainForm.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3243,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/MainForm.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3271,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/MainForm.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3484,41): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/MainForm.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3833,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/MainForm.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/MainForm.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(531,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/MainForm.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(553,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/MainForm.cpp")
-  
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3114,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3206,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3281,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3309,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3337,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3550,41): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3899,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(531,32): warning C4101: 'e': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(553,32): warning C4101: 'e': unreferenced local variable
   PassarelaCiutada.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3048,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3140,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3215,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3243,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3271,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3484,41): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3833,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(531,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(553,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(14,12): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(15,11): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(78,43): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(79,42): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3114,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3206,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3281,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3309,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3337,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3550,41): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3899,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(531,32): warning C4101: 'e': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(553,32): warning C4101: 'e': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(16,12): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(17,11): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(80,43): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(81,42): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  PassarelaEsdeveniment.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaEsdeveniment.cpp(262,23): warning C4101: 'ex': unreferenced local variable
+  PassarelaInscripcio.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaInscripcio.cpp(18,12): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaInscripcio.cpp(19,20): warning C4965: implicit box of integer 0; use nullptr or explicit cast
   ProvesUI.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/ProvesUI.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/ProvesUI.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/ProvesUI.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3048,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/ProvesUI.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3140,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/ProvesUI.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3215,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/ProvesUI.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3243,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/ProvesUI.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3271,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/ProvesUI.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3484,41): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/ProvesUI.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3833,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/ProvesUI.cpp")
-  
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3114,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3206,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3281,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3309,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3337,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3550,41): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3899,40): warning C4101: 'list_esdevs': unreferenced local variable
+  RegisterFormCiutada.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  RegistrarEsdevenimentUI.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  Sistema.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  TxCanviaEstatPeticio.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  Generating Code...
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\CercadoraInscripcio.cpp(47,1): warning C4715: 'CercadoraInscripcio::cercaTotesInscripcions': not all control paths return a value
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\CercadoraInscripcio.cpp(84,1): warning C4715: 'CercadoraInscripcio::cercaInscripcio': not all control paths return a value
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\CercadoraEsdeveniment.cpp(51,1): warning C4715: 'CercadoraEsdeveniment::cercaEsdeveniment': not all control paths return a value
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\CercadoraCiutada.cpp(50,1): warning C4715: 'CercadoraCiutada::cercaCiutada': not all control paths return a value
+  Compiling...
+  TxCompraEntradaEsdevenimentDiners.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\TxCompraEntradaEsdevenimentDiners.cpp(30,92): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\TxCompraEntradaEsdevenimentDiners.cpp(24,29): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  TxCompraEntradaEsdevenimentPunts.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\TxCompraEntradaEsdevenimentPunts.cpp(24,29): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  TxConsultaAjuntament.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  TxConsultaCiutada.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  TxConsultaEntitat.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  TxConsultaEsdeveniment.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  TxConsultaEsdevenimentsAjuntament.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  TxConsultaEsdevenimentsAmbTipus.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  TxConsultaInscripcions.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  TxConsultaTotsEsdeveniments.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  TxConsultaTotsEsdevenimentsPerEntitat.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  TxIniciaSessio.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+  TxLoginAjuntament.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
   TxLoginCiutada.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/TxLoginCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/TxLoginCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/TxLoginCiutada.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/TxLoginCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3048,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/TxLoginCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3140,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/TxLoginCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3215,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/TxLoginCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3243,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/TxLoginCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3271,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/TxLoginCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3484,41): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/TxLoginCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3833,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/TxLoginCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/TxLoginCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(531,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/TxLoginCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(553,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/TxLoginCiutada.cpp")
-  
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3114,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3206,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3281,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3309,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3337,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3550,41): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3899,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(531,32): warning C4101: 'e': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(553,32): warning C4101: 'e': unreferenced local variable
   TxRegisterCiutada.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/TxRegisterCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/TxRegisterCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/TxRegisterCiutada.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/TxRegisterCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3048,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/TxRegisterCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3140,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/TxRegisterCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3215,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/TxRegisterCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3243,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/TxRegisterCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3271,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/TxRegisterCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3484,41): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/TxRegisterCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3833,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/TxRegisterCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/TxRegisterCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(531,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/TxRegisterCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(553,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/TxRegisterCiutada.cpp")
-  
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3114,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3206,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3281,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3309,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3337,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3550,41): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3899,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(531,32): warning C4101: 'e': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(553,32): warning C4101: 'e': unreferenced local variable
+  TxRegistraEsdeveniment.cpp
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
   culturalinkmain.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': es abstracto
-  C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  vea la declaración de 'Transaccio::executar'
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3048,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3140,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3215,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3243,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3271,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3484,41): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3833,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(531,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(553,32): warning C4101: 'e': variable local sin referencia
-  (compilando archivo de origen "/culturalinkmain.cpp")
-  
-  Generando código...
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\CercadoraCiutada.cpp(50): warning C4715: 'CercadoraCiutada::cercaCiutada': no todas las rutas de acceso de control devuelven un valor
-  AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
-  culturalink-main.vcxproj -> C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\culturalink-main.exe
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3114,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3206,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3281,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3309,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3337,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3550,41): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3899,40): warning C4101: 'list_esdevs': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(531,32): warning C4101: 'e': unreferenced local variable
+D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Login.h(553,32): warning C4101: 'e': unreferenced local variable
+  Generating Code...
+  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  culturalink-main.vcxproj -> D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\x64\culturalink-main.exe

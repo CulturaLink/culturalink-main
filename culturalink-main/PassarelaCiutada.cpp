@@ -1,6 +1,8 @@
 ﻿#include "pch.h"
 #include "PassarelaCiutada.h"
 #include "MainForm.h"
+
+using namespace System;
 using namespace System::Windows::Forms;
 
 
@@ -122,12 +124,68 @@ void PassarelaCiutada::modifica() {
 
 		dataReader1->Close();
 		//String^ clauString = passAju->getClau()->ToString();
+		// 
+		// Parse the MM/DD/YYYY date string to a DateTime object
+		DateTime dateTime = DateTime::ParseExact(getDataNaix(), "MM/dd/yyyy", System::Globalization::CultureInfo::InvariantCulture);
+
+		// Format the DateTime object to a YYYY-MM-DD date string
+		String^ yyyymmddDate = dateTime.ToString("yyyy-MM-dd");
 
 		String^ sql = "UPDATE amep14.ciutada SET "
 			"nom_complet = '" + getNomComplet() + "', "
 			"contrasenya = '" + getContrasenya() + "', "
 			"correu = '" + getCorreu() + "', "
-			"data_naix = '" + getDataNaix() + "' "
+			"data_naix = '" + yyyymmddDate + "' "
+			"WHERE nickname = '" + getNickname() + "';";
+
+		MySqlCommand^ cmd2 = gcnew MySqlCommand(sql, conn);
+
+		MySqlDataReader^ dataReader2;
+
+		// executem la comanda creada abans del try
+		dataReader2 = cmd2->ExecuteReader();
+	}
+	catch (Exception^ ex) {
+		// codi per mostrar l’error en una finestra
+		//MessageBox::Show(ex->Message);
+		throw ex;
+	}
+	finally {
+		// si tot va bé es tanca la connexió
+		conn->Close();
+	}
+}
+
+void PassarelaCiutada::modificaSensData() {
+	String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
+	MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
+
+	// Comprobar si el correu ya existe, throw excepcion en caso que si
+	String^ sqlCheckCorreu = "SELECT COUNT(*) FROM amep14.ciutada WHERE correu = '" + getCorreu() + "' AND nickname <> '" + getNickname() + "';";
+
+	try {
+		// obrim la connexió
+		conn->Open();
+
+		MySqlCommand^ cmd1 = gcnew MySqlCommand(sqlCheckCorreu, conn);
+		MySqlDataReader^ dataReader1;
+		dataReader1 = cmd1->ExecuteReader();
+
+		int c = 0;
+
+		if (dataReader1->Read()) { // Check if there are rows to read 
+			c = Convert::ToInt32(dataReader1[0]); // Read the count from the first column (index 0)
+		}
+
+		if (c != 0) throw gcnew CorreuExisteix("Correu ja existeix!");
+
+		dataReader1->Close();
+		//String^ clauString = passAju->getClau()->ToString();
+
+		String^ sql = "UPDATE amep14.ciutada SET "
+			"nom_complet = '" + getNomComplet() + "', "
+			"contrasenya = '" + getContrasenya() + "', "
+			"correu = '" + getCorreu() + "' "
 			"WHERE nickname = '" + getNickname() + "';";
 
 		MySqlCommand^ cmd2 = gcnew MySqlCommand(sql, conn);

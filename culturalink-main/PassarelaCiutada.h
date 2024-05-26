@@ -25,7 +25,9 @@ public:
 	
 	void insereix();
 	void modifica();
+	void modificaSensData();
 	void esborra(String^ nickname);
+
 	void borrar_punts(int^ preuPuntsEsdev);
 	void borrar_diners(int^ preuEsd);
 	void afegir_punts_entrada(int^ punts);

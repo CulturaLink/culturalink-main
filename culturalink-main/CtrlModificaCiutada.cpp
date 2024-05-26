@@ -18,7 +18,10 @@ void CtrlModificaCiutada::modificaCiutada(String^ nNomC, String^ nCorr, String^ 
 	if ((nNomC != "" || nCorr != "" || nDat != "" || nCtr != "")) {
 
 		try {
-			ciutada->modifica();
+			if (nDat != "")
+				ciutada->modifica();
+			else
+				ciutada->modificaSensData();
 		}
 		catch (CorreuExisteix^ e1) {
 			// Actualizar el usuari iniciat
