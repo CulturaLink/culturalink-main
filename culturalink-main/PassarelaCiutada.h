@@ -22,8 +22,8 @@ public:
 	void crear(String^ name, String^ fullName, String^ password, String^ email, String^ date);
 	void insereix();
 	void esborra(String^ nickname);
-	void borrar_punts();
-	void borrar_diners(int^ preuEsd);
+	void borrar_punts(int^ quantitat,int^ punts2);
+	void borrar_diners(int^ preuEsd,int^ quantitat);
 	void afegir_punts_entrada(int^ punts);
 	void devolucio_punts(int^ punts);
 	void devolucio_diners(int^ diners);

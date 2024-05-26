@@ -1,20 +1,30 @@
-﻿  TxAnulaRegistreEsdeveniment.cpp
-C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\TxAnulaRegistreEsdeveniment.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
-  (compilando archivo de origen "/TxAnulaRegistreEsdeveniment.cpp")
-  C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\TxAnulaRegistreEsdeveniment.cpp(1,1):
+﻿  TxCompraEntradaEsdevenimentDiners.cpp
+C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\TxCompraEntradaEsdevenimentDiners.cpp(1,1): warning C4005: '__CLR_VER': redefinición de macro
+  (compilando archivo de origen "/TxCompraEntradaEsdevenimentDiners.cpp")
+  C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\TxCompraEntradaEsdevenimentDiners.cpp(1,1):
   '__CLR_VER' declarado previamente en la línea de comandos
   
-C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\TxAnulaRegistreEsdeveniment.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
-  (compilando archivo de origen "/TxAnulaRegistreEsdeveniment.cpp")
+C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\TxCompraEntradaEsdevenimentDiners.cpp(1,1): warning C4651: Se especificó '/D__CLR_VER=40809232' para el encabezado precompilado pero no para la compilación actual
+  (compilando archivo de origen "/TxCompraEntradaEsdevenimentDiners.cpp")
   
 C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/TxAnulaRegistreEsdeveniment.cpp")
+  (compilando archivo de origen "/TxCompraEntradaEsdevenimentDiners.cpp")
   
 C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/TxAnulaRegistreEsdeveniment.cpp")
+  (compilando archivo de origen "/TxCompraEntradaEsdevenimentDiners.cpp")
   
-C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\TxAnulaRegistreEsdeveniment.cpp(25,30): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/TxAnulaRegistreEsdeveniment.cpp")
+C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
+  (compilando archivo de origen "/TxCompraEntradaEsdevenimentDiners.cpp")
+  C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\Transaccio.h(11,11):
+  'void Transaccio::executar(void)': es abstracto
+  C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\Transaccio.h(14,18):
+  vea la declaración de 'Transaccio::executar'
+  
+C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\TxCompraEntradaEsdevenimentDiners.cpp(34,65): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxCompraEntradaEsdevenimentDiners.cpp")
+  
+C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\culturalink-main\TxCompraEntradaEsdevenimentDiners.cpp(27,29): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compilando archivo de origen "/TxCompraEntradaEsdevenimentDiners.cpp")
   
   AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   culturalink-main.vcxproj -> C:\Users\Gerard\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink-main.exe

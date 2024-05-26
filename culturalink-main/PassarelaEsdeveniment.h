@@ -21,7 +21,7 @@ public:
     PassarelaEsdeveniment(String^ nomEsdev, float preu);
     PassarelaEsdeveniment();
     void insereix();
-    void restar_aforament();
+    void restar_aforament(int^ quantitat);
     void sumar_aforament();
     PassarelaEsdeveniment% operator=(const PassarelaEsdeveniment% other);
     PassarelaEsdeveniment(const PassarelaEsdeveniment% p1);

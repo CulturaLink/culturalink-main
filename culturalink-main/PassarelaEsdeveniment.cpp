@@ -109,7 +109,7 @@ void PassarelaEsdeveniment::insereix() {
         conn->Close();
     }
 }
-void PassarelaEsdeveniment::restar_aforament()
+void PassarelaEsdeveniment::restar_aforament(int^ quantitat)
 {
 
     String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
@@ -119,7 +119,7 @@ void PassarelaEsdeveniment::restar_aforament()
     String^ sql = "UPDATE esdeveniment SET aforament = @aforament WHERE nom_esdeveniment = @nom";
     MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
     cmd->Parameters->AddWithValue("@nom", getNomEsd());// Asignación del valor del parámetro
-    cmd->Parameters->AddWithValue("@aforament", _aforamentEsd - 1);// Asignación del valor del parámetro
+    cmd->Parameters->AddWithValue("@aforament", _aforamentEsd -*(quantitat));// Asignación del valor del parámetro
     MySqlDataReader^ dataReader;
     try {
         // obrim la connexió

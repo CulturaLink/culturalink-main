@@ -68,6 +68,8 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Button^ Compra;
 	private: System::Windows::Forms::RadioButton^ radioButton1;
 	private: System::Windows::Forms::RadioButton^ radioButton2;
+	private: System::Windows::Forms::TextBox^ textBox2;
+	private: System::Windows::Forms::Label^ label13;
 	protected:
 
 	private:
@@ -105,6 +107,8 @@ namespace culturalink_main {
 			this->Compra = (gcnew System::Windows::Forms::Button());
 			this->radioButton1 = (gcnew System::Windows::Forms::RadioButton());
 			this->radioButton2 = (gcnew System::Windows::Forms::RadioButton());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->label13 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// textBox1
@@ -291,7 +295,7 @@ namespace culturalink_main {
 			// 
 			// Compra
 			// 
-			this->Compra->Location = System::Drawing::Point(106, 363);
+			this->Compra->Location = System::Drawing::Point(29, 366);
 			this->Compra->Name = L"Compra";
 			this->Compra->Size = System::Drawing::Size(75, 23);
 			this->Compra->TabIndex = 23;
@@ -324,11 +328,31 @@ namespace culturalink_main {
 			this->radioButton2->UseVisualStyleBackColor = true;
 			this->radioButton2->Visible = false;
 			// 
+			// textBox2
+			// 
+			this->textBox2->Location = System::Drawing::Point(110, 368);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(58, 20);
+			this->textBox2->TabIndex = 26;
+			this->textBox2->Visible = false;
+			// 
+			// label13
+			// 
+			this->label13->AutoSize = true;
+			this->label13->Location = System::Drawing::Point(179, 371);
+			this->label13->Name = L"label13";
+			this->label13->Size = System::Drawing::Size(48, 13);
+			this->label13->TabIndex = 27;
+			this->label13->Text = L"entradas";
+			this->label13->Visible = false;
+			// 
 			// ConsultaEsdevenimentUI
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(458, 451);
+			this->Controls->Add(this->label13);
+			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->radioButton2);
 			this->Controls->Add(this->radioButton1);
 			this->Controls->Add(this->Compra);
@@ -394,6 +418,8 @@ namespace culturalink_main {
 		Compra->Visible = true;
 		radioButton1->Visible = true;
 		radioButton2->Visible = true;
+		textBox2->Visible = true;
+		label13->Visible = true;
 
 	}
 	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -410,8 +436,19 @@ namespace culturalink_main {
 	private: System::Void Compra_Click(System::Object^ sender, System::EventArgs^ e) {
 		try
 		{
+			if(this->textBox2->Text->Length == 0)
+			{
+				MessageBox::Show("Esta buit el camp 'entrades'", "Camp amb format incorrecte", MessageBoxButtons::OK);
+				return;
+			}
 			String^ nomEsd = this->textBox1->Text;
-			if (radioButton2->Checked)
+			int^ quantitat_entrad = Int32::Parse(this->textBox2->Text);
+			if (*quantitat_entrad > 10 || *quantitat_entrad <= 0)
+			{
+				MessageBox::Show("Només pots comprar 10 entrades com a màxim", "Camp amb format incorrecte", MessageBoxButtons::OK);
+				return;
+			}
+			if (radioButton2->Checked && this->textBox2->Text->Length != 0)
 			{
 				UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
 				Object^ usuarioAlmacenado = usuario->getUsuari();
@@ -419,13 +456,13 @@ namespace culturalink_main {
 				if (usuarioAlmacenado == nullptr) throw(ErrorUsuari);
 				// Verificar el tipo de usuario y actuar en consecuencia
 				if (tipoUsuario == TipoPassarela::Ciutada) {
-					TxCompraEntradaEsdevenimentPunts tx1(nomEsd);
+					TxCompraEntradaEsdevenimentPunts tx1(nomEsd,quantitat_entrad);
 					tx1.executar();
 					MessageBox::Show("Compra finalitzada amb exit", "", MessageBoxButtons::OK);
 					this->Close();
 				}
 			}
-			else if (radioButton1->Checked)
+			else if (radioButton1->Checked && this->textBox2->Text->Length != 0)
 			{
 				UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
 				Object^ usuarioAlmacenado = usuario->getUsuari();
@@ -446,7 +483,7 @@ namespace culturalink_main {
 							this->Show();
 							this->Visible = true;
 					}
-					TxCompraEntradaEsdevenimentDiners tx1(nomEsd);
+					TxCompraEntradaEsdevenimentDiners tx1(nomEsd,quantitat_entrad);
 					tx1.executar();
 					MessageBox::Show("Compra finalitzada amb exit", "", MessageBoxButtons::OK);
 					this->Close();

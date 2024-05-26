@@ -9,6 +9,7 @@ PassarelaInscripcio::PassarelaInscripcio(const PassarelaInscripcio% p1)
     this->nomEsdeveniment = p1.nomEsdeveniment;
     this->preu = p1.preu;
     this->punts_diners = p1.punts_diners;
+    this->quanitat_entrades = p1.quanitat_entrades;
 }
 PassarelaInscripcio::PassarelaInscripcio()
 {
@@ -17,6 +18,7 @@ PassarelaInscripcio::PassarelaInscripcio()
     nomEsdeveniment = "";
     preu = 0;
     punts_diners = 0;
+    quanitat_entrades = 1;
 }
 PassarelaInscripcio% PassarelaInscripcio::operator=(const PassarelaInscripcio% other)
 {
@@ -27,16 +29,18 @@ PassarelaInscripcio% PassarelaInscripcio::operator=(const PassarelaInscripcio% o
         nomEsdeveniment = other.nomEsdeveniment;
         preu = other.preu;
         punts_diners = other.punts_diners;
+        quanitat_entrades = other.quanitat_entrades;
     }
     return *this;
 }
-PassarelaInscripcio::PassarelaInscripcio(String^ nickCiutadaI, String^ dataI, String^ nomEsdI, int^ preuI,int^ punts_dinersI)
+PassarelaInscripcio::PassarelaInscripcio(String^ nickCiutadaI, String^ dataI, String^ nomEsdI, int^ preuI,int^ punts_dinersI, int^ quanitat_entradesI)
 {
     nickCiutada = nickCiutadaI;
     data = dataI;
     nomEsdeveniment = nomEsdI;
     preu = preuI;
     punts_diners = punts_dinersI;
+    quanitat_entrades = quanitat_entradesI;
 }
 void PassarelaInscripcio::insereix()
 {
@@ -54,10 +58,9 @@ void PassarelaInscripcio::insereix()
     else
     {
         conn->Close();
-        MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
-        String^ sql = "INSERT INTO inscripcio VALUES('" + nickCiutada + "', '" + data + "', '" + preu + "', '" + nomEsdeveniment + "', '" + punts_diners + "')";;
+        
+        String^ sql = "INSERT INTO inscripcio VALUES('" + nickCiutada + "', '" + data + "', '" +*(preu)* *(quanitat_entrades) + "', '" + nomEsdeveniment + "', '" + punts_diners + "', '" + quanitat_entrades + "')";;
         MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
-
         MySqlDataReader^ dataReader;
         try {
             // obrim la connexió
@@ -74,7 +77,11 @@ void PassarelaInscripcio::insereix()
             conn->Close();
         }
     }
-}
+    }
+   
+        
+    
+
 void PassarelaInscripcio::elimina()
 {
     String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
@@ -118,6 +125,10 @@ int^ PassarelaInscripcio::ObtePreu()
 int^ PassarelaInscripcio::ObtePunts_Diners()
 {
     return punts_diners;
+}
+int^ PassarelaInscripcio::ObteQuantitat_entrades()
+{
+    return quanitat_entrades;
 }
 void PassarelaInscripcio::posaNickCiutada(String^ nickCiutadaI)
 {

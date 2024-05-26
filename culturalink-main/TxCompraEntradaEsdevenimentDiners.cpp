@@ -3,8 +3,9 @@
 #include "TxCompraEntradaEsdevenimentDiners.h"
 
 
-TxCompraEntradaEsdevenimentDiners::TxCompraEntradaEsdevenimentDiners(String^ nomEsd2) {
+TxCompraEntradaEsdevenimentDiners::TxCompraEntradaEsdevenimentDiners(String^ nomEsd2,int^ quantitat_entrad2) {
 	nomEsd = nomEsd2;
+	quantitat_entrad = quantitat_entrad2;
 }
 void TxCompraEntradaEsdevenimentDiners::executar()
 {
@@ -17,10 +18,10 @@ void TxCompraEntradaEsdevenimentDiners::executar()
 	PassarelaCiutada^ passarelaCiutada = safe_cast<PassarelaCiutada^>(usuarioAlmacenado);
 	if (passarelaCiutada->getDiners() != nullptr)
 	{
-		int diners = *passarelaCiutada->getDiners();
+		int diners = *passarelaCiutada->getDiners() * *(quantitat_entrad);
 		if (pes.getPreu() > diners)throw(errorDinersInsuficients);
 	}
-	if (pes.getAforamentEsd() == 0) throw(errorAforament2);
+	if (pes.getAforamentEsd() == 0 || *(quantitat_entrad) > pes.getAforamentEsd()) throw(errorAforament2);
 	auto now = std::chrono::system_clock::now();
 	std::time_t now_time = std::chrono::system_clock::to_time_t(now);
 	std::tm* local_time = std::localtime(&now_time);
@@ -28,9 +29,10 @@ void TxCompraEntradaEsdevenimentDiners::executar()
 	std::strftime(buffer, 80, "%Y-%m-%d %H:%M:%S", local_time);
 	System::String^ time = gcnew System::String(buffer);
 	int^ preu = gcnew int(static_cast<int>(pes.getPreu()));
-	passarelaCiutada->borrar_diners(preu);
-	PassarelaInscripcio inscrip(passarelaCiutada->getNickname(), time, pes.getNomEsd(), preu,0);
-	inscrip.insereix();
-	pes.restar_aforament();
-	passarelaCiutada->afegir_punts_entrada(pes.getPuntsDescEsd());
+	passarelaCiutada->borrar_diners(preu,quantitat_entrad);
+	String^ nick = passarelaCiutada->getNickname();	
+	PassarelaInscripcio inscrip(nick, time, pes.getNomEsd(), preu, 0, quantitat_entrad);
+	inscrip.insereix(); 
+	pes.restar_aforament(quantitat_entrad);
+	passarelaCiutada->afegir_punts_entrada(pes.getPuntsDescEsd()* *(quantitat_entrad));
 }

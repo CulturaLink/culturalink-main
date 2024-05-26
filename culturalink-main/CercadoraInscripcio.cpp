@@ -27,8 +27,9 @@ List<PassarelaInscripcio^>^ CercadoraInscripcio::cercaTotesInscripcions(String^ 
             int preuC = dataReader->GetFloat(2);
             String^ esdev = dataReader->GetString(3);
             int^ punts_diners = dataReader->GetInt32(4);
+            int^ quantitat_entrades = dataReader->GetInt32(5);
 
-            PassarelaInscripcio^ pI = gcnew PassarelaInscripcio(nickC, dataC, esdev, preuC,punts_diners);
+            PassarelaInscripcio^ pI = gcnew PassarelaInscripcio(nickC, dataC, esdev, preuC,punts_diners, quantitat_entrades);
 
             totsInscrip->Add(pI);
         }
@@ -60,17 +61,24 @@ PassarelaInscripcio CercadoraInscripcio::cercaInscripcio(String^ nick, String^ n
     try {
         // obrim la connexió
         conn->Open();
-
-        List<PassarelaInscripcio^>^ totsInscrip = gcnew List<PassarelaInscripcio^>(); // Initialize the list
-        // executem la comanda (cmd) que s’ha creat abans del try
         dataReader = cmd->ExecuteReader();
+        if (dataReader->Read())
+        {
             String^ nickC = dataReader->GetString(0);
             String^ dataC = dataReader->GetMySqlDateTime(1).ToString();
             int preuC = dataReader->GetFloat(2);
             String^ esdev = dataReader->GetString(3);
             int^ punts_diners = dataReader->GetInt32(4);
-            PassarelaInscripcio pI(nickC, dataC, esdev, preuC, punts_diners); 
+            int^ quantitat_entrades = dataReader->GetInt32(5);
+            PassarelaInscripcio pI(nickC, dataC, esdev, preuC, punts_diners, quantitat_entrades);
             return pI;
+        }
+        else
+        {
+            PassarelaInscripcio p1;
+            return p1;
+        }
+
     }
     catch (Exception^ ex) {
         // codi per mostrar l’error en una finestra
