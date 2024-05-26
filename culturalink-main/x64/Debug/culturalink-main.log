@@ -1,27 +1,6 @@
-﻿  CercadoraCiutada.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  InfoCiutada.cpp
-  MainForm.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  PassarelaCiutada.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(14,12): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(15,11): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(78,43): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(79,42): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  TxLoginCiutada.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  TxRegisterCiutada.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  culturalinkmain.cpp
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+﻿  AssemblyInfo.cpp
+  MyForm.cpp
+  PassarelaAjuntament.cpp
   Generating Code...
-D:\Users\xavit\Documents\GitHub\culturalink-main\culturalink-main\CercadoraCiutada.cpp(50,1): warning C4715: 'CercadoraCiutada::cercaCiutada': not all control paths return a value
   AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   culturalink-main.vcxproj -> D:\Users\xavit\Documents\GitHub\culturalink-main\x64\Debug\culturalink-main.exe
