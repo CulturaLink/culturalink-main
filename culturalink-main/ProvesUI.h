@@ -581,6 +581,7 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->btnCancelarCOMP->TabIndex = 10;
 		this->btnCancelarCOMP->Text = L"Cancelar";
 		this->btnCancelarCOMP->UseVisualStyleBackColor = true;
+		this->btnCancelarCOMP->Click += gcnew System::EventHandler(this, &ProvesUI::btnCancelarCOMP_Click);
 		// 
 		// btnComprarCOMP
 		// 
@@ -3675,7 +3676,6 @@ private: System::Void btnComprarCOMP_Click(System::Object^ sender, System::Event
 
 }
 
-
 private: System::Void btnComprarPuntsCONS_Click(System::Object^ sender, System::EventArgs^ e) {
 	try
 	{
@@ -3818,9 +3818,11 @@ void addDyamicPanelElsMeusEsdevs(String^ nomEsdev, String^ data, String^ preu, S
 	pnlDynMESDEVex->Size = System::Drawing::Size(588, 48);
 	pnlDynMESDEVex->TabIndex = 0;
 
-
 	this->flowLayoutPanelMESDEV->Controls->Add(pnlDynMESDEVex);
 }
 
+private: System::Void btnCancelarCOMP_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->pnlCOMP->Visible = false;
+}
 };
 }

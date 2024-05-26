@@ -220,6 +220,9 @@
     <ClInclude Include="TxConsultaEntitat.h" />
     <ClInclude Include="TxIniciaSessio.h" />
     <ClInclude Include="TxRegistraEntitat.h" />
+    <ClInclude Include="UIModificaEsdeveniment.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="UsuariIniciat.h" />
   </ItemGroup>
   <ItemGroup>
@@ -280,6 +283,7 @@
     <ClCompile Include="TxConsultaEntitat.cpp" />
     <ClCompile Include="TxIniciaSessio.cpp" />
     <ClCompile Include="TxRegistraEntitat.cpp" />
+    <ClCompile Include="UIModificaEsdeveniment.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico" />

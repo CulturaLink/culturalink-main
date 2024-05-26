@@ -100,7 +100,7 @@ namespace culturalink_main {
 			this->PANELMeusEsdevs->Controls->Add(this->pnlTotGastatEsqMESDEV);
 			this->PANELMeusEsdevs->Controls->Add(this->flowLayoutPanelMESDEV);
 			this->PANELMeusEsdevs->Controls->Add(this->pnlTitlesMESDEV);
-			this->PANELMeusEsdevs->Location = System::Drawing::Point(182, 25);
+			this->PANELMeusEsdevs->Location = System::Drawing::Point(168, 31);
 			this->PANELMeusEsdevs->Name = L"PANELMeusEsdevs";
 			this->PANELMeusEsdevs->Size = System::Drawing::Size(792, 628);
 			this->PANELMeusEsdevs->TabIndex = 0;

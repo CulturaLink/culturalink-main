@@ -185,6 +185,9 @@
     <ClInclude Include="CercadoraInscripcio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="UIModificaEsdeveniment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -347,6 +350,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CercadoraInscripcio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIModificaEsdeveniment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

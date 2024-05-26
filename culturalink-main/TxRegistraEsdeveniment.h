@@ -21,7 +21,6 @@ private:
     String^ dataE;
     int puntsDescE;
 
-
 public:
     TxRegistraEsdeveniment();
     TxRegistraEsdeveniment(int idEnt, String^ nomEsd, float preuEsd, String^ descEsd, String^ ajuntamEsd, String^ tipusEsd, int aforamentEsd, int puntsCostEsd, String^ data, int puntsDescE);
