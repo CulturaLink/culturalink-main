@@ -15,6 +15,7 @@
   culturalink_main.RegistraEntitat.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.RegistraEsdevenimentUI1.resources - Embedded, ContainedInManifestFile, 
   culturalink_main.RegistrarEsdevenimentUI.resources - Embedded, ContainedInManifestFile, 
+  culturalink_main.UIModificaEsdeveniment.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly culturalink-main, Version=1.0.*, Culture=Todos los idiomas (todos los países): 
 	hash=SHA1, flags=PublicKey
@@ -34,6 +35,9 @@ Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
+Class CostumCorreuExisteix.CorreuExisteix: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Exception
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class CustomControls.CustomButton: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Button
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -100,5 +104,8 @@ Class culturalink_main.Entitat_BandejaEntradaSolicitud: AutoLayout, AnsiClass, C
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class culturalink_main.RegistraEsdevenimentUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class culturalink_main.UIModificaEsdeveniment: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

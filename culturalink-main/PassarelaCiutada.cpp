@@ -40,15 +40,24 @@ PassarelaCiutada% PassarelaCiutada::operator=(const PassarelaCiutada% other)
 	return *this;
 }
 
-void PassarelaCiutada::crear(String^ name, String^ fullName, String^ password, String^ email, String^ date)
+PassarelaCiutada::PassarelaCiutada(String^ name, String^ fullName, String^ password, String^ email, String^ date)
 {
 	_nickname = name;
 	_nom_complet = fullName;
 	_contrasenya = password;
 	_correu = email;
 	_data_naix = date;
-	_diners = 0;
-	_punts = 0;
+}
+
+PassarelaCiutada::PassarelaCiutada(String^ name, String^ fullName, String^ password, String^ email, String^ date, int diners, int punts)
+{
+	_nickname = name;
+	_nom_complet = fullName;
+	_contrasenya = password;
+	_correu = email;
+	_data_naix = date;
+	_diners = diners;
+	_punts = punts;
 }
 
 //Register
@@ -81,6 +90,57 @@ void PassarelaCiutada::insereix() {
 		// codi per mostrar l’error en una finestra
 		MessageBox::Show(ex->Message);
 		throw runtime_error("El format de la data no es correcte o l'usuai ja existeix");
+	}
+	finally {
+		// si tot va bé es tanca la connexió
+		conn->Close();
+	}
+}
+
+void PassarelaCiutada::modifica() {
+	String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
+	MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
+
+	// Comprobar si el correu ya existe, throw excepcion en caso que si
+	String^ sqlCheckCorreu = "SELECT COUNT(*) FROM amep14.ciutada WHERE correu = '" + getCorreu() + "' AND nickname <> '" + getNickname() + "';";
+
+	try {
+		// obrim la connexió
+		conn->Open();
+
+		MySqlCommand^ cmd1 = gcnew MySqlCommand(sqlCheckCorreu, conn);
+		MySqlDataReader^ dataReader1;
+		dataReader1 = cmd1->ExecuteReader();
+
+		int c = 0;
+
+		if (dataReader1->Read()) { // Check if there are rows to read 
+			c = Convert::ToInt32(dataReader1[0]); // Read the count from the first column (index 0)
+		}
+
+		if (c != 0) throw gcnew CorreuExisteix("Correu ja existeix!");
+
+		dataReader1->Close();
+		//String^ clauString = passAju->getClau()->ToString();
+
+		String^ sql = "UPDATE amep14.ciutada SET "
+			"nom_complet = '" + getNomComplet() + "', "
+			"contrasenya = '" + getContrasenya() + "', "
+			"correu = '" + getCorreu() + "', "
+			"data_naix = '" + getDataNaix() + "' "
+			"WHERE nickname = '" + getNickname() + "';";
+
+		MySqlCommand^ cmd2 = gcnew MySqlCommand(sql, conn);
+
+		MySqlDataReader^ dataReader2;
+
+		// executem la comanda creada abans del try
+		dataReader2 = cmd2->ExecuteReader();
+	}
+	catch (Exception^ ex) {
+		// codi per mostrar l’error en una finestra
+		//MessageBox::Show(ex->Message);
+		throw ex;
 	}
 	finally {
 		// si tot va bé es tanca la connexió
@@ -332,3 +392,4 @@ String^ PassarelaCiutada::getNickname()
 {
 	return _nickname;
 }
+

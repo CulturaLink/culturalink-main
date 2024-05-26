@@ -5,7 +5,6 @@
 using namespace System::Windows::Forms;
 
 TxRegisterCiutada::TxRegisterCiutada(String^ name, String^ email, String^ fullName, String^ password, String^ date) {
-
 	_nickname = name;
 	_correu = email;
 	_nom_complet = fullName;
@@ -14,8 +13,6 @@ TxRegisterCiutada::TxRegisterCiutada(String^ name, String^ email, String^ fullNa
 }
 
 void TxRegisterCiutada::executar() {
-	//CercadoraCiutada cerc;
-	PassarelaCiutada pC;
-	pC.crear(_nickname, _nom_complet, _contrasenya, _correu, _data_naix);
+	PassarelaCiutada pC(_nickname, _nom_complet, _contrasenya, _correu, _data_naix);
 	pC.insereix();
 }

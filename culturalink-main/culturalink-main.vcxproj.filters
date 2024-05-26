@@ -188,6 +188,15 @@
     <ClInclude Include="UIModificaEsdeveniment.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CtrlModificaCiutada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TxConsultaCiutada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExcepcioCorreuExisteix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -353,6 +362,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="UIModificaEsdeveniment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CtrlModificaCiutada.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TxConsultaCiutada.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

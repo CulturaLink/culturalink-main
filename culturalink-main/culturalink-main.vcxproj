@@ -153,6 +153,7 @@
     <ClInclude Include="ConsultarUsuariUI.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="CtrlModificaCiutada.h" />
     <ClInclude Include="CtrlModificaEsdeveniment.h" />
     <ClInclude Include="CustomButtonEsdev.h" />
     <ClInclude Include="ElsMeusEsdevUI.h">
@@ -162,6 +163,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Esdeveniment.h" />
+    <ClInclude Include="ExcepcioCorreuExisteix.h" />
     <ClInclude Include="InfoAjuntament.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -205,6 +207,7 @@
     <ClInclude Include="TxCompraEntradaEsdevenimentDiners.h" />
     <ClInclude Include="TxCompraEntradaEsdevenimentPunts.h" />
     <ClInclude Include="TxConsultaAjuntament.h" />
+    <ClInclude Include="TxConsultaCiutada.h" />
     <ClInclude Include="TxConsultaEsdeveniment.h" />
     <ClInclude Include="TxConsultaEsdevenimentsAjuntament.h" />
     <ClInclude Include="TxConsultaEsdevenimentsAmbTipus.h" />
@@ -237,6 +240,7 @@
     <ClCompile Include="ComprarEsdevenimentUI.cpp" />
     <ClCompile Include="ConsultaEsdevenimentUI.cpp" />
     <ClCompile Include="ConsultarUsuariUI.cpp" />
+    <ClCompile Include="CtrlModificaCiutada.cpp" />
     <ClCompile Include="CtrlModificaEsdeveniment.cpp" />
     <ClCompile Include="culturalinkmain.cpp" />
     <ClCompile Include="ElsMeusEsdevUI.cpp" />
@@ -268,6 +272,7 @@
     <ClCompile Include="TxCompraEntradaEsdevenimentDiners.cpp" />
     <ClCompile Include="TxCompraEntradaEsdevenimentPunts.cpp" />
     <ClCompile Include="TxConsultaAjuntament.cpp" />
+    <ClCompile Include="TxConsultaCiutada.cpp" />
     <ClCompile Include="TxConsultaEsdeveniment.cpp" />
     <ClCompile Include="TxConsultaEsdevenimentsAjuntament.cpp" />
     <ClCompile Include="TxConsultaEsdevenimentsAmbTipus.cpp" />
@@ -350,6 +355,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarEsdevenimentUI.resx">
       <DependentUpon>RegistrarEsdevenimentUI.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModificaEsdeveniment.resx">
+      <DependentUpon>UIModificaEsdeveniment.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

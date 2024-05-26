@@ -1,5 +1,11 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: El directorio Output no termina con una barra diagonal final. Esta instancia de compilación agregará la barra diagonal porque es necesaria para que se pueda evaluar correctamente el directorio Output.
   CercadoraCiutada.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/CercadoraCiutada.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/CercadoraCiutada.cpp")
+  
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
@@ -10,31 +16,25 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(1
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3048,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3140,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2754,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3215,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2836,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3243,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2911,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3271,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2939,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3484,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2967,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/CercadoraCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3180,41): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/CercadoraCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3528,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3833,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': variable local sin referencia
@@ -63,25 +63,25 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2754,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3048,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2836,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3140,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2911,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3215,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2939,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3243,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2967,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3271,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3180,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3484,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3528,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3833,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': variable local sin referencia
@@ -110,25 +110,25 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2754,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3048,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2836,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3140,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2911,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3215,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2939,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3243,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2967,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3271,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3180,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3484,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3528,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3833,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': variable local sin referencia
@@ -141,6 +141,12 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(553,32
   (compilando archivo de origen "/MainForm.cpp")
   
   PassarelaCiutada.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/PassarelaCiutada.cpp")
+  
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
@@ -151,31 +157,25 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(1
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3048,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3140,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2754,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3215,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2836,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3243,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2911,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3271,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2939,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3484,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2967,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3180,41): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3528,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3833,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': variable local sin referencia
@@ -193,16 +193,10 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiuta
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(15,11): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(50,12): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(78,43): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(51,11): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(69,43): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
-  (compilando archivo de origen "/PassarelaCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(70,42): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(79,42): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
   ProvesUI.cpp
@@ -219,28 +213,34 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/ProvesUI.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2754,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3048,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/ProvesUI.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2836,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3140,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/ProvesUI.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2911,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3215,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/ProvesUI.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2939,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3243,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/ProvesUI.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2967,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3271,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/ProvesUI.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3180,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3484,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/ProvesUI.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3528,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3833,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/ProvesUI.cpp")
   
   TxLoginCiutada.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxLoginCiutada.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxLoginCiutada.cpp")
+  
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
@@ -251,31 +251,25 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(1
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3048,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3140,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2754,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3215,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2836,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3243,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2911,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3271,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2939,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3484,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2967,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/TxLoginCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3180,41): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/TxLoginCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3528,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3833,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': variable local sin referencia
@@ -288,6 +282,12 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(553,32
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
   TxRegisterCiutada.cpp
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxRegisterCiutada.cpp")
+  
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+  (compilando archivo de origen "/TxRegisterCiutada.cpp")
+  
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': no se ha declarado explícitamente como abstracto pero tiene funciones abstractas
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
@@ -298,31 +298,25 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(1
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3048,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3140,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2754,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3215,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2836,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3243,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2911,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3271,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2939,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3484,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2967,40): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/TxRegisterCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3180,41): warning C4101: 'list_esdevs': variable local sin referencia
-  (compilando archivo de origen "/TxRegisterCiutada.cpp")
-  
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3528,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3833,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': variable local sin referencia
@@ -351,25 +345,25 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(291,77): warning C4965: conversión boxing implícita de entero 0; utilice nullptr o conversión explícita
   (compilando archivo de origen "/culturalinkmain.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2754,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3048,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/culturalinkmain.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2836,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3140,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/culturalinkmain.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2911,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3215,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/culturalinkmain.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2939,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3243,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/culturalinkmain.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(2967,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3271,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/culturalinkmain.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3180,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3484,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/culturalinkmain.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3528,40): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(3833,40): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/culturalinkmain.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(509,32): warning C4101: 'e': variable local sin referencia
@@ -382,5 +376,6 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(553,32
   (compilando archivo de origen "/culturalinkmain.cpp")
   
   Generando código...
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\CercadoraCiutada.cpp(50): warning C4715: 'CercadoraCiutada::cercaCiutada': no todas las rutas de acceso de control devuelven un valor
   AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   culturalink-main.vcxproj -> C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\culturalink-main.exe

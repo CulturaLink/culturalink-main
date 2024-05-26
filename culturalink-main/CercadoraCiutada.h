@@ -1,14 +1,19 @@
 #pragma once
 #include<iostream>
+#include <string>
+#include <vector>
+#include "PassarelaCiutada.h"
+
 using namespace std;
 using namespace MySql::Data::MySqlClient;
 using namespace System;
-#include "PassarelaCiutada.h"
+
 ref class CercadoraCiutada
 {
+public:
+	CercadoraCiutada();
+	PassarelaCiutada cercaCiutada(String^ nickname);
+
 private:
 
-public:
-	PassarelaCiutada cercaCiutada(String^ nickname);
 };
-

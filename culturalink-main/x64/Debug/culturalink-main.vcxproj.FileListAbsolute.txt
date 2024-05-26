@@ -53,3 +53,4 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\System.Num
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\System.Buffers.dll
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\MySql.Data.xml
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ElsMeusEsdevUI.resources
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.UIModificaEsdeveniment.resources
