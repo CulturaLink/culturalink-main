@@ -185,6 +185,12 @@
     <ClInclude Include="CercadoraInscripcio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ModificaAjuntamentUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModificaEntitatUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -347,6 +353,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CercadoraInscripcio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModificaAjuntamentUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModificaEntitatUI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

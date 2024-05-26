@@ -177,6 +177,12 @@
     <ClInclude Include="MainForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="ModificaAjuntamentUI.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ModificaEntitatUI.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="PassarelaAjuntament.h" />
     <ClInclude Include="PassarelaCiutada.h" />
     <ClInclude Include="PassarelaEntitat.h" />
@@ -244,6 +250,8 @@
     <ClCompile Include="InfoEntitat.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="MainForm.cpp" />
+    <ClCompile Include="ModificaAjuntamentUI.cpp" />
+    <ClCompile Include="ModificaEntitatUI.cpp" />
     <ClCompile Include="PassarelaAjuntament.cpp" />
     <ClCompile Include="PassarelaCiutada.cpp" />
     <ClCompile Include="PassarelaEntitat.cpp" />
@@ -331,6 +339,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificaAjuntamentUI.resx">
+      <DependentUpon>ModificaAjuntamentUI.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProvesUI.resx">
       <DependentUpon>ProvesUI.h</DependentUpon>
