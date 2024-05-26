@@ -75,7 +75,8 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Panel^ panel1;
 	private: System::Windows::Forms::Label^ TitleCC;
 	private: System::Windows::Forms::ListBox^ listBox1;
-	private: System::Windows::Forms::Panel^ panel2;
+	private: System::Windows::Forms::Panel^ PANELModificaCiut;
+
 
 
 
@@ -141,6 +142,19 @@ namespace culturalink_main {
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->PANELModificaCiut = (gcnew System::Windows::Forms::Panel());
+			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->NpaswdR = (gcnew System::Windows::Forms::TextBox());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->Npaswd = (gcnew System::Windows::Forms::TextBox());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->Ndat = (gcnew System::Windows::Forms::TextBox());
+			this->Nname = (gcnew System::Windows::Forms::TextBox());
+			this->Ncorr = (gcnew System::Windows::Forms::TextBox());
+			this->label14 = (gcnew System::Windows::Forms::Label());
+			this->label17 = (gcnew System::Windows::Forms::Label());
+			this->label18 = (gcnew System::Windows::Forms::Label());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->TitleCC = (gcnew System::Windows::Forms::Label());
 			this->listBox1 = (gcnew System::Windows::Forms::ListBox());
@@ -152,26 +166,13 @@ namespace culturalink_main {
 			this->panelTitleBar = (gcnew System::Windows::Forms::Panel());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
-			this->panel2 = (gcnew System::Windows::Forms::Panel());
-			this->button4 = (gcnew System::Windows::Forms::Button());
-			this->NpaswdR = (gcnew System::Windows::Forms::TextBox());
-			this->label8 = (gcnew System::Windows::Forms::Label());
-			this->Npaswd = (gcnew System::Windows::Forms::TextBox());
-			this->label6 = (gcnew System::Windows::Forms::Label());
-			this->Nname = (gcnew System::Windows::Forms::TextBox());
-			this->Ncorr = (gcnew System::Windows::Forms::TextBox());
-			this->label17 = (gcnew System::Windows::Forms::Label());
-			this->label18 = (gcnew System::Windows::Forms::Label());
-			this->Ndat = (gcnew System::Windows::Forms::TextBox());
-			this->label14 = (gcnew System::Windows::Forms::Label());
-			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->panelDesktop->SuspendLayout();
+			this->PANELModificaCiut->SuspendLayout();
 			this->panel1->SuspendLayout();
 			this->panelMenu->SuspendLayout();
 			this->panelTitleBar->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
-			this->panel2->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// panelDesktop
@@ -195,7 +196,7 @@ namespace culturalink_main {
 			this->panelDesktop->Location = System::Drawing::Point(150, 49);
 			this->panelDesktop->Margin = System::Windows::Forms::Padding(2);
 			this->panelDesktop->Name = L"panelDesktop";
-			this->panelDesktop->Size = System::Drawing::Size(576, 381);
+			this->panelDesktop->Size = System::Drawing::Size(920, 632);
 			this->panelDesktop->TabIndex = 7;
 			// 
 			// lPunts
@@ -330,6 +331,141 @@ namespace culturalink_main {
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Usuari:";
 			// 
+			// PANELModificaCiut
+			// 
+			this->PANELModificaCiut->BackColor = System::Drawing::Color::Linen;
+			this->PANELModificaCiut->Controls->Add(this->label9);
+			this->PANELModificaCiut->Controls->Add(this->button4);
+			this->PANELModificaCiut->Controls->Add(this->NpaswdR);
+			this->PANELModificaCiut->Controls->Add(this->label8);
+			this->PANELModificaCiut->Controls->Add(this->Npaswd);
+			this->PANELModificaCiut->Controls->Add(this->label6);
+			this->PANELModificaCiut->Controls->Add(this->Ndat);
+			this->PANELModificaCiut->Controls->Add(this->Nname);
+			this->PANELModificaCiut->Controls->Add(this->Ncorr);
+			this->PANELModificaCiut->Controls->Add(this->label14);
+			this->PANELModificaCiut->Controls->Add(this->label17);
+			this->PANELModificaCiut->Controls->Add(this->label18);
+			this->PANELModificaCiut->Location = System::Drawing::Point(230, 31);
+			this->PANELModificaCiut->Name = L"PANELModificaCiut";
+			this->PANELModificaCiut->Size = System::Drawing::Size(646, 613);
+			this->PANELModificaCiut->TabIndex = 14;
+			this->PANELModificaCiut->Visible = false;
+			// 
+			// label9
+			// 
+			this->label9->AutoSize = true;
+			this->label9->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold));
+			this->label9->Location = System::Drawing::Point(252, 239);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(87, 13);
+			this->label9->TabIndex = 33;
+			this->label9->Text = L"(AAAA-MM-DD)";
+			// 
+			// button4
+			// 
+			this->button4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
+			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
+			this->button4->Location = System::Drawing::Point(457, 563);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(186, 47);
+			this->button4->TabIndex = 32;
+			this->button4->Text = L"Acceptar canvis";
+			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &InfoCiutada::button4_Click);
+			// 
+			// NpaswdR
+			// 
+			this->NpaswdR->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold));
+			this->NpaswdR->Location = System::Drawing::Point(129, 376);
+			this->NpaswdR->Name = L"NpaswdR";
+			this->NpaswdR->PasswordChar = '*';
+			this->NpaswdR->Size = System::Drawing::Size(239, 21);
+			this->NpaswdR->TabIndex = 31;
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold));
+			this->label8->Location = System::Drawing::Point(103, 349);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(138, 13);
+			this->label8->TabIndex = 30;
+			this->label8->Text = L"Repetir nova Contrasenya";
+			// 
+			// Npaswd
+			// 
+			this->Npaswd->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold));
+			this->Npaswd->Location = System::Drawing::Point(129, 320);
+			this->Npaswd->Name = L"Npaswd";
+			this->Npaswd->PasswordChar = '*';
+			this->Npaswd->Size = System::Drawing::Size(239, 21);
+			this->Npaswd->TabIndex = 29;
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold));
+			this->label6->Location = System::Drawing::Point(103, 293);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(100, 13);
+			this->label6->TabIndex = 28;
+			this->label6->Text = L"Nova Contrasenya";
+			// 
+			// Ndat
+			// 
+			this->Ndat->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold));
+			this->Ndat->Location = System::Drawing::Point(129, 236);
+			this->Ndat->Name = L"Ndat";
+			this->Ndat->Size = System::Drawing::Size(117, 21);
+			this->Ndat->TabIndex = 27;
+			// 
+			// Nname
+			// 
+			this->Nname->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold));
+			this->Nname->Location = System::Drawing::Point(377, 125);
+			this->Nname->Name = L"Nname";
+			this->Nname->Size = System::Drawing::Size(239, 21);
+			this->Nname->TabIndex = 26;
+			// 
+			// Ncorr
+			// 
+			this->Ncorr->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold));
+			this->Ncorr->Location = System::Drawing::Point(129, 178);
+			this->Ncorr->Name = L"Ncorr";
+			this->Ncorr->Size = System::Drawing::Size(239, 21);
+			this->Ncorr->TabIndex = 25;
+			// 
+			// label14
+			// 
+			this->label14->AutoSize = true;
+			this->label14->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold));
+			this->label14->Location = System::Drawing::Point(103, 209);
+			this->label14->Name = L"label14";
+			this->label14->Size = System::Drawing::Size(138, 13);
+			this->label14->TabIndex = 17;
+			this->label14->Text = L"Nova Data de Naixament:";
+			// 
+			// label17
+			// 
+			this->label17->AutoSize = true;
+			this->label17->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold));
+			this->label17->Location = System::Drawing::Point(103, 97);
+			this->label17->Name = L"label17";
+			this->label17->Size = System::Drawing::Size(106, 13);
+			this->label17->TabIndex = 14;
+			this->label17->Text = L"Nou Nom Complet:";
+			// 
+			// label18
+			// 
+			this->label18->AutoSize = true;
+			this->label18->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold));
+			this->label18->Location = System::Drawing::Point(103, 153);
+			this->label18->Name = L"label18";
+			this->label18->Size = System::Drawing::Size(68, 13);
+			this->label18->TabIndex = 13;
+			this->label18->Text = L"Nou Correu:";
+			// 
 			// panel1
 			// 
 			this->panel1->BackColor = System::Drawing::Color::WhiteSmoke;
@@ -338,7 +474,7 @@ namespace culturalink_main {
 			this->panel1->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->panel1->Location = System::Drawing::Point(150, 49);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(576, 381);
+			this->panel1->Size = System::Drawing::Size(920, 632);
 			this->panel1->TabIndex = 13;
 			// 
 			// TitleCC
@@ -363,7 +499,7 @@ namespace culturalink_main {
 			this->listBox1->ItemHeight = 24;
 			this->listBox1->Location = System::Drawing::Point(9, 63);
 			this->listBox1->Name = L"listBox1";
-			this->listBox1->Size = System::Drawing::Size(555, 292);
+			this->listBox1->Size = System::Drawing::Size(899, 532);
 			this->listBox1->Sorted = true;
 			this->listBox1->TabIndex = 0;
 			// 
@@ -378,7 +514,7 @@ namespace culturalink_main {
 			this->panelMenu->Location = System::Drawing::Point(0, 49);
 			this->panelMenu->Margin = System::Windows::Forms::Padding(2);
 			this->panelMenu->Name = L"panelMenu";
-			this->panelMenu->Size = System::Drawing::Size(150, 381);
+			this->panelMenu->Size = System::Drawing::Size(150, 632);
 			this->panelMenu->TabIndex = 5;
 			// 
 			// button3
@@ -414,7 +550,7 @@ namespace culturalink_main {
 			this->logOut->FlatAppearance->MouseOverBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
 				static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(192)));
 			this->logOut->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
-			this->logOut->Location = System::Drawing::Point(0, 341);
+			this->logOut->Location = System::Drawing::Point(0, 592);
 			this->logOut->Name = L"logOut";
 			this->logOut->Size = System::Drawing::Size(150, 40);
 			this->logOut->TabIndex = 3;
@@ -443,7 +579,7 @@ namespace culturalink_main {
 			this->panelTitleBar->Location = System::Drawing::Point(0, 0);
 			this->panelTitleBar->Margin = System::Windows::Forms::Padding(2);
 			this->panelTitleBar->Name = L"panelTitleBar";
-			this->panelTitleBar->Size = System::Drawing::Size(726, 49);
+			this->panelTitleBar->Size = System::Drawing::Size(1070, 49);
 			this->panelTitleBar->TabIndex = 6;
 			// 
 			// pictureBox1
@@ -464,7 +600,7 @@ namespace culturalink_main {
 			this->pictureBox2->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->pictureBox2->Dock = System::Windows::Forms::DockStyle::Right;
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(677, 0);
+			this->pictureBox2->Location = System::Drawing::Point(1021, 0);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(49, 49);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -472,158 +608,12 @@ namespace culturalink_main {
 			this->pictureBox2->TabStop = false;
 			this->pictureBox2->Click += gcnew System::EventHandler(this, &InfoCiutada::pictureBox2_Click);
 			// 
-			// panel2
-			// 
-			this->panel2->BackColor = System::Drawing::Color::Linen;
-			this->panel2->Controls->Add(this->label9);
-			this->panel2->Controls->Add(this->button4);
-			this->panel2->Controls->Add(this->NpaswdR);
-			this->panel2->Controls->Add(this->label8);
-			this->panel2->Controls->Add(this->Npaswd);
-			this->panel2->Controls->Add(this->label6);
-			this->panel2->Controls->Add(this->Ndat);
-			this->panel2->Controls->Add(this->Nname);
-			this->panel2->Controls->Add(this->Ncorr);
-			this->panel2->Controls->Add(this->label14);
-			this->panel2->Controls->Add(this->label17);
-			this->panel2->Controls->Add(this->label18);
-			this->panel2->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->panel2->Location = System::Drawing::Point(150, 49);
-			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(576, 381);
-			this->panel2->TabIndex = 14;
-			this->panel2->Visible = false;
-			// 
-			// button4
-			// 
-			this->button4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
-			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
-			this->button4->Location = System::Drawing::Point(387, 331);
-			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(186, 47);
-			this->button4->TabIndex = 32;
-			this->button4->Text = L"Acceptar canvis";
-			this->button4->UseVisualStyleBackColor = true;
-			this->button4->Click += gcnew System::EventHandler(this, &InfoCiutada::button4_Click);
-			// 
-			// NpaswdR
-			// 
-			this->NpaswdR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->NpaswdR->Location = System::Drawing::Point(38, 286);
-			this->NpaswdR->Name = L"NpaswdR";
-			this->NpaswdR->PasswordChar = '*';
-			this->NpaswdR->Size = System::Drawing::Size(239, 26);
-			this->NpaswdR->TabIndex = 31;
-			// 
-			// label8
-			// 
-			this->label8->AutoSize = true;
-			this->label8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label8->Location = System::Drawing::Point(12, 259);
-			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(250, 24);
-			this->label8->TabIndex = 30;
-			this->label8->Text = L"Repetir nova Contrasenya";
-			// 
-			// Npaswd
-			// 
-			this->Npaswd->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->Npaswd->Location = System::Drawing::Point(38, 230);
-			this->Npaswd->Name = L"Npaswd";
-			this->Npaswd->PasswordChar = '*';
-			this->Npaswd->Size = System::Drawing::Size(239, 26);
-			this->Npaswd->TabIndex = 29;
-			// 
-			// label6
-			// 
-			this->label6->AutoSize = true;
-			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label6->Location = System::Drawing::Point(12, 203);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(180, 24);
-			this->label6->TabIndex = 28;
-			this->label6->Text = L"Nova Contrasenya";
-			// 
-			// Nname
-			// 
-			this->Nname->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->Nname->Location = System::Drawing::Point(38, 34);
-			this->Nname->Name = L"Nname";
-			this->Nname->Size = System::Drawing::Size(239, 26);
-			this->Nname->TabIndex = 26;
-			// 
-			// Ncorr
-			// 
-			this->Ncorr->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->Ncorr->Location = System::Drawing::Point(38, 88);
-			this->Ncorr->Name = L"Ncorr";
-			this->Ncorr->Size = System::Drawing::Size(239, 26);
-			this->Ncorr->TabIndex = 25;
-			// 
-			// label17
-			// 
-			this->label17->AutoSize = true;
-			this->label17->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label17->Location = System::Drawing::Point(12, 7);
-			this->label17->Name = L"label17";
-			this->label17->Size = System::Drawing::Size(188, 24);
-			this->label17->TabIndex = 14;
-			this->label17->Text = L"Nou Nom Complet:";
-			// 
-			// label18
-			// 
-			this->label18->AutoSize = true;
-			this->label18->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label18->Location = System::Drawing::Point(12, 63);
-			this->label18->Name = L"label18";
-			this->label18->Size = System::Drawing::Size(125, 24);
-			this->label18->TabIndex = 13;
-			this->label18->Text = L"Nou Correu:";
-			// 
-			// Ndat
-			// 
-			this->Ndat->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->Ndat->Location = System::Drawing::Point(38, 146);
-			this->Ndat->Name = L"Ndat";
-			this->Ndat->Size = System::Drawing::Size(117, 26);
-			this->Ndat->TabIndex = 27;
-			// 
-			// label14
-			// 
-			this->label14->AutoSize = true;
-			this->label14->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label14->Location = System::Drawing::Point(12, 119);
-			this->label14->Name = L"label14";
-			this->label14->Size = System::Drawing::Size(246, 24);
-			this->label14->TabIndex = 17;
-			this->label14->Text = L"Nova Data de Naixament:";
-			// 
-			// label9
-			// 
-			this->label9->AutoSize = true;
-			this->label9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F));
-			this->label9->Location = System::Drawing::Point(161, 149);
-			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(112, 18);
-			this->label9->TabIndex = 33;
-			this->label9->Text = L"(AAAA-MM-DD)";
-			// 
 			// InfoCiutada
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(726, 430);
-			this->Controls->Add(this->panel2);
+			this->ClientSize = System::Drawing::Size(1070, 681);
+			this->Controls->Add(this->PANELModificaCiut);
 			this->Controls->Add(this->panelDesktop);
 			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->panelMenu);
@@ -634,14 +624,14 @@ namespace culturalink_main {
 			this->Load += gcnew System::EventHandler(this, &InfoCiutada::InfoCiutada_Load);
 			this->panelDesktop->ResumeLayout(false);
 			this->panelDesktop->PerformLayout();
+			this->PANELModificaCiut->ResumeLayout(false);
+			this->PANELModificaCiut->PerformLayout();
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();
 			this->panelMenu->ResumeLayout(false);
 			this->panelTitleBar->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
-			this->panel2->ResumeLayout(false);
-			this->panel2->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -678,21 +668,21 @@ private: System::Void InfoCiutada_Load(System::Object^ sender, System::EventArgs
 		this->listBox1->Items->Add(line);
 
 	panel1->Visible = false;
-	panel2->Visible = false;
+	PANELModificaCiut->Visible = false;
 }
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 	panelMenu->Visible = !panelMenu->Visible;
 }
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
 	panelDesktop->Visible = false;
-	panel2->Visible = false;
+	PANELModificaCiut->Visible = false;
 	panel1->Visible = true;
 	panel1->Invalidate(); // Force redraw if necessary
 	panel1->PerformLayout(); // Recalculate layout if necessary
 }
 private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
 	panel1->Visible = false;
-	panel2->Visible = false;
+	PANELModificaCiut->Visible = false;
 	panelDesktop->Visible = true;
 }
 private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -712,7 +702,7 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 	
 }
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-	panel2->Visible = true;
+	PANELModificaCiut->Visible = true;
 	panel1->Visible = false;
 	panelDesktop->Visible = false;
 }
