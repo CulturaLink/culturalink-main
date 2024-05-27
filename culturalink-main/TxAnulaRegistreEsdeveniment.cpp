@@ -21,7 +21,15 @@ void TxAnulaRegistreEsdeveniment::executar()
 	p1.elimina();
 	CercadoraEsdeveniment cerc;
 	PassarelaEsdeveniment pes = cerc.cercaEsdeveniment(nom_esdeveniment);
-	pes.sumar_aforament();
-	if(p1.ObtePunts_Diners() == 0) c->devolucio_diners(p1.ObtePreu());
+	pes.sumar_aforament(p1.ObteQuantitat_entrades());
+	int^ punts_diners = p1.ObtePunts_Diners();
+	if (*punts_diners == 0)
+	{
+		c->devolucio_diners(p1.ObtePreu());
+		c->borrar_punts(p1.ObteQuantitat_entrades(), pes.getPuntsDescEsd());
+	}
 	else c->devolucio_punts(p1.ObtePreu());
+	CercadoraCiutada cercC;
+	PassarelaCiutada new2 = cercC.cercaCiutada(nick);
+	u->setUsuari(% new2, TipoPassarela::Ciutada);
 }

@@ -2,6 +2,7 @@
 #include "CercadoraInscripcio.h"
 #include "PassarelaEsdeveniment.h"
 #include "CercadoraEsdeveniment.h"
+#include "CercadoraCiutada.h"
 #include "UsuariIniciat.h"
 #include <iostream>
 #include <list>

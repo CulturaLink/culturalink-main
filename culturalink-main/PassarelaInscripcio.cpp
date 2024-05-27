@@ -78,10 +78,6 @@ void PassarelaInscripcio::insereix()
         }
     }
     }
-   
-        
-    
-
 void PassarelaInscripcio::elimina()
 {
     String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";

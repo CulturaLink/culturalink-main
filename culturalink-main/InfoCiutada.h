@@ -76,6 +76,7 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Panel^ panel1;
 	private: System::Windows::Forms::Label^ TitleCC;
 	private: System::Windows::Forms::ListBox^ listBox1;
+	private: System::Windows::Forms::Button^ button4;
 
 
 
@@ -119,6 +120,7 @@ namespace culturalink_main {
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->TitleCC = (gcnew System::Windows::Forms::Label());
 			this->listBox1 = (gcnew System::Windows::Forms::ListBox());
+			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->panelDesktop->SuspendLayout();
 			this->panelMenu->SuspendLayout();
 			this->panelTitleBar->SuspendLayout();
@@ -402,6 +404,7 @@ namespace culturalink_main {
 			// panel1
 			// 
 			this->panel1->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->panel1->Controls->Add(this->button4);
 			this->panel1->Controls->Add(this->TitleCC);
 			this->panel1->Controls->Add(this->listBox1);
 			this->panel1->Dock = System::Windows::Forms::DockStyle::Fill;
@@ -436,6 +439,16 @@ namespace culturalink_main {
 			this->listBox1->Sorted = true;
 			this->listBox1->TabIndex = 0;
 			this->listBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &InfoCiutada::listBox1_SelectedIndexChanged);
+			// 
+			// button4
+			// 
+			this->button4->Location = System::Drawing::Point(429, 361);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(182, 23);
+			this->button4->TabIndex = 2;
+			this->button4->Text = L"Anul·lar Registre Esdeveniment";
+			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &InfoCiutada::button4_Click);
 			// 
 			// InfoCiutada
 			// 
@@ -519,17 +532,34 @@ private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArg
 }
 private: System::Void listBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 
+	
+}
+private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) 
+{
 	if (listBox1->SelectedItem != nullptr) 
 	{
 		String^ compra_seleccionada = this->listBox1->SelectedItem->ToString();
 		bool encontrado = false;
 		String^ buffer;
-		for (int i = 0; i < compra_seleccionada->Length || encontrado == true; i++)
+		for (int i = 0; i < compra_seleccionada->Length && encontrado == false; i++)
 		{
 			if (compra_seleccionada[i] == 44) encontrado = true;
 			else buffer += compra_seleccionada[i];
 		}
 		TxAnulaRegistreEsdeveniment tx1(buffer);
+		tx1.executar();
+		listBox1->Items->Clear();
+		TxConsultaInscripcions tI;
+		tI.executar();
+
+		List<String^>^ result = tI.getResult();
+
+		for each (String ^ line in result)
+			this->listBox1->Items->Add(line);
+		panelDesktop->Visible = false;
+		panel1->Visible = true;
+		panel1->Invalidate(); // Force redraw if necessary
+		panel1->PerformLayout(); // Recalculate layout if necessary
 	}
 }
 };

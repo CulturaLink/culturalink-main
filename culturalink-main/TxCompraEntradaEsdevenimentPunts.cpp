@@ -34,4 +34,6 @@ void TxCompraEntradaEsdevenimentPunts::executar()
 	PassarelaInscripcio inscrip(nick, time, pes.getNomEsd(), preu, 1, quantitat_entrad);
 	inscrip.insereix();
 	pes.restar_aforament(quantitat_entrad);
+	PassarelaCiutada new2 = cercC.cercaCiutada(nick);
+	usuario->setUsuari(% new2, TipoPassarela::Ciutada);
 }

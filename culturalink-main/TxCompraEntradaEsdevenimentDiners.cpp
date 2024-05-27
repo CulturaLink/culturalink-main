@@ -35,4 +35,6 @@ void TxCompraEntradaEsdevenimentDiners::executar()
 	inscrip.insereix(); 
 	pes.restar_aforament(quantitat_entrad);
 	passarelaCiutada->afegir_punts_entrada(pes.getPuntsDescEsd()* *(quantitat_entrad));
+	PassarelaCiutada new2 = cercC.cercaCiutada(nick);
+	usuario->setUsuari(% new2, TipoPassarela::Ciutada);
 }
