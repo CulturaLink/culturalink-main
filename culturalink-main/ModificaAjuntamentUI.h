@@ -198,6 +198,7 @@ namespace culturalink_main {
 			this->txt_nom_ajuntamentMODAJUN->Name = L"txt_nom_ajuntamentMODAJUN";
 			this->txt_nom_ajuntamentMODAJUN->Size = System::Drawing::Size(308, 22);
 			this->txt_nom_ajuntamentMODAJUN->TabIndex = 5;
+			this->txt_nom_ajuntamentMODAJUN->TextChanged += gcnew System::EventHandler(this, &ModificaAjuntamentUI::txt_nom_ajuntamentMODAJUN_TextChanged);
 			// 
 			// lbl_contrasenya_ajuntamentMODAJUN
 			// 
@@ -346,6 +347,8 @@ namespace culturalink_main {
 private: System::Void lbl_poblacio_ajuntamentMODAJUN_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void txt_nom_ajuntamentMODAJUN_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

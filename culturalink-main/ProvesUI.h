@@ -20,6 +20,9 @@
 #include "TxCompraEntradaEsdevenimentPunts.h"
 #include "TxConsultaInscripcions.h"
 
+// Controladors
+#include "CtrlModificaAjuntament.h"
+
 // Altres:
 #include "Esdeveniment.h"
 #include "UsuariIniciat.h"
@@ -52,6 +55,14 @@ namespace culturalink_main {
 			InitializeComponent();
 			//
 			//TODO: agregar código de constructor aquí
+			// 		// Consultar los datos actuales del usuario(Para Modificar Usuario)
+			result = ctrlModAj.consultaAjuntament();
+			txt_nom_ajuntamentMODAJUN->Text = result[0];
+			txt_poblacio_ajuntamentMODAJUN->Text = result[2];
+			txt_telefon_ajuntamentMODAJUN->Text = result[3];
+			txt_correu_electronic_ajuntamentMODAJUN->Text = result[4];
+			txt_contrasenya_ajuntamentMODAJUN->Text = result[5];
+			//textBox6->Text = result[5];
 			//
 		}
 
@@ -66,8 +77,34 @@ namespace culturalink_main {
 				delete components;
 			}
 		}
+	private:
+		CtrlModificaAjuntament ctrlModAj;
+		List<String^>^ result;
 
 	private: String^ _NomEsdevPerComprar = "";
+
+	private: CtrlModificaAjuntament ctrlModAju;
+
+	private: System::Windows::Forms::Panel^ PANELModificaAjuntament;
+	private: System::Windows::Forms::Panel^ BlackPartMODAJUN;
+	private: System::Windows::Forms::Label^ lbl_contrasenya_ajuntamentMODAJUN;
+	private: System::Windows::Forms::Label^ lbl_correu_electronic_ajuntamentMODAJUN;
+	private: System::Windows::Forms::Label^ lbl_telefon_ajuntamentMODAJUN;
+	private: System::Windows::Forms::Label^ lbl_poblacio_ajuntamentMODAJUN;
+	private: System::Windows::Forms::Label^ lbl_nom_ajuntamentMODAJUN;
+	private: System::Windows::Forms::Panel^ panel_nom_ajuntamentMODAJUN;
+	private: System::Windows::Forms::TextBox^ txt_nom_ajuntamentMODAJUN;
+	private: System::Windows::Forms::Panel^ panel_telefon_ajuntamentMODAJUN;
+	private: System::Windows::Forms::Panel^ panel_correu_electronic_ajuntamentMODAJUN;
+	private: System::Windows::Forms::Panel^ panel_contrasenya_ajuntamentMODAJUN;
+	private: System::Windows::Forms::Panel^ panel_poblacio_ajuntamentMODAJUN;
+	private: System::Windows::Forms::TextBox^ txt_contrasenya_ajuntamentMODAJUN;
+	private: System::Windows::Forms::TextBox^ txt_correu_electronic_ajuntamentMODAJUN;
+	private: System::Windows::Forms::TextBox^ txt_telefon_ajuntamentMODAJUN;
+	private: System::Windows::Forms::TextBox^ txt_poblacio_ajuntamentMODAJUN;
+	private: System::Windows::Forms::Button^ btn_atrasMODAJUN;
+	private: System::Windows::Forms::Button^ btn_modificaMODAJUN;
+
 	private: System::Windows::Forms::Button^ btnGoBackCONS;
 	private: System::Windows::Forms::Button^ btnComprarCONS;
 	private: System::Windows::Forms::Panel^ PANELConsultarCompra;
@@ -283,6 +320,9 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 	private: System::Windows::Forms::Label^ lblTotGastatMESDEVen;
 	private: System::Windows::Forms::Panel^ pnlTotGastatDretaMESDEV;
 	private: System::Windows::Forms::Label^ lblTotGastatMESDEV;
+private: System::Windows::Forms::Panel^ panelSettingsAjuntament;
+private: System::Windows::Forms::Button^ botonSettingsAjuntament;
+
 
 	protected:
 
@@ -300,6 +340,25 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 	void InitializeComponent(void)
 	{
 		System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(ProvesUI::typeid));
+		this->PANELModificaAjuntament = (gcnew System::Windows::Forms::Panel());
+		this->btn_atrasMODAJUN = (gcnew System::Windows::Forms::Button());
+		this->btn_modificaMODAJUN = (gcnew System::Windows::Forms::Button());
+		this->txt_contrasenya_ajuntamentMODAJUN = (gcnew System::Windows::Forms::TextBox());
+		this->txt_correu_electronic_ajuntamentMODAJUN = (gcnew System::Windows::Forms::TextBox());
+		this->txt_telefon_ajuntamentMODAJUN = (gcnew System::Windows::Forms::TextBox());
+		this->txt_poblacio_ajuntamentMODAJUN = (gcnew System::Windows::Forms::TextBox());
+		this->txt_nom_ajuntamentMODAJUN = (gcnew System::Windows::Forms::TextBox());
+		this->lbl_contrasenya_ajuntamentMODAJUN = (gcnew System::Windows::Forms::Label());
+		this->BlackPartMODAJUN = (gcnew System::Windows::Forms::Panel());
+		this->panel_nom_ajuntamentMODAJUN = (gcnew System::Windows::Forms::Panel());
+		this->lbl_nom_ajuntamentMODAJUN = (gcnew System::Windows::Forms::Label());
+		this->panel_poblacio_ajuntamentMODAJUN = (gcnew System::Windows::Forms::Panel());
+		this->lbl_poblacio_ajuntamentMODAJUN = (gcnew System::Windows::Forms::Label());
+		this->panel_contrasenya_ajuntamentMODAJUN = (gcnew System::Windows::Forms::Panel());
+		this->panel_telefon_ajuntamentMODAJUN = (gcnew System::Windows::Forms::Panel());
+		this->lbl_telefon_ajuntamentMODAJUN = (gcnew System::Windows::Forms::Label());
+		this->panel_correu_electronic_ajuntamentMODAJUN = (gcnew System::Windows::Forms::Panel());
+		this->lbl_correu_electronic_ajuntamentMODAJUN = (gcnew System::Windows::Forms::Label());
 		this->pnlCOMP = (gcnew System::Windows::Forms::Panel());
 		this->pnlTitleCOMP = (gcnew System::Windows::Forms::Panel());
 		this->lblTitleCOMP = (gcnew System::Windows::Forms::Label());
@@ -386,6 +445,8 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->btnMaximize = (gcnew System::Windows::Forms::Button());
 		this->btnClose = (gcnew System::Windows::Forms::Button());
 		this->panelNavBar = (gcnew System::Windows::Forms::Panel());
+		this->panelSettingsAjuntament = (gcnew System::Windows::Forms::Panel());
+		this->botonSettingsAjuntament = (gcnew System::Windows::Forms::Button());
 		this->panel11 = (gcnew System::Windows::Forms::Panel());
 		this->button9 = (gcnew System::Windows::Forms::Button());
 		this->panel10 = (gcnew System::Windows::Forms::Panel());
@@ -462,6 +523,11 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->pnlMainModEsdv = (gcnew System::Windows::Forms::Panel());
 		this->label7 = (gcnew System::Windows::Forms::Label());
 		this->btnViewNavBar = (gcnew System::Windows::Forms::Button());
+		this->PANELModificaAjuntament->SuspendLayout();
+		this->panel_nom_ajuntamentMODAJUN->SuspendLayout();
+		this->panel_poblacio_ajuntamentMODAJUN->SuspendLayout();
+		this->panel_telefon_ajuntamentMODAJUN->SuspendLayout();
+		this->panel_correu_electronic_ajuntamentMODAJUN->SuspendLayout();
 		this->pnlCOMP->SuspendLayout();
 		this->pnlTitleCOMP->SuspendLayout();
 		this->pnlTarjUICOMP->SuspendLayout();
@@ -495,6 +561,7 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->AppIcon))->BeginInit();
 		this->pnlTopBarMinMaxClose->SuspendLayout();
 		this->panelNavBar->SuspendLayout();
+		this->panelSettingsAjuntament->SuspendLayout();
 		this->panel11->SuspendLayout();
 		this->panel10->SuspendLayout();
 		this->pnlModEsdev->SuspendLayout();
@@ -525,6 +592,202 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->BeginInit();
 		this->pnlMainModEsdv->SuspendLayout();
 		this->SuspendLayout();
+		// 
+		// PANELModificaAjuntament
+		// 
+		this->PANELModificaAjuntament->Controls->Add(this->btn_atrasMODAJUN);
+		this->PANELModificaAjuntament->Controls->Add(this->btn_modificaMODAJUN);
+		this->PANELModificaAjuntament->Controls->Add(this->txt_contrasenya_ajuntamentMODAJUN);
+		this->PANELModificaAjuntament->Controls->Add(this->txt_correu_electronic_ajuntamentMODAJUN);
+		this->PANELModificaAjuntament->Controls->Add(this->txt_telefon_ajuntamentMODAJUN);
+		this->PANELModificaAjuntament->Controls->Add(this->txt_poblacio_ajuntamentMODAJUN);
+		this->PANELModificaAjuntament->Controls->Add(this->txt_nom_ajuntamentMODAJUN);
+		this->PANELModificaAjuntament->Controls->Add(this->lbl_contrasenya_ajuntamentMODAJUN);
+		this->PANELModificaAjuntament->Controls->Add(this->BlackPartMODAJUN);
+		this->PANELModificaAjuntament->Controls->Add(this->panel_nom_ajuntamentMODAJUN);
+		this->PANELModificaAjuntament->Controls->Add(this->panel_poblacio_ajuntamentMODAJUN);
+		this->PANELModificaAjuntament->Controls->Add(this->panel_contrasenya_ajuntamentMODAJUN);
+		this->PANELModificaAjuntament->Controls->Add(this->panel_telefon_ajuntamentMODAJUN);
+		this->PANELModificaAjuntament->Controls->Add(this->panel_correu_electronic_ajuntamentMODAJUN);
+		this->PANELModificaAjuntament->Location = System::Drawing::Point(0, 0);
+		this->PANELModificaAjuntament->Name = L"PANELModificaAjuntament";
+		this->PANELModificaAjuntament->Size = System::Drawing::Size(1030, 568);
+		this->PANELModificaAjuntament->TabIndex = 0;
+		// 
+		// btn_atrasMODAJUN
+		// 
+		this->btn_atrasMODAJUN->BackColor = System::Drawing::SystemColors::Control;
+		this->btn_atrasMODAJUN->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold));
+		this->btn_atrasMODAJUN->Location = System::Drawing::Point(765, 470);
+		this->btn_atrasMODAJUN->Name = L"btn_atrasMODAJUN";
+		this->btn_atrasMODAJUN->Size = System::Drawing::Size(75, 23);
+		this->btn_atrasMODAJUN->TabIndex = 14;
+		this->btn_atrasMODAJUN->Text = L"Atras";
+		this->btn_atrasMODAJUN->UseVisualStyleBackColor = false;
+		// 
+		// btn_modificaMODAJUN
+		// 
+		this->btn_modificaMODAJUN->BackColor = System::Drawing::SystemColors::Control;
+		this->btn_modificaMODAJUN->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold));
+		this->btn_modificaMODAJUN->Location = System::Drawing::Point(859, 470);
+		this->btn_modificaMODAJUN->Name = L"btn_modificaMODAJUN";
+		this->btn_modificaMODAJUN->Size = System::Drawing::Size(75, 23);
+		this->btn_modificaMODAJUN->TabIndex = 13;
+		this->btn_modificaMODAJUN->Text = L"Modifica";
+		this->btn_modificaMODAJUN->UseVisualStyleBackColor = false;
+		this->btn_modificaMODAJUN->Click += gcnew System::EventHandler(this, &ProvesUI::btn_modificaMODAJUN_Click);
+		// 
+		// txt_contrasenya_ajuntamentMODAJUN
+		// 
+		this->txt_contrasenya_ajuntamentMODAJUN->Location = System::Drawing::Point(421, 389);
+		this->txt_contrasenya_ajuntamentMODAJUN->Name = L"txt_contrasenya_ajuntamentMODAJUN";
+		this->txt_contrasenya_ajuntamentMODAJUN->Size = System::Drawing::Size(308, 22);
+		this->txt_contrasenya_ajuntamentMODAJUN->TabIndex = 12;
+		// 
+		// txt_correu_electronic_ajuntamentMODAJUN
+		// 
+		this->txt_correu_electronic_ajuntamentMODAJUN->Location = System::Drawing::Point(421, 331);
+		this->txt_correu_electronic_ajuntamentMODAJUN->Name = L"txt_correu_electronic_ajuntamentMODAJUN";
+		this->txt_correu_electronic_ajuntamentMODAJUN->Size = System::Drawing::Size(308, 22);
+		this->txt_correu_electronic_ajuntamentMODAJUN->TabIndex = 11;
+		// 
+		// txt_telefon_ajuntamentMODAJUN
+		// 
+		this->txt_telefon_ajuntamentMODAJUN->Location = System::Drawing::Point(421, 274);
+		this->txt_telefon_ajuntamentMODAJUN->Name = L"txt_telefon_ajuntamentMODAJUN";
+		this->txt_telefon_ajuntamentMODAJUN->Size = System::Drawing::Size(308, 22);
+		this->txt_telefon_ajuntamentMODAJUN->TabIndex = 10;
+		// 
+		// txt_poblacio_ajuntamentMODAJUN
+		// 
+		this->txt_poblacio_ajuntamentMODAJUN->Location = System::Drawing::Point(421, 215);
+		this->txt_poblacio_ajuntamentMODAJUN->Name = L"txt_poblacio_ajuntamentMODAJUN";
+		this->txt_poblacio_ajuntamentMODAJUN->Size = System::Drawing::Size(308, 22);
+		this->txt_poblacio_ajuntamentMODAJUN->TabIndex = 9;
+		// 
+		// txt_nom_ajuntamentMODAJUN
+		// 
+		this->txt_nom_ajuntamentMODAJUN->Location = System::Drawing::Point(421, 156);
+		this->txt_nom_ajuntamentMODAJUN->Name = L"txt_nom_ajuntamentMODAJUN";
+		this->txt_nom_ajuntamentMODAJUN->ReadOnly = true;
+		this->txt_nom_ajuntamentMODAJUN->Size = System::Drawing::Size(308, 22);
+		this->txt_nom_ajuntamentMODAJUN->TabIndex = 5;
+		// 
+		// lbl_contrasenya_ajuntamentMODAJUN
+		// 
+		this->lbl_contrasenya_ajuntamentMODAJUN->AutoSize = true;
+		this->lbl_contrasenya_ajuntamentMODAJUN->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+		this->lbl_contrasenya_ajuntamentMODAJUN->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold));
+		this->lbl_contrasenya_ajuntamentMODAJUN->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
+		this->lbl_contrasenya_ajuntamentMODAJUN->Location = System::Drawing::Point(271, 391);
+		this->lbl_contrasenya_ajuntamentMODAJUN->Name = L"lbl_contrasenya_ajuntamentMODAJUN";
+		this->lbl_contrasenya_ajuntamentMODAJUN->Size = System::Drawing::Size(84, 17);
+		this->lbl_contrasenya_ajuntamentMODAJUN->TabIndex = 4;
+		this->lbl_contrasenya_ajuntamentMODAJUN->Text = L"Contrasenya";
+		// 
+		// BlackPartMODAJUN
+		// 
+		this->BlackPartMODAJUN->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+		this->BlackPartMODAJUN->Location = System::Drawing::Point(3, 3);
+		this->BlackPartMODAJUN->Name = L"BlackPartMODAJUN";
+		this->BlackPartMODAJUN->Size = System::Drawing::Size(1024, 83);
+		this->BlackPartMODAJUN->TabIndex = 0;
+		// 
+		// panel_nom_ajuntamentMODAJUN
+		// 
+		this->panel_nom_ajuntamentMODAJUN->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+		this->panel_nom_ajuntamentMODAJUN->Controls->Add(this->lbl_nom_ajuntamentMODAJUN);
+		this->panel_nom_ajuntamentMODAJUN->Location = System::Drawing::Point(221, 156);
+		this->panel_nom_ajuntamentMODAJUN->Name = L"panel_nom_ajuntamentMODAJUN";
+		this->panel_nom_ajuntamentMODAJUN->Size = System::Drawing::Size(200, 22);
+		this->panel_nom_ajuntamentMODAJUN->TabIndex = 6;
+		// 
+		// lbl_nom_ajuntamentMODAJUN
+		// 
+		this->lbl_nom_ajuntamentMODAJUN->AutoSize = true;
+		this->lbl_nom_ajuntamentMODAJUN->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+		this->lbl_nom_ajuntamentMODAJUN->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold));
+		this->lbl_nom_ajuntamentMODAJUN->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
+		this->lbl_nom_ajuntamentMODAJUN->Location = System::Drawing::Point(78, 2);
+		this->lbl_nom_ajuntamentMODAJUN->Name = L"lbl_nom_ajuntamentMODAJUN";
+		this->lbl_nom_ajuntamentMODAJUN->Size = System::Drawing::Size(38, 17);
+		this->lbl_nom_ajuntamentMODAJUN->TabIndex = 0;
+		this->lbl_nom_ajuntamentMODAJUN->Text = L"Nom";
+		// 
+		// panel_poblacio_ajuntamentMODAJUN
+		// 
+		this->panel_poblacio_ajuntamentMODAJUN->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+		this->panel_poblacio_ajuntamentMODAJUN->Controls->Add(this->lbl_poblacio_ajuntamentMODAJUN);
+		this->panel_poblacio_ajuntamentMODAJUN->ForeColor = System::Drawing::SystemColors::ControlText;
+		this->panel_poblacio_ajuntamentMODAJUN->Location = System::Drawing::Point(221, 215);
+		this->panel_poblacio_ajuntamentMODAJUN->Name = L"panel_poblacio_ajuntamentMODAJUN";
+		this->panel_poblacio_ajuntamentMODAJUN->Size = System::Drawing::Size(200, 22);
+		this->panel_poblacio_ajuntamentMODAJUN->TabIndex = 8;
+		// 
+		// lbl_poblacio_ajuntamentMODAJUN
+		// 
+		this->lbl_poblacio_ajuntamentMODAJUN->AutoSize = true;
+		this->lbl_poblacio_ajuntamentMODAJUN->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+		this->lbl_poblacio_ajuntamentMODAJUN->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold));
+		this->lbl_poblacio_ajuntamentMODAJUN->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
+		this->lbl_poblacio_ajuntamentMODAJUN->Location = System::Drawing::Point(66, 3);
+		this->lbl_poblacio_ajuntamentMODAJUN->Name = L"lbl_poblacio_ajuntamentMODAJUN";
+		this->lbl_poblacio_ajuntamentMODAJUN->Size = System::Drawing::Size(59, 17);
+		this->lbl_poblacio_ajuntamentMODAJUN->TabIndex = 1;
+		this->lbl_poblacio_ajuntamentMODAJUN->Text = L"Poblacio";
+		// 
+		// panel_contrasenya_ajuntamentMODAJUN
+		// 
+		this->panel_contrasenya_ajuntamentMODAJUN->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+		this->panel_contrasenya_ajuntamentMODAJUN->ForeColor = System::Drawing::SystemColors::ControlText;
+		this->panel_contrasenya_ajuntamentMODAJUN->Location = System::Drawing::Point(221, 389);
+		this->panel_contrasenya_ajuntamentMODAJUN->Name = L"panel_contrasenya_ajuntamentMODAJUN";
+		this->panel_contrasenya_ajuntamentMODAJUN->Size = System::Drawing::Size(200, 22);
+		this->panel_contrasenya_ajuntamentMODAJUN->TabIndex = 8;
+		// 
+		// panel_telefon_ajuntamentMODAJUN
+		// 
+		this->panel_telefon_ajuntamentMODAJUN->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+		this->panel_telefon_ajuntamentMODAJUN->Controls->Add(this->lbl_telefon_ajuntamentMODAJUN);
+		this->panel_telefon_ajuntamentMODAJUN->ForeColor = System::Drawing::SystemColors::ControlText;
+		this->panel_telefon_ajuntamentMODAJUN->Location = System::Drawing::Point(221, 274);
+		this->panel_telefon_ajuntamentMODAJUN->Name = L"panel_telefon_ajuntamentMODAJUN";
+		this->panel_telefon_ajuntamentMODAJUN->Size = System::Drawing::Size(200, 22);
+		this->panel_telefon_ajuntamentMODAJUN->TabIndex = 7;
+		// 
+		// lbl_telefon_ajuntamentMODAJUN
+		// 
+		this->lbl_telefon_ajuntamentMODAJUN->AutoSize = true;
+		this->lbl_telefon_ajuntamentMODAJUN->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+		this->lbl_telefon_ajuntamentMODAJUN->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold));
+		this->lbl_telefon_ajuntamentMODAJUN->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
+		this->lbl_telefon_ajuntamentMODAJUN->Location = System::Drawing::Point(66, 3);
+		this->lbl_telefon_ajuntamentMODAJUN->Name = L"lbl_telefon_ajuntamentMODAJUN";
+		this->lbl_telefon_ajuntamentMODAJUN->Size = System::Drawing::Size(51, 17);
+		this->lbl_telefon_ajuntamentMODAJUN->TabIndex = 2;
+		this->lbl_telefon_ajuntamentMODAJUN->Text = L"Telefon";
+		// 
+		// panel_correu_electronic_ajuntamentMODAJUN
+		// 
+		this->panel_correu_electronic_ajuntamentMODAJUN->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+		this->panel_correu_electronic_ajuntamentMODAJUN->Controls->Add(this->lbl_correu_electronic_ajuntamentMODAJUN);
+		this->panel_correu_electronic_ajuntamentMODAJUN->ForeColor = System::Drawing::SystemColors::ControlText;
+		this->panel_correu_electronic_ajuntamentMODAJUN->Location = System::Drawing::Point(221, 331);
+		this->panel_correu_electronic_ajuntamentMODAJUN->Name = L"panel_correu_electronic_ajuntamentMODAJUN";
+		this->panel_correu_electronic_ajuntamentMODAJUN->Size = System::Drawing::Size(200, 22);
+		this->panel_correu_electronic_ajuntamentMODAJUN->TabIndex = 8;
+		// 
+		// lbl_correu_electronic_ajuntamentMODAJUN
+		// 
+		this->lbl_correu_electronic_ajuntamentMODAJUN->AutoSize = true;
+		this->lbl_correu_electronic_ajuntamentMODAJUN->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+		this->lbl_correu_electronic_ajuntamentMODAJUN->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold));
+		this->lbl_correu_electronic_ajuntamentMODAJUN->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
+		this->lbl_correu_electronic_ajuntamentMODAJUN->Location = System::Drawing::Point(66, 3);
+		this->lbl_correu_electronic_ajuntamentMODAJUN->Name = L"lbl_correu_electronic_ajuntamentMODAJUN";
+		this->lbl_correu_electronic_ajuntamentMODAJUN->Size = System::Drawing::Size(49, 17);
+		this->lbl_correu_electronic_ajuntamentMODAJUN->TabIndex = 3;
+		this->lbl_correu_electronic_ajuntamentMODAJUN->Text = L"Correu";
 		// 
 		// pnlCOMP
 		// 
@@ -833,7 +1096,7 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->PANELConsultarCompra->Controls->Add(this->btnComprarCONS);
 		this->PANELConsultarCompra->Controls->Add(this->btnComprarPuntsCONS);
 		this->PANELConsultarCompra->Controls->Add(this->btnGoBackCONS);
-		this->PANELConsultarCompra->Location = System::Drawing::Point(91, 20);
+		this->PANELConsultarCompra->Location = System::Drawing::Point(32, 49);
 		this->PANELConsultarCompra->Name = L"PANELConsultarCompra";
 		this->PANELConsultarCompra->Size = System::Drawing::Size(1500, 670);
 		this->PANELConsultarCompra->TabIndex = 5;
@@ -1547,6 +1810,7 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		// 
 		this->panelNavBar->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(40)), static_cast<System::Int32>(static_cast<System::Byte>(40)),
 			static_cast<System::Int32>(static_cast<System::Byte>(40)));
+		this->panelNavBar->Controls->Add(this->panelSettingsAjuntament);
 		this->panelNavBar->Controls->Add(this->panel11);
 		this->panelNavBar->Controls->Add(this->panel10);
 		this->panelNavBar->Controls->Add(this->pnlModEsdev);
@@ -1562,6 +1826,32 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->panelNavBar->Name = L"panelNavBar";
 		this->panelNavBar->Size = System::Drawing::Size(276, 736);
 		this->panelNavBar->TabIndex = 1;
+		// 
+		// panelSettingsAjuntament
+		// 
+		this->panelSettingsAjuntament->Controls->Add(this->botonSettingsAjuntament);
+		this->panelSettingsAjuntament->Dock = System::Windows::Forms::DockStyle::Top;
+		this->panelSettingsAjuntament->Location = System::Drawing::Point(0, 501);
+		this->panelSettingsAjuntament->Name = L"panelSettingsAjuntament";
+		this->panelSettingsAjuntament->Size = System::Drawing::Size(276, 58);
+		this->panelSettingsAjuntament->TabIndex = 9;
+		// 
+		// botonSettingsAjuntament
+		// 
+		this->botonSettingsAjuntament->Dock = System::Windows::Forms::DockStyle::Right;
+		this->botonSettingsAjuntament->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+		this->botonSettingsAjuntament->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F));
+		this->botonSettingsAjuntament->ForeColor = System::Drawing::Color::White;
+		this->botonSettingsAjuntament->Location = System::Drawing::Point(53, 0);
+		this->botonSettingsAjuntament->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+		this->botonSettingsAjuntament->Name = L"botonSettingsAjuntament";
+		this->botonSettingsAjuntament->Size = System::Drawing::Size(223, 58);
+		this->botonSettingsAjuntament->TabIndex = 6;
+		this->botonSettingsAjuntament->Text = L"Settings";
+		this->botonSettingsAjuntament->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+		this->botonSettingsAjuntament->UseVisualStyleBackColor = true;
+		this->botonSettingsAjuntament->Visible = false;
+		this->botonSettingsAjuntament->Click += gcnew System::EventHandler(this, &ProvesUI::botonSettingsAjuntament_Click);
 		// 
 		// panel11
 		// 
@@ -2050,7 +2340,7 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		// 
 		// btnSearch
 		// 
-		this->btnSearch->Location = System::Drawing::Point(879, 64);
+		this->btnSearch->Location = System::Drawing::Point(867, 65);
 		this->btnSearch->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 		this->btnSearch->Name = L"btnSearch";
 		this->btnSearch->Size = System::Drawing::Size(75, 23);
@@ -2109,7 +2399,7 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		// 
 		this->pictureBox7->BackColor = System::Drawing::Color::White;
 		this->pictureBox7->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox7.Image")));
-		this->pictureBox7->Location = System::Drawing::Point(961, 66);
+		this->pictureBox7->Location = System::Drawing::Point(964, 65);
 		this->pictureBox7->Margin = System::Windows::Forms::Padding(4);
 		this->pictureBox7->Name = L"pictureBox7";
 		this->pictureBox7->Size = System::Drawing::Size(21, 20);
@@ -2124,6 +2414,7 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->textBox1->Name = L"textBox1";
 		this->textBox1->Size = System::Drawing::Size(512, 22);
 		this->textBox1->TabIndex = 1;
+		this->textBox1->TextChanged += gcnew System::EventHandler(this, &ProvesUI::textBox1_TextChanged);
 		// 
 		// lblTitlePage
 		// 
@@ -2141,6 +2432,7 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		// 
 		// pnlMain
 		// 
+		this->pnlMain->Controls->Add(this->PANELModificaAjuntament);
 		this->pnlMain->Controls->Add(this->PANELMeusEsdevs);
 		this->pnlMain->Controls->Add(this->PANELConsultarCompra);
 		this->pnlMain->Controls->Add(this->PANELbandEntrSolAj);
@@ -2228,6 +2520,7 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->pnlTitlesMESDEV->Name = L"pnlTitlesMESDEV";
 		this->pnlTitlesMESDEV->Size = System::Drawing::Size(792, 32);
 		this->pnlTitlesMESDEV->TabIndex = 2;
+		this->pnlTitlesMESDEV->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &ProvesUI::pnlTitlesMESDEV_Paint);
 		// 
 		// lblNomEsdevMESDEVen
 		// 
@@ -2560,6 +2853,16 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		this->Text = L"ProvesUI";
 		this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
 		this->Load += gcnew System::EventHandler(this, &ProvesUI::ProvesUI_Load);
+		this->PANELModificaAjuntament->ResumeLayout(false);
+		this->PANELModificaAjuntament->PerformLayout();
+		this->panel_nom_ajuntamentMODAJUN->ResumeLayout(false);
+		this->panel_nom_ajuntamentMODAJUN->PerformLayout();
+		this->panel_poblacio_ajuntamentMODAJUN->ResumeLayout(false);
+		this->panel_poblacio_ajuntamentMODAJUN->PerformLayout();
+		this->panel_telefon_ajuntamentMODAJUN->ResumeLayout(false);
+		this->panel_telefon_ajuntamentMODAJUN->PerformLayout();
+		this->panel_correu_electronic_ajuntamentMODAJUN->ResumeLayout(false);
+		this->panel_correu_electronic_ajuntamentMODAJUN->PerformLayout();
 		this->pnlCOMP->ResumeLayout(false);
 		this->pnlCOMP->PerformLayout();
 		this->pnlTitleCOMP->ResumeLayout(false);
@@ -2614,6 +2917,7 @@ private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPnlBndEntrAj;
 		(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->AppIcon))->EndInit();
 		this->pnlTopBarMinMaxClose->ResumeLayout(false);
 		this->panelNavBar->ResumeLayout(false);
+		this->panelSettingsAjuntament->ResumeLayout(false);
 		this->panel11->ResumeLayout(false);
 		this->panel10->ResumeLayout(false);
 		this->pnlModEsdev->ResumeLayout(false);
@@ -2735,6 +3039,7 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 	this->flowLayoutPanel2->Visible = true;
 	this->pnlMainTop->Size = System::Drawing::Size(1127, 181);
 
+	this->PANELModificaAjuntament->Visible = false;
 	this->PANELMeusEsdevs->Visible = false;
 	this->PANELbandEntrSolAj->Visible = false;
 	this->PANELConsultarCompra->Visible = false;
@@ -2769,6 +3074,7 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 	this->flowLayoutPanel2->Visible = false;
 	this->pnlMainTop->Size = System::Drawing::Size(1084, 110);
 
+	this->PANELModificaAjuntament->Visible = false;
 	this->PANELEsdevHomepage->Visible = false;
 	this->PANELConsultarCompra->Visible = false;
 
@@ -2814,6 +3120,8 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 }
 private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->lblTitlePage->Text = "SETTINGS";
+
+	this->PANELModificaAjuntament->Visible = true;
 }
 private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
 	UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
@@ -2933,7 +3241,12 @@ private: System::Void button9_Click(System::Object^ sender, System::EventArgs^ e
 	TxConsultaEsdevenimentsAmbTipus txConsEsdevs(val);
 	txConsEsdevs.executar();
 
+	//TxConsultaEsdeveniment txConEsdev(val);
+	//txConEsdev.executar();
+
 	List<String^>^ esdevsGala = txConsEsdevs.getResult();
+	
+	//esdevsGala->AddRange(txConEsdev.getResult());
 
 	List<System::Windows::Forms::Panel^>^ list_esdevs;
 
@@ -3117,6 +3430,7 @@ private: System::Void picBoxUserPic_Click(System::Object^ sender, System::EventA
 private: System::Void ProvesUI_Load(System::Object^ sender, System::EventArgs^ e) {
 
 	//this->pnlMainModEsdv->Visible = false;
+	this->PANELModificaAjuntament->Visible = false;
 	this->PANELMeusEsdevs->Visible = false;
 	this->PANELbandEntrSolAj->Visible = false;
 	this->PANELEsdevHomepage->Visible = true;
@@ -3242,9 +3556,9 @@ private: System::Void ProvesUI_Load(System::Object^ sender, System::EventArgs^ e
 
 		break;
 	case TipoPassarela::Ajuntament:
-
+		this->pnlMain->Visible = true;
 		this->panel11->Visible = true; // Consultar Peticions d'Esdeveniments
-
+		this->botonSettingsAjuntament->Visible = true;
 
 		this->lblTypeUser->Text = L"Ajuntament";
 		this->lblTypeUser->BackColor = System::Drawing::Color::FromArgb(
@@ -3314,6 +3628,7 @@ private: System::Void button9_Click_1(System::Object^ sender, System::EventArgs^
 	this->flowLayoutPanel2->Visible = false;
 	this->pnlMainTop->Size = System::Drawing::Size(1084, 110);
 
+	this->PANELModificaAjuntament->Visible = false;
 	this->PANELMeusEsdevs->Visible = false;
 	this->PANELEsdevHomepage->Visible = false;
 	this->PANELbandEntrSolAj->Visible = true;
@@ -3822,5 +4137,48 @@ void addDyamicPanelElsMeusEsdevs(String^ nomEsdev, String^ data, String^ preu, S
 	this->flowLayoutPanelMESDEV->Controls->Add(pnlDynMESDEVex);
 }
 
+private: System::Void pnlTitlesMESDEV_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+}
+
+// ------------ Added by Nima ------------
+
+
+private: System::Void botonSettingsAjuntament_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->PANELbandEntrSolAj->Visible = false;
+	this->PANELModificaAjuntament->Visible = true;
+}
+private: System::Void btn_modificaMODAJUN_Click(System::Object^ sender, System::EventArgs^ e) {
+	int number;
+	bool isNumeric1 = Int32::TryParse(txt_poblacio_ajuntamentMODAJUN->Text, number);
+	bool isNumeric2 = Int32::TryParse(txt_telefon_ajuntamentMODAJUN->Text, number);
+
+	if (!(isNumeric1 && (Convert::ToInt32(txt_poblacio_ajuntamentMODAJUN->Text) > 0)))
+	{
+		MessageBox::Show("Poblacio ha de ser un nombre positiu");
+	}
+	else if (!(isNumeric2 && (Convert::ToInt32(txt_telefon_ajuntamentMODAJUN->Text) > 0))) {
+		MessageBox::Show("Telefon ha de ser un nombre positiu");
+	}
+	else {
+		try {
+			ctrlModAj.modificaAjuntament(result[0], result[1], Convert::ToInt32(txt_poblacio_ajuntamentMODAJUN->Text), Convert::ToInt32(txt_telefon_ajuntamentMODAJUN->Text), txt_correu_electronic_ajuntamentMODAJUN->Text, txt_contrasenya_ajuntamentMODAJUN->Text);
+			MessageBox::Show("Els canvis s'han aplicat amb exit");
+		}
+		catch (CorreuExisteix^ e1) {
+			MessageBox::Show(e1->Message);
+		}
+	}
+
+	/*
+	catch (const std::exception& e)
+	{
+		// Convertir la excepción de C++ a System::String^
+		String^ mensajeError = gcnew String(e.what());
+		MessageBox::Show(mensajeError, "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+	}
+	*/
+}
+private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }

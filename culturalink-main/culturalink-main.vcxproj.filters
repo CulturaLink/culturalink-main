@@ -191,6 +191,12 @@
     <ClInclude Include="ModificaEntitatUI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CtrlModificaAjuntament.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExcepcioCorreuExisteix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -359,6 +365,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ModificaEntitatUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CtrlModificaAjuntament.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

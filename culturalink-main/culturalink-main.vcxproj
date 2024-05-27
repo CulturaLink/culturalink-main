@@ -153,6 +153,7 @@
     <ClInclude Include="ConsultarUsuariUI.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="CtrlModificaAjuntament.h" />
     <ClInclude Include="CtrlModificaEsdeveniment.h" />
     <ClInclude Include="CustomButtonEsdev.h" />
     <ClInclude Include="ElsMeusEsdevUI.h">
@@ -162,6 +163,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Esdeveniment.h" />
+    <ClInclude Include="ExcepcioCorreuExisteix.h" />
     <ClInclude Include="InfoAjuntament.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -240,6 +242,7 @@
     <ClCompile Include="ComprarEsdevenimentUI.cpp" />
     <ClCompile Include="ConsultaEsdevenimentUI.cpp" />
     <ClCompile Include="ConsultarUsuariUI.cpp" />
+    <ClCompile Include="CtrlModificaAjuntament.cpp" />
     <ClCompile Include="CtrlModificaEsdeveniment.cpp" />
     <ClCompile Include="culturalinkmain.cpp" />
     <ClCompile Include="ElsMeusEsdevUI.cpp" />
@@ -342,6 +345,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ModificaAjuntamentUI.resx">
       <DependentUpon>ModificaAjuntamentUI.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificaEntitatUI.resx">
+      <DependentUpon>ModificaEntitatUI.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProvesUI.resx">
       <DependentUpon>ProvesUI.h</DependentUpon>

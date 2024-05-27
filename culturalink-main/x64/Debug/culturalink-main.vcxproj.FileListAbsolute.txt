@@ -79,3 +79,5 @@ C:\Users\Asus\Documents\GitHub\culturalink-main\culturalink-main\x64\System.Thre
 C:\Users\Asus\Documents\GitHub\culturalink-main\culturalink-main\x64\System.Numerics.Vectors.dll
 C:\Users\Asus\Documents\GitHub\culturalink-main\culturalink-main\x64\System.Buffers.dll
 C:\Users\Asus\Documents\GitHub\culturalink-main\culturalink-main\x64\MySql.Data.xml
+C:\Users\Asus\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ModificaAjuntamentUI.resources
+C:\Users\Asus\Documents\GitHub\culturalink-main\culturalink-main\x64\Debug\culturalink_main.ModificaEntitatUI.resources
