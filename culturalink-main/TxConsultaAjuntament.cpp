@@ -17,11 +17,13 @@ void TxConsultaAjuntament::executar(){
 
     _result->Add(a->getNom());
     _result->Add(a->getClau());
-    _result->Add(a->getCP().ToString());
+    _result->Add(a->getPoblacio().ToString());
     _result->Add(a->getTelf().ToString());
     _result->Add(a->getCorreu());
+    _result->Add(a->getContrasenya());
 
     result = _result;
+
 }
 
 List<String^>^ TxConsultaAjuntament::getResult(){

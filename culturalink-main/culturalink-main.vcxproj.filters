@@ -197,6 +197,12 @@
     <ClInclude Include="ExcepcioCorreuExisteix.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CtrlModificaEntitat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CtrlModificaAjuntament.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="culturalinkmain.cpp">
@@ -368,6 +374,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TxConsultaCiutada.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CtrlModificaEntitat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CtrlModificaAjuntament.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

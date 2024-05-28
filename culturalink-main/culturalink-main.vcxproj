@@ -153,7 +153,9 @@
     <ClInclude Include="ConsultarUsuariUI.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="CtrlModificaAjuntament.h" />
     <ClInclude Include="CtrlModificaCiutada.h" />
+    <ClInclude Include="CtrlModificaEntitat.h" />
     <ClInclude Include="CtrlModificaEsdeveniment.h" />
     <ClInclude Include="CustomButtonEsdev.h" />
     <ClInclude Include="ElsMeusEsdevUI.h">
@@ -240,7 +242,9 @@
     <ClCompile Include="ComprarEsdevenimentUI.cpp" />
     <ClCompile Include="ConsultaEsdevenimentUI.cpp" />
     <ClCompile Include="ConsultarUsuariUI.cpp" />
+    <ClCompile Include="CtrlModificaAjuntament.cpp" />
     <ClCompile Include="CtrlModificaCiutada.cpp" />
+    <ClCompile Include="CtrlModificaEntitat.cpp" />
     <ClCompile Include="CtrlModificaEsdeveniment.cpp" />
     <ClCompile Include="culturalinkmain.cpp" />
     <ClCompile Include="ElsMeusEsdevUI.cpp" />
