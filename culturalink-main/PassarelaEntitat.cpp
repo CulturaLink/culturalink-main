@@ -43,44 +43,50 @@ void PassarelaEntitat::insereix()
     String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
     MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
     int numeroAleatorio;
-    while (encontrado == false)
-    {
-        random_device rd;
-        mt19937 gen(rd());
-        uniform_int_distribution<int> dis(1, 9999);
-        numeroAleatorio = dis(gen);
-        posaId_Entitat(numeroAleatorio);
-        String^ sql = "SELECT * FROM entitat WHERE id_entitat='" + id_entitat + "'";
-        MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
-        MySqlDataReader^ dataReader;
-        conn->Open();
-        dataReader = cmd->ExecuteReader();
-        if (!dataReader->Read())
-        {
-            encontrado = true;
-        }
-    }
-    conn->Close();
-    posaId_Entitat(numeroAleatorio);
-    String^ sql = "INSERT INTO entitat VALUES('" + numeroAleatorio + "', '" + nom + "', '" + contrasenya + "', '" + telefon + "', '" + correuElectronic + "')";;
-    MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
     MySqlDataReader^ dataReader;
+
     try {
-        // obrim la connexió
         conn->Open();
-        // executem la comanda creada abans del try
-        dataReader = cmd->ExecuteReader();
+        while (!encontrado)
+        {
+            random_device rd;
+            mt19937 gen(rd());
+            uniform_int_distribution<int> dis(1, 9999);
+            numeroAleatorio = dis(gen);
+            posaId_Entitat(numeroAleatorio);
+
+            String^ sqlSelect = "SELECT * FROM entitat WHERE id_entitat = @id_entitat";
+            MySqlCommand^ cmdSelect = gcnew MySqlCommand(sqlSelect, conn);
+            cmdSelect->Parameters->AddWithValue("@id_entitat", numeroAleatorio);
+
+            dataReader = cmdSelect->ExecuteReader();
+            if (!dataReader->Read())
+            {
+                encontrado = true;
+            }
+            dataReader->Close();
+        }
+
+        String^ sqlInsert = "INSERT INTO entitat (id_entitat, nom, contrasenya, telefon, correu) VALUES (@id_entitat, @nom, @contrasenya, @telefon, @correu)";
+        MySqlCommand^ cmdInsert = gcnew MySqlCommand(sqlInsert, conn);
+        cmdInsert->Parameters->AddWithValue("@id_entitat", numeroAleatorio);
+        cmdInsert->Parameters->AddWithValue("@nom", nom);
+        cmdInsert->Parameters->AddWithValue("@contrasenya", contrasenya);
+        cmdInsert->Parameters->AddWithValue("@telefon", telefon);
+        cmdInsert->Parameters->AddWithValue("@correu", correuElectronic);
+
+        cmdInsert->ExecuteNonQuery();
     }
     catch (Exception^ ex) {
-        // codi per mostrar l’error en una finestra
+        // Código para mostrar el error en una ventana
         MessageBox::Show(ex->Message);
     }
     finally {
-        // si tot va bé es tanca la connexió
+        // Cierra la conexión
         conn->Close();
     }
-    
 }
+
 
 String^ PassarelaEntitat::obteContrasenya() {
     return contrasenya;
@@ -141,53 +147,54 @@ void PassarelaEntitat::modifica() {
     String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
     MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
 
-    // Comprobar si el correu ya existe, throw excepcion en caso que si
-    String^ sqlCheckCorreu = "SELECT COUNT(*) FROM amep14.entitat WHERE correu = '" + obteCorreuElectronic() + "' AND id_entitat <> '" + obteid() + "';";
-
     try {
-        // obrim la connexioo
+        // Abrimos la conexión
         conn->Open();
 
+        // Comprobar si el correu ya existe, throw excepcion en caso que si
+        String^ sqlCheckCorreu = "SELECT COUNT(*) FROM amep14.entitat WHERE correu = @correu AND id_entitat <> @id_entitat;";
         MySqlCommand^ cmd1 = gcnew MySqlCommand(sqlCheckCorreu, conn);
-        MySqlDataReader^ dataReader1;
-        dataReader1 = cmd1->ExecuteReader();
+        cmd1->Parameters->AddWithValue("@correu", obteCorreuElectronic());
+        cmd1->Parameters->AddWithValue("@id_entitat", obteid());
+
+        MySqlDataReader^ dataReader1 = cmd1->ExecuteReader();
 
         int numEnt = 0;
-
         if (dataReader1->Read()) { // Check if there are rows to read 
             numEnt = Convert::ToInt32(dataReader1[0]); // Read the count from the first column (index 0)
         }
 
+        dataReader1->Close();
+
         if (numEnt != 0) throw gcnew CorreuExisteix("Correu ja existeix!");
 
-        dataReader1->Close();
-        //String^ clauString = passAju->getClau()->ToString();
-
+        // Actualizar los datos
         String^ sql = "UPDATE amep14.entitat SET "
-            "nom = '" + obteNom() + "', "
-            "telefon = '" + obteTelefon() + "', "
-            "correu = '" + obteCorreuElectronic() + "', "
-            "contrasenya = '" + obteContrasenya() + "' "
-            "WHERE id_entitat = '" + obteid() + "';";
+            "nom = @nom, "
+            "telefon = @telefon, "
+            "correu = @correu, "
+            "contrasenya = @contrasenya "
+            "WHERE id_entitat = @id_entitat;";
 
         MySqlCommand^ cmd2 = gcnew MySqlCommand(sql, conn);
+        cmd2->Parameters->AddWithValue("@nom", obteNom());
+        cmd2->Parameters->AddWithValue("@telefon", obteTelefon());
+        cmd2->Parameters->AddWithValue("@correu", obteCorreuElectronic());
+        cmd2->Parameters->AddWithValue("@contrasenya", obteContrasenya());
+        cmd2->Parameters->AddWithValue("@id_entitat", obteid());
 
-        MySqlDataReader^ dataReader2;
-
-        // executem la comanda creada abans del try
-        dataReader2 = cmd2->ExecuteReader();
+        cmd2->ExecuteNonQuery();
     }
     catch (Exception^ ex) {
-        // codi per mostrar lerror en una finestra
-        //MessageBox::Show(ex->Message);
+        // Código para mostrar el error en una ventana
         throw ex;
     }
     finally {
-        // si tot va be es tanca la connexioo
+        // Si todo va bien, se cierra la conexión
         conn->Close();
     }
-
 }
+
 
 void PassarelaEntitat::esborra()
 {
