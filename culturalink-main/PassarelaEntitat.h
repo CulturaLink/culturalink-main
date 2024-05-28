@@ -2,13 +2,14 @@
 #include <iostream>
 #include <string>
 #include <random>
-
+#include "ExcepcioCorreuExisteix.h"
 
 using namespace std;
 using namespace MySql::Data::MySqlClient;
 using namespace System;
 using namespace System::Windows::Forms;
 
+using namespace CostumCorreuExisteix;
 
 ref class PassarelaEntitat {
 public:
@@ -17,8 +18,8 @@ public:
     PassarelaEntitat% operator=(const PassarelaEntitat% other);
     PassarelaEntitat(String^ nomA, String^ contrasenyaA, String^ correuA, int^ telefonA, int^ id_entitatA);
     void insereix();
-    //void modifica();
-    //void esborra();
+    void modifica();
+    void esborra();
 
     String^ obteNom();
     String^ obteContrasenya();
@@ -39,4 +40,3 @@ private:
     int^ id_entitat;
     int^ telefon;
 };
-

@@ -178,6 +178,7 @@ namespace culturalink_main {
 			this->txt_nom_MODENT->Name = L"txt_nom_MODENT";
 			this->txt_nom_MODENT->Size = System::Drawing::Size(308, 22);
 			this->txt_nom_MODENT->TabIndex = 5;
+			this->txt_nom_MODENT->TextChanged += gcnew System::EventHandler(this, &ModificaEntitatUI::txt_nom_MODENT_TextChanged);
 			// 
 			// lbl_contrasenya_MODENT
 			// 
@@ -293,5 +294,7 @@ namespace culturalink_main {
 
 		}
 #pragma endregion
-	};
+	private: System::Void txt_nom_MODENT_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+};
 }
