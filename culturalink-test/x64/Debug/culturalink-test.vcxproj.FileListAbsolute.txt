@@ -1,2 +1,0 @@
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-test\x64\Debug\culturalink-test.vcxproj.AssemblyReference.cache
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-test\x64\Debug\culturalink-test.vcxproj.CopyComplete

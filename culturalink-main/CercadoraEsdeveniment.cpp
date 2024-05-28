@@ -151,40 +151,54 @@ List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaEsdevenimentsAmbTipus(
     }
 }
 
-List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaEsdevenimentsPerEntitat(String^ ent)
-{
-    String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
+List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaEsdevenimentsPerEntitat(String^ ent) {
+    String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username=amep14; password=\"Yee7zaeheih9-\"; database=amep14;";
 
     MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
-    String^ sql2 = "SELECT nom_esdeveniment FROM esdeveniment WHERE id_entitat='@idE'";
+    String^ sql2 = "SELECT nom_esdeveniment, preu_esdeveniment, data, confirmacio FROM esdeveniment WHERE id_entitat=@idE";
     MySqlCommand^ cmd2 = gcnew MySqlCommand(sql2, conn);
     cmd2->Parameters->AddWithValue("@idE", ent);
     MySqlDataReader^ dataReader;
 
     try {
         conn->Open();
-  
+
         List<PassarelaEsdeveniment^>^ totsEsdev = gcnew List<PassarelaEsdeveniment^>(); // Initialize the list
 
-        cmd2 = gcnew MySqlCommand(sql2, conn);
         dataReader = cmd2->ExecuteReader();
 
-        while (dataReader->Read()) { // Use while loop to iterate through all rows
+        while (dataReader->Read()) {
             String^ nomEsdev = dataReader->GetString(0);
             float preuEsdev = dataReader->GetFloat(1);
+            String^ data = dataReader->GetDateTime(2).ToString();
 
-            PassarelaEsdeveniment^ passEsdev = gcnew PassarelaEsdeveniment(nomEsdev, preuEsdev);
+            // Check if confirmacio field is NULL
+            bool confirmacioIsNull = dataReader->IsDBNull(3);
+            int confirmacio = 2; // Default value if confirmacio is NULL
+
+            if (!confirmacioIsNull) {
+                confirmacio = dataReader->GetBoolean(3); // Get boolean value if confirmacio is not NULL
+            }
+
+            PassarelaEsdeveniment^ passEsdev = gcnew PassarelaEsdeveniment(nomEsdev, preuEsdev, data, confirmacio);
 
             totsEsdev->Add(passEsdev);
         }
+        dataReader->Close();
         conn->Close();
         return totsEsdev; // Return the list
     }
-    catch (Exception^ ex) {
-        MessageBox::Show(ex->Message);
+    catch (MySqlException^ ex) {
+        MessageBox::Show("MySQL Error: " + ex->Message);
         return nullptr; // Return null in case of exception
     }
+    catch (Exception^ ex) {
+        MessageBox::Show("General Error: " + ex->Message);
+        return nullptr; // Return null in case of exception
+    }
+            conn->Close();
 }
+
 
 
 List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaEsdevenimentsPerAjuntament(String^ aj) {

@@ -46,6 +46,15 @@ PassarelaEsdeveniment::PassarelaEsdeveniment(String^ nomEsdev, float preu)
 }
 
 
+PassarelaEsdeveniment::PassarelaEsdeveniment(String^ nomEsdev, float preu, String^ dataEsdev, int confirmacio)
+{
+    _nomEsd = nomEsdev;
+    _preu = preu;
+    _dataEsd = dataEsdev;
+    _confirmacio = confirmacio;
+}
+
+
 PassarelaEsdeveniment% PassarelaEsdeveniment::operator=(const PassarelaEsdeveniment% other)
 {
     if (this != % other)

@@ -1,10 +1,1 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: El directorio Output no termina con una barra diagonal final. Esta instancia de compilación agregará la barra diagonal porque es necesaria para que se pueda evaluar correctamente el directorio Output.
-  test.cpp
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-test\test.cpp(27,2): warning C4305: 'argumento': truncamiento de 'double' a 'RawType'
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-test\test.cpp(27,2): warning C4305:         with
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-test\test.cpp(27,2): warning C4305:         [
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-test\test.cpp(27,2): warning C4305:             RawType=float
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-test\test.cpp(27,2): warning C4305:         ]
-  (compilando archivo de origen "/test.cpp")
-  
-  culturalink-test.vcxproj -> C:\Users\patri\Documents\GitHub\culturalink-main\x64\Debug\culturalink-test.exe
+﻿

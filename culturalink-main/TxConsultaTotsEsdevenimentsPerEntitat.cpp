@@ -20,6 +20,8 @@ void TxConsultaTotsEsdevenimentsPerEntitat::executar(String^ ent)
         preus->Add((esdev->getPreu()).ToString());
         results->Add(esdev->getNomEsd());
         results->Add(esdev->getPreu().ToString());
+        results->Add(esdev->getDataEsd());
+        results->Add(esdev->getConfirmacio().ToString());
     }
 
     _result = results;
