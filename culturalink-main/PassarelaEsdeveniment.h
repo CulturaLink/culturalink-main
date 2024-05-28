@@ -3,8 +3,11 @@
 #include <string>
 #include "UsuariIniciat.h"
 
-const int preuNegatiu = 1;
-
+//const int preuNegatiu = 1;
+const int errorDataAnterior = 2;
+const int errorTipus = 3;
+const int errorAjuntament = 4;
+const int errorEsdevenimentExistent = 5;
 
 using namespace std;
 using namespace MySql::Data::MySqlClient;
