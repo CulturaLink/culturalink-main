@@ -56,6 +56,9 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::Label^ label7;
+
 
 	private:
 		/// <summary>
@@ -81,6 +84,8 @@ namespace culturalink_main {
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// textBox1
@@ -191,14 +196,40 @@ namespace culturalink_main {
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(766, 60);
 			this->label1->TabIndex = 13;
-			this->label1->Text = L"Registre Ciutada";
+			this->label1->Text = L"Registre Entitat";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label6->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->label6->Location = System::Drawing::Point(149, 189);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(174, 18);
+			this->label6->TabIndex = 20;
+			this->label6->Text = L"min 8 chars, 1 maj, 1num";
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label7->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->label7->Location = System::Drawing::Point(105, 276);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(117, 18);
+			this->label7->TabIndex = 21;
+			this->label7->Text = L"telefon de 9 num";
 			// 
 			// RegistraEntitat
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(794, 418);
+			this->Controls->Add(this->label7);
+			this->Controls->Add(this->label6);
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->label3);
@@ -224,8 +255,8 @@ namespace culturalink_main {
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 	String^ nom = this->textBox1->Text;
 	String^ contrasenya = this->textBox2->Text;
-	String^ correu = this->textBox3->Text;
-	String^ telefon = this->textBox4->Text;
+	String^ correu = this->textBox4->Text;
+	String^ telefon = this->textBox3->Text;
 
 	if (nom->Length == 0 || contrasenya->Length == 0 || correu->Length == 0 || telefon->Length == 0)
 	{
@@ -303,5 +334,6 @@ private: System::Void textBox1_TextChanged(System::Object^ sender, System::Event
 }
 private: System::Void RegistraEntitat_Load(System::Object^ sender, System::EventArgs^ e) {
 }
+
 };
 }

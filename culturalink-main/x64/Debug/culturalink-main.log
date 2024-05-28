@@ -13,7 +13,7 @@ C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(
   C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
   see declaration of 'Transaccio::executar'
   
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(298,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(329,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
   (compiling source file '/CercadoraCiutada.cpp')
   
 C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4029,41): warning C4101: 'list_esdevs': unreferenced local variable
@@ -57,7 +57,7 @@ C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(
   C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
   see declaration of 'Transaccio::executar'
   
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(298,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(329,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
   (compiling source file '/Login.cpp')
   
 C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
@@ -107,7 +107,7 @@ C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(
   C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
   see declaration of 'Transaccio::executar'
   
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(298,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(329,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
   (compiling source file '/MainForm.cpp')
   
 C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
@@ -163,7 +163,7 @@ C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(
   C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
   see declaration of 'Transaccio::executar'
   
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(298,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(329,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
   (compiling source file '/PassarelaCiutada.cpp')
   
 C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4029,41): warning C4101: 'list_esdevs': unreferenced local variable
@@ -211,57 +211,12 @@ C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiut
 C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\PassarelaCiutada.cpp(81,42): warning C4965: implicit box of integer 0; use nullptr or explicit cast
   (compiling source file '/PassarelaCiutada.cpp')
   
-  ProvesUI.cpp
+  RegisterFormCiutada.cpp
 C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/ProvesUI.cpp')
+  (compiling source file '/RegisterFormCiutada.cpp')
   
 C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/ProvesUI.cpp')
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/ProvesUI.cpp')
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4029,41): warning C4101: 'list_esdevs': unreferenced local variable
-  (compiling source file '/ProvesUI.cpp')
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4128,41): warning C4101: 'list_esdevs': unreferenced local variable
-  (compiling source file '/ProvesUI.cpp')
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4203,41): warning C4101: 'list_esdevs': unreferenced local variable
-  (compiling source file '/ProvesUI.cpp')
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4235,41): warning C4101: 'list_esdevs': unreferenced local variable
-  (compiling source file '/ProvesUI.cpp')
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4266,41): warning C4101: 'list_esdevs': unreferenced local variable
-  (compiling source file '/ProvesUI.cpp')
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4447,18): warning C4101: 'totsEsdevsEnt': unreferenced local variable
-  (compiling source file '/ProvesUI.cpp')
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4481,42): warning C4101: 'list_esdevs': unreferenced local variable
-  (compiling source file '/ProvesUI.cpp')
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4858,41): warning C4101: 'list_esdevs': unreferenced local variable
-  (compiling source file '/ProvesUI.cpp')
-  
-  RegistrarEsdevenimentUI.cpp
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11): warning C4570: 'Transaccio': is not explicitly declared as abstract but has abstract functions
-  (compiling source file '/RegistrarEsdevenimentUI.cpp')
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(11,11):
-  'void Transaccio::executar(void)': is abstract
-  C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
-  see declaration of 'Transaccio::executar'
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/RegistrarEsdevenimentUI.cpp')
-  
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-  (compiling source file '/RegistrarEsdevenimentUI.cpp')
+  (compiling source file '/RegisterFormCiutada.cpp')
   
   TxLoginCiutada.cpp
 C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(53,35): warning C4965: implicit box of integer 0; use nullptr or explicit cast
@@ -277,7 +232,7 @@ C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(
   C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
   see declaration of 'Transaccio::executar'
   
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(298,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(329,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
   (compiling source file '/TxLoginCiutada.cpp')
   
 C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4029,41): warning C4101: 'list_esdevs': unreferenced local variable
@@ -327,7 +282,7 @@ C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(
   C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\Transaccio.h(14,18):
   see declaration of 'Transaccio::executar'
   
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(298,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(329,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
   (compiling source file '/TxRegisterCiutada.cpp')
   
 C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4029,41): warning C4101: 'list_esdevs': unreferenced local variable
@@ -377,7 +332,7 @@ C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat
 C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\UsuariIniciat.h(57,25): warning C4965: implicit box of integer 0; use nullptr or explicit cast
   (compiling source file '/culturalinkmain.cpp')
   
-C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(298,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\RegistraEntitat.h(329,77): warning C4965: implicit box of integer 0; use nullptr or explicit cast
   (compiling source file '/culturalinkmain.cpp')
   
 C:\Users\Ferran\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4029,41): warning C4101: 'list_esdevs': unreferenced local variable

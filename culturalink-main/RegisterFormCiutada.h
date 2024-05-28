@@ -59,6 +59,7 @@ namespace culturalink_main {
 	private: System::Windows::Forms::TextBox^ tbDate;
 	private: System::Windows::Forms::Button^ btnOK;
 	private: System::Windows::Forms::Button^ btnCancel;
+	private: System::Windows::Forms::Label^ label7;
 
 
 
@@ -93,6 +94,7 @@ namespace culturalink_main {
 			this->tbDate = (gcnew System::Windows::Forms::TextBox());
 			this->btnOK = (gcnew System::Windows::Forms::Button());
 			this->btnCancel = (gcnew System::Windows::Forms::Button());
+			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -225,11 +227,24 @@ namespace culturalink_main {
 			this->btnCancel->UseVisualStyleBackColor = true;
 			this->btnCancel->Click += gcnew System::EventHandler(this, &RegisterFormCiutada::btnCancel_Click);
 			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label7->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->label7->Location = System::Drawing::Point(211, 361);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(112, 24);
+			this->label7->TabIndex = 5;
+			this->label7->Text = L"yyyy-mm-dd";
+			// 
 			// RegisterFormCiutada
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(790, 499);
+			this->Controls->Add(this->label7);
 			this->Controls->Add(this->btnCancel);
 			this->Controls->Add(this->btnOK);
 			this->Controls->Add(this->tbDate);
