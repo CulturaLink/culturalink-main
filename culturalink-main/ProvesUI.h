@@ -350,13 +350,6 @@ namespace culturalink_main {
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(ProvesUI::typeid));
 			this->flowLayoutPanelSOLENTIT = (gcnew System::Windows::Forms::FlowLayoutPanel());
-			/*this->pnlSOLENTITex = (gcnew System::Windows::Forms::Panel());
-			this->lblEsdevSOLENTITex = (gcnew System::Windows::Forms::Label());
-			this->lblDataSOLENTITex = (gcnew System::Windows::Forms::Label());
-			this->lblPreuSOLENTITex = (gcnew System::Windows::Forms::Label());
-			this->pnlEstatSOLENTITex = (gcnew System::Windows::Forms::Panel());
-			this->lblEstatSOLENTITex = (gcnew System::Windows::Forms::Label());
-			this->lblIDSOLENTITex = (gcnew System::Windows::Forms::Label());*/
 			this->pnlTitlesSOLENTIT = (gcnew System::Windows::Forms::Panel());
 			this->lblNomEsdevSOLENTITen = (gcnew System::Windows::Forms::Label());
 			this->lblDataSOLENTITen = (gcnew System::Windows::Forms::Label());
@@ -471,6 +464,8 @@ namespace culturalink_main {
 			this->btnMaximize = (gcnew System::Windows::Forms::Button());
 			this->btnClose = (gcnew System::Windows::Forms::Button());
 			this->panelNavBar = (gcnew System::Windows::Forms::Panel());
+			this->pnlESQLesMevesPeticionsEntitat = (gcnew System::Windows::Forms::Panel());
+			this->btnEsqLesMevesPeticions = (gcnew System::Windows::Forms::Button());
 			this->panel11 = (gcnew System::Windows::Forms::Panel());
 			this->button9 = (gcnew System::Windows::Forms::Button());
 			this->panel10 = (gcnew System::Windows::Forms::Panel());
@@ -547,11 +542,6 @@ namespace culturalink_main {
 			this->pnlMainModEsdv = (gcnew System::Windows::Forms::Panel());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->btnViewNavBar = (gcnew System::Windows::Forms::Button());
-			this->pnlESQLesMevesPeticionsEntitat = (gcnew System::Windows::Forms::Panel());
-			this->btnEsqLesMevesPeticions = (gcnew System::Windows::Forms::Button());
-			this->flowLayoutPanelSOLENTIT->SuspendLayout();
-			/*	this->pnlSOLENTITex->SuspendLayout();
-				this->pnlEstatSOLENTITex->SuspendLayout();*/
 			this->pnlTitlesSOLENTIT->SuspendLayout();
 			this->PANELSolicitutEntitat->SuspendLayout();
 			this->PANELModificaCiut->SuspendLayout();
@@ -594,6 +584,7 @@ namespace culturalink_main {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->AppIcon))->BeginInit();
 			this->pnlTopBarMinMaxClose->SuspendLayout();
 			this->panelNavBar->SuspendLayout();
+			this->pnlESQLesMevesPeticionsEntitat->SuspendLayout();
 			this->panel11->SuspendLayout();
 			this->panel10->SuspendLayout();
 			this->pnlModEsdev->SuspendLayout();
@@ -623,101 +614,16 @@ namespace culturalink_main {
 			this->panel8->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->BeginInit();
 			this->pnlMainModEsdv->SuspendLayout();
-			this->pnlESQLesMevesPeticionsEntitat->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// flowLayoutPanelSOLENTIT
 			// 
+			this->flowLayoutPanelSOLENTIT->AutoScroll = true;
 			this->flowLayoutPanelSOLENTIT->BackColor = System::Drawing::Color::White;
-			//this->flowLayoutPanelSOLENTIT->Controls->Add(this->pnlSOLENTITex);
-			this->flowLayoutPanelSOLENTIT->FlowDirection = System::Windows::Forms::FlowDirection::LeftToRight;
 			this->flowLayoutPanelSOLENTIT->Location = System::Drawing::Point(23, 63);
 			this->flowLayoutPanelSOLENTIT->Name = L"flowLayoutPanelSOLENTIT";
 			this->flowLayoutPanelSOLENTIT->Size = System::Drawing::Size(1167, 536);
 			this->flowLayoutPanelSOLENTIT->TabIndex = 30;
-			this->flowLayoutPanelSOLENTIT->AutoScroll = true;
-			this->flowLayoutPanelSOLENTIT->HorizontalScroll->Enabled = false; // Disable horizontal scrolling
-
-			//// 
-			//// pnlSOLENTITex
-			//// 
-			//this->pnlSOLENTITex->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			//this->pnlSOLENTITex->Controls->Add(this->lblEsdevSOLENTITex);
-			//this->pnlSOLENTITex->Controls->Add(this->lblDataSOLENTITex);
-			//this->pnlSOLENTITex->Controls->Add(this->lblPreuSOLENTITex);
-			//this->pnlSOLENTITex->Controls->Add(this->pnlEstatSOLENTITex);
-			//this->pnlSOLENTITex->Controls->Add(this->lblIDSOLENTITex);
-			//this->pnlSOLENTITex->Location = System::Drawing::Point(3, 3);
-			//this->pnlSOLENTITex->Name = L"pnlSOLENTITex";
-			//this->pnlSOLENTITex->Size = System::Drawing::Size(1164, 48);
-			//this->pnlSOLENTITex->TabIndex = 0;
-			//// 
-			//// lblEsdevSOLENTITex
-			//// 
-			//this->lblEsdevSOLENTITex->AutoSize = true;
-			//this->lblEsdevSOLENTITex->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-			//	static_cast<System::Byte>(0)));
-			//this->lblEsdevSOLENTITex->Location = System::Drawing::Point(249, 16);
-			//this->lblEsdevSOLENTITex->Name = L"lblEsdevSOLENTITex";
-			//this->lblEsdevSOLENTITex->Size = System::Drawing::Size(88, 17);
-			//this->lblEsdevSOLENTITex->TabIndex = 4;
-			//this->lblEsdevSOLENTITex->Text = L"Esdeveniment";
-			//// 
-			//// lblDataSOLENTITex
-			//// 
-			//this->lblDataSOLENTITex->AutoSize = true;
-			//this->lblDataSOLENTITex->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-			//	static_cast<System::Byte>(0)));
-			//this->lblDataSOLENTITex->Location = System::Drawing::Point(719, 17);
-			//this->lblDataSOLENTITex->Name = L"lblDataSOLENTITex";
-			//this->lblDataSOLENTITex->Size = System::Drawing::Size(74, 17);
-			//this->lblDataSOLENTITex->TabIndex = 3;
-			//this->lblDataSOLENTITex->Text = L"01/01/2024";
-			//// 
-			//// lblPreuSOLENTITex
-			//// 
-			//this->lblPreuSOLENTITex->AutoSize = true;
-			//this->lblPreuSOLENTITex->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-			//	static_cast<System::Byte>(0)));
-			//this->lblPreuSOLENTITex->Location = System::Drawing::Point(508, 17);
-			//this->lblPreuSOLENTITex->Name = L"lblPreuSOLENTITex";
-			//this->lblPreuSOLENTITex->Size = System::Drawing::Size(43, 17);
-			//this->lblPreuSOLENTITex->TabIndex = 2;
-			//this->lblPreuSOLENTITex->Text = L"0.00 €";
-			//// 
-			//// pnlEstatSOLENTITex
-			//// 
-			//this->pnlEstatSOLENTITex->BackColor = System::Drawing::Color::OrangeRed;
-			//this->pnlEstatSOLENTITex->Controls->Add(this->lblEstatSOLENTITex);
-			//this->pnlEstatSOLENTITex->ForeColor = System::Drawing::Color::White;
-			//this->pnlEstatSOLENTITex->Location = System::Drawing::Point(927, 8);
-			//this->pnlEstatSOLENTITex->Name = L"pnlEstatSOLENTITex";
-			//this->pnlEstatSOLENTITex->Size = System::Drawing::Size(143, 29);
-			//this->pnlEstatSOLENTITex->TabIndex = 1;
-			//// 
-			//// lblEstatSOLENTITex
-			//// 
-			//this->lblEstatSOLENTITex->AutoSize = true;
-			//this->lblEstatSOLENTITex->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-			//	static_cast<System::Byte>(0)));
-			//this->lblEstatSOLENTITex->ForeColor = System::Drawing::Color::White;
-			//this->lblEstatSOLENTITex->Location = System::Drawing::Point(42, 6);
-			//this->lblEstatSOLENTITex->Name = L"lblEstatSOLENTITex";
-			//this->lblEstatSOLENTITex->Size = System::Drawing::Size(65, 17);
-			//this->lblEstatSOLENTITex->TabIndex = 0;
-			//this->lblEstatSOLENTITex->Text = L"DENEGAT";
-			//// 
-			//// lblIDSOLENTITex
-			//// 
-			//this->lblIDSOLENTITex->AutoSize = true;
-			//this->lblIDSOLENTITex->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-			//	static_cast<System::Byte>(0)));
-			//this->lblIDSOLENTITex->Location = System::Drawing::Point(28, 16);
-			//this->lblIDSOLENTITex->Name = L"lblIDSOLENTITex";
-			//this->lblIDSOLENTITex->Size = System::Drawing::Size(56, 17);
-			//this->lblIDSOLENTITex->TabIndex = 0;
-			//this->lblIDSOLENTITex->Text = L"XXXXXX";
-			//this->lblIDSOLENTITex->TextAlign = System::Drawing::ContentAlignment::TopCenter;
 			// 
 			// pnlTitlesSOLENTIT
 			// 
@@ -794,6 +700,7 @@ namespace culturalink_main {
 			// 
 			// PANELSolicitutEntitat
 			// 
+			this->PANELSolicitutEntitat->AutoScroll = true;
 			this->PANELSolicitutEntitat->Controls->Add(this->flowLayoutPanelSOLENTIT);
 			this->PANELSolicitutEntitat->Controls->Add(this->pnlTitlesSOLENTIT);
 			this->PANELSolicitutEntitat->Location = System::Drawing::Point(22, 12);
@@ -801,8 +708,6 @@ namespace culturalink_main {
 			this->PANELSolicitutEntitat->Size = System::Drawing::Size(1215, 724);
 			this->PANELSolicitutEntitat->TabIndex = 17;
 			this->PANELSolicitutEntitat->Visible = false;
-			this->PANELSolicitutEntitat->AutoScroll = true; // Enable vertical autoscroll only
-			this->PANELSolicitutEntitat->HorizontalScroll->Enabled = false; // Disable horizontal scrolling
 			// 
 			// PANELModificaCiut
 			// 
@@ -1897,6 +1802,7 @@ namespace culturalink_main {
 			// 
 			// flowLayoutPanel1
 			// 
+			this->flowLayoutPanel1->AutoScroll = true;
 			this->flowLayoutPanel1->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->flowLayoutPanel1->Location = System::Drawing::Point(0, 0);
 			this->flowLayoutPanel1->Margin = System::Windows::Forms::Padding(4);
@@ -1904,7 +1810,6 @@ namespace culturalink_main {
 			this->flowLayoutPanel1->Padding = System::Windows::Forms::Padding(29, 0, 0, 0);
 			this->flowLayoutPanel1->Size = System::Drawing::Size(1666, 513);
 			this->flowLayoutPanel1->TabIndex = 3;
-			this->flowLayoutPanel1->AutoScroll = true; // Enable vertical autoscroll
 			this->flowLayoutPanel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &ProvesUI::flowLayoutPanel1_Paint);
 			// 
 			// pnlTopBar
@@ -2064,6 +1969,33 @@ namespace culturalink_main {
 			this->panelNavBar->Name = L"panelNavBar";
 			this->panelNavBar->Size = System::Drawing::Size(276, 736);
 			this->panelNavBar->TabIndex = 1;
+			// 
+			// pnlESQLesMevesPeticionsEntitat
+			// 
+			this->pnlESQLesMevesPeticionsEntitat->Controls->Add(this->btnEsqLesMevesPeticions);
+			this->pnlESQLesMevesPeticionsEntitat->Dock = System::Windows::Forms::DockStyle::Top;
+			this->pnlESQLesMevesPeticionsEntitat->Location = System::Drawing::Point(0, 501);
+			this->pnlESQLesMevesPeticionsEntitat->Name = L"pnlESQLesMevesPeticionsEntitat";
+			this->pnlESQLesMevesPeticionsEntitat->Size = System::Drawing::Size(276, 52);
+			this->pnlESQLesMevesPeticionsEntitat->TabIndex = 9;
+			// 
+			// btnEsqLesMevesPeticions
+			// 
+			this->btnEsqLesMevesPeticions->BackColor = System::Drawing::Color::Black;
+			this->btnEsqLesMevesPeticions->Dock = System::Windows::Forms::DockStyle::Right;
+			this->btnEsqLesMevesPeticions->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->btnEsqLesMevesPeticions->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F));
+			this->btnEsqLesMevesPeticions->ForeColor = System::Drawing::Color::White;
+			this->btnEsqLesMevesPeticions->Location = System::Drawing::Point(53, 0);
+			this->btnEsqLesMevesPeticions->Margin = System::Windows::Forms::Padding(4);
+			this->btnEsqLesMevesPeticions->Name = L"btnEsqLesMevesPeticions";
+			this->btnEsqLesMevesPeticions->Size = System::Drawing::Size(223, 52);
+			this->btnEsqLesMevesPeticions->TabIndex = 1;
+			this->btnEsqLesMevesPeticions->Text = L"Les Meves Peticions";
+			this->btnEsqLesMevesPeticions->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			this->btnEsqLesMevesPeticions->UseVisualStyleBackColor = false;
+			this->btnEsqLesMevesPeticions->Visible = false;
+			this->btnEsqLesMevesPeticions->Click += gcnew System::EventHandler(this, &ProvesUI::btnEsqLesMevesPeticions_Click);
 			// 
 			// panel11
 			// 
@@ -2563,6 +2495,7 @@ namespace culturalink_main {
 			// 
 			// flowLayoutPanel2
 			// 
+			this->flowLayoutPanel2->AutoScroll = true;
 			this->flowLayoutPanel2->BackColor = System::Drawing::Color::White;
 			this->flowLayoutPanel2->Controls->Add(this->btnFiltrGala);
 			this->flowLayoutPanel2->Controls->Add(this->btnFiltreDeportivo);
@@ -2573,7 +2506,6 @@ namespace culturalink_main {
 			this->flowLayoutPanel2->Padding = System::Windows::Forms::Padding(29, 10, 0, 0);
 			this->flowLayoutPanel2->Size = System::Drawing::Size(1666, 86);
 			this->flowLayoutPanel2->TabIndex = 4;
-			this->flowLayoutPanel2->AutoScroll = true; // Enable vertical autoscroll
 			this->flowLayoutPanel2->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &ProvesUI::flowLayoutPanel2_Paint);
 			// 
 			// btnFiltrGala
@@ -3045,33 +2977,6 @@ namespace culturalink_main {
 			this->btnViewNavBar->UseVisualStyleBackColor = false;
 			this->btnViewNavBar->Click += gcnew System::EventHandler(this, &ProvesUI::btnViewNavBar_Click);
 			// 
-			// pnlESQLesMevesPeticionsEntitat
-			// 
-			this->pnlESQLesMevesPeticionsEntitat->Controls->Add(this->btnEsqLesMevesPeticions);
-			this->pnlESQLesMevesPeticionsEntitat->Dock = System::Windows::Forms::DockStyle::Top;
-			this->pnlESQLesMevesPeticionsEntitat->Location = System::Drawing::Point(0, 501);
-			this->pnlESQLesMevesPeticionsEntitat->Name = L"pnlESQLesMevesPeticionsEntitat";
-			this->pnlESQLesMevesPeticionsEntitat->Size = System::Drawing::Size(276, 52);
-			this->pnlESQLesMevesPeticionsEntitat->TabIndex = 9;
-			// 
-			// btnEsqLesMevesPeticions
-			// 
-			this->btnEsqLesMevesPeticions->BackColor = System::Drawing::Color::Black;
-			this->btnEsqLesMevesPeticions->Dock = System::Windows::Forms::DockStyle::Right;
-			this->btnEsqLesMevesPeticions->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->btnEsqLesMevesPeticions->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F));
-			this->btnEsqLesMevesPeticions->ForeColor = System::Drawing::Color::White;
-			this->btnEsqLesMevesPeticions->Location = System::Drawing::Point(53, 0);
-			this->btnEsqLesMevesPeticions->Margin = System::Windows::Forms::Padding(4);
-			this->btnEsqLesMevesPeticions->Name = L"btnEsqLesMevesPeticions";
-			this->btnEsqLesMevesPeticions->Size = System::Drawing::Size(223, 52);
-			this->btnEsqLesMevesPeticions->TabIndex = 1;
-			this->btnEsqLesMevesPeticions->Text = L"Les Meves Peticions";
-			this->btnEsqLesMevesPeticions->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->btnEsqLesMevesPeticions->UseVisualStyleBackColor = false;
-			this->btnEsqLesMevesPeticions->Click += gcnew System::EventHandler(this, &ProvesUI::btnEsqLesMevesPeticions_Click);
-			this->btnEsqLesMevesPeticions->Visible = false;
-			// 
 			// ProvesUI
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -3092,11 +2997,6 @@ namespace culturalink_main {
 			this->Text = L"ProvesUI";
 			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
 			this->Load += gcnew System::EventHandler(this, &ProvesUI::ProvesUI_Load);
-			this->flowLayoutPanelSOLENTIT->ResumeLayout(false);
-			//this->pnlSOLENTITex->ResumeLayout(false);
-			//this->pnlSOLENTITex->PerformLayout();
-			//this->pnlEstatSOLENTITex->ResumeLayout(false);
-			//this->pnlEstatSOLENTITex->PerformLayout();
 			this->pnlTitlesSOLENTIT->ResumeLayout(false);
 			this->pnlTitlesSOLENTIT->PerformLayout();
 			this->PANELSolicitutEntitat->ResumeLayout(false);
@@ -3168,6 +3068,7 @@ namespace culturalink_main {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->AppIcon))->EndInit();
 			this->pnlTopBarMinMaxClose->ResumeLayout(false);
 			this->panelNavBar->ResumeLayout(false);
+			this->pnlESQLesMevesPeticionsEntitat->ResumeLayout(false);
 			this->panel11->ResumeLayout(false);
 			this->panel10->ResumeLayout(false);
 			this->pnlModEsdev->ResumeLayout(false);
@@ -3210,7 +3111,6 @@ namespace culturalink_main {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->EndInit();
 			this->pnlMainModEsdv->ResumeLayout(false);
 			this->pnlMainModEsdv->PerformLayout();
-			this->pnlESQLesMevesPeticionsEntitat->ResumeLayout(false);
 			this->ResumeLayout(false);
 
 		}
