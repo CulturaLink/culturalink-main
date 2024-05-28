@@ -105,11 +105,21 @@ void PassarelaEsdeveniment::insereix() {
     String^ sql = "INSERT INTO amep14.esdeveniment "
         "(id_entitat, preu_esdeveniment, ajuntament_esdeveniment, descripcio_esdeveniment, "
         "nom_esdeveniment, tipus, aforament, punts_cost, data, punts_descompte) "
-        "VALUES (" + idString + ", " + _preu + ", '" + _ajEsd + "', '" + _descEsd + "', '"
-        + _nomEsd + "', '" + _tipusEsd + "', " + _aforamentEsd + ", " + _puntsCostEsd + ", '"
-        + _dataEsd + "', " + _puntsDescEsd + ");";
+        "VALUES (@id_entitat, @preu_esdeveniment, @ajuntament_esdeveniment, @descripcio_esdeveniment, "
+        "@nom_esdeveniment, @tipus, @aforament, @punts_cost, @data, @punts_descompte);";
 
     MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
+    cmd->Parameters->AddWithValue("@id_entitat", idString);
+    cmd->Parameters->AddWithValue("@preu_esdeveniment", _preu);
+    cmd->Parameters->AddWithValue("@ajuntament_esdeveniment", _ajEsd);
+    cmd->Parameters->AddWithValue("@descripcio_esdeveniment", _descEsd);
+    cmd->Parameters->AddWithValue("@nom_esdeveniment", _nomEsd);
+    cmd->Parameters->AddWithValue("@tipus", _tipusEsd);
+    cmd->Parameters->AddWithValue("@aforament", _aforamentEsd);
+    cmd->Parameters->AddWithValue("@punts_cost", _puntsCostEsd);
+    cmd->Parameters->AddWithValue("@data", _dataEsd);
+    cmd->Parameters->AddWithValue("@punts_descompte", _puntsDescEsd);
+
 
     MySqlDataReader^ dataReader;
     try {
