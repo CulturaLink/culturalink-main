@@ -15,6 +15,6 @@ TxRegistraEntitat::TxRegistraEntitat(String^ nomA, String^ contrasenyaA, String^
 }
 
 void TxRegistraEntitat::executar() {
-    PassarelaEntitat u(nom, contrasenya,correu,telefon,id_entitat);
+    PassarelaEntitat u(nom, contrasenya, correu, telefon, id_entitat);
     u.insereix();
 }

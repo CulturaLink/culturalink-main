@@ -42,8 +42,8 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Panel^ panelMenu;
 	private: System::Windows::Forms::Button^ button4;
 	private: System::Windows::Forms::Button^ button3;
-	private: System::Windows::Forms::Button^ button2;
-	private: System::Windows::Forms::Button^ button1;
+
+
 	private: System::Windows::Forms::Panel^ panelTitleBar;
 	private: System::Windows::Forms::PictureBox^ pictureBox3;
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
@@ -78,6 +78,9 @@ namespace culturalink_main {
 
 	private: System::Windows::Forms::TextBox^ txtBPreuPunts;
 	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::Label^ label7;
+	private: System::Windows::Forms::Label^ label8;
+
 	private: System::ComponentModel::IContainer^ components;
 
 	private:
@@ -97,6 +100,8 @@ namespace culturalink_main {
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(RegistrarEsdevenimentUI::typeid));
 			this->notifyIcon1 = (gcnew System::Windows::Forms::NotifyIcon(this->components));
 			this->panelDesktop = (gcnew System::Windows::Forms::Panel());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->txtBData = (gcnew System::Windows::Forms::TextBox());
 			this->txtbAforament = (gcnew System::Windows::Forms::TextBox());
@@ -121,8 +126,6 @@ namespace culturalink_main {
 			this->panelMenu = (gcnew System::Windows::Forms::Panel());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
-			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->panelTitleBar = (gcnew System::Windows::Forms::Panel());
 			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
@@ -142,7 +145,9 @@ namespace culturalink_main {
 			// 
 			this->panelDesktop->AutoSize = true;
 			this->panelDesktop->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
-			this->panelDesktop->BackColor = System::Drawing::Color::LightSalmon;
+			this->panelDesktop->BackColor = System::Drawing::SystemColors::Control;
+			this->panelDesktop->Controls->Add(this->label8);
+			this->panelDesktop->Controls->Add(this->label7);
 			this->panelDesktop->Controls->Add(this->label1);
 			this->panelDesktop->Controls->Add(this->txtBData);
 			this->panelDesktop->Controls->Add(this->txtbAforament);
@@ -172,16 +177,41 @@ namespace culturalink_main {
 			this->panelDesktop->TabIndex = 7;
 			this->panelDesktop->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &RegistrarEsdevenimentUI::panelDesktop_Paint);
 			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
+			this->label8->Location = System::Drawing::Point(307, 315);
+			this->label8->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(101, 25);
+			this->label8->TabIndex = 33;
+			this->label8->Text = L"persones";
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
+			this->label7->Location = System::Drawing::Point(186, 55);
+			this->label7->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(24, 25);
+			this->label7->TabIndex = 32;
+			this->label7->Text = L"€";
+			this->label7->Click += gcnew System::EventHandler(this, &RegistrarEsdevenimentUI::label7_Click);
+			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::Color::Crimson;
-			this->label1->Location = System::Drawing::Point(322, 356);
+			this->label1->Location = System::Drawing::Point(307, 353);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(225, 25);
+			this->label1->Size = System::Drawing::Size(128, 25);
 			this->label1->TabIndex = 31;
-			this->label1->Text = L"Format YYYY-MM-DD";
+			this->label1->Text = L"yyyy-mm-dd";
+			this->label1->Click += gcnew System::EventHandler(this, &RegistrarEsdevenimentUI::label1_Click);
 			// 
 			// txtBData
 			// 
@@ -198,7 +228,7 @@ namespace culturalink_main {
 			this->txtbAforament->Location = System::Drawing::Point(139, 312);
 			this->txtbAforament->Margin = System::Windows::Forms::Padding(2);
 			this->txtbAforament->Name = L"txtbAforament";
-			this->txtbAforament->Size = System::Drawing::Size(208, 31);
+			this->txtbAforament->Size = System::Drawing::Size(163, 31);
 			this->txtbAforament->TabIndex = 29;
 			// 
 			// txtBTipus
@@ -207,7 +237,7 @@ namespace culturalink_main {
 			this->txtBTipus->Location = System::Drawing::Point(94, 225);
 			this->txtBTipus->Margin = System::Windows::Forms::Padding(2);
 			this->txtBTipus->Name = L"txtBTipus";
-			this->txtBTipus->Size = System::Drawing::Size(208, 31);
+			this->txtBTipus->Size = System::Drawing::Size(305, 31);
 			this->txtBTipus->TabIndex = 28;
 			// 
 			// txtBPuntsRegal
@@ -216,7 +246,7 @@ namespace culturalink_main {
 			this->txtBPuntsRegal->Location = System::Drawing::Point(191, 138);
 			this->txtBPuntsRegal->Margin = System::Windows::Forms::Padding(2);
 			this->txtBPuntsRegal->Name = L"txtBPuntsRegal";
-			this->txtBPuntsRegal->Size = System::Drawing::Size(208, 31);
+			this->txtBPuntsRegal->Size = System::Drawing::Size(134, 31);
 			this->txtBPuntsRegal->TabIndex = 27;
 			// 
 			// txtBPreuPunts
@@ -225,7 +255,7 @@ namespace culturalink_main {
 			this->txtBPreuPunts->Location = System::Drawing::Point(161, 95);
 			this->txtBPreuPunts->Margin = System::Windows::Forms::Padding(2);
 			this->txtBPreuPunts->Name = L"txtBPreuPunts";
-			this->txtBPreuPunts->Size = System::Drawing::Size(208, 31);
+			this->txtBPreuPunts->Size = System::Drawing::Size(141, 31);
 			this->txtBPreuPunts->TabIndex = 26;
 			// 
 			// lblPuntsRegal
@@ -234,9 +264,9 @@ namespace culturalink_main {
 			this->lblPuntsRegal->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
 			this->lblPuntsRegal->Location = System::Drawing::Point(18, 138);
 			this->lblPuntsRegal->Name = L"lblPuntsRegal";
-			this->lblPuntsRegal->Size = System::Drawing::Size(159, 25);
+			this->lblPuntsRegal->Size = System::Drawing::Size(165, 25);
 			this->lblPuntsRegal->TabIndex = 25;
-			this->lblPuntsRegal->Text = L"Punts de Regal";
+			this->lblPuntsRegal->Text = L"Punts de Regal:";
 			// 
 			// lblData
 			// 
@@ -281,7 +311,7 @@ namespace culturalink_main {
 			// button5
 			// 
 			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
-			this->button5->Location = System::Drawing::Point(435, 288);
+			this->button5->Location = System::Drawing::Point(466, 312);
 			this->button5->Margin = System::Windows::Forms::Padding(2);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(142, 49);
@@ -293,11 +323,12 @@ namespace culturalink_main {
 			// textBox4
 			// 
 			this->textBox4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
-			this->textBox4->Location = System::Drawing::Point(154, 268);
+			this->textBox4->Location = System::Drawing::Point(215, 268);
 			this->textBox4->Margin = System::Windows::Forms::Padding(2);
 			this->textBox4->Name = L"textBox4";
-			this->textBox4->Size = System::Drawing::Size(210, 31);
+			this->textBox4->Size = System::Drawing::Size(283, 31);
 			this->textBox4->TabIndex = 18;
+			this->textBox4->TextChanged += gcnew System::EventHandler(this, &RegistrarEsdevenimentUI::textBox4_TextChanged);
 			// 
 			// label6
 			// 
@@ -306,9 +337,9 @@ namespace culturalink_main {
 			this->label6->Location = System::Drawing::Point(18, 271);
 			this->label6->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(132, 25);
+			this->label6->Size = System::Drawing::Size(193, 25);
 			this->label6->TabIndex = 17;
-			this->label6->Text = L"Ajuntament :";
+			this->label6->Text = L"Ajuntament (nom) :";
 			// 
 			// textBox3
 			// 
@@ -338,7 +369,7 @@ namespace culturalink_main {
 			this->label4->Location = System::Drawing::Point(186, 55);
 			this->label4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(24, 25);
+			this->label4->Size = System::Drawing::Size(12, 25);
 			this->label4->TabIndex = 14;
 			this->label4->Text = L"";
 			// 
@@ -380,7 +411,7 @@ namespace culturalink_main {
 			this->textBox1->Location = System::Drawing::Point(224, 14);
 			this->textBox1->Margin = System::Windows::Forms::Padding(2);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(323, 31);
+			this->textBox1->Size = System::Drawing::Size(384, 31);
 			this->textBox1->TabIndex = 10;
 			this->textBox1->TextChanged += gcnew System::EventHandler(this, &RegistrarEsdevenimentUI::textBox1_TextChanged);
 			// 
@@ -389,8 +420,6 @@ namespace culturalink_main {
 			this->panelMenu->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->panelMenu->Controls->Add(this->button4);
 			this->panelMenu->Controls->Add(this->button3);
-			this->panelMenu->Controls->Add(this->button2);
-			this->panelMenu->Controls->Add(this->button1);
 			this->panelMenu->Dock = System::Windows::Forms::DockStyle::Left;
 			this->panelMenu->Location = System::Drawing::Point(0, 49);
 			this->panelMenu->Margin = System::Windows::Forms::Padding(2);
@@ -402,7 +431,7 @@ namespace culturalink_main {
 			// 
 			this->button4->Dock = System::Windows::Forms::DockStyle::Top;
 			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
-			this->button4->Location = System::Drawing::Point(0, 120);
+			this->button4->Location = System::Drawing::Point(0, 40);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(150, 40);
 			this->button4->TabIndex = 3;
@@ -415,34 +444,12 @@ namespace culturalink_main {
 			// 
 			this->button3->Dock = System::Windows::Forms::DockStyle::Top;
 			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
-			this->button3->Location = System::Drawing::Point(0, 80);
+			this->button3->Location = System::Drawing::Point(0, 0);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(150, 40);
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"Homepage";
 			this->button3->UseVisualStyleBackColor = true;
-			// 
-			// button2
-			// 
-			this->button2->Dock = System::Windows::Forms::DockStyle::Top;
-			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
-			this->button2->Location = System::Drawing::Point(0, 40);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(150, 40);
-			this->button2->TabIndex = 1;
-			this->button2->Text = L"Homepage";
-			this->button2->UseVisualStyleBackColor = true;
-			// 
-			// button1
-			// 
-			this->button1->Dock = System::Windows::Forms::DockStyle::Top;
-			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F));
-			this->button1->Location = System::Drawing::Point(0, 0);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(150, 40);
-			this->button1->TabIndex = 0;
-			this->button1->Text = L"Homepage";
-			this->button1->UseVisualStyleBackColor = true;
 			// 
 			// panelTitleBar
 			// 
@@ -540,5 +547,15 @@ namespace culturalink_main {
 	}
 
 
-	};
+	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+private: System::Void label7_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void textBox4_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+
+
+
+
+};
 }
