@@ -37,6 +37,10 @@ PassarelaCiutada CercadoraCiutada::cercaCiutada(String^ nickname)
 			PassarelaCiutada pC(nick, nomCp, paswd, correu, dataN, diners, punts);
 			return pC;
 		}
+		else {
+			PassarelaCiutada ciut;
+			return ciut;
+		}
 	}
 	catch (Exception^ ex) {
 		// codi per mostrar l’error en una finestra
@@ -47,4 +51,6 @@ PassarelaCiutada CercadoraCiutada::cercaCiutada(String^ nickname)
 		//MessageBox::Show("Connexio DB exitosa!");
 		conn->Close();
 	}
+	PassarelaCiutada ciut;
+	return ciut;
 }

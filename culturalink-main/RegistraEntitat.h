@@ -242,7 +242,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	}
 	if (encontrado == true)
 	{
-		MessageBox::Show("Revisa el camp 'nom' no té el format indicat ", "Camp amb format incorrecte", MessageBoxButtons::OK);
+		MessageBox::Show("Revisa el camp 'nom' no té el format indicat,ja que no pot tenir números", "Camp amb format incorrecte", MessageBoxButtons::OK);
 		return;
 	}
 
@@ -261,7 +261,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	}
 	if (encontrado == false)
 	{
-		MessageBox::Show("Revisa el camp 'contrasenya' no té el format indicat ", "Camp amb format incorrecte", MessageBoxButtons::OK);
+		MessageBox::Show("Revisa el camp 'contrasenya' no té el format indicat,ja que ha de tenir una lletra en majúsucla com a mínim", "Camp amb format incorrecte", MessageBoxButtons::OK);
 		return;
 	}
 
@@ -272,12 +272,19 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	}
 	if (encontrado == false)
 	{
-		MessageBox::Show("Revisa el camp 'contrasenya' no té el format indicat ", "Camp amb format incorrecte", MessageBoxButtons::OK);
+		MessageBox::Show("Revisa el camp 'contrasenya' no té el format indicat,ja que ha de tenir un número com a mínim", "Camp amb format incorrecte", MessageBoxButtons::OK);
 		return;
 	}
 
 
 	//TELEFON EXCEPCIONS
+	if (telefon->Length != 9)
+	{
+		MessageBox::Show("Revisa el camp 'telefon' ha de tenir 9 caracters",
+			"Camp amb format incorrecte", MessageBoxButtons::OK);
+		return;
+	}
+
 	encontrado = false;
 	for (int i = 0; i < telefon->Length && encontrado == false; i++)
 	{
@@ -285,7 +292,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	}
 	if (encontrado == true)
 	{
-		MessageBox::Show("Revisa el camp 'telefon' no té el format indicat", "Camp amb format incorrecte", MessageBoxButtons::OK);
+		MessageBox::Show("Revisa el camp 'telefon' no té el format indicat,ja que només pot tenir números", "Camp amb format incorrecte", MessageBoxButtons::OK);
 		return;
 	}
 	TxRegistraEntitat tx1(nom, contrasenya, correu, Convert::ToInt32(telefon), 0);

@@ -228,7 +228,7 @@ void PassarelaCiutada::esborra(String^ nickname) {
 		conn->Close();  // Close the connection regardless of the result
 	}
 }
-void PassarelaCiutada::borrar_punts(int ^preuPuntsEsdev)
+void PassarelaCiutada::borrar_punts(int^ quantitat, int^ punts2)
 {
 	String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
 	MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
@@ -237,8 +237,8 @@ void PassarelaCiutada::borrar_punts(int ^preuPuntsEsdev)
 	String^ sql = "UPDATE ciutada SET punts = @punts WHERE nickname = @nickname";
 	MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
 	cmd->Parameters->AddWithValue("@nickname", _nickname);// Asignación del valor del parámetro
-	int punts = *(_punts)-*(preuPuntsEsdev);
-	cmd->Parameters->AddWithValue("@punts", punts);// Asignación del valor del parámetro
+	int puntsz = *(quantitat) * *(punts2);
+	cmd->Parameters->AddWithValue("@punts", *(_punts)-puntsz);// Asignación del valor del parámetro
 	MySqlDataReader^ dataReader;
 	try {
 		// obrim la connexió
@@ -262,7 +262,7 @@ void PassarelaCiutada::borrar_punts(int ^preuPuntsEsdev)
 	}
 
 }
-void PassarelaCiutada::borrar_diners(int^ preuEsd)
+void PassarelaCiutada::borrar_diners(int^ preuEsd, int^ quantitat)
 {
 	String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
 	MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
@@ -271,8 +271,8 @@ void PassarelaCiutada::borrar_diners(int^ preuEsd)
 	String^ sql = "UPDATE ciutada SET diners = @diners WHERE nickname = @nickname";
 	MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
 	cmd->Parameters->AddWithValue("@nickname", _nickname);// Asignación del valor del parámetro
-	int diners = *(_diners)-*(preuEsd);
-	cmd->Parameters->AddWithValue("@diners", diners);// Asignación del valor del parámetro
+	int dinersQuantitat = *(preuEsd) * *(quantitat);
+	cmd->Parameters->AddWithValue("@diners", *(_diners)-dinersQuantitat);// Asignación del valor del parámetro
 	MySqlDataReader^ dataReader;
 	try {
 		// obrim la connexió

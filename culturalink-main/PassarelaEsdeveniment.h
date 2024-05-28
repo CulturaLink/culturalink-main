@@ -52,8 +52,12 @@ public:
 
     void modifica_estat(String^ nomEsdev, bool estat);
 
-    void restar_aforament();
-    void sumar_aforament();
+    //void restar_aforament();
+    ////void sumar_aforament();
+    //void sumar_aforament(int^ quantitat);
+
+    void restar_aforament(int^ quantitat);
+    void sumar_aforament(int^ quantitat);
 
 private:
     int _idEnt;

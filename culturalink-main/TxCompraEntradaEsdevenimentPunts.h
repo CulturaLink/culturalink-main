@@ -4,6 +4,7 @@
 #include "CercadoraEsdeveniment.h"
 #include "CercadoraCiutada.h"
 #include "PassarelaInscripcio.h"
+#include "CercadoraInscripcio.h"
 #include "Transaccio.h"
 #include "UsuariIniciat.h"
 #include <vector>
@@ -22,7 +23,8 @@ ref class TxCompraEntradaEsdevenimentPunts : public Transaccio
 {
 private:
 	String^ nomEsd;
+	int^ quantitat_entrad;
 public:
-	TxCompraEntradaEsdevenimentPunts(String^ nomEsd2);
+	TxCompraEntradaEsdevenimentPunts(String^ nomEsd2, int^ quantitat_entrad2);
 	void executar() override;
 };

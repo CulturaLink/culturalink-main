@@ -36,4 +36,6 @@ PassarelaEntitat CercadoraEntitat::cercaEntitat(String^ correuE)
 		// codi per mostrar l’error en una finestra
 		MessageBox::Show(ex->Message);
 	}
+	PassarelaEntitat ent;
+	return ent;
 }

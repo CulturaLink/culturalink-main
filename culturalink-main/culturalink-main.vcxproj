@@ -144,6 +144,7 @@
     <ClInclude Include="CercadoraEntitat.h" />
     <ClInclude Include="CercadoraEsdeveniment.h" />
     <ClInclude Include="CercadoraInscripcio.h" />
+    <ClInclude Include="CercadoraPuntuacioEsdeveniment.h" />
     <ClInclude Include="ComprarEsdevenimentUI.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -186,6 +187,7 @@
     <ClInclude Include="PassarelaEntitat.h" />
     <ClInclude Include="PassarelaEsdeveniment.h" />
     <ClInclude Include="PassarelaInscripcio.h" />
+    <ClInclude Include="PassarelaPuntuacioEsdeveniment.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="ProvesUI.h">
       <FileType>CppForm</FileType>
@@ -205,6 +207,7 @@
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Sistema.h" />
     <ClInclude Include="Transaccio.h" />
+    <ClInclude Include="TxAnulaRegistreEsdeveniment.h" />
     <ClInclude Include="TxCanviaEstatPeticio.h" />
     <ClInclude Include="TxCompraEntradaEsdevenimentDiners.h" />
     <ClInclude Include="TxCompraEntradaEsdevenimentPunts.h" />
@@ -214,11 +217,14 @@
     <ClInclude Include="TxConsultaEsdevenimentsAjuntament.h" />
     <ClInclude Include="TxConsultaEsdevenimentsAmbTipus.h" />
     <ClInclude Include="TxConsultaInscripcions.h" />
+    <ClInclude Include="TxConsultaPuntuacioEsdeveniment.h" />
     <ClInclude Include="TxConsultarSolicitudCreacioEsdeveniment.h" />
     <ClInclude Include="TxConsultaTotsEsdeveniments.h" />
     <ClInclude Include="TxConsultaTotsEsdevenimentsPerEntitat.h" />
     <ClInclude Include="TxLoginAjuntament.h" />
     <ClInclude Include="TxLoginCiutada.h" />
+    <ClInclude Include="TxModificaPuntuacioEsdeveniment.h" />
+    <ClInclude Include="TxPuntuaEsdeveniment.h" />
     <ClInclude Include="TxRegisterCiutada.h" />
     <ClInclude Include="TxRegistraEsdeveniment.h" />
     <ClInclude Include="EntitatIniciat.h" />
@@ -239,6 +245,7 @@
     <ClCompile Include="CercadoraEntitat.cpp" />
     <ClCompile Include="CercadoraEsdeveniment.cpp" />
     <ClCompile Include="CercadoraInscripcio.cpp" />
+    <ClCompile Include="CercadoraPuntuacioEsdeveniment.cpp" />
     <ClCompile Include="ComprarEsdevenimentUI.cpp" />
     <ClCompile Include="ConsultaEsdevenimentUI.cpp" />
     <ClCompile Include="ConsultarUsuariUI.cpp" />
@@ -260,6 +267,7 @@
     <ClCompile Include="PassarelaEntitat.cpp" />
     <ClCompile Include="PassarelaEsdeveniment.cpp" />
     <ClCompile Include="PassarelaInscripcio.cpp" />
+    <ClCompile Include="PassarelaPuntuacioEsdeveniment.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -272,6 +280,7 @@
     <ClCompile Include="RegistrarEsdevenimentUI.cpp" />
     <ClCompile Include="Sistema.cpp" />
     <ClCompile Include="Transaccio.cpp" />
+    <ClCompile Include="TxAnulaRegistreEsdeveniment.cpp" />
     <ClCompile Include="TxCanviaEstatPeticio.cpp" />
     <ClCompile Include="TxCompraEntradaEsdevenimentDiners.cpp" />
     <ClCompile Include="TxCompraEntradaEsdevenimentPunts.cpp" />
@@ -281,11 +290,14 @@
     <ClCompile Include="TxConsultaEsdevenimentsAjuntament.cpp" />
     <ClCompile Include="TxConsultaEsdevenimentsAmbTipus.cpp" />
     <ClCompile Include="TxConsultaInscripcions.cpp" />
+    <ClCompile Include="TxConsultaPuntuacioEsdeveniment.cpp" />
     <ClCompile Include="TxConsultarSolicitudCreacioEsdeveniment.cpp" />
     <ClCompile Include="TxConsultaTotsEsdeveniments.cpp" />
     <ClCompile Include="TxConsultaTotsEsdevenimentsPerEntitat.cpp" />
     <ClCompile Include="TxLoginAjuntament.cpp" />
     <ClCompile Include="TxLoginCiutada.cpp" />
+    <ClCompile Include="TxModificaPuntuacioEsdeveniment.cpp" />
+    <ClCompile Include="TxPuntuaEsdeveniment.cpp" />
     <ClCompile Include="TxRegisterCiutada.cpp" />
     <ClCompile Include="TxRegistraEsdeveniment.cpp" />
     <ClCompile Include="RegistraEntitat.cpp" />

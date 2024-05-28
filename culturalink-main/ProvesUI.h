@@ -19,6 +19,9 @@
 #include "TxCompraEntradaEsdevenimentDiners.h"
 #include "TxCompraEntradaEsdevenimentPunts.h"
 #include "TxConsultaInscripcions.h"
+#include "TxPuntuaEsdeveniment.h"
+#include "TxModificaPuntuacioEsdeveniment.h"
+#include "TxConsultaPuntuacioEsdeveniment.h"
 
 // Controladors
 #include "CtrlModificaCiutada.h"
@@ -82,8 +85,12 @@ namespace culturalink_main {
 
 	private:
 
+	private: System::Windows::Forms::TextBox^ textBoxQuantitatCONS;
+	private: System::Windows::Forms::Panel^ pnlQuantitatCONS;
+	private: System::Windows::Forms::Label^ lblQunatitatCONSen;
+
 	private: System::Windows::Forms::Panel^ PANELModificaEntitat;
-	private: System::Windows::Forms::Button^ btn_atrasMODENT;
+
 	private: System::Windows::Forms::Button^ btn_modificaMODENT;
 	protected:
 	protected:
@@ -173,9 +180,9 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Label^ lblPreuEsdevCONSgran;
 	private: System::Windows::Forms::Panel^ pnlNomEsdevTitleCONS;
 	private: System::Windows::Forms::Label^ lblNomEsdevCONS;
-	private: System::Windows::Forms::Panel^ pnlFlowTipusCapsesCONSex;
-	private: System::Windows::Forms::Button^ btnFiltreGalaCONSex;
-	private: System::Windows::Forms::Button^ btnFiltreDeportivoCONSex;
+
+
+
 	private: System::Windows::Forms::Panel^ panelCONS;
 	private: System::Windows::Forms::Panel^ pnl5CONS;
 	private: System::Windows::Forms::Label^ lblPuntsRegCONSen;
@@ -383,6 +390,13 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Button^ botonSettingsEntitat;
 	private: System::Windows::Forms::Panel^ pnlESQLesMevesPeticionsEntitat;
 	private: System::Windows::Forms::Button^ btnEsqLesMevesPeticions;
+private: System::Windows::Forms::PictureBox^ pictureBox10;
+private: System::Windows::Forms::PictureBox^ pictureBox6;
+private: System::Windows::Forms::PictureBox^ pictureBox13;
+private: System::Windows::Forms::PictureBox^ pictureBox12;
+private: System::Windows::Forms::PictureBox^ pictureBox11;
+private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
+
 
 
 
@@ -402,6 +416,9 @@ namespace culturalink_main {
 		void InitializeComponent(void)
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(ProvesUI::typeid));
+			this->textBoxQuantitatCONS = (gcnew System::Windows::Forms::TextBox());
+			this->pnlQuantitatCONS = (gcnew System::Windows::Forms::Panel());
+			this->lblQunatitatCONSen = (gcnew System::Windows::Forms::Label());
 			this->flowLayoutPanelSOLENTIT = (gcnew System::Windows::Forms::FlowLayoutPanel());
 			this->pnlTitlesSOLENTIT = (gcnew System::Windows::Forms::Panel());
 			this->lblNomEsdevSOLENTITen = (gcnew System::Windows::Forms::Label());
@@ -432,7 +449,6 @@ namespace culturalink_main {
 			this->pnlDataMODCIT = (gcnew System::Windows::Forms::Panel());
 			this->lblDataMODCIT = (gcnew System::Windows::Forms::Label());
 			this->PANELModificaEntitat = (gcnew System::Windows::Forms::Panel());
-			this->btn_atrasMODENT = (gcnew System::Windows::Forms::Button());
 			this->btn_modificaMODENT = (gcnew System::Windows::Forms::Button());
 			this->txt_contrasenya_MODENT = (gcnew System::Windows::Forms::TextBox());
 			this->txt_correu_MODENT = (gcnew System::Windows::Forms::TextBox());
@@ -518,9 +534,6 @@ namespace culturalink_main {
 			this->lblAjuntEsdevCONSen = (gcnew System::Windows::Forms::Label());
 			this->pnl11CONS = (gcnew System::Windows::Forms::Panel());
 			this->lblAjuntEsdevCONS = (gcnew System::Windows::Forms::Label());
-			this->pnlFlowTipusCapsesCONSex = (gcnew System::Windows::Forms::Panel());
-			this->btnFiltreGalaCONSex = (gcnew System::Windows::Forms::Button());
-			this->btnFiltreDeportivoCONSex = (gcnew System::Windows::Forms::Button());
 			this->pnlDescCONS = (gcnew System::Windows::Forms::Panel());
 			this->lblDescEsdevCONS = (gcnew System::Windows::Forms::Label());
 			this->pnlDescTitleCONS = (gcnew System::Windows::Forms::Panel());
@@ -553,14 +566,19 @@ namespace culturalink_main {
 			this->btnClose = (gcnew System::Windows::Forms::Button());
 			this->panelNavBar = (gcnew System::Windows::Forms::Panel());
 			this->panel12 = (gcnew System::Windows::Forms::Panel());
+			this->pictureBox10 = (gcnew System::Windows::Forms::PictureBox());
 			this->botonSettingsEntitat = (gcnew System::Windows::Forms::Button());
 			this->panelSettingsAjuntament = (gcnew System::Windows::Forms::Panel());
+			this->pictureBox6 = (gcnew System::Windows::Forms::PictureBox());
 			this->botonSettingsAjuntament = (gcnew System::Windows::Forms::Button());
 			this->pnlESQLesMevesPeticionsEntitat = (gcnew System::Windows::Forms::Panel());
+			this->pictureBox13 = (gcnew System::Windows::Forms::PictureBox());
 			this->btnEsqLesMevesPeticions = (gcnew System::Windows::Forms::Button());
 			this->panel11 = (gcnew System::Windows::Forms::Panel());
+			this->pictureBox12 = (gcnew System::Windows::Forms::PictureBox());
 			this->button9 = (gcnew System::Windows::Forms::Button());
 			this->panel10 = (gcnew System::Windows::Forms::Panel());
+			this->pictureBox11 = (gcnew System::Windows::Forms::PictureBox());
 			this->btnRegEsdevAJ = (gcnew System::Windows::Forms::Button());
 			this->pnlModEsdev = (gcnew System::Windows::Forms::Panel());
 			this->pictureBox8 = (gcnew System::Windows::Forms::PictureBox());
@@ -634,15 +652,8 @@ namespace culturalink_main {
 			this->pnlMainModEsdv = (gcnew System::Windows::Forms::Panel());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->btnViewNavBar = (gcnew System::Windows::Forms::Button());
-			this->PANELModificaEntitat->SuspendLayout();
-			this->panel_nom_MODENT->SuspendLayout();
-			this->panel_telefon_MODENT->SuspendLayout();
-			this->panel_correu_MODENT->SuspendLayout();
-			this->PANELModificaAjuntament->SuspendLayout();
-			this->panel_nom_ajuntamentMODAJUN->SuspendLayout();
-			this->panel_poblacio_ajuntamentMODAJUN->SuspendLayout();
-			this->panel_telefon_ajuntamentMODAJUN->SuspendLayout();
-			this->panel_correu_electronic_ajuntamentMODAJUN->SuspendLayout();
+			this->lblSelPuntuacioMESDEVen = (gcnew System::Windows::Forms::Label());
+			this->pnlQuantitatCONS->SuspendLayout();
 			this->pnlTitlesSOLENTIT->SuspendLayout();
 			this->PANELSolicitutEntitat->SuspendLayout();
 			this->PANELModificaCiut->SuspendLayout();
@@ -652,6 +663,15 @@ namespace culturalink_main {
 			this->pnlNomMODCIT->SuspendLayout();
 			this->pnlCorrMODCIT->SuspendLayout();
 			this->pnlDataMODCIT->SuspendLayout();
+			this->PANELModificaEntitat->SuspendLayout();
+			this->panel_nom_MODENT->SuspendLayout();
+			this->panel_telefon_MODENT->SuspendLayout();
+			this->panel_correu_MODENT->SuspendLayout();
+			this->PANELModificaAjuntament->SuspendLayout();
+			this->panel_nom_ajuntamentMODAJUN->SuspendLayout();
+			this->panel_poblacio_ajuntamentMODAJUN->SuspendLayout();
+			this->panel_telefon_ajuntamentMODAJUN->SuspendLayout();
+			this->panel_correu_electronic_ajuntamentMODAJUN->SuspendLayout();
 			this->pnlCOMP->SuspendLayout();
 			this->pnlTitleCOMP->SuspendLayout();
 			this->pnlTarjUICOMP->SuspendLayout();
@@ -671,7 +691,6 @@ namespace culturalink_main {
 			this->pnl21CONS->SuspendLayout();
 			this->pnl1CONS->SuspendLayout();
 			this->pnl11CONS->SuspendLayout();
-			this->pnlFlowTipusCapsesCONSex->SuspendLayout();
 			this->pnlDescCONS->SuspendLayout();
 			this->pnlDescTitleCONS->SuspendLayout();
 			this->pnlPreusCONS->SuspendLayout();
@@ -686,10 +705,15 @@ namespace culturalink_main {
 			this->pnlTopBarMinMaxClose->SuspendLayout();
 			this->panelNavBar->SuspendLayout();
 			this->panel12->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox10))->BeginInit();
 			this->panelSettingsAjuntament->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox6))->BeginInit();
 			this->pnlESQLesMevesPeticionsEntitat->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox13))->BeginInit();
 			this->panel11->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox12))->BeginInit();
 			this->panel10->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox11))->BeginInit();
 			this->pnlModEsdev->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox8))->BeginInit();
 			this->panel7->SuspendLayout();
@@ -719,13 +743,42 @@ namespace culturalink_main {
 			this->pnlMainModEsdv->SuspendLayout();
 			this->SuspendLayout();
 			// 
+			// textBoxQuantitatCONS
+			// 
+			this->textBoxQuantitatCONS->Location = System::Drawing::Point(498, 393);
+			this->textBoxQuantitatCONS->Name = L"textBoxQuantitatCONS";
+			this->textBoxQuantitatCONS->Size = System::Drawing::Size(75, 22);
+			this->textBoxQuantitatCONS->TabIndex = 0;
+			// 
+			// pnlQuantitatCONS
+			// 
+			this->pnlQuantitatCONS->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(192)));
+			this->pnlQuantitatCONS->Controls->Add(this->lblQunatitatCONSen);
+			this->pnlQuantitatCONS->Location = System::Drawing::Point(297, 390);
+			this->pnlQuantitatCONS->Name = L"pnlQuantitatCONS";
+			this->pnlQuantitatCONS->Size = System::Drawing::Size(200, 28);
+			this->pnlQuantitatCONS->TabIndex = 0;
+			// 
+			// lblQunatitatCONSen
+			// 
+			this->lblQunatitatCONSen->AutoSize = true;
+			this->lblQunatitatCONSen->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->lblQunatitatCONSen->ForeColor = System::Drawing::Color::White;
+			this->lblQunatitatCONSen->Location = System::Drawing::Point(5, 1);
+			this->lblQunatitatCONSen->Name = L"lblQunatitatCONSen";
+			this->lblQunatitatCONSen->Size = System::Drawing::Size(173, 23);
+			this->lblQunatitatCONSen->TabIndex = 0;
+			this->lblQunatitatCONSen->Text = L"Quantitat a Comprar:";
+			// 
 			// flowLayoutPanelSOLENTIT
 			// 
 			this->flowLayoutPanelSOLENTIT->AutoScroll = true;
 			this->flowLayoutPanelSOLENTIT->BackColor = System::Drawing::Color::White;
 			this->flowLayoutPanelSOLENTIT->Location = System::Drawing::Point(23, 63);
 			this->flowLayoutPanelSOLENTIT->Name = L"flowLayoutPanelSOLENTIT";
-			this->flowLayoutPanelSOLENTIT->Size = System::Drawing::Size(1167, 536);
+			this->flowLayoutPanelSOLENTIT->Size = System::Drawing::Size(880, 536);
 			this->flowLayoutPanelSOLENTIT->TabIndex = 30;
 			// 
 			// pnlTitlesSOLENTIT
@@ -1032,9 +1085,9 @@ namespace culturalink_main {
 			this->lblDataMODCIT->Size = System::Drawing::Size(164, 17);
 			this->lblDataMODCIT->TabIndex = 17;
 			this->lblDataMODCIT->Text = L"Nova Data de Naixament:";
+			// 
 			// PANELModificaEntitat
-		// 
-			this->PANELModificaEntitat->Controls->Add(this->btn_atrasMODENT);
+			// 
 			this->PANELModificaEntitat->Controls->Add(this->btn_modificaMODENT);
 			this->PANELModificaEntitat->Controls->Add(this->txt_contrasenya_MODENT);
 			this->PANELModificaEntitat->Controls->Add(this->txt_correu_MODENT);
@@ -1051,17 +1104,6 @@ namespace culturalink_main {
 			this->PANELModificaEntitat->Size = System::Drawing::Size(1030, 568);
 			this->PANELModificaEntitat->TabIndex = 1;
 			this->PANELModificaEntitat->Visible = false;
-			// 
-			// btn_atrasMODENT
-			// 
-			this->btn_atrasMODENT->BackColor = System::Drawing::SystemColors::Control;
-			this->btn_atrasMODENT->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold));
-			this->btn_atrasMODENT->Location = System::Drawing::Point(765, 470);
-			this->btn_atrasMODENT->Name = L"btn_atrasMODENT";
-			this->btn_atrasMODENT->Size = System::Drawing::Size(75, 23);
-			this->btn_atrasMODENT->TabIndex = 14;
-			this->btn_atrasMODENT->Text = L"Atras";
-			this->btn_atrasMODENT->UseVisualStyleBackColor = false;
 			// 
 			// btn_modificaMODENT
 			// 
@@ -1121,7 +1163,7 @@ namespace culturalink_main {
 			this->BlackPartMODENT->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->BlackPartMODENT->Location = System::Drawing::Point(3, 3);
 			this->BlackPartMODENT->Name = L"BlackPartMODENT";
-			this->BlackPartMODENT->Size = System::Drawing::Size(1024, 83);
+			this->BlackPartMODENT->Size = System::Drawing::Size(1024, 38);
 			this->BlackPartMODENT->TabIndex = 0;
 			// 
 			// panel_nom_MODENT
@@ -1296,7 +1338,7 @@ namespace culturalink_main {
 			this->BlackPartMODAJUN->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->BlackPartMODAJUN->Location = System::Drawing::Point(3, 3);
 			this->BlackPartMODAJUN->Name = L"BlackPartMODAJUN";
-			this->BlackPartMODAJUN->Size = System::Drawing::Size(1024, 83);
+			this->BlackPartMODAJUN->Size = System::Drawing::Size(1024, 38);
 			this->BlackPartMODAJUN->TabIndex = 0;
 			// 
 			// panel_nom_ajuntamentMODAJUN
@@ -1394,7 +1436,6 @@ namespace culturalink_main {
 			this->lbl_correu_electronic_ajuntamentMODAJUN->Size = System::Drawing::Size(49, 17);
 			this->lbl_correu_electronic_ajuntamentMODAJUN->TabIndex = 3;
 			this->lbl_correu_electronic_ajuntamentMODAJUN->Text = L"Correu";
-			// 
 			// 
 			// pnlCOMP
 			// 
@@ -1694,10 +1735,11 @@ namespace culturalink_main {
 			// PANELConsultarCompra
 			// 
 			this->PANELConsultarCompra->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->PANELConsultarCompra->Controls->Add(this->pnlQuantitatCONS);
 			this->PANELConsultarCompra->Controls->Add(this->pnlCOMP);
+			this->PANELConsultarCompra->Controls->Add(this->textBoxQuantitatCONS);
 			this->PANELConsultarCompra->Controls->Add(this->picBoxEsdevCONS);
 			this->PANELConsultarCompra->Controls->Add(this->panelCONS);
-			this->PANELConsultarCompra->Controls->Add(this->pnlFlowTipusCapsesCONSex);
 			this->PANELConsultarCompra->Controls->Add(this->pnlDescCONS);
 			this->PANELConsultarCompra->Controls->Add(this->pnlPreusCONS);
 			this->PANELConsultarCompra->Controls->Add(this->pnlNomEsdevTitleCONS);
@@ -2015,46 +2057,6 @@ namespace culturalink_main {
 			this->lblAjuntEsdevCONS->TabIndex = 2;
 			this->lblAjuntEsdevCONS->Text = L"Ajuntament Esdeveniment";
 			this->lblAjuntEsdevCONS->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// pnlFlowTipusCapsesCONSex
-			// 
-			this->pnlFlowTipusCapsesCONSex->BackColor = System::Drawing::Color::White;
-			this->pnlFlowTipusCapsesCONSex->Controls->Add(this->btnFiltreGalaCONSex);
-			this->pnlFlowTipusCapsesCONSex->Controls->Add(this->btnFiltreDeportivoCONSex);
-			this->pnlFlowTipusCapsesCONSex->Location = System::Drawing::Point(289, 377);
-			this->pnlFlowTipusCapsesCONSex->Name = L"pnlFlowTipusCapsesCONSex";
-			this->pnlFlowTipusCapsesCONSex->Size = System::Drawing::Size(556, 49);
-			this->pnlFlowTipusCapsesCONSex->TabIndex = 9;
-			// 
-			// btnFiltreGalaCONSex
-			// 
-			this->btnFiltreGalaCONSex->BackColor = System::Drawing::Color::Crimson;
-			this->btnFiltreGalaCONSex->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->btnFiltreGalaCONSex->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->btnFiltreGalaCONSex->ForeColor = System::Drawing::Color::White;
-			this->btnFiltreGalaCONSex->Location = System::Drawing::Point(116, 10);
-			this->btnFiltreGalaCONSex->Margin = System::Windows::Forms::Padding(4);
-			this->btnFiltreGalaCONSex->Name = L"btnFiltreGalaCONSex";
-			this->btnFiltreGalaCONSex->Size = System::Drawing::Size(100, 28);
-			this->btnFiltreGalaCONSex->TabIndex = 11;
-			this->btnFiltreGalaCONSex->Text = L"Gala";
-			this->btnFiltreGalaCONSex->UseVisualStyleBackColor = false;
-			// 
-			// btnFiltreDeportivoCONSex
-			// 
-			this->btnFiltreDeportivoCONSex->BackColor = System::Drawing::Color::Crimson;
-			this->btnFiltreDeportivoCONSex->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->btnFiltreDeportivoCONSex->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->btnFiltreDeportivoCONSex->ForeColor = System::Drawing::Color::White;
-			this->btnFiltreDeportivoCONSex->Location = System::Drawing::Point(8, 10);
-			this->btnFiltreDeportivoCONSex->Margin = System::Windows::Forms::Padding(4);
-			this->btnFiltreDeportivoCONSex->Name = L"btnFiltreDeportivoCONSex";
-			this->btnFiltreDeportivoCONSex->Size = System::Drawing::Size(100, 28);
-			this->btnFiltreDeportivoCONSex->TabIndex = 10;
-			this->btnFiltreDeportivoCONSex->Text = L"Deportivo";
-			this->btnFiltreDeportivoCONSex->UseVisualStyleBackColor = false;
 			// 
 			// pnlDescCONS
 			// 
@@ -2419,6 +2421,8 @@ namespace culturalink_main {
 			// 
 			this->panelNavBar->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(40)), static_cast<System::Int32>(static_cast<System::Byte>(40)),
 				static_cast<System::Int32>(static_cast<System::Byte>(40)));
+			this->panelNavBar->Controls->Add(this->panel12);
+			this->panelNavBar->Controls->Add(this->panelSettingsAjuntament);
 			this->panelNavBar->Controls->Add(this->pnlESQLesMevesPeticionsEntitat);
 			this->panelNavBar->Controls->Add(this->panel11);
 			this->panelNavBar->Controls->Add(this->panel10);
@@ -2436,14 +2440,116 @@ namespace culturalink_main {
 			this->panelNavBar->Size = System::Drawing::Size(276, 736);
 			this->panelNavBar->TabIndex = 1;
 			// 
+			// panel12
+			// 
+			this->panel12->Controls->Add(this->pictureBox10);
+			this->panel12->Controls->Add(this->botonSettingsEntitat);
+			this->panel12->Dock = System::Windows::Forms::DockStyle::Top;
+			this->panel12->Location = System::Drawing::Point(0, 611);
+			this->panel12->Name = L"panel12";
+			this->panel12->Size = System::Drawing::Size(276, 53);
+			this->panel12->TabIndex = 15;
+			this->panel12->Visible = false;
+			this->panel12->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &ProvesUI::panel12_Paint);
+			// 
+			// pictureBox10
+			// 
+			this->pictureBox10->BackColor = System::Drawing::Color::Black;
+			this->pictureBox10->Dock = System::Windows::Forms::DockStyle::Left;
+			this->pictureBox10->ErrorImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox10.ErrorImage")));
+			this->pictureBox10->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox10.Image")));
+			this->pictureBox10->Location = System::Drawing::Point(0, 0);
+			this->pictureBox10->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->pictureBox10->Name = L"pictureBox10";
+			this->pictureBox10->Size = System::Drawing::Size(53, 53);
+			this->pictureBox10->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
+			this->pictureBox10->TabIndex = 8;
+			this->pictureBox10->TabStop = false;
+			// 
+			// botonSettingsEntitat
+			// 
+			this->botonSettingsEntitat->BackColor = System::Drawing::Color::Black;
+			this->botonSettingsEntitat->Dock = System::Windows::Forms::DockStyle::Right;
+			this->botonSettingsEntitat->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->botonSettingsEntitat->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F));
+			this->botonSettingsEntitat->ForeColor = System::Drawing::Color::White;
+			this->botonSettingsEntitat->Location = System::Drawing::Point(53, 0);
+			this->botonSettingsEntitat->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->botonSettingsEntitat->Name = L"botonSettingsEntitat";
+			this->botonSettingsEntitat->Size = System::Drawing::Size(223, 53);
+			this->botonSettingsEntitat->TabIndex = 7;
+			this->botonSettingsEntitat->Text = L"Settings";
+			this->botonSettingsEntitat->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			this->botonSettingsEntitat->UseVisualStyleBackColor = false;
+			this->botonSettingsEntitat->Visible = false;
+			this->botonSettingsEntitat->Click += gcnew System::EventHandler(this, &ProvesUI::botonSettingsEntitat_Click);
+			// 
+			// panelSettingsAjuntament
+			// 
+			this->panelSettingsAjuntament->Controls->Add(this->pictureBox6);
+			this->panelSettingsAjuntament->Controls->Add(this->botonSettingsAjuntament);
+			this->panelSettingsAjuntament->Dock = System::Windows::Forms::DockStyle::Top;
+			this->panelSettingsAjuntament->Location = System::Drawing::Point(0, 553);
+			this->panelSettingsAjuntament->Name = L"panelSettingsAjuntament";
+			this->panelSettingsAjuntament->Size = System::Drawing::Size(276, 58);
+			this->panelSettingsAjuntament->TabIndex = 9;
+			this->panelSettingsAjuntament->Visible = false;
+			// 
+			// pictureBox6
+			// 
+			this->pictureBox6->BackColor = System::Drawing::Color::Black;
+			this->pictureBox6->Dock = System::Windows::Forms::DockStyle::Left;
+			this->pictureBox6->ErrorImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox6.ErrorImage")));
+			this->pictureBox6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox6.Image")));
+			this->pictureBox6->Location = System::Drawing::Point(0, 0);
+			this->pictureBox6->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->pictureBox6->Name = L"pictureBox6";
+			this->pictureBox6->Size = System::Drawing::Size(53, 58);
+			this->pictureBox6->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
+			this->pictureBox6->TabIndex = 7;
+			this->pictureBox6->TabStop = false;
+			// 
+			// botonSettingsAjuntament
+			// 
+			this->botonSettingsAjuntament->BackColor = System::Drawing::Color::Black;
+			this->botonSettingsAjuntament->Dock = System::Windows::Forms::DockStyle::Right;
+			this->botonSettingsAjuntament->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->botonSettingsAjuntament->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F));
+			this->botonSettingsAjuntament->ForeColor = System::Drawing::Color::White;
+			this->botonSettingsAjuntament->Location = System::Drawing::Point(53, 0);
+			this->botonSettingsAjuntament->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->botonSettingsAjuntament->Name = L"botonSettingsAjuntament";
+			this->botonSettingsAjuntament->Size = System::Drawing::Size(223, 58);
+			this->botonSettingsAjuntament->TabIndex = 6;
+			this->botonSettingsAjuntament->Text = L"Settings";
+			this->botonSettingsAjuntament->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			this->botonSettingsAjuntament->UseVisualStyleBackColor = false;
+			this->botonSettingsAjuntament->Visible = false;
+			this->botonSettingsAjuntament->Click += gcnew System::EventHandler(this, &ProvesUI::botonSettingsAjuntament_Click);
+			// 
 			// pnlESQLesMevesPeticionsEntitat
 			// 
+			this->pnlESQLesMevesPeticionsEntitat->Controls->Add(this->pictureBox13);
 			this->pnlESQLesMevesPeticionsEntitat->Controls->Add(this->btnEsqLesMevesPeticions);
 			this->pnlESQLesMevesPeticionsEntitat->Dock = System::Windows::Forms::DockStyle::Top;
 			this->pnlESQLesMevesPeticionsEntitat->Location = System::Drawing::Point(0, 501);
 			this->pnlESQLesMevesPeticionsEntitat->Name = L"pnlESQLesMevesPeticionsEntitat";
 			this->pnlESQLesMevesPeticionsEntitat->Size = System::Drawing::Size(276, 52);
 			this->pnlESQLesMevesPeticionsEntitat->TabIndex = 9;
+			this->pnlESQLesMevesPeticionsEntitat->Visible = false;
+			// 
+			// pictureBox13
+			// 
+			this->pictureBox13->BackColor = System::Drawing::Color::Black;
+			this->pictureBox13->Dock = System::Windows::Forms::DockStyle::Left;
+			this->pictureBox13->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox13.Image")));
+			this->pictureBox13->Location = System::Drawing::Point(0, 0);
+			this->pictureBox13->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->pictureBox13->Name = L"pictureBox13";
+			this->pictureBox13->Size = System::Drawing::Size(53, 52);
+			this->pictureBox13->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
+			this->pictureBox13->TabIndex = 2;
+			this->pictureBox13->TabStop = false;
 			// 
 			// btnEsqLesMevesPeticions
 			// 
@@ -2462,62 +2568,10 @@ namespace culturalink_main {
 			this->btnEsqLesMevesPeticions->UseVisualStyleBackColor = false;
 			this->btnEsqLesMevesPeticions->Visible = false;
 			this->btnEsqLesMevesPeticions->Click += gcnew System::EventHandler(this, &ProvesUI::btnEsqLesMevesPeticions_Click);
-			// panel12
-// 
-			this->panel12->Controls->Add(this->botonSettingsEntitat);
-			this->panel12->Dock = System::Windows::Forms::DockStyle::Top;
-			this->panel12->Location = System::Drawing::Point(0, 559);
-			this->panel12->Name = L"panel12";
-			this->panel12->Size = System::Drawing::Size(276, 53);
-			this->panel12->TabIndex = 15;
-			this->panel12->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &ProvesUI::panel12_Paint);
-			// 
-			// botonSettingsEntitat
-			// 
-			this->botonSettingsEntitat->Dock = System::Windows::Forms::DockStyle::Right;
-			this->botonSettingsEntitat->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->botonSettingsEntitat->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F));
-			this->botonSettingsEntitat->ForeColor = System::Drawing::Color::White;
-			this->botonSettingsEntitat->Location = System::Drawing::Point(53, 0);
-			this->botonSettingsEntitat->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
-			this->botonSettingsEntitat->Name = L"botonSettingsEntitat";
-			this->botonSettingsEntitat->Size = System::Drawing::Size(223, 53);
-			this->botonSettingsEntitat->TabIndex = 7;
-			this->botonSettingsEntitat->Text = L"Settings";
-			this->botonSettingsEntitat->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->botonSettingsEntitat->UseVisualStyleBackColor = true;
-			this->botonSettingsEntitat->Visible = false;
-			this->botonSettingsEntitat->Click += gcnew System::EventHandler(this, &ProvesUI::botonSettingsEntitat_Click);
-			// 
-			// panelSettingsAjuntament
-			// 
-			this->panelSettingsAjuntament->Controls->Add(this->botonSettingsAjuntament);
-			this->panelSettingsAjuntament->Dock = System::Windows::Forms::DockStyle::Top;
-			this->panelSettingsAjuntament->Location = System::Drawing::Point(0, 501);
-			this->panelSettingsAjuntament->Name = L"panelSettingsAjuntament";
-			this->panelSettingsAjuntament->Size = System::Drawing::Size(276, 58);
-			this->panelSettingsAjuntament->TabIndex = 9;
-			// 
-			// botonSettingsAjuntament
-			// 
-			this->botonSettingsAjuntament->Dock = System::Windows::Forms::DockStyle::Right;
-			this->botonSettingsAjuntament->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->botonSettingsAjuntament->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F));
-			this->botonSettingsAjuntament->ForeColor = System::Drawing::Color::White;
-			this->botonSettingsAjuntament->Location = System::Drawing::Point(53, 0);
-			this->botonSettingsAjuntament->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
-			this->botonSettingsAjuntament->Name = L"botonSettingsAjuntament";
-			this->botonSettingsAjuntament->Size = System::Drawing::Size(223, 58);
-			this->botonSettingsAjuntament->TabIndex = 6;
-			this->botonSettingsAjuntament->Text = L"Settings";
-			this->botonSettingsAjuntament->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->botonSettingsAjuntament->UseVisualStyleBackColor = true;
-			this->botonSettingsAjuntament->Visible = false;
-			this->botonSettingsAjuntament->Click += gcnew System::EventHandler(this, &ProvesUI::botonSettingsAjuntament_Click);
-			//
 			// 
 			// panel11
 			// 
+			this->panel11->Controls->Add(this->pictureBox12);
 			this->panel11->Controls->Add(this->button9);
 			this->panel11->Dock = System::Windows::Forms::DockStyle::Top;
 			this->panel11->Location = System::Drawing::Point(0, 449);
@@ -2526,6 +2580,19 @@ namespace culturalink_main {
 			this->panel11->Size = System::Drawing::Size(276, 52);
 			this->panel11->TabIndex = 8;
 			this->panel11->Visible = false;
+			// 
+			// pictureBox12
+			// 
+			this->pictureBox12->BackColor = System::Drawing::Color::Black;
+			this->pictureBox12->Dock = System::Windows::Forms::DockStyle::Left;
+			this->pictureBox12->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox12.Image")));
+			this->pictureBox12->Location = System::Drawing::Point(0, 0);
+			this->pictureBox12->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->pictureBox12->Name = L"pictureBox12";
+			this->pictureBox12->Size = System::Drawing::Size(53, 52);
+			this->pictureBox12->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
+			this->pictureBox12->TabIndex = 1;
+			this->pictureBox12->TabStop = false;
 			// 
 			// button9
 			// 
@@ -2546,6 +2613,7 @@ namespace culturalink_main {
 			// 
 			// panel10
 			// 
+			this->panel10->Controls->Add(this->pictureBox11);
 			this->panel10->Controls->Add(this->btnRegEsdevAJ);
 			this->panel10->Dock = System::Windows::Forms::DockStyle::Top;
 			this->panel10->Location = System::Drawing::Point(0, 397);
@@ -2554,6 +2622,19 @@ namespace culturalink_main {
 			this->panel10->Size = System::Drawing::Size(276, 52);
 			this->panel10->TabIndex = 7;
 			this->panel10->Visible = false;
+			// 
+			// pictureBox11
+			// 
+			this->pictureBox11->BackColor = System::Drawing::Color::Black;
+			this->pictureBox11->Dock = System::Windows::Forms::DockStyle::Left;
+			this->pictureBox11->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox11.Image")));
+			this->pictureBox11->Location = System::Drawing::Point(0, 0);
+			this->pictureBox11->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->pictureBox11->Name = L"pictureBox11";
+			this->pictureBox11->Size = System::Drawing::Size(53, 52);
+			this->pictureBox11->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
+			this->pictureBox11->TabIndex = 1;
+			this->pictureBox11->TabStop = false;
 			// 
 			// btnRegEsdevAJ
 			// 
@@ -2895,8 +2976,6 @@ namespace culturalink_main {
 			// 
 			this->panelUserInfo->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(40)), static_cast<System::Int32>(static_cast<System::Byte>(40)),
 				static_cast<System::Int32>(static_cast<System::Byte>(40)));
-			this->panelNavBar->Controls->Add(this->panel12);
-			this->panelNavBar->Controls->Add(this->panelSettingsAjuntament);
 			this->panelUserInfo->Controls->Add(this->lblPuntsUser);
 			this->panelUserInfo->Controls->Add(this->lblTypeUser);
 			this->panelUserInfo->Controls->Add(this->panel9);
@@ -3098,12 +3177,12 @@ namespace culturalink_main {
 			// 
 			// pnlMain
 			// 
+			this->pnlMain->Controls->Add(this->PANELMeusEsdevs);
+			this->pnlMain->Controls->Add(this->PANELConsultarCompra);
 			this->pnlMain->Controls->Add(this->PANELModificaEntitat);
 			this->pnlMain->Controls->Add(this->PANELModificaAjuntament);
 			this->pnlMain->Controls->Add(this->PANELSolicitutEntitat);
 			this->pnlMain->Controls->Add(this->PANELModificaCiut);
-			this->pnlMain->Controls->Add(this->PANELMeusEsdevs);
-			this->pnlMain->Controls->Add(this->PANELConsultarCompra);
 			this->pnlMain->Controls->Add(this->PANELbandEntrSolAj);
 			this->pnlMain->Controls->Add(this->PANELEsdevHomepage);
 			this->pnlMain->Dock = System::Windows::Forms::DockStyle::Fill;
@@ -3121,7 +3200,7 @@ namespace culturalink_main {
 			this->PANELMeusEsdevs->Controls->Add(this->pnlTitlesMESDEV);
 			this->PANELMeusEsdevs->Location = System::Drawing::Point(182, 25);
 			this->PANELMeusEsdevs->Name = L"PANELMeusEsdevs";
-			this->PANELMeusEsdevs->Size = System::Drawing::Size(792, 628);
+			this->PANELMeusEsdevs->Size = System::Drawing::Size(1080, 628);
 			this->PANELMeusEsdevs->TabIndex = 0;
 			this->PANELMeusEsdevs->Visible = false;
 			// 
@@ -3174,12 +3253,13 @@ namespace culturalink_main {
 			this->flowLayoutPanelMESDEV->FlowDirection = System::Windows::Forms::FlowDirection::TopDown;
 			this->flowLayoutPanelMESDEV->Location = System::Drawing::Point(0, 32);
 			this->flowLayoutPanelMESDEV->Name = L"flowLayoutPanelMESDEV";
-			this->flowLayoutPanelMESDEV->Size = System::Drawing::Size(792, 488);
+			this->flowLayoutPanelMESDEV->Size = System::Drawing::Size(1080, 488);
 			this->flowLayoutPanelMESDEV->TabIndex = 3;
 			// 
 			// pnlTitlesMESDEV
 			// 
 			this->pnlTitlesMESDEV->BackColor = System::Drawing::Color::Black;
+			this->pnlTitlesMESDEV->Controls->Add(this->lblSelPuntuacioMESDEVen);
 			this->pnlTitlesMESDEV->Controls->Add(this->lblNomEsdevMESDEVen);
 			this->pnlTitlesMESDEV->Controls->Add(this->lblDataMESDEVen);
 			this->pnlTitlesMESDEV->Controls->Add(this->lblPreuMESDEVen);
@@ -3187,7 +3267,7 @@ namespace culturalink_main {
 			this->pnlTitlesMESDEV->Dock = System::Windows::Forms::DockStyle::Top;
 			this->pnlTitlesMESDEV->Location = System::Drawing::Point(0, 0);
 			this->pnlTitlesMESDEV->Name = L"pnlTitlesMESDEV";
-			this->pnlTitlesMESDEV->Size = System::Drawing::Size(792, 32);
+			this->pnlTitlesMESDEV->Size = System::Drawing::Size(1080, 32);
 			this->pnlTitlesMESDEV->TabIndex = 2;
 			this->pnlTitlesMESDEV->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &ProvesUI::pnlTitlesMESDEV_Paint);
 			// 
@@ -3502,6 +3582,18 @@ namespace culturalink_main {
 			this->btnViewNavBar->UseVisualStyleBackColor = false;
 			this->btnViewNavBar->Click += gcnew System::EventHandler(this, &ProvesUI::btnViewNavBar_Click);
 			// 
+			// lblSelPuntuacioMESDEVen
+			// 
+			this->lblSelPuntuacioMESDEVen->AutoSize = true;
+			this->lblSelPuntuacioMESDEVen->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->lblSelPuntuacioMESDEVen->ForeColor = System::Drawing::Color::White;
+			this->lblSelPuntuacioMESDEVen->Location = System::Drawing::Point(874, 9);
+			this->lblSelPuntuacioMESDEVen->Name = L"lblSelPuntuacioMESDEVen";
+			this->lblSelPuntuacioMESDEVen->Size = System::Drawing::Size(131, 16);
+			this->lblSelPuntuacioMESDEVen->TabIndex = 5;
+			this->lblSelPuntuacioMESDEVen->Text = L"SEL. PUNTUACIÓ";
+			// 
 			// ProvesUI
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -3522,6 +3614,8 @@ namespace culturalink_main {
 			this->Text = L"ProvesUI";
 			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
 			this->Load += gcnew System::EventHandler(this, &ProvesUI::ProvesUI_Load);
+			this->pnlQuantitatCONS->ResumeLayout(false);
+			this->pnlQuantitatCONS->PerformLayout();
 			this->pnlTitlesSOLENTIT->ResumeLayout(false);
 			this->pnlTitlesSOLENTIT->PerformLayout();
 			this->PANELSolicitutEntitat->ResumeLayout(false);
@@ -3539,6 +3633,24 @@ namespace culturalink_main {
 			this->pnlCorrMODCIT->PerformLayout();
 			this->pnlDataMODCIT->ResumeLayout(false);
 			this->pnlDataMODCIT->PerformLayout();
+			this->PANELModificaEntitat->ResumeLayout(false);
+			this->PANELModificaEntitat->PerformLayout();
+			this->panel_nom_MODENT->ResumeLayout(false);
+			this->panel_nom_MODENT->PerformLayout();
+			this->panel_telefon_MODENT->ResumeLayout(false);
+			this->panel_telefon_MODENT->PerformLayout();
+			this->panel_correu_MODENT->ResumeLayout(false);
+			this->panel_correu_MODENT->PerformLayout();
+			this->PANELModificaAjuntament->ResumeLayout(false);
+			this->PANELModificaAjuntament->PerformLayout();
+			this->panel_nom_ajuntamentMODAJUN->ResumeLayout(false);
+			this->panel_nom_ajuntamentMODAJUN->PerformLayout();
+			this->panel_poblacio_ajuntamentMODAJUN->ResumeLayout(false);
+			this->panel_poblacio_ajuntamentMODAJUN->PerformLayout();
+			this->panel_telefon_ajuntamentMODAJUN->ResumeLayout(false);
+			this->panel_telefon_ajuntamentMODAJUN->PerformLayout();
+			this->panel_correu_electronic_ajuntamentMODAJUN->ResumeLayout(false);
+			this->panel_correu_electronic_ajuntamentMODAJUN->PerformLayout();
 			this->pnlCOMP->ResumeLayout(false);
 			this->pnlCOMP->PerformLayout();
 			this->pnlTitleCOMP->ResumeLayout(false);
@@ -3547,6 +3659,7 @@ namespace culturalink_main {
 			this->pnlTarjUICOMP->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxChipUICOMP))->EndInit();
 			this->PANELConsultarCompra->ResumeLayout(false);
+			this->PANELConsultarCompra->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->picBoxEsdevCONS))->EndInit();
 			this->panelCONS->ResumeLayout(false);
 			this->pnl5CONS->ResumeLayout(false);
@@ -3573,7 +3686,6 @@ namespace culturalink_main {
 			this->pnl1CONS->PerformLayout();
 			this->pnl11CONS->ResumeLayout(false);
 			this->pnl11CONS->PerformLayout();
-			this->pnlFlowTipusCapsesCONSex->ResumeLayout(false);
 			this->pnlDescCONS->ResumeLayout(false);
 			this->pnlDescTitleCONS->ResumeLayout(false);
 			this->pnlDescTitleCONS->PerformLayout();
@@ -3591,32 +3703,18 @@ namespace culturalink_main {
 			this->pnlTopBarAppInfo->ResumeLayout(false);
 			this->pnlTopBarAppInfo->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->AppIcon))->EndInit();
-
-			this->PANELModificaEntitat->ResumeLayout(false);
-			this->PANELModificaEntitat->PerformLayout();
-			this->panel_nom_MODENT->ResumeLayout(false);
-			this->panel_nom_MODENT->PerformLayout();
-			this->panel_telefon_MODENT->ResumeLayout(false);
-			this->panel_telefon_MODENT->PerformLayout();
-			this->panel_correu_MODENT->ResumeLayout(false);
-			this->panel_correu_MODENT->PerformLayout();
-			this->PANELModificaAjuntament->ResumeLayout(false);
-			this->PANELModificaAjuntament->PerformLayout();
-			this->panel_nom_ajuntamentMODAJUN->ResumeLayout(false);
-			this->panel_nom_ajuntamentMODAJUN->PerformLayout();
-			this->panel_poblacio_ajuntamentMODAJUN->ResumeLayout(false);
-			this->panel_poblacio_ajuntamentMODAJUN->PerformLayout();
-			this->panel_telefon_ajuntamentMODAJUN->ResumeLayout(false);
-			this->panel_telefon_ajuntamentMODAJUN->PerformLayout();
-			this->panel_correu_electronic_ajuntamentMODAJUN->ResumeLayout(false);
-			this->panel_correu_electronic_ajuntamentMODAJUN->PerformLayout();
-			this->panel12->ResumeLayout(false);
-			this->panelSettingsAjuntament->ResumeLayout(false);
 			this->pnlTopBarMinMaxClose->ResumeLayout(false);
 			this->panelNavBar->ResumeLayout(false);
+			this->panel12->ResumeLayout(false);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox10))->EndInit();
+			this->panelSettingsAjuntament->ResumeLayout(false);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox6))->EndInit();
 			this->pnlESQLesMevesPeticionsEntitat->ResumeLayout(false);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox13))->EndInit();
 			this->panel11->ResumeLayout(false);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox12))->EndInit();
 			this->panel10->ResumeLayout(false);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox11))->EndInit();
 			this->pnlModEsdev->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox8))->EndInit();
 			this->panel7->ResumeLayout(false);
@@ -3954,9 +4052,15 @@ namespace culturalink_main {
 		TxConsultaEsdevenimentsAmbTipus txConsEsdevs(val);
 		txConsEsdevs.executar();
 
+		TxConsultaEsdeveniment txConsEsdev(val);
+		txConsEsdev.executar();
+
 		List<String^>^ esdevsGala = txConsEsdevs.getResult();
 
 		List<System::Windows::Forms::Panel^>^ list_esdevs;
+
+		esdevsGala->Add(txConsEsdev.getResult()[4]);
+		esdevsGala->Add(txConsEsdev.getResult()[1]);
 
 		int num_filtre_panel = esdevsGala->Count;
 
@@ -4213,7 +4317,7 @@ namespace culturalink_main {
 
 			break;
 		case TipoPassarela::Entitat:
-
+			this->panel12->Visible = true;
 			resultEnt = ctrlModEnt.consultaEntitat();
 			txt_nom_MODENT->Text = resultEnt[1]; // nom
 			//textBox2->Text = resultEnt[0]; // id
@@ -4225,6 +4329,7 @@ namespace culturalink_main {
 
 			this->panel10->Visible = true;
 			this->btnEsqLesMevesPeticions->Visible = true;
+			this->pnlESQLesMevesPeticionsEntitat->Visible = true;
 
 			this->lblTypeUser->Text = L"Entitat";
 			this->lblTypeUser->BackColor = System::Drawing::Color::FromArgb(
@@ -4275,6 +4380,8 @@ namespace culturalink_main {
 
 			break;
 		case TipoPassarela::Ajuntament:
+			this->panelSettingsAjuntament->Visible = true;
+
 
 			//this->panel11->Visible = true; // Consultar Peticions d'Esdeveniments
 
@@ -4703,7 +4810,11 @@ namespace culturalink_main {
 					this->Show();
 					this->Visible = true;
 				}*/
-				TxCompraEntradaEsdevenimentDiners tCompEsdevDin(_NomEsdevPerComprar);
+
+
+
+
+				TxCompraEntradaEsdevenimentDiners tCompEsdevDin(_NomEsdevPerComprar, 1);
 				tCompEsdevDin.executar();
 				MessageBox::Show("Compra finalitzada amb exit", "", MessageBoxButtons::OK);
 				//this->Close();
@@ -4735,7 +4846,8 @@ namespace culturalink_main {
 			if (usuarioAlmacenado == nullptr) throw(ErrorUsuari);
 			// Verificar el tipo de usuario y actuar en consecuencia
 			if (tipoUsuario == TipoPassarela::Ciutada) {
-				TxCompraEntradaEsdevenimentPunts tx1(nomEsdev);
+				int^ quantitat = 1;/*this->textBoxQuantitatCONS->Text;*/
+				TxCompraEntradaEsdevenimentPunts tx1(nomEsdev, quantitat);
 				tx1.executar();
 
 				MessageBox::Show("Compra finalitzada amb exit", "", MessageBoxButtons::OK);
@@ -4785,6 +4897,90 @@ namespace culturalink_main {
 			   System::Windows::Forms::Label^ lblDynPreuMESDEVex;
 			   System::Windows::Forms::Panel^ pnlDynMetodeFMESDEVex;
 			   System::Windows::Forms::Label^ lblDynMetodeMESDEVex;
+			   
+			   CustomButton^ btn1star = (gcnew CustomButton());
+			   CustomButton^ btn2star = (gcnew CustomButton());
+			   CustomButton^ btn3star = (gcnew CustomButton());
+			   CustomButton^ btn4star = (gcnew CustomButton());
+			   CustomButton^ btn5star = (gcnew CustomButton());
+
+			   int posIni = 600;
+			   int margin = 10;
+
+			   btn1star->BackColor = System::Drawing::Color::Gray;
+			   btn1star->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			   btn1star->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F));
+			   btn1star->ForeColor = System::Drawing::Color::White;
+			   btn1star->Location = System::Drawing::Point(635, 14);
+			   btn1star->Margin = System::Windows::Forms::Padding(4);
+			   btn1star->Name = L"btn1star";
+			   btn1star->Size = System::Drawing::Size(25, 25);
+			   btn1star->TabIndex = 0;
+			   btn1star->Text = L"1";
+			   btn1star->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			   btn1star->UseVisualStyleBackColor = false;
+			   btn1star->NomEsdev = nomEsdev;
+			   btn1star->Click += gcnew System::EventHandler(this, &ProvesUI::btn1star_Click);
+
+			   btn2star->BackColor = System::Drawing::Color::Gray;
+			   btn2star->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			   btn2star->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F));
+			   btn2star->ForeColor = System::Drawing::Color::White;
+			   btn2star->Location = System::Drawing::Point(660 + 5, 14);
+			   btn2star->Margin = System::Windows::Forms::Padding(4);
+			   btn2star->Name = L"btn2star";
+			   btn2star->Size = System::Drawing::Size(25, 25);
+			   btn2star->TabIndex = 0;
+			   btn2star->Text = L"2";
+			   btn2star->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			   btn2star->UseVisualStyleBackColor = false;
+			   btn2star->NomEsdev = nomEsdev;
+			   btn2star->Click += gcnew System::EventHandler(this, &ProvesUI::btn2star_Click);
+
+			   btn3star->BackColor = System::Drawing::Color::Gray;
+			   btn3star->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			   btn3star->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F));
+			   btn3star->ForeColor = System::Drawing::Color::White;
+			   btn3star->Location = System::Drawing::Point(685 + 10, 14);
+			   btn3star->Margin = System::Windows::Forms::Padding(4);
+			   btn3star->Name = L"btn3star";
+			   btn3star->Size = System::Drawing::Size(25, 25);
+			   btn3star->TabIndex = 0;
+			   btn3star->Text = L"3";
+			   btn3star->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			   btn3star->UseVisualStyleBackColor = false;
+			   btn3star->NomEsdev = nomEsdev;
+			   btn3star->Click += gcnew System::EventHandler(this, &ProvesUI::btn3star_Click);
+
+			   btn4star->BackColor = System::Drawing::Color::Gray;
+			   btn4star->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			   btn4star->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F));
+			   btn4star->ForeColor = System::Drawing::Color::White;
+			   btn4star->Location = System::Drawing::Point(710 + 15, 14);
+			   btn4star->Margin = System::Windows::Forms::Padding(4);
+			   btn4star->Name = L"btn4star";
+			   btn4star->Size = System::Drawing::Size(25, 25);
+			   btn4star->TabIndex = 0;
+			   btn4star->Text = L"4";
+			   btn4star->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			   btn4star->UseVisualStyleBackColor = false;
+			   btn4star->NomEsdev = nomEsdev;
+			   btn4star->Click += gcnew System::EventHandler(this, &ProvesUI::btn4star_Click);
+
+			   btn5star->BackColor = System::Drawing::Color::Gray;
+			   btn5star->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			   btn5star->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F));
+			   btn5star->ForeColor = System::Drawing::Color::White;
+			   btn5star->Location = System::Drawing::Point(735 + 20, 14);
+			   btn5star->Margin = System::Windows::Forms::Padding(4);
+			   btn5star->Name = L"btn5star";
+			   btn5star->Size = System::Drawing::Size(25, 25);
+			   btn5star->TabIndex = 0;
+			   btn5star->Text = L"5";
+			   btn5star->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			   btn5star->UseVisualStyleBackColor = false;
+			   btn5star->NomEsdev = nomEsdev;
+			   btn5star->Click += gcnew System::EventHandler(this, &ProvesUI::btn5star_Click);
 
 			   pnlDynMESDEVex = (gcnew System::Windows::Forms::Panel());
 			   lblDynNomEsdevMESDEVex = (gcnew System::Windows::Forms::Label());
@@ -4857,7 +5053,12 @@ namespace culturalink_main {
 
 			   // 
 			   // pnlDynMESDEVex
-			   // 
+			   //
+			   pnlDynMESDEVex->Controls->Add(btn5star);
+			   pnlDynMESDEVex->Controls->Add(btn4star);
+			   pnlDynMESDEVex->Controls->Add(btn3star); 
+			   pnlDynMESDEVex->Controls->Add(btn2star);
+			   pnlDynMESDEVex->Controls->Add(btn1star);
 			   pnlDynMESDEVex->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			   pnlDynMESDEVex->Controls->Add(lblDynNomEsdevMESDEVex);
 			   pnlDynMESDEVex->Controls->Add(lblDynDataMESDEVex);
@@ -4865,7 +5066,7 @@ namespace culturalink_main {
 			   pnlDynMESDEVex->Controls->Add(pnlDynMetodeFMESDEVex);
 			   pnlDynMESDEVex->Location = System::Drawing::Point(3, 3);
 			   pnlDynMESDEVex->Name = L"pnlDynMESDEVex";
-			   pnlDynMESDEVex->Size = System::Drawing::Size(588, 48);
+			   pnlDynMESDEVex->Size = System::Drawing::Size(800, 48);
 			   pnlDynMESDEVex->TabIndex = 0;
 
 			   this->flowLayoutPanelMESDEV->Controls->Add(pnlDynMESDEVex);
@@ -4896,6 +5097,8 @@ namespace culturalink_main {
 		this->flowLayoutPanelSOLENTIT->Controls->Clear();
 		this->pnlCOMP->Visible = false;
 		//this->pnlMainTop->Size = System::Drawing::Size(1084, 223);
+
+		this->PANELModificaEntitat->Visible = false;
 		this->flowLayoutPanel2->Visible = false;
 		this->pnlMainTop->Size = System::Drawing::Size(1084, 110);
 		this->PANELMeusEsdevs->Visible = false;
@@ -5094,6 +5297,7 @@ private: System::Void textBox1_TextChanged(System::Object^ sender, System::Event
 private: System::Void panel12_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 }
 private: System::Void botonSettingsEntitat_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->panelBandejaEntrada->Visible = false;
 	this->PANELModificaEntitat->Visible = true;
 }
 private: System::Void txt_nom_ajuntamentMODAJUN_TextChanged(System::Object^ sender, System::EventArgs^ e) {
@@ -5129,6 +5333,69 @@ private: System::Void btn_modificaMODENT_Click(System::Object^ sender, System::E
 	}
 	*/
 }
+	private: System::Void btn1star_Click(System::Object^ sender, System::EventArgs^ e) {
 
-	};
+		CustomButton^ clickedButton = dynamic_cast<CustomButton^>(sender);
+		clickedButton->BackColor = System::Drawing::Color::Gold;
+
+		String^ nomEsdev = clickedButton->NomEsdev;
+		InserirPuntuacion(1, nomEsdev);
+	}
+
+	private: System::Void btn2star_Click(System::Object^ sender, System::EventArgs^ e) {
+
+		CustomButton^ clickedButton = dynamic_cast<CustomButton^>(sender);
+		clickedButton->BackColor = System::Drawing::Color::Gold;
+
+		String^ nomEsdev = clickedButton->NomEsdev;
+		InserirPuntuacion(2, nomEsdev);
+	}
+
+	private: System::Void btn3star_Click(System::Object^ sender, System::EventArgs^ e) {
+
+		CustomButton^ clickedButton = dynamic_cast<CustomButton^>(sender);
+		clickedButton->BackColor = System::Drawing::Color::Gold;
+
+		String^ nomEsdev = clickedButton->NomEsdev;
+		InserirPuntuacion(3, nomEsdev);
+	}
+
+	private: System::Void btn4star_Click(System::Object^ sender, System::EventArgs^ e) {
+
+		CustomButton^ clickedButton = dynamic_cast<CustomButton^>(sender);
+		clickedButton->BackColor = System::Drawing::Color::Gold;
+
+		String^ nomEsdev = clickedButton->NomEsdev;
+		InserirPuntuacion(4, nomEsdev);
+	}
+
+	private: System::Void btn5star_Click(System::Object^ sender, System::EventArgs^ e) {
+
+		CustomButton^ clickedButton = dynamic_cast<CustomButton^>(sender);
+		clickedButton->BackColor = System::Drawing::Color::Gold;
+
+		String^ nomEsdev = clickedButton->NomEsdev;
+		InserirPuntuacion(5, nomEsdev);
+	}
+
+	private: System::Void InserirPuntuacion(int punt, String^ nomEsdevenimentPuntuacio) {
+		String^ nomEsdev = nomEsdevenimentPuntuacio;
+		TxConsultaPuntuacioEsdeveniment esdCons(nomEsdev);
+		esdCons.executar();
+		PassarelaPuntuacioEsdeveniment punts = esdCons.getResult();
+
+		if (punts.getPuntuacioEsdeveniment() == 0) {
+			TxPuntuaEsdeveniment txPuntEsdev(nomEsdev, punt);
+			txPuntEsdev.executar();
+		}
+		else {
+			TxModificaPuntuacioEsdeveniment modPunt(punts);
+			modPunt.modificaPuntuacio(punt);
+		}
+	}
+
+	/*private: System::Void btn_atrasMODENT_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->PANELModificaEntitat->Visible = false;
+	}*/
+};
 }

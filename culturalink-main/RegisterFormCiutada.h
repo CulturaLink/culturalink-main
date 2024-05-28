@@ -289,6 +289,38 @@ namespace culturalink_main {
 			return;
 		}
 
+		bool encontrado = false;
+		//CONTRASENYA EXCEPCIONS
+		if (password->Length < 8)
+		{
+			MessageBox::Show("Revisa el camp 'contrasenya' ha de tenir com a mínim 8 caracters",
+				"Camp amb format incorrecte", MessageBoxButtons::OK);
+			return;
+		}
+
+		encontrado = false;
+		for (int i = 0; i < password->Length && encontrado == false; i++)
+		{
+			if (64 < password[i] && password[i] < 91) encontrado = true;
+		}
+		if (encontrado == false)
+		{
+			MessageBox::Show("Revisa el camp 'contrasenya', la contrasenya ha de tenir minim una mayuscula ", "Camp amb format incorrecte", MessageBoxButtons::OK);
+			return;
+		}
+
+		encontrado = false;
+		for (int i = 0; i < password->Length && encontrado == false; i++)
+		{
+			if (47 < password[i] && password[i] < 58) encontrado = true;
+		}
+		if (encontrado == false)
+		{
+			MessageBox::Show("Revisa el camp 'contrasenya', la contrasenya ha de tenir minim un numero ", "Camp amb format incorrecte", MessageBoxButtons::OK);
+			return;
+		}
+
+
 		//Conneccio a la db
 		try
 		{

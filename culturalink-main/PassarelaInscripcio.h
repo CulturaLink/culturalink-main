@@ -15,7 +15,8 @@ public:
     PassarelaInscripcio(const PassarelaInscripcio% p1);
     PassarelaInscripcio();
     PassarelaInscripcio% operator=(const PassarelaInscripcio% other);
-    PassarelaInscripcio(String^ nickCiutadaI, String^ dataI, String^ nomEsdI, int^ preuI, int^ punts_dinersI);
+    PassarelaInscripcio(String^ nickCiutadaI, String^ dataI, String^ nomEsdI, int^ preuI, int^ punts_dinersI, int^ quanitat_entradesI);
+
     void insereix();
     void elimina();
 
@@ -24,6 +25,9 @@ public:
     String^ ObteNomEsdeveniment();
     int^ ObtePreu(); // Preu Diners
     int^ ObtePunts_Diners(); // Da 0 o 1
+
+    int^ ObteQuantitat_entrades();
+
 
     void posaNickCiutada(String^ nickCiutadaI);
     void posaData(String^ dataI);
@@ -39,4 +43,6 @@ private:
     int^ punts_diners;
 
     int^ _metodePag;
+
+    int^ quanitat_entrades;
 };

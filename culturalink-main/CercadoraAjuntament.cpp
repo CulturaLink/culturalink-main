@@ -48,4 +48,8 @@ PassarelaAjuntament CercadoraAjuntament::cercaAjuntament(String^ clau) {
 		conn->Close();
 	}
 
+	PassarelaAjuntament ajt;
+	return ajt;
+
+
 }
