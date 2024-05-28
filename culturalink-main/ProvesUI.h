@@ -77,6 +77,7 @@ namespace culturalink_main {
 
 
 	private:
+		int^ _quant = 1;
 		CtrlModificaAjuntament ctrlModAj;
 		CtrlModificaEntitat ctrlModEnt;
 		List<String^>^ resultAj;    // Por demostrar info del usuario en Modificar Ajuntament
@@ -85,7 +86,7 @@ namespace culturalink_main {
 
 	private:
 
-	private: System::Windows::Forms::TextBox^ textBoxQuantitatCONS;
+
 	private: System::Windows::Forms::Panel^ pnlQuantitatCONS;
 	private: System::Windows::Forms::Label^ lblQunatitatCONSen;
 
@@ -396,6 +397,14 @@ private: System::Windows::Forms::PictureBox^ pictureBox13;
 private: System::Windows::Forms::PictureBox^ pictureBox12;
 private: System::Windows::Forms::PictureBox^ pictureBox11;
 private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
+private: System::Windows::Forms::Button^ btnMoreQuantCONS;
+
+private: System::Windows::Forms::Label^ lblQuantitatCONS;
+private: System::Windows::Forms::Button^ btnLessQuantCONS;
+
+
+
+
 
 
 
@@ -416,8 +425,8 @@ private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
 		void InitializeComponent(void)
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(ProvesUI::typeid));
-			this->textBoxQuantitatCONS = (gcnew System::Windows::Forms::TextBox());
 			this->pnlQuantitatCONS = (gcnew System::Windows::Forms::Panel());
+			this->lblQuantitatCONS = (gcnew System::Windows::Forms::Label());
 			this->lblQunatitatCONSen = (gcnew System::Windows::Forms::Label());
 			this->flowLayoutPanelSOLENTIT = (gcnew System::Windows::Forms::FlowLayoutPanel());
 			this->pnlTitlesSOLENTIT = (gcnew System::Windows::Forms::Panel());
@@ -508,6 +517,8 @@ private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
 			this->btnGoBackCONS = (gcnew System::Windows::Forms::Button());
 			this->btnComprarCONS = (gcnew System::Windows::Forms::Button());
 			this->PANELConsultarCompra = (gcnew System::Windows::Forms::Panel());
+			this->btnLessQuantCONS = (gcnew System::Windows::Forms::Button());
+			this->btnMoreQuantCONS = (gcnew System::Windows::Forms::Button());
 			this->picBoxEsdevCONS = (gcnew System::Windows::Forms::PictureBox());
 			this->panelCONS = (gcnew System::Windows::Forms::Panel());
 			this->pnl5CONS = (gcnew System::Windows::Forms::Panel());
@@ -626,6 +637,7 @@ private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
 			this->lblTotGastatMESDEV = (gcnew System::Windows::Forms::Label());
 			this->flowLayoutPanelMESDEV = (gcnew System::Windows::Forms::FlowLayoutPanel());
 			this->pnlTitlesMESDEV = (gcnew System::Windows::Forms::Panel());
+			this->lblSelPuntuacioMESDEVen = (gcnew System::Windows::Forms::Label());
 			this->lblNomEsdevMESDEVen = (gcnew System::Windows::Forms::Label());
 			this->lblDataMESDEVen = (gcnew System::Windows::Forms::Label());
 			this->lblPreuMESDEVen = (gcnew System::Windows::Forms::Label());
@@ -652,7 +664,6 @@ private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
 			this->pnlMainModEsdv = (gcnew System::Windows::Forms::Panel());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->btnViewNavBar = (gcnew System::Windows::Forms::Button());
-			this->lblSelPuntuacioMESDEVen = (gcnew System::Windows::Forms::Label());
 			this->pnlQuantitatCONS->SuspendLayout();
 			this->pnlTitlesSOLENTIT->SuspendLayout();
 			this->PANELSolicitutEntitat->SuspendLayout();
@@ -743,22 +754,27 @@ private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
 			this->pnlMainModEsdv->SuspendLayout();
 			this->SuspendLayout();
 			// 
-			// textBoxQuantitatCONS
-			// 
-			this->textBoxQuantitatCONS->Location = System::Drawing::Point(498, 393);
-			this->textBoxQuantitatCONS->Name = L"textBoxQuantitatCONS";
-			this->textBoxQuantitatCONS->Size = System::Drawing::Size(75, 22);
-			this->textBoxQuantitatCONS->TabIndex = 0;
-			// 
 			// pnlQuantitatCONS
 			// 
-			this->pnlQuantitatCONS->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
-				static_cast<System::Int32>(static_cast<System::Byte>(192)));
+			this->pnlQuantitatCONS->BackColor = System::Drawing::Color::Black;
+			this->pnlQuantitatCONS->Controls->Add(this->lblQuantitatCONS);
 			this->pnlQuantitatCONS->Controls->Add(this->lblQunatitatCONSen);
-			this->pnlQuantitatCONS->Location = System::Drawing::Point(297, 390);
+			this->pnlQuantitatCONS->Location = System::Drawing::Point(297, 377);
 			this->pnlQuantitatCONS->Name = L"pnlQuantitatCONS";
-			this->pnlQuantitatCONS->Size = System::Drawing::Size(200, 28);
+			this->pnlQuantitatCONS->Size = System::Drawing::Size(152, 41);
 			this->pnlQuantitatCONS->TabIndex = 0;
+			// 
+			// lblQuantitatCONS
+			// 
+			this->lblQuantitatCONS->AutoSize = true;
+			this->lblQuantitatCONS->BackColor = System::Drawing::Color::White;
+			this->lblQuantitatCONS->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI Semibold", 10.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->lblQuantitatCONS->Location = System::Drawing::Point(99, 8);
+			this->lblQuantitatCONS->Name = L"lblQuantitatCONS";
+			this->lblQuantitatCONS->Size = System::Drawing::Size(19, 25);
+			this->lblQuantitatCONS->TabIndex = 1;
+			this->lblQuantitatCONS->Text = L"1";
 			// 
 			// lblQunatitatCONSen
 			// 
@@ -766,11 +782,11 @@ private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
 			this->lblQunatitatCONSen->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->lblQunatitatCONSen->ForeColor = System::Drawing::Color::White;
-			this->lblQunatitatCONSen->Location = System::Drawing::Point(5, 1);
+			this->lblQunatitatCONSen->Location = System::Drawing::Point(5, 10);
 			this->lblQunatitatCONSen->Name = L"lblQunatitatCONSen";
-			this->lblQunatitatCONSen->Size = System::Drawing::Size(173, 23);
+			this->lblQunatitatCONSen->Size = System::Drawing::Size(87, 23);
 			this->lblQunatitatCONSen->TabIndex = 0;
-			this->lblQunatitatCONSen->Text = L"Quantitat a Comprar:";
+			this->lblQunatitatCONSen->Text = L"Quantitat:";
 			// 
 			// flowLayoutPanelSOLENTIT
 			// 
@@ -1485,6 +1501,7 @@ private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
 			// 
 			// btnCancelarCOMP
 			// 
+			this->btnCancelarCOMP->ForeColor = System::Drawing::Color::Black;
 			this->btnCancelarCOMP->Location = System::Drawing::Point(238, 613);
 			this->btnCancelarCOMP->Margin = System::Windows::Forms::Padding(4);
 			this->btnCancelarCOMP->Name = L"btnCancelarCOMP";
@@ -1498,6 +1515,7 @@ private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
 			// 
 			this->btnComprarCOMP->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
 				static_cast<System::Int32>(static_cast<System::Byte>(255)));
+			this->btnComprarCOMP->ForeColor = System::Drawing::Color::White;
 			this->btnComprarCOMP->Location = System::Drawing::Point(371, 613);
 			this->btnComprarCOMP->Margin = System::Windows::Forms::Padding(4);
 			this->btnComprarCOMP->Name = L"btnComprarCOMP";
@@ -1721,8 +1739,9 @@ private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
 			// 
 			// btnComprarCONS
 			// 
-			this->btnComprarCONS->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
-				static_cast<System::Int32>(static_cast<System::Byte>(255)));
+			this->btnComprarCONS->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(192)));
+			this->btnComprarCONS->ForeColor = System::Drawing::Color::White;
 			this->btnComprarCONS->Location = System::Drawing::Point(627, 613);
 			this->btnComprarCONS->Margin = System::Windows::Forms::Padding(4);
 			this->btnComprarCONS->Name = L"btnComprarCONS";
@@ -1735,9 +1754,10 @@ private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
 			// PANELConsultarCompra
 			// 
 			this->PANELConsultarCompra->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->PANELConsultarCompra->Controls->Add(this->btnLessQuantCONS);
+			this->PANELConsultarCompra->Controls->Add(this->btnMoreQuantCONS);
 			this->PANELConsultarCompra->Controls->Add(this->pnlQuantitatCONS);
 			this->PANELConsultarCompra->Controls->Add(this->pnlCOMP);
-			this->PANELConsultarCompra->Controls->Add(this->textBoxQuantitatCONS);
 			this->PANELConsultarCompra->Controls->Add(this->picBoxEsdevCONS);
 			this->PANELConsultarCompra->Controls->Add(this->panelCONS);
 			this->PANELConsultarCompra->Controls->Add(this->pnlDescCONS);
@@ -1751,6 +1771,42 @@ private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
 			this->PANELConsultarCompra->Size = System::Drawing::Size(1500, 670);
 			this->PANELConsultarCompra->TabIndex = 5;
 			this->PANELConsultarCompra->Visible = false;
+			// 
+			// btnLessQuantCONS
+			// 
+			this->btnLessQuantCONS->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->btnLessQuantCONS->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(192)));
+			this->btnLessQuantCONS->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->btnLessQuantCONS->ForeColor = System::Drawing::Color::White;
+			this->btnLessQuantCONS->Location = System::Drawing::Point(459, 377);
+			this->btnLessQuantCONS->Name = L"btnLessQuantCONS";
+			this->btnLessQuantCONS->Size = System::Drawing::Size(42, 41);
+			this->btnLessQuantCONS->TabIndex = 12;
+			this->btnLessQuantCONS->Text = L"-";
+			this->btnLessQuantCONS->UseVisualStyleBackColor = false;
+			this->btnLessQuantCONS->Click += gcnew System::EventHandler(this, &ProvesUI::btnLessQuantCONS_Click);
+			// 
+			// btnMoreQuantCONS
+			// 
+			this->btnMoreQuantCONS->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->btnMoreQuantCONS->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(192)));
+			this->btnMoreQuantCONS->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->btnMoreQuantCONS->ForeColor = System::Drawing::Color::White;
+			this->btnMoreQuantCONS->Location = System::Drawing::Point(509, 377);
+			this->btnMoreQuantCONS->Name = L"btnMoreQuantCONS";
+			this->btnMoreQuantCONS->Size = System::Drawing::Size(42, 41);
+			this->btnMoreQuantCONS->TabIndex = 11;
+			this->btnMoreQuantCONS->Text = L"+";
+			this->btnMoreQuantCONS->UseVisualStyleBackColor = false;
+			this->btnMoreQuantCONS->Click += gcnew System::EventHandler(this, &ProvesUI::btnMoreQuantCONS_Click);
 			// 
 			// picBoxEsdevCONS
 			// 
@@ -2141,8 +2197,9 @@ private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
 			// 
 			// btnComprarPuntsCONS
 			// 
-			this->btnComprarPuntsCONS->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(255)));
+			this->btnComprarPuntsCONS->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(192)));
+			this->btnComprarPuntsCONS->ForeColor = System::Drawing::Color::White;
 			this->btnComprarPuntsCONS->Location = System::Drawing::Point(409, 613);
 			this->btnComprarPuntsCONS->Margin = System::Windows::Forms::Padding(4);
 			this->btnComprarPuntsCONS->Name = L"btnComprarPuntsCONS";
@@ -3177,8 +3234,8 @@ private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
 			// 
 			// pnlMain
 			// 
-			this->pnlMain->Controls->Add(this->PANELMeusEsdevs);
 			this->pnlMain->Controls->Add(this->PANELConsultarCompra);
+			this->pnlMain->Controls->Add(this->PANELMeusEsdevs);
 			this->pnlMain->Controls->Add(this->PANELModificaEntitat);
 			this->pnlMain->Controls->Add(this->PANELModificaAjuntament);
 			this->pnlMain->Controls->Add(this->PANELSolicitutEntitat);
@@ -3270,6 +3327,18 @@ private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
 			this->pnlTitlesMESDEV->Size = System::Drawing::Size(1080, 32);
 			this->pnlTitlesMESDEV->TabIndex = 2;
 			this->pnlTitlesMESDEV->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &ProvesUI::pnlTitlesMESDEV_Paint);
+			// 
+			// lblSelPuntuacioMESDEVen
+			// 
+			this->lblSelPuntuacioMESDEVen->AutoSize = true;
+			this->lblSelPuntuacioMESDEVen->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->lblSelPuntuacioMESDEVen->ForeColor = System::Drawing::Color::White;
+			this->lblSelPuntuacioMESDEVen->Location = System::Drawing::Point(874, 9);
+			this->lblSelPuntuacioMESDEVen->Name = L"lblSelPuntuacioMESDEVen";
+			this->lblSelPuntuacioMESDEVen->Size = System::Drawing::Size(131, 16);
+			this->lblSelPuntuacioMESDEVen->TabIndex = 5;
+			this->lblSelPuntuacioMESDEVen->Text = L"SEL. PUNTUACIÓ";
 			// 
 			// lblNomEsdevMESDEVen
 			// 
@@ -3582,18 +3651,6 @@ private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
 			this->btnViewNavBar->UseVisualStyleBackColor = false;
 			this->btnViewNavBar->Click += gcnew System::EventHandler(this, &ProvesUI::btnViewNavBar_Click);
 			// 
-			// lblSelPuntuacioMESDEVen
-			// 
-			this->lblSelPuntuacioMESDEVen->AutoSize = true;
-			this->lblSelPuntuacioMESDEVen->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold,
-				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-			this->lblSelPuntuacioMESDEVen->ForeColor = System::Drawing::Color::White;
-			this->lblSelPuntuacioMESDEVen->Location = System::Drawing::Point(874, 9);
-			this->lblSelPuntuacioMESDEVen->Name = L"lblSelPuntuacioMESDEVen";
-			this->lblSelPuntuacioMESDEVen->Size = System::Drawing::Size(131, 16);
-			this->lblSelPuntuacioMESDEVen->TabIndex = 5;
-			this->lblSelPuntuacioMESDEVen->Text = L"SEL. PUNTUACIÓ";
-			// 
 			// ProvesUI
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -3659,7 +3716,6 @@ private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
 			this->pnlTarjUICOMP->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxChipUICOMP))->EndInit();
 			this->PANELConsultarCompra->ResumeLayout(false);
-			this->PANELConsultarCompra->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->picBoxEsdevCONS))->EndInit();
 			this->panelCONS->ResumeLayout(false);
 			this->pnl5CONS->ResumeLayout(false);
@@ -3886,33 +3942,35 @@ private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
 		List<String^>^ inscripcions = txConInsc.getResult();
 
 		int comptEsdevCiut = 0;
-
-		String^ nomEsdev = inscripcions[0];
-		String^ data = inscripcions[1];
-		String^ preu = inscripcions[2];
-		String^ metodePag = inscripcions[3];
-
 		comptEsdevCiut = inscripcions->Count;
-		for (int i = 0; i < comptEsdevCiut; i = i + 4) {
-			if (i + 3 < inscripcions->Count) {
-				nomEsdev = inscripcions[i];
-				data = inscripcions[i + 1];
-				preu = inscripcions[i + 2];
-				metodePag = inscripcions[i + 3];
-				if (metodePag == "0") {
-					metodePag = "Targeta de Credit";
-					preu += " €";
+		if (comptEsdevCiut != 0) {
+			String^ nomEsdev = inscripcions[0];
+			String^ data = inscripcions[1];
+			String^ preu = inscripcions[2];
+			String^ metodePag = inscripcions[3];
+
+			
+			for (int i = 0; i < comptEsdevCiut; i = i + 4) {
+				if (i + 3 < inscripcions->Count) {
+					nomEsdev = inscripcions[i];
+					data = inscripcions[i + 1];
+					preu = inscripcions[i + 2];
+					metodePag = inscripcions[i + 3];
+					if (metodePag == "0") {
+						metodePag = "Targeta de Credit";
+						preu += " €";
+					}
+					else if (metodePag == "1") {
+						metodePag = "Punts";
+						preu += " Punts";
+					}
+					addDyamicPanelElsMeusEsdevs(nomEsdev, data, preu, metodePag);
 				}
-				else if (metodePag == "1") {
-					metodePag = "Punts";
-					preu += " Punts";
+				else {
+					// Handle the case where there are not enough elements
+					// This could be logging an error, breaking the loop, or any other error handling
+					break; // or continue; or any other handling logic
 				}
-				addDyamicPanelElsMeusEsdevs(nomEsdev, data, preu, metodePag);
-			}
-			else {
-				// Handle the case where there are not enough elements
-				// This could be logging an error, breaking the loop, or any other error handling
-				break; // or continue; or any other handling logic
 			}
 		}
 	}
@@ -3997,7 +4055,7 @@ private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
 		String^ puntsCost = txConsEsdev->getResult()[7];
 		String^ data = txConsEsdev->getResult()[8];
 		String^ puntsDesc = txConsEsdev->getResult()[9];
-
+		
 		this->lblPreuEsdevCONSgran->Text = "Preu: " + preu + " € ";
 		this->lblAjuntEsdevCONS->Text = ajunt;
 		this->lblDescEsdevCONS->Text = desc;
@@ -4662,7 +4720,7 @@ private: System::Windows::Forms::Label^ lblSelPuntuacioMESDEVen;
 	}
 
 	private: System::Void btnGoBackCONS_Click(System::Object^ sender, System::EventArgs^ e) {
-
+		_quant = 1;
 		this->pnlCOMP->Visible = false;
 		this->flowLayoutPanel2->Visible = true;
 		//this->pnlMainTop->Size = System::Drawing::Size(1084, 223);
@@ -5397,5 +5455,16 @@ private: System::Void btn_modificaMODENT_Click(System::Object^ sender, System::E
 	/*private: System::Void btn_atrasMODENT_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->PANELModificaEntitat->Visible = false;
 	}*/
+private: System::Void btnMoreQuantCONS_Click(System::Object^ sender, System::EventArgs^ e) {
+	// Assuming _quant is defined somewhere in the class and is an int or float
+	_quant = *(_quant)+1;
+
+	this->lblQuantitatCONS->Text = _quant->ToString();
+
+}
+private: System::Void btnLessQuantCONS_Click(System::Object^ sender, System::EventArgs^ e) {
+	_quant = *(_quant) - 1;
+	this->lblQuantitatCONS->Text = _quant->ToString();
+}
 };
 }
