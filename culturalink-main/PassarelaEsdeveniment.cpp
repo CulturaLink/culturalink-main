@@ -98,9 +98,9 @@ void PassarelaEsdeveniment::insereix() {
 
     String^ idString = passEnt->obteid()->ToString();
 
-    if (_preu < 0) {
+    /*if (_preu < 0) {
         throw (preuNegatiu);
-    }
+    }*/
 
     String^ sql = "INSERT INTO amep14.esdeveniment "
         "(id_entitat, preu_esdeveniment, ajuntament_esdeveniment, descripcio_esdeveniment, "
