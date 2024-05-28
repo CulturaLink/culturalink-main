@@ -78,6 +78,15 @@ namespace culturalink_main {
 
 	private: System::Windows::Forms::TextBox^ txtBPreuPunts;
 	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::Label^ label7;
+	private: System::Windows::Forms::Label^ label10;
+	private: System::Windows::Forms::Label^ label9;
+	private: System::Windows::Forms::Label^ label8;
+	private: System::Windows::Forms::Label^ label11;
+	private: System::Windows::Forms::Label^ label13;
+	private: System::Windows::Forms::Label^ label12;
+	private: System::Windows::Forms::Label^ label14;
+	private: System::Windows::Forms::Label^ label15;
 	private: System::ComponentModel::IContainer^ components;
 
 	private:
@@ -97,6 +106,14 @@ namespace culturalink_main {
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(RegistrarEsdevenimentUI::typeid));
 			this->notifyIcon1 = (gcnew System::Windows::Forms::NotifyIcon(this->components));
 			this->panelDesktop = (gcnew System::Windows::Forms::Panel());
+			this->label14 = (gcnew System::Windows::Forms::Label());
+			this->label13 = (gcnew System::Windows::Forms::Label());
+			this->label12 = (gcnew System::Windows::Forms::Label());
+			this->label11 = (gcnew System::Windows::Forms::Label());
+			this->label10 = (gcnew System::Windows::Forms::Label());
+			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->txtBData = (gcnew System::Windows::Forms::TextBox());
 			this->txtbAforament = (gcnew System::Windows::Forms::TextBox());
@@ -126,6 +143,7 @@ namespace culturalink_main {
 			this->panelTitleBar = (gcnew System::Windows::Forms::Panel());
 			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->label15 = (gcnew System::Windows::Forms::Label());
 			this->panelDesktop->SuspendLayout();
 			this->panelMenu->SuspendLayout();
 			this->panelTitleBar->SuspendLayout();
@@ -143,6 +161,14 @@ namespace culturalink_main {
 			this->panelDesktop->AutoSize = true;
 			this->panelDesktop->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
 			this->panelDesktop->BackColor = System::Drawing::Color::LightSalmon;
+			this->panelDesktop->Controls->Add(this->label14);
+			this->panelDesktop->Controls->Add(this->label13);
+			this->panelDesktop->Controls->Add(this->label12);
+			this->panelDesktop->Controls->Add(this->label11);
+			this->panelDesktop->Controls->Add(this->label10);
+			this->panelDesktop->Controls->Add(this->label9);
+			this->panelDesktop->Controls->Add(this->label8);
+			this->panelDesktop->Controls->Add(this->label7);
 			this->panelDesktop->Controls->Add(this->label1);
 			this->panelDesktop->Controls->Add(this->txtBData);
 			this->panelDesktop->Controls->Add(this->txtbAforament);
@@ -172,12 +198,107 @@ namespace culturalink_main {
 			this->panelDesktop->TabIndex = 7;
 			this->panelDesktop->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &RegistrarEsdevenimentUI::panelDesktop_Paint);
 			// 
+			// label14
+			// 
+			this->label14->AutoSize = true;
+			this->label14->ForeColor = System::Drawing::Color::Red;
+			this->label14->Location = System::Drawing::Point(319, 370);
+			this->label14->Name = L"label14";
+			this->label14->Size = System::Drawing::Size(125, 13);
+			this->label14->TabIndex = 39;
+			this->label14->Text = L"La data no pot ser antiga";
+			this->label14->Visible = false;
+			// 
+			// label13
+			// 
+			this->label13->AutoSize = true;
+			this->label13->ForeColor = System::Drawing::Color::Red;
+			this->label13->Location = System::Drawing::Point(433, 52);
+			this->label13->Name = L"label13";
+			this->label13->Size = System::Drawing::Size(114, 13);
+			this->label13->TabIndex = 38;
+			this->label13->Text = L"Aquest nom ja existeix!";
+			this->label13->Visible = false;
+			this->label13->Click += gcnew System::EventHandler(this, &RegistrarEsdevenimentUI::label13_Click);
+			// 
+			// label12
+			// 
+			this->label12->AutoSize = true;
+			this->label12->ForeColor = System::Drawing::Color::Red;
+			this->label12->Location = System::Drawing::Point(389, 283);
+			this->label12->Name = L"label12";
+			this->label12->Size = System::Drawing::Size(150, 13);
+			this->label12->TabIndex = 37;
+			this->label12->Text = L"Aquest ajuntament no existeix!";
+			this->label12->Visible = false;
+			this->label12->Click += gcnew System::EventHandler(this, &RegistrarEsdevenimentUI::label12_Click);
+			// 
+			// label11
+			// 
+			this->label11->AutoSize = true;
+			this->label11->ForeColor = System::Drawing::Color::Red;
+			this->label11->Location = System::Drawing::Point(324, 237);
+			this->label11->Name = L"label11";
+			this->label11->Size = System::Drawing::Size(120, 13);
+			this->label11->TabIndex = 36;
+			this->label11->Text = L"Aquest tipus no existeix!";
+			this->label11->Visible = false;
+			this->label11->Click += gcnew System::EventHandler(this, &RegistrarEsdevenimentUI::label11_Click);
+			// 
+			// label10
+			// 
+			this->label10->AutoSize = true;
+			this->label10->ForeColor = System::Drawing::Color::Red;
+			this->label10->Location = System::Drawing::Point(357, 321);
+			this->label10->Name = L"label10";
+			this->label10->Size = System::Drawing::Size(167, 13);
+			this->label10->TabIndex = 35;
+			this->label10->Text = L"L\'aforament ha de ser major que 0";
+			this->label10->Visible = false;
+			this->label10->Click += gcnew System::EventHandler(this, &RegistrarEsdevenimentUI::label10_Click);
+			// 
+			// label9
+			// 
+			this->label9->AutoSize = true;
+			this->label9->ForeColor = System::Drawing::Color::Red;
+			this->label9->Location = System::Drawing::Point(423, 150);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(165, 13);
+			this->label9->TabIndex = 34;
+			this->label9->Text = L"Els punts mai poden ser negatius!";
+			this->label9->Visible = false;
+			this->label9->Click += gcnew System::EventHandler(this, &RegistrarEsdevenimentUI::label9_Click);
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->ForeColor = System::Drawing::Color::Red;
+			this->label8->Location = System::Drawing::Point(389, 104);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(135, 13);
+			this->label8->TabIndex = 33;
+			this->label8->Text = L"El preu mai pot ser negatiu!";
+			this->label8->Visible = false;
+			this->label8->Click += gcnew System::EventHandler(this, &RegistrarEsdevenimentUI::label8_Click);
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->ForeColor = System::Drawing::Color::Red;
+			this->label7->Location = System::Drawing::Point(229, 64);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(135, 13);
+			this->label7->TabIndex = 32;
+			this->label7->Text = L"El preu mai pot ser negatiu!";
+			this->label7->Visible = false;
+			this->label7->Click += gcnew System::EventHandler(this, &RegistrarEsdevenimentUI::label7_Click);
+			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
 			this->label1->ForeColor = System::Drawing::Color::Crimson;
-			this->label1->Location = System::Drawing::Point(322, 356);
+			this->label1->Location = System::Drawing::Point(340, 345);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(225, 25);
 			this->label1->TabIndex = 31;
@@ -281,7 +402,7 @@ namespace culturalink_main {
 			// button5
 			// 
 			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F));
-			this->button5->Location = System::Drawing::Point(435, 288);
+			this->button5->Location = System::Drawing::Point(466, 228);
 			this->button5->Margin = System::Windows::Forms::Padding(2);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(142, 49);
@@ -350,6 +471,7 @@ namespace culturalink_main {
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(93, 31);
 			this->textBox2->TabIndex = 13;
+			this->textBox2->TextChanged += gcnew System::EventHandler(this, &RegistrarEsdevenimentUI::textBox2_TextChanged);
 			// 
 			// label3
 			// 
@@ -447,6 +569,7 @@ namespace culturalink_main {
 			// panelTitleBar
 			// 
 			this->panelTitleBar->BackColor = System::Drawing::Color::White;
+			this->panelTitleBar->Controls->Add(this->label15);
 			this->panelTitleBar->Controls->Add(this->pictureBox3);
 			this->panelTitleBar->Controls->Add(this->pictureBox1);
 			this->panelTitleBar->Dock = System::Windows::Forms::DockStyle::Top;
@@ -477,6 +600,17 @@ namespace culturalink_main {
 			this->pictureBox1->TabIndex = 1;
 			this->pictureBox1->TabStop = false;
 			// 
+			// label15
+			// 
+			this->label15->AutoSize = true;
+			this->label15->ForeColor = System::Drawing::Color::Red;
+			this->label15->Location = System::Drawing::Point(338, 18);
+			this->label15->Name = L"label15";
+			this->label15->Size = System::Drawing::Size(181, 13);
+			this->label15->TabIndex = 40;
+			this->label15->Text = L"HAS D\'OMPLIR TOTS ELS CAMPS!";
+			this->label15->Visible = false;
+			// 
 			// RegistrarEsdevenimentUI
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -492,6 +626,7 @@ namespace culturalink_main {
 			this->panelDesktop->PerformLayout();
 			this->panelMenu->ResumeLayout(false);
 			this->panelTitleBar->ResumeLayout(false);
+			this->panelTitleBar->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
@@ -505,26 +640,59 @@ namespace culturalink_main {
 
 	}
 private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
-	String^ nomEsdeveniment = this->textBox1->Text;
-	String^ preu = this->textBox2->Text;
-	String^ descripcio = this->textBox3->Text;
-	String^ ajuntament = this->textBox4->Text;
-	String^ tipus = this->txtBTipus->Text;
-	String^ aforamentS = this->txtbAforament->Text;
-	int aforament = System::Convert::ToInt32(aforamentS);
-	String^ puntsCostS = this->txtBPreuPunts->Text;
-	int puntsCost = System::Convert::ToInt32(puntsCostS);
-	String^ data = this->txtBData->Text;
-	String^ puntsDescS = this->txtBPuntsRegal->Text;
-	int puntsDesc = System::Convert::ToInt32(puntsDescS);
-	UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
-	PassarelaEntitat^ passEnt = safe_cast<PassarelaEntitat^>(usuario->getUsuari());
-	/*int^ idE = passEnt->obteid();
-	int idEsd = *idE;*/
 
-	TxRegistraEsdeveniment tx1(5236, nomEsdeveniment, Convert::ToSingle(preu), descripcio, ajuntament, tipus, aforament, puntsCost, data, puntsDesc);
-	tx1.executar();
-	this->Close();
+	try {
+		if (String::IsNullOrEmpty(this->textBox1->Text) || String::IsNullOrEmpty(this->textBox2->Text) || String::IsNullOrEmpty(this->textBox3->Text) ||
+			String::IsNullOrEmpty(this->textBox4->Text) || String::IsNullOrEmpty(this->txtBTipus->Text) ||
+			String::IsNullOrEmpty(this->txtbAforament->Text) || String::IsNullOrEmpty(this->txtBPreuPunts->Text) || String::IsNullOrEmpty(this->txtBData->Text) ||
+			String::IsNullOrEmpty(this->txtBPuntsRegal->Text)) { //excepció algun camp buit
+			label15->Visible = true;
+		}
+		else {
+			String^ nomEsdeveniment = this->textBox1->Text;
+			String^ preu = this->textBox2->Text;
+			String^ descripcio = this->textBox3->Text;
+			String^ ajuntament = this->textBox4->Text;
+			String^ tipus = this->txtBTipus->Text;
+			String^ aforamentS = this->txtbAforament->Text;
+			int aforament = System::Convert::ToInt32(aforamentS);
+			String^ puntsCostS = this->txtBPreuPunts->Text;
+			int puntsCost = System::Convert::ToInt32(puntsCostS);
+			String^ data = this->txtBData->Text;
+			String^ puntsDescS = this->txtBPuntsRegal->Text;
+			int puntsDesc = System::Convert::ToInt32(puntsDescS);
+			UsuariIniciat^ usuario = UsuariIniciat::ObtenerInstancia();
+			PassarelaEntitat^ passEnt = safe_cast<PassarelaEntitat^>(usuario->getUsuari());
+			/*int^ idE = passEnt->obteid();
+			int idEsd = *idE;*/
+
+			if (Convert::ToSingle(preu) < 0 || aforament < 1 || puntsCost < 0 || puntsDesc < 0) {
+				if (Convert::ToSingle(preu) < 0) label7->Visible = true; //excepció preu negatiu
+				if (aforament < 1) label10->Visible = true; //excepció aforament 0 0 negatiu
+				if (puntsCost < 0) label8->Visible = true; //excepció preu punts negatiu
+				if (puntsDesc < 0) label9->Visible = true; //excepció punts regal negatiu
+			}
+			else {
+				TxRegistraEsdeveniment tx1(5236, nomEsdeveniment, Convert::ToSingle(preu), descripcio, ajuntament, tipus, aforament, puntsCost, data, puntsDesc);
+				tx1.executar();
+				this->Close();
+			}
+		}
+	} catch (int e) {
+		if (e == errorDataAnterior) {
+			this->label14->Visible = true; //excepció Data no futura d'esdeveniment (no és pot registrar un esdeveniment amb una data que ja ha passat)
+		}
+		if (e == errorTipus) {
+			this->label11->Visible = true; //excepció tipus d'esdeveniment no existeix
+		}
+		if (e == errorAjuntament) {
+			this->label12->Visible = true; //excepció ajuntament no existeix
+		}
+		if (e == errorEsdevenimentExistent) {
+			this->label13->Visible = true; //excepció nom d'esdeveniment ya existeix (els noms han de ser diferents)
+		}
+		
+	}
 }
 private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 }
@@ -540,5 +708,21 @@ private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e)
 }
 
 
+private: System::Void label7_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label11_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label8_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label9_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label13_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label12_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label10_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }
