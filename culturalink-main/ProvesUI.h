@@ -265,10 +265,10 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Panel^ pnlInfoUsu;
 
 	private: System::Windows::Forms::Button^ btnViewNavBar;
-	private: System::Windows::Forms::Button^ btnFiltrGala;
+	/*private: System::Windows::Forms::Button^ btnFiltrGala;
 
 
-	private: System::Windows::Forms::Button^ btnFiltreDeportivo;
+	private: System::Windows::Forms::Button^ btnFiltreDeportivo;*/
 
 	private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPanel1;
 
@@ -728,8 +728,8 @@ private: System::Windows::Forms::Label^ label8;
 			this->pnlMainTop = (gcnew System::Windows::Forms::Panel());
 			this->btnSearch = (gcnew System::Windows::Forms::Button());
 			this->flowLayoutPanel2 = (gcnew System::Windows::Forms::FlowLayoutPanel());
-			this->btnFiltrGala = (gcnew System::Windows::Forms::Button());
-			this->btnFiltreDeportivo = (gcnew System::Windows::Forms::Button());
+		/*	this->btnFiltrGala = (gcnew System::Windows::Forms::Button());
+			this->btnFiltreDeportivo = (gcnew System::Windows::Forms::Button());*/
 			this->pictureBox7 = (gcnew System::Windows::Forms::PictureBox());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->lblTitlePage = (gcnew System::Windows::Forms::Label());
@@ -3733,8 +3733,8 @@ private: System::Windows::Forms::Label^ label8;
 			// 
 			this->flowLayoutPanel2->AutoScroll = true;
 			this->flowLayoutPanel2->BackColor = System::Drawing::Color::White;
-			this->flowLayoutPanel2->Controls->Add(this->btnFiltrGala);
-			this->flowLayoutPanel2->Controls->Add(this->btnFiltreDeportivo);
+			/*this->flowLayoutPanel2->Controls->Add(this->btnFiltrGala);
+			this->flowLayoutPanel2->Controls->Add(this->btnFiltreDeportivo);*/
 			this->flowLayoutPanel2->Dock = System::Windows::Forms::DockStyle::Bottom;
 			this->flowLayoutPanel2->Location = System::Drawing::Point(0, 137);
 			this->flowLayoutPanel2->Margin = System::Windows::Forms::Padding(4);
@@ -3746,36 +3746,36 @@ private: System::Windows::Forms::Label^ label8;
 			// 
 			// btnFiltrGala
 			// 
-			this->btnFiltrGala->BackColor = System::Drawing::Color::Crimson;
-			this->btnFiltrGala->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->btnFiltrGala->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->btnFiltrGala->ForeColor = System::Drawing::Color::White;
-			this->btnFiltrGala->Location = System::Drawing::Point(33, 14);
-			this->btnFiltrGala->Margin = System::Windows::Forms::Padding(4);
-			this->btnFiltrGala->Name = L"btnFiltrGala";
-			this->btnFiltrGala->Size = System::Drawing::Size(100, 28);
-			this->btnFiltrGala->TabIndex = 0;
-			this->btnFiltrGala->Text = L"Gala";
-			this->btnFiltrGala->UseVisualStyleBackColor = false;
-			this->btnFiltrGala->Click += gcnew System::EventHandler(this, &ProvesUI::btnFiltrGala_Click);
-			// 
-			// btnFiltreDeportivo
-			// 
-			this->btnFiltreDeportivo->BackColor = System::Drawing::Color::Crimson;
-			this->btnFiltreDeportivo->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->btnFiltreDeportivo->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->btnFiltreDeportivo->ForeColor = System::Drawing::Color::White;
-			this->btnFiltreDeportivo->Location = System::Drawing::Point(141, 14);
-			this->btnFiltreDeportivo->Margin = System::Windows::Forms::Padding(4);
-			this->btnFiltreDeportivo->Name = L"btnFiltreDeportivo";
-			this->btnFiltreDeportivo->Size = System::Drawing::Size(100, 28);
-			this->btnFiltreDeportivo->TabIndex = 1;
-			this->btnFiltreDeportivo->Text = L"Deportivo";
-			this->btnFiltreDeportivo->UseVisualStyleBackColor = false;
-			this->btnFiltreDeportivo->Click += gcnew System::EventHandler(this, &ProvesUI::btnFiltreDeportivo_Click);
-			// 
+			//this->btnFiltrGala->BackColor = System::Drawing::Color::Crimson;
+			//this->btnFiltrGala->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			//this->btnFiltrGala->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			//	static_cast<System::Byte>(0)));
+			//this->btnFiltrGala->ForeColor = System::Drawing::Color::White;
+			//this->btnFiltrGala->Location = System::Drawing::Point(33, 14);
+			//this->btnFiltrGala->Margin = System::Windows::Forms::Padding(4);
+			//this->btnFiltrGala->Name = L"btnFiltrGala";
+			//this->btnFiltrGala->Size = System::Drawing::Size(100, 28);
+			//this->btnFiltrGala->TabIndex = 0;
+			//this->btnFiltrGala->Text = L"Gala";
+			//this->btnFiltrGala->UseVisualStyleBackColor = false;
+			//this->btnFiltrGala->Click += gcnew System::EventHandler(this, &ProvesUI::btnFiltrGala_Click);
+			//// 
+			//// btnFiltreDeportivo
+			//// 
+			//this->btnFiltreDeportivo->BackColor = System::Drawing::Color::Crimson;
+			//this->btnFiltreDeportivo->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			//this->btnFiltreDeportivo->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			//	static_cast<System::Byte>(0)));
+			//this->btnFiltreDeportivo->ForeColor = System::Drawing::Color::White;
+			//this->btnFiltreDeportivo->Location = System::Drawing::Point(141, 14);
+			//this->btnFiltreDeportivo->Margin = System::Windows::Forms::Padding(4);
+			//this->btnFiltreDeportivo->Name = L"btnFiltreDeportivo";
+			//this->btnFiltreDeportivo->Size = System::Drawing::Size(100, 28);
+			//this->btnFiltreDeportivo->TabIndex = 1;
+			//this->btnFiltreDeportivo->Text = L"Deportivo";
+			//this->btnFiltreDeportivo->UseVisualStyleBackColor = false;
+			//this->btnFiltreDeportivo->Click += gcnew System::EventHandler(this, &ProvesUI::btnFiltreDeportivo_Click);
+			//// 
 			// pictureBox7
 			// 
 			this->pictureBox7->BackColor = System::Drawing::Color::White;
@@ -4571,7 +4571,7 @@ private: System::Windows::Forms::Label^ label8;
 
 		CustomButton^ clickedButton = dynamic_cast<CustomButton^>(sender);
 
-		TxConsultaEsdevenimentsAmbTipus txConsEsdevs("Gala");
+		TxConsultaEsdevenimentsAmbTipus txConsEsdevs(clickedButton->NomEsdev);
 		txConsEsdevs.executar();
 
 		List<String^>^ esdevsGala = txConsEsdevs.getResult();
