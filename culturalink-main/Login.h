@@ -116,8 +116,8 @@ namespace culturalink_main {
 			this->panel4 = (gcnew System::Windows::Forms::Panel());
 			this->panel5 = (gcnew System::Windows::Forms::Panel());
 			this->panel6 = (gcnew System::Windows::Forms::Panel());
-			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1->SuspendLayout();
 			this->panel1->SuspendLayout();
 			this->panel3->SuspendLayout();
@@ -192,7 +192,7 @@ namespace culturalink_main {
 			// 
 			this->buttonOK->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->buttonOK->Location = System::Drawing::Point(232, 454);
+			this->buttonOK->Location = System::Drawing::Point(232, 528);
 			this->buttonOK->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->buttonOK->Name = L"buttonOK";
 			this->buttonOK->Size = System::Drawing::Size(160, 37);
@@ -268,7 +268,7 @@ namespace culturalink_main {
 			// 
 			this->registre->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->registre->Location = System::Drawing::Point(37, 454);
+			this->registre->Location = System::Drawing::Point(37, 528);
 			this->registre->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->registre->Name = L"registre";
 			this->registre->Size = System::Drawing::Size(160, 37);
@@ -413,7 +413,6 @@ namespace culturalink_main {
 			// 
 			// panel6
 			// 
-			this->panel6->Controls->Add(this->button1);
 			this->panel6->Controls->Add(this->label5);
 			this->panel6->Controls->Add(this->groupBox1);
 			this->panel6->Dock = System::Windows::Forms::DockStyle::Top;
@@ -422,6 +421,19 @@ namespace culturalink_main {
 			this->panel6->Name = L"panel6";
 			this->panel6->Size = System::Drawing::Size(439, 185);
 			this->panel6->TabIndex = 13;
+			// 
+			// button1
+			// 
+			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button1->Location = System::Drawing::Point(92, 467);
+			this->button1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(261, 37);
+			this->button1->TabIndex = 10;
+			this->button1->Text = L"Entrar Com a Convidat";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &Login::button1_Click);
 			// 
 			// label5
 			// 
@@ -435,23 +447,12 @@ namespace culturalink_main {
 			this->label5->TabIndex = 9;
 			this->label5->Visible = false;
 			// 
-			// button1
-			// 
-			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->button1->Location = System::Drawing::Point(95, 134);
-			this->button1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(261, 37);
-			this->button1->TabIndex = 10;
-			this->button1->Text = L"Entrar Com a Convidat";
-			this->button1->UseVisualStyleBackColor = true;
-			// 
 			// Login
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(439, 505);
+			this->ClientSize = System::Drawing::Size(439, 586);
+			this->Controls->Add(this->button1);
 			this->Controls->Add(this->panel6);
 			this->Controls->Add(this->panel5);
 			this->Controls->Add(this->panel4);
@@ -621,6 +622,18 @@ private: System::Void btnMinimize_MouseLeave(System::Object^ sender, System::Eve
 		static_cast<System::Int32>(static_cast<System::Byte>(31)));
 }
 private: System::Void panel5_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	TxLoginCiutada tx("convidat", "convidat");
+	tx.executar();
+
+	//MessageBox::Show("Nickname i contrasenya correctes!", "Login");
+	//this->Close();
+	this->Hide();
+	ProvesUI^ formLog = gcnew ProvesUI;
+	formLog->ShowDialog();
+	//this->Close();
+	this->Show();
 }
 };
 }

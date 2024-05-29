@@ -22,6 +22,7 @@
 #include "TxPuntuaEsdeveniment.h"
 #include "TxModificaPuntuacioEsdeveniment.h"
 #include "TxConsultaPuntuacioEsdeveniment.h"
+#include "TxAnulaRegistreEsdeveniment.h"
 
 // Controladors
 #include "CtrlModificaCiutada.h"
@@ -382,10 +383,10 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Label^ lblDataMESDEVen;
 	private: System::Windows::Forms::Label^ lblPreuMESDEVen;
 	private: System::Windows::Forms::Label^ lblMetPagMESDEVen;
-	private: System::Windows::Forms::Panel^ pnlTotGastatEsqMESDEV;
-	private: System::Windows::Forms::Label^ lblTotGastatMESDEVen;
-	private: System::Windows::Forms::Panel^ pnlTotGastatDretaMESDEV;
-	private: System::Windows::Forms::Label^ lblTotGastatMESDEV;
+
+
+
+
 	private: System::Windows::Forms::Panel^ panelSettingsAjuntament;
 	private: System::Windows::Forms::Button^ botonSettingsAjuntament;
 	private: System::Windows::Forms::Panel^ panel12;
@@ -473,6 +474,7 @@ private: System::Windows::Forms::Panel^ pnlPuntsRegalMODESDEVen;
 private: System::Windows::Forms::Label^ lblPuntsRegalMODESDEVen;
 private: System::Windows::Forms::TextBox^ textBoxPuntsRegalMODESDEV;
 private: System::Windows::Forms::Label^ lblErrorPuntsRegalMODESDEV;
+private: System::Windows::Forms::Label^ label8;
 
 
 
@@ -733,12 +735,9 @@ private: System::Windows::Forms::Label^ lblErrorPuntsRegalMODESDEV;
 			this->lblTitlePage = (gcnew System::Windows::Forms::Label());
 			this->pnlMain = (gcnew System::Windows::Forms::Panel());
 			this->PANELMeusEsdevs = (gcnew System::Windows::Forms::Panel());
-			this->pnlTotGastatEsqMESDEV = (gcnew System::Windows::Forms::Panel());
-			this->lblTotGastatMESDEVen = (gcnew System::Windows::Forms::Label());
-			this->pnlTotGastatDretaMESDEV = (gcnew System::Windows::Forms::Panel());
-			this->lblTotGastatMESDEV = (gcnew System::Windows::Forms::Label());
 			this->flowLayoutPanelMESDEV = (gcnew System::Windows::Forms::FlowLayoutPanel());
 			this->pnlTitlesMESDEV = (gcnew System::Windows::Forms::Panel());
+			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->lblSelPuntuacioMESDEVen = (gcnew System::Windows::Forms::Label());
 			this->lblNomEsdevMESDEVen = (gcnew System::Windows::Forms::Label());
 			this->lblDataMESDEVen = (gcnew System::Windows::Forms::Label());
@@ -856,8 +855,6 @@ private: System::Windows::Forms::Label^ lblErrorPuntsRegalMODESDEV;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox7))->BeginInit();
 			this->pnlMain->SuspendLayout();
 			this->PANELMeusEsdevs->SuspendLayout();
-			this->pnlTotGastatEsqMESDEV->SuspendLayout();
-			this->pnlTotGastatDretaMESDEV->SuspendLayout();
 			this->pnlTitlesMESDEV->SuspendLayout();
 			this->PANELPROVA->SuspendLayout();
 			this->tableLayoutPanel1->SuspendLayout();
@@ -3816,9 +3813,9 @@ private: System::Windows::Forms::Label^ lblErrorPuntsRegalMODESDEV;
 			// 
 			// pnlMain
 			// 
+			this->pnlMain->Controls->Add(this->PANELMeusEsdevs);
 			this->pnlMain->Controls->Add(this->PANELConsultarCompra);
 			this->pnlMain->Controls->Add(this->PANELModificaEntitat);
-			this->pnlMain->Controls->Add(this->PANELMeusEsdevs);
 			this->pnlMain->Controls->Add(this->PANELModificaAjuntament);
 			this->pnlMain->Controls->Add(this->PANELSolicitutEntitat);
 			this->pnlMain->Controls->Add(this->PANELModificaCiut);
@@ -3834,59 +3831,14 @@ private: System::Windows::Forms::Label^ lblErrorPuntsRegalMODESDEV;
 			// PANELMeusEsdevs
 			// 
 			this->PANELMeusEsdevs->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->PANELMeusEsdevs->Controls->Add(this->pnlTotGastatEsqMESDEV);
 			this->PANELMeusEsdevs->Controls->Add(this->flowLayoutPanelMESDEV);
 			this->PANELMeusEsdevs->Controls->Add(this->pnlTitlesMESDEV);
 			this->PANELMeusEsdevs->Location = System::Drawing::Point(181, 25);
 			this->PANELMeusEsdevs->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->PANELMeusEsdevs->Name = L"PANELMeusEsdevs";
-			this->PANELMeusEsdevs->Size = System::Drawing::Size(1080, 628);
+			this->PANELMeusEsdevs->Size = System::Drawing::Size(1266, 628);
 			this->PANELMeusEsdevs->TabIndex = 0;
 			this->PANELMeusEsdevs->Visible = false;
-			// 
-			// pnlTotGastatEsqMESDEV
-			// 
-			this->pnlTotGastatEsqMESDEV->BackColor = System::Drawing::Color::Black;
-			this->pnlTotGastatEsqMESDEV->Controls->Add(this->lblTotGastatMESDEVen);
-			this->pnlTotGastatEsqMESDEV->Controls->Add(this->pnlTotGastatDretaMESDEV);
-			this->pnlTotGastatEsqMESDEV->Location = System::Drawing::Point(468, 551);
-			this->pnlTotGastatEsqMESDEV->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
-			this->pnlTotGastatEsqMESDEV->Name = L"pnlTotGastatEsqMESDEV";
-			this->pnlTotGastatEsqMESDEV->Size = System::Drawing::Size(324, 41);
-			this->pnlTotGastatEsqMESDEV->TabIndex = 4;
-			// 
-			// lblTotGastatMESDEVen
-			// 
-			this->lblTotGastatMESDEVen->AutoSize = true;
-			this->lblTotGastatMESDEVen->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->lblTotGastatMESDEVen->ForeColor = System::Drawing::Color::White;
-			this->lblTotGastatMESDEVen->Location = System::Drawing::Point(27, 12);
-			this->lblTotGastatMESDEVen->Name = L"lblTotGastatMESDEVen";
-			this->lblTotGastatMESDEVen->Size = System::Drawing::Size(97, 17);
-			this->lblTotGastatMESDEVen->TabIndex = 1;
-			this->lblTotGastatMESDEVen->Text = L"TOTAL GASTAT:";
-			// 
-			// pnlTotGastatDretaMESDEV
-			// 
-			this->pnlTotGastatDretaMESDEV->BackColor = System::Drawing::Color::White;
-			this->pnlTotGastatDretaMESDEV->Controls->Add(this->lblTotGastatMESDEV);
-			this->pnlTotGastatDretaMESDEV->Location = System::Drawing::Point(140, 2);
-			this->pnlTotGastatDretaMESDEV->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
-			this->pnlTotGastatDretaMESDEV->Name = L"pnlTotGastatDretaMESDEV";
-			this->pnlTotGastatDretaMESDEV->Size = System::Drawing::Size(181, 34);
-			this->pnlTotGastatDretaMESDEV->TabIndex = 0;
-			// 
-			// lblTotGastatMESDEV
-			// 
-			this->lblTotGastatMESDEV->AutoSize = true;
-			this->lblTotGastatMESDEV->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->lblTotGastatMESDEV->Location = System::Drawing::Point(75, 9);
-			this->lblTotGastatMESDEV->Name = L"lblTotGastatMESDEV";
-			this->lblTotGastatMESDEV->Size = System::Drawing::Size(43, 17);
-			this->lblTotGastatMESDEV->TabIndex = 0;
-			this->lblTotGastatMESDEV->Text = L"0.00 €";
 			// 
 			// flowLayoutPanelMESDEV
 			// 
@@ -3896,12 +3848,13 @@ private: System::Windows::Forms::Label^ lblErrorPuntsRegalMODESDEV;
 			this->flowLayoutPanelMESDEV->Location = System::Drawing::Point(0, 32);
 			this->flowLayoutPanelMESDEV->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->flowLayoutPanelMESDEV->Name = L"flowLayoutPanelMESDEV";
-			this->flowLayoutPanelMESDEV->Size = System::Drawing::Size(1080, 487);
+			this->flowLayoutPanelMESDEV->Size = System::Drawing::Size(1266, 487);
 			this->flowLayoutPanelMESDEV->TabIndex = 3;
 			// 
 			// pnlTitlesMESDEV
 			// 
 			this->pnlTitlesMESDEV->BackColor = System::Drawing::Color::Black;
+			this->pnlTitlesMESDEV->Controls->Add(this->label8);
 			this->pnlTitlesMESDEV->Controls->Add(this->lblSelPuntuacioMESDEVen);
 			this->pnlTitlesMESDEV->Controls->Add(this->lblNomEsdevMESDEVen);
 			this->pnlTitlesMESDEV->Controls->Add(this->lblDataMESDEVen);
@@ -3911,9 +3864,21 @@ private: System::Windows::Forms::Label^ lblErrorPuntsRegalMODESDEV;
 			this->pnlTitlesMESDEV->Location = System::Drawing::Point(0, 0);
 			this->pnlTitlesMESDEV->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->pnlTitlesMESDEV->Name = L"pnlTitlesMESDEV";
-			this->pnlTitlesMESDEV->Size = System::Drawing::Size(1080, 32);
+			this->pnlTitlesMESDEV->Size = System::Drawing::Size(1266, 32);
 			this->pnlTitlesMESDEV->TabIndex = 2;
 			this->pnlTitlesMESDEV->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &ProvesUI::pnlTitlesMESDEV_Paint);
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label8->ForeColor = System::Drawing::Color::White;
+			this->label8->Location = System::Drawing::Point(1082, 7);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(155, 16);
+			this->label8->TabIndex = 6;
+			this->label8->Text = L"CANCELAR COMPRA";
 			// 
 			// lblSelPuntuacioMESDEVen
 			// 
@@ -3921,7 +3886,7 @@ private: System::Windows::Forms::Label^ lblErrorPuntsRegalMODESDEV;
 			this->lblSelPuntuacioMESDEVen->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->lblSelPuntuacioMESDEVen->ForeColor = System::Drawing::Color::White;
-			this->lblSelPuntuacioMESDEVen->Location = System::Drawing::Point(875, 9);
+			this->lblSelPuntuacioMESDEVen->Location = System::Drawing::Point(875, 6);
 			this->lblSelPuntuacioMESDEVen->Name = L"lblSelPuntuacioMESDEVen";
 			this->lblSelPuntuacioMESDEVen->Size = System::Drawing::Size(131, 16);
 			this->lblSelPuntuacioMESDEVen->TabIndex = 5;
@@ -4404,10 +4369,6 @@ private: System::Windows::Forms::Label^ lblErrorPuntsRegalMODESDEV;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox7))->EndInit();
 			this->pnlMain->ResumeLayout(false);
 			this->PANELMeusEsdevs->ResumeLayout(false);
-			this->pnlTotGastatEsqMESDEV->ResumeLayout(false);
-			this->pnlTotGastatEsqMESDEV->PerformLayout();
-			this->pnlTotGastatDretaMESDEV->ResumeLayout(false);
-			this->pnlTotGastatDretaMESDEV->PerformLayout();
 			this->pnlTitlesMESDEV->ResumeLayout(false);
 			this->pnlTitlesMESDEV->PerformLayout();
 			this->PANELPROVA->ResumeLayout(false);
@@ -4951,6 +4912,24 @@ private: System::Windows::Forms::Label^ lblErrorPuntsRegalMODESDEV;
 				static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			
 			passCiu = safe_cast<PassarelaCiutada^>(usuario->getUsuari());
+
+			if (passCiu->getNickname() == "convidat") {
+				this->picBoxUserPic->Visible = false;
+				//this->pictureBox1->Visible = false;
+				//this->panel1->Visible = false;
+				this->panel2->Visible = false;
+				this->panel3->Visible = false;
+				this->panel6->Visible = false;
+				this->panel7->Visible = false;
+				this->lblFullNameUser->Visible = false;
+				this->lblTypeUser->Visible = false;
+				this->lblUsername->Visible = false;
+				this->lblPuntsUser->Visible = false;
+				this->btnComprarPuntsCONS->Visible = false;
+				this->btnComprarCONS->Visible = false;
+				//this->btnComprarCOMP->Visible = false;
+
+			}
 
 			fullName = passCiu->getNomComplet();
 			userName = passCiu->getNickname();
@@ -5595,8 +5574,27 @@ private: System::Windows::Forms::Label^ lblErrorPuntsRegalMODESDEV;
 			   CustomButton^ btn4star = (gcnew CustomButton());
 			   CustomButton^ btn5star = (gcnew CustomButton());
 
+			   CustomButton^ btnCancelarCompra = (gcnew CustomButton());
+
 			   int posIni = 600;
 			   int margin = 10;
+
+			   
+
+			   btnCancelarCompra->BackColor = System::Drawing::Color::Gray;
+			   btnCancelarCompra->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			   btnCancelarCompra->Font = (gcnew System::Drawing::Font(L"Yu Gothic UI", 10.2F));
+			   btnCancelarCompra->ForeColor = System::Drawing::Color::White;
+			   btnCancelarCompra->Location = System::Drawing::Point(810, 14);
+			   btnCancelarCompra->Margin = System::Windows::Forms::Padding(4);
+			   btnCancelarCompra->Name = L"btnCancelarCompra";
+			   btnCancelarCompra->Size = System::Drawing::Size(98, 25);
+			   btnCancelarCompra->TabIndex = 0;
+			   btnCancelarCompra->Text = L"   CANCELA COMPRA";
+			   btnCancelarCompra->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			   btnCancelarCompra->UseVisualStyleBackColor = false;
+			   btnCancelarCompra->NomEsdev = nomEsdev;
+			   btnCancelarCompra->Click += gcnew System::EventHandler(this, &ProvesUI::btnCancelarCompra_Clicked);
 
 			   btn1star->BackColor = System::Drawing::Color::Gray;
 			   btn1star->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
@@ -5745,6 +5743,8 @@ private: System::Windows::Forms::Label^ lblErrorPuntsRegalMODESDEV;
 			   // 
 			   // pnlDynMESDEVex
 			   //
+			   
+			   pnlDynMESDEVex->Controls->Add(btnCancelarCompra);
 			   pnlDynMESDEVex->Controls->Add(btn5star);
 			   pnlDynMESDEVex->Controls->Add(btn4star);
 			   pnlDynMESDEVex->Controls->Add(btn3star); 
@@ -5757,7 +5757,7 @@ private: System::Windows::Forms::Label^ lblErrorPuntsRegalMODESDEV;
 			   pnlDynMESDEVex->Controls->Add(pnlDynMetodeFMESDEVex);
 			   pnlDynMESDEVex->Location = System::Drawing::Point(3, 3);
 			   pnlDynMESDEVex->Name = L"pnlDynMESDEVex";
-			   pnlDynMESDEVex->Size = System::Drawing::Size(800, 48);
+			   pnlDynMESDEVex->Size = System::Drawing::Size(940, 48);
 			   pnlDynMESDEVex->TabIndex = 0;
 
 			   this->flowLayoutPanelMESDEV->Controls->Add(pnlDynMESDEVex);
@@ -6164,6 +6164,28 @@ private: System::Void btnModificaMODESDEV_Clicked(System::Object^ sender, System
 			this->lblErrorTipusMODESDEV->Visible = true;
 		}
 	}
+
+
 }
+	void btnCancelarCompra_Clicked(System::Object^ sender, System::EventArgs^ e) {
+
+		CustomButton^ clickedButton = dynamic_cast<CustomButton^>(sender);
+
+		if (clickedButton != nullptr)
+		{
+			// Find the parent control of the clicked button
+			Control^ parent = clickedButton->Parent;
+
+			// Remove the parent control (panel) from its container
+			if (parent != nullptr)
+			{
+				this->flowLayoutPanelMESDEV->Controls->Remove(parent); // Borra DynPanel del flowPanel.
+			}
+		}
+
+		TxAnulaRegistreEsdeveniment txAnulRegEsdev(clickedButton->NomEsdev);
+		txAnulRegEsdev.executar();
+		
+	}
 };
 }

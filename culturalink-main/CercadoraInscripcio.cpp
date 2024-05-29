@@ -52,7 +52,7 @@ PassarelaInscripcio CercadoraInscripcio::cercaInscripcio(String^ nick, String^ n
     MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
 
     // Uso de parámetros en la consulta SQL
-    String^ sql = "SELECT * FROM inscripcio WHERE nick_ciutada = @nick AND nom_esdeveniment=@nom ";
+    String^ sql = "SELECT * FROM inscripcio WHERE nick_ciutada = @nick AND nom_esdeveniment = @nom ";
 
     MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
     cmd->Parameters->AddWithValue("@nick", nick); // Asignación del valor del parámetro
@@ -60,6 +60,8 @@ PassarelaInscripcio CercadoraInscripcio::cercaInscripcio(String^ nick, String^ n
     MySqlDataReader^ dataReader;
     try {
         // obrim la connexió
+        conn->Open();
+        dataReader = cmd->ExecuteReader();
        if (dataReader->Read())
     {
     String^ nickC = dataReader->GetString(0);
