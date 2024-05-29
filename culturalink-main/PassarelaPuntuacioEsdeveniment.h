@@ -16,8 +16,8 @@ using namespace System::Windows::Forms;
 using namespace CostumCorreuExisteix;
 
 //const int preuNegatiu = 1;
-const int errorData = 5;
-const int errorTipusIncorrecte = 6;
+//const int errorData = 5;
+//const int errorTipusIncorrecte = 6;
 
 
 ref class PassarelaPuntuacioEsdeveniment

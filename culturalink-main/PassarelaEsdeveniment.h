@@ -7,7 +7,11 @@
 const int errorDataAnterior = 2;
 const int errorTipus = 3;
 const int errorAjuntament = 4;
-const int errorEsdevenimentExistent = 5;
+const int errorEsdevenimentExistent = 7;
+
+const int preuNegatiu = 1;
+const int errorData = 5;
+const int errorTipusIncorrecte = 6;
 
 using namespace std;
 using namespace MySql::Data::MySqlClient;
@@ -25,7 +29,9 @@ public:
 
     PassarelaEsdeveniment();
     void insereix();
-    void modifica();
+    /*void modifica();
+    void insereix();*/
+    void modifica(String^ ESDEV);
     PassarelaEsdeveniment% operator=(const PassarelaEsdeveniment% other);
     PassarelaEsdeveniment(const PassarelaEsdeveniment% p1);
     int getIdEnt();

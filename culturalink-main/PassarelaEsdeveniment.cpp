@@ -130,43 +130,75 @@ void PassarelaEsdeveniment::insereix() {
 
 
 
-void PassarelaEsdeveniment::modifica() {
-
-    // Cadena de conexión a la base de datos
-    String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username=amep14; password=\"Yee7zaeheih9-\"; database=amep14;";
+void PassarelaEsdeveniment::modifica(String^ ESDEV) {
+    // Comprobar que el tipo sea correcto
+    String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
     MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
+    conn->Open();
+    List<String^>^ tipusValids = gcnew List<String^>();
+
+    String^ consulta = "SELECT tipus FROM esdeveniment";
+    MySqlCommand^ cmd = gcnew MySqlCommand(consulta, conn);
+    MySqlDataReader^ reader = cmd->ExecuteReader();
+    while (reader->Read()) {
+        tipusValids->Add(reader["tipus"]->ToString());
+    }
+    reader->Close();
+    conn->Close();
+    if (_tipusEsd != "") {
+        if (!tipusValids->Contains(_tipusEsd)) throw (errorTipusIncorrecte);
+    }
+
+    MySqlConnection^ conn2 = gcnew MySqlConnection(connectionString);
 
     try {
-        conn->Open(); // Intentar abrir la conexión con la base de datos
+        conn2->Open(); // Intentar abrir la conexión con la base de datos
 
         // Comando SQL para actualizar un evento
         String^ sql = "UPDATE amep14.esdeveniment SET "
-            "nom_esdeveniment = @nom, preu_esdeveniment = @preu, ajuntament_esdeveniment = @ajEsd, "
-            "descripcio_esdeveniment = @desc, tipus = @tipus, aforament = @aforament, "
-            "punts_cost = @puntsCost, data = @data, punts_descompte = @puntsDesc "
-            "WHERE id_esdeveniment = @idEvent;";
+            "preu_esdeveniment = @preu, "
+            "data = @data, "
+            "descripcio_esdeveniment = @desc, "
+            "tipus = @tipus, "
+            "aforament = @afor, "
+            "punts_cost = @ptsCost, "
+            "punts_descompte = @ptsDesc "
+            "WHERE nom_esdeveniment = @ESDEV;";
 
-        MySqlCommand^ cmd = gcnew MySqlCommand(sql, conn);
+        MySqlCommand^ cmd2 = gcnew MySqlCommand(sql, conn2);
 
         // Asignar valores a los parámetros
-        cmd->Parameters->AddWithValue("@nom", _nomEsd);
-        cmd->Parameters->AddWithValue("@preu", _preu);
-        cmd->Parameters->AddWithValue("@desc", _descEsd);
-        cmd->Parameters->AddWithValue("@tipus", _tipusEsd);
-        cmd->Parameters->AddWithValue("@aforament", _aforamentEsd);
-        cmd->Parameters->AddWithValue("@puntsCost", _puntsCostEsd);
-        cmd->Parameters->AddWithValue("@data", _dataEsd);
-        cmd->Parameters->AddWithValue("@puntsDesc", _puntsDescEsd);
+        cmd2->Parameters->AddWithValue("@preu", _preu);
+        cmd2->Parameters->AddWithValue("@data", _dataEsd);
+        cmd2->Parameters->AddWithValue("@desc", _descEsd);
+        cmd2->Parameters->AddWithValue("@tipus", _tipusEsd);
+        cmd2->Parameters->AddWithValue("@afor", _aforamentEsd);
+        cmd2->Parameters->AddWithValue("@ptsCost", _puntsCostEsd);
+        cmd2->Parameters->AddWithValue("@ptsDesc", _puntsDescEsd);
+        cmd2->Parameters->AddWithValue("@ESDEV", ESDEV);
+
+        /*if (_preu != 0)
+            cmd2->Parameters->AddWithValue("@preu", _preu);
+        if (_dataEsd != "")
+            cmd2->Parameters->AddWithValue("@data", _dataEsd);
+        if (_tipusEsd != "")
+            cmd2->Parameters->AddWithValue("@tipus", _tipusEsd);
+        if (_aforamentEsd != 0)
+            cmd2->Parameters->AddWithValue("@afor", _aforamentEsd);
+        if (_puntsCostEsd != 0)
+            cmd2->Parameters->AddWithValue("@ptsCost", _puntsCostEsd);
+        if (_puntsDescEsd != 0)
+            cmd2->Parameters->AddWithValue("@ptsDesc", _puntsDescEsd);*/
 
         // Ejecutar el comando
-        cmd->ExecuteNonQuery();
+        cmd2->ExecuteNonQuery();
         MessageBox::Show("Evento modificado exitosamente!");
     }
     catch (Exception^ ex) {
         MessageBox::Show("Error al modificar el evento: " + ex->Message);
     }
     finally {
-        conn->Close(); // Cerrar la conexión independientemente del resultado
+        conn2->Close(); // Cerrar la conexión independientemente del resultado
     }
 }
 
