@@ -37,6 +37,13 @@ PassarelaEsdeveniment CercadoraEsdeveniment::cercaEsdeveniment(String^ clau) {
             PassarelaEsdeveniment P1(_idEntitat, _preuEsdeveniment, _ajEsdeveniment, _descEsdeveniment, _nomEsdeveniment, _tipusEsdeveniment, _aforamentEsdeveniment, _puntsCostEsdeveniment, _dataEsdeveniment, _puntsDescEsdeveniment);
             return P1;
         }
+        else {
+
+            // Handle the case where there are no rows
+            PassarelaEsdeveniment P1(0, 0, "", "", "", "", 0, 0, "", 0);
+            return P1;
+
+        }
     }
     catch (Exception^ ex) {
         // codi per mostrar l�error en una finestra
@@ -142,6 +149,14 @@ List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaEsdevenimentsAmbTipus(
 
             totsEsdev->Add(passEsdev);
         }
+
+        if (numEsdevs == 0) {
+            // Handle the case where there are no rows
+            PassarelaEsdeveniment^ passEsdev = gcnew PassarelaEsdeveniment(0, 0, "", "", "", "", 0, 0, "", 0);
+
+            totsEsdev->Add(passEsdev);
+        }
+
         conn->Close();
         return totsEsdev;
     }
@@ -196,7 +211,7 @@ List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaEsdevenimentsPerEntita
         MessageBox::Show("General Error: " + ex->Message);
         return nullptr; // Return null in case of exception
     }
-            conn->Close();
+    conn->Close();
 }
 
 
@@ -205,7 +220,7 @@ List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaEsdevenimentsPerAjunta
     String^ connectionString = "datasource=ubiwan.epsevg.upc.edu; username = amep14; password = \"Yee7zaeheih9-\"; database = amep14;";
 
     MySqlConnection^ conn = gcnew MySqlConnection(connectionString);
-    String^ sql2 = "SELECT id_entitat, nom_esdeveniment, data, descripcio_esdeveniment FROM esdeveniment WHERE ajuntament_esdeveniment='"+aj+"' AND confirmacio IS NULL";
+    String^ sql2 = "SELECT id_entitat, nom_esdeveniment, data, descripcio_esdeveniment FROM esdeveniment WHERE ajuntament_esdeveniment='" + aj + "' AND confirmacio IS NULL";
     MySqlCommand^ cmd2 = gcnew MySqlCommand(sql2, conn);
     MySqlDataReader^ dataReader;
 
@@ -233,9 +248,5 @@ List<PassarelaEsdeveniment^>^ CercadoraEsdeveniment::cercaEsdevenimentsPerAjunta
     catch (Exception^ ex) {
         MessageBox::Show(ex->Message);
         return nullptr; // Return null in case of exception
-    } 
+    }
 }
-
-
-
-
