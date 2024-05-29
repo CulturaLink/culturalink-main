@@ -52,6 +52,10 @@ namespace culturalink_main {
 	private: System::Windows::Forms::Label^ lblTotGastatMESDEVen;
 	private: System::Windows::Forms::Panel^ pnlTotGastatDretaMESDEV;
 	private: System::Windows::Forms::Label^ lblTotGastatMESDEV;
+	private: System::Windows::Forms::Panel^ panel1;
+	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::PictureBox^ pictureBox1;
+	private: System::Windows::Forms::Label^ label1;
 
 	protected:
 
@@ -68,6 +72,7 @@ namespace culturalink_main {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(ElsMeusEsdevUI::typeid));
 			this->PANELMeusEsdevs = (gcnew System::Windows::Forms::Panel());
 			this->pnlTotGastatEsqMESDEV = (gcnew System::Windows::Forms::Panel());
 			this->lblTotGastatMESDEVen = (gcnew System::Windows::Forms::Label());
@@ -85,6 +90,10 @@ namespace culturalink_main {
 			this->lblDataMESDEVen = (gcnew System::Windows::Forms::Label());
 			this->lblPreuMESDEVen = (gcnew System::Windows::Forms::Label());
 			this->lblMetPagMESDEVen = (gcnew System::Windows::Forms::Label());
+			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->PANELMeusEsdevs->SuspendLayout();
 			this->pnlTotGastatEsqMESDEV->SuspendLayout();
 			this->pnlTotGastatDretaMESDEV->SuspendLayout();
@@ -92,6 +101,8 @@ namespace culturalink_main {
 			this->pnlDynMESDEVex->SuspendLayout();
 			this->pnlMetodeFMESDEVex->SuspendLayout();
 			this->pnlTitlesMESDEV->SuspendLayout();
+			this->panel1->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// PANELMeusEsdevs
@@ -100,7 +111,7 @@ namespace culturalink_main {
 			this->PANELMeusEsdevs->Controls->Add(this->pnlTotGastatEsqMESDEV);
 			this->PANELMeusEsdevs->Controls->Add(this->flowLayoutPanelMESDEV);
 			this->PANELMeusEsdevs->Controls->Add(this->pnlTitlesMESDEV);
-			this->PANELMeusEsdevs->Location = System::Drawing::Point(168, 31);
+			this->PANELMeusEsdevs->Location = System::Drawing::Point(27, 22);
 			this->PANELMeusEsdevs->Name = L"PANELMeusEsdevs";
 			this->PANELMeusEsdevs->Size = System::Drawing::Size(792, 628);
 			this->PANELMeusEsdevs->TabIndex = 0;
@@ -287,11 +298,53 @@ namespace culturalink_main {
 			this->lblMetPagMESDEVen->TabIndex = 1;
 			this->lblMetPagMESDEVen->Text = L"MÈTODE PAGAMENT";
 			// 
+			// panel1
+			// 
+			this->panel1->Controls->Add(this->pictureBox1);
+			this->panel1->Controls->Add(this->label1);
+			this->panel1->Controls->Add(this->button1);
+			this->panel1->Location = System::Drawing::Point(886, 54);
+			this->panel1->Name = L"panel1";
+			this->panel1->Size = System::Drawing::Size(206, 243);
+			this->panel1->TabIndex = 1;
+			// 
+			// button1
+			// 
+			this->button1->Dock = System::Windows::Forms::DockStyle::Bottom;
+			this->button1->Location = System::Drawing::Point(0, 199);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(206, 44);
+			this->button1->TabIndex = 0;
+			this->button1->Text = L"button1";
+			this->button1->UseVisualStyleBackColor = true;
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Dock = System::Windows::Forms::DockStyle::Bottom;
+			this->label1->Location = System::Drawing::Point(0, 183);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(44, 16);
+			this->label1->TabIndex = 1;
+			this->label1->Text = L"label1";
+			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(0, 0);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(206, 183);
+			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox1->TabIndex = 2;
+			this->pictureBox1->TabStop = false;
+			// 
 			// ElsMeusEsdevUI
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1204, 724);
+			this->ClientSize = System::Drawing::Size(1387, 724);
+			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->PANELMeusEsdevs);
 			this->Name = L"ElsMeusEsdevUI";
 			this->Text = L"ElsMeusEsdevUI";
@@ -308,6 +361,9 @@ namespace culturalink_main {
 			this->pnlMetodeFMESDEVex->PerformLayout();
 			this->pnlTitlesMESDEV->ResumeLayout(false);
 			this->pnlTitlesMESDEV->PerformLayout();
+			this->panel1->ResumeLayout(false);
+			this->panel1->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 
 		}

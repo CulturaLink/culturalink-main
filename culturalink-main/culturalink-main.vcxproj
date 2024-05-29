@@ -307,6 +307,22 @@
     <ClCompile Include="UIModificaEsdeveniment.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\..\..\..\Downloads\icons cultura\Artístico.png" />
+    <Image Include="..\..\..\..\Downloads\icons cultura\Carnaval.png" />
+    <Image Include="..\..\..\..\Downloads\icons cultura\Ceremònia.png" />
+    <Image Include="..\..\..\..\Downloads\icons cultura\Cinematográfico.png" />
+    <Image Include="..\..\..\..\Downloads\icons cultura\Competicion.png" />
+    <Image Include="..\..\..\..\Downloads\icons cultura\Concierto.png" />
+    <Image Include="..\..\..\..\Downloads\icons cultura\Deportivo.png" />
+    <Image Include="..\..\..\..\Downloads\icons cultura\Educativo.png" />
+    <Image Include="..\..\..\..\Downloads\icons cultura\Exposición.png" />
+    <Image Include="..\..\..\..\Downloads\icons cultura\Festival.png" />
+    <Image Include="..\..\..\..\Downloads\icons cultura\Gala.png" />
+    <Image Include="..\..\..\..\Downloads\icons cultura\Gastronómico.png" />
+    <Image Include="..\..\..\..\Downloads\icons cultura\Musical.png" />
+    <Image Include="..\..\..\..\Downloads\icons cultura\Taller.png" />
+    <Image Include="..\..\..\..\Downloads\icons cultura\Tecnológico.png" />
+    <Image Include="..\..\..\..\Downloads\icons cultura\Torneo.png" />
     <Image Include="app.ico" />
   </ItemGroup>
   <ItemGroup>

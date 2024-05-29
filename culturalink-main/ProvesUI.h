@@ -478,6 +478,7 @@ private: System::Windows::Forms::Label^ label8;
 
 
 
+	   System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(ProvesUI::typeid));
 
 
 
@@ -496,7 +497,6 @@ private: System::Windows::Forms::Label^ label8;
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(ProvesUI::typeid));
 			this->pnlQuantitatCONS = (gcnew System::Windows::Forms::Panel());
 			this->lblQuantitatCONS = (gcnew System::Windows::Forms::Label());
 			this->lblQunatitatCONSen = (gcnew System::Windows::Forms::Label());
@@ -2366,11 +2366,11 @@ private: System::Windows::Forms::Label^ label8;
 			// 
 			// picBoxEsdevCONS
 			// 
-			this->picBoxEsdevCONS->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"picBoxEsdevCONS.Image")));
+			this->picBoxEsdevCONS->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox9.Image")));
 			this->picBoxEsdevCONS->Location = System::Drawing::Point(21, 64);
 			this->picBoxEsdevCONS->Margin = System::Windows::Forms::Padding(4);
 			this->picBoxEsdevCONS->Name = L"picBoxEsdevCONS";
-			this->picBoxEsdevCONS->Size = System::Drawing::Size(261, 305);
+			this->picBoxEsdevCONS->Size = System::Drawing::Size(280, 305);
 			this->picBoxEsdevCONS->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->picBoxEsdevCONS->TabIndex = 4;
 			this->picBoxEsdevCONS->TabStop = false;
@@ -4571,7 +4571,7 @@ private: System::Windows::Forms::Label^ label8;
 
 		CustomButton^ clickedButton = dynamic_cast<CustomButton^>(sender);
 
-		TxConsultaEsdevenimentsAmbTipus txConsEsdevs(clickedButton->NomEsdev);
+		TxConsultaEsdevenimentsAmbTipus txConsEsdevs("Gala");
 		txConsEsdevs.executar();
 
 		List<String^>^ esdevsGala = txConsEsdevs.getResult();
@@ -4739,8 +4739,43 @@ private: System::Windows::Forms::Label^ label8;
 		this->lblTitlePage->Text = "SETTINGS";
 	}
 		   // Creació de panells amb l'Esdeveniment donat (+ Info)
-	private: Void addEsdevToUI(Esdeveniment^ esdev)
+	private: System::Void addEsdevToUI(Esdeveniment^ esdev)
 	{
+		
+		//// Define the relative path to the image
+		//System::String^ relativeImagePath = "\Assets\pictureBoxChipUICOMP.png";
+
+		//// Construct the full path using the application's startup path
+		//System::String^ imagePath = System::IO::Path::Combine(Application::StartupPath, relativeImagePath);
+
+		//// Load the image from the specified path
+		//System::Drawing::Image^ image = System::Drawing::Image::FromFile(imagePath);
+
+		//// Set the loaded image as the background image of the PictureBox
+		//picBoxTipus->BackgroundImage = image;
+
+		//// Set the BackgroundImageLayout to Stretch to fit the PictureBox
+		//picBoxTipus->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+
+		// Create a new PictureBox instance
+		System::Windows::Forms::PictureBox^ picBoxTipus = gcnew System::Windows::Forms::PictureBox;
+
+		// Initialize the resources object
+		picBoxTipus->Dock = System::Windows::Forms::DockStyle::Fill;
+		picBoxTipus->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox9.Image")));
+		picBoxTipus->Location = System::Drawing::Point(0, 0);
+		picBoxTipus->Name = L"pictureBox1";
+		picBoxTipus->Size = System::Drawing::Size(206, 183);
+		picBoxTipus->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+		picBoxTipus->TabIndex = 2;
+		picBoxTipus->TabStop = false;
+		picBoxTipus->Dock = System::Windows::Forms::DockStyle::Fill;
+
+		// Assign the image from resources to the PictureBox
+		/*picBoxTipus->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bluedegrad.Image")));
+		picBoxTipus->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+		picBoxTipus->Dock = System::Windows::Forms::DockStyle::Fill;*/
+
 		System::Windows::Forms::Panel^ pnlEsdev = gcnew Panel;
 		pnlEsdev->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 		pnlEsdev->Location = System::Drawing::Point(0, 0);
@@ -4780,6 +4815,7 @@ private: System::Windows::Forms::Label^ label8;
 		_NomEsdevPerComprar = btnConsultar->NomEsdev;
 		btnConsultar->Click += gcnew System::EventHandler(this, &ProvesUI::btnConsultar_Click);
 
+		pnlEsdev->Controls->Add(picBoxTipus);
 		pnlEsdev->Controls->Add(lblEsdev);
 		pnlEsdev->Controls->Add(lblEsdevPreu);
 		pnlEsdev->Controls->Add(btnConsultar);

@@ -31,16 +31,16 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(468
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4721,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4955,42): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4991,42): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(5345,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(5381,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6113,28): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6149,28): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6154,63): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6190,63): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
   (compilando archivo de origen "/CercadoraCiutada.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia
@@ -84,16 +84,16 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(468
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4721,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4955,42): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4991,42): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(5345,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(5381,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6113,28): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6149,28): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
   (compilando archivo de origen "/Login.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6154,63): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6190,63): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
   (compilando archivo de origen "/Login.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia
@@ -137,16 +137,16 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(468
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4721,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4955,42): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4991,42): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(5345,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(5381,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6113,28): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6149,28): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
   (compilando archivo de origen "/MainForm.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6154,63): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6190,63): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
   (compilando archivo de origen "/MainForm.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia
@@ -190,16 +190,16 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(468
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4721,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4955,42): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4991,42): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(5345,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(5381,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6113,28): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6149,28): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6154,63): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6190,63): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
   (compilando archivo de origen "/PassarelaCiutada.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia
@@ -252,16 +252,16 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(468
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4721,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/ProvesUI.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4955,42): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4991,42): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/ProvesUI.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(5345,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(5381,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/ProvesUI.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6113,28): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6149,28): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
   (compilando archivo de origen "/ProvesUI.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6154,63): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6190,63): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
   (compilando archivo de origen "/ProvesUI.cpp")
   
   TxLoginCiutada.cpp
@@ -296,16 +296,16 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(468
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4721,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4955,42): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4991,42): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(5345,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(5381,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6113,28): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6149,28): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6154,63): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6190,63): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
   (compilando archivo de origen "/TxLoginCiutada.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia
@@ -349,16 +349,16 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(468
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4721,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4955,42): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4991,42): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(5345,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(5381,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6113,28): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6149,28): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6154,63): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6190,63): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
   (compilando archivo de origen "/TxRegisterCiutada.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia
@@ -402,16 +402,16 @@ C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(468
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4721,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/culturalinkmain.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4955,42): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(4991,42): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/culturalinkmain.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(5345,41): warning C4101: 'list_esdevs': variable local sin referencia
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(5381,41): warning C4101: 'list_esdevs': variable local sin referencia
   (compilando archivo de origen "/culturalinkmain.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6113,28): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6149,28): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
   (compilando archivo de origen "/culturalinkmain.cpp")
   
-C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6154,63): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\ProvesUI.h(6190,63): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
   (compilando archivo de origen "/culturalinkmain.cpp")
   
 C:\Users\patri\Documents\GitHub\culturalink-main\culturalink-main\Login.h(510,32): warning C4101: 'e': variable local sin referencia

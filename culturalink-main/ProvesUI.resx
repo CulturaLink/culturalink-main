@@ -17919,4 +17919,53 @@
         7wHgGeBXwOtCiDN23///a236b9D4PxQAAAAASUVORK5CYII=
 </value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Artístico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Downloads\icons cultura\Artístico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Carnaval" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Downloads\icons cultura\Carnaval.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ceremònia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Downloads\icons cultura\Ceremònia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cinematográfico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Downloads\icons cultura\Cinematográfico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Competicion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Downloads\icons cultura\Competicion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Concierto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Downloads\icons cultura\Concierto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Deportivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Downloads\icons cultura\Deportivo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Educativo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Downloads\icons cultura\Educativo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exposición" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Downloads\icons cultura\Exposición.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Festival" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Downloads\icons cultura\Festival.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gala" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Downloads\icons cultura\Gala.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gastronómico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Downloads\icons cultura\Gastronómico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Musical" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Downloads\icons cultura\Musical.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Taller" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Downloads\icons cultura\Taller.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tecnológico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Downloads\icons cultura\Tecnológico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Torneo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Downloads\icons cultura\Torneo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

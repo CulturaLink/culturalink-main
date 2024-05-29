@@ -15,7 +15,7 @@ namespace CustomControls {
         CustomButton()
         {
             // Initialize the custom attribute
-            nomEsdev = "Default Name";
+            nomEsdev = "Gala";
         }
 
         // Property for the custom attribute
